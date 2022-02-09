@@ -1,0 +1,28 @@
+
+state={
+	id=274
+	name="STATE_274"
+	resources={
+		oil=4.000
+	}
+
+	history={
+		owner = ZAM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = ZAM
+		victory_points = {
+			10859 5 
+		}
+
+	}
+	provinces={
+		9127 9284 9321 9395 9408 9421 9448 9477 9501 9502 9569 9650 9685 9737 9851 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

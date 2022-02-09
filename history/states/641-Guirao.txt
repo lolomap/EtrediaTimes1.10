@@ -1,0 +1,28 @@
+state={
+	id=641
+	name="STATE_641"
+	manpower = 7440000
+	
+	state_category = town
+	
+	resources={
+        steel = 1 # was: 1
+	}
+
+	history={
+		owner = HOR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = HOR
+		victory_points = {
+			6572 5
+		}
+
+	}
+	provinces={
+		4814 5336 5515 5516 5712 5843 5904 5953 6082 6163 6217 6319 6400 6524 6797 
+	}
+}

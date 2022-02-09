@@ -1,0 +1,30 @@
+state={
+	id=732
+	name="STATE_732"
+	manpower = 2340000
+	state_category = town
+	
+	resources={
+		oil = 8 # was: 14
+	}
+
+	history={
+		owner = NUR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			arms_factory = 1
+			2096 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = NUR
+		victory_points = {
+			2096 5
+		}
+
+	}
+	provinces={
+		1599 1602 1615 1621 1691 1710 1781 
+	}
+}

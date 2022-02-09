@@ -1,0 +1,95 @@
+﻿capital = 629
+
+OOB = "YEO_2014"
+
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = 0.5
+
+add_ideas = {
+        WWW_medium_country
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+        mechanised_infantry = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	early_destroyer = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 0
+        fascism = 0
+        communism = 0
+	neutrality = 100
+}
+
+set_convoys = 50
+
+create_country_leader = {
+	name = "Jongephi Mbizo"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_anatoly.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vile Dumalisile"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Songezo Ngubenani"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fezekile Ntsokwana"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Sandile Mandela"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

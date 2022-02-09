@@ -1,0 +1,94 @@
+﻿capital = 767
+
+oob = "NIB_2014"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.5
+
+add_ideas = {
+        www_bad_country
+        limited_conscription
+        total_nonfree_press
+        limited_entry
+}
+
+set_technology = {
+	infantry_weapons = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	transport = 1
+}
+
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2009.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 44
+        fascism = 0
+        communism = 0
+	neutrality = 56
+}
+
+#
+create_country_leader = {
+	name = "Narototonga Baudosusas"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yarosav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Naromomonga Kaudoeamus"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Naromomonga Kaudoeamus"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaoslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Naromomonga Kaudoeamus"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yarosav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Lemae Goliath"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}

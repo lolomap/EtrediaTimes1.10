@@ -1,0 +1,29 @@
+
+state={
+	id=207
+	name="STATE_207"
+	resources={
+		oil=9.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			nuclear_reactor = 1
+		}
+		add_core_of = SBU
+		add_core_of = SVT
+		victory_points = {
+			6264 5 
+		}
+
+	}
+	provinces={
+		5297 5369 5385 5409 5430 5431 5504 5525 5547 5561 5562 5603 5644 5666 5703 5720 5721 5754 5755 5770 5859 5877 5914 5927 5986 6058 6099 6117 6234 6250 6271 6356 6414 6512 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

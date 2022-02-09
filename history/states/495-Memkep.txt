@@ -1,0 +1,25 @@
+
+state={
+	id=495
+	name="STATE_495"
+	manpower = 3300000
+	
+	state_category = rural
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = CHE
+		victory_points = {
+			7329 10
+		}
+
+	}
+	provinces={
+		6746 6839 6856 6930 6990 7067 7113 7139 7201 7280 7281 7316 7333 7389 7409 7471 7472 7518 7583 7642 7661 7804 
+	}
+}

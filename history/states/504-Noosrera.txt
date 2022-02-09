@@ -1,0 +1,29 @@
+
+state={
+	id=504
+	name="STATE_504"
+	manpower = 3200000
+	
+	state_category = city
+	
+	history={
+		owner = BOU
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        arms_factory = 0
+                        dockyard = 1
+			4252 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = BOU
+		victory_points = {
+			4252 15
+		}
+
+	}
+	provinces={
+		3591 3622 3625 3637 3643 3684 3696 3710 3735 3774 3782 3788 
+	}
+}

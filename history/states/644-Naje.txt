@@ -1,0 +1,27 @@
+
+state={
+	id=644
+	name="STATE_644"
+	manpower = 5100000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = UNC
+		buildings = {
+			infrastructure = 3
+                        arms_factory = 1
+		}
+		add_core_of = UNC
+		victory_points = {
+			7517 5
+		}
+
+	}
+	provinces={
+		5974 5975 6105 6281 6427 6428 6543 6592 6724 6817 6991 7007 
+	}
+}

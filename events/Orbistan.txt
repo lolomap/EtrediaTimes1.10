@@ -1,0 +1,294 @@
+add_namespace = orb
+
+country_event = {
+	id = orb.1
+	title = orb.1.t
+	desc = orb.1.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ORB
+        45 = { is_controlled_by = ORB }
+        has_war_with = FSC
+    }
+    	
+	option = {
+    name = orb.1.a
+	    ORB = {
+        white_peace = FSC
+		}
+		ORB = {
+		transfer_state = 45
+        }
+	}
+}
+
+country_event = {
+	id = orb.2
+	title = orb.2.t
+	desc = orb.2.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ORB
+		45 = { is_controlled_by = ANR }
+    }
+    	
+	option = {
+	name = orb.2.a
+	ORB = {
+	create_wargoal = {
+    type = annex_everything
+    target = ANR
+    }
+	}
+	}
+}
+
+country_event = {
+	id = orb.3
+	title = orb.3.t
+	desc = orb.3.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ORB
+		45 = { is_controlled_by = KUL }
+    }
+    	
+	option = {
+	name = orb.3.a
+	ORB = {
+	create_wargoal = {
+    type = annex_everything
+    target = KUL
+    }
+	}
+	}
+}
+
+country_event = {
+	id = orb.4
+	title = orb.4.t
+	desc = orb.4.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.4.a
+		custom_effect_tooltip = UCBCrashLoc
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = TIR
+					is_owned_by = UCB
+				}
+				TIR = {transfer_state = PREV}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUR
+					is_owned_by = UCB
+				}
+				KUR = {transfer_state = PREV}
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = ARS
+					is_owned_by = UCB
+				}
+				ARS = {transfer_state = PREV}
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = IND
+					is_owned_by = UCB
+				}
+				IND = {transfer_state = PREV}
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = ORB
+					is_owned_by = UCB
+				}
+				ORB = {transfer_state = PREV}
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = orb.5
+	title = orb.5.t
+	desc = orb.5.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.5.a
+		custom_effect_tooltip = FSCCrashLoc
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = ORB
+					is_owned_by = FSC
+				}
+				ORB = {transfer_state = PREV}
+			}
+			every_state = {
+				limit = {
+					is_core_of = NER
+					is_owned_by = FSC
+				}
+				NER = {transfer_state = PREV}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ANR
+					is_owned_by = FSC
+				}
+				ANR = {transfer_state = PREV}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KUL
+					is_owned_by = FSC
+				}
+				KUL = {transfer_state = PREV}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = orb.34
+	title = orb.34.t
+	desc = orb.34.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.34.a
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_timed_idea = {idea = ORB_FascismDrift days = 70}
+		add_stability = 0.2
+	}
+}
+
+country_event = {
+	id = orb.35
+	title = orb.35.t
+	desc = orb.35.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.35.a
+	}
+}
+
+country_event = {
+	id = orb.36
+	title = orb.36.t
+	dec = orb.36.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.36.a
+	}
+}
+
+country_event = {
+	id = orb.37
+	title = orb.37.t
+	dec = orb.37.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.37.a
+	}
+}
+
+country_event = {
+	id = orb.38
+	title = orb.38.t
+	dec = orb.38.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.38.a
+	}
+}
+
+
+country_event = {
+	id = orb.41
+	title = orb.41.t
+	desc = orb.41.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.41.a
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = naval_equipment
+		}
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 3
+			category = naval_doctrine
+		}
+		load_oob = ORB_NavalBoost
+	}
+}
+
+country_event = {
+	id = orb.42
+	title = orb.42.t
+	desc = orb.42.d
+
+	fire_only_once = yes
+	trigger = {
+		country_exists = UCB
+		ORB = {
+			has_war = no
+		}
+		not = {country_exists = FSC}
+	}
+
+	mean_time_to_happen = {days = 30}
+
+	option = {
+		name = orb.42.a
+
+		UCB = {annex_country = {target = ORB transfer_troops = yes}}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = 42.b
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=547
+	name="STATE_547"
+	manpower = 5460000
+	
+	state_category = large_city
+
+        history={
+		owner = MOA
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 3
+                        dockyard = 1
+			2493 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2493 20
+		}
+
+	}
+	provinces={
+		1790 1809 1853 1887 1892 1957 1967 1989 2030 
+	}
+}

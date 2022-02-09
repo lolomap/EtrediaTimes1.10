@@ -1,0 +1,123 @@
+﻿capital = 632
+
+OOB = "ECE_2014"
+
+set_research_slots = 1
+set_stability = 0.7
+set_war_support = 0.9
+
+add_ideas = {
+        WWW_bad_country
+        total_nonfree_press
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 2
+        fascism = 11
+        communism = 0
+	neutrality = 87
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Qadim Benlabed"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_anatoly.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sud Nitpattanasai"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Disorn Tangwongsan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_ece_mop.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kaliq Salem"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Nawanthorn Shinawatra"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Geric_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Supoj Traivut"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Asnee Sintawichai"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 1
+}

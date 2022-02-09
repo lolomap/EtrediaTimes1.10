@@ -1,0 +1,27 @@
+
+state={
+	id=608
+	name="STATE_608"
+	manpower = 180000
+	
+	state_category = pastoral
+	
+	resources={
+        oil = 2 # was: 25
+	}
+
+	history={
+		owner = KVU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KVU
+		victory_points = {
+			13647 1
+		}
+
+	}
+	provinces={
+		10818 11164 11176 11263 11427 11448 11478 11612 11741 11842 12060 12087 12396 12702 12969 13273 
+	}
+}

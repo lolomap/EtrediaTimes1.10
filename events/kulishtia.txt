@@ -1,0 +1,25 @@
+add_namespace = kul
+
+country_event = {
+	id = kul.1
+	title = kul.1.t
+	desc = kul.1.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = KUL
+        FSC = { is_puppet_of = KLU }
+    }
+    	
+	option = {
+    name = kul.1.a
+	    KUL = {
+	        annex_country = {
+            target = FSC
+            transfer_troops = no
+            }
+	    }
+	}
+}

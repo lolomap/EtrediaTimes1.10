@@ -1,0 +1,29 @@
+
+state={
+	id=702
+	name="STATE_702"
+	manpower = 1670000
+	
+	state_category = rural
+	
+	resources={
+             oil = 6 # was: 8
+	}
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        dockyard = 1
+		}
+		add_core_of = BAR
+		victory_points = {
+			627 1
+		}
+
+	}
+	provinces={
+		654 675 701 705 722 725 726 729 741 757 763 767 769 781 788 
+	}
+}

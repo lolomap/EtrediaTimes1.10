@@ -1,0 +1,196 @@
+add_namespace = pin
+
+country_event = {
+	id = pin.1
+	title = pin.1.t
+	desc = pin.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = PIN
+    }
+
+	option = {
+		name = pin.1.a
+            UCB = {
+            add_to_faction = PIN
+            }
+    ai_chance = { factor = 10 }
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.11 } }
+	        EIK = {
+	            add_opinion_modifier = {
+                target = PIN
+                modifier = EIK_pinka_etredia_deal
+                }
+	        }
+	        PIN = {
+	            add_opinion_modifier = {
+                target = EIK
+                modifier = EIK_pinka_etredia_deal
+                }
+	        }
+		}
+    }
+	option = {
+		name = pin.1.b
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.11 } }
+	        EIK = {
+	            add_opinion_modifier = {
+                target = PIN
+                modifier = EIK_pinka_etredia_deal
+                }
+	        }
+	        PIN = {
+	            add_opinion_modifier = {
+                target = EIK
+                modifier = EIK_pinka_etredia_deal
+                }
+	        }
+	PIN = {
+	add_ai_strategy = {
+	type = alliance
+	id = "EIK"
+	value = -1000
+	}
+	}
+		}
+    ai_chance = { factor = 70 }
+    }
+	option = {
+		name = pin.1.c
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.12 } }
+		}
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.11 } }
+	        EIK = {
+	            add_opinion_modifier = {
+                target = PIN
+                modifier = EIK_pinka_etredia_deal
+                }
+	        }
+		}
+    ai_chance = { factor = 20 }
+    }
+	option = {
+		name = pin.1.f
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.13 } }
+		}
+    ai_chance = { factor = 0 
+		modifier = {
+		    PIN = {
+            is_in_faction_with = YAN
+			}
+			OR = {
+			PIN = {
+            is_in_faction_with = EIK
+			}
+			}
+	    factor = 1000
+        }
+	}
+    }
+}
+
+country_event = {
+	id = pin.2
+	title = pin.2.t
+	desc = pin.2.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = PIN
+    }
+
+	option = {
+	name = pin.2.a
+    PIN = {
+	transfer_state = 136
+	add_state_core = 136
+	}
+            UCB = {
+            add_to_faction = PIN
+            }
+	add_opinion_modifier = { target = UCB modifier = pin_ucb_deal }
+    }
+}
+
+country_event = {
+	id = pin.3
+	title = pin.3.t
+	desc = pin.3.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = PIN
+    }
+
+	option = {
+	name = pin.3.a
+	add_opinion_modifier = { target = UCB modifier = pin_ucb_notdeal }
+    }
+}
+
+country_event = {
+	id = pin.4
+	title = pin.4.t
+	desc = pin.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = PIN
+    }
+
+	option = {
+	name = pin.4.a
+    PIN = {
+	transfer_state = 136
+	add_state_core = 136
+	transfer_state = 151
+	add_state_core = 151
+	}
+            UCB = {
+            add_to_faction = PIN
+            }
+    add_opinion_modifier = { target = UCB modifier = pin_ucb_deal }
+    }
+}
+
+country_event = {
+	id = pin.5
+	title = pin.5.t
+	desc = pin.5.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = PIN
+    }
+
+	option = {
+	name = pin.5.a
+        YAN = {
+            add_to_faction = PIN
+        }
+	news_event = { id = newss.16 hours = 5 }
+	ai_chance = { factor = 75 }
+    }
+	
+	option = {
+	name = pin.5.b
+	YAN = { country_event = { id = yan.18 days = 1 } }
+    ai_chance = { factor = 25 }
+    }
+}

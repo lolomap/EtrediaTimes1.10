@@ -1,0 +1,29 @@
+
+state={
+	id=171
+	name="STATE_171"
+	manpower = 4400000
+	
+	state_category = city
+	
+	resources={
+		
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = SFl
+		victory_points = {
+			6286 20
+		}
+
+	}
+	provinces={
+		4615 4714 4734 4773 4853 4903 4962 5044 5112 5206 5245 5280 5348 5382 5408 5427 5502 5524 5544 5545 5588 5602 5619 5620 5664 5685 5686 5717 5718 5768 5789 5829 5848 5925 
+	}
+}

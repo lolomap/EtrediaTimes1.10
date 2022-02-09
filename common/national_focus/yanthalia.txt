@@ -1,0 +1,1856 @@
+focus_tree = {
+	id = yanthalia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YAN
+		}
+	}
+	default = no
+	focus = {
+		id = YAN_flot1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+			    is_coastal = yes
+				free_building_slots = {
+				building = dockyard
+				size > 0
+				include_locked = yes
+				}
+					OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+					    }
+					}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+			}
+		}
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = YAN_plan
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10
+		x = 23
+		y = 0
+		ai_will_do = {
+			factor = 1
+	    }
+		completion_reward = {
+		country_event = { id = yan.9 days = 1 }
+		}
+
+	}
+	focus = {
+		id = YAN_flot2
+		icon = GFX_goal_continuous_naval_production
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot1
+		}
+		completion_reward = {
+		navy_experience = 25
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = YAN_flot3.1
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot2
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = YAN_flot4.1
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot3.1
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = YAN_flot5.1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot4.1
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = YAN_flot3.2
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot2
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = YAN_flot4.2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot3.2
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = YAN_flot5.2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot4.2
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = YAN_flot6
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = YAN_flot5.2
+			focus = YAN_flot5.1
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = YAN_militaryplan
+		icon = GFX_focus_generic_license_production
+		cost = 1
+		prerequisite = {
+			focus = YAN_plan
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+		x = 16
+		y = 2
+		ai_will_do = {
+			factor = 3
+	    }
+
+	}
+	focus = {
+		id = YAN_armiya
+		icon = GFX_focus_generic_combined_arms
+		cost = 10
+		prerequisite = {
+			focus = YAN_militaryplan
+		}
+		completion_reward = {
+		    remove_ideas = {
+            YAN_demobilisation
+            }
+			add_research_slot = 1
+			news_event = { hours = 6 id = newss.14 }
+		}
+		ai_will_do = {
+			factor = 2
+	    }
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = YAN_training1
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		prerequisite = {
+			focus = YAN_armiya
+		}
+		completion_reward = {
+		army_experience = 15
+		}
+		x = 14
+		y = 4
+		ai_will_do = {
+			factor = 1
+	    }
+
+	}
+	focus = {
+		id = YAN_contract
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_armiya
+		}
+		completion_reward = {
+		swap_ideas = {
+        remove_idea = disarmed_nation
+        add_idea = volunteer_only
+        }
+		}
+		ai_will_do = {
+			factor = 1
+	    }
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = YAN_militarize
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = YAN_contract
+		}
+		completion_reward = {
+			YAN = { country_event = { id = yan.10 days = 1 } }
+		}
+		x = 16
+		y = 5
+		ai_will_do = {
+			factor = 1
+	    }
+	}
+	focus = {
+		id = YAN_arms1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_militarize
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = YAN_production1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_arms1
+		}
+		completion_reward = {
+		YAN = { add_timed_idea { idea = YAN_poor_production days = 360 } }
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = YAN_newgenerals
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_production1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = YAN_doctrine1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_newgenerals
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = YAN_pehotka
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_doctrine1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = YAN_electronika
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_pehotka
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = YAN_production2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_electronika
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = YAN_training2
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		prerequisite = {
+			focus = YAN_armiya
+		}
+		completion_reward = {
+		army_experience = 15
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = YAN_slot1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_pehotka
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = YAN_economicplan
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 1
+		prerequisite = {
+			focus = YAN_plan
+		}
+		x = 23
+		y = 2
+		ai_will_do = {
+			factor = 1
+	    }
+		completion_reward = {
+		YAN = { country_event = { id = yan.11 days = 1 } }
+		}
+
+	}
+	focus = {
+		id = YAN_Onodar_reform
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = YAN_economicplan
+		}
+		x = 23
+		y = 3
+		ai_will_do = {
+			factor = 1
+	    }
+
+	}
+	focus = {
+		id = YAN_metall1
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = YAN_Onodar_reform
+		}
+		completion_reward = {
+		add_resource = {
+        type = steel
+        amount = 14
+        state = 290
+        }
+		}
+		x = 23
+		y = 4
+		ai_will_do = {
+			factor = 2
+	    }
+
+	}
+	focus = {
+		id = YAN_infrastructure1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = YAN_metall1
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = YAN_metall2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_infrastructure1
+		}
+		completion_reward = {
+		add_resource = {
+        type = steel
+        amount = 4
+        state = 291
+        }
+		add_resource = {
+        type = steel
+        amount = 12
+        state = 289
+        }
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = YAN_factory1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = YAN_metall1
+		}
+		completion_reward = {
+			296 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+			293 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+			304 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+	    }
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = YAN_nalogi
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_factory1
+		}
+		completion_reward = {
+		country_event = { id = yan.12 days = 1 }
+		}
+		ai_will_do = {
+			factor = 1
+	    }
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = YAN_fresh_economic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_nalogi
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = YAN_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = YAN_fresh_economic
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = YAN_invest_to_west
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_metall1
+		}
+		ai_will_do = {
+			factor = 1
+	    }
+		completion_reward = {
+			290 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+			289 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = YAN_factory2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = YAN_invest_to_west
+		}
+		completion_reward = {
+			295 = {
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = YAN_ZAM_oil
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_factory2
+		}
+		completion_reward = {
+		ZAM = {
+            add_resource = {
+            type = oil
+            amount = 25
+            state = 274
+            }
+		}
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = YAN_IRI_metall
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_ZAM_oil
+		}
+		completion_reward = {
+		IRI = {
+            add_resource = {
+            type = steel
+            amount = 16
+            state = 364
+            }
+		}
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = YAN_politicplan
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 1
+		prerequisite = {
+			focus = YAN_plan
+		}
+		x = 33
+		y = 2
+		ai_will_do = {
+			factor = 1
+	    }
+
+	}
+	focus = {
+		id = YAN_Garbac_plan
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = YAN_politicplan
+		}
+		mutually_exclusive = {
+			focus = YAN_Karcih_plan
+		}
+		ai_will_do = {
+			factor = 3
+	        modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = YAN_democratize
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Garbac_plan
+		}
+		completion_reward = {
+		add_popularity = { ideology = neutrality popularity = 0.4	}
+		add_stability = -0.05
+		add_political_power = -100
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = YAN_basic_freedom
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_democratize
+		}
+		completion_reward = {
+		add_popularity = { ideology = neutrality popularity = 0.2	}
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = YAN_New_country_name
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = YAN_basic_freedom
+		}
+		completion_reward = {
+        set_politics = {
+	        ruling_party = neutrality
+        }
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = YAN_IRI_dem
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_New_country_name
+		}
+		completion_reward = {
+		IRI = {
+		add_popularity = { ideology = neutrality popularity = 1	}
+        set_politics = {
+	        ruling_party = neutrality
+        }
+		}
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = YAN_ZAM_dem
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_New_country_name
+		}
+		completion_reward = {
+		ZAM = {
+		add_popularity = { ideology = neutrality popularity = 1	}
+        set_politics = {
+	        ruling_party = neutrality
+        }
+		}
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = YAN_aliance
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = YAN_New_country_name
+		}
+		completion_reward = {
+		create_faction = YAN_democratic_faction
+		}
+		x = 31
+		y = 7
+
+	}
+	focus = {
+		id = YAN_agent_TRB
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_IRI_dem
+		}
+		prerequisite = {
+			focus = YAN_ZAM_dem
+		}
+		prerequisite = {
+			focus = YAN_aliance
+		}
+		completion_reward = {
+		TRB = {
+		add_ideas = YAN_spy
+		}
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = YAN_BPR
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_agent_TRB
+		}
+		completion_reward = {
+		TRB = { country_event = { id = terbia.2 days = 1 } }
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = YAN_RTT_bunt
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = YAN_agent_TRB
+		}
+		completion_reward = {
+		TRB = { country_event = { id = terbia.4 days = 1 } }
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = YAN_RTT_guarant
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = YAN_RTT_bunt
+		}
+		completion_reward = {
+		give_guarantee = RTT
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = YAN_choramta
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_RTT_bunt
+		}
+		completion_reward = {
+        CHO = { country_event = { id = cho.1 days = 1 } }
+		}
+		x = 32
+		y = 10
+
+	}
+	focus = {
+		id = YAN_Tob
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_choramta
+		}
+		completion_reward = {
+        TOB = { country_event = { id = tob.1 days = 1 } }
+		TOB = { add_opinion_modifier = { target = ROOT modifier = cho_yan_commonwealth } }
+		}
+		x = 32
+		y = 11
+
+	}
+	focus = {
+		id = YAN_economic_forum
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Tob
+		}
+		x = 32
+		y = 12
+
+	}
+	focus = {
+		id = YAN_oceanic_aliance
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_economic_forum
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
+		id = YAN_Karcih_plan
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = YAN_politicplan
+		}
+		mutually_exclusive = {
+			focus = YAN_Garbac_plan
+		}
+		completion_reward = { 
+		YAN = { country_event = { id = yan.16 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 7
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = YAN_Empire_ambitions
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = YAN_Karcih_plan
+		}
+		completion_reward = {
+		YAN = { add_ideas = YAN_ambitions }
+		}
+		ai_will_do = {
+			factor = 5
+	    }
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = YAN_borba
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Empire_ambitions
+		}
+		ai_will_do = {
+			factor = 3
+	    }
+		completion_reward = {
+		add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = YAN_ocean_countries
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Karcih_plan
+		}
+		ai_will_do = {
+			factor = 5
+	    }
+		completion_reward = {
+		SMA = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+		DID = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+		DON = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = YAN_prepare_for_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_ocean_countries
+		}
+		ai_will_do = {
+			factor = 7
+	    }
+		completion_reward = {
+		YAN = { add_timed_idea { idea = YAN_prepare_for_war days = 230 } }
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = YAN_operation_tischatka
+		icon = GFX_goal_unknown
+		cost = 10
+		will_lead_to_war_with = SMA
+		prerequisite = {
+			focus = YAN_prepare_for_war
+		}
+		ai_will_do = {
+			factor = 10
+	    }
+		completion_reward = {
+			YAN = { country_event { id = yan.5 days = 1 } }
+			add_state_claim = 362
+			hidden_effect = {news_event = {id = newss.18 days = 1}}
+		}
+		x = 39
+		y = 6
+
+	}
+	focus = {
+		id = YAN_operation_krastcen
+		icon = GFX_goal_unknown
+		cost = 10
+		will_lead_to_war_with = DID
+		prerequisite = {
+			focus = YAN_prepare_for_war
+		}
+		ai_will_do = {
+			factor = 10
+	    }
+		completion_reward = {
+		YAN = { country_event { id = yan.6 days = 1 } }
+		add_state_claim = 375
+		add_state_claim = 377
+		add_state_claim = 378
+		add_state_claim = 379
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = YAN_operation_banan
+		icon = GFX_goal_unknown
+		cost = 10
+		will_lead_to_war_with = DON
+		available = {
+		    375 = { is_controlled_by = YAN }
+			377 = { is_controlled_by = YAN }
+			378 = { is_controlled_by = YAN }
+			379 = { is_controlled_by = YAN }
+		}
+		prerequisite = {
+			focus = YAN_operation_tischatka
+		}
+		prerequisite = {
+			focus = YAN_operation_krastcen
+		}
+		ai_will_do = {
+			factor = 10
+	    }
+		completion_reward = {
+		YAN = { country_event { id = yan.7 days = 1 } }
+		add_state_claim = 373
+		add_state_claim = 374
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = YAN_gegemonia
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = YAN_operation_banan
+		}
+		available = {
+                362 = { is_controlled_by = YAN }
+		}
+		ai_will_do = {
+			factor = 10
+	    }
+		completion_reward = {
+		add_ideas = { YAN_islands }
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = YAN_prepare_for_war2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_gegemonia
+		}
+		completion_reward = {
+		YAN = { country_event = { id = yan.17 days = 1 } }
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = YAN_TRB_war
+		icon = GFX_goal_unknown
+		cost = 1
+		will_lead_to_war_with = TRB
+		prerequisite = {
+			focus = YAN_prepare_for_war2
+		}
+		completion_reward = {
+		YAN = { country_event { id = yan.8 days = 1 } }
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = YAN_IRI_factory
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_TRB_war
+		}
+		x = 41
+		y = 11
+
+	}
+	focus = {
+		id = YAN_annex_ZAM
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_IRI_factory
+		}
+		x = 41
+		y = 12
+
+	}
+	focus = {
+		id = YAN_annex_IRI
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_annex_ZAM
+		}
+		x = 41
+		y = 13
+
+	}
+	focus = {
+		id = YAN_SWEA
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Karcih_plan
+		}
+		available = { 
+			NOT = {
+				is_in_faction_with = EIK
+			}
+		}
+		completion_reward = {
+			create_faction = YAN_swea_faction
+			hidden_effect = {
+				news_event = { hours = 6 id = newss.13 }
+			}
+			set_country_flag = yan_swea
+		}
+		ai_will_do = {
+			factor = 0.5
+	        modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = YAN_pinka
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_SWEA
+		}
+		available = { 
+			NOT = {
+				is_in_faction_with = EIK
+			}
+			PIN = {
+				NOT = {
+				    is_in_faction_with = UCB
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+		PIN = { country_event = { id = pin.5 days = 1 } }
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = YAN_LIP_fascism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_pinka
+		}
+		available = { 
+			NOT = {
+				LIP = { has_government = fascism }
+			}
+		}
+		cancel_if_invalid = yes
+		completion_reward = {
+		YAN = { country_event = { id = yan.19 days = 1 } }
+		set_global_flag = lip_yan_infuence
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = YAN_SBU_separatism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_LIP_fascism
+		}
+		completion_reward = {
+		YAN = { country_event = { id = yan.20 days = 1 } }
+		}
+		x = 47
+		y = 7
+
+	}
+	focus = {
+		id = YAN_SBU_bunt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_SBU_separatism
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.30 days = 1 } }
+		}
+		x = 47
+		y = 8
+
+	}
+	focus = {
+		id = YAN_SFL_bunt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_SBU_bunt
+		}
+		x = 47
+		y = 9
+
+	}
+	focus = {
+		id = YAN_IID
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_SFL_bunt
+		}
+		x = 47
+		y = 10
+
+	}
+	focus = {
+		id = YAN_tanks
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_pehotka
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = YAN_diria_bunker
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_contract
+		}
+		completion_reward = {
+			291 = {
+			    add_building_construction = { 
+			        type = bunker 
+					level = 3 
+			        instant_build = yes 
+			        province = 9129 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 3 
+			        instant_build = yes 
+			        province = 9451 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 1 
+			        instant_build = yes 
+			        province = 9701 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 4 
+			        instant_build = yes 
+			        province = 10092 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 3 
+			        instant_build = yes 
+			        province = 10248 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 3
+			        instant_build = yes 
+			        province = 10419 
+				}
+			}
+			274 = {
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 10602 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 10724 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 11074 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 11198 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 11318 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 11437 
+				}
+				add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 11199 
+				}
+			}
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = YAN_seaside_bunker
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_diria_bunker
+		}
+		completion_reward = {
+			289 = {
+			    add_building_construction = { 
+			        type = coastal_bunker 
+					level = 2 
+			        instant_build = yes 
+			        province = 4983 
+				}
+			}
+			297 = {
+			    add_building_construction = { 
+			        type = coastal_bunker 
+					level = 4 
+			        instant_build = yes 
+			        province = 4916 
+				}
+			}
+			298 = {
+			    add_building_construction = { 
+			        type = coastal_bunker 
+					level = 4 
+			        instant_build = yes 
+			        province = 5355 
+				}
+			}
+			295 = {
+			    add_building_construction = { 
+			        type = coastal_bunker 
+					level = 6
+			        instant_build = yes 
+			        province = 6904 
+				}
+				add_building_construction = { 
+			        type = coastal_bunker 
+					level = 2
+			        instant_build = yes 
+			        province = 7329 
+				}
+				add_building_construction = { 
+			        type = coastal_bunker 
+					level = 2
+			        instant_build = yes 
+			        province = 7000 
+				}
+				add_building_construction = { 
+			        type = coastal_bunker 
+					level = 2
+			        instant_build = yes 
+			        province = 6778 
+				}
+			}
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = YAN_protect_sky
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_seaside_bunker
+		}
+		completion_reward = {
+			295 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 4
+					instant_build = yes
+				}
+			}
+			290 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 3
+					instant_build = yes
+				}
+			}
+			289 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 3
+					instant_build = yes
+				}
+			}
+			302 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 3
+					instant_build = yes
+				}
+			}
+			301 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 2
+					instant_build = yes
+				}
+			}
+			355 = {
+				add_building_construction = { 
+					type = anti_air_building 
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = YAN_istreb
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_protect_sky
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = YAN_bombar
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_protect_sky
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = heavy_air
+			}
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = YAN_seaside_bunker2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_seaside_bunker
+		}
+		completion_reward = {
+			290 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			297 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			302 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			295 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			289 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			296 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = YAN_Drerora_oil
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_infrastructure1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 356
+			}
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = YAN_aluminium
+		icon = GFX_focus_generic_aluminum
+		cost = 10
+		prerequisite = {
+			focus = YAN_metall2
+		}
+		prerequisite = {
+			focus = YAN_Drerora_oil
+		}
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 15
+				state = 351
+			}
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = YAN_planes_production2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_aluminium
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = YAN_BPR_aliance
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = YAN_BPR
+		}
+		completion_reward = {
+        BPR = { country_event = { id = yan.3 days = 1 } }
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = YAN_annex_BPR
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_BPR_aliance
+		}
+		completion_reward = {
+        BPR = { country_event = { id = yan.4 days = 1 } }
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = YAN_VROIN
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_choramta
+		}
+		completion_reward = {
+		VRO = { country_event = { id = vro.1 days = 1 } }
+		}
+		x = 34
+		y = 11
+
+	}
+	focus = {
+		id = YAN_VROIN_training
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_VROIN
+		}
+		completion_reward = {
+		army_experience = 30
+		VRO = { army_experience = 30 }
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = YAN_GOV_press
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_borba
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = free_press
+				add_idea = nonfree_press
+			}
+			add_popularity = {ideology = fascism popularity = 0.15}
+			add_stability = 0.05
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = YAN_anti_democrat
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_GOV_press
+		}
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = -0.2}
+			add_stability = 0.05
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = YAN_parlament_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_GOV_press
+		}
+		completion_reward = {
+			country_event = {id = yan.21 days = 1}
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = YAN_fascism_100
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_parlament_reform
+		}
+		completion_reward = {
+			add_ideas = YAN_fascism_idea
+			add_political_power = 150
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = YAN_Kert
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_SBU_bunt
+		}
+		x = 49
+		y = 9
+
+	}
+	focus = {
+		id = YAN_VRO_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_Kert
+		}
+		x = 49
+		y = 10
+
+	}
+}

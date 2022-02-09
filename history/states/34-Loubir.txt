@@ -1,0 +1,28 @@
+state={
+	id=34
+	name="STATE_34"
+	manpower = 35000
+	
+	state_category = pastoral
+	
+	resources={
+		steel = 2 # was: 2
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = UCB
+		add_core_of = KUR
+		add_core_of = NRA
+		victory_points = {
+			8379 1
+		}
+
+	}
+	provinces={
+		7261 7262 7381 
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=305
+	name="STATE_305"
+	resources={
+		tungsten=10.000
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			10637 5 
+		}
+
+	}
+	provinces={
+		8687 8751 8770 8885 8939 8975 9063 9081 9145 9182 9298 9299 9320 9476 9587 9662 
+	}
+	manpower=721000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

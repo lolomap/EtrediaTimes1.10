@@ -1,0 +1,27 @@
+
+state={
+	id=611
+	name="STATE_611"
+	manpower = 900000
+	
+	state_category = rural
+	
+	resources={
+        chromium = 8 # was: 8
+	}
+
+	history={
+		owner = TUB
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUB
+		victory_points = {
+			10308 1
+		}
+
+	}
+	provinces={
+		8250 8476 8641 8700 8830 8891 8920 9188 9221 9244 9380 9608 9637 9671 9804 9921 9922 9932 10203 
+	}
+}

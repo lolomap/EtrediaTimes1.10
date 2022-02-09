@@ -1,0 +1,60 @@
+add_namespace = lip
+
+country_event = {
+	id = lip.1
+	title = lip.1.t
+	desc = lip.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = LIP
+		has_global_flag = lip_yan_infuence
+		fascism > 0.35
+    }
+	
+	option = {
+	name = lip.1.a
+        set_politics = {
+	        ruling_party = fascism
+        }
+	ai_chance = { factor = 90 }
+	}
+	
+	option = {
+	name = lip.1.b
+    hidden_effect = {
+    start_civil_war = {
+        ideology = fascism
+	    ruling_party = democratic
+        capital = 510
+        states = { 511 508 359 }
+        size = 0.7
+    }
+	}
+	ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+	id = lip.2
+	title = lip.2.t
+	desc = lip.2.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lip.2.a
+			SBU = { country_event = { id = sbu.50 days = 1 } }
+            UCB = {
+            add_to_faction = LIP
+            }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = lip.2.b
+		ai_chance = { factor = 0 }
+	}
+}

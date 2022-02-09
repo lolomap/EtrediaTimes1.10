@@ -1,0 +1,30 @@
+
+state={
+	id=630
+	name="STATE_630"
+	manpower = 8800000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+			11746 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SOL
+		victory_points = {
+			11746 10
+		}
+
+	}
+	provinces={
+		9902 10113 10176 10587 10808 10918 
+	}
+}

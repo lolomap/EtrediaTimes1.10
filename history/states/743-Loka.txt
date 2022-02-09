@@ -1,0 +1,27 @@
+state={
+	id=743
+	name="STATE_743"
+	manpower = 2960000
+	state_category = town
+	
+	resources={
+		oil = 26 # was: 30
+	}
+
+	history={
+		owner = LOK
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = LOK
+		victory_points = {
+			2542 5
+		}
+
+	}
+	provinces={
+		1840 1934 1968 2035 2106 
+	}
+}

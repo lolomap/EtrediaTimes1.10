@@ -1,0 +1,28 @@
+
+state={
+	id=496
+	name="STATE_496"
+	manpower = 1560000
+
+	resources={
+		steel = 2 # was: 2
+	}
+	
+	state_category = rural
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 2
+		}
+		add_core_of = CHE
+		victory_points = {
+			9030 1
+		}
+
+	}
+	provinces={
+		7079 7305 7440 7584 7585 7622 7643 7805 7806 7876 7877 7892 7928 7948 8099 8129 8165 8181 8182 8224 8340 8359 
+	}
+}

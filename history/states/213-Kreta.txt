@@ -1,0 +1,27 @@
+state={
+	id=213
+	name="STATE_213"
+	manpower = 647000
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = SBU
+		add_core_of = ELN
+		victory_points = {
+			7468 1
+		}
+
+	}
+	provinces={
+		6311 6346 6374 6503 6585 
+	}
+}

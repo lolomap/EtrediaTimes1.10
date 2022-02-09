@@ -1,0 +1,31 @@
+
+state={
+	id=632
+	name="STATE_632"
+	manpower = 12000000
+	
+	state_category = town
+	
+	resources={
+		steel = 6 # was: 6
+                oil = 12 # was: 12
+                aluminium = 5 # was: 5
+	}
+
+	history={
+		owner = ECE
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 2
+		}
+		add_core_of = ECE
+		victory_points = {
+			8659 10
+		}
+
+	}
+	provinces={
+		7117 7178 7307 7394 7412 7413 7499 7589 7627 7861 7893 7894 8006 8284 8299 8342 8419 
+	}
+}

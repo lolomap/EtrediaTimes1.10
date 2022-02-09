@@ -1,0 +1,27 @@
+state={
+	id=706
+	name="STATE_706"
+	manpower = 230000
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = KTL
+		buildings = {
+			infrastructure = 2
+			1266 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KTL
+		victory_points = {
+			1266 1
+		}
+
+	}
+	provinces={
+		896 903 
+	}
+}

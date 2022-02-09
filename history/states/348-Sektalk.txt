@@ -1,0 +1,31 @@
+
+state={
+	id=348
+	name="STATE_348"
+	manpower = 2340000
+	
+	state_category = rural
+	
+	resources={
+		steel = 6 # was: 6
+                chromium = 44 # was: 60
+                aluminium = 10 # was: 12
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = EIK
+		victory_points = {
+			12305 1
+		}
+
+	}
+	provinces={
+		13420 13444 13455 13480 13617 13654 13734 13771 13803 13825 13880 13892 13968 13975 14003 14004 14058 14063 14072 14093 14149 14158 14165 14179 14237 14257 14268 14308 
+	}
+}

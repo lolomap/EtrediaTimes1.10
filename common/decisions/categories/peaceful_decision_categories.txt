@@ -1,0 +1,20 @@
+peaceful_democratic = {
+	icon = generic_democracy
+	
+	visible = {
+		has_government = democratic
+		has_added_tension_amount < 2
+		threat > 2
+		OR = {
+			is_ai = no
+			is_historical_focus_on = no
+		}
+	}
+}
+
+defend_peaceful_influence = {
+	icon = generic_crisis
+	visible = {
+		always = yes
+	}
+}

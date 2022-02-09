@@ -1,0 +1,25 @@
+
+state={
+	id=677
+	name="STATE_677"
+	manpower = 932000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = BRZ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BRZ
+		victory_points = {
+			1005 1
+		}
+
+	}
+	provinces={
+		673 694 697 706 716 728 730 731 740 772 
+	}
+}

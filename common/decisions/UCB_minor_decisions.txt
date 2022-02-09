@@ -1,0 +1,123 @@
+ucbminors_decisions = {
+
+    minors_army_training = {
+	
+	    icon = generic_nationalism
+		
+		fire_only_once = no
+		
+		available = {
+			has_manpower < 100000
+		}
+
+	    visible = {
+	    always = yes
+	    }
+
+        days_remove = 120
+
+		cost = 80
+		
+		complete_effect = {
+			add_manpower = 5000
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		    modifier = {
+	            factor = 10
+		        has_manpower < 50000
+		    }
+		}
+	}
+}
+
+IND_decisions = {
+
+    IND_army_training = {
+	
+	    icon = generic_nationalism
+		
+		fire_only_once = no
+		
+		activation = {			
+		10 = { NOT = { is_owned_and_controlled_by = IND } }
+		7 = { NOT = { is_owned_and_controlled_by = IND } }
+		}
+		
+		available = {
+		10 = { NOT = { is_owned_and_controlled_by = IND } }
+		7 = { NOT = { is_owned_and_controlled_by = IND } }
+		9 = { is_owned_and_controlled_by = IND }
+		}
+		
+		allowed = {
+			tag = IND
+		}
+		
+		days_remove = 120
+
+		cost = 80
+		
+		visible = {
+		9 = { is_owned_and_controlled_by = IND }
+		}
+		
+		complete_effect = {
+		add_manpower = 5000
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		    modifier = {
+	            factor = 1
+		        has_manpower < 50000
+		    }
+		}
+	}
+}
+
+ARS_decisions = {
+
+    ARS_army_training = {
+	
+	    icon = generic_nationalism
+		
+		fire_only_once = no
+		
+		activation = {			
+		9 = { NOT = { is_owned_and_controlled_by = ARS } }
+		7 = { NOT = { is_owned_and_controlled_by = ARS } }
+		}
+		
+		available = {
+		9 = { NOT = { is_owned_and_controlled_by = ARS } }
+		7 = { NOT = { is_owned_and_controlled_by = ARS } }
+		10 = { is_owned_and_controlled_by = ARS }
+		}
+		
+		allowed = {
+			tag = ARS
+		}
+
+        days_remove = 120
+
+		cost = 80
+		
+		visible = {
+		10 = { is_owned_and_controlled_by = ARS }
+		}
+		
+		complete_effect = {
+		add_manpower = 5000
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		    modifier = {
+	            factor = 1
+		        has_manpower < 50000
+		    }
+		}
+	}
+}

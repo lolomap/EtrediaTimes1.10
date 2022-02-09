@@ -1,0 +1,1121 @@
+focus_tree = {
+	id = fscb
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FSC
+		}
+        }
+	default = no
+	continuous_focus_position = {x = 0 y = 30}
+	focus = {
+		id = FSC_Central_Karatenia
+		icon = GFX_goal_support_democracy
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		mutually_exclusive = {
+			focus = FSC_New_Power
+		}
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+		ai_will_do = {
+			factor = 0.6
+                modifier = {
+			    factor = 1
+			    is_historical_focus_on = yes
+		        }
+		}
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = FSC_New_Power
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		mutually_exclusive = {
+			focus = FSC_Central_Karatenia
+		}
+		completion_reward = {
+			FSC = {
+			add_popularity = { ideology = fascism popularity = 0.2 }
+			}
+	    }
+		ai_will_do = {
+			factor = 0.4
+		}
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = FSC_stavkanaAnrax
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 7
+		}
+		prerequisite = {
+			focus = FSC_Peoplesqusteion
+		}
+		mutually_exclusive = {
+			focus = FSC_StavkanaKulishtiu
+			focus = FSC_StavkanaNeriu
+		}
+		completion_reward = {
+		add_stability = 0.05
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = FSC_StavkanaNeriu
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = FSC_Peoplesqusteion
+		}
+		mutually_exclusive = {
+			focus = FSC_stavkanaAnrax
+			focus = FSC_StavkanaKulishtiu
+		}
+		completion_reward = {
+		add_stability = -0.05
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = FSC_democraticcountry
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10
+		prerequisite = {
+			focus = FSC_Central_Karatenia
+		}
+		completion_reward = {
+		    effect_tooltip = {
+			FSC = {
+			add_popularity = { ideology = democratic popularity = 0.1 }
+			}
+		}
+	    }
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = FSC_Peoplesqusteion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_democraticcountry
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = FSC_StavkanaKulishtiu
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = FSC_Peoplesqusteion
+		}
+		mutually_exclusive = {
+			focus = FSC_stavkanaAnrax
+			focus = FSC_StavkanaNeriu
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = FSC_Unification
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 7
+		}
+		prerequisite = {
+			focus = FSC_StavkanaKulishtiu
+			focus = FSC_stavkanaAnrax
+		}
+		mutually_exclusive = {
+			focus = FSC_Federalization
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = FSC_Federalization
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		prerequisite = {
+			focus = FSC_StavkanaKulishtiu
+			focus = FSC_StavkanaNeriu
+		}
+		mutually_exclusive = {
+			focus = FSC_Unification
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = FSC_politpreobrazovania
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_Federalization
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = FSC_vnutrenyapolit
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = FSC_politpreobrazovania
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = FSC_multicultureparlament
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_vnutrenyapolit
+		}
+		completion_reward = {
+		add_political_power = -50
+		add_stability = -0.05
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = FSC_rasshiritautonomy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_multicultureparlament
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = FSC_createconfederation
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_rasshiritautonomy
+		}
+		completion_reward = {
+		release = KUL
+		FSC = { set_autonomy = { target = KUL autonomy_state = autonomy_colony } }
+		release = NER
+		FSC = { set_autonomy = { target = NER autonomy_state = autonomy_colony } }
+		release = ORB
+		FSC = { set_autonomy = { target = ORB autonomy_state = autonomy_colony } }
+		}
+		x = 12
+		y = 10
+	}
+	focus = {
+		id = FSC_karatenianradicalism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_New_Power
+		}
+		completion_reward = {
+		add_timed_idea = { idea = fsc.radicalism days = 240 }
+		add_threat = 2
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = FSC_armypropoganda
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_karatenianradicalism
+		}
+		completion_reward = {
+		add_ideas = fsc.fascism.army1
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = FSC_newgovernment
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_armypropoganda
+		}
+		completion_reward = {
+        set_politics = { ruling_party = fascism elections_allowed = no }
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = FSC_armssector
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_newgovernment
+		}
+		completion_reward = {
+		add_timed_idea = { idea = fsc.armssector days = 240 }
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = FSC_arms2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_armssector
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = FSC_arms1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_armssector
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = FSC_civilsector
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_newgovernment
+		}
+		completion_reward = {
+		add_timed_idea = { idea = fsc.civilsector days = 240 }
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = FSC_newrailroads
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_civilsector
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = FSC_IIDinvestition
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_newrailroads
+		}
+		completion_reward = {
+		IID = { country_event = { id = dux.3 days = 1 } }
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = FSC_industrial1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_civilsector
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = FSC_militarizacianacii
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_armssector
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = FSC_industrial2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_civilsector
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = FSC_youngarmy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_militarizacianacii
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = FSC_researsch1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_youngarmy
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = FSC_politicalreforms
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_researsch1
+		}
+		prerequisite = {
+			focus = FSC_IIDinvestition
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = FSC_activeposition
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		prerequisite = {
+			focus = FSC_politicalreforms
+		}
+		mutually_exclusive = {
+			focus = FSC_pasiveposition
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = FSC_pasiveposition
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		prerequisite = {
+			focus = FSC_politicalreforms
+		}
+		mutually_exclusive = {
+			focus = FSC_activeposition
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = FSC_Irtazlinconferention
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = FSC_activeposition
+		}
+		completion_reward = {
+		country_event = { id = orbistan.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		    modifier = {
+			factor = 1000
+			date > 2017.8.1
+		}
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = FSC_preparetowar
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_Irtazlinconferention
+		}
+		completion_reward = {
+		add_threat = 5
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = FSC_Orbistanorwar
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = FSC_preparetowar
+		}
+		available = { 
+		date > 2017.6.20
+		}
+		ai_will_do = {
+			factor = 10
+		    modifier = {
+			factor = 1000
+			date > 2017.8.1
+		}
+		}
+		completion_reward = {
+		FSC = {
+		country_event = { id = fscb.1 } }
+		add_threat = 10
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = FSC_NewCaratenianState
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_Orbistanorwar
+		}
+		completion_reward = {
+			add_state_core = 7
+			add_state_core = 11
+			add_state_core = 20
+			add_state_core = 22
+			add_state_core = 23
+			add_state_core = 25
+			add_state_core = 26
+			add_state_core = 27
+			add_state_core = 31
+			add_state_core = 32
+			add_state_core = 33
+			add_state_core = 34
+			add_state_core = 425
+		}
+		x = 20
+		y = 13
+
+	}
+	focus = {
+		id = FSC_trpintegration
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_Irtazlinconferention
+		}
+		completion_reward = {
+		TRP = {
+		country_event = { id = trp.2 } }
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = FSC_stabilitygov
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_pasiveposition
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = FSC_economicreforms
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = FSC_Federalization
+			focus = FSC_Unification
+		}
+		completion_reward = {
+		FSC = {	
+		add_timed_idea = {
+			idea = fsc.economicreform
+			days = 240
+		}
+		}
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = FSC_industrialfsc1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = FSC_economicreforms
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+		x = 6
+		y = 6
+	}
+	focus = {
+		id = FSC_industrialfsc2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = FSC_industrialfsc1
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = FSC_armsfsc1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = FSC_economicreforms
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = FSC_armsfsc2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = FSC_armsfsc1
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+
+	}
+	focus = {
+		id = FSC_infrastructure1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = FSC_economicreforms
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = FSC_infrasctructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = FSC_infrastructure1
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = FSC_stonks
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		prerequisite = {
+			focus = FSC_industrialfsc2
+		}
+		prerequisite = {
+			focus = FSC_armsfsc2
+		}
+		prerequisite = {
+			focus = FSC_infrasctructure2
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = FSC_yacheika1
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = FSC_stonks
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = FSC_yacheika2
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = FSC_yacheika1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = FSC_vneshnyapolit
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = FSC_zaselenieanraxov
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = FSC_zaselenieanraxov
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_economicreforms
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = FSC_antirebelsmeri
+		icon = GFX_focus_secret_rearmament
+		cost = 10
+		prerequisite = {
+			focus = FSC_zaselenieanraxov
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = FSC_oslabitautonomy
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10
+		prerequisite = {
+			focus = FSC_antirebelsmeri
+		}
+		completion_reward = {
+		add_political_power = -100
+	    FSC = {
+		add_popularity = { ideology = democratic popularity = -0.1 }
+		}
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = FSC_OrbistanQuestion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_vneshnyapolit
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = FSC_raskachatucnb
+		icon = GFX_goal_unknown
+		cost = 20
+		prerequisite = {
+			focus = FSC_OrbistanQuestion
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		UCB = { country_event = { id = ucnb.2 } }
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = FSC_sponsorkolechianterrorist
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = FSC_raskachatucnb
+		}
+		completion_reward = {
+		UCB = { country_event = { id = ucnb.3 } }
+		add_threat = 1
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = FSC_declarerequirements
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = FSC_sponsorkolechianterrorist
+		}
+		completion_reward = {
+		country_event = { id = fscb.1 }
+		add_threat = 10
+		}
+		x = 7
+		y = 12
+
+	}
+	focus = {
+		id = FSC_edinayaarmy
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = FSC_oslabitautonomy
+		}
+		completion_reward = {
+		add_ideas = FSC_edinaya_army
+		}
+		x = 9
+		y = 10
+
+	}
+}

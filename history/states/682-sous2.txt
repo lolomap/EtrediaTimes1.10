@@ -1,0 +1,30 @@
+
+state={
+	id=682
+	name="STATE_682"
+	manpower = 2512000
+	
+	state_category = rural
+	
+	resources={
+             steel = 14 # was: 20
+             aluminium = 8 # was: 12
+	}
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+                        arms_factory = 1
+                        dockyard = 1
+		}
+		add_core_of = SOU
+		victory_points = {
+			166 1
+		}
+
+	}
+	provinces={
+		165 171 177 181 185 191 194 207 212 220 221 222 266 269 277 280 298 322 325 
+	}
+}

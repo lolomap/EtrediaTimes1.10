@@ -1,0 +1,24 @@
+state={
+	id=50
+	name="STATE_50"
+	manpower = 1100000
+	
+	state_category = town
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 6
+                        dockyard = 1
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			5242 5
+		}
+
+	}
+	provinces={
+		4170 4284 4300 4342 4412 4443 4506 4529 4557 4613 4627 
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=246
+	name="STATE_246"
+	manpower = 3300000
+	
+	state_category = town
+	
+	resources={
+                steel = 16 # was: 22
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = KAR
+		add_core_of = FSF
+		victory_points = {
+			10665 10
+		}
+
+	}
+	provinces={
+		8935 8972 8992 9023 9058 9059 9078 9144 9154 9165 9194 9195 9196 9197 9249 9296 9315 9329 9330 9351 9389 9390 9406 9460 
+	}
+}

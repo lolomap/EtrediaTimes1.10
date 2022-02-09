@@ -1,0 +1,29 @@
+
+state={
+	id=518
+	name="STATE_518"
+	manpower = 3980000
+	
+	state_category = city
+
+	history={
+		owner = GOD
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 2
+                        dockyard = 0
+			3253 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = GOD
+		victory_points = {
+			3253 20
+		}
+
+	}
+	provinces={
+		2593 2594 2607 2632 2644 2665 2666 2680 2693 2704 2705 2715 2723 2728 2730 2738 2755 2765 2780 2781 2803 2808 2820 2821 
+	}
+}

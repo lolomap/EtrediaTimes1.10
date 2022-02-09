@@ -1,0 +1,26 @@
+
+state={
+	id=249
+	name="STATE_249"
+	manpower = 3300000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = KAR
+		victory_points = {
+			11808 10
+		}
+
+	}
+	provinces={
+		9798 9824 9837 9927 9986 10003 10068 10085 10103 10185 10235 10250 10279 10296 10332 10418 10419 10432 10523 10550 10551 10602 10615 10692 10693 10788 
+	}
+}

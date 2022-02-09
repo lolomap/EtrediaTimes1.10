@@ -1,0 +1,23 @@
+
+state={
+	id=493
+	name="STATE_493"
+	manpower = 265000
+	
+	state_category = pastoral
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CHE
+		victory_points = {
+			10561 5
+		}
+
+	}
+	provinces={
+		4155 4261 4307 4522 4554 4637 4689 4811 4918 4919 4969 5065 5275 
+	}
+}

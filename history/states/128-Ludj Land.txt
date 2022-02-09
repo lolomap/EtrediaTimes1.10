@@ -1,0 +1,32 @@
+state={
+	id=128
+	name="STATE_128"
+	manpower = 1867000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			air_base = 6
+			14335 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = FIL
+		victory_points = {
+			11251 25
+		}
+
+	}
+	provinces={
+		12278 12279 12378 
+	}
+}

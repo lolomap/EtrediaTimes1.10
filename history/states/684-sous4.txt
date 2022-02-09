@@ -1,0 +1,24 @@
+
+state={
+	id=684
+	name="STATE_684"
+	manpower = 950000
+	
+	state_category = rural
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+                        dockyard = 1
+		}
+		add_core_of = SOU
+		victory_points = {
+			133 1
+		}
+
+	}
+	provinces={
+		147 153 156 157 160 167 172 175 
+	}
+}

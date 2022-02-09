@@ -1,0 +1,108 @@
+capital = 307
+
+oob = "SDI_2014"
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.4
+
+add_ideas = {
+        WWW_medium_country
+        unfree_press
+        free_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	tech_mountaineers = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	synth_oil_experiments = 1
+
+	early_fighter = 1
+	heavy_fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+}
+
+
+set_convoys = 0
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2010.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 20
+        fascism = 0
+        communism = 15
+	neutrality = 65
+}
+
+#
+create_country_leader = {
+	name = "Syndicate"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_sfl_democratic.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Syndicate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portarit_sdi_syndicat.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Syndicate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portarit_sdi_syndicat.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Syndicate"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portarit_sdi_syndicat.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Kart Noefa"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}

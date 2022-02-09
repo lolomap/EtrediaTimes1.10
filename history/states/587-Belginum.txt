@@ -1,0 +1,28 @@
+
+state={
+	id=587
+	name="STATE_587"
+	manpower = 6500000
+	
+	state_category = large_city
+	
+	resources={
+		oil = 34 # was: 52
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 4
+		}
+		add_core_of = ZHE
+		victory_points = {
+			4352 20
+		}
+
+	}
+	provinces={
+		3545 3604 3662 3687 3703 3709 3728 3742 3767 3771 3804 3826 
+	}
+}

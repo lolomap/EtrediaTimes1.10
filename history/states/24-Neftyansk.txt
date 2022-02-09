@@ -1,0 +1,30 @@
+state={
+	id=24
+	name="STATE_24"
+        manpower=660000
+
+	state_category = rural
+
+	resources={
+		oil=12.000
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+			nuclear_rocket_site = 1
+		}
+		add_core_of = UCB
+		add_core_of = KOL
+		victory_points = {
+			6550 1
+		}
+
+	}
+	provinces={
+		5677 5698 5802 5824 5890 
+	}
+}

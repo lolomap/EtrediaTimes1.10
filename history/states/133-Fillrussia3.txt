@@ -1,0 +1,30 @@
+state={
+	id=133
+	name="STATE_133"
+	manpower = 600000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+			air_base = 3
+			15039 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = FIL
+		victory_points = {
+			12737 15
+		}
+
+	}
+	provinces={
+		12737 12763 12774 12870 
+	}
+}

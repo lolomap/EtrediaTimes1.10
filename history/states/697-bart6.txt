@@ -1,0 +1,29 @@
+
+state={
+	id=697
+	name="STATE_697"
+	manpower = 1780000
+	
+	state_category = town
+	
+	resources={
+             oil = 4 # was: 4
+	}
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        dockyard = 1
+		}
+		add_core_of = BAR
+		victory_points = {
+			462 10
+		}
+
+	}
+	provinces={
+		575 576 589 602 611 613 618 635 641 648 650 659 
+	}
+}

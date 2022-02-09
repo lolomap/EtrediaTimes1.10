@@ -1,0 +1,29 @@
+
+state={
+	id=535
+	name="STATE_535"
+	manpower = 1670000
+	
+	state_category = town
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			981 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			981 5
+		}
+
+	}
+	provinces={
+		1091 1106 1112 1113 1116 1124 1135 1153 1176 1182 1193 1208 1277 
+	}
+}

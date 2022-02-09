@@ -1,0 +1,113 @@
+add_namespace = rttevent
+
+country_event = {
+	id = rttevent.1
+	title = rttevent.1.t
+	desc = rttevent.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = RTT
+        }
+	option = {
+		name = rttevent.1.a
+                hidden_effect = {
+                SFL = {
+                add_to_faction = RTT
+                }
+                }               
+		ai_chance = { factor = 50 }		
+        }
+        option = {
+                name = rttevent.1.b
+                hidden_effect = {
+                SFL = { add_opinion_modifier = { target = ROOT modifier = SFL_rtt_otkaz } }
+                }
+                ai_chance = { factor = 50 }
+        }
+
+}
+
+country_event = {
+	id = rttevent.2
+	title = rttevent.2.t
+	desc = rttevent.2.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = RTT
+        236 = { is_controlled_by = YAN }
+		RTT = { NOT = { is_in_faction_with = EIK } }
+    }
+
+	option = {
+		name = rttevent.2.a
+		trigger = { NOT = { is_in_faction_with = TOR } 
+		UCB = { has_war_with = YAN }
+		}
+        hidden_effect = {
+        UCB = { country_event = { id = ucnb.14 days = 1 } }
+        } 
+    ai_chance = { factor = 70 }		
+    }
+    option = {
+    name = rttevent.2.b
+    hidden_effect = {
+    }
+    ai_chance = { factor = 30 }
+    }
+
+}
+
+country_event = {
+	id = rttevent.3
+	title = rttevent.3.t
+	desc = rttevent.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = RTT
+        }
+	option = {
+		name = rttevent.3.a    
+                hidden_effect = {
+                SBU = { add_opinion_modifier = { target = ROOT modifier = SBU_rtt_pact } }
+				RTT = { add_opinion_modifier = { target = ROOT modifier = SBU_rtt_pact } }
+                }		
+        }
+}
+
+country_event = {
+	id = rttevent.4
+	title = rttevent.4.t
+	desc = rttevent.4.d
+	picure = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = rttevent.4.a
+		SBU = {
+			puppet = RTT
+			set_autonomy = {
+			    target = RTT
+			    autonomy_state = dominion
+			}
+		}
+	}
+	option = {
+		name = rttevent.4.b
+		SBU = {
+			create_wargoal = {
+			    type = annex_everything
+			    target = RTT
+			}
+		}
+	}
+}

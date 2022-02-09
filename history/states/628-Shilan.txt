@@ -1,0 +1,28 @@
+
+state={
+	id=628
+	name="STATE_628"
+	manpower = 7220000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = BSH
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        arms_factory = 1
+		}
+		add_core_of = BSH
+		victory_points = {
+			12407 5
+		}
+
+	}
+	provinces={
+		10434 10472 10487 10531 10642 10681 10797 10886 10887 10919 11073 11082 11166 11177 11313 11545 11585 11653 11969 
+	}
+}

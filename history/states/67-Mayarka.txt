@@ -1,0 +1,23 @@
+state={
+	id=67
+	name="STATE_67"
+	manpower=200000
+
+	state_category=rural
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			7009 1
+		}
+
+	}
+	provinces={
+		5857 5895 5997 6055 6093 6094 6141 6155 
+	}
+}

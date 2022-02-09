@@ -1,0 +1,27 @@
+
+state={
+	id=317
+	name="STATE_317"
+	manpower = 340000	
+	state_category = pastoral
+	
+	resources={
+	steel = 6 # was: 24
+        chromium = 10 # was: 45
+	}
+
+	history={
+		owner = BAE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = BAE
+		victory_points = {
+			13262 1
+		}
+
+	}
+	provinces={
+		13262 13271 13284 13285 13301 13334 13349 13375 13429 13443 13477 13501 13515 13565 13631 13643 
+	}
+}

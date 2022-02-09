@@ -1,0 +1,283 @@
+add_namespace = ind
+
+country_event = {
+	id = ind.1
+	title = ind.1.t
+	desc = ind.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.1.a 
+		hidden_effect = {
+			IND = { country_event = { id = ind.2 days = 200 } }
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = KUR
+        }
+	}
+}
+
+country_event = {
+	id = ind.2
+	title = ind.2.t
+	desc = ind.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.2.a 
+		hidden_effect = {
+			IND = { country_event = { id = ind.3 days = 100 } }
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = ORB
+        }
+	}
+}
+
+country_event = {
+	id = ind.3
+	title = ind.3.t
+	desc = ind.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.3.a 
+		hidden_effect = {
+			IND = { country_event = { id = ind.4 days = 90 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = ARS
+        }
+	}
+}
+
+country_event = {
+	id = ind.4
+	title = ind.4.t
+	desc = ind.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.4.a 
+		create_wargoal = {
+            type = annex_everything
+            target = EDD
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.5 days = 90 } }
+			add_manpower = 40000
+		}
+	}
+}
+
+country_event = {
+	id = ind.5
+	title = ind.5.t
+	desc = ind.5.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.5.a 
+		create_wargoal = {
+            type = annex_everything
+            target = TIR
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.6 days = 60 } }
+			add_manpower = 40000
+		}
+	}
+}
+
+country_event = {
+	id = ind.6
+	title = ind.6.t
+	desc = ind.6.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.6.a 
+		create_wargoal = {
+            type = annex_everything
+            target = LEV
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = BER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = RET
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.7 days = 90 } }
+			add_manpower = 20000
+		}
+	}
+}
+
+country_event = {
+	id = ind.7
+	title = ind.7.t
+	desc = ind.7.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.7.a 
+		create_wargoal = {
+            type = annex_everything
+            target = KOL
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = NRA
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SRA
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = FLR
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.8 days = 90 } }
+			add_manpower = 20000
+		}
+	}
+}
+
+country_event = {
+	id = ind.8
+	title = ind.8.t
+	desc = ind.8.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.8.a 
+		create_wargoal = {
+            type = annex_everything
+            target = KIM
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = AKV
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SVE
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SGO
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = GLE
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = ZER
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.9 days = 90 } }
+			add_manpower = 20000
+		}
+	}
+}
+
+country_event = {
+	id = ind.9
+	title = ind.9.t
+	desc = ind.9.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = IND
+	}
+
+	option = {
+	name = ind.9.a 
+		create_wargoal = {
+            type = annex_everything
+            target = NIK
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = KOS
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = RAN
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = TRI
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = MIN
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = DIN
+        }
+		hidden_effect = {
+			add_manpower = 20000
+		}
+	}
+}

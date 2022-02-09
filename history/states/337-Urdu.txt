@@ -1,0 +1,25 @@
+
+state={
+	id=337
+	name="STATE_337"
+	manpower = 2000000
+	
+	state_category = town
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        air_base = 4
+		}
+		add_core_of = EIK
+		victory_points = {
+			13663 10
+		}
+
+	}
+	provinces={
+		13663 13706 13724 13768 13769 13800 13801 13838 13867 13876 13877 13924 13961 13962 13967 13974 13988 14021 14029 14033 
+	}
+}

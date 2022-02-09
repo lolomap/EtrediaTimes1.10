@@ -1,0 +1,25 @@
+state={
+	id=28
+	name="STATE_28"
+	manpower = 1000000
+	
+	state_category = rural
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = UCB
+                add_core_of = TIR
+		victory_points = {
+			5820 1
+		}
+
+	}
+	provinces={
+		5493 5518 5537 5538 5675 5697 5713 5747 5748 5767 5823 
+	}
+}

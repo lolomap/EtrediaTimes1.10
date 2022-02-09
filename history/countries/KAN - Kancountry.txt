@@ -1,0 +1,45 @@
+﻿capital = 753
+
+oob = "KAN_2014"
+
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 0.4
+
+add_ideas = {
+        www_bad_country
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2010.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 14
+        fascism = 10
+        communism = 32
+	neutrality = 44
+}
+
+#
+create_country_leader = {
+	name = "Yajeel Craig-Be-Boban"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=295
+	name="STATE_295"
+	manpower = 14000000
+	
+	state_category = metropolis
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 4
+                        arms_factory = 1
+                        dockyard = 2
+                        air_base = 10
+			6904 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			6815 30
+		}
+
+	}
+	provinces={
+		5510 5532 5608 5609 5692 5709 5759 5816 5817 5851 5885 5902 5931 5950 5969 6012 6066 6067 6080 6081 6101 6183 6184 6199 6213 6239 6254 6255 6278 6297 6315 6376 6396 6437 6461 6462 6483 6517 6557 6605 6643 6663 
+	}
+}

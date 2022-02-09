@@ -1,0 +1,28 @@
+
+state={
+	id=163
+	name="STATE_163"
+	resources={
+		oil=14.000
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = SFL
+		victory_points = {
+			4479 10 
+		}
+
+	}
+	provinces={
+		4479 4543 4582 4630 4631 4658 4713 4733 4756 4771 4772 4834 4835 4926 4927 4939 4961 5005 5072 5095 5096 5111 5205 5244 5266 5267 5268 5407 
+	}
+	manpower=1900000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

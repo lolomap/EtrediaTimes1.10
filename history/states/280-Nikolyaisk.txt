@@ -1,0 +1,31 @@
+
+state={
+	id=280
+	name="STATE_280"
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			11794 5 
+		}
+		victory_points = {
+			11317 1 
+		}
+		victory_points = {
+			11779 1 
+		}
+
+	}
+	provinces={
+		9736 9754 9770 9784 9841 9842 9883 9897 9952 9961 9988 10004 10034 10043 10056 10069 10136 10137 10200 10237 10238 10262 10297 
+	}
+	manpower=1950000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

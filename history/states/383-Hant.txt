@@ -1,0 +1,29 @@
+
+state={
+	id=383
+	name="STATE_383"
+	manpower = 1800000
+	
+	state_category = town
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 2
+                        dockyard = 1
+			2980 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			2980 10
+		}
+
+	}
+	provinces={
+		2329 2378 2413 2434 2455 2466 2513 
+	}
+}

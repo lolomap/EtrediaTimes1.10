@@ -1,0 +1,27 @@
+
+state={
+	id=150
+	name="STATE_150"
+	manpower = 500000
+	state_category = rural
+
+	resources={
+		aluminium = 12 # was: 36
+                steel = 6 # was: 8
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = PIN
+		victory_points = {
+			11318 1 
+		}
+
+	}
+	provinces={
+		11318 11319 11378 11432 11473 11500 11541 11552 11553 11617 11648 11658 11731 11732 11762 11860 11902 11931 12021 12109 12159 12175 12242 12280 12331 12351 12387 12404 12462 12505 
+	}
+}

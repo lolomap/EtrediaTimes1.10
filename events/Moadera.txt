@@ -1,0 +1,32 @@
+add_namespace = moa
+
+country_event = {
+	id = moa.1
+	title = moa.1.t
+	desc = moa.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = MOA
+		has_government = democratic
+		date > 2019.1.1
+    }
+	
+	option = {
+	name = moa.1.a
+        create_faction = moa_block
+		CHO = { country_event = { id = cho.2 days = 1 } }
+		SBO = { country_event = { id = sbo.1 days = 1 } }
+		BOU = { country_event = { id = bou.1 days = 1 } }
+		SKI = { country_event = { id = ski.1 days = 1 } }
+		TOB = { country_event = { id = tob.2 days = 1 } }
+	ai_chance = { factor = 100 }
+	}
+	
+	option = {
+	name = moa.1.b
+	ai_chance = { factor = 0 }
+	}
+}

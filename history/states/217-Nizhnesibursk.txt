@@ -1,0 +1,27 @@
+
+state={
+	id=217
+	name="STATE_217"
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+                        air_base = 10
+			5232 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = SBU
+		victory_points = {
+			5370 30 
+		}
+
+	}
+	provinces={
+		4534 4548 4647 4648 4703 4720 4761 4805 4869 4888 4907 4963 5047 5076 5100 5207 5228 5251 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

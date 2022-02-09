@@ -1,0 +1,29 @@
+
+state={
+	id=538
+	name="STATE_538"
+	manpower = 3623000
+	
+	state_category = city
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 1
+			1311 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			1311 5
+		}
+
+	}
+	provinces={
+		1388 1446 1460 1469 1479 1503 1518 1522 1568 1576 1634 
+	}
+}

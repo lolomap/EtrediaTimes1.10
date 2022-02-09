@@ -1,0 +1,27 @@
+
+state={
+	id=636
+	name="STATE_636"
+	manpower = 4000000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = KCE
+		buildings = {
+			infrastructure = 2
+                        arms_factory = 1
+		}
+		add_core_of = KCE
+		victory_points = {
+			4105 1
+		}
+
+	}
+	provinces={
+		3359 3432 3433 3501 3535 3610 3631 3672 3720 3729 3787 
+	}
+}

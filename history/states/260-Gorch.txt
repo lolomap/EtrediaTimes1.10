@@ -1,0 +1,28 @@
+
+state={
+	id=260
+	name="STATE_260"
+	resources={
+		steel=50.000
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			11806 5 
+		}
+
+	}
+	provinces={
+		11806 11861 11862 11893 11904 11963 11977 12010 12011 12012 12024 12025 12095 12111 12138 12146 12177 12178 12179 12194 12243 12254 12281 12296 12297 12354 12369 12370 12405 12420 12443 12463 12489 12527 12537 12548 
+	}
+	manpower=1746000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

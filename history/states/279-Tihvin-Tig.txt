@@ -1,0 +1,28 @@
+
+state={
+	id=279
+	name="STATE_279"
+	resources={
+		oil=6.000
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			10599 1 
+		}
+
+	}
+	provinces={
+		8667 8668 8782 8813 8873 8898 8950 8951 8973 8974 9079 9106 9107 9166 9167 9168 9181 9211 9283 9317 9318 9319 9352 9367 9393 9462 9500 9542 9543 
+	}
+	manpower=833000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

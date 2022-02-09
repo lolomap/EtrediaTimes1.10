@@ -1,0 +1,33 @@
+state={
+	id=219
+	name="STATE_219"
+	manpower = 300000
+	state_category = rural
+
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			5000 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			5000 1 
+		}
+
+	}
+	provinces={
+		4150 4202 4256 4291 4369 4370 4384 4465 4518 
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=612
+	name="STATE_612"
+	manpower = 1900000
+	
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = TUB
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TUB
+		victory_points = {
+			10077 1
+		}
+
+	}
+	provinces={
+		6895 7006 7025 7393 7626 7701 7702 7974 8047 8167 8206 8207 8226 8450 8563 8640 8698 8699 8720 8721 8807 8890 8902 8919 8983 8984 9015 9134 9203 9242 9243 9289 9290 9306 9440 9483 9484 9519 9572 9731 9790 
+	}
+}

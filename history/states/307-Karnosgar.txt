@@ -1,0 +1,28 @@
+state={
+	id=307
+	name="STATE_307"
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 4
+			arms_factory = 1
+                        air_base = 10
+			13184 = {
+				naval_base = 9
+			}
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			13184 30 
+		}
+
+	}
+	provinces={
+		11322 11323 11423 11439 11440 11459 11502 11529 11530 11579 11633 11660 
+	}
+	manpower=22000000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=247
+	name="STATE_247"
+	manpower = 3900000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = KAR
+		add_core_of = FSF
+		victory_points = {
+			11194 10
+		}
+
+	}
+	provinces={
+		9461 9498 9511 9526 9585 9598 9615 9616 9648 9661 9711 9725 9735 9750 9838 9913 
+	}
+}

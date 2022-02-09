@@ -1,0 +1,31 @@
+state={
+	id=655
+	name="STATE_655"
+	manpower = 2100000
+	state_category = large_town
+	
+	resources={
+		rubber = 8 # was: 12
+		oil = 16 # was: 20
+	}
+
+	history={
+		owner = SDR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 4
+			arms_factory = 1
+			825 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = SDR
+		victory_points = {
+			825 10
+		}
+
+	}
+	provinces={
+		587 593 
+	}
+}

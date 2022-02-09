@@ -1,0 +1,27 @@
+state={
+	id=63
+	name="STATE_63"
+	manpower = 1677000
+	
+	state_category = large_town
+	
+	resources={
+        oil = 24 # was: 24
+	}
+
+	history={
+		owner = TRP
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+		}
+		add_core_of = TRP
+		victory_points = {
+			7037 15
+		}
+
+	}
+	provinces={
+		5940 5941 5980 5996 6073 6137 6138 6139 6287 
+	}
+}

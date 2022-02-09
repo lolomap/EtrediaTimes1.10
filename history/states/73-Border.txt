@@ -1,0 +1,25 @@
+state={
+	id=73
+	name="STATE_73"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = IID
+		add_core_of = BKH
+		victory_points = {
+			7650 10 
+		}
+
+	}
+	provinces={
+		6091 6192 6227 6248 6288 6388 6408 6409 6473 6510 6578 6612 6654 6729 6754 6843 6844 6922 6938 6956 6977 7106 
+	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

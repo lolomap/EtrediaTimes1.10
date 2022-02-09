@@ -1,0 +1,324 @@
+scripted_diplomatic_actions = {
+	peace_deal = {
+		visible = {
+			ROOT = {
+				has_war_with = PREV
+			}
+		}
+		selectable = {
+			OR = {
+				AND = {
+					is_faction_leader = no
+					any_other_country = {
+						is_faction_leader = yes
+						is_in_faction_with = PREV
+						not = {has_war_with = ROOT}
+					}
+				}
+				is_faction_leader = yes
+				is_in_faction = no
+			}
+			is_subject = no
+			ROOT = {is_subject = no}
+		}
+
+		cost = 0
+		command_power = 0
+
+		show_acceptance_on_action_button = yes
+		requires_acceptance = yes
+
+		icon = 1
+
+		complete_effect = {
+			if = {
+				limit = {
+					#is_faction_leader = no
+					always = yes
+				}
+
+				every_state = {
+					limit = {
+						is_owned_by = ROOT
+						is_controlled_by = PREV
+					}
+					
+					set_variable = {should_own = PREV}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = PREV
+						is_controlled_by = ROOT
+					}
+					
+					set_variable = {should_own = ROOT}
+				}
+
+				if = {
+					limit = {
+						ROOT = {
+							is_in_faction = yes
+							is_faction_leader = no
+							any_other_country = {
+								is_faction_leader = yes
+								is_in_faction_with = ROOT
+								has_war_with = PREV.PREV
+							}
+						}
+					}
+					ROOT = {leave_faction = yes}
+				}
+				white_peace = ROOT
+
+				every_state = {
+					limit = {
+						has_variable = should_own
+					}
+					var:should_own = {transfer_state = PREV}
+					clear_variable = should_own
+				}
+			}
+			#else = {
+			#	THIS = {
+			#		every_other_country = {
+			#			limit = {is_in_faction_with = PREV}
+			#			country_event = {}
+			#		}
+			#	}
+			#}
+		}
+
+		ai_desire = {
+			base = 0
+			modifier = {
+				ROOT = {surrender_progress > 0.3}
+				add = 10
+			}
+			modifier = {
+				ROOT = {surrender_progress > 0.5}
+				add = 20
+			}
+			modifier = {
+				ROOT = {surrender_progress > 0.9}
+				add = 50
+			}
+			modifier = {
+				ROOT = {check_variable = {wtire > 50}}
+				add = 10
+			}
+			modifier = {
+				ROOT = {check_variable = {wtire > 100}}
+				add = 20
+			}
+			modifier = {
+				OR = {
+					ROOT = {has_capitulated = yes}
+					has_capitulated = yes
+				}
+				factor = 0
+			}
+			modifier = {
+				ROOT = {has_idea = DIR_revolt}
+				has_idea = DIR_revolt
+				factor = 0
+			}
+			modifier = {
+				has_civil_war = yes
+				factor = 0
+			}
+			modifier= {
+				OR = {
+					AND = {
+						tag = SOL
+						ROOT = {tag = BSH}
+					}
+					AND = {
+						tag = BSH
+						ROOT = {tag = SOL}
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+
+		ai_acceptance = {
+			base_pn = {
+				base = -2
+			}
+			faction_pn = {
+				base = 0
+				modifier = {
+					is_faction_leader = yes
+					num_faction_members > 1
+					add = -3
+				}
+			}
+			you_faction_pn = {
+				base = 0
+				modifier = {
+					ROOT = {
+						is_faction_leader = yes
+						num_faction_members > 1
+					}
+					add = -2
+				}
+			}
+			offensive_pn = {
+				base = 0
+				modifier = {
+					has_offensive_war = yes
+					add = -2
+				}
+			}
+			tired_pp = {
+				base = 0
+				modifier = {
+					ROOT = {surrender_progress < 0.5}
+					check_variable = {wtire > 50}
+					add = 3
+				}
+				modifier = {
+					ROOT = {surrender_progress < 0.5}
+					check_variable = {wtire > 100}
+					add = 2
+				}
+				modifier = {
+					ROOT = {surrender_progress < 0.5}
+					check_variable = {wtire > 200}
+					add = 4
+				}
+				modifier = {
+					ROOT = {surrender_progress < 0.5}
+					check_variable = {wtire > 250}
+					add = 5
+				}
+			}
+			democratic_pp = {
+				base = 0
+				modifier = {
+					has_government = democratic
+					add = 2
+				}
+			}
+			neutrality_pp = {
+				base = 0
+				modifier = {
+					has_government = neutrality
+					add = 1
+				}
+			}
+			surrender_pp = {
+				base = 0
+				modifier = {
+					surrender_progress > 0.3
+					add = 1
+				}
+				modifier = {
+					surrender_progress > 0.5
+					add = 1
+				}
+				modifier = {
+					surrender_progress > 0.7
+					add = 2
+				}
+				modifier = {
+					surrender_progress > 0.9
+					add = 10
+				}
+			}
+			self_surrender_pp = {
+				base = 0
+				modifier = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+					ROOT = {surrender_progress > 0.3}
+					add = 1
+				}
+				modifier = {
+					OR = {
+						has_government = democratic
+					}
+					ROOT = {surrender_progress > 0.5}
+					add = 1
+				}
+				modifier = {
+					OR = {
+						has_government = democratic
+					}
+					ROOT = {surrender_progress > 0.7}
+					add = 5
+				}
+				modifier = {
+					OR = {
+						has_government = democratic
+					}
+					ROOT = {surrender_progress > 0.9}
+					add = 5
+				}
+				modifier = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = monarchism
+					}
+					ROOT = {surrender_progress > 0.3}
+					add = -1
+				}
+				modifier = {
+					OR = {
+						not = {has_government = democratic}
+					}
+					ROOT = {surrender_progress > 0.5}
+					add = -5
+				}
+				modifier = {
+					OR = {
+						not = {has_government = democratic}
+					}
+					ROOT = {surrender_progress > 0.7}
+					add = 5
+				}
+				modifier = {
+					OR = {
+						not = {has_government = democratic}
+					}
+					ROOT = {surrender_progress > 0.9}
+					add = 1
+				}
+			}
+			major_pn = {
+				base = 0
+				modifier = {
+					is_major = yes
+					ROOT = {is_major = no}
+					add = -3
+				}
+			}
+			minor_pp = {
+				base = 0
+				modifier = {
+					ROOT = {is_major = yes}
+					is_major = no
+					add = 1
+				}
+				modifier = {
+					ROOT = {
+						is_in_faction = yes
+						num_faction_members > 2
+					}
+					OR = {
+						is_in_faction = no
+						num_faction_members < 2
+					}
+					add = 3
+				}
+			}
+		}
+	}
+}

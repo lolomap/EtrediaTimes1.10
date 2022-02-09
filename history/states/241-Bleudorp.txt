@@ -1,0 +1,27 @@
+
+state={
+	id=241
+	name="STATE_241"
+	manpower = 2000000
+	
+	state_category = large_city
+	
+	resources={
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+		}
+		add_core_of = KAR
+		victory_points = {
+			11836 10
+		}
+
+	}
+	provinces={
+		9970 9983 10017 10030 10100 10101 10130 10144 10182 10183 10208 10221 10249 10258 10294 10310 10358 10375 10396 10430 10440 10460 10537 10578 
+	}
+}

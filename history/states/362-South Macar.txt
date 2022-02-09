@@ -1,0 +1,40 @@
+state={
+	id=362
+	name="STATE_362"
+	manpower = 1200000
+	
+	state_category = town
+	
+	resources={
+                steel = 2 # was: 3
+                oil = 26 # was: 88
+	}
+
+	history={
+		owner = SMA
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+                        air_base = 1
+                        3272 = { 
+                             naval_base = 3
+                        }
+                        3505 = { 
+                             naval_base = 1
+                        }
+		}
+		add_core_of = SMA
+		victory_points = {
+			3272 5
+		}
+                victory_points = {
+                        3505 1
+                }
+
+	}
+	provinces={
+		2676 2698 2721 2744 2751 2769 2791 2800 2847 2870 2885 2904 2915 2967 
+	}
+}

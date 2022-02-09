@@ -1,0 +1,27 @@
+state={
+	id=70
+	name="STATE_70"
+	manpower = 870000
+	
+	state_category = rural
+	
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = FSC
+		add_core_of = NER
+		victory_points = {
+			4576 1 
+		}
+
+	}
+	provinces={
+		3839 3873 3910 3926 4006 4020 4134 4144 4286 4315 4429 4460 4558 4596 4698 4709 
+	}
+}

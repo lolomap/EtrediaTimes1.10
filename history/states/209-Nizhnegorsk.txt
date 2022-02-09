@@ -1,0 +1,34 @@
+
+state={
+	id=209
+	name="STATE_209"
+	resources={
+		steel=87.000
+		tungsten=12.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+            air_base = 2
+            nuclear_rocket_site = 1
+            anti_nuclear_building = 1
+            
+		}
+		add_core_of = SBU
+		add_core_of = HLR
+		victory_points = {
+			8318 15 
+		}
+
+	}
+	provinces={
+		6075 6270 6309 6345 6551 6615 6697 6757 6789 6884 7035 
+	}
+	manpower=1300000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

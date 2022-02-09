@@ -1,0 +1,23 @@
+
+state={
+	id=231
+	name="STATE_231"
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			8580 1 
+		}
+
+	}
+	provinces={
+		6587 6656 6737 6808 6851 6962 7062 7228 7229 7250 7346 7371 7490 7597 7616 7726 7838 
+	}
+	manpower=650000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

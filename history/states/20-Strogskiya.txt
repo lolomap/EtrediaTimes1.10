@@ -1,0 +1,30 @@
+state={
+	id=20
+	name="STATE_20"
+	manpower = 2100000
+	
+	state_category = town
+	
+	resources={
+	    steel = 24 # was: 28
+            aluminium = 21 # was: 44
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = UCB
+		add_core_of = SGO
+		victory_points = {
+			8542 10
+		}
+
+	}
+	provinces={
+		6707 6861 6899 6976 7012 7028 7051 7052 7105 7143 7182 7204 7222 7240 7264 7265 7361 7362 7415 7429 7443 7477 7507 7553 7609 7648 7680 7739 
+	}
+}

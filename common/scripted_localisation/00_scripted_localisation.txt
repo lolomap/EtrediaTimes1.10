@@ -1,0 +1,143 @@
+defined_text = {
+	name = GFX_goal_diria_war
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					not = {country_exists = DEM}
+					DIR = {has_government = communism}
+				}
+				DEM = {
+					surrender_progress > 0.7
+				}
+			}
+			localization_key = "GFX_goal_eik_dir_war_com"
+		}
+	}
+	text = {
+		localization_key = "GFX_goal_eik_dir_war"
+	}
+}
+
+defined_text = {
+	name = peace_button_sloc
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {wtire < 0}
+				has_country_flag = keep_peace
+				has_civil_war = yes
+				has_idea = DIR_revolt
+				has_capitulated = yes
+				not = {country_exists = ROOT}
+			}
+		}
+		localization_key = peace_button_bad
+	}
+	text = {
+		localization_key = peace_button_good
+	}
+}
+
+defined_text = {
+	name = peace_desc_sloc
+	text = {
+		trigger = {
+			is_in_faction = yes
+			is_faction_leader = no
+		}
+		localization_key = peace_desc_faction
+	}
+	text = {
+		localization_key = peace_desc
+	}
+}
+
+defined_text = {
+	name = nuke_request_accepted_sl
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+					has_country_flag = nuke_request_accepted
+				}
+			}
+		}
+		localization_key = nuke_request_accepted_yes
+	}
+	text = {
+		localization_key = nuke_request_accepted_no
+	}
+}
+
+defined_text = {
+	name = nuke_has_any_sl
+	text = {
+		trigger = {
+			ROOT = {num_of_nukes > 0}
+		}
+		localization_key = nuke_has_any_yes
+	}
+	text = {
+		localization_key = nuke_has_any_no
+	}
+}
+
+defined_text = {
+	name = nuke_pro_sl
+	text = {
+		trigger = {
+			owner = {
+				check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
+			}
+		}
+		localization_key = nuke_pro_yes
+	}
+	text = {
+		trigger = {
+			owner = {
+				check_variable = {num_of_nuke_anti > ROOT.num_of_nuke_rockets}
+			}
+			localization_key = nuke_pro_no
+		}
+	}
+	text = {
+		localization_key = nuke_pro_mid
+	}
+}
+
+defined_text = {
+	name = is_world_influence_more_2_sl
+	text = {
+		trigger = {
+			set_temp_variable = {razn = ROOT.world_influence}
+			divide_temp_variable = {razn = world_influence}
+			check_variable = {razn > 1.9}
+		}
+		localization_key = is_world_influence_more_2_yes
+	}
+	text = {
+		localization_key = is_world_influence_more_2_no
+	}
+}
+
+defined_text = {
+	name = stab_cap_sl
+	text = {
+		trigger = {
+			OR = {
+				has_idea = stability_heaven_d
+				has_idea = stability_heaven_c
+				has_idea = stability_heaven_f
+				has_idea = stability_heaven_n
+				has_idea = stability_heaven_m
+			}
+		}
+		localization_key = stab_cap_h
+	}
+	text = {
+		localization_key = stab_cap_b
+	}
+}

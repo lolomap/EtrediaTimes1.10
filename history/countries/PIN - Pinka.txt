@@ -1,0 +1,133 @@
+﻿capital = 142
+
+oob = "PIN_2014"
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.7
+
+add_ideas = {
+        www_medium_country
+        free_press
+        general_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	motorized_rocket_unit = 1
+	gw_artillery = 1
+	gwtank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	tactical_bomber1 = 1
+	transport = 1
+}
+
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2010.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 34
+        fascism = 51
+        communism = 15
+	neutrality = 0
+}
+
+#
+create_country_leader = {
+	name = "Anatoly Zhmirinovan"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Daran Lemingauton"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Timur Nafikov"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Vissarionovich"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Biyalos Tere"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kopili Nayer"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Boras Joks"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ombihunt Yantes"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

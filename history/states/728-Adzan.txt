@@ -1,0 +1,31 @@
+
+state={
+	id=728
+	name="STATE_728"
+	manpower = 5100000
+	state_category = large_town
+	
+	resources={
+		rubber = 24 # was: 32
+	}
+
+	history={
+		owner = KTL
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			arms_factory = 1
+			1607 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = KTL
+		victory_points = {
+			1607 15
+		}
+
+	}
+	provinces={
+		1160 1184 1201 1210 1234 1258 1295 1296 1302 1321 1327 1379 1392 1424 
+	}
+}

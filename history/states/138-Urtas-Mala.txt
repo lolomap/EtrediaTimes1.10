@@ -1,0 +1,23 @@
+state={
+	id=138
+	name="STATE_138"
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+
+		}
+		add_core_of = PIN
+		victory_points = {
+			12547 5 
+		}
+
+	}
+	provinces={
+		12547 12575 12588 12645 12659 12675 12742 12756 12779 12835 12884 12920 12931 12981 13010 13050 13065 13141 13174 
+	}
+	manpower=900000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

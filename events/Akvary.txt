@@ -1,0 +1,108 @@
+add_namespace = akv
+
+country_event = {
+	id = akv.1
+	title = akv.1.t
+	desc = akv.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = akv
+	}
+
+	option = {
+	name = akv.1.a 
+		hidden_effect = {
+			AKV = { country_event = { id = akv.2 days = 90 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = SVE
+        }
+	}
+}
+
+country_event = {
+	id = akv.2
+	title = akv.2.t
+	desc = akv.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = akv
+	}
+
+	option = {
+	name = akv.2.a 
+		hidden_effect = {
+			AKV = { country_event = { id = akv.3 days = 120 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = GLE
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = KIM
+        }
+	}
+}
+
+country_event = {
+	id = akv.3
+	title = akv.3.t
+	desc = akv.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = akv
+	}
+
+	option = {
+	name = akv.3.a 
+		hidden_effect = {
+			AKV = { country_event = { id = akv.4 days = 160 } }
+			add_manpower = 60000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = SGO
+        }
+	}
+}
+
+country_event = {
+	id = akv.4
+	title = akv.4.t
+	desc = akv.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = akv
+	}
+
+	option = {
+	name = akv.4.a 
+		create_wargoal = {
+            type = annex_everything
+            target = ZER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = RET
+        }
+		hidden_effect = {
+			add_manpower = 80000
+		}
+	}
+}

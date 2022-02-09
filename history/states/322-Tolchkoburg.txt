@@ -1,0 +1,30 @@
+
+state={
+	id=322
+	name="STATE_322"
+	manpower = 800000
+	
+	state_category = town
+	
+	resources={
+		steel = 43 # was: 50
+	}
+
+	history={
+		owner = TOL
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 1
+                        air_base = 1
+		}
+		add_core_of = TOL
+		victory_points = {
+			13800 10
+		}
+
+	}
+	provinces={
+		11532 11635 11661 11679 11786 11801 11810 11811 11937 11951 11952 11953 11967 12072 12073 12101 12102 
+	}
+}

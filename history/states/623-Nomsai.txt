@@ -1,0 +1,32 @@
+
+state={
+	id=623
+	name="STATE_623"
+	manpower = 4350000
+	
+	state_category = rural
+	
+	resources={
+		rubber = 2 # was: 2
+                steel = 3 # was: 3
+	}
+
+	history={
+		owner = DNG
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 1
+			6298 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DNG
+		victory_points = {
+			6298 5
+		}
+
+	}
+	provinces={
+		5290 5459 5474 5475 5517 5744 5820 5954 6017 6050 
+	}
+}

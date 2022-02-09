@@ -1,0 +1,27 @@
+
+state={
+	id=772
+	name="STATE_772"
+	manpower = 2870000
+	state_category = rural
+	
+	resources={
+	steel = 8 # was: 14
+	chromium = 12 # was: 12
+	}
+
+	history={
+		owner = MIR
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MIR
+		victory_points = {
+			1900 1
+		}
+
+	}
+	provinces={
+		1376 1383 1404 1405 1412 1434 1450 1466 1467 1493 1511 1527 1546 1550 1620 1641 
+	}
+}

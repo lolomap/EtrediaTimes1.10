@@ -1,0 +1,28 @@
+
+state={
+	id=626
+	name="STATE_626"
+	manpower = 5370000
+	
+	state_category = rural
+	
+	resources={
+        rubber = 3 # was: 3
+	}
+
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 1
+		}
+		add_core_of = SOL
+		victory_points = {
+			10630 1
+		}
+
+	}
+	provinces={
+		8285 8363 8600 8793 8866 9029 9049 9151 9307 9382 9485 9533 9672 9760 10024 
+	}
+}

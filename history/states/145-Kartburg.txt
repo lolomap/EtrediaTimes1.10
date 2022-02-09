@@ -1,0 +1,26 @@
+state={
+	id=145
+	name="STATE_145"
+	manpower = 1950000
+	
+	state_category = rural
+	
+	resources={
+		oil = 4 # was: 6
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = PIN
+		victory_points = {
+			11090 5
+		}
+
+	}
+	provinces={
+		11090 11154 11207 11299 11300 11339 11361 11377 11431 11455 11456 11524 
+	}
+}

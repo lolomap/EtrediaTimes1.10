@@ -1,0 +1,550 @@
+add_namespace = klu
+
+country_event = {
+	id = klu.1
+	title = klu.1.t
+	desc = klu.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.1.a
+	    KLU = {
+	        annex_country = {
+            target = YEO
+            transfer_troops = no
+            }
+			add_state_core = 629
+	    }
+	}
+}
+
+country_event = {
+	id = klu.2
+	title = klu.2.t
+	desc = klu.2.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.2.a
+	ECE = { country_event = { days = 2 id = evar.1 } }
+	    KLU = {
+		    declare_war_on = {
+            target = DNG
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 70 }
+	}
+	option = {
+    name = klu.2.b
+	    KLU = { country_event = { id = klu.3 days = 20 } }
+		KLU = { country_event = { id = klu.4 days = 150 } }
+	add_stability = -0.1
+	}
+	ai_chance = { factor = 30 }
+}
+
+country_event = {
+	id = klu.3
+	title = klu.3.t
+	desc = klu.3.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.3.a
+	    KLU = {
+		    declare_war_on = {
+            target = GWA
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 50 }
+	}
+	option = {
+    name = klu.3.b
+	    KLU = {
+		    declare_war_on = {
+            target = SOL
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = klu.4
+	title = klu.4.t
+	desc = klu.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.4.a
+	    KLU = {
+		    declare_war_on = {
+            target = DNG
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 80 }
+	}
+	option = {
+    name = klu.4.b
+	KLU = { country_event = { id = klu.5 days = 100 } }
+	add_stability = -0.2
+	ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = klu.5
+	title = klu.5.t
+	desc = klu.5.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.5.a
+	    KLU = {
+		    declare_war_on = {
+            target = DNG
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 90 }
+	}
+	option = {
+    name = klu.5.b
+	KLU = { country_event = { id = klu.6 days = 50 } }
+	add_stability = -0.3
+	ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+	id = klu.6
+	title = klu.6.t
+	desc = klu.6.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.6.a
+	    KLU = {
+		    declare_war_on = {
+            target = DNG
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.7
+	title = klu.7.t
+	desc = klu.7.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.7.a
+    add_state_core = 621
+	add_state_core = 622
+	add_state_core = 623
+    621 = {
+        add_manpower = -700000
+    }
+    622 = {
+        add_manpower = -1400000
+    }
+    622 = {
+        add_manpower = -1000000
+    }
+    623 = {
+        add_manpower = -1000000
+    }
+	}
+}
+
+country_event = {
+	id = klu.8
+	title = klu.8.t
+	desc = klu.8.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.8.a
+    add_stability = 0.2
+	}
+}
+
+country_event = {
+	id = klu.9
+	title = klu.9.t
+	desc = klu.9.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.9.a
+	    KLU = {
+		    declare_war_on = {
+            target = SOL
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.10
+	title = klu.10.t
+	desc = klu.10.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.10.a
+	    KLU = {
+		    declare_war_on = {
+            target = GWA
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.11
+	title = klu.11.t
+	desc = klu.11.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.11.a
+	    KLU = {
+		    declare_war_on = {
+            target = KYU
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.12
+	title = klu.12.t
+	desc = klu.12.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.12.a
+	if = {
+	limit = { owns_state = 625 }
+        625 = {
+        add_manpower = -1000000
+        }
+		add_state_core = 625
+	}
+	if = {
+	limit = { owns_state = 626 }
+        626 = {
+        add_manpower = -1000000
+        }
+        626 = {
+        add_manpower = -700000
+        }
+		add_state_core = 626
+	}
+	if = {
+	limit = { owns_state = 627 }
+        627 = {
+        add_manpower = -800000
+        }
+		add_state_core = 627
+	}
+	if = {
+    limit = { owns_state = 630 }
+        630 = {
+        add_manpower = -1000000
+        }
+        630 = {
+        add_manpower = -1000000
+        }
+        630 = {
+        add_manpower = -1000000
+        }
+        630 = {
+        add_manpower = -1000000
+        }
+		add_state_core = 630
+	}
+	KLU = { country_event = { id = klu.13 days = 10 } }
+	KLU = { country_event = { id = klu.14 days = 20 } }
+	}
+}
+
+country_event = {
+	id = klu.13
+	title = klu.13.t
+	desc = klu.13.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.13.a
+	if = {
+	limit = { owns_state = 633 }
+        633 = {
+        add_manpower = -1000000
+        }
+        633 = {
+        add_manpower = -450000
+        }
+		add_state_core = 633
+	}
+	}
+}
+
+country_event = {
+	id = klu.14
+	title = klu.14.t
+	desc = klu.14.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.14.a
+	if = {
+	limit = { owns_state = 624 }
+        624 = {
+        add_manpower = -1000000
+        }
+        624 = {
+        add_manpower = -1000000
+        }
+        624 = {
+        add_manpower = -1000000
+        }
+        624 = {
+        add_manpower = -200000
+        }
+		add_state_core = 624
+	}
+	}
+}
+
+country_event = {
+	id = klu.15
+	title = klu.15.t
+	desc = klu.15.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.15.a
+	    KLU = {
+		    declare_war_on = {
+            target = ECE
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.16
+	title = klu.16.t
+	desc = klu.16.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.16.a
+	    KLU = {
+		    declare_war_on = {
+            target = HOR
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.17
+	title = klu.17.t
+	desc = klu.17.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.17.a
+	    KLU = {
+		    declare_war_on = {
+            target = UNC
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.18
+	title = klu.18.t
+	desc = klu.18.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.18.a
+	    KLU = {
+		    declare_war_on = {
+            target = GAR
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.19
+	title = klu.19.t
+	desc = klu.19.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.19.a
+	    KLU = {
+		    declare_war_on = {
+            target = KCE
+            type = annex_everything
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = klu.20
+	title = klu.20.t
+	desc = klu.20.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KLU
+    }
+    	
+	option = {
+    name = klu.20.a
+	    KLU = {
+		    declare_war_on = {
+            target = ZHE
+            type = annex_everything
+            }
+	    }
+	}
+}

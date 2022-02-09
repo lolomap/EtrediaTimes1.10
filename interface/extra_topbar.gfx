@@ -1,0 +1,10 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_world_influence_icon"
+		texturefile = "gfx/interface/custom_gui/world_influence_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_war_tire_icon"
+		texturefile = "gfx/interface/custom_gui/war_tire_icon.dds"
+	}
+}

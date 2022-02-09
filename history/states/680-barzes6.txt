@@ -1,0 +1,30 @@
+
+state={
+	id=680
+	name="STATE_680"
+	manpower = 2980000
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = BRZ
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			arms_factory = 1
+			1128 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = BRZ
+		victory_points = {
+			1128 15
+		}
+
+	}
+	provinces={
+		786 787 800 805 821 826 835 836 854 856 861 862 870 886 895 902 
+	}
+}

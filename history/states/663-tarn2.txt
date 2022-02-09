@@ -1,0 +1,27 @@
+
+state={
+	id=663
+	name="STATE_663"
+	manpower = 2200000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = TRN
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = TRN
+		victory_points = {
+			1233 5
+		}
+
+	}
+	provinces={
+		879 882 919 925 951 
+	}
+}

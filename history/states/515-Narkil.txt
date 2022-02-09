@@ -1,0 +1,33 @@
+
+state={
+	id=515
+	name="STATE_515"
+	resources={
+		steel = 8 # was: 8
+	}
+
+	history={
+		owner = CHO
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 0
+			3375 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = CHO
+		victory_points = {
+			3375 10 
+		}
+
+	}
+	provinces={
+		2687 2713 2745 2764 2776 2794 2807 2819 2826 2860 2864 2900 
+	}
+	manpower=3780000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

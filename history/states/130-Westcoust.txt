@@ -1,0 +1,26 @@
+state={
+	id=130
+	name="STATE_130"
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = FIL
+		victory_points = {
+			12402 5 
+		}
+		victory_points = {
+			12426 10 
+		}
+
+	}
+	provinces={
+		12402 12426 12456 12515 12534 12560 12642 
+	}
+	manpower=1581937
+	buildings_max_level_factor=1.000
+	state_category=city
+}

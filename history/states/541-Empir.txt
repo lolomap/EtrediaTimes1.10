@@ -1,0 +1,33 @@
+
+state={
+	id=541
+	name="STATE_541"
+	manpower = 3780000
+	
+	state_category = town
+	
+	resources={
+             tungsten = 34 # was: 40
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 1
+			2042 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2042 15
+		}
+
+	}
+	provinces={
+		1808 1817 1844 1879 1911 1938 1966 1988 2025 
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=114
+	name="STATE_114"
+	resources={
+		steel=19.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = IID
+		add_core_of = SKT
+		victory_points = {
+			8561 5 
+		}
+
+	}
+	provinces={
+		8084 8154 8173 8241 8257 8303 8304 8305 8408 8429 8443 8505 8526 8547 8548 8573 8587 8661 8662 8663 8707 8708 8741 8742 8766 8779 8801 8802 8839 8870 8880 8906 8907 8929 8930 8931 8966 8971 9006 9021 9022 9038 9039 9102 9122 9123 9124 9142 9193 9209 9337 
+	}
+	manpower=4600000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=124
+	name="STATE_124"
+	manpower = 1000000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 6
+			14009 = {
+				naval_base = 4
+			}
+			air_base = 4
+		}
+		add_core_of = FIL
+		victory_points = {
+			14009 10
+		}
+
+	}
+	provinces={
+		11642 11686 11706 11707 11758 11759 11845 11889 11912 11959 11960 11961 12035 12048 12079 12089 12130 12205 
+	}
+}

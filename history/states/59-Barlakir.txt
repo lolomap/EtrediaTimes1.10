@@ -1,0 +1,29 @@
+state={
+	id=59
+	name="STATE_59"
+	manpower = 350000
+	
+	state_category = rural
+	
+	resources={
+        oil = 14 # was: 14
+	}
+
+	history={
+		owner = TRP
+		buildings = {
+			infrastructure = 7
+			8384 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = TRP
+		victory_points = {
+			8384 1
+		}
+
+	}
+	provinces={
+		6768 6787 6901 6936 7030 7054 7124 7205 7225 
+	}
+}

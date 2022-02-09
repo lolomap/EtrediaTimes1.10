@@ -1,0 +1,30 @@
+
+state={
+	id=674
+	name="STATE_674"
+	manpower = 2330000
+	state_category = rural
+	
+	resources={
+		oil = 13 # was: 16
+	}
+
+	history={
+		owner = KBS
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			1419 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = KBS
+		victory_points = {
+			1419 1
+		}
+
+	}
+	provinces={
+		941 942 972 982 985 989 1014 1016 
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=770
+	name="STATE_770"
+	manpower = 34000
+	state_category = pastoral
+	
+	resources={
+		steel = 1 # was: 1
+	}
+
+	history={
+		owner = NIB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NIB
+		victory_points = {
+			1756 1
+		}
+
+	}
+	provinces={
+		1320 
+	}
+}

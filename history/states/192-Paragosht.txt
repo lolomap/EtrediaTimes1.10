@@ -1,0 +1,28 @@
+
+state={
+	id=192
+	name="STATE_192"
+	manpower = 240000
+	
+	state_category = rural
+	
+	resources={
+		steel = 24 # was: 28
+                chromium = 16 # was: 18
+	}
+
+	history={
+		owner = RGY
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = RGY
+		victory_points = {
+			8652 5
+		}
+
+	}
+	provinces={
+		7074 7152 7173 7192 7273 7274 7297 7368 7386 7419 7433 7453 7466 7487 7544 7558 7559 7638 7651 7671 7687 7769 7770 
+	}
+}

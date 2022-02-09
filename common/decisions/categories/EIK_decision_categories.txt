@@ -1,0 +1,19 @@
+EIK_release_diria_minors = {
+	icon = generic_independence
+	allowed = {
+		original_tag = EIK
+	}
+	visible = {
+		always = yes
+	}
+}
+
+EIK_oligarchism_rejection = {
+	icon = generic_crisis
+	allowed = {
+		original_tag = EIK
+	}
+	visible = {
+		has_government = fascism
+	}
+}

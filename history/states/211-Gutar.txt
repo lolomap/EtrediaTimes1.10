@@ -1,0 +1,29 @@
+
+state={
+	id=211
+	name="STATE_211"
+	resources={
+		oil=25.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			anti_nuclear_building = 1
+		}
+		add_core_of = SBU
+		add_core_of = HLR
+		victory_points = {
+			8944 1 
+		}
+
+	}
+	provinces={
+		6927 6960 6981 7072 7073 7150 7151 7172 7208 7247 7271 7343 7344 7366 7402 7403 7452 7465 7486 7510 7531 7532 7637 7650 7723 7743 7784 7797 7816 
+	}
+	manpower=349000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

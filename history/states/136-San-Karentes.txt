@@ -1,0 +1,26 @@
+state={
+	id=136
+	name="STATE_136"
+	history={
+		owner = SHE
+		buildings = {
+			infrastructure = 5
+			16095 = {
+				naval_base = 3
+			}
+
+		}
+		add_core_of = PIN
+		add_core_of = SHE
+		victory_points = {
+			13411 1 
+		}
+
+	}
+	provinces={
+		13411 13435 13519 13577 
+	}
+	manpower=503000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,87 @@
+on_actions = { 
+# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			
+		}
+	}
+	on_war = {
+		effect = {
+			
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 341 }
+					ROOT = { has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+				}
+				GRE = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+				SOV = { clr_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY }
+			}
+		}
+	}
+
+	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
+	on_join_faction = {
+		effect = {
+			
+		}
+	}
+
+	#FROM is country getting invited.
+	on_offer_join_faction = {
+		effect = { #If in faction with Bulgaria, remove bad opinion modifiers
+			
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+
+		}
+	}
+
+	# called when a country send volunteers to another
+	# ROOT is sender, FROM is receiver
+	on_send_volunteers = {
+		effect = {
+			
+		}
+	}
+
+	on_ruling_party_change = {	
+		effect = {
+			
+		}
+	}
+
+	on_weekly_BUL = {
+		effect = {
+
+		}
+	}
+	
+	#ROOT = attacking side
+	#FROM = defending side
+	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
+	on_war_relation_added = {
+		effect = {
+			
+		}
+	}
+
+	on_leave_faction = {
+		effect = {
+			
+		}
+	}
+
+	on_monthly_BUL = {
+		effect = {
+			
+		}
+	}
+}

@@ -1,0 +1,96 @@
+capital = 604
+
+OOB = "BHI_2014"
+
+set_research_slots = 1
+set_stability = 0.6
+set_war_support = 0.2
+
+add_ideas = {
+        WWW_bad_country
+        free_press
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	gwtank = 1
+	tech_mountaineers = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 0
+        fascism = 0
+        communism = 5
+	neutrality = 95
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Rahul Nandi"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rahul Nandi"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rahul Nandi"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anand Mudaliyar"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Chandra Ayyangar"
+	portrait_path = ""
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

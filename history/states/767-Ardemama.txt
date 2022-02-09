@@ -1,0 +1,31 @@
+
+state={
+	id=767
+	name="STATE_767"
+	manpower = 2560000
+	state_category = town
+	
+	resources={
+		oil = 6 # was: 12
+	}
+
+	history={
+		owner = NIB
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			arms_factory = 1
+			1474 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = NIB
+		victory_points = {
+			1534 10
+		}
+
+	}
+	provinces={
+		1063 1093 1098 1118 1119 1137 1150 1197 
+	}
+}

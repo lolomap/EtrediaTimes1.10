@@ -1,0 +1,398 @@
+focus_tree = {
+	id = kouli
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KLU
+		}
+	}
+	default = no
+	continuous_focus_position = {x = 0 y = 92}
+	
+	focus = {
+		id = KLU_politika1
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		x = 12
+		y = 0
+		completion_reward = {
+		country_event = { id = klu.2 days = 1 }
+		}
+		will_lead_to_war_with = DNG
+
+	}
+	
+	focus = {
+		id = KLU_dgn_core_state
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_politika1
+		}
+		available = {
+		    621 = { is_controlled_by = KLU }
+			622 = { is_controlled_by = KLU }
+			623 = { is_controlled_by = KLU }
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			country_event = { id = klu.7 days = 1 }
+			custom_effect_tooltip = wtire_reduce_10
+			hidden_effect = {
+				subtract_from_variable = {wtire = 10}
+			}
+		}
+
+	}
+	
+	focus = {
+		id = KLU_research_slot1
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_dgn_core_state
+		}
+		available = {
+		    621 = { is_controlled_by = KLU }
+			622 = { is_controlled_by = KLU }
+			623 = { is_controlled_by = KLU }
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+			add_research_slot = 1
+			
+		}
+
+	}
+	
+	focus = {
+		id = KLU_industrial1
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 20
+		prerequisite = {
+			focus = KLU_dgn_core_state
+		}
+		available = {
+			622 = { is_controlled_by = KLU }
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = wtire_reduce_20
+			hidden_effect = {
+				subtract_from_variable = {wtire = 20}
+			}
+			622 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+			swap_ideas = {
+	        	remove_idea = WWW_bad_country
+	        	add_idea = WWW_medium_country
+	        }
+		}
+	}
+	
+	focus = {
+		id = KLU_the_great_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_industrial1
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+        	KLU = { country_event = { id = klu.8 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_soloput_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_the_great_campaign
+		}
+		will_lead_to_war_with = SOL
+		bypass = {
+		NOT = { country_exists = SOL }
+		}
+		available = {
+		NOT = { has_war_with = KYU }
+		NOT = { has_war_with = GWA }
+		}
+		cancel_if_invalid = yes
+		x = 12
+		y = 8
+		completion_reward = {
+        KLU = { country_event = { id = klu.9 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_gwanchin_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 1
+		prerequisite = {
+			focus = KLU_the_great_campaign
+		}
+		will_lead_to_war_with = GWA
+		available = {
+		NOT = { has_war_with = SOL }
+		}
+		bypass = {
+		NOT = { country_exists = GWA }
+		}
+		cancel_if_invalid = yes
+		x = 14
+		y = 8
+		completion_reward = {
+        KLU = { country_event = { id = klu.10 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_kyuryu_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 1
+		prerequisite = {
+			focus = KLU_the_great_campaign
+		}
+		will_lead_to_war_with = KYU
+		available = {
+		NOT = { has_war_with = SOL }
+		}
+		bypass = {
+		NOT = { country_exists = KYU }
+		}
+		cancel_if_invalid = yes
+		x = 10
+		y = 8
+		completion_reward = {
+        KLU = { country_event = { id = klu.11 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_genocide2
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		available = {
+		NOT = { has_war_with = KYU }
+		NOT = { has_war_with = GWA }
+		NOT = { has_war_with = SOL }
+		}
+		prerequisite = {
+			focus = KLU_kyuryu_campaign
+		}
+		prerequisite = {
+			focus = KLU_gwanchin_campaign
+		}
+		prerequisite = {
+			focus = KLU_soloput_campaign
+		}
+		x = 12
+		y = 10
+		completion_reward = {
+        	KLU = { country_event = { id = klu.12 days = 1 } }
+			hidden_effect = {
+	            swap_ideas = {
+	            remove_idea = WWW_bad_country
+	            add_idea = WWW_medium_country
+	            }
+			}
+			custom_effect_tooltip = wtire_reduce_10
+			hidden_effect = {
+				subtract_from_variable = {wtire = 10}
+			}
+		}
+	}
+	
+	focus = {
+		id = KLU_evar_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_genocide2
+		}
+		will_lead_to_war_with = ECE
+		bypass = {
+		NOT = { country_exists = ECE }
+		}
+		x = 12
+		y = 12
+		completion_reward = {
+        KLU = { country_event = { id = klu.15 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_horga_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_evar_campaign
+		}
+		available = {
+		NOT = { has_war_with = ECE }
+		}
+		cancel_if_invalid = yes
+		will_lead_to_war_with = HOR
+		bypass = {
+		NOT = { country_exists = HOR }
+		}
+		x = 12
+		y = 14
+		completion_reward = {
+        KLU = { country_event = { id = klu.16 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_lod_zar_integration
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_horga_campaign
+		}
+		available = {
+		NOT = { has_war_with = HOR }
+		}
+		cancel_if_invalid = yes
+		will_lead_to_war_with = LOD
+		will_lead_to_war_with = ZOG
+		x = 12
+		y = 16
+		completion_reward = {
+        	LOD = { country_event = { id = minor.1 days = 1 } }
+			ZOG = { country_event = { id = minor.2 days = 1 } }
+
+		}
+	}
+	
+	focus = {
+		id = KLU_unciar_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_lod_zar_integration
+		}
+		available = {
+		NOT = { has_war_with = GAR }
+		NOT = { has_war_with = KCE }
+		}
+		will_lead_to_war_with = UNC
+		bypass = {
+		NOT = { country_exists = UNC }
+		}
+		x = 12
+		y = 18
+		completion_reward = {
+        KLU = { country_event = { id = klu.17 days = 1 } }
+		ZAZ = { country_event = { id = minor.3 days = 7 } }
+		}
+	ai_will_do = {
+	factor = 100
+	}
+	}
+	
+	focus = {
+		id = KLU_garzah_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_lod_zar_integration
+		}
+		available = {
+		NOT = { has_war_with = UNC }
+		NOT = { has_war_with = KCE }
+		}
+		will_lead_to_war_with = GAR
+		bypass = {
+		NOT = { country_exists = GAR }
+		}
+		x = 10
+		y = 18
+		completion_reward = {
+        KLU = { country_event = { id = klu.18 days = 1 } }
+		}
+	}
+	
+	focus = {
+		id = KLU_karcae_campaign
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		prerequisite = {
+			focus = KLU_lod_zar_integration
+		}
+		available = {
+		NOT = { has_war_with = UNC }
+		NOT = { has_war_with = GAR }
+		}
+		will_lead_to_war_with = KCE
+		bypass = {
+		NOT = { country_exists = KCE }
+		}
+		x = 14
+		y = 18
+		completion_reward = {
+        KLU = { country_event = { id = klu.19 days = 1 } }
+		}
+	}
+
+	focus = {
+		id = KLU_west_integration
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 2
+		prerequisite = {
+			focus = KLU_karcae_campaign
+		}
+		prerequisite = {
+			focus = KLU_garzah_campaign
+		}
+		prerequisite = {
+			focus = KLU_unciar_campaign
+		}
+		available = {
+		NOT = { has_war_with = ZAZ }
+		}
+		cancel_if_invalid = yes
+		x = 12
+		y = 20
+		completion_reward = {
+        	BHI = { country_event = { id = minor.7 days = 1 } }
+			KVU = { country_event = { id = minor.8 days = 1 } }
+			TUB = { country_event = { id = minor.9 days = 1 } }
+			custom_effect_tooltip = wtire_reduce_20
+			hidden_effect = {
+				subtract_from_variable = {wtire = 20}
+			}
+		}
+	}
+	
+	focus = {
+		id = KLU_ZHE_war
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 20
+		prerequisite = {
+			focus = KLU_west_integration
+		}
+		available = {
+		NOT = { has_war_with = ZAZ }
+		}
+		cancel_if_invalid = yes
+		x = 12
+		y = 22
+		completion_reward = {
+        KLU = { country_event = { id = klu.20 days = 1 } }
+		}
+	}
+}

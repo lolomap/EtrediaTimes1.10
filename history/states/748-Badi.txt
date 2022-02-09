@@ -1,0 +1,32 @@
+
+state={
+	id=748
+	name="STATE_748"
+	manpower = 5600000
+	
+	state_category = city
+	
+	resources={
+		oil = 12# was:16 
+	}
+
+	history={
+		owner = ZHO
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 3
+			arms_factory = 2
+			2563 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = ZHO
+		victory_points = {
+			2563 15
+		}
+
+	}
+	provinces={
+		1751 1777 1810 1824 1825 1873 1898 1905 1913 1921 1922 1948 1991 2026 2055 
+	}
+}

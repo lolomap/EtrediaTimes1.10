@@ -1,0 +1,28 @@
+state={
+	id=191
+	name="STATE_191"
+	manpower = 2200000
+	
+	state_category = city
+	
+	resources={
+		oil = 2 # was: 2
+	}
+
+	history={
+		owner = RGY
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 3
+                        arms_factory = 0
+		}
+		add_core_of = RGY
+		victory_points = {
+			9282 15
+		}
+
+	}
+	provinces={
+		7652 7672 7724 7725 7798 7836 7837 7852 7853 7908 7919 7920 7967 7968 7969 7998 8015 8039 8073 8074 8086 8087 8122 8123 8159 8175 8200 8201 8213 8242 8259 8260 8261 8293 8332 8333 8370 8393 8412 8487 8507 8528 8529 8574 8626 8666 8686 8749 8769 
+	}
+}

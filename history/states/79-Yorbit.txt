@@ -1,0 +1,23 @@
+
+state={
+	id=79
+	name="STATE_79"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = IID
+		add_core_of = BKH
+		victory_points = {
+			8577 1 
+		}
+
+	}
+	provinces={
+		7055 7088 7185 7206 7226 7290 7309 7383 7399 7430 7463 7508 7554 7555 7593 
+	}
+	manpower=900000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=610
+	name="STATE_610"
+	manpower = 2000000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = KVU
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KVU
+		victory_points = {
+			11870 2
+		}
+
+	}
+	provinces={
+		9740 9775 9856 9931 9965 10023 10122 10123 10215 10227 10239 10402 10469 10499 10530 10621 10666 10680 10883 10943 
+	}
+}

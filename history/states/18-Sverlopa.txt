@@ -1,0 +1,32 @@
+state={
+	id=18
+	name="STATE_18"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		oil = 6 # was: 10
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 1
+			8992 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = UCB
+		add_core_of = SVE
+
+		victory_points = {
+			8992 5
+		}
+
+	}
+	provinces={
+		7708 7709 7765 7812 7829 7901 7902 7914 7933 
+	}
+}

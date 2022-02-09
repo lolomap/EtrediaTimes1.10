@@ -1,0 +1,37 @@
+guiTypes = {
+	containerWindowType = {
+		name = "make_peace_window"
+		position = { x=0 y=0 }	
+		orientation = UPPER_LEFT
+		clipping = no
+		moveable = yes
+		size = {width = 5%% height = 5%%}
+
+		background = {
+			name = "mp_BG"
+			spriteType = "GFX_make_peace_bg"
+		}
+
+		buttonType = {
+			name = "peace_all_button"
+			spriteType = "GFX_peace_all_btn"
+			buttonText = peace_all_button_text__	
+			buttonFont = hoi_18mbs
+			pdx_tooltip = peace_all_button_tooltip
+			pdx_tooltip_delayed = peace_all_button_delayed
+			position = { x = 100 y = 100 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		#buttonType = {
+		#	name = "peace_selected_button"
+		#	spriteType = "GFX_peace_all_btn"
+		#	buttonText = peace_all_button_text	
+		#	buttonFont = hoi_18mbs
+		#	pdx_tooltip = peace_all_button_tooltip
+		#	pdx_tooltip_delayed = peace_all_button_delayed
+		#	position = { x = 100 y = 50 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+	}
+}

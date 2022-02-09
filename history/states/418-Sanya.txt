@@ -1,0 +1,31 @@
+
+state={
+	id=418
+	name="STATE_418"
+	manpower = 4576000
+	
+	state_category = town
+	
+	resources={
+		steel = 22 # was: 40
+                tungsten = 12 # was: 14
+                chromium = 30 # was: 35
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        arms_factory = 2
+		}
+		add_core_of = VRO
+		victory_points = {
+			8772 5
+		}
+
+	}
+	provinces={
+		8205 8337 8338 8493 8536 8633 8693 8694 8695 8756 8822 8841 8886 8913 8914 8915 8942 8956 8995 8996 9042 9068 9084 9110 9111 9112 9186 9187 9201 9215 9234 9254 9301 9344 9345 9371 9377 9437 9450 9480 9601 9602 
+	}
+}

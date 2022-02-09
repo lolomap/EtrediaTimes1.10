@@ -1,0 +1,29 @@
+state={
+	id=13
+	name="STATE_13"
+	manpower = 1800000
+	
+	state_category = large_town
+	
+	resources={
+		steel = 23 # was: 40
+                oil = 16 # was: 40
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+		}
+		add_core_of = UCB
+		add_core_of = EDD
+		victory_points = {
+			8971 10
+		}
+
+	}
+	provinces={
+		7501 7522 7566 7632 7704 7736 7737 7750 7764 7862 7882 7898 7899 8009 8051 8052 8103 
+	}
+}

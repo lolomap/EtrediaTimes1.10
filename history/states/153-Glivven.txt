@@ -1,0 +1,28 @@
+state={
+	id=153
+	name="STATE_153"
+	manpower = 1760000
+	state_category = city
+
+	history={
+		owner = SHE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+                        air_base = 4
+			13511 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = SHE
+		victory_points = {
+			13511 15 
+		}
+
+	}
+	provinces={
+		13511 13533 13612 13613 13624 13634 13679 13700 13715 13716 
+	}
+}

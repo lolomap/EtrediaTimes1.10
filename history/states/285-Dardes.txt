@@ -1,0 +1,35 @@
+
+state={
+	id=285
+	name="STATE_285"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = DIR
+		victory_points = {
+			12771 15
+		}
+		victory_points = {
+			12683 1
+		}
+		victory_points = {
+			12450 1
+		}
+
+	}
+	provinces={
+		10651 10672 10720 10721 10722 10723 10758 10769 10816 10825 10826 10858 10878 10911 10931 10932 10933 10934 11011 11023 11024 11025 11026 11057 11091 11121 11122 11123 11143 11144 11198 11210 11258 11259 11305 11353 11437 
+	}
+}

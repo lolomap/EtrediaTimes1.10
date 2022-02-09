@@ -1,0 +1,29 @@
+
+state={
+	id=570
+	name="STATE_570"
+	manpower = 1490000
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+                        arms_factory = 0
+		}
+		add_core_of = TOR
+		victory_points = {
+			3197 5
+		}
+
+	}
+	provinces={
+		2814 2815 2816 2849 2863 2867 2876 2886 2887 2897 2903 2908 2935 2938 2952 2953 2959 2963 2974 2975 2980 3001 3019 
+	}
+}

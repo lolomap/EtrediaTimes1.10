@@ -1,0 +1,22 @@
+state={
+	id=194
+	name="STATE_194"
+	manpower = 80000
+	
+	state_category = pastoral
+
+	history={
+		owner = RGY
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = RGY
+		victory_points = {
+			8063 1
+		}
+
+	}
+	provinces={
+		6758 6772 6790 6850 6944 6945 7019 7036 7061 
+	}
+}

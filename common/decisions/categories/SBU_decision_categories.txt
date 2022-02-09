@@ -1,0 +1,14 @@
+SBU_east_sphere = {
+	visible = {always = yes}
+}
+
+SBU_fascist_revolution = {
+	visible = {always = yes}
+}
+
+SBU_sburska_zvezda_war = {
+	visible = {
+		has_country_flag = sz_extra_support_activated
+		surrender_progress < 0.3
+	}
+}

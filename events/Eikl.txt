@@ -1,0 +1,1000 @@
+add_namespace = eik
+
+country_event = {
+	id = eik.1
+	title = eik.1.t
+	desc = eik.1.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = SHE
+    }
+
+	option = {
+		name = eik.1.a
+		   SHE = {
+		   transfer_state = 157
+		   }
+    }
+	
+	option = {
+		name = eik.1.b
+            country_event = { id = eik.2 days = 1 }
+	        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+        id = eik.2
+        title = eik.2.t
+        desc = eik.2.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+    option = {
+    name = eik.2.a
+    create_wargoal = {
+    type = take_state_focus
+    generator = { 157 }
+    target = SHE
+    }
+	add_threat = 20
+	UCB = { country_event = { id = ucnb.7 days = 1 } }
+	}
+}
+
+country_event = {
+        id = eik.3
+        title = eik.3.t
+        desc = eik.3.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.3.a
+		TAG = EIK
+            create_wargoal = {
+                type = annex_everything
+                target = DIR
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = DEM
+            }
+	    add_threat = 30
+		}
+}
+
+country_event = {
+        id = eik.4
+        title = eik.4.t
+        desc = eik.4.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.4.a
+		        TAG = EIK
+                create_wargoal = {
+                type = annex_everything
+                target = KAS
+                }
+				add_threat = 5
+	}
+}
+
+country_event = { # Роспуск парламента
+    id = eik.5
+    title = eik.5.t
+    desc = eik.5.d
+
+    is_triggered_only = yes
+
+    trigger = {
+        TAG = EIK
+	}
+
+	immediate = {
+		set_variable = {eik_ol_ch = 0.05}
+	}
+
+    option = {
+		name = eik.5.a
+		add_ideas = EIK_democratpartizan
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.05}	
+	}
+}
+
+country_event = {
+        id = eik.6
+        title = eik.6.t
+        desc = eik.6.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+	    }
+
+        option = {
+		name = eik.6.a
+            EIK = {
+                if = {
+                limit = { SHE = { owns_state = 157 controls_state = 157 } } 
+		        transfer_state = 157
+                }
+			}
+			SHE = {
+            white_peace = EIK
+			country_event = { id = sheregia.3 days = 2 }
+            }
+		    EIK = {
+            puppet = SHE_EIK
+		    puppet = SHE
+			}
+            ai_chance = { factor = 80 }		
+	    }
+
+        option = {
+		name = eik.6.b
+		EIK = {
+			annex_country = {
+			    target = SHE
+			    transfer_troops = no
+			}
+		}
+        ai_chance = { factor = 20 }	
+	    }
+}
+
+country_event = {
+        id = eik.7
+        title = eik.7.t
+        desc = eik.7.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.7.a	
+	}
+}
+
+country_event = {
+        id = eik.8
+        title = eik.8.t
+        desc = eik.8.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.8.a
+			add_political_power = 50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.08
+			}
+		}
+}
+
+country_event = { # Разгон ОПГ
+        id = eik.9
+        title = eik.9.t
+        desc = eik.9.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+		immediate = {
+			set_variable = {eik_ol_ch = -0.3}
+		}
+
+        option = {
+		name = eik.9.a	
+			add_political_power = -100
+			add_stability = -0.1
+			custom_effect_tooltip = eik_oligarchism_change
+			add_to_variable = {eik_oligarchism = -0.3}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+}
+
+country_event = {
+        id = eik.10
+        title = eik.10.t
+        desc = eik.10.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.10.a	
+			create_wargoal = {
+				type = annex_everything
+				target = BAE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TOL
+			}
+		}
+}
+
+country_event = {
+        id = eik.11
+        title = eik.11.t
+        desc = eik.11.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+		
+	    option = {
+		name = eik.11.a	
+			EIK = {
+				puppet = BAE
+				puppet = TOL
+			}
+			ai_chance = { 
+			factor = 0.6
+			}
+		}
+        option = {
+		name = eik.11.b	
+			EIK = {
+				annex_country = {
+				target = BAE
+				transfer_troops = yes
+				}
+				puppet = TOL
+			}
+			ai_chance = { 
+			factor = 0.25
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+		}
+	    option = {
+		name = eik.11.c
+			EIK = {
+				annex_country = {
+				target = BAE
+				transfer_troops = yes
+				}
+				annex_country = {
+				target = TOL
+				transfer_troops = yes
+				}
+			}
+			ai_chance = { 
+			factor = 0.15
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+		}
+}
+
+country_event = {
+        id = eik.12
+        title = eik.12.t
+        desc = eik.12.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.12.a	
+		}
+}
+
+country_event = {
+        id = eik.13
+        title = eik.13.t
+        desc = eik.13.d
+
+        is_triggered_only = yes
+
+        trigger = {
+            TAG = EIK
+		}
+
+        option = {
+		name = eik.13.a	
+		}
+}
+
+country_event = { # Олигархи у власти
+	id = eik.14
+	title = eik.14.t
+	desc = eik.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = eik.14.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+			election_frequency = 72
+		}
+		load_focus_tree = generic_focus
+	}
+}
+
+country_event = { # Генерал у власти
+	id = eik.15
+	title = eik.15.t
+	desc = eik.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = eik.15.a
+		retire_country_leader = yes
+		set_variable = {eik_army = 1}
+		set_variable = {eik_oligarchism = 0.2}
+		add_timed_idea  = {idea = EIK_oligarchismpartizan days = 720 }
+	}
+}
+
+country_event = { # Медали
+	id = eik.16
+	title = eik.16.t
+	desc = eik.16.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.1}
+		set_variable = {eik_ar_red = -0.15}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.1}
+		add_timed_idea = {idea = EIK_rewards_for_generals days = 60}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.15}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65 }
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # доп.средства армии
+	id = eik.17
+	title = eik.17.t
+	desc = eik.17.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.05}
+		set_variable = {eik_ar_red = -0.1}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.05}
+		add_timed_idea = {idea = EIK_army_goods days = 120}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65}
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # офицеры форма
+	id = eik.18
+	title = eik.18.t
+	desc = eik.18.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.05}
+		set_variable = {eik_ar_red = -0.1}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.05}
+		add_timed_idea = {idea = EIK_army_goods days = 120}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65}
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # учения
+	id = eik.19
+	title = eik.19.t
+	desc = eik.19.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.1}
+		set_variable = {eik_ar_red = -0.15}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.1}
+		add_timed_idea = {idea = EIK_prizes_time days = 30}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.15}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65}
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # коррцп скандал
+	id = eik.20
+	title = eik.20.t
+	desc = eik.20.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.15}
+		set_variable = {eik_ar_red = -0.2}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.15}
+		add_timed_idea = {idea = EIK_censorship days = 120}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.2}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65}
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { # военный завод
+	id = eik.21
+	title = eik.21.t
+	desc = eik.21.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ar_ch = 0.10}
+		set_variable = {eik_ar_red = -0.2}
+
+		hidden_effect = {
+			random_owned_state = {
+				EIK = {set_variable = {eik_rand_state =  PREV}}
+			}
+		}
+		
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_army_change
+		add_to_variable = {eik_army = 0.1}
+		add_timed_idea = {idea = EIK_factory_corruption days = 360}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army < 0.4}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = eik.16.b
+		custom_effect_tooltip = eik_army_reduce
+		subtract_from_variable = {eik_army = 0.2}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_army > 0.65}
+				add = 100
+			}
+		}
+	}
+}
+
+country_event = { #Запуск случайного армейского ивента
+	id = eik.22
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {check_variable = {eik_army < 0.7}}
+			random_list = {
+				10 = {
+					country_event = eik.16
+				}
+				10 = {
+					country_event = eik.17
+				}
+				10 = {
+					country_event = eik.18
+				}
+				10 = {
+					country_event = eik.19
+				}
+			
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					country_event = eik.16
+				}
+				10 = {
+					country_event = eik.17
+				}
+				10 = {
+					country_event = eik.18
+				}
+				10 = {
+					country_event = eik.19
+				}
+				10 = {
+					country_event = eik.20
+				}
+				10 = {
+					country_event = eik.21
+				}
+			}
+		}
+		
+	}
+	option = {name = id.22.a}
+}
+
+country_event = { #неугодное производство
+	id = eik.23
+	title = eik.23.t
+	desc = eik.23.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.1}
+		set_variable = {eik_ol_ch = 0.05}
+		hidden_effect = {
+			random_owned_state = {
+				EIK= {set_variable = {eik_rand_state = PREV}}
+			}
+		}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.05}
+		random_owned_state = {
+			limit = {industrial_complex > 0}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { # перераспределение средств (оли)
+	id = eik.24
+	title = eik.24.t
+	desc = eik.24.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.1}
+		set_variable = {eik_ol_ch = 0.05}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.05}
+		add_timed_idea = {idea = EIK_industrial_privilege days = 240}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { # транспорт полярники
+	id = eik.25
+	title = eik.25.t
+	desc = eik.25.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.1}
+		set_variable = {eik_ol_ch = 0.05}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.05}
+		add_timed_idea = {idea = EIK_infrastructure_corruption days = 90}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { # губернатор сбил
+	id = eik.26
+	title = eik.26.t
+	desc = eik.26.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.1}
+		set_variable = {eik_ol_ch = 0.05}
+		random_owned_state = {
+			EIK = {set_variable = {eik_rand_state = PREV}}
+		}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.05}
+		add_timed_idea = {idea = EIK_court_falsification days = 90}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.1}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { # эколог катастрофа
+	id = eik.27
+	title = eik.27.t
+	desc = eik.27.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.2}
+		set_variable = {eik_ol_ch = 0.15}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.15}
+		add_timed_idea = {idea = EIK_censorship days = 120}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.2}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { # кортежи
+	id = eik.28
+	title = eik.28.t
+	desc = eik.28.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = {eik_ol_red = -0.2}
+		set_variable = {eik_ol_ch = 0.1}
+	}
+	option = {
+		name = eik.16.a
+		custom_effect_tooltip = eik_oligarchism_change
+		add_to_variable = {eik_oligarchism = 0.1}
+		add_timed_idea = {idea = EIK_police_block days = 120}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism < 0.2}
+				add = 100
+			}
+		}
+	}
+	option = {
+		name =  eik.16.b
+		custom_effect_tooltip = eik_oligarchism_reduce
+		subtract_from_variable = {eik_oligarchism = 0.2}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {eik_oligarchism > 0.65}
+				add = 100
+			}
+		}
+	}
+
+}
+
+country_event = { #Запуск случайного олигархического ивента
+	id = eik.29
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {check_variable = {eik_oligarchism < 0.7}}
+			random_list = {
+				10 = {
+					country_event = eik.23
+				}
+				10 = {
+					country_event = eik.24
+				}
+				10 = {
+					country_event = eik.25
+				}
+				10 = {
+					country_event = eik.26
+				}
+			
+			}
+		}
+		else = {
+			random_list = {
+				10 = {
+					country_event = eik.23
+				}
+				10 = {
+					country_event = eik.24
+				}
+				10 = {
+					country_event = eik.25
+				}
+				10 = {
+					country_event = eik.26
+				}
+				10 = {
+					country_event = eik.27
+				}
+				10 = {
+					country_event = eik.28
+				}
+			}
+		}
+		
+	}
+	option = {name = eik.29.a}
+}
+
+country_event = { # не использовался
+	id = eik.30
+	title = eik.30.t
+	desc = eik.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = eik.30.a
+	}
+}

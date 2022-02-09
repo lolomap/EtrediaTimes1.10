@@ -1,0 +1,28 @@
+state={
+	id=532
+	name="STATE_532"
+	manpower = 102000
+	
+	state_category = pastoral
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			1212 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			1212 1
+		}
+
+	}
+	provinces={
+		855 867 880 
+	}
+}

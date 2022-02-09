@@ -1,0 +1,28 @@
+state={
+	id=22
+	name="STATE_22"
+	manpower = 900000
+	
+	state_category = rural
+	
+	resources={
+		aluminium = 12 # was: 25
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 1
+		}
+		add_core_of = UCB
+		add_core_of = FLR
+		victory_points = {
+			7428 5
+		}
+
+	}
+	provinces={
+		6204 6246 6264 6335 6336 6384 6468 6469 6495 6594 6595 6673 6786 6900 6934 
+	}
+}

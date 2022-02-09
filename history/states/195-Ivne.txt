@@ -1,0 +1,22 @@
+state={
+	id=195
+	name="STATE_195"
+	manpower = 90000
+	
+	state_category = pastoral
+
+	history={
+		owner = RGY
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RGY
+		victory_points = {
+			7727 1
+		}
+
+	}
+	provinces={
+		6373 6514 6640 6716 6773 
+	}
+}

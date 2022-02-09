@@ -1,0 +1,429 @@
+add_namespace = yan
+
+country_event = {
+        id = yan.1
+        title = yan.1.t
+        desc = yan.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        tag = YAN
+    }
+
+    option = {
+		TAG = YAN
+		name = yan.1.a
+                create_wargoal = {
+                type = take_state
+                generator = { 235 }
+                target = TRB
+                }
+	}
+}
+
+country_event = {
+	id = yan.2
+	title = yan.2.t
+	desc = yan.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+    TAG = YAN
+    }
+	option = {
+		name = yan.2.a
+		hidden_effect = {
+            EIK = {
+            add_to_faction = YAN
+            }
+        }				
+	    ai_chance = {
+		factor = 70 
+		    modifier = {
+	            factor = 0
+		    has_completed_focus = YAN_SWEA
+		    }
+		}
+	}
+    option = {
+        name = yan.2.b
+	    ai_chance = { 
+		factor = 30 
+		modifier = {
+	    factor = 0
+		is_historical_focus_on = yes
+		}
+		}
+    }
+}
+
+country_event = {
+	id = yan.3
+	title = yan.3.t
+	desc = yan.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yan.3.a
+                YAN = {
+                add_to_faction = BPR
+                }
+    }
+}
+
+country_event = {
+	id = yan.4
+	title = yan.4.t
+	desc = yan.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yan.4.a
+                YAN = {
+                annex_country = {
+                target = BPR
+                transfer_troops = no
+                }
+                }
+		ai_chance = { factor = 99 }
+        }
+
+	option = {
+		name = yan.4.b
+		ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+	id = yan.5
+	title = yan.5.t
+	desc = yan.5.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.5.a
+            YAN = {
+			create_wargoal = {
+				type = annex_everything
+				target = SMA
+			}
+            }
+    }
+}
+
+country_event = {
+	id = yan.6
+	title = yan.6.t
+	desc = yan.6.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.5.a
+            YAN = {
+			create_wargoal = {
+				type = annex_everything
+				target = DID
+			}
+            }
+    }
+}
+
+country_event = {
+	id = yan.7
+	title = yan.7.t
+	desc = yan.7.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.5.a
+            YAN = {
+			create_wargoal = {
+				type = annex_everything
+				target = DON
+			}
+            }
+    }
+}
+
+country_event = {
+	id = yan.8
+	title = yan.8.t
+	desc = yan.8.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.8.a
+            YAN = {
+			create_wargoal = {
+				type = annex_everything
+				target = TRB
+			}
+            }
+    }
+}
+
+country_event = {
+	id = yan.9
+	title = yan.9.t
+	desc = yan.9.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.9.a
+    }
+}
+
+country_event = {
+	id = yan.10
+	title = yan.10.t
+	desc = yan.10.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.10.a
+	add_war_support = 0.1
+    }
+}
+
+country_event = {
+	id = yan.11
+	title = yan.11.t
+	desc = yan.11.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.11.a
+	add_stability = 0.1
+    }
+}
+
+country_event = {
+	id = yan.12
+	title = yan.12.t
+	desc = yan.12.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.12.a
+	add_stability = 0.3
+	add_ideas = { YAN_min_taxes }
+	ai_chance = { factor = 25 }
+    }
+	option = {
+	name = yan.12.b
+	add_stability = 0.1
+	add_ideas = { YAN_medium_taxes }
+	ai_chance = { factor = 60 }
+    }
+	option = {
+	name = yan.12.c
+	add_stability = -0.1
+	add_ideas = { YAN_max_taxes }
+	ai_chance = { factor = 15 }
+    }
+}
+
+country_event = {
+	id = yan.13
+	title = yan.13.t
+	desc = yan.13.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.13.a
+	add_stability = -0.1
+	ai_chance = { factor = 30 }
+    }
+	option = {
+	name = yan.13.b
+        YAN = {
+			create_wargoal = {
+			type = annex_everything
+			target = CHO
+			}
+        }
+	ai_chance = { factor = 70 }
+    }
+}
+
+country_event = {
+	id = yan.14
+	title = yan.14.t
+	desc = yan.14.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.14.a
+	add_stability = -0.2
+	ai_chance = { factor = 10 }
+    }
+	option = {
+	name = yan.14.b
+        YAN = {
+			create_wargoal = {
+			type = annex_everything
+			target = TOB
+			}
+        }
+	ai_chance = { factor = 90 }
+    }
+}
+
+country_event = {
+	id = yan.15
+	title = yan.15.t
+	desc = yan.15.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.15.a
+	add_stability = -0.1
+	ai_chance = { factor = 20 }
+    }
+	option = {
+	name = yan.15.b
+        YAN = {
+			create_wargoal = {
+			type = annex_everything
+			target = VRO
+			}
+        }
+	ai_chance = { factor = 80 }
+    }
+}
+
+country_event = {
+	id = yan.16
+	title = yan.16.t
+	desc = yan.16.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.16.a
+	add_stability = 0.1
+    }
+}
+
+country_event = {
+	id = yan.17
+	title = yan.17.t
+	desc = yan.17.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.17.a
+	add_stability = 0.1
+	add_war_support = 0.1
+    }
+}
+
+country_event = {
+	id = yan.18
+	title = yan.18.t
+	desc = yan.18.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.18.a
+    }
+}
+
+country_event = {
+	id = yan.19
+	title = yan.19.t
+	desc = yan.19.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.19.a
+	    LIP = { 
+	        add_timed_idea = { idea = LIP_rise_fascism days = 160 }
+            add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+		    }
+        }
+    }
+}
+
+country_event = {
+	id = yan.20
+	title = yan.20.t
+	desc = yan.20.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.20.a
+	    SBU = { 
+	        add_ideas = SBU_yan_separatism
+            add_popularity = {
+            ideology = fascism
+            popularity = 0.1
+		    }
+        }
+		set_global_flag = sbu_hler_separatism
+    }
+	option = {
+	name = yan.20.b
+	    SBU = { 
+	        add_ideas = SBU_yan_separatism
+            add_popularity = {
+            ideology = fascism
+            popularity = 0.1
+		    }
+        }
+		set_global_flag = sbu_savat_separatism
+    }
+}
+
+country_event = {
+	id = yan.21
+	title = yan.21.t
+	desc = yan.21.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = yan.21.a
+    }
+}

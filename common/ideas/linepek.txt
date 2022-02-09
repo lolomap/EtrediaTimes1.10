@@ -1,0 +1,15 @@
+ideas = {
+    country = {	
+	    LIP_rise_fascism = {
+            picture = fff
+		    allowed = {
+			    always = no
+		    }    	
+		    removal_cost = -1
+		    modifier = {
+                stability_factor = -0.1
+                fascism_drift = 0.1
+		    }
+	    }
+	}
+}

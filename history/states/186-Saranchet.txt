@@ -1,0 +1,31 @@
+
+state={
+	id=186
+	name="STATE_186"
+	manpower = 800000
+	
+	state_category = pastoral
+	
+	resources={
+              steel = 67 # was: 77
+              tungsten = 18 # was: 20
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+                        air_base = 1
+			}
+		add_core_of = SFL
+		add_core_of = HLR
+		victory_points = {
+			7579 1
+		}
+
+	}
+	provinces={
+		7326 7484 7485 7509 7556 7572 7636 7686 7718 7719 7720 7741 7834 7850 7867 7886 7906 7938 7977 8014 8037 8038 8071 8085 8156 8197 8198 8291 
+	}
+}

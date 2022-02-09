@@ -1,0 +1,286 @@
+focus_tree = {
+	id = sverlopa
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SVE
+		}
+	}
+	default = no
+	
+	focus = {
+		id = SVE_1
+		text = SVE_1
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+		    add_political_power = 300
+			set_politics = {
+	        ruling_party = fascism
+            }
+	    }
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus = {
+		id = SVE_2
+		text = SVE_2
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_1
+		}
+		x = 5
+		y = 1
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 4
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+							type = arms_factory
+							level = 4
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = arms_factory
+									level = 4
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+	focus = {
+		id = SVE_3
+		text = SVE_3
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_2
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+				add_manpower = 517000
+				}
+
+	}
+	
+	focus = {
+		id = SVE_4
+		text = SVE_4
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_3
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_ideas = { SVE_imbahule }
+				hidden_effect = {
+					load_oob = "SVE_tank"
+				}
+				}
+
+	}
+	
+	focus = {
+		id = SVE_5
+		text = SVE_5
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_4
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+        annex_country = {
+            target = UCB
+            transfer_troops = yes
+        }
+		}
+
+	}
+	
+	focus = {
+		id = SVE_6
+		text = SVE_6
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_5
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+				add_manpower = 1000000
+				}
+
+	}
+	
+	focus = {
+		id = SVE_7
+		text = SVE_7
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		prerequisite = {
+			focus = SVE_6
+		}
+		x = 5
+		y = 6
+			completion_reward = {
+					set_research_slots = 6
+				}
+
+	}
+	
+	focus = {
+		id = SVE_8
+		text = SVE_8
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		will_lead_to_war_with = FSC
+		prerequisite = {
+			focus = SVE_7
+		}
+		available = {
+		has_army_manpower = { size > 599999 }
+		}
+		x = 8
+		y = 7
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FSC
+			}
+			}
+
+	}
+
+	focus = {
+		id = SVE_9
+		text = SVE_9
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		will_lead_to_war_with = TRP
+		prerequisite = {
+			focus = SVE_8
+		}
+		available = {
+		has_war = no
+		}
+		x = 8
+		y = 8
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TRP
+			}
+			}
+
+	}
+	focus = {
+	    id = SVE_10
+		text = SVE_10
+        icon = unknown
+		cost = 10
+		prerequisite = {
+		    focus = SVE_9
+		}
+		x = 8
+		y = 9
+		completion_reward = {
+			hidden_effect = {
+				load_oob = "SVE_tank"
+				}
+		}
+	}
+	focus = {
+		id = SVE_11
+		text = SVE_11
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		will_lead_to_war_with = IID
+		prerequisite = {
+			focus = SVE_10
+		}
+		available = {
+		has_war = no
+		}
+		x = 8
+		y = 10
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = IID
+			}
+		}
+
+	}
+	focus = {
+		id = SVE_12
+		text = SVE_12
+		icon = GFX_focus_generic_self_managent
+		cost = 10
+		will_lead_to_war_with = SFL
+		prerequisite = {
+			focus = SVE_11
+		}
+		available = {
+		IID = { has_army_manpower  = { size < 99999 } }
+		}
+		x = 8
+		y = 11
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SFL
+			}
+		}
+
+	}
+}

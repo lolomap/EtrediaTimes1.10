@@ -1,0 +1,120 @@
+add_namespace = trp
+
+country_event = {
+	id = trp.1
+	title = trp.1.t
+	desc = trp.1.d
+	picture = GFX_news_even
+
+	trigger = {
+        TAG = TRP
+    }
+
+    is_triggered_only = yes
+
+	option = {
+		name = trp.1.a
+        ai_chance = { factor = 90 }
+		IID = {
+            if = {
+                limit = { TRP = { owns_state = 63 controls_state = 63 } } 
+		        transfer_state = 63
+                limit = { TRP = { owns_state = 62 controls_state = 62 } } 
+		        transfer_state = 62
+		    }
+		}
+	}
+	option = {
+		name = trp.1.b
+        ai_chance = { factor = 10 
+		modifier = {
+		has_government = fascism
+	    factor = 100
+		modifier = {
+	    factor = 0
+		is_historical_focus_on = yes
+		}
+        }
+	    }
+		hidden_effect = {
+            IID = { country_event = { id = dux.2 days = 1 } }
+		}
+    }
+}
+
+country_event = {
+	id = trp.2
+	title = trp.2.t
+	desc = trp.2.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+    trigger = {
+    TAG = TRP
+    }
+		
+	option = {
+	    name = trp.2.a
+		FSC = {
+			annex_country = {
+			    target = TRP
+			    transfer_troops = yes
+			}
+		}
+		FSC = { 
+		add_state_core = 59
+		add_state_core = 60
+		add_state_core = 61
+		add_state_core = 62
+                add_state_core = 63
+	        }
+        }
+}
+
+country_event = {
+	id = trp.3
+	title = trp.3.t
+	desc = trp.3.d
+	picture = GFX_news_even
+
+	is_triggered_only = yes
+
+	option = {
+		name = trp.3.a
+		add_stability = -0.1
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = trp.4
+	title = trp.4.t
+	desc = trp.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = trp.4.a
+		IID = {annex_country = {target = TRP transfer_troops = yes}}
+
+		ai_chance = {
+			base = 0.2
+		}
+	}
+
+	option = {
+		name = trp.4.b
+		IID = {
+			end_puppet = TRP
+			create_wargoal = {
+				type = annex_everything
+				target = TRP
+			}
+		}
+
+		ai_chance = {
+			base = 0.8
+		}
+	}
+}

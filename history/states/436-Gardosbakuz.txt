@@ -1,0 +1,29 @@
+
+state={
+	id=436
+	name="STATE_436"
+	manpower = 2100000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = KAS
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_facotry = 0
+		}
+		add_core_of = KAS
+		victory_points = {
+			12691 5
+		}
+
+	}
+	provinces={
+		12691 12841 12859 12927 12967 13045 13096 13135 13172 13211 13212 13253 13379 13432 13433 13494 13507 13538 13597 13645 13684 13815 
+	}
+}

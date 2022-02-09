@@ -1,0 +1,30 @@
+state={
+	id=531
+	name="STATE_531"
+	manpower = 73450
+	
+	state_category = town
+	
+	resources={
+		rubber = 4 # was: 4
+	}
+
+	history={
+		owner = TOB
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			849 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TOB
+		victory_points = {
+			849 1
+		}
+
+	}
+	provinces={
+		849 
+	}
+}

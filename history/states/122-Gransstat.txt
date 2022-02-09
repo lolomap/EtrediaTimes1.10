@@ -1,0 +1,26 @@
+
+state={
+	id=122
+	name="STATE_122"
+	manpower = 870000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = FIL
+		victory_points = {
+			13167 1
+		}
+
+	}
+	provinces={
+		11086 11118 11180 11194 11268 11269 11286 11333 11345 11407 11430 11483 11572 11600 
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=666
+	name="STATE_666"
+	manpower = 800000
+	state_category = pastoral
+	
+	resources={
+		oil = 35 # was: 60
+	}
+
+	history={
+		owner = TRN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TRN
+		victory_points = {
+			1104 1
+		}
+
+	}
+	provinces={
+		777 783 791 803 804 806 809 819 834 857 
+	}
+}

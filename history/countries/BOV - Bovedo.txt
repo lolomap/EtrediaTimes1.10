@@ -1,0 +1,70 @@
+﻿capital = 724
+
+OOB = "BOV_2014"
+set_naval_oob = "BOV_2014_naval_legacy"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.5
+
+add_ideas = {
+        WWW_bad_country
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+
+	early_fighter = 1
+
+	motorised_infantry = 1
+	jeep_unit = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+
+	early_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    	neurtality = 86
+    	fascism = 2
+    	communism = 6
+	democratic = 6
+}
+
+set_convoys = 150
+
+
+create_country_leader = {
+	name = "Zaim Amrani"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_oleg.dds"
+	expire = "2061.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Hanan Behired"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

@@ -1,0 +1,26 @@
+state={
+	id=49
+	name="STATE_49"
+	manpower = 600000
+	
+	state_category = rural
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 7
+			4664 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			4664 1
+		}
+
+	}
+	provinces={
+		3963 3997 4005 4030 4070 4071 4132 
+	}
+}

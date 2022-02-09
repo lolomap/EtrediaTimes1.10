@@ -1,0 +1,23 @@
+
+state={
+	id=459
+	name="STATE_459"
+	manpower = 100000
+	
+	state_category = pastoral
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LON
+		victory_points = {
+			11614 1
+		}
+
+	}
+	provinces={
+		9715 9756 9900 9975 9993 10008 10173 10174 10381 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=309
+	name="STATE_309"
+	manpower = 1000000	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = BAE
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+                        arms_factory = 2
+		}
+		add_core_of = BAE
+		victory_points = {
+			12877 5
+		}
+
+	}
+	provinces={
+		12877 12896 12935 12936 12948 12985 12986 13016 13017 13018 13086 13099 13100 13111 13148 13154 13208 13209 13260 13261 
+	}
+}

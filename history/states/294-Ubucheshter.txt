@@ -1,0 +1,33 @@
+
+state={
+	id=294
+	name="STATE_294"
+	manpower = 4912000
+	
+	state_category = large_town
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 2
+                        nuclear_reactor = 1
+			7915 = {
+				naval_base = 7
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			7915 20
+		}
+
+	}
+	provinces={
+		6395 6516 6538 6604 6642 6738 6739 6740 6834 6852 6872 6890 6928 6929 6949 6987 7022 7077 7097 7134 7233 
+	}
+}

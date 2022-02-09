@@ -1,0 +1,114 @@
+﻿add_namespace = filrussia
+#Civil war
+country_event = {
+	id = filrussia.1
+	title = filrussia.1.t
+	desc = filrussia.1.d
+	fire_only_once = yes
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	mean_time_to_happen = {
+        days = 5
+    }
+	option = {
+		name = filrussia.1.a
+		hidden_effect = {
+				set_capital = 609
+				start_civil_war = {
+                ideology = democratic
+				ruling_party = fascism
+				size = 0.1
+                                capital = 97
+                                states = { 97 96 98 607 608 610 612 614 615 617 619 618 616 }
+				load_oob = "FIL_civil_war_fas"
+				random_other_country = {
+				limit = {
+					original_tag = FIL
+					has_government = democratic	
+				}
+				set_stability = 0.4	
+				set_war_support = 0.8
+				load_oob = "FIL_civil_war_dem"
+				}
+				set_popularities = {
+				fascism = 75
+				communism = 5
+				neutrality = 20
+			}
+            }
+		}
+	}
+}
+country_event = {
+	id = filrussia.2
+	title = filrussia.2.t
+	desc = filrussia.2.d
+	fire_only_once = yes
+	mean_time_to_happen = {
+       hours = 1
+    }
+	trigger = {
+        date > 2014.3.1
+        TAG = FIL
+    }
+	option = {
+		name = filrussia.2.a
+		add_ideas = FIL_political_discord
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.05
+		}
+	}
+	
+}
+#Invite IID in ally
+country_event = {
+	id = filrussia.4
+	title = filrussia.4.t
+	desc = filrussia.4.d
+	fire_only_once = yes
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	option = {
+		name = filrussia.4.a
+			ai_chance = { factor = 8 }
+			FIL = { add_to_faction = IID }
+			hidden_effect = {
+				FIL = { country_event = {id = filrussia.5 days = 1} }
+			}
+	}
+	option = {
+		ai_chance = { factor = 2 }
+		name = filrussia.4.b
+		hidden_effect = {
+				FIL = { country_event = {id = filrussia.6 days = 1} }
+			}
+	}
+}
+#IID Acc
+country_event = {
+	id = filrussia.5
+	title = filrussia.5.t
+	desc = filrussia.5.d
+	fire_only_once = yes
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	option = {
+		name = filrussia.5.a
+			ai_chance = { factor = 8 }
+			FIL = { add_to_faction = IID }
+	}
+}
+country_event = {
+	id = filrussia.6
+	title = filrussia.6.t
+	desc = filrussia.6.d
+	fire_only_once = yes
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	option = {
+		name = filrussia.6.a
+			ai_chance = { factor = 8 }
+			FIL = { add_to_faction = IID }
+	}
+}

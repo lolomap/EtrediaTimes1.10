@@ -1,0 +1,38 @@
+
+state={
+	id=351
+	name="STATE_351"
+	manpower = 1500000
+	
+	state_category = town
+	
+	resources={
+        steel = 16 # was: 16
+        aluminium = 6 # was: 6
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 1
+                        dockyard = 2
+                        air_base = 7
+                        anti_nuclear_building = 1
+			10493 = {
+				naval_base = 7
+			}
+			10639 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			10571 30
+		}
+
+	}
+	provinces={
+		9025 9041 9065 9083 9094 9130 9146 9158 9169 9183 9200 9213 9322 9323 
+	}
+}

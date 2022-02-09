@@ -1,0 +1,27 @@
+state={
+	id=222
+	name="STATE_222"
+	resources={
+		steel = 13 # was: 18
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 0
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			6562 5
+		}
+
+	}
+	provinces={
+		5015 5116 5208 5252 5317 5318 5355 5432 5450 5467 5565 5589 5688 5689 5704 5793 5833 5849 5930 5964 6061 6077 6120 6274 
+	}
+	manpower=1200000
+	state_category=town
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=579
+	name="STATE_579"
+	resources={
+		steel=18.000
+		tungsten=15.000
+	}
+
+	history={
+		owner = LBD
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 2
+
+		}
+		add_core_of = LBD
+		victory_points = {
+			4049 15 
+		}
+
+	}
+
+	provinces={
+		3478 3483 3517 3571 3575 3578 3639 3644 3646 3685 3691 3692 3697 3737 3749 3752 3753 3764 3791 3793 3798 3802 3810 3811 3824 3843 3844 3869 3907 3914 3922 3976 3991 4026 4062 4153 
+	}
+	manpower=3200000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

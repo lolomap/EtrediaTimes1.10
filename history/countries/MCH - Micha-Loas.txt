@@ -1,0 +1,45 @@
+﻿capital = 756
+
+OOB = "MCH_2014"
+
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.2
+
+add_ideas = {
+        WWW_bad_country
+}
+
+set_technology = {
+	infantry_weapons = 1
+
+	motorised_infantry = 1
+	jeep_unit = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    	democratic = 54
+    	fascism = 8
+    	communism = 38
+}
+
+set_convoys = 10
+
+
+create_country_leader = {
+	name = "Nde Ntumba"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_oleg.dds"
+	expire = "2061.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=510
+	name="STATE_510"
+	manpower = 4677000
+	
+	state_category = large_city
+
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 4
+		}
+		add_core_of = LIP
+		victory_points = {
+			3702 20
+		}
+
+	}
+	provinces={
+		3179 3197 3221 3222 3223 3242 3269 3275 3278 3294 3322 3332 3354 3369 3370 3386 3415 3435 3461 3468 
+	}
+}

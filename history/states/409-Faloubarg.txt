@@ -1,0 +1,25 @@
+
+state={
+	id=409
+	name="STATE_409"
+	manpower = 2500000
+	
+	state_category = town
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 1
+		}
+		add_core_of = EIK
+		victory_points = {
+			13857 20
+		}
+
+	}
+	provinces={
+		13857 13933 13938 13946 14041 14049 14081 14088 14128 14175 14232 14238 
+	}
+}

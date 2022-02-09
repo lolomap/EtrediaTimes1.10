@@ -1,0 +1,21 @@
+state={
+	id=169
+	name="STATE_169"
+	history={
+		owner = MOF
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = ELR
+		victory_points = {
+			3849 1 
+		}
+
+	}
+	provinces={
+		3849 3861 3940 3967 4108 4301 4445 4562 
+	}
+	manpower=514000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

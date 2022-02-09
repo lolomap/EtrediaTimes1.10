@@ -1,0 +1,28 @@
+state={
+	id=12
+	name="STATE_12"
+	manpower = 500000
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 3
+			anti_nuclear_building = 1
+		}
+		add_core_of = UCB
+		add_core_of = BER
+		victory_points = {
+			8663 1
+		}
+
+	}
+	provinces={
+		7502 7503 7523 
+	}
+}

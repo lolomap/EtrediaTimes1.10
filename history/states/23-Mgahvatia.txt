@@ -1,0 +1,31 @@
+
+state={
+	id=23
+	name="STATE_23"
+	manpower = 3150000
+	state_category = rural
+
+	resources={
+		steel=70.000
+		tungsten=18.000
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+			nuclear_rocket_site = 1
+		}
+		add_core_of = UCB
+		add_core_of = KOL
+		victory_points = {
+			6408 5 
+		}
+
+	}
+	provinces={
+		5239 5292 5293 5361 5422 5443 5494 5495 5496 5539 5540 5597 5598 5599 5613 5637 5656 5678 5730 5749 5803 5907 5908 5979 6022 6071 6087 6153 6154 6203 6245 6334 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=544
+	name="STATE_544"
+	manpower = 11230000
+	
+	state_category = large_city
+	
+	resources={
+             steel = 12 # was: 18
+             aluminium = 8 # was: 10
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 0
+		}
+		add_core_of = MOA
+		victory_points = {
+			1402 20
+		}
+
+	}
+	provinces={
+		1385 1395 1414 1425 1455 1514 1543 1555 1587 1624 1665 
+	}
+}

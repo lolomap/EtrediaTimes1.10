@@ -1,0 +1,93 @@
+trb_ally = {
+	enable = {
+		tag = SBU
+		has_completed_focus = SBU_terbia_compromiss
+		country_exists = TRB
+	}
+	abort = {
+		NOT = { country_exists = TRB }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "TRB"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "TRB"			
+		value = 100
+	}	
+}
+
+SBU_template_design_1 = {
+	enable = {
+		original_tag = SBU			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 120
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}
+
+SBU_template_design_2 = {
+	enable = {
+		original_tag = SBU			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = medium_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 120
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -400
+	}
+}

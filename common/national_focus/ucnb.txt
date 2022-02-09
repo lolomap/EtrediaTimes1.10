@@ -1,0 +1,797 @@
+focus_tree = {
+	id = ucnb
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	tag = UCB
+		#}
+	}
+	default = no
+	focus = {
+		id = UCB_polit1
+		text = UCB_polit1
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = 12
+		y = 0
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = UCB_polit2
+		text = UCB_polit2
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 1
+		prerequisite = {
+			focus = UCB_polit1
+		}
+		x = 12
+		y = 1
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					UCB = {
+							remove_ideas = UCB_polit_crisis
+							country_event = { id = ucnb.1 days = 1 }
+							}
+						}
+			}
+
+	focus = {
+		id = UCB_democratic1
+		text = UCB_democratic1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_polit2
+		}
+		mutually_exclusive = {
+			focus = UCB_fascism1
+		}
+		x = 8
+		y = 2
+		available = {
+		    has_government = democratic
+			has_idea = UCB_resist
+		}
+			ai_will_do = {
+					factor = 0.7
+			}
+		completion_reward = {
+		add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}		     
+		    hidden_effect = {
+			UCB = { country_event = { id = ucb.2 days = 10 } }
+			}
+		}
+	}
+
+	focus = {
+		id = UCB_democratic3
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic1
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_ideas = { UCB_promka }
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic1
+		}
+		x = 8
+		y = 3
+			completion_reward = {
+					add_stability = -0.15
+					add_ideas = { UCB_autonomy }
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.02
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic4
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic2
+		}
+		x = 8
+		y = 4
+			completion_reward = {
+					add_stability = -0.05
+					add_timed_idea = {
+							idea = UCB_zapretnac
+							days = 150
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic5
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic4
+		}
+		x = 8
+		y = 5
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = UCB_fascism1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_polit2
+		}
+		mutually_exclusive = {
+			focus = UCB_democratic1
+		}
+		x = 16
+		y = 2
+			available = {
+					has_government = fascism
+				}
+			ai_will_do = {
+					factor = 0.3
+				}
+			completion_reward = {
+					add_political_power = -200
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.2
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_fascism3
+		text = UCB_fascism3
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism1
+		}
+		x = 16
+		y = 3
+			completion_reward = {
+					remove_ideas = UCB_des_army
+				}
+
+	}
+	focus = {
+		id = UCB_fascism5
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism3
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = UCB_fascism9
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism8
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism8
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism7
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism2
+		text = UCB_fascism2
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism1
+		}
+		x = 18
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.1
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_fascism4
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism3
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					add_stability = -0.2
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_fascism6
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism4
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism7
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism6
+		}
+		x = 19
+		y = 6
+			completion_reward = {
+					army_experience = 20
+					add_division_defense = 1
+					add_division_attack = 1
+				}
+
+	}
+	focus = {
+		id = UCB_fascism10
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism9
+		}
+		x = 14
+		y = 6
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic6
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic5
+		}
+		prerequisite = {
+			focus = UCB_democratic8
+		}
+		x = 6
+		y = 6
+			completion_reward = {
+					remove_ideas = UCB_des_army
+				}
+
+	}
+	focus = {
+		id = UCB_democratic7
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic3
+		}
+		x = 5
+		y = 4
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic8
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic7
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					remove_ideas = UCB_corruption
+				}
+
+	}
+	focus = {
+		id = UCB_democratic9
+		icon = GFX_2wa
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic7
+		}
+		x = 3
+		y = 5
+			completion_reward = {
+					add_timed_idea = {
+							idea = UCB_scuit
+							days = 360
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic10
+		icon = GFX_2wa
+		cost = 1
+		prerequisite = {
+			focus = UCB_democratic9
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+					create_faction = UCB_scuit_ally
+					SBU = {
+							country_event = {
+									id = sbu.1
+									days = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic11
+		icon = GFX_2wa
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic10
+		}
+		x = 1
+		y = 7
+			completion_reward = {
+					IID = {
+							add_ideas = { IID_ucbsbupolit }
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_democratic12
+		icon = GFX_2wa
+		cost = 10
+		prerequisite = {
+			focus = UCB_democratic10
+		}
+		x = 5
+		y = 7
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = UCB_fascism8
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		will_lead_to_war_with = FSC
+		prerequisite = {
+			focus = UCB_fascism5
+		}
+		x = 19
+		y = 7
+		completion_reward = {
+				create_wargoal = {
+					type = take_state_focus
+					target = FSC
+					generator = { 44 }
+				}
+			}
+
+	}
+	focus = {
+		id = UCB_fascism9
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism5
+		}
+		x = 19
+		y = 8
+
+	}
+}
+
+
+
+
+
+
+focus_tree = {
+	id = UCB_narabel
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UCB
+		}
+	}
+	default = no
+	shared_focus = UCB_fascism1
+
+
+	focus = {
+		id = UCB_fascism1
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 0
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			add_political_power = -200
+		}
+	}
+	focus = {
+		id = UCB_fascism3
+		text = UCB_fascism3
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism1
+		}
+		x = 16
+		y = 3
+		completion_reward = {
+			remove_ideas = UCB_des_army
+		}
+
+	}
+	focus = {
+		id = UCB_fascism5
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism3
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = UCB_fascism9
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism8
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism8
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism7
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism2
+		text = UCB_fascism2
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism1
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = UCB_fascism4
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism3
+		}
+		x = 19
+		y = 4
+			completion_reward = {
+					add_stability = -0.2
+					add_popularity = {
+							ideology = democratic
+							popularity = -0.1
+						}
+				}
+
+	}
+	focus = {
+		id = UCB_fascism6
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism4
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fascism7
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism6
+		}
+		x = 19
+		y = 6
+			completion_reward = {
+					army_experience = 20
+					add_division_defense = 1
+					add_division_attack = 1
+				}
+
+	}
+	focus = {
+		id = UCB_fascism10
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism9
+		}
+		x = 14
+		y = 6
+		bypass = {
+			custom_trigger_tooltip = {
+			tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				OR = {
+				is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+						            building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+							is_in_home_area = yes
+							}
+						}
+					}
+				}
+			    }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = UCB_fascism8
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		will_lead_to_war_with = FSC
+		prerequisite = {
+			focus = UCB_fascism7
+		}
+		x = 19
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FSC
+				generator = { 44 }
+			}
+		}
+	}
+	focus = {
+		id = UCB_fascism9
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = UCB_fascism5
+		}
+		x = 19
+		y = 8
+
+	}
+}
+
+
+
+
+
+
+focus_tree = {
+	id = UCB_bndrnk
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UCB
+		}
+	}
+	default = no
+	shared_focus = UCB_neutrality1
+
+
+	focus = {
+		id = UCB_neutrality1
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 0
+		available = {
+			has_government = neutrality
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = -0.1
+		}
+	}
+}
+
+
+
+
+focus_tree = {
+	id = UCB_communism
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UCB
+		}
+	}
+	default = no
+	shared_focus = UCB_communism1
+
+
+	focus = {
+		id = UCB_communism1
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 0
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = -0.1
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=344
+	name="STATE_344"
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 1
+
+		}
+		add_core_of = EIK
+		victory_points = {
+			12342 1 
+		}
+
+	}
+	provinces={
+		13740 13747 13748 13856 13890 13914 14023 14034 14047 14137 14154 14164 14211 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

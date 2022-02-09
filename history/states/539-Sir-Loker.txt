@@ -1,0 +1,29 @@
+
+state={
+	id=539
+	name="STATE_539"
+	manpower = 900000
+	
+	state_category = town
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+                        arms_factory = 0
+                        dockyard = 0
+			2162 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2162 1
+		}
+
+	}
+	provinces={
+		1642 1672 1673 1687 1730 1731 1757 1847 
+	}
+}

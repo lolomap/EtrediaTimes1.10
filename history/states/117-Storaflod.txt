@@ -1,0 +1,25 @@
+
+state={
+	id=117
+	name="STATE_117"
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = FIL
+		victory_points = {
+			13782 1 
+		}
+
+	}
+	provinces={
+		11522 11624 11625 11669 11670 11729 11730 11817 11818 11832 11858 11859 11946 12018 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

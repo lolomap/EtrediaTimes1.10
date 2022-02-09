@@ -1,0 +1,72 @@
+	
+EIK_template_design_1 = {
+	enable = {
+		original_tag = EIK			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 40
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}
+
+EIK_template_design_2 = {
+	enable = {
+		original_tag = EIK			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = medium_armor
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 40
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -400
+	}
+}

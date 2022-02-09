@@ -1,0 +1,19 @@
+ideas = {
+    country = {
+        ZHE_conscritpiont_problem = {
+            picture = idea_ENG_the_war_to_end_all_wars
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                conscription_factor = -0.5
+				mobilization_laws_cost_factor = 1
+			}
+        }
+}
+}

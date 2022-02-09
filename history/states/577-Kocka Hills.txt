@@ -1,0 +1,28 @@
+
+state={
+	id=577
+	name="STATE_577"
+	manpower = 400000
+	
+	state_category = pastoral
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TOR
+		add_core_of = ESS
+		victory_points = {
+			3693 1
+		}
+
+	}
+	provinces={
+		3043 3067 3076 3098 3103 
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=57
+	name="STATE_57"
+	manpower = 300000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FSC
+		add_core_of = KUL
+		victory_points = {
+			6823 1
+		}
+
+	}
+	provinces={
+		5732 5805 5922 5995 6111 
+	}
+}

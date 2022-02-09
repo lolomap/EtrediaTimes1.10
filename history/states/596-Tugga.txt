@@ -1,0 +1,27 @@
+
+state={
+	id=596
+	name="STATE_596"
+	manpower = 765000
+	
+	state_category = town
+	
+	resources={
+		steel = 8 # was: 18
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ZHE
+		victory_points = {
+			5475 1
+		}
+
+	}
+	provinces={
+		4027 4028 4065 4103 4126 4127 4143 4165 4166 4193 4234 4247 4248 4262 4263 4308 4322 4323 4360 4374 4391 4407 4423 4439 4440 4523 4539 4555 4556 4610 4611 4624 4638 4691 4692 4765 4766 4795 4796 4897 4935 4955 4972 4973 5021 5084 5159 5277 
+	}
+}

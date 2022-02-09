@@ -1,0 +1,125 @@
+﻿capital = 555
+
+oob = "ESS_2014"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+add_ideas = {
+        www_medium_country
+        limited_conscription
+        total_nonfree_press
+        closed_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+}
+
+set_convoys = 0
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2006.1.1"
+	election_frequency = 80
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 0
+        democratic = 0
+        fascism = 93
+        communism = 7
+}
+
+#
+create_country_leader = {
+	name = "Sergey Kazhatov"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mino Kost-Neregir"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = nationalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kendri Losental"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Vissarionovich"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Horiza Lyuis"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mar Der-Montie"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Obes Astro"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}

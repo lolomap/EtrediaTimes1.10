@@ -1,0 +1,35 @@
+﻿add_namespace = sbuevent
+
+country_event = {
+	id = sbuevent.1
+	title = sbuevent.1.t
+	desc = sbuevent.1.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+	
+	mean_time_to_happen = {
+    days = 2
+    }
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = SBU
+    }
+	option = {
+		name = sbuevent.1.a
+		hidden_effect = {
+                UCB = {
+                add_to_faction = SBU
+                }               
+        }
+		ai_chance = { factor = 90 }
+		}
+
+	option = {
+		name = sbuevent.1.b
+                ai_chance = { factor = 10 }
+ 
+        }
+}

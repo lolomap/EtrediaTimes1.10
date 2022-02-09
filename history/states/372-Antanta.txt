@@ -1,0 +1,27 @@
+
+state={
+	id=372
+	name="STATE_372"
+	manpower = 1450000
+	
+	state_category = town
+
+	history={
+		owner = DON
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+			2878 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = DON
+		victory_points = {
+			2777 5
+		}
+
+	}
+	provinces={
+		2138 2144 2148 2149 2194 2204 2249 2250 2257 2281 2297 2323 2331 2342 
+	}
+}

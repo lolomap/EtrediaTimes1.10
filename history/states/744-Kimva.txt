@@ -1,0 +1,25 @@
+state={
+	id=744
+	name="STATE_744"
+	manpower = 4100000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KER
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = KER
+		victory_points = {
+			1768 2
+		}
+
+	}
+	provinces={
+		1331 1398 
+	}
+}

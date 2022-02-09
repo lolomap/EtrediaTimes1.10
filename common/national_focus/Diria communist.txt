@@ -1,0 +1,22 @@
+focus_tree = {
+	id = diria_com
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DIR
+		}
+	}
+	default = no
+	
+	focus = {
+		id = DIR_revolution
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 6
+		y = 0
+		completion_reward = {
+		DIR = { country_event = { id = dirnews.1 days = 1 } }
+		}
+    }
+}

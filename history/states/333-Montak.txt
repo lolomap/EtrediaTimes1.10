@@ -1,0 +1,31 @@
+
+state={
+	id=333
+	name="STATE_333"
+	resources={
+		steel=32.000
+		tungsten=24.000
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			nuclear_rocket_site = 1
+		}
+		add_core_of = EIK
+		add_core_of = SKB
+		victory_points = {
+			12837 5 
+		}
+
+	}
+	provinces={
+		12837 12903 12933 12961 12982 13028 13041 13082 13083 13084 13166 13167 13192 13193 13206 13207 13235 13278 13279 13280 13298 13299 13332 13360 13361 13387 13388 13389 13404 13405 13473 13489 13491 13553 
+	}
+	manpower=2456000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

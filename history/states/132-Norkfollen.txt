@@ -1,0 +1,28 @@
+state={
+	id=132
+	name="STATE_132"
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			14871 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = FIL
+		victory_points = {
+			12399 5 
+		}
+
+	}
+	provinces={
+		12399 12502 12559 12631 12672 12673 
+	}
+	manpower=433000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

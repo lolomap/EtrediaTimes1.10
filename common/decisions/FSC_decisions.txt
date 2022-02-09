@@ -1,0 +1,43 @@
+FSC_subj_integration = {
+	integrate_subjects = {
+		available = {
+			any_other_country = {
+				is_subject_of = FSC
+				all_owned_state = {
+					is_core_of = FSC
+				}
+			}
+			tag = FSC
+		}
+
+		visible = {
+			any_other_country = {
+				is_subject_of = FSC
+				all_owned_state = {
+					is_core_of = FSC
+				}
+			}
+			tag = FSC
+		}
+
+		cost = 150
+
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					is_subject_of = FSC
+					all_owned_state = {
+						is_core_of = FSC
+					}
+				}
+				FSC = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+}

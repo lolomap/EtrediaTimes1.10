@@ -1,0 +1,21 @@
+state={
+	id=113
+	name="STATE_113"
+	manpower = 1200000
+	state_category = rural
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = IID
+		victory_points = {
+			9695 1 
+		}
+
+	}
+	provinces={
+		8195 8196 8290 8302 8328 8369 8390 8427 8428 8524 8525 8586 
+	}
+}

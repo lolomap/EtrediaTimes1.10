@@ -1,0 +1,42 @@
+scripted_gui = {
+	extra_topbar = {
+		window_name = "extra_topbar_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {always = yes}
+
+		triggers = {
+			make_peace_alert_button_visible = {
+				#has_war = yes
+				always = no
+			}
+		}
+
+		effects = {
+			make_peace_alert_button_click = {
+				if = {
+					limit = {not = {has_country_flag = opened_peace_window}}
+					set_country_flag = opened_peace_window
+				}
+				else = {
+					clr_country_flag = opened_peace_window
+				}
+			}
+		}
+
+		ai_enabled = { always = yes }
+
+		ai_weights = {
+			make_peace_alert_button_click = {
+				ai_will_do = {
+					factor = 100
+					modifier = {
+						factor = 0
+						has_country_flag = opened_peace_window
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,156 @@
+scripted_diplomatic_actions = {
+	embargo = {
+		visible = {
+			ROOT = {
+				not = {
+					is_in_array = {
+						array = embargoList
+						value = PREV
+					}
+				}
+				is_subject = no
+				not = {in_faction_with = PREV}
+				not = {has_war_with = PREV}
+			}
+			not = {is_subject_of = ROOT}
+			not = {in_faction_with = ROOT}
+			not = {has_war_with = ROOT}
+		}
+		cost = 0
+
+		command_power = 0
+		show_acceptance_on_action_button = no
+		requires_acceptance = no
+
+		icon = 1
+
+		complete_effect = {
+			if = {
+				limit = {
+					ROOT = {is_major = yes}
+				}
+				ROOT = {add_threat = 2}
+			}
+			ROOT = {
+				add_to_array = {embargoList = PREV}
+			}
+			THIS = {
+				country_event = {id = onactev.2 days = 1}
+			}
+		}
+
+		ai_desire = {
+			base = -1
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value < -44
+					}
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				add = 1000
+			}
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value < -54
+					}
+				}
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+				add = 1000
+			}
+			modifier = {
+				ROOT = {
+					check_variable = {world_influence < 2.1}
+				}
+				add = -900
+			}
+
+		}
+	}
+	end_embargo = {
+		visible = {
+			ROOT = {
+				is_in_array = {
+					array = embargoList
+					value = PREV
+				}
+			}
+			is_subject = no
+		}
+		cost = 0
+
+		command_power = 0
+		show_acceptance_on_action_button = no
+		requires_acceptance = no
+
+		icon = 1
+
+		complete_effect = {
+			if = {
+				limit = {
+					ROOT = {is_major = yes}
+				}
+				ROOT = {add_threat = -2}
+			}
+			ROOT = {
+				remove_from_array = {embargoList = PREV}
+			}
+			THIS = {
+				country_event = {id = onactev.3 days = 1}
+			}
+		}
+		ai_desire = {
+			base = -1
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value > -21
+					}
+				}
+				add = 1000
+			}
+			modifier = {
+				ROOT = {
+					is_in_array = {
+						array = forcedEmbargoList
+						value = PREV
+					}
+				}
+				add = -1000
+			}
+		}
+	}
+
+	force_embargo = {
+		visible = {
+			not = {has_war_with = ROOT}
+		}
+		selectable = {
+			set_temp_variable = {razn = ROOT.world_influence}
+			divide_temp_variable = {razn = world_influence}
+			check_variable = {razn > 1.9}
+			ROOT = {check_variable = {embargolist^num > 0}}
+		}
+		show_acceptance_on_action_button = no
+		requires_acceptance = no
+
+		icon = 1
+
+		complete_effect = {
+			ROOT = {
+				set_country_flag = fembargo_window_opened
+				set_variable = {target_fembargo = PREV}
+			}
+		}
+	}
+}

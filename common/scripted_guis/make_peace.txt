@@ -1,0 +1,145 @@
+scripted_gui = {
+	make_peace = {
+		window_name = "make_peace_window"
+		context_type = player_context
+
+		visible = {
+			ROOT = {
+				has_country_flag = opened_peace_window
+				has_war = yes
+			}
+		}
+
+		effects = {
+			peace_selected_button_click = {
+				if = {
+					limit = {
+						ROOT = {
+							check_variable = {wtire > 0}
+							has_civil_war = no
+							not = {has_idea = DIR_revolt}
+							has_capitulated = no
+							country_exists = ROOT
+							is_subject = no
+							not = {has_country_flag = keep_peace}
+						}
+						OR = {
+							check_variable = {wtire > 150}
+							surrender_progress > 0.4
+							ROOT = {surrender_progress > 0.4}
+						}
+						has_capitulated = no
+						country_exists = THIS
+						is_subject = no
+					}
+					
+					if = {
+						limit = {
+							ROOT = {surrender_progress > PREV.surrender_progress}
+						}
+						country_event = wte.8
+					}
+					else = {
+						country_event = wte.10
+					}
+					ROOT = {set_country_flag = {flag = keep_peace days = 120 value = 1}}
+				}
+			}
+
+
+			peace_all_button_click = {
+				ROOT = {
+					if = {
+						limit = {
+							check_variable = {wtire > 0}
+							has_civil_war = no
+							not = {has_idea = DIR_revolt}
+							has_capitulated = no
+							country_exists = ROOT
+							is_subject = no
+							not = {has_country_flag = keep_peace}
+						}
+						every_enemy_country = {
+							limit = {
+								OR =
+								{
+									THIS = {check_variable = {wtire > 150}}
+									THIS = {surrender_progress > 0.4}
+									ROOT = {surrender_progress > 0.4}
+								}
+								has_capitulated = no
+								country_exists = THIS
+								is_subject = no
+							}
+							THIS = {
+								if = {
+									limit = {
+										ROOT = {surrender_progress > PREV.surrender_progress}
+									}
+									country_event = wte.8
+								}
+								else = {
+									country_event = wte.10
+								}
+							}
+							
+						}
+						set_country_flag = {flag = keep_peace days = 120 value = 1}
+					}
+				}
+			}
+		}
+
+		ai_enabled = {
+			always = yes
+		}
+
+		ai_weights = {
+			peace_all_button_click = {
+				ai_will_do = {
+					factor = 0.1
+					modifier = {
+						add = 100
+						check_variable = {wtire > 10}
+					}
+					modifier = {
+						add = 1.5
+						check_variable = {wtire > 50}
+					}
+					modifier = {
+						add = 0.1
+						has_defensive_war = yes
+					}
+					modifier = {
+						add = -0.3
+						has_offensive_war = yes
+					}
+					modifier = {
+						add = 0.2
+						surrender_progress > 0.1
+					}
+					modifier = {
+						add = 0.4
+						surrender_progress > 0.2
+					}
+					modifier = {
+						add = 0.6
+						surrender_progress > 0.4
+					}
+					modifier = {
+						add = 0.8
+						surrender_progress > 0.5
+					}
+					modifier = {
+						add = 1
+						surrender_progress > 0.7
+					}
+					modifier = {
+						add = 2
+						surrender_progress > 0.9
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=738
+	name="STATE_738"
+	manpower = 3250000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ZHI
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			arms_factory = 1
+			1373 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ZHI
+		victory_points = {
+			1373 10
+		}
+
+	}
+	provinces={
+		947 956 961 977 990 1009 1012 1015 1029 1042 
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=758
+	name="STATE_758"
+	manpower = 2100000
+	state_category = town
+	
+	resources={
+		oil = 86 # was: 102
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+		}
+		add_core_of = ATI
+		victory_points = {
+			2217 10
+		}
+
+	}
+	provinces={
+		1589 1598 1669 1721 1722 1723 1737 1754 1827 1828 1846 1918 1969 2009 
+	}
+}

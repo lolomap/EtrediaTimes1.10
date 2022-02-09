@@ -1,0 +1,23 @@
+add_namespace = ski
+
+country_event = {
+        id = ski.1
+        title = ski.1.t
+        desc = ski.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = SKI
+    }
+
+    option = {
+	name = ski.1.a
+		MOA = { add_to_faction = SKI }
+    ai_chance = { factor = 100 }
+	}
+    option = {
+	name = ski.1.b
+    ai_chance = { factor = 0 }
+	}
+}

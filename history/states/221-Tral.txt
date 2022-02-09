@@ -1,0 +1,29 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			6395 5 
+		}
+
+	}
+	provinces={
+		5063 5129 5169 5284 5319 5320 5411 5506 5548 5577 5723 5757 5863 5880 5916 6026 6062 6078 6177 6208 6360 6392 6534 6554 6682 
+	}
+	manpower=2750000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

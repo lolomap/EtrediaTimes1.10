@@ -1,0 +1,27 @@
+
+state={
+	id=733
+	name="STATE_733"
+	manpower = 590000
+	state_category = rural
+	
+	resources={
+		steel = 12 # was: 16
+	}
+
+	history={
+		owner = SHK
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = SHK
+		victory_points = {
+			2359 1
+		}
+
+	}
+	provinces={
+		1724 1748 1780 1814 1815 1861 1899 1908 1961 1971 2010 2041 2086 
+	}
+}

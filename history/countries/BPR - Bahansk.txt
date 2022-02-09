@@ -1,0 +1,112 @@
+﻿capital = 236
+
+oob = "BPR_2014"
+
+set_research_slots = 3
+set_stability = 0.2
+set_war_support = 0.4
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	interwar_antiair = 1
+
+	early_fighter = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+
+	motorised_infantry = 1
+        mechanised_infantry = 1
+
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	jeep_unit_3 = 1
+
+	motorized_rocket_unit = 1
+	gw_artillery = 1
+
+	gwtank = 1
+	basic_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+
+	tech_mountaineers = 1
+	synth_oil_experiments = 1
+
+	fuel_silos = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+	transport = 1
+	early_battleship = 1
+}
+
+
+set_convoys = 2
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2014.3.5"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 15
+        fascism = 0
+        communism = 31
+	neutrality = 54
+}
+
+#
+create_country_leader = {
+	name = "The Interim Parliament"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nobody"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "The Interim Parliament"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nobody"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

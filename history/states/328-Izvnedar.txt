@@ -1,0 +1,27 @@
+
+state={
+	id=328
+	name="STATE_328"
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 5
+			arms_factory = 3
+                        air_base = 10
+
+		}
+		add_core_of = EIK
+		victory_points = {
+			13237 40 
+		}
+
+	}
+	provinces={
+		13906 13913 13930 13944 13960 13987 14057 14079 
+	}
+	manpower=27000000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

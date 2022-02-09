@@ -1,0 +1,30 @@
+
+state={
+	id=377
+	name="STATE_377"
+	manpower = 280000
+	
+	state_category = rural
+
+	resources={
+		oil = 18 # was: 18
+	}
+
+	history={
+		owner = DID
+		buildings = {
+			infrastructure = 2
+			2711 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DID
+		victory_points = {
+			2711 5
+		}
+
+	}
+	provinces={
+		2113 2189 2197 2200 2201 2217 2238 
+	}
+}

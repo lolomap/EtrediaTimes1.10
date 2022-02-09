@@ -1,0 +1,33 @@
+state={
+	id=352
+	name="STATE_352"
+	manpower = 1178000
+	
+	state_category = rural
+	
+	resources={
+        steel = 22 # was: 22
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 3
+                        air_base = 1
+			10452 = {
+				naval_base = 2
+			}
+			9379 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			10452 1
+		}
+
+	}
+	provinces={
+		7695 7730 7819 7912 8093 8094 8145 8219 8246 8277 8315 8316 8378 8396 8435 8469 8511 8595 8616 8617 8632 8691 8714 8755 8786 8787 8820 8860 8874 8941 8954 9012 9096 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=751
+	name="STATE_751"
+	manpower = 4670000
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = BRC
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 3
+			arms_factory = 2
+			1908 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = BRC
+		victory_points = {
+			1908 10
+		}
+
+	}
+	provinces={
+		1422 1431 1458 1465 1476 1500 1515 1526 1544 1557 1571 1572 1577 1583 1606 1644 1649 1676 1726 
+	}
+}

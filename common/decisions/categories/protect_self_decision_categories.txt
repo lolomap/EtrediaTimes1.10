@@ -1,0 +1,7 @@
+protect_self = {
+	icon = generic_crisis
+	
+	visible = {
+		always = yes
+	}
+}

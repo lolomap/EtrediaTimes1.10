@@ -1,0 +1,27 @@
+
+state={
+	id=203
+	name="STATE_203"
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 0
+
+		}
+		add_core_of = SBU
+		add_core_of = MOF
+		victory_points = {
+			6558 5 
+		}
+
+	}
+	provinces={
+		4783 4884 5011 5012 5098 5114 5184 5225 5249 5352 5353 5384 5429 5448 5546 5576 5665 5702 5791 5810 5876 5898 6041 
+	}
+	manpower=880000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

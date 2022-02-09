@@ -1,0 +1,26 @@
+scripted_diplomatic_actions = {
+	forse_betrayal = {
+		visible = {
+			not = {has_war_with = ROOT}
+			any_other_country = {
+				is_guaranteed_by = PREV
+			}
+		}
+		selectable = {
+			set_temp_variable = {razn = ROOT.world_influence}
+			divide_temp_variable = {razn = world_influence}
+			check_variable = {razn > 2.9}
+		}
+		show_acceptance_on_action_button = no
+		requires_acceptance = no
+
+		icon = 1
+
+		complete_effect = {
+			ROOT = {
+				set_country_flag = betrayal_window_opened
+				set_variable = {target_betrayal = PREV}
+			}
+		}
+	}
+}

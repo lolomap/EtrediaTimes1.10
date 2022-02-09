@@ -1,0 +1,27 @@
+state={
+	id=95
+	name="STATE_95"
+	resources={
+		steel=24.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = IID
+		victory_points = {
+			11117 10 
+		}
+
+	}
+	provinces={
+		9207 9278 9360 9384 9402 9469 9487 9495 9522 9563 9578 9628 9708 
+	}
+	manpower=9000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

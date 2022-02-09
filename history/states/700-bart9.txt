@@ -1,0 +1,29 @@
+
+state={
+	id=700
+	name="STATE_700"
+	manpower = 3420000
+	
+	state_category = large_town
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 2
+                        dockyard = 1
+			355 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = BAR
+		victory_points = {
+			355 10
+		}
+
+	}
+	provinces={
+		495 496 506 512 513 516 520 521 532 541 553 564 565 573 577 578 582 591 595 598 608 632 
+	}
+}

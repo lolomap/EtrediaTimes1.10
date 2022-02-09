@@ -1,0 +1,33 @@
+
+state={
+	id=298
+	name="STATE_298"
+	manpower = 4480000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 2
+                        dockyard = 2
+                        air_base = 5
+			5355 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			5355 10
+		}
+
+	}
+	provinces={
+		4453 4468 4484 4485 4571 4572 4607 4633 4666 4667 4688 4775 4776 4893 
+	}
+}

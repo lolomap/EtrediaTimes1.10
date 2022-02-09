@@ -1,0 +1,33 @@
+
+state={
+	id=556
+	name="STATE_556"
+	manpower = 2304
+	
+	state_category = pastoral
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			2886 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TOR
+		victory_points = {
+			2886 1
+		}
+
+	}
+	provinces={
+		2198 2236 2255 2282 2319 2346 2399 2411 2454 2504 2520 
+	}
+}

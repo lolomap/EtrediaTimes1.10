@@ -1,0 +1,29 @@
+
+state={
+	id=505
+	name="STATE_505"
+	manpower = 1760000
+	
+	state_category = large_town
+	
+	resources={
+                rubber = 12 # was: 14
+	}
+
+	history={
+		owner = BOU
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = BOU
+		victory_points = {
+			4066 5
+		}
+
+	}
+	provinces={
+		3547 3563 3564 3569 3574 3577 3582 3592 3612 3626 3638 3658 3663 3668 3669 3670 3673 3676 3690 3722 3724 3748 3751 3758 3768 3796 3818 
+	}
+}

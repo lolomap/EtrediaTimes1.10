@@ -1,0 +1,30 @@
+state={
+	id=21
+	name="STATE_21"
+	manpower = 1400000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 5
+			8383 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = UCB
+		add_core_of = KIM
+		victory_points = {
+			8383 1
+		}
+
+	}
+	provinces={
+		6994 7029 7123 7183 7266 7321 
+	}
+}

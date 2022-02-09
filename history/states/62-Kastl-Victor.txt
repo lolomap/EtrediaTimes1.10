@@ -1,0 +1,25 @@
+state={
+	id=62
+	name="STATE_62"
+	manpower = 611000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = TRP
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = TRP
+		victory_points = {
+			8080 5
+		}
+
+	}
+	provinces={
+		6449 6547 6653 6823 6881 7014 7031 7145 7167 7241 7323 7445 7461 7462 
+	}
+}

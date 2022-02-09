@@ -1,0 +1,27 @@
+state={
+	id=144
+	name="STATE_144"
+	manpower = 1100000
+	
+	state_category = large_town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+		}
+		add_core_of = PIN
+		victory_points = {
+			11540 15
+		}
+
+	}
+	provinces={
+		11540 11602 11646 11657 11689 11748 11782 11795 11880 11891 11892 12008 12020 12053 12124 12144 12193 12271 
+	}
+}

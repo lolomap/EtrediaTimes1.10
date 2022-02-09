@@ -1,0 +1,60 @@
+scripted_gui = {
+	force_embargo = {
+		window_name = "force_embargo_window"
+		context_type = selected_country_view
+
+		visible = {
+			ROOT = {has_country_flag = fembargo_window_opened}
+			#always = yes
+		}
+
+		effects = {
+			fembargo_exit_button_click = {
+				ROOT = {clr_country_flag = fembargo_window_opened}
+			}
+			cForceEmbargo_click = {
+				var:ROOT.target_fembargo = {set_variable = {from_fembargo_country = PREV}}
+				var:ROOT.target_fembargo = {country_event = {id = mechanics.1 days = 1}}
+				ROOT = {
+					set_country_flag = {
+						flag = fembargo_cooldown
+						days = 30
+						value = 1
+					}
+				}
+			}
+		}
+
+		triggers = {
+			cForceEmbargo_visible = {
+				var:ROOT.target_fembargo = {
+					not = {
+						is_in_array = {
+							array = embargoList
+							value = PREV
+						}
+					}
+				}
+			}
+			cForceEmbargo_click_enabled = {
+				ROOT = {
+					not = {has_country_flag = fembargo_cooldown}
+				}
+			}
+		}
+
+		dynamic_lists = {
+			embargo_countries_gb = {
+				array = Root.embargoList
+				entry_container = embargo_countries_entry
+				change_scope = yes
+			}
+		}
+
+		properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+		}
+	}
+}

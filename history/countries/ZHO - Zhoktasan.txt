@@ -1,0 +1,87 @@
+﻿capital = 748
+
+oob = "ZHO_2014"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.9
+
+add_ideas = {
+        www_medium_country
+        general_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	jeep_unit = 1
+	gw_artillery = 1
+	gwtank = 1
+	tech_mountaineers = 1
+	early_submarine = 1
+	transport = 1
+	early_light_cruiser = 1
+	early_destroyer = 1
+}
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2014.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 60
+        democratic = 15
+        fascism = 25
+        communism = 0
+}
+
+#
+create_country_leader = {
+	name = "Liboak Gergenyie"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Liboak Gergenyie"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Ututna Moba"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Skamih Pore"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

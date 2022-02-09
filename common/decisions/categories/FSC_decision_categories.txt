@@ -1,0 +1,6 @@
+FSC_subj_integration = {
+	icon = generic_democracy
+	visible = {
+		always = yes
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=26
+	name="STATE_26"
+	manpower=3550000
+	state_category=large_city
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 3
+                        air_base = 6
+
+		}
+		add_core_of = UCB
+		add_core_of = TIR
+		victory_points = {
+			6965 25 
+		}
+
+	}
+	provinces={
+		5872 5888 5937 5957 6021 6052 6053 6070 6086 6133 6134 6166 6167 6222 6244 6263 6284 6285 6354 6405 6406 6432 6446 
+	}
+}

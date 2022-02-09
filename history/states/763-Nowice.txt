@@ -1,0 +1,30 @@
+
+state={
+	id=763
+	name="STATE_763"
+	manpower = 3456000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			dockyard = 1
+			2812 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ATI
+		victory_points = {
+			2812 5
+		}
+
+	}
+	provinces={
+		2037 2052 2077 2117 2120 2169 2173 2185 2186 2209 2219 2232 2233 2237 2246 2247 2251 2264 2278 2279 2299 2306 
+	}
+}

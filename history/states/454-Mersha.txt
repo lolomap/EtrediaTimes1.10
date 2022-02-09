@@ -1,0 +1,28 @@
+
+state={
+	id=454
+	name="STATE_454"
+	manpower = 678000
+	
+	state_category = rural
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 0
+                        arms_factory = 0
+			8959 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = LON
+		victory_points = {
+			9163 1
+		}
+
+	}
+	provinces={
+		9398 9425 9426 9571 9590 9774 10188 10467 
+	}
+}

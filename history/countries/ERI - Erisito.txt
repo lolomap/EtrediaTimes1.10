@@ -1,0 +1,53 @@
+﻿capital = 749
+
+oob = "ERI_2014"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.8
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	jeep_unit = 1
+	gw_artillery = 1
+	gwtank = 1
+	tech_mountaineers = 1
+	early_submarine = 1
+	transport = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+}
+
+set_convoys = 50
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2006.7.7"
+	election_frequency = 80
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 31
+        democratic = 52
+        fascism = 0
+        communism = 17
+}
+
+#
+create_country_leader = {
+	name = "Zander De Vries"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=266
+	name="STATE_266"
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			11223 15 
+		}
+
+	}
+	provinces={
+		11223 11244 11413 11420 11421 11436 11556 11591 11618 11630 11650 11733 11749 11784 11796 11805 11903 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

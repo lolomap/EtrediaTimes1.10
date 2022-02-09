@@ -1,0 +1,35 @@
+
+state={
+	id=39
+	name="STATE_39"
+	manpower = 2400000
+	
+	state_category = town
+	
+	resources={
+	steel = 24 # was: 32
+	}
+
+	history={
+		owner = OIK
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+                        dockyard = 2
+			12673 = {
+				naval_base = 8
+			}
+			13670 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = OIK
+		victory_points = {
+			13551 10
+		}
+
+	}
+	provinces={
+		11084 11374 11509 11571 11597 11667 11704 11757 11815 11873 11944 
+	}
+}

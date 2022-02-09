@@ -1,0 +1,27 @@
+
+state={
+	id=397
+	name="STATE_397"
+	manpower = 800000
+	
+	state_category = rural
+	
+	resources={
+		oil = 48 # was: 66
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = EIK
+		victory_points = {
+			14370 1
+		}
+
+	}
+	provinces={
+		14370 14461 14476 14493 14528 14529 14588 14597 14600 14617 14634 14640 14655 14663 14688 14712 14727 14730 14747 14764 14771 14773 14783 14811 
+	}
+}

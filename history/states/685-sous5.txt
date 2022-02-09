@@ -1,0 +1,26 @@
+
+state={
+	id=685
+	name="STATE_685"
+	manpower = 1200000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SOU
+		victory_points = {
+			346 1
+		}
+
+	}
+	provinces={
+		176 192 193 196 214 215 223 225 
+	}
+}

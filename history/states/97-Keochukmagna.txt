@@ -1,0 +1,21 @@
+state={
+	id=97
+	name="STATE_97"
+	manpower = 4100000
+	state_category = rural
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = IID
+		victory_points = {
+			11636 5
+		}
+
+	}
+	provinces={
+		9809 9832 9891 9944 9967 9968 10013 10014 10028 10097 10117 10125 10142 10166 10232 10274 
+	}
+}

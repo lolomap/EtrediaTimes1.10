@@ -1,0 +1,56 @@
+ideas = {
+    country = {	
+
+	DIR_revolt = {
+
+            picture = hol_liberation
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+
+			rule = {
+				can_join_factions = no
+				can_send_volunteers = no
+				can_force_government = no
+				can_puppet = no
+			}
+
+			modifier = {
+                planning_speed = -0.3
+                army_org_factor = -0.1
+                army_attack_factor = -0.3
+				surrender_limit = 0.3
+				join_faction_tension = 1.00
+			}
+	}
+
+
+	DIR_KAR_support = {
+
+            picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                army_org_factor = 0.1
+                                army_attack_factor = 0.1
+			}
+	}
+}
+}

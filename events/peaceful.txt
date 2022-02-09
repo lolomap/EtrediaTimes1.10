@@ -1,0 +1,75 @@
+add_namespace = pcf
+
+country_event = {
+	id = pcf.1
+	title = pcf.1.t
+	desc = pcf.1.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = pcf.1.a
+	}
+}
+
+country_event = {
+	id = pcf.2
+	title = pcf.2.t
+	desc = pcf.2.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = pcf.2.a
+		add_named_threat = {
+			threat = -0.1
+			name = PEACE_ConferenceParticepence
+		}
+		add_war_support = -0.05
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_added_tension_amount > 1
+				factor = 2
+			}
+			modifier = {
+				has_added_tension_amount > 3
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = pcf.2.b
+	}
+}
+
+country_event = {
+	id = pcf.3
+	title = pcf.3.t
+	desc = pcf.3.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = pcf.3.a
+		add_named_threat = {
+			threat = -1
+			name = PEACE_DemilitarizationAgree
+		}
+		add_war_support = -0.2
+
+		#НАДО ИЗМЕНИТЬ ПРИЗЫВ
+		add_ideas = disarmed_nation
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 5000
+		}
+	}
+	option = {
+		name = pcf.3.b
+	}
+}

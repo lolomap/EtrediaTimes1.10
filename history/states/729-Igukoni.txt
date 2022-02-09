@@ -1,0 +1,31 @@
+
+state={
+	id=729
+	name="STATE_729"
+	manpower = 2080000
+	state_category = town
+	
+	resources={
+		steel = 2 # was: 2
+		tungsten = 8 # was: 10
+	}
+
+	history={
+		owner = KTL
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+			1388 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = KTL
+		victory_points = {
+			1388 3
+		}
+
+	}
+	provinces={
+		887 888 913 920 938 952 957 988 994 997 1038 1039 1045 1105 
+	}
+}

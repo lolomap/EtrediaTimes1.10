@@ -1,0 +1,26 @@
+
+state={
+	id=187
+	name="STATE_187"
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = SFL
+		add_core_of = SZE
+		victory_points = {
+			8231 1 
+		}
+
+	}
+	provinces={
+		6695 6696 6711 6712 6713 6734 6735 6847 6904 6925 6926 6941 6959 6999 7017 7057 7071 7108 7129 7148 7187 7188 7189 7270 7295 7311 7312 7364 7385 7448 7483 7529 
+	}
+	manpower=950000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

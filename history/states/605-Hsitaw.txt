@@ -1,0 +1,27 @@
+
+state={
+	id=605
+	name="STATE_605"
+	manpower = 550000
+	
+	state_category = pastoral
+	
+	resources={
+        steel = 2 # was: 12
+	}
+
+	history={
+		owner = BHI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BHI
+		victory_points = {
+			7671 1
+		}
+
+	}
+	provinces={
+		6330 6442 6669 6953 6954 7411 
+	}
+}

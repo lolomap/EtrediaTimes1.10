@@ -1,0 +1,28 @@
+state={
+	id=308
+	name="STATE_308"
+	manpower = 467000	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = BAE
+		buildings = {
+			infrastructure = 4
+			14803 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BAE
+		victory_points = {
+			14803 1
+		}
+
+	}
+	provinces={
+		12565 12592 12665 12690 12731 12781 12782 12814 12864 12924 13015 13131 
+	}
+}

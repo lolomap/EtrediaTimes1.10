@@ -1,0 +1,84 @@
+add_namespace = baensli
+
+country_event = {
+	id = baensli.1
+	title = baensli.1.t
+	desc = baensli.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = BAE
+    }
+	option = {
+		name = baensli.1.a
+        hidden_effect = {
+            EIK = {
+				add_to_faction = BAE
+            }               
+		ai_chance = { factor = 100 }
+		}
+	}
+}
+
+country_event = {
+	id = baensli.2
+	title = baensli.2.t
+	desc = baensli.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = BAE
+    }
+	option = {
+		name = baensli.2.a
+        BAE = {
+            add_ideas = BAE_eik_vliyanie
+        }       
+	ai_chance = { factor = 100 }
+    }
+		
+}
+
+country_event = {
+	id = baensli.3
+	title = baensli.3.t
+	desc = baensli.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = BAE
+    }
+	option = {
+		name = baensli.3.a
+		EIK = {
+			transfer_state = 316
+			transfer_state = 317
+		}
+		ai_chance = { 
+			factor = 0.8
+		}
+    }
+	option = {
+		name = baensli.3.b
+		EIK = {
+			create_wargoal = {
+				type = annex_everything
+				target = BAE
+			}
+			remove_from_faction = BAE
+		}
+		ai_chance = { 
+		factor = 0.2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+    }
+}

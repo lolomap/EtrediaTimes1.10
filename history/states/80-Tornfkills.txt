@@ -1,0 +1,29 @@
+state={
+	id=80
+	name="STATE_80"
+	resources={
+		rubber=20.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = IID
+		add_core_of = BKH
+		victory_points = {
+			7620 1 
+		}
+
+	}
+	provinces={
+		6092 6140 6205 6228 6229 6230 6267 6305 6339 6369 6410 6498 6499 6500 6529 6548 6579 6580 6596 6634 6635 6636 6676 6677 6730 6731 6755 6756 6769 6804 6824 6825 6863 6902 6903 6923 6939 6978 6997 7015 7016 7069 7070 7089 7207 7242 
+	}
+	manpower=1700000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

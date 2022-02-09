@@ -1,0 +1,98 @@
+sheregia_war_goal = {
+	enable = {
+		tag = PIN
+		country_exists = SHE
+		SHE = {
+		subject = no
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = SHE
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SHE"			
+		value = 200
+	}		
+}
+
+fillrussia_war_goal = {
+	enable = {
+		tag = PIN
+		country_exists = FIL
+		FIL = {
+		subject = no
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = FIL
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "FIL"			
+		value = 200
+	}		
+}
+
+sheregia_war1 = {
+    enable = {
+	    tag = PIN
+		country_exists = SHE
+		SHE = {
+		subject = no
+		}
+	}
+	abort = {
+	    NOT = {
+		    country_exists = SHE
+		}
+	}
+	
+	ai_strategy = {
+	    type = declare_war
+		id = "SHE"
+		value = 200
+	}
+}
+
+sheregia_war1 = {
+    enable = {
+	    tag = PIN
+		country_exists = SHE
+		SHE = {
+		subject = no
+		}
+	}
+	abort = {
+	    NOT = {
+		    country_exists = SHE
+		}
+	}
+	
+	ai_strategy = {
+	    type = invade
+		id = "SHE"
+		value = 200
+	}
+}
+
+eik_not_ally = {
+	enable = {
+		tag = PIN
+	}
+	abort = {
+    always = no
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "EIK"			
+		value = -200
+	}		
+}

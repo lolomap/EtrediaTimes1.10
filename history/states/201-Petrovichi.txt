@@ -1,0 +1,26 @@
+state={
+	id=201
+	name="STATE_201"
+	manpower = 780000
+	
+	state_category = rural
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 3
+                        air_base = 1
+			4059 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SBU
+		victory_points = {
+			4059 1
+		}
+
+	}
+	provinces={
+		3434 3514 3523 3532 3568 
+	}
+}

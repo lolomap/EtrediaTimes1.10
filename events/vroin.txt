@@ -1,0 +1,52 @@
+add_namespace = vro
+
+country_event = {
+        id = vro.1
+        title = vro.1.t
+        desc = vro.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = VRO
+    }
+
+    option = {
+	name = vro.1.a
+    YAN = {
+    add_to_faction = VRO
+    }
+	add_ideas = { cho_yanthalia }
+    ai_chance = { factor = 80 }
+	}
+    option = {
+	name = vro.1.b
+    YAN = { country_event = { id = yan.15 days = 1 } }
+    ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+        id = vro.2
+        title = vro.2.t
+        desc = vro.2.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = VRO
+    }
+
+    option = {
+		name = vro.2.a
+		create_wargoal = {
+			type = annex_everything
+			target = YAN
+		}
+		ai_chance = { factor = 100 }
+	}
+    option = {
+		name = vro.2.b
+		ai_chance = { factor = 0 }
+	}
+}

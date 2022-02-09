@@ -1,0 +1,30 @@
+
+state={
+	id=350
+	name="STATE_350"
+	manpower = 780000
+	
+	state_category = pastoral
+	
+	resources={
+		steel = 7 # was: 10
+                chromium = 18 # was: 22
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 3
+                        air_base = 1
+		}
+		add_core_of = EIK
+		add_core_of = TSH
+		victory_points = {
+			10756 1
+		}
+
+	}
+	provinces={
+		10939 10989 11111 11125 11215 11302 11365 11366 11446 11564 11565 11651 11652 11681 11737 11772 11787 11865 11866 11908 11968 12028 12056 12057 12085 12215 12216 12231 12232 12257 12314 12315 
+	}
+}

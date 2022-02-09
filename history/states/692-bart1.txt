@@ -1,0 +1,30 @@
+
+state={
+	id=692
+	name="STATE_692"
+	manpower = 1000000
+	
+	state_category = city
+	
+	resources={
+             steel = 30 # was: 65
+             chromium = 12 # was: 24
+             aluminium = 28 # was: 48
+	}
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+		}
+		add_core_of = BAR
+		victory_points = {
+			273 20
+		}
+
+	}
+	provinces={
+		344 351 354 375 389 411 417 456 462 
+	}
+}

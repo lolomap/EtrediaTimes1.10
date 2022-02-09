@@ -1,0 +1,32 @@
+
+state={
+	id=273
+	name="STATE_273"
+	history={
+		owner = ZAM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			10436 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ZAM
+		victory_points = {
+			10436 15 
+		}
+		victory_points = {
+			10225 1 
+		}
+
+	}
+	provinces={
+		8785 8816 8817 8857 8900 8953 8977 8978 8993 8994 9064 9082 9128 9129 9199 9212 9231 9232 9268 9285 9300 9341 9478 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

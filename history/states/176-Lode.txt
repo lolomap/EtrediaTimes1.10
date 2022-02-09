@@ -1,0 +1,21 @@
+state={
+	id=176
+	name="STATE_176"
+	manpower = 1361000
+	state_category = large_town
+	history={
+		owner = MOF
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+		}
+		add_core_of = MOF
+		victory_points = {
+			5076 15 
+		}
+
+	}
+	provinces={
+		4199 4241 4272 4273 4330 4347 4366 4398 4513 4514 4632 4679 4701 
+	}
+}

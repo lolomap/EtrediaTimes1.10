@@ -1,0 +1,25 @@
+
+state={
+	id=159
+	name="STATE_159"
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 0
+
+		}
+		add_core_of = SFL
+		victory_points = {
+			4478 5 
+		}
+
+	}
+	provinces={
+		4478 4495 4530 4542 4597 4629 4676 4677 4710 4799 4817 4852 4880 4938 4958 4959 5004 5042 5061 5093 5127 5145 5167 5223 5309 12429 
+	}
+	manpower=800000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

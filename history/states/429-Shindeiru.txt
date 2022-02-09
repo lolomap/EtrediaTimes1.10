@@ -1,0 +1,29 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 1008700
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = KAS
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_facotry = 0
+		}
+		add_core_of = KAS
+		victory_points = {
+			12034 1
+		}
+
+	}
+	provinces={
+		12860 12909 12940 12968 12991 13004 13060 13073 13115 13149 13161 13198 13289 13324 13339 13352 13380 13407 13539 13540 13556 13567 13685 13686 13751 13760 13780 13835 13895 13910 13920 13992 14031 14060 14074 
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=244
+	name="STATE_244"
+	manpower = 15000000
+	
+	state_category = metropolis
+	
+	resources={
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 4
+                        arms_factory = 1
+                        air_base = 10
+		}
+		add_core_of = KAR
+		victory_points = {
+			12340 30
+		}
+
+	}
+	provinces={
+		10259 10311 10343 10376 10441 10442 10503 10504 10505 10521 10562 10563 10579 10580 10600 10614 10623 10632 10633 10664 10670 10689 10690 10737 10738 10755 10756 10765 10766 10786 10787 10813 10814 10822 10840 10856 10874 10893 10929 10930 10986 11036 11037 11054 11155 11183 11220 
+	}
+}

@@ -1,0 +1,1873 @@
+focus_tree = {
+	id = filrus
+	country = {
+		factor = -1
+		modifier = {
+			add = 0
+			tag = FIL
+		}
+        }
+	default = no
+	#democratic
+	focus = {
+		id = FIL_Support_Democracy
+		icon = GFX_goal_support_democracy
+		cost = 20
+		mutually_exclusive = {
+			focus = FIL_Support_Nathion
+			focus = FIL_Support_Neutrals
+			}
+		ai_will_do = {
+			factor = 15}
+		available = {
+			date > 2014.3.1
+			has_idea = FIL_political_discord
+		}
+		completion_reward =  {add_popularity = { ideology = democratic popularity = 0.05 } add_political_power = 80 remove_ideas = FIL_political_discord}
+		x = 50
+		y = 1
+	}
+	#Neutrals
+	focus = {
+		id = FIL_Support_Neutrals
+		icon = goal_generic_neutrality_focus
+		cost = 20
+		mutually_exclusive = {
+			focus = FIL_Support_Nathion
+			focus = FIL_Support_Democracy
+			}
+		ai_will_do = {
+			factor = 15}
+		available = {
+			date > 2014.3.1
+			has_idea = FIL_political_discord
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
+			add_political_power = 120
+			remove_ideas = FIL_political_discord
+		}
+		x = 35
+		y = 1
+	}
+	focus = {
+		id = FIL_choice_of_way
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_Support_Neutrals }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {country_event = filrussia.7}
+		x = 35
+		y = 2
+	}
+	focus = {
+		id = FIL_monarchism
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_choice_of_way }
+		available = {monarchism > 0.25}
+		ai_will_do = {
+		factor = 15}
+		mutually_exclusive = { focus = FIL_neutrals }
+		completion_reward = {set_politics = {ruling_party = monarchism elections_allowed = yes}}
+		x = 32
+		y = 3
+	}
+	focus = {
+		id = FIL_choice_of_clan
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_monarchism }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_political_power = 80}
+		x = 24
+		y = 4
+	}
+	focus = {
+		id = FIL_clan_2
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus =  FIL_choice_of_clan }
+		mutually_exclusive = {focus = FIL_clan_1}
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_clan_2_idea}
+		x = 25
+		y = 5
+	}
+	focus = {
+		id = FIL_clan_1
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus =  FIL_choice_of_clan }
+		mutually_exclusive = {focus = FIL_clan_2}
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_clan_1_idea}
+		x = 23
+		y = 5
+	}
+	focus = {
+		id = FIL_cancellation_of_elections
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		available = {OR = {has_completed_focus = FIL_clan_1 has_completed_focus = FIL_clan_2}}
+		prerequisite = { focus = FIL_monarchism }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {set_politics = {ruling_party = monarchism elections_allowed = no} add_ideas = FIL_disorder country_event = filrussia.8}
+		x = 27
+		y = 4
+	}
+	focus = {
+		id = FIL_crush_dissatisfied
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		available = {has_civil_war = no}
+		prerequisite = { focus = FIL_cancellation_of_elections }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = {FIL_Duks_sep FIL_North_sep}}
+		x = 27
+		y = 5
+	}
+	focus = {
+		id = FIL_crush_north_sep
+		icon = goal_generic_neutrality_focus
+		cost = 20
+		prerequisite = { focus = FIL_crush_dissatisfied }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {remove_ideas = FIL_North_sep}
+		x = 28	
+		y = 6
+	}
+	focus = {
+		id = FIL_crush_ducks_sep
+		icon = goal_generic_neutrality_focus
+		cost = 20
+		prerequisite = { focus = FIL_crush_dissatisfied }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {remove_ideas = FIL_Duks_sep}
+		x = 26
+		y = 6
+	}
+	focus = {
+		id = FIL_comissar
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_crush_north_sep }
+		prerequisite = { focus = FIL_crush_ducks_sep }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {
+		division_template = {
+			name = "Royal divisions"
+			division_names_group = FIL_RoyalDivisions
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 2 }
+			}
+			support = {
+			military_police = { x = 0 y = 0 }
+			}	
+			}
+			612 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			612 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			615 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			614 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			100 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			614 = {
+			create_unit = {
+			division = "name = \"Royal divisions\" division_template = \"Royal divisions\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			set_division_template_lock = {
+			division_template = "Royal divisions"
+			is_locked = yes
+			}
+			}
+		x = 27
+		y = 7
+	}
+	focus = {
+		id = FIL_tot_cens
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_comissar }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {swap_ideas = { remove_idea = nonfree_press add_idea = total_nonfree_press }}
+		x = 27
+		y = 8
+	}
+	focus = {
+		id = FIL_centralisation
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_monarchism }
+		available = {OR = {has_completed_focus = FIL_clan_1 has_completed_focus = FIL_clan_2}}
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {remove_ideas = FIL_outdated_goverment_1}
+		x = 32
+		y = 4
+	}
+	focus = {
+		id = FIL_unitary_state
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_centralisation }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_political_power = 150}
+		x = 32
+		y = 5
+	}
+	focus = {
+		id = FIL_develop_regions_and_cntry
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_unitary_state }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {618 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+							 97 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}}
+		x = 32
+		y = 6
+	}
+	focus = {
+		id = FIL_create_academy
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_develop_regions_and_cntry }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_royal_academy }
+		x = 33
+		y = 7
+	}
+	focus = {
+		id = FIL_mil_towns	
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_develop_regions_and_cntry }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_manpower = 200000}
+		x = 31
+		y = 7
+	}
+	focus = {
+		id = FIL_ind_dev	
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_develop_regions_and_cntry }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_tech_bonus = {
+								bonus = 0.5
+								uses = 2
+								category = industry
+								}}
+		x = 32
+		y = 8
+	}
+	focus = {
+		id = FIL_money_for_arms
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		mutually_exclusive = { focus = FIL_money_for_civ.factor  }
+		prerequisite = { focus = FIL_ind_dev }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_arms_royal}
+		x = 29
+		y = 9
+	}
+	focus = {
+		id = FIL_new_tech_arm
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_arms }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_tech_bonus = {
+								bonus = 0.5
+								uses = 2
+								category = infantry_weapons
+								}}
+		x = 29
+		y = 10
+	}
+	focus = {
+		id = FIL_new_arms_factories
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_arms }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {609 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+								613 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+								619 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = { type = arms_factory level = 1 }
+								}}
+		x = 27
+		y = 10
+	}
+	focus = {
+		id = FIL_empire_fleet
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_arms }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {610 = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = { type = dockyard level = 2 }
+								}
+								608 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = dockyard level = 1 }
+								}}
+		x = 31
+		y = 10
+	}
+	focus = {
+		id = FIL_money_for_civ.factor
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		mutually_exclusive = { focus = FIL_money_for_arms }
+		prerequisite = { focus = FIL_ind_dev }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_factory_royal}
+		x = 35	
+		y = 9
+	}
+	focus = {
+		id = FIL_new_machine
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_civ.factor }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_tech_bonus = {
+								bonus = 0.5
+								uses = 1
+								category = industry
+								}
+							add_tech_bonus = {
+								bonus = 0.5
+								uses = 1
+								category = synth_resources
+								}}
+		x = 35	
+		y = 10
+	}
+	focus = {
+		id = FIL_support_of_industry
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_civ.factor }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {100 = {add_extra_state_shared_building_slots = 2} 616 = {add_extra_state_shared_building_slots = 1}}
+		x = 33	
+		y = 10
+	}
+	focus = {
+		id = FIL_new_factories
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_money_for_civ.factor }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {609 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+								613 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+								619 = {
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = { type = industrial_complex level = 1 }
+								}}
+		x = 37	
+		y = 10
+	}
+	focus = {
+		id = FIL_church_for_state
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_centralisation }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_stability = 0.1 add_war_support = 0.05}
+		x = 30
+		y = 5
+	}
+	focus = {
+		id = FIL_improve_imperial_goverment
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_church_for_state }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {add_ideas = FIL_church_and_gov}
+		x = 30
+		y = 6
+	}
+	focus = {
+		id = FIL_neutrals
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		mutually_exclusive = { focus = FIL_monarchism }
+		prerequisite = { focus = FIL_choice_of_way }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {set_politics = {ruling_party = neutrality elections_allowed = yes}}
+		x = 38
+		y = 3
+	}
+	focus = {
+		id = FIL_neutral_law
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_neutrals }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 4
+	}
+	focus = {
+		id = FIL_reforms
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_neutral_law }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 47
+		y = 5
+	}
+	focus = {
+		id = FIL_new_policy
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_reforms }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 50
+		y = 6
+	}
+	focus = {
+		id = FIL_promotion_of_move_to_north
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_new_policy }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 51
+		y = 7
+	}
+	focus = {
+		id = FIL_promotion_for_north_business
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_promotion_of_move_to_north }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 51
+		y = 8
+	}
+	focus = {
+		id = FIL_progressive_taxes
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_new_policy }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 49
+		y = 7
+	}
+	focus = {
+		id = FIL_free_medicane
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_progressive_taxes }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 49
+		y = 8
+	}
+	focus = {
+		id = FIL_pensions
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_free_medicane }
+		prerequisite = { focus = FIL_promotion_for_north_business }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 50
+		y = 9
+	}
+		focus = {
+		id = FIL_Minimum_wage
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_subsidies_for_business }
+		prerequisite = { focus = FIL_improve_working_environment }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 44
+		y = 9
+	}
+	focus = {
+		id = FIL_foreigner_invest
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_Minimum_wage }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 44
+		y = 10
+	}
+	#focus = {
+	#	id = FIL_reduce_duties
+	#	icon = goal_generic_neutrality_focus
+	#	cost = 10
+	#	prerequisite = { focus = FIL_foreigner_invest }
+	#	ai_will_do = {
+	#	factor = 15}
+	#	completion_reward = {}
+	#	x = 44
+	#	y = 11
+	#}
+	focus = {
+		id = FIL_reduce_taxes
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_reforms }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 44
+		y = 6
+	}
+	focus = {
+		id = FIL_optimization_of_production
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_reduce_taxes }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 43
+		y = 7
+	}
+	focus = {
+		id = FIL_business_promotion
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_reduce_taxes }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 45
+		y = 7
+	}
+	focus = {
+		id = FIL_subsidies_for_business
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus =  FIL_business_promotion }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 45
+		y = 8
+	}
+	focus = {
+		id = FIL_improve_working_environment
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_optimization_of_production }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 43
+		y = 8
+	}
+	focus = {
+		id = FIL_preparing_for_threat
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_neutral_law }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 5
+	}
+	focus = {
+		id = FIL_program_E2YT
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_preparing_for_threat }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 40
+		y = 6
+	}
+	focus = {
+		id = FIL_Elite_units
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_program_E2YT }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 40
+		y = 7
+	}
+	focus = {
+		id = FIL_project41
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_preparing_for_threat }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 6
+	}
+	focus = {
+		id = FIL_light_fortification
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_project41 }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 7
+	}
+	focus = {
+		id = FIL_medium_fortification
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_light_fortification }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 8
+	}
+	focus = {
+		id = FIL_mil.comp_NORRDEMILITA
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_preparing_for_threat }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 36
+		y = 6
+	}
+	focus = {
+		id = FIL_ARMS_PRODUCTION
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_mil.comp_NORRDEMILITA }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 36
+		y = 7
+	}
+	focus = {
+		id = FIL_Economy_mobilization
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { focus = FIL_ARMS_PRODUCTION focus = FIL_medium_fortification focus = FIL_Elite_units }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 38
+		y = 9
+	}
+	focus = {
+		id = FIL_monarchism_foreign_policy
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		available = { has_completed_focus = FIL_monarchism }
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 32
+		y = 12
+	}
+	focus = {
+		id = FIL_create_empire_idea
+		prerequisite = { focus = FIL_monarchism_foreign_policy }
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 30	
+		y = 13
+	}
+	focus = {
+		id = FIL_ultimatum
+		prerequisite = { focus = FIL_create_empire_idea }
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 30	
+		y = 14
+	}
+	focus = {
+		id = FIL_create_emp.alliance
+		prerequisite = { focus = FIL_monarchism_foreign_policy }
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {create_faction = Imperial_Alliance set_rule = {
+		can_create_factions = yes}}
+		x = 34	
+		y = 13
+	}
+	focus = {
+		id = FIL_emp.alliance_invite_IID
+		prerequisite = { focus = FIL_create_emp.alliance }
+		icon = goal_generic_neutrality_focus
+		cost = 10
+		ai_will_do = {
+		factor = 15}
+		completion_reward = {}
+		x = 34	
+		y = 14
+	}
+	#Nathionolism
+	focus = {
+		id = FIL_Support_Nathion
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 20
+		available = {
+			date > 2014.3.1
+			has_idea = FIL_political_discord
+		}
+		mutually_exclusive = {
+			focus = FIL_Support_Democracy
+			focus = FIL_Support_Neutrals
+			}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = { add_timed_idea = { idea = fascism_up_fil days = 140 } add_popularity = { ideology = fascism popularity = 0.1 } add_political_power = 120 remove_ideas = FIL_political_discord}
+		x = 13	
+		y = 1
+	}
+	focus = {
+		id = FIL_Civil_War
+		icon = GFX_goal_generic_occypy_states_ongoing_war
+		cost = 10
+		available = {
+			fascism > 0.6
+		}
+		prerequisite = { focus = FIL_Support_Nathion }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {country_event = filrussia.1}
+		x = 13
+		y = 3
+	}
+	focus = {
+		id = FIL_BEFORE_CIV_1
+		icon = GFX_goal_generic_national_unity
+		cost = 13
+		available = {
+			has_war = no
+		}
+		prerequisite = { focus = FIL_Civil_War }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {swap_ideas = {
+								remove_idea = FIL_effect_of_revolution_1
+								add_idea = FIL_effect_of_revolution_2
+								
+							}	
+		}
+		x = 13
+		y = 4
+	}
+	focus = {
+		id = FIL_BEFORE_CIV_2
+		icon = GFX_goal_generic_construction
+		cost = 10
+		available = {
+			has_war = no
+		}
+		prerequisite = { focus = FIL_BEFORE_CIV_1 }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								remove_ideas = FIL_effect_of_revolution_2
+							}	
+		x = 13
+		y = 5
+		}
+	#Totalitarism
+	focus = {
+		id = FIL_totalitarism
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		mutually_exclusive = {
+			focus = FIL_timed_goverment
+			}
+		prerequisite = { focus = FIL_BEFORE_CIV_2 }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_political_power = 120
+								add_war_support = 0.05
+							}	
+		x = 5
+		y = 6
+		}
+	focus = {
+		id = FIL_destroy_opposition
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_totalitarism }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_popularity = {ideology = fascism popularity = 0.1}
+								add_stability = 0.05
+							}	
+		x = 5
+		y = 7
+		}
+		focus = {
+		id = FIL_single_party_system
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_destroy_opposition }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								set_popularities = {
+								fascism = 1
+			}
+							}	
+		x = 7	
+		y = 8
+		}
+		focus = {
+		id = FIL_nation_control
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_single_party_system }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							add_ideas = FIL_pruge2	
+							}	
+		x = 9	
+		y = 9
+		}
+		focus = {
+		id = FIL_Mil_Nation
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_nation_control }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas = FIL_Mil_Nation1
+							}	
+		x = 9	
+		y = 10
+		}
+		focus = {
+		id = FIL_Mil_schools
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_Mil_Nation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas = FIL_Mil_Schools1
+							}	
+		x = 9	
+		y = 11
+		}
+		focus = {
+		id = FIL_SMP_squads
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_nation_control }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			division_template = {
+			name = "SMP Squad"
+			division_names_group = FIL_SMP
+			regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 3 y = 0 }
+			}
+			support = {
+			military_police = { x = 0 y = 0 }
+			}	
+			}
+			612 = {
+			create_unit = {
+			division = "name = \"SMP Squad\" division_template = \"SMP Squad\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			97 = {
+			create_unit = {
+			division = "name = \"SMP Squad\" division_template = \"SMP Squad\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			97 = {
+			create_unit = {
+			division = "name = \"SMP Squad\" division_template = \"SMP Squad\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			96 = {
+			create_unit = {
+			division = "name = \"SMP Squad\" division_template = \"SMP Squad\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = FIL }
+			}
+			100 = {
+			create_unit = {
+			division = "name = \"SMP Squad\" division_template = \"SMP Squad\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = FIL }
+			}
+		}
+		x = 11	
+		y = 10
+		}
+		focus = {
+		id = FIL_censura
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_single_party_system }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								swap_ideas = {
+								remove_idea =  total_free_press
+								add_idea = nonfree_press						
+							}	
+							}	
+		x = 7	
+		y = 9
+		}
+		focus = {
+		id = FIL_propagand_aganist
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_censura }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							add_stability = 0.05	
+							}	
+		x = 7	
+		y = 10
+		}
+		focus = {
+		id = FIL_pruge
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_propagand_aganist }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_timed_idea = { idea = FIL_pruge1
+								days = 365 }
+							}	
+		x = 7	
+		y = 11
+		}
+		focus = {
+		id = FIL_new_officers
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_pruge }
+		prerequisite = { focus = FIL_Mil_schools }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							create_corps_commander = {
+							name = "Yan Johanson"
+							picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+							traits = { trickster brilliant_strategist }
+							skill = 2
+							attack_skill = 3
+							defense_skill = 2
+							planning_skill = 1
+							logistics_skill = 3
+								}
+							}
+							
+		x = 7
+		y = 12
+		}
+		focus = {
+		id = FIL_fascism_relation
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		available = {
+			has_completed_focus = FIL_totalitarism
+			has_government = fascism
+		    	
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				modifier = fil_fascism
+			}
+			add_ideas = earl_browder
+		}	
+		x = 7
+		y = 15	
+		}
+		#Support others fascism
+		focus = {
+		id = FIL_Support_fascism_goverments
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_fascism_relation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+					limit = { 
+					has_government = fascism
+					}
+					add_opinion_modifier = {
+					modifier = fil_fascism2
+					}
+				}	
+		x = 9
+		y = 16	
+		}
+		focus = {
+		id = FIL_Support_fascism_KAR
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_Support_fascism_goverments }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = { KAR = {
+					add_popularity = { ideology = fascism popularity = 0.1}}
+				}	
+		x = 10
+		y = 17	
+		}
+		focus = {
+		id = FIL_Support_fascism_IID
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_Support_fascism_goverments }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+					IID = {
+					add_popularity = { ideology = fascism popularity = 0.15 } add_timed_idea = {idea =  fillrussia_influnce days = 140}}
+				}	
+		x = 8
+		y = 17
+		}
+		focus = {
+		id = FIL_fascism_civil_war_IID
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		available = { IID = {fascism > 0.5} }
+		prerequisite = { focus = FIL_Support_fascism_IID }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			IID = {
+				start_civil_war = {
+                ideology = fascism
+				size = 0.5
+                capital = 79
+                states = { 79 80 78 75 76 77 71 72 84 42 93 }
+        		}
+        		random_other_country = {
+					limit = {
+						original_tag = IID
+						has_government = democratic	
+					}
+					set_stability = 0.4	
+					set_war_support = 0.8
+				}
+				set_popularities = {
+					fascism = 75
+					communism = 5
+					neutrality = 20
+				} 
+            }
+		}	
+		x = 8
+		y = 18	
+		}
+		#Ally
+		focus = {
+		id = FIL_Own_way
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_fascism_relation }
+		mutually_exclusive = {
+			focus = FIL_east_block 
+			}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								set_rule = {can_create_factions = yes}
+								create_faction = North_Fascist_Block
+								
+							}	
+		x = 4
+		y = 16	
+		}
+		focus = {
+		id = FIL_Destroy_EIK
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 1
+		prerequisite = { focus = FIL_Own_way }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							create_wargoal = {  type = annex_everything target = EIK }
+							}	
+		x = 2
+		y = 17	
+		}
+		focus = {
+		id = FIL_Invite_IID
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		available = {
+					  IID = { has_civil_war = no  has_government = fascism }
+					}
+		prerequisite = { focus = FIL_Own_way }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							IID = {country_event = filrussia.4}
+							}	
+		x = 0
+		y = 17	
+		}
+		focus = {
+		id = FIL_east_block
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		available = {
+				EIK = { is_in_faction = yes }
+		}	
+		prerequisite = { focus = FIL_fascism_relation }
+		mutually_exclusive = {
+			focus = FIL_Own_way
+			}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+									EIK = { add_to_faction = FIL }
+							}	
+		x = 6
+		y = 16	
+		}
+		focus = {
+		id = FIL_fascism_east
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_east_block
+						 focus = FIL_Own_way }
+		bypass = {
+				country_exists = PIN
+		}	
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								create_wargoal = {  type = annex_everything target = PIN }
+							}	
+		x = 5
+		y = 17
+		}
+		focus = {
+		id = FIL_fascism_east2
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_fascism_east }
+		bypass = {
+				country_exists = SHE
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								create_wargoal = {  type = annex_everything target = SHE }
+							}	
+		x = 5	
+		y = 18
+		}
+		focus = {
+			id = FIL_privatisation
+			icon = GFX_focus_generic_strike_at_democracy1
+			cost = 10
+			prerequisite = { focus = FIL_destroy_opposition }
+			ai_will_do = {
+				factor = 5
+			}
+			completion_reward = {
+				FIL = {
+					610 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 }
+					}
+					616 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = { type = industrial_complex level = 1 }
+					}
+					618 = {
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+			}	
+			x = 3	
+			y = 8
+		}
+		focus = {
+		id = FIL_industry_for_state
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_privatisation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							add_ideas = FIL_industry_for_state
+							}	
+		x = 4
+		y = 9
+		}
+		focus = {
+		id = FIL_states_develop
+		icon = GFX_goal_generic_occypy_states_ongoing_war
+		cost = 10
+		prerequisite = { focus = FIL_industry_for_state }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {619 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+							 99 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+							}
+		x = 4	
+		y = 10	
+		}
+		focus = {
+		id = FIL_bunkers
+		icon = GFX_goal_generic_occypy_states_ongoing_war
+		cost = 10
+		prerequisite = { focus = FIL_states_develop }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			FIL = {
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 10335
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 10411
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 10362
+				instant_build = yes
+				}
+				add_building_construction = {
+				type = bunker
+				level = 2
+				province = 10464
+				instant_build = yes
+				}
+			}
+		}
+		x = 5	
+		y = 11	
+		}
+		focus = {
+		id = FIL_modernisation_airports
+		icon = GFX_goal_generic_occypy_states_ongoing_war
+		cost = 10
+		prerequisite = { focus = FIL_states_develop }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			FIL = {
+				612 = { add_building_construction = { type = air_base level = 2 } }
+				100 = { add_building_construction = { type = air_base level = 2 } }
+			}
+		}
+		x = 3	
+		y = 11	
+		}
+		focus = {
+		id = FIL_arms_industry
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_privatisation }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas = FIL_Mil.rails
+							}	
+		x = 1	
+		y = 9
+		}
+		focus = {
+		id = FIL_economy_mobilization
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_arms_industry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas =  partial_economic_mobilisation	
+							}
+		bypass = { OR = { has_idea = partial_economic_mobilisation has_idea = war_economy has_idea = tot_economic_mobilisation } }
+		x = 2	
+		y = 10
+		}
+		focus = {
+		id = FIL_build_new_arms_factories
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = { focus = FIL_arms_industry }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			FIL = {
+				609 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = arms_factory level = 2 }
+				}
+				97 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = arms_factory level = 1 }
+				}
+			}
+		}	
+		x = 0	
+		y = 10
+		}
+		
+	#Avtoritarism
+	focus = {
+		id = FIL_timed_goverment
+		icon = GFX_goal_generic_construction
+		cost = 10
+		mutually_exclusive = {
+			focus = FIL_totalitarism
+		}
+		prerequisite = { focus = FIL_BEFORE_CIV_2} 
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_politics = {ruling_party = neutrality}
+			set_popularities = {
+				neutrality = 100 
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = FIL_neutrality_party_time_long 
+				name = FIL_neutrality_party_time 
+			}
+		}	
+		x = 21	
+		y = 6
+	}
+	focus = {
+		id = FIL_allow_communism
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_timed_goverment }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							remove_ideas = FIL_communism_banned
+							}	
+		x = 22	
+		y = 7
+		}
+	focus = {
+		id = FIL_double_party_system
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_allow_communism }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								set_popularities = {neutrality = 50 communism = 50}
+							}	
+		x = 22	
+		y = 8
+		}
+	focus = {
+		id = FIL_elections_of_central_party
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_double_party_system }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_political_power = 150
+							}	
+		x = 22	
+		y = 9
+		}
+	focus = {
+		id = FIL_left_election
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_elections_of_central_party }
+		mutually_exclusive = { focus = FIL_right_election }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							set_politics = {ruling_party = communism}	
+							}	
+		x = 21	
+		y = 10
+		}
+	focus = {
+		id = FIL_right_election
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_elections_of_central_party }
+		mutually_exclusive = { focus = FIL_left_election }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								set_politics = {ruling_party = neutrality}	set_party_name = { 
+				ideology = neutrality 
+				long_name = FIL_neutrality_party_long 
+				name = FIL_neutrality_party
+				}
+							}	
+		x = 23	
+		y = 10
+		}
+	focus = {
+		id = FIL_capitalist_face
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_right_election focus = FIL_left_election }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								
+							}	
+		x = 22
+		y = 11
+		}
+	focus = {
+		id = FIL_free_education
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas = FIL_free_education_idea
+							}	
+		x = 24
+		y = 12
+		}
+	focus = {
+		id = FIL_foreigner_specialist
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								
+							}	
+		x = 26
+		y = 12
+		}
+	focus = {
+		id = FIL_officers_aboard
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								create_corps_commander = {
+								name = "Mickey Murker"
+								picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+								traits = { brilliant_strategist urban_assault_specialist }
+								skill = 3
+								attack_skill = 3
+								defense_skill = 2
+								planning_skill = 2
+								logistics_skill = 3
+								}
+		}							
+		x = 22
+		y = 12
+		}
+	focus = {
+		id = FIL_free_mind
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								swap_ideas = { remove_idea = nonfree_press add_idea = free_press }
+							}	
+		x = 20
+		y = 12
+		}
+	focus = {
+		id = FIL_foreigner_weapon
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_political_power = -300
+								add_tech_bonus = {
+								bonus = 0.5
+								uses = 1
+								category = infantry_weapons
+								}
+								country_event = filrussia.9
+							}	
+		x = 18
+		y = 12
+		}
+	focus = {
+		id = FIL_Industry_dev
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_timed_goverment }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_tech_bonus = {
+								bonus = 0.5
+								uses = 2
+								category = industry
+								}
+							}	
+		x = 17	
+		y = 7
+		}
+	focus = {
+		id = FIL_THREE_YEAR_PLANS
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_Industry_dev }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+						add_timed_idea = {idea = FIL_three_year days = 1095}
+							}	
+		x = 15	
+		y = 8
+		}
+	focus = {
+		id = FIL_LUDBAY_Railway
+		icon = GFX_goal_generic_construction
+		cost = 20	
+		prerequisite = { focus = FIL_THREE_YEAR_PLANS }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							97 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							610 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							608 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							613 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							609 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							611 = {
+								add_building_construction = { type = infrastructure level = 2 }
+								}
+							}	
+		x = 15	
+		y = 9
+		}
+	focus = {
+		id = FIL_NORTH_Railways
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_LUDBAY_Railway }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+							616 = {
+								add_building_construction = { type = infrastructure level = 3 }
+								}
+							100 = {
+								add_building_construction = { type = infrastructure level = 3 }
+								}
+							}	
+		x = 15	
+		y = 11
+		}
+	focus = {
+		id = FIL_east_industry
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_THREE_YEAR_PLANS }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								100 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+								95 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+								99 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = industrial_complex level = 1 }
+								}
+							}	
+		x = 13	
+		y = 9
+		}
+	focus = {
+		id = FIL_full_nationalisation_arms
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_THREE_YEAR_PLANS }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								97 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+								613 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+								619 = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = { type = arms_factory level = 1 }
+								}
+							}	
+		x = 17	
+		y = 9
+		}
+	focus = {
+		id = FIL_Propagand_of_work_heroism
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_THREE_YEAR_PLANS }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_ideas = FIL_work_heroism
+							}	
+		x = 16	
+		y = 10
+		}
+		focus = {
+		id = FIL_Suppor_Nati_Rubber_Factory
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_THREE_YEAR_PLANS }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_resource = {
+								type = oil
+								amount = 2
+								state = 617
+								}
+								add_resource = {
+								type = rubber
+								amount = 6
+								state = 617
+								}
+							}	
+		x = 14	
+		y = 10
+		}
+	focus = {
+		id = FIL_Partial_privatisation
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = { focus = FIL_Industry_dev }
+		available = { has_completed_focus = FIL_capitalist_face }
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+								add_stability = -0.05
+								618 = {add_extra_state_shared_building_slots = 2}
+							}	
+		x = 19	
+		y = 8
+		}		
+}
+
+	

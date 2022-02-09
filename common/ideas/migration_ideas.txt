@@ -1,0 +1,34 @@
+ideas = {
+  country = {
+        
+    migration_idea1 = {
+      picture = fefef
+      allowed = {
+          always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+           stability_factor = -0.3
+           political_power_gain = -0.5
+           MONTHLY_POPULATION = 0.5
+      }
+      }
+
+      migration_idea2 = {
+      picture = fefef
+      allowed = {
+          always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+           stability_factor = -0.2
+           political_power_gain = -1
+           MONTHLY_POPULATION = 0.3
+      }
+    }
+  }
+}

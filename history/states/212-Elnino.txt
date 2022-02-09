@@ -1,0 +1,33 @@
+
+state={
+	id=212
+	name="STATE_212"
+	resources={
+		steel=15.000
+		aluminium=21.000
+		chromium=11.000
+		oil=36.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+                        air_base = 5
+		}
+		add_core_of = SBU
+		add_core_of = ELN
+		victory_points = {
+			6954 25 
+		}
+
+	}
+	provinces={
+		5605 5624 5646 5647 5687 5756 5772 5792 5812 5861 5879 5900 5928 5929 5947 5962 5963 6006 6059 6060 6100 6144 6145 6174 6175 6176 6196 6292 6293 6310 6415 6455 6456 6584 6619 6785 
+	}
+	manpower=4360000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=731
+	name="STATE_731"
+	manpower = 2774000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = KTL
+		buildings = {
+			infrastructure = 3
+			1890 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = KTL
+		victory_points = {
+			1890 3
+		}
+
+	}
+	provinces={
+		1363 1378 1437 1441 1468 1490 1501 1512 1517 1548 1551 1561 1566 1580 1609 1610 1623 1660 1738 
+	}
+}

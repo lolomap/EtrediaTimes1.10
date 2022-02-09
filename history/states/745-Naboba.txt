@@ -1,0 +1,25 @@
+state={
+	id=745
+	name="STATE_745"
+	manpower = 3980000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = LOB
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = LOB
+		victory_points = {
+			1811 1
+		}
+
+	}
+	provinces={
+		1368 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=278
+	name="STATE_278"
+	manpower = 1630000
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 1
+		}
+		add_core_of = DIR
+		victory_points = {
+			11777 5
+		}
+
+	}
+	provinces={
+		9684 9699 9752 9753 9783 9801 9882 9895 9896 9915 9916 9940 9950 9951 9960 10018 10042 10055 10106 10107 10135 10170 10199 10211 10251 10252 10334 10335 10349 10408 10508 10509 10527 10618 
+	}
+}

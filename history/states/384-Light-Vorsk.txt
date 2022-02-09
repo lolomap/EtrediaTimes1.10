@@ -1,0 +1,28 @@
+
+state={
+	id=384
+	name="STATE_384"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		aluminium = 20 # was: 24
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+		}
+		add_core_of = LIV
+		victory_points = {
+			2357 5
+		}
+
+	}
+	provinces={
+		2311 2322 2327 2330 2348 2351 2371 2387 2405 2415 2423 2438 2491 
+	}
+}

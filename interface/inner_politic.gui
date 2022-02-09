@@ -1,0 +1,37 @@
+guiTypes = {
+	containerWindowType = {
+		name = "inner_politic_window"
+		position = {x=0 y=0}
+		orientation = upper_left
+		size = { width=436 height=496 }
+
+		buttonType = {
+			name = "party_button"
+			position = {x = 425 y = 255}
+			quadTextureSprite = "GFX_button_94x31"
+
+			buttonText = parties_button_loc
+			buttonFont = hoi_18mbs
+		}
+	}
+
+	containerWindowType = {
+		name = "inner_politic_opened_window"
+		position = { x=0 y=0 }	
+		orientation = UPPER_LEFT
+		moveable = yes
+		size = {width = 650 height = 600}
+		margin = {
+			top = 6
+			left = 0
+			bottom = 5
+			right = 0
+		}
+
+		clipping = yes
+
+		background = { 
+          name = "Background"
+            quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+        }
+}

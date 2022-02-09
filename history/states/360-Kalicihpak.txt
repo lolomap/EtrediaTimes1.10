@@ -1,0 +1,28 @@
+
+state={
+	id=360
+	name="STATE_360"
+	manpower = 467700
+	
+	state_category = rural
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			4212 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LIP
+		victory_points = {
+			4212 1
+		}
+
+	}
+	provinces={
+		3723 3732 3745 3757 3795 3831 
+	}
+}

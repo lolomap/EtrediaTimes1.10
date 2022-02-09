@@ -1,0 +1,102 @@
+kar_protect_democratic_diria = {
+	enable = {
+		original_tag = KAR
+	}
+	abort = {
+		surrender_progress > 0.8
+		KAR = { has_civil_war = yes }
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "DEM"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "DEM"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "DEM"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DEM"
+		value = 200
+	}
+}
+
+KAR_template_design_1 = {
+	enable = {
+		original_tag = KAR			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}
+
+KAR_template_design_2 = {
+	enable = {
+		original_tag = KAR			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = medium_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -400
+	}
+}

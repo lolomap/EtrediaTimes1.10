@@ -1,0 +1,27 @@
+
+state={
+	id=615
+	name="STATE_615"
+	manpower = 5600000
+	
+	state_category = rural
+
+	history={
+		owner = KLU
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+			11277 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = KLU
+		victory_points = {
+			11277 5
+		}
+
+	}
+	provinces={
+		9223 9291 9508 9573 9705 9868 
+	}
+}

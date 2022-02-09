@@ -1,0 +1,28 @@
+
+state={
+	id=303
+	name="STATE_303"
+	manpower = 2560000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 2
+		}
+		add_core_of = YAN
+		victory_points = {
+			6664 10
+		}
+
+	}
+	provinces={
+		5670 5707 5774 5775 5837 5883 5918 6030 6044 6124 6125 6159 6181 6211 6295 6296 6314 6325 6361 6394 6459 6460 6481 6482 6602 6603 6641 6699 6775 6833 
+	}
+}

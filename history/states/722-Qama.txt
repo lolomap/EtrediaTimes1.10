@@ -1,0 +1,30 @@
+
+state={
+	id=722
+	name="STATE_722"
+	manpower = 1980000
+	state_category = rural
+	
+	resources={
+		rubber = 11 # was: 14
+		steel = 6 # was: 8
+	}
+
+	history={
+		owner = BOV
+		buildings = {
+			infrastructure = 2
+			1954 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BOV
+		victory_points = {
+			1954 1
+		}
+
+	}
+	provinces={
+		1408 1496 1552 1574 1585 1626 1627 1647 1648 1698 1702 1725 1749 1842 1843 1896 1897 1901 1962 2006 2012 
+	}
+}

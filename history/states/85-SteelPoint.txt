@@ -1,0 +1,28 @@
+state={
+	id=85
+	name="STATE_85"
+	resources={
+		steel=60.000
+	}
+	manpower=3000000
+	state_category=city
+
+	history={
+		owner = GKD
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+
+		}
+		add_core_of = GKD
+		add_core_of = IID
+		add_core_of = TUO
+		victory_points = {
+			11785 10
+		}
+
+	}
+	provinces={
+		9643 9706 9777 9808 9874 9966 10064 10141 10159 10204 10246 10271 
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=548
+	name="STATE_548"
+	manpower = 678000
+	
+	state_category = rural
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			2664 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2664 1
+		}
+
+	}
+	provinces={
+		2145 2160 2171 2179 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=319
+	name="STATE_319"
+	manpower = 2000000
+	
+	state_category = town
+	
+	resources={
+		aluminium = 24 # was: 32
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+		}
+		add_core_of = TOL
+		victory_points = {
+			13021 5
+		}
+
+	}
+	provinces={
+		10964 11069 11092 11093 11174 11175 11214 11224 11248 11280 11301 11308 11325 11326 11355 11398 11399 11462 11493 
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=276
+	name="STATE_276"
+	resources={
+		steel=39.000
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			9743 1 
+		}
+
+	}
+	provinces={
+		7640 7888 7922 7942 8041 8090 8091 8108 8124 8275 8295 8313 8414 8433 8555 8575 8576 8784 8940 
+	}
+	manpower=304000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

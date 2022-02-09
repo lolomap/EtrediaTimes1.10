@@ -1,0 +1,428 @@
+add_namespace = karatenia
+
+country_event = {
+	id = karatenia.1
+	title = karatenia.1.t
+	desc = karatenia.1.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	15 = { is_controlled_by = RET }
+	has_war = no
+	tag = RET
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.1.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.5
+        }
+		hidden_effect = {
+			RET = { country_event = { id = ret.1 days = 420 } }
+			add_manpower = 40000
+			RET = {
+			    load_oob = retorria
+			}
+		}
+	    ai_chance = { 
+	    factor = 60	
+	    }
+	}
+
+	option = {
+	name = karatenia.1.b
+	    ai_chance = { 
+	    factor = 40
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 40000
+			RET = {
+			    load_oob = retorria
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.2
+	title = karatenia.2.t
+	desc = karatenia.2.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	10 = { is_controlled_by = ARS }
+	has_war = no
+	tag = ARS
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.2.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
+		hidden_effect = {
+			ARS = { country_event = { id = ars.1 days = 360 } }
+			add_manpower = 20000
+			ARS = {
+			    load_oob = arstinia
+			}
+		}
+	    ai_chance = { 
+	    factor = 60	
+	    }
+	}
+
+	option = {
+	name = karatenia.2.b
+	    ai_chance = { 
+	    factor = 40
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.3
+        }
+		hidden_effect = {
+			add_manpower = 20000
+			ARS = {
+			    load_oob = arstinia
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.3
+	title = karatenia.3.t
+	desc = karatenia.3.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	9 = { is_controlled_by = IND }
+	has_war = no
+	tag = IND
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.3.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.3
+        }
+		hidden_effect = {
+			IND = { country_event = { id = ind.1 days = 380 } }
+			IND = {
+			    load_oob = inderia
+			}
+		}
+	    ai_chance = { 
+	    factor = 50	
+	    }
+	}
+
+	option = {
+	name = karatenia.3.b
+	    ai_chance = { 
+	    factor = 50
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+			IND = {
+			    load_oob = inderia
+			}
+    }
+}
+
+country_event = {
+	id = karatenia.4
+	title = karatenia.4.t
+	desc = karatenia.4.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	23 = { is_controlled_by = KOL }
+	has_war = no
+	tag = KOL
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.4.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.1
+        }
+		hidden_effect = {
+			KOL = { country_event = { id = kol.1 days = 380 } }
+			add_manpower = 50000
+			KOL = {
+			    load_oob = mgahvatia
+			}
+		}
+	    ai_chance = { 
+	    factor = 70	
+	    }
+	}
+
+	option = {
+	name = karatenia.4.b
+	    ai_chance = { 
+	    factor = 30
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 50000
+			KOL = {
+			    load_oob = mgahvatia
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.5
+	title = karatenia.5.t
+	desc = karatenia.5.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	17 = { is_controlled_by = AKV }
+	has_war = no
+	tag = AKV
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.5.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
+		hidden_effect = {
+			AKV = { country_event = { id = akv.1 days = 420 } }
+			add_manpower = 50000
+			AKV = {
+			    load_oob = akvary
+			}
+		}
+	    ai_chance = { 
+	    factor = 30
+	    }
+	}
+
+	option = {
+	name = karatenia.5.b
+	    ai_chance = { 
+	    factor = 70
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 50000
+			AKV = {
+			    load_oob = akvary
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.6
+	title = karatenia.6.t
+	desc = karatenia.6.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	2 = { is_controlled_by = DIN }
+	has_war = no
+	tag = DIN
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.6.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.4
+        }
+		hidden_effect = {
+			DIN = { country_event = { id = din.1 days = 500 } }
+			add_manpower = 70000
+			DIN = {
+			    load_oob = dinery
+			}
+		}
+	    ai_chance = { 
+	    factor = 50	
+	    }
+	}
+
+	option = {
+	name = karatenia.6.b
+	    ai_chance = { 
+	    factor = 50
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 50000
+			DIN = {
+			    load_oob = dinery
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.7
+	title = karatenia.7.t
+	desc = karatenia.7.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	11 = { is_controlled_by = KUR }
+	has_war = no
+	tag = KUR
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.7.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.3
+        }
+		hidden_effect = {
+			KUR = { country_event = { id = kur.1 days = 390 } }
+			add_manpower = 50000
+			KUR = {
+			    load_oob = kurililand
+			}
+		}
+	    ai_chance = { 
+	    factor = 50	
+	    }
+	}
+
+	option = {
+	name = karatenia.7.b
+	    ai_chance = { 
+	    factor = 50
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 50000
+			KUR = {
+			    load_oob = kurililand
+			}
+		}
+    }
+}
+
+country_event = {
+	id = karatenia.8
+	title = karatenia.8.t
+	desc = karatenia.8.d
+	picture = GFX_news_even
+	
+	fire_only_once = yes
+	
+	trigger = {
+	20 = { is_controlled_by = SGO }
+	has_war = no
+	tag = SGO
+	UCB = { NOT = { has_global_flag = ucb_strikes_demolition } }
+	}
+
+	option = {
+	name = karatenia.8.a 
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.3
+        }
+		hidden_effect = {
+			SGO = { country_event = { id = sgo.1 days = 365 }
+            load_oob = strogsky
+			}
+			add_manpower = 50000
+		}
+	    ai_chance = { 
+	    factor = 50	
+	    }
+	}
+
+	option = {
+	name = karatenia.8.b
+	    ai_chance = { 
+	    factor = 50
+	    }
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.1
+        }
+		hidden_effect = {
+			add_manpower = 50000
+			SGO = {
+			    load_oob = strogsky
+			}
+		}
+    }
+}

@@ -1,0 +1,27 @@
+state={
+	id=83
+	name="STATE_83"
+	manpower = 6900000
+	state_category = rural
+
+	history={
+		owner = GKD
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			11652 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = GKD
+		add_core_of = IID
+		add_core_of = TUO
+		victory_points = {
+			11652 1
+		}
+
+	}
+	provinces={
+		9520 9577 9655 9656 9657 9745 9746 9792 9793 9848 9906 9907 9977 10012 10027 10079 10158 10165 10179 10219 10231 10245 10270 10291 
+	}
+}

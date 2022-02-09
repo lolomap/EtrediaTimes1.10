@@ -1,0 +1,23 @@
+state={
+	id=184
+	name="STATE_184"
+	manpower = 900000
+	state_category = rural
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = SFL
+		victory_points = {
+			5765 5
+		}
+
+	}
+	provinces={
+		4881 4924 4960 5070 5071 5094 5180 5181 5224 5265 5367 5426 
+	}
+}

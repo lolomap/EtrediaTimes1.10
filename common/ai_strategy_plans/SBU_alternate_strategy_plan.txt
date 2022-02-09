@@ -1,0 +1,154 @@
+SBU_democratic_plan = {
+
+	enable = {
+		original_tag = SBU
+		OR = {
+			has_game_rule = {
+				rule = SBU_AI_BEHAVIOR
+				option = DEMOCRATIC
+			}
+			has_game_rule = {
+				rule = SBU_AI_BEHAVIOR
+				option = DEFAULT
+			}
+		}
+		
+	}
+
+	focus_factors = {
+		SBU_left = 1000
+		SBU_klyachek_plan = 1000
+		SBU_aldeko_operation = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SBU_democratic_plan2 = {
+
+	enable = {
+		original_tag = SBU
+		has_game_rule = {
+			rule = SBU_AI_BEHAVIOR
+			option = DEMOCRATIC_ALTERNATE
+		}
+	}
+
+	focus_factors = {
+		SBU_left = 1000
+		SBU_klyachek_plan = 1000
+		SBU_terbia_compromiss = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SBU_communist_plan = {
+
+	enable = {
+		original_tag = SBU
+		has_game_rule = {
+			rule = SBU_AI_BEHAVIOR
+			option = COMMUNIST
+		}
+	}
+
+	focus_factors = {
+		SBU_left = 1000
+		SBU_profsouz = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SBU_fascist_plan = {
+
+	enable = {
+		original_tag = SBU
+		has_game_rule = {
+			rule = SBU_AI_BEHAVIOR
+			option = FASCIST
+		}
+	}
+
+	focus_factors = {
+		SBU_right = 1000
+		SBU_above_all = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SBU_monarchist_plan = {
+
+	enable = {
+		original_tag = SBU
+		has_game_rule = {
+			rule = SBU_AI_BEHAVIOR
+			option = MONARCHIST
+		}
+	}
+
+	focus_factors = {
+		SBU_right = 1000
+		SBU_Empire = 1000
+		SBU_monarchism = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+SBU_neutrality_plan = {
+
+	enable = {
+		original_tag = SBU
+		has_game_rule = {
+			rule = SBU_AI_BEHAVIOR
+			option = NEUTRALITY
+		}
+	}
+
+	focus_factors = {
+		SBU_right = 1000
+		SBU_Empire = 1000
+		SBU_absolutism = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

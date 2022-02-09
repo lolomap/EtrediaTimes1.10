@@ -1,0 +1,26 @@
+
+state={
+	id=555
+	name="STATE_555"
+
+	history={
+		owner = ESS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+
+		}
+		add_core_of = ESS
+		victory_points = {
+			3676 10 
+		}
+
+	}
+	provinces={
+		2973 3042 3083 3120 3126 
+	}
+	manpower=4240000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

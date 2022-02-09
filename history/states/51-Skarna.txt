@@ -1,0 +1,27 @@
+
+state={
+	id=51
+	name="STATE_51"
+	manpower = 8200000
+	
+	state_category = metropolis
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 9
+                        industrial_complex = 3
+                        arms_factory = 3
+                        air_base = 8
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			5844 30
+		}
+
+	}
+	provinces={
+		4674 4696 4697 4708 4752 4829 4830 4831 4849 4850 4900 4901 4936 4937 4977 4989 4990 5003 5058 5068 5069 5108 5164 5165 5203 5219 5220 5241 5242 5307 5343 5364 5365 5405 5444 5481 5542 
+	}
+}

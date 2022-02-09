@@ -1,0 +1,28 @@
+guiTypes = {
+	containerWindowType = {
+		name = "nuking_replace_window"
+		position = {x=0 y=0}
+		orientation = lower_left
+		size = { width=436 height=496 }
+
+		buttonType = {
+			name = "nuke_province_moded"
+			quadTextureSprite ="GFX_nuke_button"
+			pdx_tooltip = nuke_province_desc
+			position = { x= 13 y = 280 }
+		}
+		
+		#iconType = {
+		#	name = "nuclear_strike_bar_moded"
+		#	spriteType = "GFX_nuke_progress"
+		#	position = { x=23 y= 269 }
+		#	rotation = 1.5708		
+		#}	
+		
+		#iconType = {
+		#	name = "nuke_progress_frame_moded"
+		#	spriteType = "GFX_nuke_progress_frame"
+		#	position = { x=15 y= 286 }	
+		#}
+	}
+}

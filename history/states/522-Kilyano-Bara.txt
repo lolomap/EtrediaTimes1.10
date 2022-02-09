@@ -1,0 +1,29 @@
+
+state={
+	id=522
+	name="STATE_522"
+	manpower = 450000
+	
+	state_category = large_city
+
+	history={
+		owner = KOI
+		buildings = {
+			infrastructure = 1
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 0
+			2407 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KOI
+		victory_points = {
+			2407 1
+		}
+
+	}
+	provinces={
+		2154 2180 2202 2224 2235 2254 2258 2313 
+	}
+}

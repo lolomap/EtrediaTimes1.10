@@ -1,0 +1,23 @@
+
+state={
+	id=174
+	name="STATE_174"
+	manpower = 2400000
+	state_category = town
+
+	history={
+		owner = MOF
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = MOF
+		victory_points = {
+			5210 5
+		}
+
+	}
+	provinces={
+		4109 4183 4318 4346 4381 4431 4446 4544 4563 4564 4678 4716 4757 4758 4800 4928 
+	}
+}

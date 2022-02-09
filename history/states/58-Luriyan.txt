@@ -1,0 +1,27 @@
+state={
+	id=58
+	name="STATE_58"
+	manpower = 500000
+	
+	state_category = rural
+	
+	resources={
+        oil = 14 # was: 26
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FSC
+		add_core_of = KUL
+		victory_points = {
+			7457 1
+		}
+
+	}
+	provinces={
+		6266 6433 6497 6611 6674 
+	}
+}

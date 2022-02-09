@@ -1,0 +1,29 @@
+
+state={
+	id=414
+	name="STATE_414"
+	manpower = 677600
+	
+	state_category = rural
+	
+	resources={
+		chromium = 60 # was: 145
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = VRO
+		victory_points = {
+			10092 5
+		}
+
+	}
+	provinces={
+		10464 10627 10725 10746 10805 10861 10940 10966 11004 11005 11043 11094 11095 11162 11186 11200 
+	}
+}

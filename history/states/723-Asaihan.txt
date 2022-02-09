@@ -1,0 +1,30 @@
+
+state={
+	id=723
+	name="STATE_723"
+	manpower = 2070000
+	state_category = rural
+	
+	resources={
+		rubber = 21 # was: 30
+	}
+
+	history={
+		owner = BOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			2566 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BOV
+		victory_points = {
+			2566 2
+		}
+
+	}
+	provinces={
+		1926 1946 1984 1996 2007 2018 2034 2053 2058 2065 2079 2109 2123 2129 2151 2159 2167 2203 2220 2221 
+	}
+}

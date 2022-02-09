@@ -1,0 +1,24 @@
+state={
+	id=94
+	name="STATE_94"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			arms_factory = 1
+                        air_base = 7
+		}
+		add_core_of = IID
+		victory_points = {
+			11387 30 
+		}
+
+	}
+	provinces={
+		9720 9796 9819 9936 
+	}
+	manpower=24500000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

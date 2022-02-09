@@ -1,0 +1,28 @@
+
+state={
+	id=599
+	name="STATE_599"
+	manpower = 2670000
+	
+	state_category = town
+	
+	resources={
+		aluminium = 24 # was: 32
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+		}
+		add_core_of = ZHE
+		victory_points = {
+			4235 5
+		}
+
+	}
+	provinces={
+		3686 3694 3727 3789 3803 3813 3837 3845 3857 3898 3978 4003 4104 4235 
+	}
+}

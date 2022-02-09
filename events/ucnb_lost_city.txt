@@ -1,0 +1,54 @@
+add_namespace = lostcity
+
+news_event = {
+	id = lostcity.1
+	title = lostcity.1.t
+	desc = lostcity.1.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		31 = { is_controlled_by = FSC }
+		FSC = { has_war_with = UCB }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = lostcity.1.a
+                trigger = { TAG = FSC }
+                country_event = { id = ucnb.4 }
+	}
+}
+
+news_event = {
+	id = lostcity.2
+	title = lostcity.2.t
+	desc = lostcity.2.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		26 = { is_controlled_by = FSC }
+		FSC = { has_war_with = UCB }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = lostcity.2.a
+                trigger = { TAG = FSC }
+                country_event = { id = ucnb.5 days = 5 }
+                country_event = { id = ucnb.6 days = 15 }
+	}
+}

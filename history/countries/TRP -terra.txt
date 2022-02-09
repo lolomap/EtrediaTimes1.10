@@ -1,0 +1,96 @@
+﻿capital = 60
+
+oob = "TRP_2014"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.1
+
+add_ideas = {
+        www_best_country
+        total_free_press
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+}
+
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2013.1.1"
+	election_frequency = 45
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 5
+        democratic = 74
+        fascism = 11
+        communism = 10
+}
+
+#
+create_country_leader = {
+	name = "Oleg Prigarin"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_trp_leader1.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Oleg Prigarin"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hector Gistain"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aleix Artigas"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Marcos Pena"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

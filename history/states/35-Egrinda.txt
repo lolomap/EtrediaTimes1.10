@@ -1,0 +1,30 @@
+state={
+	id=35
+	name="STATE_35"
+	manpower = 714000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = EGR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        air_base = 1
+			9033 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = EGR
+		victory_points = {
+			9033 10
+		}
+
+	}
+	provinces={
+		7083 7284 7285 7564 7604 7808 7896 8027 8231 8365 8421 8439 8680 
+	}
+}

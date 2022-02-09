@@ -1,0 +1,25 @@
+
+state={
+	id=408
+	name="STATE_408"
+	manpower = 1445000
+	
+	state_category = rural
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = EIK
+		victory_points = {
+			12450 1
+		}
+
+	}
+	provinces={
+		13917 13934 13969 13976 13977 13989 13990 14073 14105 14122 14133 14138 14150 14197 14239 
+	}
+}

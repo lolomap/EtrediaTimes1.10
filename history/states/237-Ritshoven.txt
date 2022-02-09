@@ -1,0 +1,28 @@
+state={
+	id=237
+	name="STATE_237"
+	manpower = 2200000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 0
+		}
+		add_core_of = KAR
+		victory_points = {
+			10225 10
+		}
+
+	}
+	provinces={
+		10407 10489 10577 10599 10706 10716 10764 10810 10811 10812 10821 10839 10871 10891 10892 10909 10910 10949 10960 10961 10974 10975 10996 11009 11010 11018 11019 11034 11053 11080 11088 11104 11140 11152 11182 11195 11239 11253 
+	}
+}

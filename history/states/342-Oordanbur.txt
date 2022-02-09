@@ -1,0 +1,30 @@
+
+state={
+	id=342
+	name="STATE_342"
+	manpower = 1340000
+	
+	state_category = town
+	
+	resources={
+		tungsten = 25 # was: 30
+                chromium = 90 # was: 120
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = EIK
+		victory_points = {
+			12234 15
+		}
+
+	}
+	provinces={
+		13492 13583 13616 13641 13642 13695 13696 13746 13790 13802 13812 13824 13839 13868 13869 13907 13908 13931 13932 14001 14010 
+	}
+}

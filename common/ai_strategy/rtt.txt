@@ -1,0 +1,23 @@
+
+
+alliance_rtt_ucb = {
+	enable = {
+		tag = RTT
+		YAN = { has_war_with = TRB } 
+		country_exists = TRB
+	}
+	abort = {
+		NOT = { country_exists = TRB }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "UCB"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UCB"			
+		value = 2000
+	}	
+}

@@ -1,0 +1,50 @@
+
+state={
+	id=526
+	name="STATE_526"
+	manpower = 623444
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history={
+		owner = SKI
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 3
+                        dockyard = 1
+			2837 = {
+				naval_base = 2
+			}
+			2914 = {
+				naval_base = 1
+			}
+			2706 = {
+				naval_base = 1
+			}
+			2838 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SKI
+		victory_points = {
+			2837 5
+		}
+		victory_points = {
+			2914 1
+		}
+		victory_points = {
+			2706 1
+		}
+		victory_points = {
+			2838 1
+		}
+
+	}
+	provinces={
+		2124 2168 2184 2190 2218 2245 2261 2273 2276 2301 2303 2304 2310 2321 2324 2336 2344 2354 2368 2375 2381 2397 2403 2404 
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=650
+	name="STATE_650"
+	manpower = 2200000
+	state_category = rural
+	
+	resources={
+		oil = 16 # was: 20
+	}
+
+	history={
+		owner = DOS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = DOS
+		victory_points = {
+			986 1
+		}
+
+	}
+	provinces={
+		712 717 751 754 765 774 782 
+	}
+}

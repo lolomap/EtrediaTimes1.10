@@ -1,0 +1,27 @@
+
+state={
+	id=642
+	name="STATE_642"
+	manpower = 3220000
+	
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = UNC
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = UNC
+		victory_points = {
+			8494 1
+		}
+
+	}
+	provinces={
+		6971 6972 7116 7217 7218 7358 7550 7551 7664 7747 7952 7988 8227 8228 
+	}
+}

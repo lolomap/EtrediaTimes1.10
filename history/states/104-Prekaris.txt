@@ -1,0 +1,26 @@
+
+state={
+	id=104
+	name="STATE_104"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+
+		}
+		add_core_of = IID
+		add_core_of = SKT
+		victory_points = {
+			9085 5 
+		}
+
+	}
+	provinces={
+		9075 9153 9176 9208 9248 9313 9328 9336 9349 9363 9385 9386 9415 9430 9445 9456 9470 9488 9510 9536 9581 9595 9596 9629 9658 9679 9694 9721 9722 9780 9781 9782 9811 9859 9877 9878 9911 9939 9980 9981 10052 
+	}
+	manpower=11000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

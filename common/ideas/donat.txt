@@ -1,0 +1,37 @@
+ideas = {
+    country = {
+		DON_politics = {
+
+	            picture = don_politics
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				available = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+						has_government = monarchism
+					}
+				}
+
+				cancel = {
+					has_war = yes
+				}
+				
+				removal_cost = -1
+		
+
+				modifier = {
+	                conscription_factor = -0.5
+		            training_time_army_factor = 1
+					mobilization_laws_cost_factor = 10
+				}
+		}
+	}
+}

@@ -1,0 +1,191 @@
+UCB_kolechia = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = KOL }
+	}
+
+	ai_strategy = {
+		type = annex
+		id = "KOL"
+		value = 10000
+	}
+}
+
+UCB_kima = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = KIM }
+	}
+	
+	ai_strategy = {
+		type = annex
+		id = "KIM"
+		value = 10000
+	}
+}
+
+UCB_dineria = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = DIN }
+	}
+	
+	ai_strategy = {
+		type = annex
+		id = "DIN"
+		value = 10000
+	}
+}
+
+UCB_arstinia = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = ARS }
+	}
+	
+	ai_strategy = {
+		type = annex
+		id = "ARS"
+		value = 10000
+	}
+}
+
+UCB_northrachia = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = NRA }
+	}
+	
+	ai_strategy = {
+		type = annex
+		id = "NRA"
+		value = 10000
+	}
+}
+
+UCB_southrachia = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		NOT = { country_exists = SRA }
+	}
+	
+	ai_strategy = {
+		type = annex
+		id = "SRA"
+		value = 10000
+	}
+}
+
+ucb_protect_democratic_sheregia = {
+	enable = {
+		original_tag = UCB
+	}
+	abort = {
+		SHE = { has_government = fascism }
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "SHE"
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHE"
+		value = 500
+	}
+	ai_strategy = {
+		type = support
+		id = "SHE"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SHE"
+		value = 1000
+	}
+}
+
+UCB_template_design_1 = {
+	enable = {
+		original_tag = UCB			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 110
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 40
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 130
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}
+
+UCB_template_design_2 = {
+	enable = {
+		original_tag = UCB			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = medium_armor
+		value = 90
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 40
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -400
+	}
+}

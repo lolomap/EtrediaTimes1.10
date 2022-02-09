@@ -1,0 +1,21 @@
+trb_ally = {
+	enable = {
+		tag = TRB
+		SBU = { has_completed_focus = SBU_terbia_compromiss }
+		country_exists = SBU
+	}
+	abort = {
+		NOT = { country_exists = SBU }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SBU"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SBU"			
+		value = 100
+	}	
+}

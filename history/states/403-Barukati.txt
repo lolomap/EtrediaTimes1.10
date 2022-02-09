@@ -1,0 +1,25 @@
+
+state={
+	id=403
+	name="STATE_403"
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 1
+			nuclear_rocket_site = 1
+		}
+		add_core_of = EIK
+		victory_points = {
+			12780 1 
+		}
+
+	}
+	provinces={
+		14245 14269 14291 14310 14338 14418 14422 14433 14459 14467 14468 14490 14527 14576 14584 14592 14599 14606 14623 14661 14671 14676 14677 14682 14696 14711 14782 
+	}
+	manpower=1005000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=179
+	name="STATE_179"
+	history={
+		owner = MOF
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = MOF
+		victory_points = {
+			6325 1 
+		}
+
+	}
+	provinces={
+		5010 5148 5182 5248 5349 5350 5383 5465 5486 5503 5621 5643 
+	}
+	manpower=1210000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

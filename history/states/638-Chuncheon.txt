@@ -1,0 +1,31 @@
+
+state={
+	id=638
+	name="STATE_638"
+	manpower = 8410000
+	
+	state_category = town
+	
+	resources={
+        aluminium = 6 # was: 6
+	}
+
+	history={
+		owner = KCE
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			3968 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = KCE
+		victory_points = {
+			3968 15
+		}
+
+	}
+	provinces={
+		3289 3364 3365 3384 3459 3480 3567 3611 3666 3772 
+	}
+}

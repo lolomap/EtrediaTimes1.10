@@ -1,0 +1,217 @@
+﻿capital = 217
+
+oob = "SBU_2014"
+set_naval_oob = "SBU_2014_naval_legacy"
+
+set_research_slots = 4
+set_stability = 0.5
+set_war_support = 0.6
+
+add_ideas = {
+        www_best_country
+        SBU_Hleria 
+        SBU_policy
+        free_press
+        general_entry
+        SBU_Elnia_separatism
+}
+
+set_technology = {
+	nukes = 1
+	nuclear_reactor = 1
+	nuclear_rockets = 1
+	nuclear_anti = 1
+	
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+        mechanised_infantry2 = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	jeep_unit_3 = 1
+	jeep_unit_4 = 1
+	motorized_rocket_unit = 1
+	motorized_rocket_unit_2 = 1
+	motorized_rocket_unit_3 = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	improved_medium_tank = 1
+	main_battle_tank = 1
+	main_battle_tank_2 = 1
+	tech_mountaineers = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	transport = 1
+	early_battleship = 1
+	trench_warfare = 1
+
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	cv_CAS1 = 1
+	cv_fighter1 = 1
+	CAS1 = 1
+}
+
+
+set_convoys = 150
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2010.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 62
+        fascism = 17
+        communism = 17
+	neutrality = 4
+}
+
+create_country_leader = {
+	name = "Alexech Aalankat"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+
+#
+create_country_leader = {
+	name = "Charvik Klyachek"
+	picture = "Portrait_sbu_klyachek.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Iret Kolert"
+	picture = "Portrait_sbu_kolert.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		iret_colert
+	}
+}
+
+create_country_leader = {
+	name = "Dragan Kzhachich"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "Portrait_sbu_democratic.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		dragan_kzhachich
+	}
+}
+
+create_country_leader = {
+	name = "Anad Drogobush"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_sbu_fascism.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anler Rigel"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shkedera Vedzhan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_sbu_communism.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Victoria IV"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Biyalos Tere"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kopili Nayer"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Boras Joks"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ombihunt Yantes"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

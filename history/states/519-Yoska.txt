@@ -1,0 +1,25 @@
+
+state={
+	id=519
+	name="STATE_519"
+	manpower = 2190000
+	
+	state_category = rural
+
+	history={
+		owner = GOD
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 0
+		}
+		add_core_of = GOD
+		victory_points = {
+			2937 1
+		}
+
+	}
+	provinces={
+		2551 2606 2611 2612 2613 2643 2651 2658 2674 2677 2679 2703 2714 2722 
+	}
+}

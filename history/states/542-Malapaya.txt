@@ -1,0 +1,29 @@
+
+state={
+	id=542
+	name="STATE_542"
+	manpower = 4600000
+	
+	state_category = town
+	
+	resources={
+             steel = 8 # was: 16
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = MOA
+		victory_points = {
+			1610 10
+		}
+
+	}
+	provinces={
+		1519 1590 1600 1674 1681 1693 1732 1775 1784 1802 
+	}
+}

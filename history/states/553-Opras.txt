@@ -1,0 +1,39 @@
+
+state={
+	id=553
+	name="STATE_553"
+	manpower = 443789
+	
+	state_category = rural
+	
+	resources={
+             rubber = 12 # was: 20
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			2378 = {
+				naval_base = 3
+			}
+			2262 = {
+				naval_base = 1
+			}
+			2696 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2378 1
+		}
+
+	}
+	provinces={
+		1769 1770 1855 1880 1904 1912 1917 1928 1939 1974 1982 1990 2002 2023 2038 2045 2050 2062 2083 2099 2103 2104 2115 2118 2133 2146 2147 2155 2176 
+	}
+}

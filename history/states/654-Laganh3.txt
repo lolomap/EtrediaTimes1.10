@@ -1,0 +1,30 @@
+
+state={
+	id=654
+	name="STATE_654"
+	manpower = 2300000
+	state_category = town
+	
+	resources={
+		oil = 8 # was: 25
+	}
+
+	history={
+		owner = LGH
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			775 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LGH
+		victory_points = {
+			775 2
+		}
+
+	}
+	provinces={
+		526 529 547 566 572 
+	}
+}

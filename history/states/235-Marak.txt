@@ -1,0 +1,24 @@
+
+state={
+	id=235
+	name="STATE_235"
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			6475 1 
+		}
+
+	}
+	provinces={
+		4997 4998 5016 5027 5028 5132 5191 5209 5255 5269 5371 5372 5390 5391 5507 5529 5550 5607 5626 5627 5650 5668 5796 5797 5798 5881 5966 5967 6009 6010 6123 6147 6197 
+	}
+	manpower=590000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

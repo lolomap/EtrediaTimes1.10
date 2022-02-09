@@ -1,0 +1,27 @@
+
+state={
+	id=502
+	name="STATE_502"
+	manpower = 233000
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 2 # was: 2
+	}
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = CHE
+		victory_points = {
+			5723 1
+		}
+
+	}
+	provinces={
+		4575 4654 4671 4810 4847 4954 4968 5083 5137 5138 
+	}
+}

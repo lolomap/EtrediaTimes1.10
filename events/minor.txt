@@ -1,0 +1,280 @@
+add_namespace = minor
+
+country_event = {
+	id = minor.1
+	title = minor.1.t
+	desc = minor.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = LOD
+    }
+    	
+	option = {
+    name = minor.1.a
+	    KLU = {
+		    declare_war_on = {
+            target = LOD
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 20 }
+	}
+	option = {
+    name = minor.1.b
+	    KLU = {
+	        annex_country = {
+            target = LOD
+            transfer_troops = no
+            }
+			add_state_core = 635
+	    }
+	ai_chance = { factor = 80 }
+	}
+}
+
+country_event = {
+	id = minor.2
+	title = minor.2.t
+	desc = minor.2.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = ZOG
+    }
+    	
+	option = {
+    name = minor.2.a
+	    KLU = {
+		    declare_war_on = {
+            target = ZOG
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 30 }
+	}
+	option = {
+    name = minor.2.b
+	    KLU = {
+	        annex_country = {
+            target = ZOG
+            transfer_troops = no
+            }
+			add_state_core = 634
+	    }
+	ai_chance = { factor = 70 }
+	}
+}
+
+country_event = {
+	id = minor.3
+	title = minor.3.t
+	desc = minor.3.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = ZAZ
+    }
+    	
+	option = {
+    name = minor.3.a
+	create_faction = ZAZ_faction
+	UNC = { country_event = { id = minor.4 days = 1 } }
+	KCE = { country_event = { id = minor.5 days = 1 } }
+	GAR = { country_event = { id = minor.6 days = 1 } }
+	ai_chance = { factor = 70 }
+	}
+	option = {
+	name = minor.3.b
+	ai_chance = { 
+		modifier = {
+	    factor = 0
+		is_historical_focus_on = yes
+		}
+	factor = 30 
+	}
+	}
+}
+
+country_event = {
+	id = minor.4
+	title = minor.4.t
+	desc = minor.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+	
+	trigger = {
+	TAG = UNC
+    }
+    	
+	option = {
+    name = minor.4.a
+	ai_chance = { factor = 99 }
+        ZAZ = {
+        add_to_faction = UNC
+        }   
+	}
+	option = {
+	name = minor.4.b
+	ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = minor.5
+	title = minor.5.t
+	desc = minor.5.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+	
+	trigger = {
+	TAG = KCE
+    }
+    	
+	option = {
+    name = minor.5.a
+	ai_chance = { factor = 30 }
+        ZAZ = {
+        add_to_faction = KCE
+        }  
+	}
+	option = {
+	name = minor.5.b
+	ai_chance = { factor = 70 }
+	}
+}
+
+country_event = {
+	id = minor.6
+	title = minor.6.t
+	desc = minor.6.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+	
+	trigger = {
+	TAG = GAR
+    }
+    	
+	option = {
+    name = minor.6.a
+	ai_chance = { factor = 40 }
+        ZAZ = {
+        add_to_faction = GAR
+        }  
+	}
+	option = {
+	name = minor.6.b
+	ai_chance = { factor = 60 }
+	}
+}
+
+country_event = {
+	id = minor.7
+	title = minor.7.t
+	desc = minor.7.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = BHI
+    }
+    	
+	option = {
+    name = minor.7.a
+	    KLU = {
+		    declare_war_on = {
+            target = BHI
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 1 }
+	}
+	option = {
+    name = minor.7.b
+	    KLU = {
+	        annex_country = {
+            target = BHI
+            transfer_troops = no
+            }
+	    }
+	ai_chance = { factor = 99 }
+	}
+}
+
+country_event = {
+	id = minor.8
+	title = minor.8.t
+	desc = minor.8.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = KVU
+    }
+    	
+	option = {
+    name = minor.8.a
+	    KLU = {
+		    declare_war_on = {
+            target = KVU
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 1 }
+	}
+	option = {
+    name = minor.8.b
+	    KLU = {
+	        annex_country = {
+            target = KVU
+            transfer_troops = no
+            }
+	    }
+	ai_chance = { factor = 99 }
+	}
+}
+
+country_event = {
+	id = minor.9
+	title = minor.9.t
+	desc = minor.9.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = TUB
+    }
+    	
+	option = {
+    name = minor.9.a
+	    KLU = {
+		    declare_war_on = {
+            target = TUB
+            type = annex_everything
+            }
+	    }
+	ai_chance = { factor = 1 }
+	}
+	option = {
+    name = minor.9.b
+	    KLU = {
+	        annex_country = {
+            target = TUB
+            transfer_troops = no
+            }
+	    }
+	ai_chance = { factor = 99 }
+	}
+}

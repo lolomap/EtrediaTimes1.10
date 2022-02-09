@@ -1,0 +1,26 @@
+
+state={
+	id=218
+	name="STATE_218"
+	manpower = 420000
+	
+	state_category = rural
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			5213 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TRB
+		victory_points = {
+			5213 5
+		}
+
+	}
+	provinces={
+		4499 4517 4569 4661 
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=88
+	name="STATE_88"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = 2
+			12726 = {
+				naval_base = 4
+			}
+			12301 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = IID
+		victory_points = {
+			12726 10 
+		}
+
+	}
+	provinces={
+		10455 10593 10660 10853 10865 10866 10867 10868 10869 10889 10956 10957 10972 10983 10994 11007 11032 11050 11051 11063 11076 11077 11117 11134 
+	}
+	manpower=8800000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

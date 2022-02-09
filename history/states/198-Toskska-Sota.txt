@@ -1,0 +1,26 @@
+state={
+	id=198
+	name="STATE_198"
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = TRB
+		add_core_of = RTT
+		victory_points = {
+			6761 3 
+		}
+
+	}
+	provinces={
+		5865 6146 6417 6621 6760 6947 7193 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

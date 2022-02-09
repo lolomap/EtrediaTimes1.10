@@ -1,0 +1,28 @@
+
+state={
+	id=316
+	name="STATE_316"
+	manpower = 680000	
+	state_category = rural
+	
+	resources={
+	tungsten = 30 # was: 40
+        chromium = 55 # was: 64
+	}
+
+	history={
+		owner = BAE
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = BAE
+		victory_points = {
+			13171 5
+		}
+
+	}
+	provinces={
+		13171 13195 13196 13321 13335 13350 13364 13376 13418 13419 13465 13478 13479 13502 13503 13537 13584 13585 13586 13594 13607 13632 13653 13664 13726 13733 13758 13759 13777 13778 13879 13891 13915 14002 14030 14040 14112 14153 14174 
+	}
+}

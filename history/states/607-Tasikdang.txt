@@ -1,0 +1,29 @@
+
+state={
+	id=607
+	name="STATE_607"
+	manpower = 2670000
+	
+	state_category = town
+	
+	resources={
+        steel = 10 # was: 30
+	}
+
+	history={
+		owner = KVU
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 2
+                        arms_factory = 1
+		}
+		add_core_of = KVU
+		victory_points = {
+			12994 10
+		}
+
+	}
+	provinces={
+		9933 10092 10093 10304 10403 10425 10557 10657 10658 10777 10778 10819 10884 11016 11072 11165 11205 11264 11294 11342 11403 11479 11568 11584 11613 11718 11828 12044 
+	}
+}

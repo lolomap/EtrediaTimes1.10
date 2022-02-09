@@ -1,0 +1,23 @@
+add_namespace = sbo
+
+country_event = {
+        id = sbo.1
+        title = bou.1.t
+        desc = bou.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = BOU
+    }
+
+    option = {
+	name = bou.1.a
+		MOA = { add_to_faction = SBO }
+    ai_chance = { factor = 100 }
+	}
+    option = {
+	name = bou.1.b
+    ai_chance = { factor = 0 }
+	}
+}

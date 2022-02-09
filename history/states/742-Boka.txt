@@ -1,0 +1,30 @@
+state={
+	id=742
+	name="STATE_742"
+	manpower = 4470000
+	state_category = town
+	
+	resources={
+		oil = 22 # was: 30
+	}
+
+	history={
+		owner = BOK
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+			arms_factory = 1
+			2659 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BOK
+		victory_points = {
+			2659 8
+		}
+
+	}
+	provinces={
+		2056 2057 2100 2116 2134 2141 2156 2166 2172 2177 2207 2212 
+	}
+}

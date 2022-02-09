@@ -1,0 +1,49 @@
+﻿capital = 752
+
+oob = "OUS_2014"
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.4
+
+add_ideas = {
+        www_bad_country
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	early_destroyer = 1
+}
+
+set_convoys = 150
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2010.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 100
+        fascism = 0
+        communism = 0
+	neutrality = 0
+}
+
+#
+create_country_leader = {
+	name = "Lethabo Goosen"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

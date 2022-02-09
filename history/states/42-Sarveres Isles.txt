@@ -1,0 +1,31 @@
+state={
+	id=42
+	name="STATE_42"
+	manpower = 410000
+	
+	state_category = pastoral
+
+	history={
+		owner = OIK
+		buildings = {
+			infrastructure = 2
+			12812 = {
+				naval_base = 2
+			}
+			12484 = {
+				naval_base = 1
+			}
+			12910 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = OIK
+		victory_points = {
+			12812 1
+		}
+
+	}
+	provinces={
+		10752 11049 11133 
+	}
+}

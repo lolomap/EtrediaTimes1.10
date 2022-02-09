@@ -1,0 +1,309 @@
+ideas = {
+    country = {	
+		EIK_corruption01 = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+					political_power_gain = -0.5
+					production_speed_industrial_complex_factor = -0.4
+	                production_speed_infrastructure_factor = -0.6
+					production_factory_efficiency_gain_factor = -0.15
+				    production_speed_arms_factory_factor = -0.3
+	                consumer_goods_factor = 0.3
+				}
+		}
+			
+		EIK_corruption02 = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+
+				modifier = {
+					political_power_gain = -0.3
+					production_speed_industrial_complex_factor = -0.2
+				    production_speed_arms_factory_factor = -0.1
+	                production_speed_infrastructure_factor = -0.3
+					production_factory_start_efficiency_factor = -0.05
+	                consumer_goods_factor = 0.15
+				}
+		}
+			
+		EIK_utechka = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+					research_speed_factor = -0.15
+				}
+		}
+			
+		EIK_militar = {
+	            picture = generic_reserve_divisions
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                production_speed_arms_factory_factor = 0.1
+					production_speed_dockyard_factor = 0.1
+				}
+		}
+			
+		EIK_velichie = {
+	            picture = can_send_in_the_zombies
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                war_support_factor = 0.2
+				}
+		}
+			
+		EIK_verha = {
+	            picture = eng_the_kings_party
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                planning_speed = -0.2
+					training_time_factor = 0.1
+				}
+		}
+
+		EIK_science = {
+	            picture = generic_research_bonus 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                research_speed_factor = 0.1
+				}
+		}
+
+		EIK_armybaf1 = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                army_attack_factor = 0.2
+	                army_speed_factor = 0.1
+	                army_org_factor = -0.05
+				}
+		}
+
+		EIK_verha2 = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                planning_speed = 0.1
+	                army_attack_factor = 0.1
+	                army_defence_factor = 0.1
+				}
+		}
+			
+		EIK_odnaparty = {
+	            #picture = 
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+		
+				modifier = {
+	                political_power_gain = 0.1
+	                drift_defence_factor = 0.25
+	                political_advisor_cost_factor = 0.15
+	                industry_repair_factor = -0.3
+	                industry_free_repair_factor = -0.3
+				}
+		}	
+
+		EIK_parlament = {
+
+	            picture = fff
+
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+		
+				modifier = {
+					political_power_gain = 0.3
+	                stability_factor = -0.15
+				}
+			}
+
+		EIK_newlico = {
+	            picture = hun_charles_v
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+		
+				modifier = {
+					drift_defence_factor = 0.1
+	                offensive_war_stability_factor = 0.15
+	                political_power_gain = 0.2
+	                political_advisor_cost_factor = -0.25
+			    }
+		}
+
+		EIK_democratpartizan = {
+			picture = prc_low_popular_support3
+			allowed = {
+				always = no
+			}
+				
+			removal_cost = -1
+		
+			modifier = {
+				drift_defence_factor = -0.05
+	            political_power_gain = -0.02
+	            democratic_drift = 0.02
+			}
+		}
+
+		EIK_military_formations = {
+	        picture = chi_army_corruption
+			allowed = {
+				always = no
+			}
+				
+			removal_cost = -1
+		
+			modifier = {
+			conscription = 0.015
+			}
+		}
+
+		EIK_oligarchismpartizan = {
+			picture = prc_low_popular_support3
+			allowed = {always = no} removal_cost = -1
+
+			cancel = {
+				check_variable = {eik_oligarchism > 0.99}
+			}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+				neutrality_drift = 0.05
+			}
+		}	
+
+		EIK_rewards_for_generals = {
+			picture = generic_reserve_divisions
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+			}
+		}
+
+		EIK_army_goods = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = 
+			{
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+
+		EIK_prizes_time = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5
+				fascism_drift = -0.2
+			}
+		}
+
+		EIK_censorship = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = -0.5
+				democratic_drift = 0.5
+			}
+		}
+
+		EIK_factory_corruption = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}		
+		}
+
+		EIK_industrial_privilege = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		EIK_infrastructure_corruption = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = -0.5
+			}
+		}
+
+		EIK_court_falsification = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.3
+				fascism_drift = -0.15
+			}
+		}
+
+		EIK_police_block = {
+			allowed = {always = no} removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				fascism_drift = -0.2
+				political_power_gain = -0.3
+			}
+		}
+	}
+}

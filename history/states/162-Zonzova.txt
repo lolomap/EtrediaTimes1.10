@@ -1,0 +1,32 @@
+state={
+	id=162
+	name="STATE_162"
+	manpower = 4100000
+	
+	state_category = city
+	
+	resources={
+		
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 2
+			4641 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = SFL
+		victory_points = {
+			4641 10
+		}
+
+	}
+	provinces={
+		3903 3939 3952 3965 3980 4033 4054 4055 4075 4076 4122 4146 4147 4161 4182 4213 4239 4252 4271 4317 4328 4329 4364 4380 4397 4416 4461 4509 4510 4511 4561 
+	}
+}

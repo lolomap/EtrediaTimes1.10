@@ -1,0 +1,39 @@
+
+state={
+	id=355
+	name="STATE_355"
+	manpower = 5491000
+	
+	state_category = large_town
+	
+	resources={
+        oil = 14 # was: 18
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			8655 = {
+				naval_base = 7
+			}
+			8307 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			8655 20
+		}
+		victory_points = {
+			8869 1
+		}
+
+	}
+	provinces={
+		6893 6910 7040 7064 7078 7098 7136 7159 7175 7197 7198 7199 7234 7254 7302 7315 7332 7352 7373 7374 7408 7422 7423 7424 7437 7438 7457 7493 7537 7538 7577 7599 7619 7641 7673 7772 7773 7788 7801 7802 7946 7971 7985 8043 8109 
+	}
+}

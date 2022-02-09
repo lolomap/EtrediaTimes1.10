@@ -1,0 +1,86 @@
+﻿capital = 375
+
+oob = "DID_2014"
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = 0.1
+
+add_ideas = {
+        www_bad_country
+        total_free_press
+        DON_politics
+        DID_traditions
+}
+
+set_technology = {
+	infantry_weapons = 1
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+}
+
+set_convoys = 100
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2009.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 70
+        democratic = 20
+        fascism = 0
+        communism = 10
+}
+
+#
+create_country_leader = {
+	name = "Lyubcho Velizarov"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hubert Mazal"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Iom Haim"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_did_democratic.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Turi La Penta"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

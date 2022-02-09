@@ -1,0 +1,27 @@
+
+state={
+	id=448
+	name="STATE_448"
+	manpower = 98000
+
+	resources={
+		aluminium = 6 # was: 44
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = LON
+		victory_points = {
+			9667 1
+		}
+
+	}
+	provinces={
+		9666 9843 9864 9899 9991 10020 10070 10089 10151 10152 10201 10264 10301 10316 10352 10353 10366 10400 10449 10465 10482 10495 10571 10572 10655 10699 10700 10726 10775 10830 10862 10863 10864 10901 11015 11029 11070 11096 11163 11201 11309 11327 11400 13417 
+	}
+}

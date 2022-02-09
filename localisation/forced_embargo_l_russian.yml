@@ -1,0 +1,7 @@
+﻿l_russian:
+  force_button_loc:0 "Принудить"
+  FORCE_EMBARGO_TITLE:0 "Принудить к эмбарго"
+  FORCE_EMBARGO_ACTION_DESC:0 "Принудить государство к введению эмбарго против кого-то"
+  is_world_influence_more_2:0 "[is_world_influence_more_2_sl]"
+  is_world_influence_more_2_yes:0 "§GНеобходимо, чтобы наше влияние было как минимум в 2 раза больше§!"
+  is_world_influence_more_2_no:0 "§RНеобходимо, чтобы наше влияние было как минимум в 2 раза больше§!"

@@ -1,0 +1,24 @@
+state={
+	id=205
+	name="STATE_205"
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+
+		}
+		add_core_of = SBU
+		add_core_of = SVT
+		victory_points = {
+			5136 5 
+		}
+
+	}
+	provinces={
+		4038 4091 4124 4149 4186 4216 4242 4255 4331 4349 4383 4463 4464 4480 4546 4617 4682 4683 4838 
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

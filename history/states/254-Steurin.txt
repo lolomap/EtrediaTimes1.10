@@ -1,0 +1,29 @@
+
+state={
+	id=254
+	name="STATE_254"
+	manpower = 1750000
+	
+	state_category = rural
+	
+	resources={
+                steel = 6 # was: 8
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+		}
+		add_core_of = KAR
+		add_core_of = FSF
+		victory_points = {
+			10914 5
+		}
+
+	}
+	provinces={
+		6586 9105 9125 9155 9180 9230 9281 9282 9297 9316 9340 9366 9391 9392 9419 9420 9433 9446 9491 9499 9512 9539 9540 9617 9631 9697 
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=747
+	name="STATE_747"
+	manpower = 3100000
+	
+	state_category = town
+	
+	resources={
+		oil = 22 # was:30
+		rubber = 10 # was: 12
+	}
+
+	history={
+		owner = ZHO
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+			arms_factory = 1
+			2526 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ZHO
+		victory_points = {
+			2526 5
+		}
+
+	}
+	provinces={
+		1857 1906 1923 1949 2003 2004 2016 2020 2032 2067 2084 
+	}
+}

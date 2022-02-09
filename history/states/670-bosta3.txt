@@ -1,0 +1,30 @@
+
+state={
+	id=670
+	name="STATE_670"
+	manpower = 4480000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KBS
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+			dockyard = 2
+			1456 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = KBS
+		victory_points = {
+			1456 5
+		}
+
+	}
+	provinces={
+		976 987 992 1017 1036 1048 1066 
+	}
+}

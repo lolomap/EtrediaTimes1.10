@@ -1,0 +1,31 @@
+
+state={
+	id=233
+	name="STATE_233"
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 1
+			4856 = {
+				naval_base = 2
+			}
+			4936 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			4856 5 
+		}
+
+	}
+	provinces={
+		4163 4175 4187 4188 4217 4244 4257 4258 4292 4305 4332 4333 4334 4385 4386 4403 4404 4420 4435 4466 4482 4519 4536 4601 4602 4619 4620 4664 4665 4737 4738 4739 4774 4788 4820 4842 4871 4892 4931 4932 4945 
+	}
+	manpower=444000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

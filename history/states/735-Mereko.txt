@@ -1,0 +1,29 @@
+state={
+	id=735
+	name="STATE_735"
+	manpower = 1443000
+	state_category = town
+	
+	resources={
+		steel = 6 # was: 8
+	}
+
+	history={
+		owner = MCH
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+			2535 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MCH
+		victory_points = {
+			2535 5
+		}
+
+	}
+	provinces={
+		1976 2028 2092 2187 2188 2199 
+	}
+}

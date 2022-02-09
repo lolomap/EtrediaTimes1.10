@@ -1,0 +1,46 @@
+
+state={
+	id=552
+	name="STATE_552"
+	manpower = 6980000
+	
+	state_category = town
+	
+	resources={
+             rubber = 60 # was: 140
+             aluminium = 35 # was: 40
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 0
+			2122 = {
+				naval_base = 5
+			}
+			1818 = {
+				naval_base = 2
+			}
+			1746 = {
+				naval_base = 3
+			}
+			1921 = {
+				naval_base = 1
+			}
+			1693 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2122 5
+		}
+
+	}
+	provinces={
+		1243 1261 1272 1273 1286 1310 1318 1332 1340 1344 1345 1346 1358 1373 1374 1381 1386 1387 1397 1417 1420 1447 1461 1462 1470 1480 1484 1492 1499 1505 1520 1534 1539 1569 1570 1592 1601 1612 1636 1688 1695 
+	}
+}

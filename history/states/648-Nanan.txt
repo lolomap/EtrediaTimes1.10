@@ -1,0 +1,28 @@
+
+state={
+	id=648
+	name="STATE_648"
+	manpower = 7050000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ZAZ
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        arms_factory = 1
+		}
+		add_core_of = ZAZ
+		victory_points = {
+			5585 10
+		}
+
+	}
+	provinces={
+		4266 4472 4491 4579 4750 4778 4848 4974 4984 5086 5198 5458 
+	}
+}

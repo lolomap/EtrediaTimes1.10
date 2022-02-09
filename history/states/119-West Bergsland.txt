@@ -1,0 +1,26 @@
+state={
+	id=119
+	name="STATE_119"
+	manpower = 21000
+	
+	state_category = pastoral
+	
+	resources={
+        aluminium = 46 # was: 52
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FIL
+		victory_points = {
+			13014 1
+		}
+
+	}
+	provinces={
+		11169 11238 11298 
+	}
+}

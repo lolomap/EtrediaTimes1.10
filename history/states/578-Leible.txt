@@ -1,0 +1,28 @@
+
+state={
+	id=578
+	name="STATE_578"
+	manpower = 600000
+	
+	state_category = rural
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = TOR
+		add_core_of = ESS
+		victory_points = {
+			3795 1
+		}
+
+	}
+	provinces={
+		3106 3147 3188 3198 
+	}
+}

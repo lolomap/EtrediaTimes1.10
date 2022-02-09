@@ -1,0 +1,30 @@
+state={
+	id=134
+	name="STATE_134"
+	manpower = 240000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 3
+                        dockyard = 1
+			air_base = 1
+			15488 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FIL
+		victory_points = {
+			12882 1
+		}
+
+	}
+	provinces={
+		12882 12912 12943 13023 13063 13104 13138 13139 13163 13184 13228 13239 13266 13316 13317 13326 13369 13446 
+	}
+}

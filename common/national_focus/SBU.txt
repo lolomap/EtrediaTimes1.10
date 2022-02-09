@@ -1,0 +1,2372 @@
+focus_tree = {
+	id = SBU
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SBU
+		}
+	}
+	continuous_focus_position = { x = 0 y = 2000 }
+	default = no
+	focus = {
+		id = SBU_left
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		mutually_exclusive = {
+			focus = SBU_right
+		}
+		completion_reward = {
+			add_political_power = 120
+			custom_effect_tooltip = SBU_left_effect_desc
+		}
+		#ai_will_do = {
+		#	factor = 80
+		#}
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = SBU_right
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10
+		mutually_exclusive = {
+			focus = SBU_left
+		}
+		completion_reward = {
+			add_stability = -0.05
+			custom_effect_tooltip = SBU_right_effect_desc
+		}
+		#ai_will_do = {
+		#	factor = 20
+		#	modifier = {
+		#		factor = 0
+		#		is_historical_focus_on = yes
+		#	}
+		#}
+		x = 28
+		y = 0
+	}
+	focus = {
+		id = SBU_sburska_zvezda
+		icon = GFX_goal_sburska_zvezda_potential
+		cost = 10
+		x = 47
+		y = 0
+		completion_reward = {
+		SBU = { country_event = { id = sbu.4 days = 1 } }
+		}
+
+	}
+	focus = {
+		id = SBU_klyachek_plan
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		prerequisite = {
+			focus = SBU_left
+		}
+		mutually_exclusive = {
+			focus = SBU_profsouz
+		}
+		completion_reward = {
+		add_popularity = {
+        ideology = democratic
+        popularity = 0.1
+        }
+		}
+		ai_will_do = {
+			factor = 70
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = SBU_Hleria_stabilization
+		icon = GFX_goal_continuous_suppression
+		cost = 10
+		prerequisite = {
+			focus = SBU_klyachek_plan
+		}
+
+		bypass = {
+			not = {has_idea = SBU_Hleria}
+		}
+		
+		completion_reward = {
+		SBU = { country_event = { id = sbu.5 days = 1 } }
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = SBU_aldeko_operation
+		icon = GFX_focus_eng_special_air_service
+		cost = 10
+		available = { 
+			TRB = { has_government = communism }
+		}
+		prerequisite = {
+			focus = SBU_Hleria_stabilization
+		}
+		mutually_exclusive = {
+			focus = SBU_terbia_compromiss
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.2 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 1
+                modifier = {
+			    factor = 100
+			    date > 2018.1.1
+		        }
+				modifier = {
+			    factor = -1
+			    date < 2018.1.1
+		        }
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = SBU_terbia_compromiss
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		available = { 
+		TRB = { has_government = communism }
+		}
+		prerequisite = {
+			focus = SBU_Hleria_stabilization
+		}
+		mutually_exclusive = {
+			focus = SBU_aldeko_operation
+		}
+		completion_reward = {
+		TRB = { country_event = { id = terbia.5 days = 1 } }
+		}
+		ai_will_do = {
+		factor = 20
+		    modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = SBU_anti_YAN
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 10
+		available = {
+		    TRB = {
+			    has_opinion = {
+				target = SBU
+				value > 29
+				}
+			}
+		}
+		prerequisite = {
+			focus = SBU_terbia_compromiss
+		}
+		completion_reward = {
+		SBU = { create_faction = SBU_anti_yan }
+		TRB = { country_event = { id = terbia.6 days = 1 } }
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = SBU_UCB_friendship
+		icon = GFX_goal_sbu_ucb_conversation
+		cost = 10
+		#prerequisite = {
+		#	focus = SBU_klyachek_plan
+		#}
+		available = {
+			OR = {
+				has_completed_focus = SBU_klyachek_plan
+				has_completed_focus = SBU_political_crisis
+			}
+			has_government = democratic
+		}
+		completion_reward = { 
+		UCB = { country_event = { id = ucnb.9 days = 1 } }
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = SBU_IID_friendship
+		icon = GFX_goal_sbu_iid_conversation
+		cost = 10
+		prerequisite = {
+			focus = SBU_UCB_friendship
+		}
+		completion_reward = { 
+		IID = { country_event = { id = dux.6 days = 1 } }
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = SBU_children_of_Savaty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_klyachek_plan
+		}
+        completion_reward = {
+		add_opinion_modifier = { target = RGY modifier = SBU_children_savaty }
+		add_opinion_modifier = { target = MOF modifier = SBU_children_savaty }
+		add_opinion_modifier = { target = ELR modifier = SBU_children_savaty }
+		add_opinion_modifier = { target = SFL modifier = SBU_children_savaty }
+		RGY = { add_opinion_modifier = { target = SBU modifier = SBU_children_savaty } }
+		MOF = { add_opinion_modifier = { target = SBU modifier = SBU_children_savaty } }
+		ELR = { add_opinion_modifier = { target = SBU modifier = SBU_children_savaty } }
+		SFL = { add_opinion_modifier = { target = SBU modifier = SBU_children_savaty } }
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = SBU_dem_RGY_alliance
+		icon = GFX_goal_sbu_rgy_unification
+		cost = 10
+		prerequisite = {
+			focus = SBU_children_of_Savaty
+		}
+		mutually_exclusive = {
+			focus = SBU_dem_brothers
+		}
+		completion_reward = { 
+		SBU = { country_event = { id = sbu.9 days = 1 } }
+		}
+		ai_will_do = {
+		factor = 30
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SBU_monfua_control
+		icon = GFX_goal_sbu_monfua_control
+		cost = 10
+		prerequisite = {
+			focus = SBU_dem_RGY_alliance
+		}
+		completion_reward = { 
+		MOF = { country_event = { id = monfua.4 days = 1 } }
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = SBU_dem_brothers
+		icon = GFX_goal_sbu_savahlery
+		cost = 10
+		prerequisite = {
+			focus = SBU_children_of_Savaty
+		}
+		mutually_exclusive = {
+			focus = SBU_dem_RGY_alliance
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.23 days = 1 } }
+		}
+		ai_will_do = {
+		factor = 70
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SBU_safflia_compromiss
+		icon = GFX_goal_sbu_sfl_compromiss
+		cost = 10
+		prerequisite = {
+			focus = SBU_dem_brothers
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = SBU_profsouz
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		cost = 10
+		prerequisite = {
+			focus = SBU_left
+		}
+		mutually_exclusive = {
+			focus = SBU_klyachek_plan
+		}
+		ai_will_do = {
+			factor = 30
+	        modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.19 days = 1 } }
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = SBU_privatizacy
+		icon = GFX_goal_generic_production2
+		cost = 10
+		prerequisite = {
+			focus = SBU_profsouz
+		}
+		available = { 
+		has_idea = SBU_siburian_star
+		}
+		completion_reward = {
+		add_stability = -0.2
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+							size > 0
+							include_locked = yes
+					}
+					OR = {
+					is_in_home_area = yes
+					    NOT = {
+						    owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 16
+		y = 3
+	}
+	focus = {
+		id = SBU_communists_party
+		icon = GFX_goal_communist_undeground
+		cost = 10
+		prerequisite = {
+			focus = SBU_privatizacy
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.20 } }
+		}
+		x = 16
+		y = 5
+	}
+	focus = {
+		id = SBU_communist
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = SBU_communists_party
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.21 days = 1 } }
+		}
+		x = 16
+		y = 7
+	}
+	focus = {
+		id = SBU_chistka
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		prerequisite = {
+			focus = SBU_communist
+		}
+		completion_reward = {
+		add_stability = 0.2
+        add_popularity = {
+        ideology = communism
+        popularity = 0.1
+        }
+		}
+		x = 16
+		y = 8
+	}
+	focus = {
+		id = SBU_Terbian_revolution
+		icon = GFX_goal_unknown
+		cost = 10
+		available = {
+			TRB = {NOT = { has_government = communism }}
+		}
+		cancel_if_invalid = yes
+		bypass = {
+		TRB = { has_government = communism }
+		}
+		prerequisite = {
+			focus = SBU_chistka
+		}
+		completion_reward = {
+		TRB = { country_event = { id = terbia.7 days = 1 } }
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = SBU_pyatiletka
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = SBU_chistka
+		}
+		completion_reward = {
+		SBU = { add_timed_idea = { idea = SBU_five_years_plan days = 360 } }
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = SBU_military_economic
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SBU_pyatiletka
+		}
+		completion_reward = {
+		swap_ideas = {
+        remove_idea = civilian_economy
+        add_idea = war_economy
+        }
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = SBU_Empire
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10
+		prerequisite = {
+			focus = SBU_right
+		}
+		mutually_exclusive = {
+			focus = SBU_above_all
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+		x = 23
+		y = 1
+	}
+	focus = {
+		id = SBU_central_Savaty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_Empire
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = 0.1
+			add_political_power = 50
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = SBU_sweet_times
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_central_Savaty
+		}
+		completion_reward = {
+			country_event = {id=sbu.49 days=1}
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = SBU_we_can_repeat
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_sweet_times
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = SBU_absolutism
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10
+		prerequisite = {
+			focus = SBU_we_can_repeat
+		}
+		mutually_exclusive = {
+			focus = SBU_monarchism
+		}
+		completion_reward = {
+			SBU = { country_event = { id = sbu.31 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 0.3
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = SBU_monarchism
+		icon = GFX_focus_eng_god_save_the_king
+		cost = 10
+		prerequisite = {
+			focus = SBU_we_can_repeat
+		}
+		mutually_exclusive = {
+			focus = SBU_absolutism
+		}
+		completion_reward = {
+			SBU = { country_event = { id = sbu.32 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 0.7
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = SBU_treat_with_RGY
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = SBU_monarchism
+			focus = SBU_absolutism
+		}
+		completion_reward = {
+		    RGY = { country_event = { id = rgy.3 days = 1 } }
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = SBU_RGY_integration
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = SBU_treat_with_RGY
+		}
+		completion_reward = {
+		    RGY = { country_event = { id = rgy.4 days = 1 } }
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = SBU_safflian_problem
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_RGY_integration
+		}
+		completion_reward = {
+			#need
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = SBU_pacify_terbia
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_RGY_integration
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					TRB = {
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+				SBU = { country_event = { id = sbu.2 days = 1 } }
+			}
+			else = {
+				TRB = {country_event = { id = sbu.57 days = 1 }}
+			}
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = SBU_treat_with_Monfua
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_safflian_problem
+			focus = SBU_pacify_terbia
+		}
+		completion_reward = {
+			
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = SBU_war_with_SFL
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = SBU_treat_with_Monfua
+		}
+		completion_reward = {
+		    SBU = { country_event = { id = sbu.33 days = 1 } }
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = SBU_demonstration_of_power
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_SFL
+		}
+		x = 23
+		y = 11
+		completion_reward = {
+			#need
+			country_event = {id = sbu.56 days = 1}
+		}
+	}
+	focus = {
+		id = SBU_MOF_integration
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = SBU_treat_with_Monfua
+		}
+		completion_reward = {
+		    SBU = { country_event = { id = sbu.34 days = 1 } }
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = SBU_above_all
+		icon = GFX_focus_eng_organise_the_blackshirts
+		cost = 10
+		prerequisite = {
+			focus = SBU_right
+		}
+		mutually_exclusive = {
+			focus = SBU_Empire
+		}
+		x = 33
+		y = 1
+		available = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			set_country_flag = sbu_start_revolution_activity
+		}
+	}
+	focus = {
+		id = SBU_paranoid
+		cost = 2
+		x = 38
+		y = 0
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sbu_try_fail_tooltip
+				has_country_flag = sbu_try_fail
+			}
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {ideology = democratic popularity = 0.05}
+			custom_effect_tooltip = sbu_paranoid_effect_tooltip
+		}
+	}
+
+	focus = {
+		id = SBU_army_crisis
+		cost = 6
+		x = 38
+		y = 1
+		prerequisite = {focus = SBU_paranoid}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.05
+			#удалить генералов
+			custom_effect_tooltip = sbu_reduse_collapse_chance
+			clr_country_flag = sbu_army_crisis_collapse
+		}
+	}
+
+	focus = {
+		id = SBU_political_crisis
+		cost = 4
+		x = 38
+		y = 2
+		prerequisite = {focus = SBU_army_crisis}
+
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = 0.05}
+			add_stability = 0.05
+			add_war_support = -0.02
+			add_political_power = 50
+			#удалить советников
+			custom_effect_tooltip = sbu_reduse_collapse_chance
+			clr_country_flag = sbu_political_crisis_collapse
+		}
+	}
+
+	focus = {
+		id = SBU_Terbian_crisis
+		cost = 6
+		x = 38
+		y = 3
+		prerequisite = {focus = SBU_political_crisis}
+
+		completion_reward = {
+			add_political_power = -100
+			add_war_support = -0.1
+			country_event = {id = sbu.67 days = 1}
+			custom_effect_tooltip = sbu_terbia_war_chance
+		}
+	}
+
+	focus = {
+		id = SBU_SFL_control_crisis
+		cost = 6
+		x = 37
+		y = 4
+		prerequisite = {focus = SBU_Terbian_crisis}
+		mutually_exclusive = {focus = SBU_SFL_economic_control_crisis}
+
+		completion_reward = {
+			give_guarantee = ELR
+		}
+	}
+
+	focus = {
+		id = SBU_SFL_economic_control_crisis
+		cost = 14
+		x = 39
+		y = 4
+		prerequisite = {focus = SBU_Terbian_crisis}
+		mutually_exclusive = {focus = SBU_SFL_control_crisis}
+
+		completion_reward = {
+			remove_ideas = SBU_SFL_lost_economic_war
+			SFL = {country_event = {id = sfl.21 days = 1}}
+		}
+	}
+
+	focus = {
+		id = SBU_dem_survive
+		cost = 10
+		x = 38
+		y = 5
+		prerequisite = {
+			focus = SBU_SFL_control_crisis
+			focus = SBU_SFL_economic_control_crisis
+		}
+
+		completion_reward = {
+			set_country_leader_ideology = conservatism
+		}
+	}
+
+	focus = {
+		id = SBU_exit_world_politics
+		cost = 5
+		x = 37
+		y = 6
+		prerequisite = {focus = SBU_dem_survive}
+		mutually_exclusive = {focus = SBU_populistic_expansion}
+
+		completion_reward = {
+			add_timed_idea = {idea = neutrality_idea days = 360}
+			add_timed_idea = {idea = DON_politics days = 120}
+
+		}
+	}
+
+	focus = {
+		id = SBU_liberal_save
+		cost = 15
+		x = 37
+		y = 7
+
+		prerequisite = {focus = SBU_exit_world_politics}
+		mutually_exclusive = {focus = SBU_dprs_authority}
+	}
+
+	focus = {
+		id = SBU_election
+		cost = 10
+		x = 37
+		y = 8
+
+		prerequisite = {focus = SBU_liberal_save}
+
+		completion_reward = {
+			custom_effect_tooltip = reset_parlament_tooltip
+			hidden_effect = {
+				add_stability = 0.1
+				set_variable = {td = random}
+				if = {limit = {check_variable = {td > 0.6}} set_variable = {td = 0.6}}
+				multiply_variable = {td = 100}
+				set_variable = {tn = random}
+				if = {limit = {check_variable = {tn > 0.5}} set_variable = {tn = 0.5}}
+				multiply_variable = {tn = 100}
+				set_variable = {tf = random}
+				if = {limit = {check_variable = {tf > 0.5}} set_variable = {tf = 0.5}}
+				multiply_variable = {tf = 100}
+				set_variable = {tc = 100}
+				subtract_from_variable = {tc = td}
+				subtract_from_variable = {tc = tn}
+				subtract_from_variable = {tc = tf}
+				if = {limit = {check_variable = {tc < 0}} set_variable = {tc = 0}}
+
+				set_variable = {controlid = 0}
+				add_to_variable = {controlid = td}
+				add_to_variable = {controlid = tn}
+				add_to_variable = {controlid = tc}
+				add_to_variable = {controlid = tf}
+				if = {
+					limit = {check_variable = {controlid > 100}}
+					set_temp_variable = {raznica = 100}
+					subtract_from_temp_variable = {raznica = controlid}
+					divide_temp_variable = {raznica = 4}
+					add_to_variable = {td = raznica}
+					add_to_variable = {tn = raznica}
+					add_to_variable = {tf = raznica}
+					add_to_variable = {tc = raznica}
+				}
+
+				set_popularities = {
+					democratic = td
+					neutrality = tn
+					fascism = tf
+					communism = tc
+					monarchism = 0
+				}
+
+				if = {
+					limit = {democratic < 0.3}
+					set_political_party = {
+						ideology = democratic 
+						popularity = 30
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_ahagon_supremacy
+		cost = 10
+		x = 37
+		y = 9
+
+		prerequisite = {focus = SBU_election}
+
+		completion_reward = {
+			retire_country_leader = yes
+			retire_country_leader = yes
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = democratic
+				long_name = SBU_democratic_party_ahagon_long
+				name = SBU_democratic_party_ahagon
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_comeback
+		cost = 10
+		x = 37
+		y = 10
+
+		prerequisite = {focus = SBU_ahagon_supremacy}
+
+		available = {
+			TRB = {has_government = communism}
+		}
+
+		completion_reward = {
+			complete_national_focus = SBU_aldeko_operation
+		}
+	}
+
+	focus = {
+		id = SBU_dprs_authority
+		cost = 10
+		x = 39
+		y = 7
+
+		prerequisite = {focus = SBU_exit_world_politics}
+		mutually_exclusive = {focus = SBU_liberal_save}
+	}
+
+	focus = {
+		id = SBU_populistic_expansion
+		cost = 15
+		x = 39
+		y = 6
+		prerequisite = {focus = SBU_dem_survive}
+		mutually_exclusive = {focus = SBU_exit_world_politics}
+
+		available = {
+			TRB = { has_government = communism }
+		}
+
+		completion_reward = {
+			# СДЕЛАТЬ РЕШЕНИЯ НА УДЕРЖАНИЕ СТРАНЫ
+			complete_national_focus = SBU_aldeko_operation
+		}
+	}
+
+	focus = {
+		id = SBU_fascist_parlament
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10
+		prerequisite = {
+			focus = SBU_above_all
+		}
+		x = 33
+		y = 2
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+		}
+
+	}
+	focus = {
+		id = SBU_monarchism_discreditations
+		icon = GFX_focus_rom_abdicate
+		cost = 5
+		prerequisite = {
+			focus = SBU_fascist_parlament
+		}
+		x = 29
+		y = 3
+
+		available = {
+			not = {has_government = fascism}
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = -0.02
+			}
+			add_stability = -0.01
+		}
+
+	}
+	focus = {
+		id = SBU_communists_discreditations
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		prerequisite = {
+			focus = SBU_fascist_parlament
+		}
+		x = 31
+		y = 3
+
+		available = {
+			not = {has_government = fascism}
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SBU_democrat_discreditations
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		prerequisite = {
+			focus = SBU_monarchism_discreditations
+		}
+		prerequisite = {
+			focus = SBU_communists_discreditations
+		}
+		x = 30
+		y = 4
+
+		available = {
+			not = {has_government = fascism}
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.03
+			}
+			add_stability = -0.1
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = SBU_external_friend
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_fascist_parlament
+		}
+		x = 35
+		y = 3
+
+		completion_reward = {
+			SBU = {
+				add_ideas = SBU_eastblock_friend
+				EIK = { add_opinion_modifier = { target = ROOT modifier = SBU_eik_relations } }
+			}
+		}
+	}
+	focus = {
+		id = SBU_yanthalia_friend
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_external_friend
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = SBU_fascism
+		icon = GFX_focus_eng_special_air_service
+		cost = 10
+		prerequisite = {
+			focus = SBU_fascist_parlament
+		}
+		x = 33
+		y = 5
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sbu_ready_for_revolution_tooltip
+				has_country_flag = sbu_ready_for_revolution
+			}
+		}
+
+		completion_reward = {
+			add_stability = -0.3
+			custom_effect_tooltip = sbu_try_revolution
+			hidden_effect = {
+				clr_country_flag = sbu_start_revolution_activity
+				set_variable = { sbu_frev_rand = random }
+				multiply_variable = {sbu_frev_rand = 100}
+				if = {
+					limit = {check_variable = {sbu_frev_total > sbu_frev_rand}}
+					country_event = {id = sbu.65 days = 1}
+				}
+				else = {
+					country_event = {id = sbu.66 days = 1}
+					add_ideas = SBU_SFL_lost_economic_war
+				}
+
+				
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_ucb_enemy
+		cost = 5
+		x = 35
+		y = 6
+
+		prerequisite = {focus = SBU_fascism}
+		prerequisite = {focus = SBU_yanthalia_friend}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sbu_try_success_tooltip
+				has_country_flag = sbu_try_success
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 120
+			add_war_support = 0.05
+			add_opinion_modifier = {
+				target = UCB
+				modifier = SBU_UCB_fascist_enemy
+			}
+			UCB = {
+				add_opinion_modifier = {
+					target = SBU
+					modifier = SBU_UCB_fascist_enemy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_military_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SBU_sburska_zvezda
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+							size > 0
+							include_locked = yes
+					}
+					OR = {
+					is_in_home_area = yes
+					    NOT = {
+						    owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = SBU_unification
+		icon = GFX_goal_sbu_unification
+		cost = 10
+		prerequisite = {
+			focus = SBU_military_factory
+		}
+		completion_reward = {
+			# remove_ideas = SBU_glory_to_independence
+			add_stability = 0.1
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = SBU_militarize_nation
+		icon = GFX_goal_sbu_militarize_nation
+		cost = 10
+		prerequisite = {
+			focus = SBU_unification
+		}
+		completion_reward = {
+	    SBU = { country_event = { id = sbu.22 days = 1 } }
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = SBU_military_factory2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SBU_military_factory
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+							size > 0
+							include_locked = yes
+					}
+					OR = {
+					is_in_home_area = yes
+					    NOT = {
+						    owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+		x = 43
+		y = 3
+
+	}
+	focus = {
+		id = SBU_military_training
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = SBU_military_factory2
+		}
+		completion_reward = {
+		army_experience = 15
+		add_war_support = 0.1
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = SBU_research
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = SBU_military_training
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = SBU_tanks
+		icon = GFX_focus_generic_license_production
+		cost = 10
+		prerequisite = {
+			focus = SBU_research
+		}
+		x = 41
+		y = 6
+
+		completion_reward = {
+			add_ideas = SBU_tanks_modern
+		}
+	}
+	focus = {
+		id = SBU_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = SBU_research
+		}
+		x = 43
+		y = 6
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = mechanized_support
+			}
+		}
+	}
+	focus = {
+		id = SBU_military_training2
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = {
+			focus = SBU_tanks
+		}
+		prerequisite = {
+			focus = SBU_artillery
+		}
+		completion_reward = {
+		army_experience = 20
+		add_war_support = 0.1
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = SBU_economic
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = SBU_sburska_zvezda
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = SBU_investitions_gy
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = SBU_economic
+		}
+		x = 47
+		y = 3
+
+		completion_reward = {
+			RGY = {
+				add_timed_idea = {idea = SBU_little_sburska_zvezda days = 720}
+				add_political_power = -200
+			}
+		}
+	}
+	focus = {
+		id = SBU_sburska_zvezda_ucb
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		prerequisite = {
+			focus = SBU_investitions_gy
+		}
+		x = 47
+		y = 4
+
+		completion_reward = {
+			UCB = {
+				add_ideas = SBU_little_sburska_zvezda
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			SBU = {
+				random_owned_controlled_state = {
+					add_resource = {
+					    type = steel
+					    amount = 5
+					    state = THIS
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SBU_factory2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SBU_sburska_zvezda_ucb
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+							size > 0
+							include_locked = yes
+					}
+					OR = {
+					is_in_home_area = yes
+					    NOT = {
+						    owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 47
+		y = 5
+
+	}
+	focus = {
+		id = SBU_investitions_langat
+		icon = GFX_focus_generic_industry_1
+		cost = 10
+		prerequisite = {
+			focus = SBU_factory2
+		}
+		completion_reward = {
+			72 = {
+	            add_extra_state_shared_building_slots = 1
+	            add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	            }
+			}
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = SBU_langat_castle
+		icon = GFX_goal_langat_castle
+		cost = 10
+		prerequisite = {
+			focus = SBU_artillery
+			focus = SBU_investitions_langat
+		}
+		completion_reward = {
+			72 = {
+			    add_building_construction = { 
+			        type = bunker 
+					level = 4 
+			        instant_build = yes 
+			        province = 5602 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 5536 
+				}
+			    add_building_construction = { 
+			        type = bunker 
+			        level = 2 
+			        instant_build = yes 
+			        province = 5667 
+				}
+			}
+		}
+		x = 45
+		y = 7
+
+	}
+	focus = {
+		id = SBU_pressure_gy
+		icon = GFX_goal_sbu_rgy_pressure
+		cost = 10
+		prerequisite = {
+			focus = SBU_investitions_gy
+		}
+		x = 49
+		y = 4
+
+		completion_reward = {
+			RGY = {
+				swap_ideas = {
+					remove_idea = SBU_little_sburska_zvezda
+					add_idea = SBU_medium_sburska_zvezda
+				}
+			}
+		}
+	}
+	focus = {
+		id = SBU_RTT_diplomacy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_Terbian_revolution
+		}
+		completion_reward = {
+		RTT = { country_event = { id = rttevent.3 days = 1 } }
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = SBU_comintern
+		icon = GFX_goal_generic_defence
+		cost = 10
+		prerequisite = {
+			focus = SBU_RTT_diplomacy
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.29 days = 1 } }
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = SBU_communist_RGY
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = SBU_comintern
+		}
+		completion_reward = {
+		RGY = { country_event = { id = rgy.7 days = 1 } }
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = SBU_communist_MOF
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = SBU_comintern
+		}
+		completion_reward = {
+		MOF = { country_event = { id = monfua.5 days = 1 } }
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = SBU_communist_SFL
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = SBU_comintern
+		}
+		completion_reward = {
+		SFL = { country_event = { id = sfl.12 days = 1 } }
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = SBU_terbia_minors
+		icon = GFX_goal_terbia_minors
+		cost = 2
+		prerequisite = {
+			focus = SBU_aldeko_operation
+		}
+		available = { 
+		TRB = { is_puppet = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.3 days = 1 } set_country_flag = SBU_TRBminored}
+		}
+		ai_will_do = { factor = 100 }
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = SBU_sinicino_future
+		icon = GFX_goal_terbia_minors
+		cost = 4
+		prerequisite = {
+			focus = SBU_terbia_minors
+		}
+		available = { 
+		SIN = { exists = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.38 days = 1 } }
+		}
+		ai_will_do = { factor = 10 }
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = SBU_tobina_future
+		icon = GFX_goal_terbia_minors
+		cost = 4
+		prerequisite = {
+			focus = SBU_terbia_minors
+		}
+		available = { 
+		KRA = { exists = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.39 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = SBU_east_siburia_future
+		icon = GFX_goal_terbia_minors
+		cost = 4
+		prerequisite = {
+			focus = SBU_lobuchina_future
+			focus = SBU_bakli_future
+		}
+		available = { 
+		ESB = { exists = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.40 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = SBU_bakli_future
+		icon = GFX_goal_terbia_minors
+		cost = 4
+		prerequisite = {
+			focus = SBU_sinicino_future
+		}
+		available = { 
+		BAK = { exists = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.41 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = SBU_lobuchina_future
+		icon = GFX_goal_terbia_minors
+		cost = 4
+		prerequisite = {
+			focus = SBU_tobina_future
+		}
+		available = { 
+		LCH = { exists = yes }
+		}
+		completion_reward = {
+		SBU = { country_event = { id = sbu.42 days = 1 } }
+		}
+		x = 3
+		y = 7
+
+	}
+
+	focus = {
+		id = SBU_sburska_zvezda_help
+		cost = 4
+		x = 1
+		y = 8
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_world_war
+
+				has_war_with = EIK
+				is_in_faction_with = UCB
+				EIK = {is_in_faction = yes}
+				OR = {
+					EIK = {is_faction_leader = yes}
+					YAN = {is_faction_leader = yes is_in_faction_with = EIK}
+					CHE = {is_faction_leader = yes is_in_faction_with = EIK}
+				}
+			}
+			surrender_progress < 0.3
+			has_government = democratic
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = sz_allow_extra_support
+			set_country_flag = sz_extra_support_activated
+		}
+	}
+
+	focus = {
+		id = SBU_moadera_debt
+		cost = 6
+		x = 1
+		y = 10
+		prerequisite = {focus = SBU_sburska_zvezda_help}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = wtire_more_then_150
+				check_variable = {wtire > 150}
+			}
+			
+		}
+
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.05
+			custom_effect_tooltip = wtire_reduce_70
+			subtract_from_variable = {wtire = 70}
+		}
+	}
+
+	focus = {
+		id = SBU_telluris
+		cost = 5
+		x = 3
+		y = 9
+
+		prerequisite = {focus = SBU_sburska_zvezda_help}
+		mutually_exclusive = {focus = SBU_tallas}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_tellurisIdea days = 70}
+		}
+	}
+
+	focus = {
+		id = SBU_far_war
+		cost = 7
+		x = 3
+		y = 10
+
+		prerequisite = {focus = SBU_telluris}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_far_war_idea days = 130}
+		}
+	}
+
+	focus = {
+		id = SBU_air_domination
+		cost = 5
+		x = 3
+		y = 12
+
+		prerequisite = {focus = SBU_far_war}
+	}
+
+	focus = {
+		id = SBU_tallas
+		cost = 5
+		x = 6
+		y = 9
+
+		prerequisite = {focus = SBU_sburska_zvezda_help}
+		mutually_exclusive = {focus = SBU_telluris}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_invasions days = 90}
+		}
+	}
+
+	focus = {
+		id = SBU_macar_operation
+		cost = 5
+		x = 6
+		y = 10
+		prerequisite = {focus = SBU_tallas}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_tallasIdea days = 70}
+			puppet = SMA
+			set_country_flag = sbu_macar_operation
+		}
+	}
+
+	focus = {
+		id = SBU_didor_operation
+		cost = 5
+		x = 8
+		y = 10
+		prerequisite = {focus = SBU_tallas}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_tallasIdea days = 70}
+			puppet = DID
+			set_country_flag = sbu_didor_operation
+		}
+	}
+
+	focus = {
+		id = SBU_donat_operation
+		cost = 5
+		x = 10
+		y = 10
+		prerequisite = {focus = SBU_tallas}
+
+		completion_reward = {
+			add_timed_idea = {idea = SBU_tallasIdea days = 70}
+			puppet = DON
+			set_country_flag = sbu_donat_operation
+		}
+	}
+
+	focus = {
+		id = SBU_moadera_path
+		cost = 5
+		x = 8
+		y = 11
+		prerequisite = {
+			focus = SBU_macar_operation
+			focus = SBU_didor_operation
+			focus = SBU_donat_operation
+		}
+		bypass = {
+			hidden_trigger = {
+				OR = {
+					has_completed_focus = SBU_macar_operation
+					has_completed_focus = SBU_didor_operation
+					has_completed_focus = SBU_donat_operation
+				}
+				is_in_faction_with = MOA
+			}
+			
+		}
+
+		completion_reward = {
+			SBU = {
+			    diplomatic_relation = {
+			    	country = MOA
+			    	relation = docking_rights
+			    	active = yes
+			    }
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_ban_ligur_torgal
+		cost = 10
+		x = 7
+		y = 1
+		available = {
+			OR = {
+				has_idea = SBU_corruption_incident
+				custom_trigger_tooltip = {
+					tooltip = sbu_try_fail_tooltip
+					has_country_flag = sbu_try_fail
+				}
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = SBU_corruption_incident
+			add_popularity = {ideology = fascism popularity = -0.2}
+			activate_decision = ban_fascist_party
+			hidden_effect = {
+				add_stability = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_wise_choise
+		cost = 20
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = SBU_terbia_minors
+			focus = SBU_anti_YAN
+		}
+		prerequisite = {
+			focus = SBU_monfua_control
+			focus = SBU_safflia_compromiss
+		}
+
+		available = {
+			tag = SBU
+			has_country_leader = {
+				name = "Iret Kolert"
+				ruling_only = yes
+			}
+		}
+
+		completion_reward = {
+			country_event = {id = sbu.64 days = 1}
+		}
+	}
+
+	focus = {
+		id = SBU_ultimatum_RTT
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_pacify_terbia
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = TRB
+					TRB = {
+						not = {
+							in_faction_with = SBU
+							is_subject_of = SBU
+						}
+					}
+				}
+				TRB = {
+					annex_country = {
+						target = RTT
+						transfer_troops = yes
+					}
+				}
+			}
+			else = {
+				diplomatic_relation = {
+				    country = RTT
+				    relation = military_access
+				    active = yes
+				}
+				RTT = {
+					diplomatic_relation = {
+				    	country = SBU
+				    	relation = military_access
+				    	active = yes
+				    }
+				}
+			}
+		}
+	}
+	focus = {
+		id = SBU_siburian_alliance
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_fascism
+		}
+		x = 33
+		y = 6
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sbu_try_success_tooltip
+				has_country_flag = sbu_try_success
+			}
+		}
+
+		completion_reward = {
+			create_faction = SBU_fascist_faction
+		}
+	}
+	focus = {
+		id = SBU_annex_RGY
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_siburian_alliance
+		}
+		x = 33
+		y = 7
+
+		available = {
+			has_army_manpower = {
+    			size > 500000
+    		}
+		}
+
+		completion_reward = {
+			RGY = {
+				country_event = { id = rgy.6 days = 1 }
+			}
+		}
+	}
+	focus = {
+		id = SBU_east_monfua
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_annex_RGY
+		}
+		mutually_exclusive = {focus = SBU_divide_MOF}
+		x = 31
+		y = 8
+
+		available = {country_exists = MOF}
+		bypass = {not = {country_exists = MOF}}
+
+		completion_reward = {
+			add_political_power = -200
+			EMF = {
+				transfer_state = 180
+				transfer_state = 175
+				transfer_state = 176
+				add_state_core = 180
+				add_state_core = 175
+				add_state_core = 176
+				load_oob = EMF_separatist
+			}
+			SBU = {puppet = EMF}
+		}
+	}
+	focus = {
+		id = SBU_divide_MOF
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_annex_RGY
+		}
+		mutually_exclusive = {focus = SBU_east_monfua}
+		x = 35
+		y = 8
+
+		available = {
+			OR = {
+				country_exists = MOF
+				country_exists = EMF
+			}
+			
+			country_exists = SFL
+		}
+		bypass = {not = {country_exists = MOF}}
+
+		completion_reward = {
+			SFL = {country_event = {id=sfl.11 days=1}}
+		}
+	}
+	focus = {
+		id = SBU_war_with_MOF
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_east_monfua
+		}
+		x = 31
+		y = 9
+		bypass = {not = {country_exists = MOF}}
+
+		completion_reward = {
+			EMF = {
+				declare_war_on = {
+				    target = MOF
+				    type = annex_everything
+				}
+			}
+			SBU = {
+				declare_war_on = {
+					target = MOF
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = SBU_war_with_Safflia
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_MOF
+			focus = SBU_divide_MOF
+		}
+		x = 33
+		y = 10
+		bypass = {not = {country_exists = SFL}}
+
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = SFL
+			}
+		}
+	}
+	focus = {
+		id = SBU_war_with_TRB
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_Safflia
+		}
+		x = 33
+		y = 12
+		bypass = {not = {country_exists = TRB}}
+
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = TRB
+			}
+		}
+
+	}
+	focus = {
+		id = SBU_fascism_ultimatum_RTT
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_TRB
+		}
+		x = 33
+		y = 13
+		bypass = {not = {country_exists = RTT}}
+
+		completion_reward = {
+			RTT = {country_event = {id = rttevent.4 days = 1}}
+		}
+
+	}
+	focus = {
+		id = SBU_reichsiburekorat_terbia
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_TRB
+		}
+		x = 31
+		y = 13
+
+		available = {
+			TRB = {is_puppet_of = SBU}
+		}
+
+		completion_reward = {
+			TRB = {set_cosmetic_tag = TRB_Reichssib}
+			SBU = {
+				transfer_state = 226
+				transfer_state = 221
+				transfer_state = 224
+				transfer_state = 227
+				transfer_state = 225
+				transfer_state = 223
+				transfer_state = 231
+				transfer_state = 232
+				transfer_state = 198
+				transfer_state = 228
+				transfer_state = 233
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 236
+			}
+		}
+	}
+	focus = {
+		id = SBU_dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SBU_sburska_zvezda
+		}
+		x = 51
+		y = 2
+
+		completion_reward = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = SBU_dockyard2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = SBU_dockyard
+		}
+		x = 51
+		y = 3
+
+		completion_reward = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+	}
+
+	focus = {
+		id = SBU_north_buffer
+		x = 6
+		y = 6
+		cost = 15
+		prerequisite = {
+			focus = SBU_terbia_minors
+			focus = SBU_anti_YAN
+		}
+		prerequisite = {
+			focus = SBU_monfua_control
+			focus = SBU_safflia_compromiss
+		}
+		available = {
+			DEM = {
+				controls_state = 261
+				controls_state = 262
+				controls_state = 256
+				controls_state = 258
+			}
+
+			DEM = {not = {has_war_with = DIR}}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {industrial_complex > 0}
+				remove_building = {
+				    type = industrial_complex
+				    level = 1
+				}
+			}
+
+			DEM = {
+				261 = {add_building_construction = { type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes} }}
+				262 = {add_building_construction = {  type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes} }}
+				256 = {add_building_construction = {  type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes} }}
+				258 = {add_building_construction = {  type = bunker level = 5 instant_build = yes province = {all_provinces = yes limit_to_border = yes} }}
+			}
+		}
+	}
+
+	focus = {
+		id = SBU_RTT_question
+		x = 6
+		y = 7
+		cost = 10
+		prerequisite = {focus = SBU_north_buffer}
+		available = {
+			RTT = {has_government = communism}
+		}
+
+		completion_reward = {
+			RTT = {transfer_state = 198}
+			if = {
+				limit = {
+					SBU = {is_in_faction = yes}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = SBU
+						is_faction_leader = yes
+					}
+					add_to_faction = RTT
+				}
+			}
+			else = {
+				RTT = {
+					diplomatic_relation = {
+						country = SBU
+						relation = military_access
+						active = yes
+					}
+				}
+				SBU = {
+					diplomatic_relation = {
+						country = RTT
+						relation = military_access
+						active = yes
+					}	
+				}
+			}
+		}
+	}
+}

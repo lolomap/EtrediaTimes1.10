@@ -1,0 +1,33 @@
+
+state={
+	id=142
+	name="STATE_142"
+	manpower = 3300000
+	
+	state_category = large_city
+	
+	resources={
+		
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			14107 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = PIN
+		victory_points = {
+			11523 20
+		}
+
+	}
+	provinces={
+		11523 11551 11645 11671 11688 11761 11780 11781 11804 11821 11848 11879 11900 11915 11976 12007 12019 12038 12134 12158 
+	}
+}

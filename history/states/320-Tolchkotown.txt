@@ -1,0 +1,27 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 700000
+	
+	state_category = town
+
+	history={
+		owner = TOL
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+			13820 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TOL
+		victory_points = {
+			14202 10
+		}
+
+	}
+	provinces={
+		11864 11907 11950 12016 12055 12071 12141 12165 12229 12230 12246 12286 12359 12435 
+	}
+}

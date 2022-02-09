@@ -1,0 +1,24 @@
+state={
+	id=25
+	name="STATE_25"
+	manpower = 3100000
+	
+	state_category = town
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 1
+		}
+		add_core_of = UCB
+                add_core_of = TIR
+		victory_points = {
+			6802 5
+		}
+
+	}
+	provinces={
+		5714 5729 5855 5889 5906 5958 5977 6054 6109 6223 6224 6225 6383 
+	}
+}

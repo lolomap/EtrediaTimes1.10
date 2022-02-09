@@ -1,0 +1,31 @@
+
+state={
+	id=671
+	name="STATE_671"
+	manpower = 3771000
+	state_category = town
+	
+	resources={
+		steel = 4 # was: 4
+	}
+
+	history={
+		owner = KBS
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			arms_factory = 1
+			1612 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = KBS
+		victory_points = {
+			1612 5
+		}
+
+	}
+	provinces={
+		1061 1074 1082 1092 1101 1107 1114 1129 1136 1148 1161 1174 1185 1187 1221 1251 
+	}
+}

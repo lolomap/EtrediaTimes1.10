@@ -1,0 +1,27 @@
+state={
+	id=200
+	name="STATE_200"
+	resources={
+		steel = 18 # was: 25
+	}
+
+	history={
+		owner = RTT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = RTT
+		victory_points = {
+			8210 10 
+		}
+
+	}
+	provinces={
+		6622 6659 6830 6869 6964 7037 7194 7251 7420 7512 7598 7728 7755 
+	}
+	manpower=1000000
+	state_category=town
+}

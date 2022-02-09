@@ -1,0 +1,1739 @@
+focus_tree = {
+	id = safflia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SFL
+		}
+	}
+	default = no
+	continuous_focus_position = {x = 0 y = 92}
+	focus = {
+		id = SFL_Polit_izolyacia
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10
+		x = 22
+		y = 0
+		completion_reward = {
+		remove_ideas = SFL_politizol
+		}
+
+	}
+	focus = {
+		id = SFL_moffsc
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_Polit_izolyacia
+		}
+		completion_reward = {
+		MOF = { add_opinion_modifier = { target = ROOT modifier = SFL_mof_relations } }
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = SFL_tradeISH
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = SFL_moffsc
+		}
+		completion_reward = {
+		add_ideas = { SFL_ishtrade }
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = SFL_neutralityy
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.1
+		}
+		prerequisite = {
+			focus = SFL_tradeISH
+		}
+		mutually_exclusive = {
+			focus = SFL_communismm
+			focus = SFL_fascismm
+			focus = SFL_democraticc
+		}
+		completion_reward = {
+			add_timed_idea = { idea = SFL_neutralitydrift days = 600}
+			add_timed_idea = { idea = SFL_mondrift days = 600}
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = SFL_monarh
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}
+		prerequisite = {
+			focus = SFL_neutralityy
+		}
+		mutually_exclusive = {
+			focus = SFL_demking
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = monarchism
+			}
+			add_political_power = 120
+			add_popularity = { ideology = monarchism popularity = 0.2 }
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = SFL_demking
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}
+		prerequisite = {
+			focus = SFL_neutralityy
+		}
+		mutually_exclusive = {
+			focus = SFL_monarh
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = { ideology = neutrality popularity = 0.3 }
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = SFL_fascismm
+		icon = GFX_focus_eng_organise_the_blackshirts
+		cost = 10
+		ai_will_do = {
+			factor = 0.05
+		}
+		prerequisite = {
+			focus = SFL_tradeISH
+		}
+		mutually_exclusive = {
+			focus = SFL_communismm
+			focus = SFL_neutralityy
+			focus = SFL_democraticc
+		}
+		completion_reward = {
+		add_ideas = { SFL_fascismdrift }
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = SFL_democraticc
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.8
+                modifier = {
+			    factor = 1
+			    is_historical_focus_on = yes
+		        }
+		}
+		prerequisite = {
+			focus = SFL_tradeISH
+		}
+		mutually_exclusive = {
+			focus = SFL_communismm
+			focus = SFL_fascismm
+			focus = SFL_neutralityy
+		}
+		completion_reward = {
+		add_ideas = { SFL_democratpeople }
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = SFL_democratic2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_democraticc
+		}
+		completion_reward = {
+		add_political_power = 120
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = SFL_sibconcurent
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_democratic2
+		}
+		completion_reward = {
+		SBU = { add_opinion_modifier { target = ROOT modifier = SFL_concurent } }
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = SFL_tradewar
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_sibconcurent
+		}
+		completion_reward = {
+		SBU = { add_opinion_modifier { target = ROOT modifier = SFL_tradewar } }
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = SFL_mofvliyanie
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_tradewar
+		}
+		completion_reward = {
+		MOF = { add_ideas = { MOF_sflunfluence } }
+		MOF = { country_event = { id = monfua.1 days = 1 } }
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = SFL_vpk
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SFL_tradewar
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = SFL_militaryinf
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = SFL_vpk
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = SFL_ucheniya
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_militaryinf
+		}
+		completion_reward = {
+		army_experience = 20
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = SFL_communismm
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.05
+		}
+		prerequisite = {
+			focus = SFL_tradeISH
+		}
+		mutually_exclusive = {
+			focus = SFL_neutralityy
+			focus = SFL_fascismm
+			focus = SFL_democraticc
+		}
+		completion_reward = {
+		add_ideas = { SFL_communismdrift }
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = SFL_agitburo
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_communismm
+		}
+		completion_reward = {
+		add_popularity = { ideology = communism popularity = 0.2 }
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = SFL_promka
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = SFL_agitburo
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = SFL_subsidii
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = SFL_promka
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 39
+		y = 6
+
+	}
+	focus = {
+		id = SFL_zhizn
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_subsidii
+		}
+		completion_reward = {
+		add_stability = 0.1
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = SFL_armyproblem
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_zhizn
+		}
+		completion_reward = {
+		army_experience = 15
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = SFL_tehnica
+		icon = GFX_focus_generic_tank_production
+		cost = 10
+		ai_will_do = {
+			factor = 0.7
+		}
+		prerequisite = {
+			focus = SFL_ucheniya
+			focus = SFL_armyproblem
+		}
+		mutually_exclusive = {
+			focus = SFL_pehota
+		}
+        completion_reward = {
+        add_ideas = SFL_research
+        }
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = SFL_light
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.8
+		}
+		prerequisite = {
+			focus = SFL_tehnica
+		}
+		mutually_exclusive = {
+			focus = SFL_heavy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = SFL_pehota
+		icon = GFX_focus_secret_rearmament
+		cost = 10
+		ai_will_do = {
+			factor = 0.3
+		}
+		prerequisite = {
+			focus = SFL_ucheniya
+			focus = SFL_armyproblem
+		}
+		mutually_exclusive = {
+			focus = SFL_tehnica
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		x = 33
+		y = 10
+
+	}
+	focus = {
+		id = SFL_communistpact
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_zhizn
+		}
+		completion_reward = {
+		create_faction = SFL_communist_pact
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = SFL_invitertt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_communistpact
+		}
+		completion_reward = {
+		RTT = { country_event = { id = rttevent.1 days = 1 } }
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = SFL_vremenineutrality
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_zhizn
+		}
+		completion_reward = {
+		add_ideas = { neutrality_idea }
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = SFL_communismidea
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_vremenineutrality
+		}
+		completion_reward = {
+		add_ideas = { SFL_communismidea }
+		}
+		x = 41
+		y = 10
+
+	}
+	focus = {
+		id = SFL_communismeconomic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_vremenineutrality
+		}
+		completion_reward = {
+		add_ideas = { SFL_communismeconomic }
+		}
+		x = 45
+		y = 10
+
+	}
+	focus = {
+		id = SFL_bunker
+		icon = GFX_goal_generic_fortify_city
+		cost = 10
+		prerequisite = {
+			focus = SFL_communismidea
+		}
+		prerequisite = {
+			focus = SFL_communismeconomic
+		}
+		x = 43
+		y = 11
+
+	}
+	focus = {
+		id = SFL_nicemove
+		icon = GFX_focus_hol_gateway_to_europe
+		cost = 10
+		prerequisite = {
+			focus = SFL_monarh
+		}
+		completion_reward = {
+		add_ideas = { SFL_nicemove }
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = SFL_attackmof
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_nicemove
+		}
+		will_lead_to_war_with = MOF
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOF
+			}
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = SFL_attackelr
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_nicemove
+		}
+		will_lead_to_war_with = ELR
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ELR
+			}
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = SFL_protectrgy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SFL_nicemove
+		}
+		completion_reward = {
+			RGY = {country_event = {id = rgy.5 days = 1}}
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = SFL_greatsafflia
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SFL_attackmof
+		}
+		prerequisite = {
+			focus = SFL_attackelr
+		}
+		prerequisite = {
+			focus = SFL_protectrgy
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = sfl_controls_mof
+				controls_state = 180
+				controls_state = 179
+				controls_state = 178
+				controls_state = 177
+				controls_state = 176
+				controls_state = 175
+				controls_state = 174
+				controls_state = 173
+				controls_state = 172
+				controls_state = 169
+			}
+			custom_trigger_tooltip = {
+				tooltip = sfl_controls_self
+				controls_state = 188
+				controls_state = 187
+				controls_state = 186
+				controls_state = 185
+				controls_state = 184
+				controls_state = 183
+				controls_state = 182
+			    controls_state = 181
+				controls_state = 168
+				controls_state = 167
+				controls_state = 166
+				controls_state = 165
+				controls_state = 164
+				controls_state = 163
+				controls_state = 162
+				controls_state = 161
+			}
+			custom_trigger_tooltip = {
+				tooltip = sfl_controls_elr
+				controls_state = 170
+			}
+
+			RGY = {is_puppet_of  = SFL}
+
+			is_subject = no
+		}
+
+		completion_reward = {
+			SFL = {set_cosmetic_tag = GRT_SFL}
+			custom_effect_tooltip = grt_sfl_become_core
+			hidden_effect = {
+				180 = {add_core_of = ROOT}
+				179 = {add_core_of = ROOT}
+				178 = {add_core_of = ROOT}
+				177 = {add_core_of = ROOT}
+				176 = {add_core_of = ROOT}
+				175 = {add_core_of = ROOT}
+				174 = {add_core_of = ROOT}
+				173 = {add_core_of = ROOT}
+				172 = {add_core_of = ROOT}
+				169 = {add_core_of = ROOT}
+
+				170 = {add_core_of = ROOT}
+			}
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = SFL_opinion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_demking
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = SFL_sibfriend
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_opinion
+		}
+		mutually_exclusive = {
+			focus = SFL_savatiapact
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = SFL_savatiapact
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_opinion
+		}
+		mutually_exclusive = {
+			focus = SFL_sibfriend
+		}
+		completion_reward = {
+		create_faction = SFL_savatia_pact
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = SFL_etrediapact
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_sibfriend
+		}
+		completion_reward = {
+        country_event = { id = safflia.1 days = 1 }
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = SFL_invitergy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_savatiapact
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = SFL_invitemof
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_savatiapact
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = SFL_inviteelr
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_savatiapact
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = SFL_iidoil
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_mofvliyanie
+		}
+		available = {
+            SFL = {
+			    NOT = {
+				has_war_with = IID
+			    }
+		    }
+	    }
+        completion_reward = {
+        IID = { country_event = { id = dux.5 days = 1 } }
+        }
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = SFL_metal
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = SFL_iidoil
+		}
+        completion_reward = {
+        add_resource = {
+            type = steel
+            amount = 18
+            state = 186
+        }
+        }
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = SFL_economiczone
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_metal
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = SFL_mofsouz
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_economiczone
+		}
+		completion_reward = {
+		MOF = { country_event = { id = monfua.2 days = 1 } }
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = SFL_sbumir
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.6
+	            modifier = {
+			    factor = 1
+			    is_historical_focus_on = yes
+		        }
+		}
+		prerequisite = {
+			focus = SFL_mofsouz
+		}
+		mutually_exclusive = {
+			focus = SFL_sila
+		}
+		completion_reward = {
+		SBU = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+		}
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = SFL_sila
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.4
+		}
+		prerequisite = {
+			focus = SFL_mofsouz
+		}
+		mutually_exclusive = {
+			focus = SFL_sbumir
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = SFL_eastmof1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_sila
+		}
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = SFL_joinetredia
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_sbumir
+		}
+		x = 22
+		y = 13
+
+	}
+	focus = {
+		id = SFL_heavy
+		icon = GFX_goal_unknown
+		cost = 10
+		ai_will_do = {
+			factor = 0.2
+		}
+		prerequisite = {
+			focus = SFL_tehnica
+		}
+		mutually_exclusive = {
+			focus = SFL_light
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = SFL_istrebit
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_light
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = SFL_shturm
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_heavy
+		}
+		x = 30
+		y = 12
+
+	}
+	focus = {
+		id = SFL_ptopvo
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_pehota
+		}
+		x = 33
+		y = 11
+
+	}
+	focus = {
+		id = SFL_mobilization
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = {
+			focus = SFL_ptopvo
+		}
+		completion_reward = {
+			add_ideas = SFL_mobilization
+		}
+		x = 33
+		y = 12
+
+	}
+	focus = {
+		id = SFL_zapretsevero
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_fascismm
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 50
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = SFL_lider
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_zapretsevero
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_politics = { ruling_party = fascism }
+			remove_ideas = { SFL_fascismdrift }
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SFL_promprogrann
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = SFL_lider
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SFL_resourse
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = SFL_lider
+		}
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 16
+				state = 186
+			}
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = SFL_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SFL_promprogrann
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = SFL_complex
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = SFL_promprogrann
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = SFL_oil1
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		prerequisite = {
+			focus = SFL_resourse
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 163
+			}
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = SFL_arms2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SFL_arms
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = SFL_arms3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = SFL_arms
+		}
+		completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = SFL_propoganda
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_complex
+		}
+		prerequisite = {
+			focus = SFL_arms2
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = SFL_odnaparty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_propoganda
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = SFL_odin
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_odnaparty
+		}
+		mutually_exclusive = {
+			focus = SFL_souz
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = SFL_souz
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_odnaparty
+		}
+		mutually_exclusive = {
+			focus = SFL_odin
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = SFL_preparewar
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_souz
+			focus = SFL_odin
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = SFL_fascismarmy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_preparewar
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = SFL_fascismmofelr
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_fascismarmy
+		}
+		will_lead_to_war_with = MOF
+		will_lead_to_war_with = ELR
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ELR
+			}
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = SFL_neria
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_fascismmofelr
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FSC
+				generator = { 68 69 70 }
+			}
+		}
+		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = SFL_eastmof
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_neria
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SBU
+				generator = { 202 203 }
+			}
+		}
+		x = 19
+		y = 15
+
+	}
+	focus = {
+		id = SFL_invitetor
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_communistpact
+		}
+		completion_reward = {
+		TOR = { country_event = { id = toru.1 days = 1 } }
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = SFL_spreycommunism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_invitetor
+		}
+		completion_reward = {
+		add_ideas = SFL_nicemove
+		}
+		x = 37
+		y = 11
+
+	}
+	focus = {
+		id = SFL_spreyMOF
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_spreycommunism
+		}
+		completion_reward = {
+		MOF = { add_ideas = SFL_spreycommunism }
+		}
+		x = 38
+		y = 13
+
+	}
+	focus = {
+		id = SFL_spreyrgy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_spreycommunism
+		}
+		completion_reward = {
+		RGY = { add_ideas = SFL_spreycommunism }
+		}
+		x = 40
+		y = 13
+
+	}
+	focus = {
+		id = SFL_spreysbu
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_spreyMOF
+		}
+		prerequisite = {
+			focus = SFL_spreyrgy
+		}
+		completion_reward = {
+		SBU = { add_ideas = SFL_spreycommunism }
+		}
+		x = 39
+		y = 14
+
+	}
+	focus = {
+		id = SFL_puppetbunt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_spreysbu
+		}
+		x = 39
+		y = 15
+
+	}
+	focus = {
+		id = SFL_cominvitemof
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_spreyMOF
+		}
+		available = { 
+		MOF = { has_government = communism }
+		}
+		completion_reward = {
+		MOF = { country_event = { id = monfua.3 days = 1 } }
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = SFL_cominvitergy
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_spreyrgy
+		}
+		available = { 
+		RGY = { has_government = communism }
+		}
+		completion_reward = {
+		RGY = { country_event = { id = rgy.3 days = 1 } }
+		}
+		x = 41
+		y = 14
+
+	}
+	focus = {
+		id = SFL_spreyucb
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_puppetbunt
+		}
+		completion_reward = {
+		UCB = { add_ideas = SFL_spreycommunism }
+		}
+		x = 38
+		y = 17
+
+	}
+	focus = {
+		id = SFL_spreyiid
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_puppetbunt
+		}
+		completion_reward = {
+		IID = { add_ideas = SFL_spreycommunism }
+		}
+		x = 40
+		y = 17
+
+	}
+	focus = {
+		id = SFL_spreyfsc
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_puppetbunt
+		}
+		completion_reward = {
+		FSC = { add_ideas = SFL_spreycommunism }
+		}
+		x = 35
+		y = 17
+
+	}
+	focus = {
+		id = SFL_spreykar
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_puppetbunt
+		}
+		completion_reward = {
+		KAR = { add_ideas = SFL_spreycommunism }
+		}
+		x = 43
+		y = 17
+
+	}
+	focus = {
+		id = SFL_cominviteucb
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_spreyucb
+		}
+		available = { 
+		UCB = { has_government = communism }
+		}
+		x = 38
+		y = 18
+
+	}
+	focus = {
+		id = SFL_iidrevolt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_spreyiid
+		}
+		x = 40
+		y = 18
+
+	}
+	focus = {
+		id = SFL_cominviteiid
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_iidrevolt
+		}
+		available = { 
+		IID = { has_government = communism }
+		}
+		x = 40
+		y = 19
+
+	}
+	focus = {
+		id = SFL_cominvitekar
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_spreykar
+		}
+		available = { 
+		KAR = { has_government = communism }
+		}
+		x = 43
+		y = 18
+
+	}
+	focus = {
+		id = SFL_cominvitefsc
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = SFL_spreyfsc
+		}
+		available = { 
+		FSC = { has_government = communism }
+		}
+		x = 35
+		y = 18
+
+	}
+}

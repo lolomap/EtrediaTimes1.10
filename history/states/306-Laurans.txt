@@ -1,0 +1,23 @@
+
+state={
+	id=306
+	name="STATE_306"
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = DIR
+		victory_points = {
+			10933 5 
+		}
+
+	}
+	provinces={
+		8815 8937 8938 9040 9062 9126 9156 9157 9198 9267 9368 9369 9394 9407 9447 9492 9514 9515 9568 9586 9600 9676 9700 
+	}
+	manpower=1366000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

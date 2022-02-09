@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+		EconomicFaction = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+		        production_speed_industrial_complex_factor = 0.05
+		        production_speed_infrastructure_factor = 0.08
+		        production_speed_synthetic_refinery_factor = 0.05
+			}
+		}
+
+		wi_trade_influence = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.2
+			}
+
+			cancel = {
+				check_variable = {world_influence < 2}
+			}
+		}
+		wi_faction_trade_influence = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				faction_trade_opinion_factor = 2
+			}
+
+			cancel = {
+				check_variable = {faction_influence < 5}
+			}
+		}
+		wi_economic_faction_trade_influence = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				faction_trade_opinion_factor = 3
+			}
+
+			cancel = {
+				OR = {
+					check_variable = {faction_influence < 7}
+					not = {has_idea = EconomicFaction}
+				}
+			}
+		}
+	}
+}

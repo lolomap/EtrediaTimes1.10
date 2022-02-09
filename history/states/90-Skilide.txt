@@ -1,0 +1,28 @@
+
+state={
+	id=90
+	name="STATE_90"
+	manpower = 17000000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 0
+		}
+		add_core_of = IID
+		victory_points = {
+			9066 15
+		}
+
+	}
+	provinces={
+		8645 8739 8763 8926 8945 8963 8969 8989 9032 9033 9074 9090 9101 9138 9173 9191 9227 9247 9310 9333 9334 9348 9375 9429 9455 9494 9611 9627 
+	}
+}

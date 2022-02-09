@@ -1,0 +1,32 @@
+state={
+	id=60
+	name="STATE_60"
+	manpower = 3900000
+	
+	state_category = large_city
+	
+	resources={
+	}
+
+	history={
+		owner = TRP
+		buildings = {
+			infrastructure = 9
+                        industrial_complex = 3
+                        arms_factory = 1
+                        dockyard = 1
+                        air_base = 2
+			8468 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = TRP
+		victory_points = {
+			8079 20
+		}
+
+	}
+	provinces={
+		6191 6303 6304 6321 6387 6471 6472 6633 6652 6675 6753 6802 6803 6937 6996 7013 7087 7125 7184 7267 7289 7322 7337 7444 7541 
+	}
+}

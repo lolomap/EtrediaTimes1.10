@@ -1,0 +1,26 @@
+state={
+	id=139
+	name="STATE_139"
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PIN
+		victory_points = {
+			12416 1 
+		}
+
+	}
+	provinces={
+		12416 12427 12437 12457 12458 12517 12535 12546 12561 12574 12587 12644 12658 12706 12740 12741 12777 12778 12833 12834 12918 12919 12944 12972 13009 13038 13049 13064 13140 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

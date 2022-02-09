@@ -1,0 +1,27 @@
+
+state={
+	id=653
+	name="STATE_653"
+	manpower = 3900000
+	state_category = town
+	
+	resources={
+		rubber = 12 # was: 12
+	}
+
+	history={
+		owner = LGH
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = LGH
+		victory_points = {
+			766 8
+		}
+
+	}
+	provinces={
+		372 409 420 425 444 459 476 482 493 504 518 525 536 551 580 
+	}
+}

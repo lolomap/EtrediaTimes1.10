@@ -1,0 +1,36 @@
+
+state={
+	id=537
+	name="STATE_537"
+	manpower = 14560789
+	
+	state_category = megalopolis
+	
+	resources={
+             tungsten = 34 # was: 40
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 4
+                        arms_factory = 2
+                        dockyard = 3
+			1874 = {
+				naval_base = 10
+			}
+                        1671 = {
+                                naval_base = 2
+                        }
+		}
+		add_core_of = MOA
+		victory_points = {
+			1874 25
+		}
+
+	}
+	provinces={
+		1227 1239 1276 1291 1350 1365 1372 1429 
+	}
+}

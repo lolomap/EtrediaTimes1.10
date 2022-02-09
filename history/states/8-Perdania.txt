@@ -1,0 +1,33 @@
+state={
+	id=8
+	name="STATE_8"
+	manpower = 1700000
+	
+	state_category = large_city
+	
+	resources={
+		oil = 8 # was: 16
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			10207 = {
+				naval_base = 7
+			}
+		}
+		add_core_of = UCB
+		add_core_of = PER
+		victory_points = {
+			10207 15
+		}
+
+	}
+	provinces={
+		8065 8132 8190 8232 8233 8234 8269 8323 8405 8440 8453 8521 8541 8569 8583 8602 8682 8724 8738 8809 
+	}
+}

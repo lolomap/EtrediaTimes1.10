@@ -1,0 +1,102 @@
+﻿capital = 373
+
+oob = "DON_2014"
+set_naval_oob = "DON_2014_naval_legacy"
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = 0.2
+
+add_ideas = {
+        www_medium_country
+        neutrality_idea
+        free_press
+        DON_politics
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	transport = 1
+	early_destroyer = 1
+        early_submarine = 1
+}
+
+set_convoys = 400
+
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "2009.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 0
+    democratic = 37
+    fascism = 0
+    communism = 0
+    monarchism = 63
+}
+
+#
+create_country_leader = {
+	name = "Doronas IV"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		donatec
+	}
+}
+
+create_country_leader = {
+	name = "Titek Domonos"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rolear Pighuan"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Doronas IV"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_don_doronas.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anant Alexech"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

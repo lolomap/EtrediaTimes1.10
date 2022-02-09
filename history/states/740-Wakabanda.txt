@@ -1,0 +1,27 @@
+
+state={
+	id=740
+	name="STATE_740"
+	manpower = 1336000
+	state_category = rural
+	
+	resources={
+		oil = 36 # was: 42
+	}
+
+	history={
+		owner = ZHI
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = ZHI
+		victory_points = {
+			1614 1
+		}
+
+	}
+	provinces={
+		1084 1086 1132 1140 1141 1144 1151 1159 1163 1180 1189 1200 1223 1233 1249 1257 1268 1275 1282 1313 1325 1333 1336 1348 1423 
+	}
+}

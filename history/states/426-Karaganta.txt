@@ -1,0 +1,29 @@
+
+state={
+	id=426
+	name="STATE_426"
+	manpower = 1670000
+	
+	state_category = large_city
+	
+	resources={
+		
+	}
+
+	history={
+		owner = KAS
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_facotry = 0
+		}
+		add_core_of = KAS
+		victory_points = {
+			14168 1
+		}
+
+	}
+	provinces={
+		14168 14169 14199 14253 14260 14275 14296 14313 14333 14340 14359 14371 14390 14419 14423 14427 14447 14462 14477 14480 14519 14523 14530 14551 14552 14601 14612 14621 14635 
+	}
+}

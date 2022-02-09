@@ -1,0 +1,451 @@
+#Category only allowed for all china
+#Category visible when PRC_coalition_government focus is completed for PRC
+#Category visible when CHI_join_the_republican_government focus is completed for warlord
+
+#Variables and flags and targets to know about
+#Event target WTT_current_china_leader
+#State variable for amount Support Points gained: state_political_support_value
+#State flag: majority_political_platform_<TAG> for whoever has majority in the state
+#Country flag: wtt_political_struggle for all countries involved in the struggle
+
+#Variables:
+#days_remove = global.days_add_support?1337 #DAYS_UNTIL_SUPPORRT_IN_STATE_IS_ADDED
+#days_remove = global.days_remove_support?1337 #DAYS_UNTIL_REMOVE_SUPPORT
+
+
+
+#Nat China
+#595 "Fujian"
+#596 "Zhejiang"
+#597 "Shandong"
+#598 "Jiangsu"
+#600 "Jiangxi"
+#601 "Xikang"
+#602 "Hunan"
+#603 "Guizhou"
+#605 "Sichuan"
+#606 "Anhui"
+#607 "Henan"
+#608 "Beijing"
+#613 "Shanghai"
+#614 "Hebei"
+#620 "Hubei"
+
+#Shanxi
+#615 "Shanxi"
+#621 "Suiyuan"
+
+#Com China
+#622 "Shaanxi"
+
+#Xibei San Ma
+#283 "Gansu"
+#604 "Qinghai"
+#616 "Ningxia"
+
+#Sinkiang
+#287 "Taklamakan"
+#617 "Urumqi"
+#618 "Dzungaria"
+#619 "Yarkand"
+
+#Yunnan
+#325 "Yunnan"
+
+#Guangxi Clique
+#591 "Hainan"
+#592 "Guangzhou"
+#593 "Guangdong"
+#594 "Nanning"
+#599 "Guangxi"
+
+#Remember to also change the custom tooltip if you change these
+@PP_COST_PER_DAY_GAIN_SUPPORT = -0.75
+@PP_GAIN_PER_DAY_COST_TRIGGER = 0.75
+
+@PP_COST_PER_DAY_REMOVE_OPPOSITION = -0.75
+@PP_GAIN_PER_DAY_REMOVE_OPPOSITION_TRIGGER = 0.75
+
+CHI_political_power_struggle = {
+
+	WTT_national_leadership = {
+	
+	}
+
+
+###  #  # ### #   ###       ## #  # ###  ###   ##  ###  ###     ### #  #      ## ###  ##  ### ### 
+#  # #  #  #  #   #  #     #   #  # #  # #  # #  # #  #  #       #  ## #     #    #  #  #  #  #   
+###  #  #  #  #   #  #      #  #  # ###  ###  #  # ###   #       #  # ##      #   #  ####  #  ##  
+#  # #  #  #  #   #  #       # #  # #    #    #  # #  #  #       #  #  #       #  #  #  #  #  #   
+###   ##  ### ### ###      ##   ##  #    #     ##  #  #  #      ### #  #     ##   #  #  #  #  ### 
+
+	#Nat China
+
+	#595 "Fujian"
+	WTT_build_support_in_fujian = {
+
+	}
+
+	#596 "Zhejiang"
+	WTT_build_support_in_zhejiang = {
+
+	}
+
+	#597 "Shandong"
+	WTT_build_support_in_shandong = {
+
+	}
+
+	#598 "Jiangsu"
+	WTT_build_support_in_jiangsu = {
+
+	}
+
+	#600 "Jiangxi"
+	WTT_build_support_in_jiangxi = {
+
+	}
+
+	#601 "Xikang"
+	WTT_build_support_in_xikang = {
+
+	}
+
+	#602 "Hunan"
+	WTT_build_support_in_hunan = {
+
+	}
+
+	#603 "Guizhou"
+	WTT_build_support_in_guizhou = {
+
+	}
+
+	#605 "Sichuan"
+	WTT_build_support_in_sichuan = {
+
+	}
+
+	#606 "Anhui"
+	WTT_build_support_in_anhui = {
+	
+	}
+
+	#607 "Henan"
+	WTT_build_support_in_henan = {
+
+	}
+
+	#608 "Beijing"
+	WTT_build_support_in_beijing = {
+
+	}
+
+	#613 "Shanghai"
+	WTT_build_support_in_shanghai = {
+
+	}
+
+	#614 "Hebei"
+	WTT_build_support_in_hebei = {
+
+	}
+
+	#620 "Hubei"
+	WTT_build_support_in_hubei = {
+
+	}
+
+	#Shanxi
+
+	#615 "Shanxi"
+	WTT_build_support_in_shanxi = {
+
+	}
+
+	#621 "Suiyuan"
+	WTT_build_support_in_suiyuan = {
+
+	}
+
+	#Com China
+
+	#622 "Shaanxi"
+	WTT_build_support_in_shaanxi = {
+
+	}
+
+	#Xibei San Ma
+
+	#283 "Gansu"
+	WTT_build_support_in_gansu = {
+
+	}
+
+	#604 "Qinghai"
+	WTT_build_support_in_qinghai = {
+
+	}
+
+	#616 "Ningxia"
+	WTT_build_support_in_ningxia = {
+
+	}
+
+	#Sinkiang
+
+	#287 "Taklamakan"
+	WTT_build_support_in_taklamakan = {
+
+	}
+
+	#617 "Urumqi"
+	WTT_build_support_in_urumqi = {
+
+	}
+
+	#618 "Dzungaria"
+	WTT_build_support_in_dzungaria = {
+
+	}
+
+	#619 "Yarkand"
+	WTT_build_support_in_yarkand = {
+
+	}
+
+	#Yunnan
+
+	#325 "Yunnan"
+	WTT_build_support_in_yunnan = {
+
+	}
+
+	#Guangxi Clique
+
+	#591 "Hainan"
+	WTT_build_support_in_hainan = {
+
+	}
+
+	#592 "Guangzhou"
+	WTT_build_support_in_guangzhou = {
+
+	}
+
+	#593 "Guangdong"
+	WTT_build_support_in_guangdong = {
+
+	}
+
+	#594 "Nanning"
+	WTT_build_support_in_nanning = {
+
+	}
+
+	#599 "Guangxi"
+	WTT_build_support_in_guangxi = {
+
+	}
+
+ ## #  # ###  ###   ##  ###  ###     ### ###   ##  #   #     #   #  ##  ###  #    ##  ###  ###  
+#   #  # #  # #  # #  # #  #  #      #   #  # #  # ## ##     #   # #  # #  # #   #  # #  # #  # 
+ #  #  # ###  ###  #  # ###   #      ##  ###  #  # # # #     # # # #### ###  #   #  # ###  #  # 
+  # #  # #    #    #  # #  #  #      #   #  # #  # #   #     # # # #  # #  # #   #  # #  # #  # 
+##   ##  #    #     ##  #  #  #      #   #  #  ##  #   #      # #  #  # #  # ###  ##  #  # ###  
+
+@WARLORD_SUPPORT_NUM_STEPS_FROM_SAME_IDEOLOGY = 2
+@WARLORD_SUPPORT_NUM_STEPS_FROM_OPINION = 6
+@WARLORD_SUPPORT_MINIMUM_OPINION = -25
+
+	WTT_seek_support_from_warlord = {
+
+	}
+
+	WTT_pay_for_support_from_warlord_PP = {
+
+	}
+
+	WTT_pay_for_support_from_warlord_equipment = {
+
+	}
+
+	WTT_pay_for_support_from_warlord_xp = {
+
+	}
+
+
+###  ### #   #  ##  #   # ###      ##  ###  ###   ##   ## ### ### ###  ##  #  #      ## #  # ###  ###   ##  ###  ### 
+#  # #   ## ## #  # #   # #       #  # #  # #  # #  # #    #   #   #  #  # ## #     #   #  # #  # #  # #  # #  #  #  
+###  ##  # # # #  #  # #  ##      #  # ###  ###  #  #  #   #   #   #  #  # # ##      #  #  # ###  ###  #  # ###   #  
+#  # #   #   # #  #  # #  #       #  # #    #    #  #   #  #   #   #  #  # #  #       # #  # #    #    #  # #  #  #  
+#  # ### #   #  ##    #   ###      ##  #    #     ##  ##  ###  #  ###  ##  #  #     ##   ##  #    #     ##  #  #  #  
+
+	#Nat China
+	#595 "Fujian"
+	WTT_remove_opposition_in_fujian = {
+
+	}
+
+	#596 "Zhejiang"
+	WTT_remove_opposition_in_zhejiang = {
+
+	}
+
+	#597 "Shandong"
+	WTT_remove_opposition_in_shandong = {
+
+	}
+
+	#598 "Jiangsu"
+	WTT_remove_opposition_in_jiangsu = {
+
+	}
+
+	#600 "Jiangxi"
+	WTT_remove_opposition_in_jiangxi = {
+
+	}
+
+	#601 "Xikang"
+	WTT_remove_opposition_in_xikang = {
+
+	}
+
+	#602 "Hunan"
+	WTT_remove_opposition_in_hunan = {
+
+	}
+
+	#603 "Guizhou"
+	WTT_remove_opposition_in_guizhou = {
+
+	}
+
+	#605 "Sichuan"
+	WTT_remove_opposition_in_sichuan = {
+	
+	}
+
+	#606 "Anhui"
+	WTT_remove_opposition_in_anhui = {
+	
+	}
+
+	#607 "Henan"
+	WTT_remove_opposition_in_henan = {
+	
+	}
+
+	#608 "Beijing"
+	WTT_remove_opposition_in_beijing = {
+	
+	}
+
+	#613 "Shanghai"
+	WTT_remove_opposition_in_shanghai = {
+	
+	}
+
+	#614 "Hebei"
+	WTT_remove_opposition_in_hebei = {
+	
+	}
+
+	#620 "Hubei"
+	WTT_remove_opposition_in_hubei = {
+	
+	}
+
+
+	#Shanxi
+	#615 "Shanxi"
+	WTT_remove_opposition_in_shanxi = {
+	
+	}
+
+	#621 "Suiyuan"
+	WTT_remove_opposition_in_suiyuan = {
+	
+	}
+
+
+	#Com China
+	#622 "Shaanxi"
+	WTT_remove_opposition_in_shaanxi = {
+	
+	}
+
+
+	#Xibei San Ma
+	#283 "Gansu"
+	WTT_remove_opposition_in_gansu = {
+	
+	}
+
+	#604 "Qinghai"
+	WTT_remove_opposition_in_qinghai = {
+	
+	}
+
+	#616 "Ningxia"
+	WTT_remove_opposition_in_ningxia = {
+	
+	}
+
+
+	#Sinkiang
+	#287 "Taklamakan"
+	WTT_remove_opposition_in_taklamakan = {
+	
+	}
+
+	#617 "Urumqi"
+	WTT_remove_opposition_in_urumqi = {
+	
+	}
+
+	#618 "Dzungaria"
+	WTT_remove_opposition_in_dzungaria = {
+	
+	}
+
+	#619 "Yarkand"
+	WTT_remove_opposition_in_yarkand = {
+	
+	}
+
+
+	#Yunnan
+	#325 "Yunnan"
+	WTT_remove_opposition_in_yunnan = {
+	
+	}
+
+	#Guangxi Clique
+	#591 "Hainan"
+	WTT_remove_opposition_in_hainan = {
+	
+	}
+
+	#592 "Guangzhou"
+	WTT_remove_opposition_in_guangzhou = {
+	
+	}
+
+	#593 "Guangdong"
+	WTT_remove_opposition_in_guangdong = {
+		
+	}
+
+	#594 "Nanning"
+	WTT_remove_opposition_in_nanning = {
+	
+	}
+
+	#599 "Guangxi"
+	WTT_remove_opposition_in_guangxi = {
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+state={
+	id=74
+	name="STATE_74"
+	manpower = 5300000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+                        dockyard = 4
+			9510 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = IID
+		add_core_of = BKH
+		victory_points = {
+			9510 5
+		}
+
+	}
+	provinces={
+		7813 7934 8012 8034 8080 8081 8209 8324 8346 8367 8481 
+	}
+}

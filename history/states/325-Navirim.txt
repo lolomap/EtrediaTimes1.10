@@ -1,0 +1,27 @@
+
+state={
+	id=325
+	name="STATE_325"
+	manpower = 3000000
+	
+	state_category = town
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 6
+                        dockyard = 1
+			13863 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = EIK
+		victory_points = {
+			13863 15
+		}
+
+	}
+	provinces={
+		13863 13888 13904 13965 13966 13986 13998 14008 14027 14056 14077 14086 14092 14109 14144 14145 14155 14172 14191 14208 
+	}
+}

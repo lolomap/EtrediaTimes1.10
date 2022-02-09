@@ -1,0 +1,29 @@
+
+state={
+	id=624
+	name="STATE_624"
+	manpower = 7800000
+	
+	state_category = town
+	
+	resources={
+		oil = 4 # was: 4
+	}
+
+	history={
+		owner = GWA
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 2
+		}
+		add_core_of = GWA
+		victory_points = {
+			8877 5
+		}
+
+	}
+	provinces={
+		7257 7359 7590 7628 7675 7676 7748 7953 8149 8420 
+	}
+}

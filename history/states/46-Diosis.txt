@@ -1,0 +1,29 @@
+state={
+	id=46
+	name="STATE_46"
+	manpower = 1200000
+	
+	state_category = rural
+	
+	resources={
+		steel = 27 # was: 50
+                tungsten = 12 # was: 32
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 3
+                        air_base = 1
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			5841 5
+		}
+
+	}
+	provinces={
+		4730 4731 4861 4878 4923 4956 4987 4988 5041 5067 5126 5143 5163 5201 5202 5218 5240 5263 5340 5341 5342 5362 5363 5480 5497 5498 5519 5520 5586 5679 
+	}
+}

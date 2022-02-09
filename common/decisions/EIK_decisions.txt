@@ -1,0 +1,634 @@
+EIK_oligarchism_rejection = {
+	EIK_blank = {
+		available = {always = no}
+		visible = {has_government = fascism}
+	}
+
+	EIK_launch_oligarchism = {
+		allowed = {
+			tag = EIK
+			has_government = fascism
+		}
+		activation = {
+			not = {has_country_flag = eik_cd_oli_event}
+		}
+		available = {
+			OR = {
+				not = {has_government = fascism}
+				hidden_trigger = {
+					has_country_flag = eik_cd_oli_event
+				}
+			}
+		}
+		is_good = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			effect_tooltip = {
+				if = {
+					limit = {check_variable = {eik_oligarchism < 0.7}}
+					random_list = {
+						10 = {
+							country_event = eik.23
+						}
+						10 = {
+							country_event = eik.24
+						}
+						10 = {
+							country_event = eik.25
+						}
+						10 = {
+							country_event = eik.26
+						}
+					
+					}
+				}
+				else = {
+					random_list = {
+						10 = {
+							country_event = eik.23
+						}
+						10 = {
+							country_event = eik.24
+						}
+						10 = {
+							country_event = eik.25
+						}
+						10 = {
+							country_event = eik.26
+						}
+						10 = {
+							country_event = eik.27
+						}
+						10 = {
+							country_event = eik.28
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				country_event = eik.29
+				random_list = {
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_oli_event
+							days = 30
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_oli_event
+							days = 60
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_oli_event
+							days = 90
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_oli_event
+							days = 120
+							value = 1
+						}
+					}
+				}
+			}
+			
+		}
+	}
+
+	EIK_launch_army = {
+		allowed = {
+			tag = EIK
+			has_idea = EIK_verha
+			has_government = fascism
+			not = {has_country_leader_with_trait = Army_general}
+		}
+		activation = {
+			not = {has_country_flag = eik_cd_army_event}
+		}
+		available = {
+			OR = {
+				has_country_leader_with_trait = Army_general
+				not = {has_idea = EIK_verha}
+				not = {has_government = fascism}
+				hidden_trigger = {
+					has_country_flag = eik_cd_army_event
+				}
+			}
+		}
+		is_good = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			effect_tooltip = {
+				if = {
+					limit = {check_variable = {eik_army < 0.7}}
+					random_list = {
+						10 = {
+							country_event = eik.16
+						}
+						10 = {
+							country_event = eik.17
+						}
+						10 = {
+							country_event = eik.18
+						}
+						10 = {
+							country_event = eik.19
+						}
+					
+					}
+				}
+				else = {
+					random_list = {
+						10 = {
+							country_event = eik.16
+						}
+						10 = {
+							country_event = eik.17
+						}
+						10 = {
+							country_event = eik.18
+						}
+						10 = {
+							country_event = eik.19
+						}
+						10 = {
+							country_event = eik.20
+						}
+						10 = {
+							country_event = eik.21
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				country_event = eik.22
+				random_list = {
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_army_event
+							days = 30
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_army_event
+							days = 60
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_army_event
+							days = 90
+							value = 1
+						}
+					}
+					25 = {
+						set_country_flag = {
+							flag = eik_cd_army_event
+							days = 120
+							value = 1
+						}
+					}
+				}
+			}
+			
+		}
+	}
+
+	EIK_oli_coup = {
+		allowed = {
+			tag = EIK
+			check_variable = {eik_oligarchism < 0.1}
+			has_government = fascism
+		}
+		activation = {
+			check_variable = {eik_oligarchism < 0.1}
+			has_government = fascism
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = eik_oligarchism_more_10
+					check_variable = {eik_oligarchism > 0.1}
+				}
+				not = {has_government = fascism}
+			}
+		}
+		is_good = no;
+		days_mission_timeout = 30
+		timeout_effect = {
+			country_event = {id = eik.14 days = 1}
+		}
+	}
+
+	EIK_arm_coup = {
+		allowed = {
+			tag = EIK
+			check_variable = {eik_army < 0.1}
+			has_government = fascism
+			not = {has_country_leader_with_trait = Army_general}
+		}
+		activation = {
+			check_variable = {eik_army < 0.1}
+			has_government = fascism
+			not = {has_country_leader_with_trait = Army_general}
+		}
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = eik_army_more_10
+					check_variable = {eik_army > 0.1}
+				}
+				not = {has_government = fascism}
+				has_country_leader_with_trait = Army_general
+			}
+		}
+		is_good = no;
+		days_mission_timeout = 30
+		timeout_effect = {
+			country_event = {id = eik.15 days = 1}
+		}
+	}
+}
+
+EIK_release_diria_minors = {
+	
+	EIK_release_Novadiria = {
+
+		icon = generic_nationalism
+
+		available = {
+		263 = { is_controlled_by = EIK }
+		264 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		263 = { is_controlled_by = EIK }
+		264 = { is_controlled_by = EIK }
+			NOV = {
+				exists = no
+			}
+		}
+
+		visible = {
+		263 = { is_controlled_by = EIK }
+		264 = { is_controlled_by = EIK }
+			NOV = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			NOV = {
+            transfer_state = 264
+            transfer_state = 263 
+            add_state_core = 264
+            add_state_core = 263
+		    load_oob = _NOV
+            }
+		puppet = NOV
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+	
+	EIK_release_Baljury = {
+
+		icon = generic_nationalism
+
+		available = {
+		260 = { is_controlled_by = EIK }
+		256 = { is_controlled_by = EIK }
+		257 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		260 = { is_controlled_by = EIK }
+		256 = { is_controlled_by = EIK }
+		257 = { is_controlled_by = EIK }
+			BLJ = {
+				exists = no
+			}
+		}
+
+		visible = {
+		260 = { is_controlled_by = EIK }
+		256 = { is_controlled_by = EIK }
+		257 = { is_controlled_by = EIK }
+			BLJ = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			BLJ = {
+                transfer_state = 260
+                transfer_state = 256 
+                transfer_state = 257 
+                add_state_core = 260
+                add_state_core = 256
+				add_state_core = 257
+			    load_oob = _BLJ
+            }
+		puppet = BLJ
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+	
+	EIK_release_Ferdy = {
+
+		icon = generic_nationalism
+
+		available = {
+		269 = { is_controlled_by = EIK }
+		272 = { is_controlled_by = EIK }
+		270 = { is_controlled_by = EIK }
+		267 = { is_controlled_by = EIK }
+		268 = { is_controlled_by = EIK }
+		271 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		269 = { is_controlled_by = EIK }
+		272 = { is_controlled_by = EIK }
+		270 = { is_controlled_by = EIK }
+		267 = { is_controlled_by = EIK }
+		268 = { is_controlled_by = EIK }
+		271 = { is_controlled_by = EIK }
+			FER = {
+				exists = no
+			}
+		}
+
+		visible = {
+		269 = { is_controlled_by = EIK }
+		272 = { is_controlled_by = EIK }
+		270 = { is_controlled_by = EIK }
+		267 = { is_controlled_by = EIK }
+		268 = { is_controlled_by = EIK }
+		271 = { is_controlled_by = EIK }
+			FER = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			FER = {
+                transfer_state = 269
+                transfer_state = 272
+                transfer_state = 270	
+                transfer_state = 271
+                transfer_state = 267
+                transfer_state = 268
+                add_state_core = 269
+                add_state_core = 270
+				add_state_core = 272
+                add_state_core = 271
+                add_state_core = 267
+				add_state_core = 268
+			    load_oob = _FER
+            }
+		puppet = FER
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+	
+	EIK_release_Karnosgar = {
+
+		icon = generic_nationalism
+
+		available = {
+		307 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		307 = { is_controlled_by = EIK }
+			KRS = {
+				exists = no
+			}
+		}
+
+		visible = {
+		307 = { is_controlled_by = EIK }
+			KRS = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			KRS = {
+                transfer_state = 307
+                add_state_core = 307
+			    load_oob = _KRS
+            }
+		puppet = KRS
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+
+	EIK_release_EikDiria = {
+
+		icon = generic_nationalism
+
+		available = {
+		283 = { is_controlled_by = EIK }
+		288 = { is_controlled_by = EIK }
+		286 = { is_controlled_by = EIK }
+		287 = { is_controlled_by = EIK }
+		266 = { is_controlled_by = EIK }
+		285 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		283 = { is_controlled_by = EIK }
+		288 = { is_controlled_by = EIK }
+		286 = { is_controlled_by = EIK }
+		287 = { is_controlled_by = EIK }
+		266 = { is_controlled_by = EIK }
+		285 = { is_controlled_by = EIK }
+			EDI = {
+				exists = no
+			}
+		}
+
+		visible = {
+		283 = { is_controlled_by = EIK }
+		288 = { is_controlled_by = EIK }
+		286 = { is_controlled_by = EIK }
+		287 = { is_controlled_by = EIK }
+		266 = { is_controlled_by = EIK }
+		285 = { is_controlled_by = EIK }
+			EDI = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			EDI = {
+                transfer_state = 266
+                transfer_state = 283
+                transfer_state = 285	
+                transfer_state = 286
+                transfer_state = 287
+                transfer_state = 288
+                add_state_core = 266
+                add_state_core = 283
+				add_state_core = 285
+                add_state_core = 286
+                add_state_core = 287
+				add_state_core = 288
+			    load_oob = _EDI
+            }
+				if = {
+					limit = { 265 = { is_controlled_by = EIK } }
+					EDI = {
+						transfer_state = 265
+						add_state_core = 265
+					}
+				}
+				if = {
+					limit = { 284 = { is_controlled_by = EIK } }
+					EDI = {
+						transfer_state = 284
+						add_state_core = 284
+					}
+				}
+		puppet = EDI
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+
+	EIK_release_EikSouthDiria = {
+
+		icon = generic_nationalism
+
+		available = {
+		280 = { is_controlled_by = EIK }
+		278 = { is_controlled_by = EIK }
+		}
+
+		fire_only_once = yes
+		activation = {			
+		280 = { is_controlled_by = EIK }
+		278 = { is_controlled_by = EIK }
+			ESD = {
+				exists = no
+			}
+		}
+
+		visible = {
+		280 = { is_controlled_by = EIK }
+		278 = { is_controlled_by = EIK }
+			ESD = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			ESD = {
+                transfer_state = 278
+                transfer_state = 280
+                add_state_core = 278
+                add_state_core = 280
+			    load_oob = _ESD
+            }
+			if = {
+				limit = { 282 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 282
+					add_state_core = 282
+				}
+			}
+			if = {
+				limit = { 281 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 281
+					add_state_core = 281
+				}
+			}
+			if = {
+				limit = { 277 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 277
+					add_state_core = 277
+				}
+			}
+			if = {
+				limit = { 305 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 305
+					add_state_core = 305
+				}
+			}
+			if = {
+				limit = { 276 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 276
+					add_state_core = 276
+				}
+			}
+			if = {
+				limit = { 275 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 275
+					add_state_core = 275
+				}
+			}
+			if = {
+				limit = { 279 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 279
+					add_state_core = 279
+				}
+			}
+			if = {
+				limit = { 306 = { is_controlled_by = EIK } }
+				ESD = {
+					transfer_state = 306
+					add_state_core = 306
+				}
+			}
+		puppet = ESD
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=167
+	name="STATE_167"
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = SFL
+		add_core_of = SZE
+		victory_points = {
+			7269 1 
+		}
+
+	}
+	provinces={
+		7269 7294 7325 7363 7400 7401 7418 7480 7481 7528 7542 7595 7635 7684 7685 7717 7832 7833 7849 7963 7964 8139 
+	}
+	manpower=900000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

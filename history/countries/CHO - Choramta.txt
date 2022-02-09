@@ -1,0 +1,93 @@
+﻿capital = 369
+
+oob = "CHO_2014"
+
+set_research_slots = 3
+set_stability = 0.9
+set_war_support = 0.2
+
+add_ideas = {
+        www_best_country
+        total_free_press
+        general_entry
+        DON_politics
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	gw_artillery = 1
+
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+
+	transport = 1
+	early_light_cruiser = 1
+}
+
+set_convoys = 200
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2013.1.1"
+	election_frequency = 50
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 4
+        democratic = 72
+        fascism = 0
+        communism = 24
+}
+
+#
+create_country_leader = {
+	name = "Espano Gildo"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Joso Bobes"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kendri Losental"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bae_leader1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nimali Redrizko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

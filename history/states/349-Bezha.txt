@@ -1,0 +1,23 @@
+
+state={
+	id=349
+	name="STATE_349"
+	manpower = 2450000
+	
+	state_category = town
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = EIK
+		victory_points = {
+			12699 5
+		}
+
+	}
+	provinces={
+		14048 14166 14186 14274 14344 14348 14358 
+	}
+}

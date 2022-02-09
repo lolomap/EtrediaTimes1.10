@@ -1,0 +1,30 @@
+﻿l_russian:
+  peaceful_democratic:0 "Миротворческая деятельность"
+  peaceful_democratic_desc:0 "При той напряжённой ситуации в мире, что мы имеем, когда между всё большим количеством стран разгораются конфликты, а фашистские идеологии представляют всё большую опасность, необходимо создать силу, способную сохранить мир и распространить демократические принципы.\n\n§YУ вас §G[?pi_master]§! очков миротворчества.§!\nЧем больше у вас очков, тем больше действий вы сможете совершить"
+  
+  ReduceWorldTension:0 "Созыв международной конференции"
+  ReduceWorldTension_desc:0 "Созыв международной конференции"
+  PEACE_ConferenceParticepence:0 "Участие в миротворческой миссии"
+
+  GlobalPropaganda:0 "Международная пропаганда мира"
+
+  DemilitarizationAgreement:0 "Договор о разоружении"
+  pi_master_more_then_70:0 "Больше 70 очков миротворчества"
+  pi_master_more_then_40:0 "Больше 40 очков миротворчества"
+  PEACE_DemilitarizationAgree:0 "Подписан договор о разоружении"
+  NukeAgreement:0 "Ядерное разоружение"
+  DemocraticExport:0 "Экспорт демократии в [FROM.GetNameDef]"
+  PeaceMakers:0 "Создание миротворческой армии"
+
+  conference_diplomacy:0 "Результат переговоров"
+  democratic_independence_effect:0 "Демократические свободы"
+  FoundEconomicFaction:0 "Создание экономического союза"
+  FoundEconomicFaction_desc:0 "Создание экономического союза"
+  faction_threat_less_then_one:0 "Мировая напряженность, созданная альянсом, меньше 1%"
+  RebelBrownDanger:0 "Противостоять коричневой угрозе"
+  RebelRedDanger:0 "Противостоять красной угрозе"
+  RebelImperialDanger:0 "Противостоять имперским амбициям"
+  ReduceAgressionLoc:0 "Подавление агрессии [This.GetRulingIdeology] государства"
+  RebelPeaceInfluenceLoc:0 "Противостояние внешнему давлению -[?world_influence]"
+  RebelPeaceInfluence:0 "Давление от демократических государств [?peaceful_influence]/100"
+  RebelPeaceInfluence_desc:0 "Если давление станет максимальным, то мы не сможем иметь цели войны против других государств"

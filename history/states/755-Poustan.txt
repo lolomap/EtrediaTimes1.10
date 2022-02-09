@@ -1,0 +1,28 @@
+
+state={
+	id=755
+	name="STATE_755"
+	manpower = 2524000
+	state_category = rural
+	
+	resources={
+		oil = 34 # was: 40
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = ATI
+		victory_points = {
+			2578 5
+		}
+
+	}
+	provinces={
+		1720 1787 1875 1883 1924 1951 1959 1992 2036 2063 2068 2127 2128 
+	}
+}

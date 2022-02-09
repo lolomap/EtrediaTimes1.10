@@ -1,0 +1,30 @@
+
+state={
+	id=536
+	name="STATE_536"
+	manpower = 7600000
+	
+	state_category = city
+	
+	resources={
+             tungsten = 2 # was: 4
+             steel = 24 # was: 28
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        arms_factory = 1
+		}
+		add_core_of = MOA
+		victory_points = {
+			1215 15
+		}
+
+	}
+	provinces={
+		1169 1173 1213 1236 1237 1287 1288 1292 1330 1356 1357 1380 1384 1454 
+	}
+}

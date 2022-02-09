@@ -1,0 +1,23 @@
+
+state={
+	id=410
+	name="STATE_410"
+	manpower = 900000
+	
+	state_category = rural
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = EIK
+		victory_points = {
+			13504 1
+		}
+
+	}
+	provinces={
+		13504 13595 13791 13826 
+	}
+}

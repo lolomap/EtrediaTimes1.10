@@ -1,0 +1,129 @@
+foreign_influence = {
+	IID_IntegrateFSC = {
+		visible = {
+			original_tag = IID
+			TRP = {has_country_flag = iid_integrating}
+		}
+		available = {
+			TRP = {
+				check_variable = {iid_influence < 100}
+			}
+		}
+		cost = 50
+
+		complete_effect = {
+			custom_effect_tooltip = TRP_RaiseIIDLoc
+			hidden_effect = {
+				TRP = {
+					add_to_variable = {iid_influence = 12.5}
+					if = {
+						limit = {check_variable = {iid_influence > 99.9}}
+						IID = {puppet = TRP}
+						TRP = {
+							set_politics = {
+								ruling_party = neutrality
+							}
+							clr_country_flag = iid_integrating
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	IID_IntegrateORB = {
+		visible = {
+			original_tag = IID
+			country_exists = ORB
+			ORB = {
+				is_subject = no
+			}
+		}
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			ORB = {set_country_flag = iid_orb_investitions}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 10000
+			}
+		}
+	}
+}
+
+GKZ_moment = {
+	IID_CreateKaratenPraeterAdmin = {
+		visible = {has_country_flag = karaten_prater_admin_available}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = IID_controlKUL
+				controls_state = 53
+				controls_state = 54
+				controls_state = 55
+				controls_state = 56
+				controls_state = 57
+				controls_state = 58
+			}
+			controls_state = 46
+			controls_state = 51
+			controls_state = 52
+			controls_state = 64
+			controls_state = 65
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = IID_CreateKaratenPraeterAdminLoc
+			hidden_effect = {
+				add_state_claim = 53
+				add_state_claim = 54
+				add_state_claim = 55
+				add_state_claim = 56
+				add_state_claim = 57
+				add_state_claim = 58
+				add_state_claim = 46
+				add_state_claim = 51
+				add_state_claim = 52
+				add_state_claim = 64
+				add_state_claim = 65
+				KPA = {
+					transfer_state = 53
+					transfer_state = 54
+					transfer_state = 55
+					transfer_state = 56
+					transfer_state = 57
+					transfer_state = 58
+					transfer_state = 46
+					transfer_state = 51
+					transfer_state = 52
+					transfer_state = 64
+					transfer_state = 65
+
+					add_state_core = 54
+					add_state_core = 58
+					available = 57 
+				}
+				puppet = KPA
+				KPA = {
+					set_politics = {
+						ruling_party = neutrality
+				        elections_allowed = no
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}

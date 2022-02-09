@@ -1,0 +1,30 @@
+
+state={
+	id=507
+	name="STATE_507"
+	manpower = 789000
+	
+	state_category = rural
+	
+	resources={
+                steel = 10 # was: 14
+                aluminium = 30 # was: 35
+	}
+
+	history={
+		owner = BOU
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 0
+		}
+		add_core_of = BOU
+		victory_points = {
+			3949 1
+		}
+
+	}
+	provinces={
+		3213 3218 3244 3252 3317 3323 3324 3346 3362 3388 3398 3403 3410 3423 3428 3476 3477 3482 3497 3505 
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=137
+	name="STATE_137"
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			16144 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = PIN
+		victory_points = {
+			13078 5 
+		}
+
+	}
+	provinces={
+		13078 13187 13188 13218 13240 13267 13268 13308 13354 13371 13410 13510 13532 13576 13622 13657 13678 13736 
+	}
+	manpower=810000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

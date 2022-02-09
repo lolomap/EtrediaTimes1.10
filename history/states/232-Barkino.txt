@@ -1,0 +1,29 @@
+
+state={
+	id=232
+	name="STATE_232"
+	resources={
+		steel=12.000
+		chromium=28.000
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			8155 2 
+		}
+
+	}
+	provinces={
+		6275 6393 6504 6536 6555 6657 6658 6698 6794 6809 6810 6907 6963 6984 7021 7093 7112 7155 7298 7299 7347 7348 7387 7535 7575 7617 7639 7689 7727 7771 7817 7941 
+	}
+	manpower=1350000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

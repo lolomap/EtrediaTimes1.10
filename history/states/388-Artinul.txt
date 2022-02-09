@@ -1,0 +1,37 @@
+
+state={
+	id=388
+	name="STATE_388"
+	manpower = 3400000
+	
+	state_category = large_town
+	
+	resources={
+		steel = 6 # was: 6
+                aluminium = 12 # was: 12
+                tungsten = 10 # was: 20
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        dockyard = 1
+			2567 = {
+				naval_base = 3
+			}
+			2555 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			2567 10
+		}
+
+	}
+	provinces={
+		1916 1927 1935 1955 1964 1978 1979 1997 2013 2014 2019 2029 2048 2059 2060 2080 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=173
+	name="STATE_173"
+	manpower = 3100000
+	state_category = large_town
+
+	history={
+		owner = MOF
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 1
+			4511 = {
+				naval_base = 3
+			}
+
+		}
+		add_core_of = MOF
+		victory_points = {
+			4511 10
+		}
+
+	}
+	provinces={
+		3863 3864 3894 3904 3930 3953 3954 3968 3987 4034 4042 4077 4110 4111 4138 4162 4198 
+	}
+}

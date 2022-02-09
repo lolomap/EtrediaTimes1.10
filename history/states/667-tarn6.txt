@@ -1,0 +1,28 @@
+
+state={
+	id=667
+	name="STATE_667"
+	manpower = 3400000
+	
+	state_category = rural
+	
+	resources={
+		oil = 18 # was: 34
+		steel = 6 # was: 6
+	}
+
+	history={
+		owner = TRN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TRN
+		victory_points = {
+			1215 1
+		}
+
+	}
+	provinces={
+		822 843 863 865 868 869 876 899 911 917 918 927 928 954 955 973 1022 
+	}
+}

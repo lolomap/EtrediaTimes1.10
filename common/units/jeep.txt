@@ -1,0 +1,81 @@
+sub_units = {
+
+	jeep = {
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 900
+		ai_priority = 700
+		active = yes
+
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 1
+
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 2.0
+		
+		#Size Definitions
+		max_strength = 20
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 600
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 1
+		weight = 0.8
+		
+		supply_consumption = 0.12
+		
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			jeep_equipment
+		}
+
+		transport = jeep_equipment
+
+		need = {
+			jeep_equipment = 50
+			infantry_equipment = 50
+		}
+
+		forest = {
+			attack = -0.3
+		}
+		mountain = {
+			attack = -0.04
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		urban = {
+			attack = -0.1
+			defence = 0.05
+		}
+		river = {
+			attack = -0.3
+			movement = -0.3
+		}
+		amphibious = {
+			attack = -0.4
+		}
+
+		hardness = 0.2
+	}
+}

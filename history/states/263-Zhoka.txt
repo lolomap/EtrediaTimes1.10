@@ -1,0 +1,30 @@
+
+state={
+	id=263
+	name="STATE_263"
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+                        air_base = 8
+			dockyard = 1
+			11341 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = DIR
+		victory_points = {
+			11341 15 
+		}
+
+	}
+	provinces={
+		11341 11364 11441 11460 11461 11477 11490 11559 11560 11580 11592 11593 11605 11676 11677 11678 11693 11710 11734 11735 11769 11798 11799 11807 11808 11825 11837 11883 11896 11906 11919 11920 11964 11965 12013 12014 12015 12026 12054 12098 12125 12147 12163 12198 12199 12224 12274 12298 12332 12381 
+	}
+	manpower=3760000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

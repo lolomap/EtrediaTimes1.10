@@ -1,0 +1,25 @@
+state={
+	id=776
+	name="STATE_776"
+	manpower = 550000
+	state_category = pastoral
+	
+	resources={
+		steel = 22 # was: 24
+	}
+
+	history={
+		owner = MIR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MIR
+		victory_points = {
+			2038 1
+		}
+
+	}
+	provinces={
+		1435 1494 1547 1565 1579 1650 1690 
+	}
+}

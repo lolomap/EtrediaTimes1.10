@@ -1,0 +1,28 @@
+state={
+	id=363
+	name="STATE_363"
+	manpower = 200000
+	
+	state_category = rural
+	
+	history={
+		owner = IRI
+		buildings = {
+			infrastructure = 3
+                        4114 = { 
+                             naval_base = 1
+                        }
+                        4341 = { 
+                             naval_base = 1
+                        }
+		}
+		add_core_of = IRI
+		victory_points = {
+			4114 1
+		}
+
+	}
+	provinces={
+		3414 3455 3487 3509 3573 3731 
+	}
+}

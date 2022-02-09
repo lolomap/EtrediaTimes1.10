@@ -1,0 +1,127 @@
+﻿capital = 584
+
+OOB = "ZHE_2014"
+set_naval_oob = "ZHE_2014_naval_legacy"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.8
+
+add_ideas = {
+        WWW_medium_country
+        nonfree_press
+        general_entry
+        ZHE_conscritpiont_problem
+}
+
+	set_autonomy = {
+		target = LBD
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	motorized_rocket_unit = 1
+	gwtank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	tech_mountaineers = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2010.3.5"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 26
+        fascism = 8
+        communism = 2
+	neutrality = 64
+}
+
+set_convoys = 560
+
+create_country_leader = {
+	name = "Natanael Kade Tanaka Catindig"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_anatoly.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Conor Gabino Sanderson Espejo"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Braydon Godfredo Dinguinbayan Caparas"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Montrel Ernesto Lavapiz Guadarrama"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Oliverios Ricardo "
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Geric_land_3.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Guillelmina Kory"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}

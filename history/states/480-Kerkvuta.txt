@@ -1,0 +1,29 @@
+
+state={
+	id=480
+	name="STATE_480"
+	manpower = 2980000
+	
+	state_category = large_town
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 1
+                        dockyard = 0
+			6188 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = CHE
+		victory_points = {
+			6188 20
+		}
+
+	}
+	provinces={
+		5055 5173 5258 5374 5435 5436 5567 5582 5725 
+	}
+}

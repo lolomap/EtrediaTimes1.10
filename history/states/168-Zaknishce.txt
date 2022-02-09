@@ -1,0 +1,24 @@
+
+state={
+	id=168
+	name="STATE_168"
+	manpower = 2100000
+	state_category = town
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = SFL
+		add_core_of = SZE
+		victory_points = {
+			5847 5 
+		}
+
+	}
+	provinces={
+		5847 5875 5911 5912 5984 6024 6039 6113 6114 6115 6207 6233 6269 6289 6308 6343 6370 6389 6451 6452 6476 6511 6531 6583 6613 6637 6638 6710 6733 
+	}
+}

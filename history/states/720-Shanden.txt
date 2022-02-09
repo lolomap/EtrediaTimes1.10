@@ -1,0 +1,31 @@
+state={
+	id=720
+	name="STATE_720"
+	manpower = 1980000
+	state_category = rural
+	
+	resources={
+		oil = 16 # was: 16
+		rubber = 20 # was: 22
+	}
+
+	history={
+		owner = CSH
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			arms_factory = 1
+			3086 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = CSH
+		victory_points = {
+			3086 3
+		}
+
+	}
+	provinces={
+		2530 2543 2557 2558 2566 2584 2592 2617 2631 2657 2697 
+	}
+}

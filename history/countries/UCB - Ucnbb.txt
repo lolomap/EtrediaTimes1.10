@@ -1,0 +1,193 @@
+﻿capital = 8
+
+OOB = "UCB_2014"
+set_naval_oob = "UCB_2014_naval_legacy"
+
+set_research_slots = 4
+set_stability = 0.2
+set_war_support = 0.1
+
+add_ideas = {
+        UCB_polit_crisis
+        UCB_poroh_blet
+        UCB_corruption
+        WWW_best_country
+        UCB_des_army
+        total_free_press
+        limited_entry
+}
+
+	set_autonomy = {
+		target = EGR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	nukes = 1
+	nuclear_reactor = 1
+	nuclear_rockets = 1
+	nuclear_anti = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	cv_CAS1 = 1
+	cv_fighter1 = 1
+	CAS1 = 1
+
+	motorised_infantry = 1
+        mechanised_infantry = 1
+        mechanised_infantry2 = 1
+	motorized_rocket_unit = 1
+	motorized_rocket_unit_2 = 1
+	motorized_rocket_unit_3 = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	jeep_unit_3 = 1
+	jeep_unit_4 = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	improved_medium_tank = 1
+	main_battle_tank = 1
+	main_battle_tank_2 = 1
+	tech_mountaineers = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_battleship = 1
+	transport = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 42
+    fascism = 34
+    communism = 0
+	neutrality = 24
+}
+
+set_convoys = 600
+
+
+create_country_leader = {
+	name = "Oleje Prigat"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_oleg.dds"
+	expire = "2054.1.1"
+	ideology = liberalism
+	traits = {
+		excellent_economist
+	}
+}
+
+create_country_leader = {
+	name = "Парламент"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		nonstability
+	}
+}
+
+create_country_leader = {
+	name = "Anatoly Zhmirinovan"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_anatoly.dds"
+	expire = "2051.1.1"
+	ideology = centrism
+	traits = {
+		nation_saver
+	}
+}
+
+create_country_leader = {
+	name = "Terine Narabel"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_narabel.dds"
+	expire = "2060.1.1"
+	ideology = fascism_ideology
+	traits = {
+	      Charismatic
+	}
+}
+
+create_country_leader = {
+	name = "Anna Helshten"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dmirin Randerko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_dmirin.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Karl Larhson"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_larhson.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Jimas Beldpo"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Silvano Albergo"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}

@@ -1,0 +1,35 @@
+state={
+	id=44
+	name="STATE_44"
+	manpower = 2600000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        air_base = 2
+			6147 = {
+				naval_base = 5
+			}
+			5799 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FSC
+		add_core_of = ORB
+		victory_points = {
+			6319 10
+		}
+
+	}
+	provinces={
+		4858 4899 4921 4985 5036 5037 5089 5090 5091 5124 5125 5140 5178 5216 5238 5261 5262 5279 5305 5306 5337 5338 5339 5404 5419 5420 5421 5460 5479 5492 5555 5556 5571 5611 5636 5728 5746 5766 
+	}
+}

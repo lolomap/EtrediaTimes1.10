@@ -1,0 +1,31 @@
+
+state={
+	id=299
+	name="STATE_299"
+	manpower = 3670000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        dockyard = 3
+			4869 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			4869 10
+		}
+
+	}
+	provinces={
+		3941 4080 4081 4099 4151 4176 4203 4204 4218 4277 4294 4335 4352 4353 4371 4421 4454 4469 4486 4551 4588 4634 4792 
+	}
+}

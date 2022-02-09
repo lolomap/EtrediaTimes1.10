@@ -1,0 +1,29 @@
+
+state={
+	id=593
+	name="STATE_593"
+	resources={
+		oil=5.000
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = ZHE
+		victory_points = {
+			6120 2 
+		}
+
+	}
+
+	provinces={
+		5056 5139 5236 5276 5304 5334 5401 5402 5456 5473 5569 5674 5726 5742 5842 5971 
+	}
+	manpower=547000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

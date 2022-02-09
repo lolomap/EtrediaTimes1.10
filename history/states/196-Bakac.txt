@@ -1,0 +1,23 @@
+state={
+	id=196
+	name="STATE_196"
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = TRB
+		add_core_of = RGY
+		victory_points = {
+			7908 1 
+		}
+
+	}
+	provinces={
+		6717 6791 6829 6961 6982 7110 7153 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

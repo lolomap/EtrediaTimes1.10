@@ -1,0 +1,31 @@
+
+state={
+	id=699
+	name="STATE_699"
+	manpower = 5400000
+	
+	state_category = large_city
+	
+	resources={
+             oil = 16 # was: 18
+             steel = 24 # was: 28
+             tungsten = 2 # was: 4
+	}
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 3
+                        arms_factory = 2
+		}
+		add_core_of = BAR
+		victory_points = {
+			740 30
+		}
+
+	}
+	provinces={
+		416 433 446 466 477 480 491 494 501 509 510 515 531 534 540 548 552 555 559 590 604 
+	}
+}

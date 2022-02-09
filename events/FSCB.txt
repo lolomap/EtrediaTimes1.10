@@ -1,0 +1,434 @@
+add_namespace = fscb
+
+country_event = {
+	id = fscb.1
+	title = fscb.1.t
+	desc = fscb.1.d
+	picture = GFX_news_even
+	
+        is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+        mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = fscb.1.a
+        FSC = {
+            create_wargoal = {
+            type = take_state
+            generator = { 31 }
+            target = UCB
+			}
+		}
+		UCB = {
+		add_timed_idea = { idea = UCB_fsc_at
+                                   days = 30
+                         }
+        FSC = { country_event = { days = 15 id = fscb.2 } }
+		}
+        }
+}
+
+
+country_event = {
+	id = fscb.2
+	title = fscb.2.t
+	desc = fscb.2.d
+	picture = GFX_news_even
+
+        is_triggered_only = yes
+
+        trigger = {
+        TAG = FSC
+        }
+		
+	option = {
+	    name = fscb.2.a
+		       FSC = { declare_war_on = { target = UCB type = annex_everything } }
+	}
+}
+
+country_event = {
+	id = fscb.3
+	title = fscb.3.t
+	desc = fscb.3.d
+	picture = GFX_news_even
+
+        is_triggered_only = yes
+
+        trigger = {
+        TAG = FSC
+        }
+		
+	option = {
+	    name = fscb.3.a
+		FSC = { 
+		    add_state_core = 31
+			}
+        country_event = { days = 1 id = fscb.news.1 }
+	}
+}
+
+
+country_event = {
+	id = fscb.4
+	title = fscb.4.t
+	desc = fscb.4.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+        trigger = {
+        TAG = FSC
+        }
+		
+	option = {
+	    name = fscb.4.a
+            FSC = { add_opinion_modifier = { target = IID modifier = IID_invest_otkaz } }
+	}
+}
+
+country_event = {
+	id = fscb.5
+	title = fscb.5.t
+	desc = fscb.5.d
+	picture = GFX_news_even
+
+    fire_only_once = yes
+
+	trigger = {
+        TAG = FSC
+        44 = { is_controlled_by = UCB }
+        date < 2020.1.1
+    }
+		
+	option = {
+	    name = fscb.5.a
+		FSC = {
+	        white_peace = UCB
+	        diplomatic_relation	= {country = UCB relation = non_aggression_pact active = yes}
+			country_event = { id = fscb.6 days = 30 }
+			country_event = { id = fscb.10 days = 5 }
+			add_timed_idea = { idea = FSC_lose days = 240 }
+		}
+		hidden_effect = {
+			FSC = { 
+			    swap_ideas = {
+				    remove_idea = extensive_conscription
+		            add_idea = disarmed_nation
+	            }
+			    swap_ideas = {
+				    remove_idea = limited_conscription
+		            add_idea = disarmed_nation
+	            }
+				add_manpower = -1000000
+		    }
+		}
+
+		ai_chance = {
+			factor = 90
+			modifier = {
+				has_government = fascism
+				factor = 0
+			}
+
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+    }
+	
+	option = {
+		name = fscb.5.b
+		FSC = {
+		add_timed_idea = { idea = FSC_desperate_defense days = 120 }
+		}
+		hidden_effect = {
+		FSC = { country_event = { id = fscb.11 days = 30 } }
+		}
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				has_government = fascism
+				factor = 100
+			}
+
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fscb.6
+	title = fscb.6.t
+	desc = fscb.6.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+		
+	option = {
+	    name = fscb.6.a
+		hidden_effect = {
+            KUL = {
+            transfer_state = 54
+			transfer_state = 55
+		    add_state_claim = 53
+			add_state_claim = 56
+			add_state_claim = 57
+			add_state_claim = 58
+            load_oob = KUL_rebels
+            add_manpower = 60000
+            }
+            # KUL = { add_ideas = rebels.1 }
+			KUL = {
+				set_rule = {can_join_factions = no}
+			}
+		    KUL = { declare_war_on = { target = FSC type = annex_everything } }
+			country_event = { id = fscb.7 days = 5 }
+			IID = { country_event = { id = dux.4 days = 60 } }
+        }
+	}
+}
+
+country_event = {
+	id = fscb.7
+	title = fscb.7.t
+	desc = fscb.7.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+		
+	option = {
+	    name = fscb.7.a
+		hidden_effect = {
+            ORB = {
+            transfer_state = 44
+			add_state_claim = 45
+            load_oob = ORB_rebels
+            add_manpower = 40000
+            }
+            #ORB = { add_ideas = rebels.1 }
+            ORB = {
+				set_rule = {can_join_factions = no}
+			}
+		    ORB = { declare_war_on = { target = FSC type = annex_everything } }
+			country_event = { id = fscb.8 days = 10 }
+			country_event = { id = fscb.9 days = 12 }
+        }	
+	}
+}
+
+country_event = {
+	id = fscb.8
+	title = fscb.8.t
+	desc = fscb.8.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+		
+	option = {
+	    name = fscb.8.a
+		hidden_effect = {
+            NER = {
+            transfer_state = 68
+			transfer_state = 69
+			transfer_state = 70
+            load_oob = NER_rebels
+            add_manpower = 60000
+            }
+            # NER = { add_ideas = rebels.1 }
+            NER = {
+				set_rule = {can_join_factions = no}
+			}
+		    NER = { declare_war_on = { target = FSC type = annex_everything } }
+			SFL = { country_event = { id = sfl.1 days = 40 } }
+        }	
+	}
+}
+
+country_event = {
+	id = fscb.9
+	title = fscb.9.t
+	desc = fscb.9.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+		
+	option = {
+	    name = fscb.9.a
+		hidden_effect = {
+            ANR = {
+            transfer_state = 47
+			transfer_state = 48
+			transfer_state = 49
+			transfer_state = 50
+			transfer_state = 65
+			transfer_state = 66
+			add_state_claim = 67
+			add_state_claim = 64
+			add_state_claim = 52
+			add_state_claim = 51
+			add_state_claim = 46
+            load_oob = ANR_rebels
+            add_manpower = 40000
+            }
+            # ANR = { add_ideas = rebels.1 }
+            ANR = {
+				set_rule = {can_join_factions = no}
+			}
+		    ANR = { declare_war_on = { target = FSC type = annex_everything } }
+            FSC = { delete_unit = { 
+            state = 47
+            state = 48
+			state = 49
+			state = 50
+			state = 65
+			state = 66
+            disband = yes
+            }}
+        }	
+	}
+}
+
+country_event = {
+	id = fscb.10
+	title = fscb.10.t
+	desc = fscb.10.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+    }
+		
+	option = {
+	    name = fscb.10.a
+		FSC = {
+		add_timed_idea = { idea = FSC_army_bund days = 140 }
+        }
+    }
+}
+
+country_event = {
+	id = fscb.11
+	title = fscb.11.t
+	desc = fscb.11.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = FSC
+		51 = { is_controlled_by = FSC }
+    }
+		
+	option = {
+	    name = fscb.11.a
+		FSC = {
+		load_oob = FSC_defence
+        }
+    }
+}
+
+country_event = {
+	id = fscb.12
+	title = fscb.12.t
+	desc = fscb.12.d
+	picture = GFX_news_even
+
+    fire_only_once = yes
+
+	trigger = {
+        TAG = FSC
+		date < 2014.20.1
+		date > 2014.18.1
+    }
+		
+	option = {
+	    name = fscb.12.a
+	FSC = { add_opinion_modifier = { target = UCB modifier = fsc_ucb_feud } }
+	UCB = { add_opinion_modifier = { target = FSC modifier = fsc_ucb_feud } }
+    }
+}
+
+country_event = {
+	id = fscb.13
+	title = fscb.13.t
+	desc = fscb.13.d
+	picture = GFX_news_even
+
+    fire_only_once = yes
+
+	trigger = {
+        TAG = FSC
+		31 = { is_controlled_by = FSC }
+    }
+		
+	option = {
+	name = fscb.13.a
+		UCB = { country_event = { id = ucnb.16 days = 1 } }
+		ai_chance = { factor = 100 }
+    }
+	option = {
+	name = fscb.13.b
+	ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+	id = fscb.14
+	title = fscb.14.t
+	desc = fscb.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = fscb.14.a
+
+		custom_effect_tooltip = fsc_help_to_trp_agree
+		hidden_effect = {
+			TRP = {set_country_flag = fsc_help_to_trp}
+		}
+
+		add_ideas = FSC_HelpingTRP
+
+		ai_chance = {
+			base = 0.6
+			modifier = {
+				add = 0.2
+				FSC = {has_government = fascism}
+			}
+		}
+	}
+	option = {
+		name = fscb.14.b
+
+		ai_chance = {
+			base = 0.4
+		}
+	}
+}

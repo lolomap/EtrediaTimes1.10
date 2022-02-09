@@ -1,0 +1,23 @@
+state={
+	id=185
+	name="STATE_185"
+	manpower = 400000
+	state_category = rural
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = SFL
+		add_core_of = SZE
+		victory_points = {
+			8040 1 
+		}
+
+	}
+	provinces={
+		6322 6413 6434 6582 6694 6709 6826 6846 6865 6883 6924 6958 6980 7034 7090 7107 7128 7245 
+	}
+}

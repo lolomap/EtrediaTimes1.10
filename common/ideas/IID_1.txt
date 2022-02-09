@@ -1,0 +1,169 @@
+ideas = {
+    country = {	
+		IID_ucbsbupolit = {
+            picture = polit_cris
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+                production_factory_max_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+			}
+		}
+
+		IID_recrut = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			conscription_factor = -0.6
+                	consumer_goods_factor = 0.45
+			}
+		}
+		IID_recrut_reduced = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+                consumer_goods_factor = 0.35
+			}
+		}
+		IID_recrut_reduced2 = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.3
+                consumer_goods_factor = 0.15
+			}
+		}
+
+
+		IID_fscb_inve = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		IID_democrats = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.02
+				political_power_gain = -0.3
+				stability_factor = -0.1
+			}
+		}
+		
+		IID_eco_crisis = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.2
+				political_power_gain = -0.2
+				stability_factor = -0.05
+				communism_drift = 0.01
+			}
+		}
+
+		IID_eco_crisis2 = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.4
+				political_power_gain = -0.3
+				stability_factor = -0.08
+			}
+		}
+		
+		IID_neutrality = {
+            picture = iid_economic
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				mobilization_laws_cost_factor = 1
+				join_faction_tension = 0.1
+				generate_wargoal_tension = 0.2
+				guarantee_cost = 0.3
+				lend_lease_tension = 0.2
+			}
+		}
+
+		IID_Dux = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_factor = 0.1
+			}
+		}
+
+		IID_investations_climate = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.5
+				fascism_acceptance = 20
+				democratic_acceptance = 20
+				monarchism_acceptance = 20
+				neutrality_acceptance = 20
+			}
+			
+		}
+
+		IID_sanctions = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = -2
+				production_speed_buildings_factor = -0.4
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+			}
+			
+		}
+
+		IID_StrategicMemberOfTrading = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 2
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+ideas = {
+    country = {	
+	IID_recrut = {
+
+            picture = iid_economic
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = -0.6
+                consumer_goods_factor = 0.45
+			}
+		}
+
+	IID_fscb_inve = {
+
+            picture = iid_economic
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+scripted_gui = {
+	nuke_moded = {
+		window_name = "nuking_replace_window"
+		context_type = selected_state_context
+		parent_window_name = province_info_window
+
+		visible = {always = yes}
+
+		triggers = {
+			nuke_province_moded_visible = {
+				not = {is_controlled_by = ROOT}
+				#always = yes
+			}
+			nuke_province_click_enabled = {
+				owner = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		effects = {
+			nuke_province_moded_click = {
+				ROOT = {
+					if = {
+						limit = {
+							OR = {
+								is_in_faction = no
+								is_faction_leader = yes
+								has_country_flag = nuke_request_accepted
+							}
+							num_of_nukes > 0
+							PREV = {
+								owner = {
+									check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
+								}
+							}
+						}
+
+						launch_nuke = {
+							state = PREV
+							use_nuke = yes
+						}
+					}
+				}
+			}
+		}
+
+		ai_enabled = {
+			always = yes
+			
+		}
+
+		ai_weights = {
+			nuke_province_moded_click = {
+				ai_will_do = {
+					factor = 10000
+					modifier = {
+						factor = 0
+						OR = {
+							ROOT = {not = {has_country_flag = nuke_request_accepted}}
+							not = {owner = {has_war_with = ROOT}}
+							not = {owner = {ROOT = {has_war_with = PREV}}}
+						}
+						ROOT = {not = {has_country_flag = debug_nuke_mod}}
+					}
+				}
+			}
+		}
+	}
+}

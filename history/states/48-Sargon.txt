@@ -1,0 +1,28 @@
+state={
+	id=48
+	name="STATE_48"
+	manpower = 2300000
+	
+	state_category = town
+	
+	resources={
+		aluminium = 8 # was: 12
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 1
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			5181 10
+		}
+
+	}
+	provinces={
+		4168 4194 4282 4283 4341 4377 4428 4475 4493 4580 4593 
+	}
+}

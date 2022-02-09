@@ -1,0 +1,26 @@
+state={
+	id=146
+	name="STATE_146"
+	resources={
+		oil=6.000
+	}
+
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = FIL
+		victory_points = {
+			12643 1 
+		}
+
+	}
+	provinces={
+		12643 12657 12739 12766 12807 12808 12916 12917 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

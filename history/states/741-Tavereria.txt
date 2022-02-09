@@ -1,0 +1,27 @@
+
+state={
+	id=741
+	name="STATE_741"
+	manpower = 1100000
+	state_category = pastoral
+	
+	resources={
+		steel = 6 # was: 6
+		tungsten = 15 # was: 20
+	}
+
+	history={
+		owner = ZHI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ZHI
+		victory_points = {
+			1805 1
+		}
+
+	}
+	provinces={
+		1263 1274 1294 1300 1309 1324 1351 1361 1362 1369 1377 1416 1436 1449 1477 1489 1495 
+	}
+}

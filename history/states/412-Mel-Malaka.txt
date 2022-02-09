@@ -1,0 +1,32 @@
+
+state={
+	id=412
+	name="STATE_412"
+	manpower = 1450000
+	
+	state_category = rural
+	
+	resources={
+		steel = 2 # was: 4
+                chromium = 6 # was: 8
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 2
+                        dockyard = 1
+		}
+		add_core_of = EIK
+		add_core_of = TSH
+		victory_points = {
+			11699 1
+		}
+
+	}
+	provinces={
+		12323 12376 12447 12508 12509 12529 12566 12582 12634 12668 12722 12734 12800 12858 12867 12888 12965 12989 12990 13001 13044 13072 13133 13158 13247 13248 13249 13302 13406 13430 13466 
+	}
+}

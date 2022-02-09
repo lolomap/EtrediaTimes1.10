@@ -1,0 +1,33 @@
+
+state={
+	id=461
+	name="STATE_461"
+	manpower = 1330000
+
+	resources={
+		steel = 6 # was: 6
+	}
+	
+	state_category = town
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+			8388 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CHE
+		victory_points = {
+			8388 5
+		}
+
+	}
+	provinces={
+		10253 10303 10324 10451 10486 10606 10729 10776 10807 10903 11062 11191 11418 11426 11544 11773 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=687
+	name="STATE_687"
+	manpower = 1900000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        dockyard = 1
+		}
+		add_core_of = SOU
+		victory_points = {
+			180 10
+		}
+
+	}
+	provinces={
+		245 252 259 267 270 276 285 291 300 304 327 
+	}
+}

@@ -1,0 +1,28 @@
+state={
+	id=225
+	name="STATE_225"
+	manpower = 8400000
+	state_category = metropolis
+
+	resources={
+		oil=18.000
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+                        air_base = 8
+		}
+		add_core_of = TRB
+		victory_points = {
+			6038 30 
+		}
+
+	}
+	provinces={
+		5048 5077 5130 5188 5253 5254 
+	}
+}

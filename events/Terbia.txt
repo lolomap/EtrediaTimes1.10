@@ -1,0 +1,241 @@
+add_namespace = terbia
+
+country_event = {
+	id = terbia.1
+	title = terbia.1.t
+	desc = terbia.1.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+
+	trigger = {
+        date > 2015.4.20
+        TAG = TRB
+    }
+    mean_time_to_happen = {
+        days = 120
+    }
+
+	option = {
+		name = terbia.1.a
+            set_politics = {
+                ruling_party = communism 
+		    }
+			add_popularity = {
+            ideology = communism
+            popularity = 0.2
+           }
+    }
+}
+
+country_event = {
+	id = terbia.2
+	title = terbia.2.t
+	desc = terbia.2.d
+	picture = GFX_news_even
+	
+        is_triggered_only = yes
+
+	option = {
+		name = terbia.2.a
+                BPR = {
+                transfer_state = 234
+                transfer_state = 235
+                transfer_state = 236
+                transfer_state = 233
+                add_state_core = 233
+                add_state_core = 234
+                add_state_core = 235
+                add_state_core = 236
+                load_oob = BPR_separi
+                add_manpower = 18000
+                }
+                YAN = {
+                puppet = BPR
+                }
+                TRB = { country_event = { id = terbia.3 days = 5 } }
+        }
+}
+
+country_event = {
+	id = terbia.3
+	title = terbia.3.t
+	desc = terbia.3.d
+	picture = GFX_news_even
+	
+        is_triggered_only = yes
+
+	option = {
+		name = terbia.3.a
+		ai_chance = { factor = 80 }
+                TRB = { add_war_support = -1 }
+        }
+
+	option = {
+		name = terbia.3.b
+                TRB = { create_wargoal = { type = take_state_focus generator = { 236 } target = BPR } }
+		ai_chance = { factor = 20 }
+        }
+}
+
+country_event = {
+	id = terbia.4
+	title = terbia.4.t
+	desc = terbia.4.d
+	picture = GFX_news_even
+	
+        is_triggered_only = yes
+
+	option = {
+		name = terbia.4.a
+                RTT = {
+                transfer_state = 198
+                }
+        }
+}
+
+country_event = {
+	id = terbia.5
+	title = terbia.5.t
+	desc = terbia.5.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	option = {
+	name = terbia.5.a
+    ai_chance = { factor = 70 }
+	hidden_effect = {
+	SBU = { country_event = { id = sbu.7 days = 1 } }
+    }
+    }
+	option = {
+	name = terbia.5.b
+    ai_chance = { factor = 30 }
+	hidden_effect = {
+	SBU = { country_event = { id = sbu.8 days = 1 } }
+    }
+	}
+}
+
+country_event = {
+	id = terbia.6
+	title = terbia.6.t
+	desc = terbia.6.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	option = {
+	name = terbia.6.a
+        SBU = {
+        add_to_faction = TRB
+        }     
+    }
+}
+
+country_event = {
+	id = terbia.7
+	title = terbia.7.t
+	desc = terbia.7.d
+	picture = GFX_report_event_chamberlain_announce
+	
+    is_triggered_only = yes
+
+	option = {
+	name = terbia.7.a
+    hidden_effect = {
+    start_civil_war = {
+        ideology = communism
+	    ruling_party = neutrality
+        capital = 225
+        states = { 196 197 218 219 220 222 223 229 230 231 }
+        size = 0.7
+    }
+	}
+    }
+}
+
+country_event = {
+    id = terbia.8
+    title = terbia.8.t
+    desc = terbia.8.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = terbia.8.a
+        ai_chance = { factor = 80 }
+    }
+    option = {
+        name = terbia.8.b
+        ai_chance = { factor = 10 }
+    }
+    option = {
+        name = terbia.8.c
+        ai_chance = { factor = 10 }
+    }
+}
+
+country_event = {
+    id = terbia.9
+    title = terbia.9.t
+    desc = terbia.9.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = terbia.9.a
+        declare_war_on = {
+        	target = SBU
+        	type = annex_everything
+        }
+        SBU = {
+            if = {
+                limit = {
+                    has_country_flag = sbu_political_crisis_collapse
+                    has_country_flag = sbu_army_crisis_collapse
+                }
+                random_list = {
+                    55 = {
+                        country_event = {id = sbu.70}
+                    }
+
+                    45 = {
+
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    OR = {
+                        AND = {
+                            has_country_flag = sbu_political_crisis_collapse
+                            not = {has_country_flag = sbu_army_crisis_collapse}
+                        }
+                        AND = {
+                            not = {has_country_flag = sbu_political_crisis_collapse}
+                            has_country_flag = sbu_army_crisis_collapse
+                        }
+                    }
+                }
+                random_list = {
+                    27 = {
+                        country_event = {id = sbu.70}
+                    }
+
+                    73 = {
+
+                    }
+                }
+            }
+        }
+        ai_chance = { factor = 80 }
+    }
+    option = {
+        name = terbia.9.b
+        ai_chance = { factor = 10 }
+    }
+}

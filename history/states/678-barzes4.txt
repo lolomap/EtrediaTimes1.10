@@ -1,0 +1,26 @@
+
+state={
+	id=678
+	name="STATE_678"
+	manpower = 1080000
+	state_category = rural
+	
+	resources={
+		oil = 10 # was: 12
+	}
+
+	history={
+		owner = BRZ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BRZ
+		victory_points = {
+			1219 1
+		}
+
+	}
+	provinces={
+		776 797 814 830 848 851 871 877 878 898 904 905 946 
+	}
+}

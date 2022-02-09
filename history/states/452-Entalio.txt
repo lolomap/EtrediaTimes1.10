@@ -1,0 +1,28 @@
+
+state={
+	id=452
+	name="STATE_452"
+	manpower = 2560000
+	
+	state_category = large_city
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 10
+                        industrial_complex = 2
+                        dockyard = 2
+			9985 = {
+				naval_base = 9
+			}
+		}
+		add_core_of = LON
+		victory_points = {
+			9985 20
+		}
+
+	}
+	provinces={
+		8449 8513 8579 8619 8638 8655 8791 8826 8827 8864 8958 8982 9072 
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=649
+	name="STATE_649"
+	manpower = 4000000
+	state_category = rural
+	
+	resources={
+		oil = 1 # was: 6
+	}
+
+	history={
+		owner = BUP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BUP
+		victory_points = {
+			907 1
+		}
+
+	}
+	provinces={
+		570 592 646 649 682 683 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=637
+	name="STATE_637"
+	manpower = 6880000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = KCE
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+			3712 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = KCE
+		victory_points = {
+			3712 10
+		}
+
+	}
+	provinces={
+		3087 3117 3149 3162 3163 3239 3240 3248 3283 3303 
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=82
+	name="STATE_82"
+	manpower = 6430000
+	
+	state_category = city
+	
+	resources={
+                oil = 3 # was: 3
+                steel = 4 # was: 6
+	}
+
+	history={
+		owner = GKD
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+		}
+		add_core_of = GKD
+		add_core_of = IID
+		add_core_of = TUO
+		victory_points = {
+			10893 1
+		}
+
+	}
+	provinces={
+		8704 8869 8962 9030 9031 9052 9100 9137 9172 9226 9246 9277 9359 9374 9401 9428 9454 9467 9468 9521 9535 9547 9548 9610 9642 
+	}
+}

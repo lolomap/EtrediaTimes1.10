@@ -1,0 +1,23 @@
+state={
+	id=93
+	name="STATE_93"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = IID
+		victory_points = {
+			10485 10 
+		}
+
+	}
+	provinces={
+		8604 8659 8764 8778 8797 8798 8799 8878 8896 8946 8964 8965 8990 9005 9034 9035 9119 9139 9140 9174 9262 9311 9335 
+	}
+	manpower=9600000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

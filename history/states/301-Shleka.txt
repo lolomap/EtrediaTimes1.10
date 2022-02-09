@@ -1,0 +1,28 @@
+
+state={
+	id=301
+	name="STATE_301"
+	manpower = 1500000
+	
+	state_category = town
+	
+	resources={
+        oil = 8 # was: 10
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 6
+			anti_nuclear_building = 1
+		}
+		add_core_of = YAN
+		victory_points = {
+			5934 5
+		}
+
+	}
+	provinces={
+		4687 4704 4790 4791 4843 4894 4965 5000 5029 5052 5079 5121 5155 5156 5233 5234 5271 5329 5393 5394 
+	}
+}

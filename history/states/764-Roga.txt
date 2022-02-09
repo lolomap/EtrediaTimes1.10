@@ -1,0 +1,32 @@
+
+state={
+	id=764
+	name="STATE_764"
+	manpower = 2444000
+	state_category = rural
+	
+	resources={
+		chromium = 6 # was: 6
+		steel = 2 # was: 2
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			arms_factory = 1
+			2998 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ATI
+		victory_points = {
+			2998 1
+		}
+
+	}
+	provinces={
+		2252 2256 2266 2267 2294 2307 2316 2332 2339 2355 2364 2384 2392 2412 2447 2490 
+	}
+}

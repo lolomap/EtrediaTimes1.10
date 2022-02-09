@@ -1,0 +1,28 @@
+
+state={
+	id=580
+	name="STATE_580"
+	manpower = 1340000
+	
+	state_category = rural
+	
+	resources={
+		steel = 4 # was: 6
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+		}
+		add_core_of = ZHE
+		victory_points = {
+			7406 1
+		}
+
+	}
+	provinces={
+		3507 3525 3556 3576 3584 3585 3617 3623 3651 3698 3699 3765 
+	}
+}

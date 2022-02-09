@@ -1,0 +1,25 @@
+state={
+	id=86
+	name="STATE_86"
+	manpower = 3200000
+	state_category = large_city
+
+	history={
+		owner = GKD
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+
+		}
+		add_core_of = GKD
+		add_core_of = IID
+		add_core_of = TUO
+		victory_points = {
+			12129 5 
+		}
+
+	}
+	provinces={
+		10355 10372 10387 10388 10389 10415 10436 10456 10473 10474 10500 10534 10574 10594 10595 10646 10733 
+	}
+}

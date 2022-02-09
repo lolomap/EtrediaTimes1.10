@@ -1,0 +1,86 @@
+﻿capital = 170
+
+oob = "ELR_2014"
+
+set_research_slots = 3
+set_stability = 0.9
+set_war_support = 0.1
+
+add_ideas = {
+        WWW_best_country
+        total_free_press
+        general_entry
+        SBU_high_sburska_zvezda
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_military_police = 1
+}
+
+
+set_convoys = 150
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2013.3.5"
+	election_frequency = 55
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 3
+        democratic = 94
+        fascism = 3
+        communism = 0
+}
+
+#
+create_country_leader = {
+	name = "Alisa Selistra"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Terine Narabel"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Petro Pedroshenko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Vissarionovich"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

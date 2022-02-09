@@ -1,0 +1,29 @@
+
+state={
+	id=334
+	name="STATE_334"
+	resources={
+		oil=8.000
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 0
+
+		}
+		add_core_of = EIK
+		victory_points = {
+			12279 15 
+		}
+
+	}
+	provinces={
+		13453 13462 13463 13524 13562 13563 13592 13605 13615 13629 13640 13694 13704 13705 13723 13732 13739 13757 13789 13799 13811 13823 13866 13898 
+	}
+	manpower=5600000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

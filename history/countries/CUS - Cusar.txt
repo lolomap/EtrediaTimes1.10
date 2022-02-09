@@ -1,0 +1,50 @@
+﻿capital = 746
+
+oob = "CUS_2014"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.8
+
+add_ideas = {
+        www_bad_country
+}
+
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	early_destroyer = 1
+	jeep_unit = 1
+}
+
+set_convoys = 20
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2011.1.1"
+	election_frequency = 52
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 65
+        democratic = 21
+        fascism = 0
+        communism = 14
+}
+
+#
+create_country_leader = {
+	name = "Darkeem Pearson"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}

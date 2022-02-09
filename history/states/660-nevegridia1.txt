@@ -1,0 +1,30 @@
+
+state={
+	id=660
+	name="STATE_660"
+	manpower = 5120000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = NEV
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			arms_factory = 1
+			1138 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = NEV
+		victory_points = {
+			1138 10
+		}
+
+	}
+	provinces={
+		789 794 807 810 823 828 
+	}
+}

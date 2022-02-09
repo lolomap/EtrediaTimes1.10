@@ -1,0 +1,31 @@
+state={
+	id=361
+	name="STATE_361"
+	manpower = 3000000
+	
+	state_category = town
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+			3774 = {
+				naval_base = 5
+			}
+			3868 = {
+				naval_base = 2
+			}
+			3930 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = NMA
+		victory_points = {
+			3774 5
+		}
+
+	}
+	provinces={
+		3135 3178 3195 3207 3268 3311 3327 3474 
+	}
+}

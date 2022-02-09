@@ -1,0 +1,32 @@
+state={
+	id=527
+	name="STATE_527"
+	manpower = 650000
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history={
+		owner = SBO
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 1
+			3004 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = SBO
+		victory_points = {
+			3004 5
+		}
+
+	}
+	provinces={
+		2367 2376 2386 2391 2408 2420 2426 2439 2445 2452 2486 2510 
+	}
+}

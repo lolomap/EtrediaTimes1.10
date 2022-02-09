@@ -1,0 +1,28 @@
+
+state={
+	id=164
+	name="STATE_164"
+	manpower = 500000
+	
+	state_category = rural
+	
+	resources={
+		oil = 6 # was: 8
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+		}
+		add_core_of = SFL
+		victory_points = {
+			5243 5
+		}
+
+	}
+	provinces={
+		5243 5296 5310 5344 5345 5366 5445 5464 5484 5523 5574 5616 5617 5661 5683 5752 5787 5788 5828 5924 5981 6056 6095 6170 
+	}
+}

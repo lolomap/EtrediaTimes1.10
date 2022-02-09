@@ -1,0 +1,29 @@
+
+state={
+	id=749
+	name="STATE_749"
+	manpower = 7200000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ERI
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+			2174 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ERI
+		victory_points = {
+			2174 2
+		}
+
+	}
+	provinces={
+		1578 1608 1637 1682 1683 1758 1779 1786 1811 1812 1832 1837 1858 1888 1914 1933 1940 1941 2033 
+	}
+}

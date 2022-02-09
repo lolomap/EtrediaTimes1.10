@@ -1,0 +1,98 @@
+ideas = {
+	country = {
+		SMA_LaborService = {
+			removal_cost = -1
+			allowed = { always = no}
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SMA_Gulags = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SMA_Agitation = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				communism_drift = 0.05
+				political_power_gain = -0.5
+			}
+		}
+		SMA_MacarAirships = {
+			removal_cost = -1 
+			allowed = { always = no }
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.3
+					reliability = -0.2
+				}
+			}
+		}
+		SMA_CrashedBudget = {
+			removal_cost = -1
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.5
+				political_power_gain = -0.5
+			}
+		}
+		SMA_Agitation2 = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				communism_drift = 0.02
+				war_support_weekly_factor = 0.08
+				stability_weekly_factor = -0.08
+			}
+		}
+		SMA_YouthMilitaryIdea = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				non_core_manpower = 0.5
+				war_support_factor = 0.05
+			}
+		}
+		SMA_IWEWariors = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				non_core_manpower = 0.5
+				training_time_army = -0.4
+				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		SMA_LowTaxes = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+		SMA_HighTaxes = {
+			removal_cost = -1 
+			allowed = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				political_power_gain = 0.25
+			}
+		}
+	}
+}

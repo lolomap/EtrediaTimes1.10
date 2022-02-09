@@ -1,0 +1,768 @@
+focus_tree = {
+	id = Eiklindstind
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EIK
+		}
+	}
+	default = no
+	focus = {
+		id = EIK_way
+		icon = GFX_goal_eik_unknown_way
+		cost = 5
+		x = 30
+		y = 0
+		completion_reward = {
+			EIK = { 
+				country_event = { id = eik.7 days = 1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = EIK_time_is_money
+		icon = GFX_goal_eik_time_is_money
+		cost = 10
+		prerequisite = {
+			focus = EIK_way
+		}
+		x = 30
+		y = 2
+
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = eik_army_change_10
+			custom_effect_tooltip = eik_oligarchism_change_10
+			add_to_variable = {eik_army = 0.1}
+			add_to_variable = {eik_oligarchism = 0.1}
+		}
+	}
+	
+	focus = {
+		id = EIK_rashin_complex
+		icon = GFX_goal_eik_rashin_complex
+		cost = 10
+		prerequisite = {
+			focus = EIK_time_is_money
+		}
+		x = 28
+		y = 3
+
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_political_power = 50
+			custom_effect_tooltip = eik_oligarchism_change_10
+			add_to_variable = {eik_oligarchism = 0.1}
+		}
+	}
+	
+	focus = {
+		id = EIK_Dalhein_help
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_time_is_money
+		}
+		x = 32
+		y = 3
+	}
+	
+	focus = {
+		id = EIK_nord_way
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_Dalhein_help
+			focus = EIK_rashin_complex
+		}
+		x = 30
+		y = 4
+	}
+	
+	focus = {
+		id = EIK_investitions_on_tolchkograd
+		icon = GFX_goal_eik_invest_tol
+		cost = 10
+		prerequisite = {
+			focus = EIK_rashin_complex
+		}
+		x = 27
+		y = 4
+	}
+	
+	focus = {
+		id = EIK_investitions_on_baensli
+		icon = GFX_goal_eik_invest_bae
+		cost = 10
+		prerequisite = {
+			focus = EIK_Dalhein_help
+		}
+		x = 33
+		y = 4
+	}
+	
+	focus = {
+		id = EIK_powerful_scientific_base
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_investitions_on_tolchkograd
+		}
+		prerequisite = {
+			focus = EIK_nord_way
+		}
+		mutually_exclusive = {
+			focus = EIK_powerful_production
+		}
+		x = 29
+		y = 5
+	}
+	
+	focus = {
+		id = EIK_robotics
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_powerful_scientific_base
+			focus = EIK_powerful_production
+		}
+		mutually_exclusive = {
+			focus = EIK_cosmic
+		}
+		x = 29
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_powerful_production
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_investitions_on_baensli
+		}
+		prerequisite = {
+			focus = EIK_nord_way
+		}
+		mutually_exclusive = {
+			focus = EIK_powerful_scientific_base
+		}
+		x = 31
+		y = 5
+	}
+	
+	focus = {
+		id = EIK_cosmic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_powerful_production
+			focus = EIK_powerful_scientific_base
+		}
+		mutually_exclusive = {
+			focus = EIK_robotics
+		}
+		x = 31
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_strong_leader
+		icon = GFX_goal_powerfull_leader
+		cost = 5
+		prerequisite = {
+			focus = EIK_way
+		}
+		completion_reward = {
+			EIK = { 
+				country_event = { id = eik.8 days = 1 }
+			}
+		}
+		x = 18
+		y = 1
+	}
+
+	focus = {
+		id = EIK_disband_parlament
+		icon = GFX_goal_dissolution_parlament
+		cost = 10
+		prerequisite = {
+			focus = EIK_strong_leader
+		}
+		completion_reward = { 
+			add_ideas = {
+				EIK_parlament
+			}
+		EIK = {	country_event = { id = eik.5 days = 1 } }
+		}
+		x = 18
+		y = 2
+	}
+
+	focus = {
+		id = EIK_disperse_criminals
+		icon = GFX_goal_eik_press_opg_2
+		cost = 10
+		prerequisite = {
+			focus = EIK_disband_parlament
+		}
+		completion_reward = { 
+            remove_ideas = EIK_corruption01
+			add_ideas = {
+				EIK_corruption02
+			}
+			EIK = {	country_event = { id = eik.9 days = 1 } }
+		}
+		x = 18
+		y = 3
+	}
+	
+	focus = {
+		id = EIK_expanding_civil_support
+		icon = GFX_goal_eik_civilians
+		cost = 10
+		prerequisite = {
+			focus = EIK_disperse_criminals
+		}
+		mutually_exclusive = {
+			focus = EIK_profsouz
+		}
+		x = 18
+		y = 4
+	}
+
+	focus = {
+		id = EIK_profsouz
+		icon = GFX_goal_eik_profsouz
+		cost = 10
+		prerequisite = {
+			focus = EIK_disperse_criminals
+		}
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = EIK_expanding_civil_support
+		}
+		x = 8
+		y = 4
+	}
+	
+	focus = {
+		id = EIK_propaganda_in_schools
+		icon = GFX_goal_eik_school_propaganda
+		cost = 10
+		prerequisite = {
+			focus = EIK_expanding_civil_support
+		}
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05	}
+			add_stability = -0.05
+		}
+		x = 16
+		y = 5
+	}
+	
+	focus = {
+		id = EIK_young_military_formations
+		icon = GFX_goal_eik_kinder
+		cost = 10
+		prerequisite = {
+			focus = EIK_propaganda_in_schools
+		}
+		completion_reward = {
+			custom_effect_tooltip = eik_army_change_10
+			add_to_variable = {eik_army = 0.1}
+			add_ideas = { EIK_military_formations }
+		}
+		x = 15
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_updating_the_officer_staff
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_young_military_formations
+		}
+		completion_reward = { 
+			custom_effect_tooltip = eik_army_change_10
+			add_to_variable = {eik_army = 0.1}
+            remove_ideas = EIK_verha
+			add_ideas = {
+				EIK_verha2
+			}
+		}
+		x = 15
+		y = 7
+	}
+	
+	focus = {
+		id = EIK_tanks_developments
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_updating_the_officer_staff
+		}
+		mutually_exclusive = {
+			focus = EIK_aviation_developments
+		}
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 0.6
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = armor
+			}
+		}
+		ai_will_do = {
+			factor = 0.6
+		}
+		x = 15
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_aviation_developments
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_updating_the_officer_staff
+		}
+		mutually_exclusive = {
+			focus = EIK_tanks_developments
+		}
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				technology = fighter3
+				technology = jet_fighter1
+				technology = jet_fighter2
+				technology = jet_fighter3
+			}
+		}
+		ai_will_do = {
+			factor = 0.4
+		}
+		x = 13
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_army_trainings
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_aviation_developments
+			focus = EIK_tanks_developments
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			navy_experience = 15
+			air_experience = 5
+		}
+		x = 14
+		y = 9
+	}
+	
+	focus = {
+		id = EIK_innovation_in_production
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_propaganda_in_schools
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+		x = 17
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_scientist_is_hero
+		icon = GFX_goal_eik_scientist_hero
+		cost = 10
+		prerequisite = {
+			focus = EIK_innovation_in_production
+		}
+		completion_reward = { 
+            remove_ideas = EIK_utechka			
+			add_ideas = {
+				EIK_science
+			}
+		}
+		x = 17
+		y = 7
+	}
+	
+	focus = {
+		id = EIK_increased_funding
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_scientist_is_hero
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 17
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_one_party_system
+		icon = GFX_goal_eik_onepartysystem
+		cost = 10
+		prerequisite = {
+			focus = EIK_expanding_civil_support
+		}
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1	}
+		}
+		x = 20
+		y = 5
+	}
+	
+	focus = {
+		id = EIK_influence_on_neighbors
+		icon = GFX_goal_eik_neighbours_influence
+		cost = 10
+		prerequisite = {
+			focus = EIK_one_party_system
+		}
+		completion_reward = {
+			TOL = { country_event = { id = tolchkograd.2 days = 1 } }
+			BAE = { country_event = { id = baensli.2 days = 1 } }
+		}
+		x = 22
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_political_purge
+		icon = GFX_goal_eik_political_clean
+		cost = 10
+		prerequisite = {
+			focus = EIK_one_party_system
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = { ideology = fascism popularity = 0.2 }
+			add_stability = -0.15
+		}
+		x = 20
+		y = 6
+	}
+	
+	focus = {
+		id = EIK_trusted_person
+		icon = GFX_goal_eik_trusted_person
+		cost = 5
+		prerequisite = {
+			focus = EIK_political_purge
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = EIK_newlico
+		}
+		x = 20
+		y = 7
+	}
+	
+	focus = {
+		id = EIK_eastern_block
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = EIK_influence_on_neighbors
+		}
+		completion_reward = {
+		    create_faction = EIK_blok_ally
+		    hidden_effect = {news_event = {id = newss.19 days = 1}}
+		}
+		x = 22
+		y = 7
+	}
+	
+	focus = {
+		id = EIK_invite_yanthalia
+		icon = GFX_goal_eik_invite_yan
+		cost = 10
+		prerequisite = {
+			focus = EIK_eastern_block
+		}
+		completion_reward = { 
+			YAN = { country_event = { id = yan.2 } }
+        }
+		available = { 
+			YAN = { has_government = fascism }
+			YAN = { NOT = { has_country_flag = yan_swea } }
+		}
+		cancel_if_invalid = yes
+		x = 20
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_unexpected_partner
+		icon = GFX_goal_eik_unexpected_friend
+		cost = 10
+		prerequisite = {
+			focus = EIK_invite_yanthalia
+		}
+		ai_chance = { 
+		factor = 0.1
+			modifier = {
+				factor = 0
+				date < 2017.1.1
+			}
+			modifier = {
+				factor = 5
+				date > 2017.1.1
+			}
+		}
+		x = 20
+		y = 9
+	}
+	
+	focus = {
+		id = EIK_conquer_rebellious_regions
+		icon = GFX_goal_eik_regions_purge
+		cost = 10
+		will_lead_to_war_with = BAE
+		will_lead_to_war_with = TOL
+		prerequisite = {
+			focus = EIK_eastern_block
+		}
+		mutually_exclusive = {
+			focus = EIK_cooperation_with_south
+		}
+		completion_reward = {
+			EIK = { country_event = { id = eik.10 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		x = 22
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_cooperation_with_south
+		icon = GFX_goal_eik_south_friends
+		cost = 10
+		prerequisite = {
+			focus = EIK_eastern_block
+		}
+		mutually_exclusive = {
+			focus = EIK_conquer_rebellious_regions
+		}
+		completion_reward = { 
+			BAE = { country_event = { id = baensli.1 days = 1 } }
+			TOL = { country_event = { id = tolchkograd.1 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 0.7
+		}
+		x = 24
+		y = 8
+	}
+	
+	focus = {
+		id = EIK_north_baensli_question
+		icon = GFX_goal_eik_north_bae
+		cost = 10
+		prerequisite = {
+			focus = EIK_cooperation_with_south
+		}
+		completion_reward = {
+			BAE = { country_event = { id = baensli.3 days = 1 } }
+		}
+		ai_will_do = {
+			factor = 1
+                modifier = {
+			    factor = 100
+			    date > 2020.1.1
+		        }
+				modifier = {
+			    factor = -1
+			    date < 2020.1.1
+		        }
+		}
+		x = 26
+		y = 9
+	}
+	
+	focus = {
+		id = EIK_independent_question
+		icon = GFX_goal_eik_independence
+		cost = 10
+		prerequisite = {
+			focus = EIK_north_baensli_question
+		}
+		completion_reward = {
+			EIK = { country_event = eik.11 days = 1 }
+		}
+		x = 26
+		y = 10
+	}
+	
+	focus = {
+		id = EIK_ultimatum_to_sheregia
+		icon = GFX_goal_eik_she_ultimatum
+		cost = 10
+		will_lead_to_war_with = SHE
+		prerequisite = {
+			focus = EIK_unexpected_partner
+		}
+		prerequisite = {
+			focus = EIK_cooperation_with_south
+			focus = EIK_conquer_rebellious_regions
+		}
+		completion_reward = { 
+			SHE = { country_event = { id = sheregia.1 days = 1 } }
+			hidden_effect = {
+			news_event = { id = newss.1 hours = 5 }
+			}
+		}
+		available = { 
+		EIK = { has_army_manpower  = { size > 1200000 } }
+		}
+		ai_chance = { 
+		factor = 0.5
+			modifier = {
+				factor = 0
+				date < 2018.8.1
+			}
+			modifier = {
+				factor = 5
+				date > 2018.8.1
+			}
+			modifier = {
+				factor = 50
+				date > 2018.9.9
+			}
+		}
+		x = 22
+		y = 10
+	}
+	
+	focus = {
+		id = EIK_prepare_to_war
+		icon = GFX_goal_unknown
+		cost = 10
+		will_lead_to_war_with = KAS
+		prerequisite = {
+			focus = EIK_ultimatum_to_sheregia
+		}
+		completion_reward = { 				
+			add_timed_idea = {
+				idea = EIK_armybaf1
+				days = 300
+			}
+			CHE = { country_event = { id = che.3 days = 1 } }
+		}
+		x = 22
+		y = 11
+	}
+	
+	focus = {
+		id = EIK_war_with_kaspa
+		icon = GFX_goal_eik_kaspa_war
+		cost = 10
+		will_lead_to_war_with = KAS
+		prerequisite = {
+			focus = EIK_prepare_to_war
+		}
+		completion_reward = {
+			EIK = { country_event = { id = eik.4 days = 1 } }
+			CHE = { 
+				country_event = { 
+					id = che.1 days = 1 
+				}
+				available = { CHE = { has_country_flag = che_kaspa_deal } }
+			}
+			hidden_effect = {
+				DEM = { country_event = { id = dirnews.8 days = 1 } }
+				DIR = { country_event = { id = dirnews.8 days = 1 } }
+				VRO = { country_event = { id = vro.2 days = 1 } }
+			}
+		}
+		ai_chance = { 
+		factor = 5
+		}
+		x = 22
+		y = 12
+	}
+	
+	focus = {
+		id = EIK_war_with_diria
+		icon = GFX_goal_diria_war
+		cost = 10
+		will_lead_to_war_with = DIR
+		will_lead_to_war_with = DEM
+		prerequisite = {
+			focus = EIK_war_with_kaspa
+		}
+		completion_reward = { 
+			EIK = { 
+				country_event = { id = eik.3 }
+			}
+			hidden_effect = {
+				LIP = { country_event = { id = lip.2 days = 1 } }
+			}
+		}
+		available = { 
+		KAS = { has_army_manpower  = { size < 99999 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 22
+		y = 13
+	}

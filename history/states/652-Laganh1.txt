@@ -1,0 +1,25 @@
+
+state={
+	id=652
+	name="STATE_652"
+	manpower = 3260000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = LGH
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LGH
+		victory_points = {
+			898 1
+		}
+
+	}
+	provinces={
+		546 563 585 586 606 607 612 626 630 636 653 658 692 
+	}
+}

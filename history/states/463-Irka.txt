@@ -1,0 +1,26 @@
+
+state={
+	id=463
+	name="STATE_463"
+	manpower = 223000
+
+	resources={
+		oil = 34 # was: 40
+	}
+	
+	state_category = psatoral
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CHE
+		victory_points = {
+			8480 1
+		}
+
+	}
+	provinces={
+		7391 7392 7587 7588 7625 7662 7700 7860 7951 8004 8005 8166 8225 8318 8361 8562 8621 8719 8731 8961 9027 9047 
+	}
+}

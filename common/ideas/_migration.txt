@@ -1,0 +1,79 @@
+ideas = {
+
+        migration_laws = {
+            law = yes
+
+            free_entry = {
+ 
+                 cost = 150
+                 removal_cost = -1
+                 level = 4
+
+                 available = {
+                 OR = {
+                 has_war = no
+                 }
+                 }
+
+                 modifier = {
+                         stability_factor = -0.1
+                         MONTHLY_POPULATION = 0.5
+			 political_power_gain = 0.2
+                 }
+
+                 cancel_if_invalid = no
+            }
+
+            general_entry = {
+ 
+                 cost = 150
+                 removal_cost = -1
+                 level = 3
+
+                 modifier = {
+                        MONTHLY_POPULATION = 0.2
+			political_power_gain = 0.1
+                 }
+
+                 cancel_if_invalid = no
+            }
+
+            limited_entry = {
+ 
+                 cost = 150
+                 removal_cost = -1
+                 level = 2
+
+                 modifier = {
+                         stability_factor = 0.05
+                         MONTHLY_POPULATION = 0.1
+                 }
+
+                 cancel_if_invalid = no
+            }
+
+            closed_entry = {
+ 
+                 cost = 150
+                 removal_cost = -1
+                 level = 1
+
+                 available = {
+                 OR = {
+                 has_government = fascism
+                 has_government = communism
+                     AND = {
+                             has_war = yes
+                     }
+                 }
+                 }
+
+                 modifier = {
+                        stability_factor = 0.1
+			political_power_gain = -0.15
+                 }
+
+                 cancel_if_invalid = no
+            }
+}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=290
+	name="STATE_290"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		steel = 18 # was: 22
+                chromium = 55 # was: 68
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+            nuclear_rocket_site = 1
+		}
+		add_core_of = YAN
+		victory_points = {
+			7532 5
+		}
+
+	}
+	provinces={
+		5594 5669 5705 5706 5724 5773 5814 5866 5867 5882 6011 6029 6064 6148 6180 6198 6238 6253 6277 6375 6419 6458 6480 6505 6537 6601 6661 6684 6718 6812 6832 6871 6886 6887 6985 7004 7076 7094 7130 7157 7212 7252 7277 7301 7329 7456 7513 7545 
+	}
+}

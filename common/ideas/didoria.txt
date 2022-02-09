@@ -1,0 +1,14 @@
+ideas = {
+ country = {
+
+  DID_traditions = {
+      picture = idea_ENG_the_war_to_end_all_wars
+	modifier = {
+	production_factory_efficiency_gain_factor = -0.5
+        production_factory_max_efficiency_factor = -0.1
+        production_speed_buildings_factor = -0.2
+        MONTHLY_POPULATION = 0.2
+	}
+  }
+}
+}

@@ -1,0 +1,34 @@
+state={
+	id=9
+	name="STATE_9"
+	manpower = 9800000
+	
+	state_category = metropolis
+	
+	resources={
+		steel = 4 # was: 10
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        arms_factory = 1
+                        dockyard = 1
+                        air_base = 10
+			8640 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = UCB
+		add_core_of = IND
+		victory_points = {
+			8640 25
+		}
+
+	}
+	provinces={
+		6704 6705 6798 6858 6877 6917 6918 7010 7047 7048 7085 7118 7119 7165 7181 7219 7220 7286 7319 7396 7397 7428 7460 7476 7521 
+	}
+}

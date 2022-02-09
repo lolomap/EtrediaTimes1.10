@@ -1,0 +1,25 @@
+
+state={
+	id=141
+	name="STATE_141"
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = PIN
+		victory_points = {
+			11656 10 
+		}
+
+	}
+	provinces={
+		11656 11820 11877 11878 11913 11914 11929 11930 11947 12005 12006 12037 12052 12092 12107 12122 12132 12157 12174 12208 12209 12253 12329 12346 12347 
+	}
+	manpower=1650000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

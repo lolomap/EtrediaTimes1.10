@@ -1,0 +1,26 @@
+
+state={
+	id=378
+	name="STATE_378"
+	manpower = 180000
+	
+	state_category = rural
+
+	history={
+		owner = DID
+		buildings = {
+			infrastructure = 2
+			2754 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DID
+		victory_points = {
+			2754 1
+		}
+
+	}
+	provinces={
+		2142 2164 2206 2223 2228 2298 
+	}
+}

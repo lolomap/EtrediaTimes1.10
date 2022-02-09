@@ -1,0 +1,29 @@
+state={
+	id=69
+	name="STATE_69"
+	manpower = 1100000
+	
+	state_category = town
+	
+	resources={
+		oil=4.000
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = FSC
+		add_core_of = NER
+		victory_points = {
+			5345 2
+		}
+
+	}
+	provinces={
+		4228 4269 4343 4361 4459 4476 4494 4594 4595 4628 4675 4753 4754 4770 4797 4862 
+	}
+}

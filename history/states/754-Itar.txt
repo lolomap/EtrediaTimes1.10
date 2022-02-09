@@ -1,0 +1,26 @@
+
+state={
+	id=754
+	name="STATE_754"
+	manpower = 1240000
+	state_category = pastoral
+	
+	resources={
+		oil = 8 # was: 10
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ATI
+		victory_points = {
+			1995 1
+		}
+
+	}
+	provinces={
+		1337 1341 1418 1439 1451 1472 1507 1508 1528 1529 1573 1597 1631 1645 1659 1662 
+	}
+}

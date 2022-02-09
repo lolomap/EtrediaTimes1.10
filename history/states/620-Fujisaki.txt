@@ -1,0 +1,27 @@
+
+state={
+	id=620
+	name="STATE_620"
+	manpower = 2700000
+	
+	state_category = rural
+	
+	resources={
+		oil = 8 # was: 8
+	}
+
+	history={
+		owner = KLU
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KLU
+		victory_points = {
+			4228 1
+		}
+
+	}
+	provinces={
+		3522 3619 3620 3719 3814 3821 
+	}
+}

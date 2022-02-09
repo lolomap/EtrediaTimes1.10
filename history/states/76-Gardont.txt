@@ -1,0 +1,32 @@
+
+state={
+	id=76
+	name="STATE_76"
+	manpower = 8300000
+	
+	state_category = city
+	
+	resources={
+                oil = 4 # was: 8
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			10445 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = IID
+		add_core_of = TUO
+		victory_points = {
+			10445 5
+		}
+
+	}
+	provinces={
+		8345 8454 8571 8725 8761 8868 8905 8925 9003 9004 9019 9117 9118 9152 9206 9225 9276 9294 9295 9309 9358 9442 9443 
+	}
+}

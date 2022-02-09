@@ -1,0 +1,29 @@
+
+state={
+	id=633
+	name="STATE_633"
+	manpower = 4300000
+	
+	state_category = rural
+	
+	resources={
+		steel = 6 # was: 6
+	}
+
+	history={
+		owner = KYU
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = KYU
+		victory_points = {
+			7692 5
+		}
+
+	}
+	provinces={
+		6380 6401 6689 6818 6875 
+	}
+}

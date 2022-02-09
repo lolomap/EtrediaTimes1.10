@@ -1,0 +1,28 @@
+
+state={
+	id=689
+	name="STATE_689"
+	manpower = 3300000
+	
+	state_category = large_city
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        arms_factory = 1
+			492 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = SOU
+		victory_points = {
+			492 10
+		}
+
+	}
+	provinces={
+		272 273 281 283 284 307 310 311 313 323 326 
+	}
+}

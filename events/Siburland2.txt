@@ -1,0 +1,1772 @@
+﻿add_namespace = sbu
+
+country_event = {
+	id = sbu.1
+	title = sbu.1.t
+	desc = sbu.1.d
+	picture = GFX_report_event_aid_pact
+	
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+    }
+
+	option = {
+	name = sbu.1.a
+	UCB = {
+	    add_to_faction = SBU
+	} 
+	ai_chance = { factor = 90 }		
+    }
+	option = {
+	name = sbu.1.b
+	UCB = {
+	    country_event = { ucnb.17 days = 1 }
+		}
+	ai_chance = { factor = 10 }		
+    }
+}
+
+country_event = {
+	id = sbu.2
+	title = sbu.2.t
+	desc = sbu.2.d
+		picture = GFX_report_event_chinese_soldiers_01
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+    }
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = sbu.2.a
+		TAG = SBU
+		create_wargoal = {
+		type = take_state
+		generator = { 222 }
+		target = TRB
+		}
+	news_event = {
+	id = newss.5
+	days = 1
+	}
+	}
+}
+
+country_event = {
+	id = sbu.3
+	title = sbu.3.t
+	desc = sbu.3.d
+		picture = GFX_report_canada_treaty
+
+    is_triggered_only = yes
+	
+	trigger = {
+	    TAG = SBU
+	}
+	
+	option = {
+	name = sbu.3.a
+	TAG = TRB
+		ESB = {
+			transfer_state = 222
+			add_state_core = 222
+		}
+		ELN = {
+			transfer_state = 230
+			transfer_state = 229
+			load_oob = ELN_2014
+			add_manpower = 44999
+		}
+		BAK = {
+			transfer_state = 219
+			add_state_core = 219
+			transfer_state = 218
+			add_state_core = 218
+			transfer_state = 220
+			add_state_core = 220
+			load_oob = BAK_2014
+			add_manpower = 7999
+		}
+		KRA = {
+			transfer_state = 231
+			add_state_core = 231
+			load_oob = KRA_2014
+			add_manpower = 8145
+		}
+		LCH = {
+			transfer_state = 221
+			add_state_core = 221
+			load_oob = LCH_2014
+			add_manpower = 21999
+		}
+		SIN = {
+			transfer_state = 197
+			add_state_core = 197
+			transfer_state = 196
+			add_state_core = 196
+		}
+		puppet = LCH
+		puppet = ELN
+		puppet = ESB
+		puppet = SIN
+		puppet = BAK
+		puppet = KRA
+		RGY = { country_event = { id = rgy.1 days = 180 } }
+	}
+}
+
+country_event = {
+	id = sbu.4
+	title = sbu.4.t
+	desc = sbu.4.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.4.a
+    SBU = { add_ideas = SBU_siburian_star }
+    }
+}
+
+country_event = {
+	id = sbu.5
+	title = sbu.5.t
+	desc = sbu.5.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.5.a
+    SBU = { remove_ideas = SBU_Hleria }
+    }
+}
+
+country_event = {
+	id = sbu.6
+	title = sbu.6.t
+	desc = sbu.6.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.6.a
+    SBU = { remove_ideas = SBU_Elnia_separatism }
+    }
+}
+
+country_event = {
+	id = sbu.7
+	title = sbu.7.t
+	desc = sbu.7.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.7.a
+	    add_opinion_modifier = {
+	target = TRB
+	modifier = SBU_TRB_compromiss
+	}
+    }
+}
+
+country_event = {
+	id = sbu.8
+	title = sbu.8.t
+	desc = sbu.8.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.8.a
+	    add_opinion_modifier = {
+	target = SBU
+	modifier = SBU_TRB_compromiss_not_result
+	}
+    ai_chance = { factor = 1 }
+    }
+	
+    option = {
+    name = sbu.8.b
+	    add_opinion_modifier = {
+	target = SBU
+	modifier = SBU_TRB_compromiss_not_result
+	}
+	create_wargoal = {
+	    type = take_state
+	    generator = { 222 }
+	    target = TRB
+	}
+    ai_chance = { factor = 99 }
+    }
+}
+
+country_event = {
+	id = sbu.9
+	title = sbu.9.t
+	desc = sbu.9.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.9.a
+    RGY = { country_event = { id = rgy.2 days = 1 } }
+    }
+}
+
+country_event = {
+	id = sbu.10
+	title = sbu.10.t
+	desc = sbu.10.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.10.a
+    }
+}
+
+country_event = {
+	id = sbu.11
+	title = sbu.11.t
+	desc = sbu.11.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.11.a
+	annex_country = {
+    target = RGY
+    transfer_troops = yes
+    }
+    }
+}
+
+country_event = {
+	id = sbu.12
+	title = sbu.12.t
+	desc = sbu.12.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.12.a
+    }
+}
+
+country_event = {
+	id = sbu.13
+	title = sbu.13.t
+	desc = sbu.13.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.13.a
+	give_guarantee = MOF
+    }
+}
+
+country_event = {
+	id = sbu.14
+	title = sbu.14.t
+	desc = sbu.14.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.14.a
+    }
+}
+
+country_event = {
+	id = sbu.15
+	title = sbu.15.t
+	desc = sbu.15.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.15.a
+	add_opinion_modifier = {
+	target = UCB
+	modifier = SBU_UCB_friendship
+    }
+	UCB = {
+	add_opinion_modifier = {
+	target = SBU
+	modifier = SBU_UCB_friendship
+    }
+	}
+	}
+}
+
+country_event = {
+	id = sbu.16
+	title = sbu.16.t
+	desc = sbu.16.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.16.a
+    }
+}
+
+country_event = {
+	id = sbu.17
+	title = sbu.17.t
+	desc = sbu.17.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.17.a
+	add_opinion_modifier = {
+	target = IID
+	modifier = SBU_IID_friendship
+    }
+	IID = {
+	add_opinion_modifier = {
+	target = SBU
+	modifier = SBU_IID_friendship
+    }
+	}
+	}
+}
+
+country_event = {
+	id = sbu.18
+	title = sbu.18.t
+	desc = sbu.18.d
+		picture = GFX_report_event_hol_cabinet_de_geer
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.18.a
+    }
+}
+
+country_event = {
+	id = sbu.19
+	title = sbu.19.t
+	desc = sbu.19.d
+		picture = GFX_report_event_canada_patriation
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.19.a
+	    add_popularity = {
+	ideology = communism
+	popularity = 0.15
+	}
+    add_stability = 0.1
+    }
+}
+
+country_event = {
+	id = sbu.20
+	title = sbu.20.t
+	desc = sbu.20.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.20.a
+	    add_popularity = {
+	ideology = communism
+	popularity = 0.1
+	}
+    add_stability = -0.05
+    }
+}
+
+country_event = {
+	id = sbu.21
+	title = sbu.21.t
+	desc = sbu.21.d
+		picture = GFX_report_event_riot_police_poland
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.21.a
+	set_politics = {
+	ruling_party = communism
+    }
+    add_popularity = {
+    ideology = communism
+    popularity = 0.15
+    }
+    add_stability = -0.15
+	SBU = { remove_ideas = SBU_Elnia_separatism }
+	SBU = { remove_ideas = SBU_Hleria_separatism }
+    }
+}
+
+country_event = {
+	id = sbu.22
+	title = sbu.22.t
+	desc = sbu.22.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.22.a
+    add_war_support = 0.05
+	add_ideas = SBU_militarism
+    add_popularity = {
+    ideology = fascism
+    popularity = 0.1
+    }
+    }
+}
+
+country_event = {
+	id = sbu.23
+	title = sbu.23.t
+	desc = sbu.23.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.23.a
+	SFL = { country_event = { id = sfl.5 days = 1 } }
+	give_guarantee = ELR
+    ai_chance = { 
+	factor = 80 
+	modifier = {
+			factor = 1
+			is_historical_focus_on = yes
+		}
+	}
+	}
+    option = {
+    name = sbu.23.b
+	SFL = { country_event = { id = sfl.14 days = 1 } }
+    ai_chance = { factor = 20 }
+    }
+}
+
+country_event = {
+	id = sbu.24
+	title = sbu.24.t
+	desc = sbu.24.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.24.a
+	SFL = { country_event = sfl.6 days = 5 }
+    }
+}
+
+country_event = {
+	id = sbu.25
+	title = sbu.25.t
+	desc = sbu.25.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.25.a
+	SFL = { country_event = { id = sfl.7 days = 1 } }
+    ai_chance = { 
+	factor = 0.8
+		modifier = {
+			factor = 1
+			is_historical_focus_on = yes
+		}
+	}
+    }
+    option = {
+    name = sbu.25.b
+	SFL = { country_event = { id = sfl.8 days = 1 } }
+    ai_chance = { factor = 0.2 }
+    }
+}
+
+country_event = {
+	id = sbu.26
+	title = sbu.26.t
+	desc = sbu.26.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.26.a
+	SFL = { country_event = { id = sfl.8 days = 1 } }
+    }
+}
+
+country_event = {
+	id = sbu.27
+	title = sbu.27.t
+	desc = sbu.27.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.27.a
+	SBU = {
+	    add_opinion_modifier = {
+	target = SFL
+	modifier = SBU_SFL_perfect_deal
+	}
+    }
+	SFL = {
+	    add_opinion_modifier = {
+	target = SBU
+	modifier = SBU_SFL_perfect_deal
+	}
+    }
+    }
+}
+
+country_event = {
+	id = sbu.28
+	title = sbu.28.t
+	desc = sbu.28.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.28.a
+	SFL = { country_event = { id = sfl.9 days = 1 } }
+	ai_chance = { 
+	factor = 70 
+	modifier = {
+			factor = 1
+			is_historical_focus_on = yes
+		}
+	}
+    }
+
+    option	= {
+    name = sbu.28.b
+	SFL = { country_event = { id = sfl.17 days = 1 } }
+	ai_chance = { factor = 30 }
+    }
+}
+
+country_event = {
+	id = sbu.29
+	title = sbu.29.t
+	desc = sbu.29.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.29.a
+	create_faction = SBU_comintern
+    }
+}
+
+country_event = {
+	id = sbu.30
+	title = sbu.30.t
+	desc = sbu.30.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.30.a
+		hidden_effect = {
+		    HLR = {
+			    transfer_state = 209
+				transfer_state = 210
+				transfer_state = 211
+				load_oob = HLE_miting
+				add_manpower = 50000
+	    declare_war_on = { target = SBU type = annex_everything }
+			}
+		}
+	    trigger = { 
+		has_global_flag = sbu_hler_separatism
+	}
+	}
+    option = {
+    name = sbu.30.b
+		hidden_effect = {
+		    SVT = {
+			    transfer_state = 206
+				transfer_state = 203
+				transfer_state = 207
+				load_oob = SVT_miting
+				add_manpower = 70000
+	    declare_war_on = { target = SBU type = annex_everything } 
+			}
+		}
+	    trigger = { 
+		has_global_flag = sbu_savat_separatism
+	}
+	}
+}
+
+country_event = {
+	id = sbu.31
+	title = sbu.31.t
+	desc = sbu.31.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.31.a
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.35
+		}
+	}
+}
+
+country_event = {
+	id = sbu.32
+	title = sbu.32.t
+	desc = sbu.32.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.32.a
+		set_politics = {
+			ruling_party = monarchism
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = sbu.33
+	title = sbu.33.t
+	desc = sbu.33.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.33.a
+	create_wargoal = {
+	    type = annex_everything
+	    target = SFL
+	}
+    }
+}
+
+country_event = {
+	id = sbu.34
+	title = sbu.34.t
+	desc = sbu.34.d
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.34.a
+		create_wargoal = {
+			type = annex_everything
+			target = MOF
+		}
+    }
+}
+
+country_event = {
+	id = sbu.35
+	title = sbu.35.t
+	desc = sbu.35.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.35.a
+	give_guarantee = RGY
+    }
+}
+
+country_event = {
+	id = sbu.36
+	title = sbu.36.t
+	desc = sbu.36.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.36.a
+	create_wargoal = {
+	    type = annex_everything
+	    target = RGY
+	}
+    }
+}
+
+country_event = {
+	id = sbu.37
+	title = sbu.37.t
+	desc = sbu.37.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.37.a
+		annex_country = {
+			target = RGY
+			transfer_troops = yes
+		}
+		SBU = {
+		add_state_core = 195
+		add_state_core = 194
+		add_state_core = 193
+		add_state_core = 192
+		add_state_core = 191
+		add_state_core = 190
+		add_state_core = 189
+		}
+    }
+}
+
+country_event = {
+	id = sbu.38
+	title = sbu.38.t
+	desc = sbu.38.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.38.a
+		RGY = {
+			annex_country = {
+				target = SIN
+				transfer_troops = yes
+			}
+			country_event = { id = rgy.1 days = 1 }
+		}
+		RGY = {
+		add_state_core = 137
+		add_state_core = 197
+		}
+		SIN = { 
+		remove_state_core = 196
+		remove_state_core = 197
+		}
+	ai_chance = { factor = 80 }
+    }
+    option = {
+    name = sbu.38.b
+		ELN = { 
+			annex_country = {
+				target = SIN
+				transfer_troops = yes
+		    }
+		}
+		ELN = {
+		add_state_core = 137
+		add_state_core = 197
+		}
+		SIN = { 
+		remove_state_core = 196
+		remove_state_core = 197
+		}
+	ai_chance = { factor = 20 }
+    }
+}
+
+country_event = {
+	id = sbu.39
+	title = sbu.39.t
+	desc = sbu.39.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.39.a
+		TRB = {
+		transfer_state = 231
+		}
+		KRA = { 
+		remove_state_core = 231
+		}
+    ai_chance = { factor = 25 }
+    }
+    option = {
+    name = sbu.39.b
+		ELN = { 
+			annex_country = {
+				target = KRA
+				transfer_troops = yes
+		    }
+		}
+		ELN = {
+		add_state_core = 231
+		}
+		KRA = { 
+		remove_state_core = 231
+		}
+	ai_chance = { factor = 70 }
+    }
+    option = {
+    name = sbu.39.c
+    ai_chance = { factor = 5 }
+    }
+}
+
+country_event = {
+	id = sbu.40
+	title = sbu.40.t
+	desc = sbu.40.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.40.a
+		SBU = {
+			annex_country = {
+				target = ESB
+				transfer_troops = yes
+		    }
+			add_state_core = 222
+		}
+		ESB = { 
+		remove_state_core = 222
+		}
+    ai_chance = { factor = 70 }
+    }
+    option = {
+    name = sbu.40.b
+		TRB = { 
+			annex_country = {
+				target = ESB
+				transfer_troops = yes
+		    }
+		}
+		ESB = { 
+		remove_state_core = 222
+		}
+	ai_chance = { factor = 5 }
+    }
+    option = {
+    name = sbu.40.c
+		LCH = { 
+			annex_country = {
+				target = ESB
+				transfer_troops = yes
+		    }
+			add_state_core = 222
+		}
+		ESB = { 
+		remove_state_core = 222
+		}
+    ai_chance = { factor = 20 }
+    }
+    option = {
+    name = sbu.40.j
+    ai_chance = { factor = 5 }
+    }
+}
+
+country_event = {
+	id = sbu.41
+	title = sbu.41.t
+	desc = sbu.41.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.41.a
+		SBU = {
+	    transfer_state = 218
+			transfer_state = 220
+			add_state_core = 218
+			add_state_core = 220
+		}
+		TRB = {
+		    transfer_state = 219
+			add_state_core = 219
+		}
+		BAK = { 
+		remove_state_core = 218
+		remove_state_core = 219
+		remove_state_core = 220
+		}
+    ai_chance = { factor = 80 }
+    }
+    option = {
+    name = sbu.41.b
+		SBU = { 
+			annex_country = {
+				target = BAK
+				transfer_troops = yes
+		    }
+		}
+		BAK = { 
+		remove_state_core = 218
+		remove_state_core = 219
+		remove_state_core = 220
+		}
+	ai_chance = { factor = 10 }
+    }
+    option = {
+    name = sbu.41.c
+		TRB = { 
+			annex_country = {
+				target = BAK
+				transfer_troops = yes
+		    }
+		}
+		BAK = { 
+		remove_state_core = 218
+		remove_state_core = 219
+		remove_state_core = 220
+		}
+    ai_chance = { factor = 5 }
+    }
+    option = {
+    name = sbu.41.j
+    ai_chance = { factor = 5 }
+    }
+}
+
+country_event = {
+	id = sbu.42
+	title = sbu.42.t
+	desc = sbu.42.d
+		picture = GFX_news_event_009
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+    option = {
+    name = sbu.42.a
+		TRB = { 
+			annex_country = {
+				target = LCH
+				transfer_troops = yes
+		    }
+		}
+		LCH = { 
+		remove_state_core = 221
+		remove_state_core = 222
+		}
+    ai_chance = { factor = 70 }
+    }
+    option = {
+    name = sbu.42.b
+		SBU = { 
+			annex_country = {
+				target = LCH
+				transfer_troops = yes
+		    }
+		}
+		LCH = { 
+		remove_state_core = 221
+		remove_state_core = 222
+		}
+	ai_chance = { factor = 15 }
+    }
+    option = {
+    name = sbu.42.j
+    ai_chance = { factor = 15 }
+    }
+}
+
+country_event = {
+	id = sbu.43
+	title = sbu.43.t
+	desc = sbu.43.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+	name = sbu.43.a
+		SBU = { 
+			add_opinion_modifier = { target = SBU modifier = MOF_SBU_relationship }
+		    add_timed_idea = { idea = MOF_rise_of_communism days = 90 }
+			give_guarantee = MOF
+		}
+	}
+}
+
+country_event = {
+	id = sbu.44
+	title = sbu.44.t
+	desc = sbu.44.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+	name = sbu.44.a
+		MOF = { 
+			start_civil_war = {
+				ideology = communism
+				ruling_party = democratic
+				capital = 172
+				states = { 175 180 179 178 }
+				size = 0.2
+			}
+	    }
+	ai_chance = { factor = 0.4 }
+	}
+	option = {
+	name = sbu.44.b
+		MOF = { country_event = { id = monfua.6 days = 1 } }
+	ai_chance = { factor = 0.6 }
+	}
+}
+
+country_event = {
+	id = sbu.45
+	title = sbu.45.t
+	desc = sbu.45.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+	name = sbu.45.a
+	}
+}
+
+country_event = {
+	id = sbu.46
+	title = sbu.46.t
+	desc = sbu.46.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+	name = sbu.46.a
+		SBU = {
+			declare_war_on = {
+				target = MOF
+				type = puppet
+			}
+		}
+	}
+}
+
+country_event = {
+    id = sbu.47
+    title = sbu.47.t
+    desc = sbu.47.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+	name = sbu.47.a
+	ai_chance = { factor = 70 }
+    }
+    option = {
+	name = sbu.47.b
+	ai_chance = { factor = 15 }
+    }
+    option = {
+	name = sbu.47.c
+	ai_chance = { factor = 15 }
+    }
+}
+
+country_event = {
+    id = sbu.48
+    title = sbu.48.t
+    desc = sbu.48.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+	name = sbu.48.a
+	ai_chance = { factor = 30 }
+
+	SBU = {
+	    give_guarantee = SMA
+	    send_equipment = {
+		equipment = infantry_equipment
+		amount = 5000
+		target = SMA
+	    }
+	}
+    }
+    option = {
+	name = sbu.48.b
+	ai_chance = { factor = 70 }
+    }
+}
+
+country_event = {
+	id = sbu.49
+	title = sbu.49.t
+	desc = sbu.49.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.49.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+		UCB = { add_opinion_modifier = { target = ROOT modifier = SBU_democracy_friendly } }
+	}
+	option = {
+		name = sbu.49.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.3
+		}
+		UCB = { add_opinion_modifier = { target = ROOT modifier = SBU_democracy_enemy } }
+	}
+}
+
+country_event = {
+	id = sbu.50
+	title = sbu.50.t
+	desc = sbu.50.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.50.a
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = sbu.51
+	title = sbu.51.t
+	desc = sbu.51.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.51.a
+		declare_war_on = { target = RGY type = annex_everything }
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = sbu.53
+	title = sbu.53.t
+	desc = sbu.53.d
+
+	hidden = yes
+
+	trigger = {
+		tag = SBU
+		has_idea = SBU_Hleria
+	}
+
+	mean_time_to_happen = {days = 90}
+
+	immediate = {
+		random_list = {
+			25 = {
+				activate_mission = SBU_RebelHLE
+			}
+			25 = {
+				activate_mission = SBU_RebelHLE2
+			}
+			25 = {
+				activate_mission = SBU_RebelHLE3
+			}
+		}
+	}
+	option = {
+		name = sbu.53.a
+	}
+}
+
+country_event = {
+	id = sbu.54
+	title = sbu.54.t
+	desc = sbu.54.d
+
+	hidden = yes
+
+	trigger = {
+		tag = SBU
+		has_idea = SBU_Hleria
+		date > 2014.01.13
+	}
+
+	mean_time_to_happen = {days = 365}
+
+	immediate = {
+		activate_mission = SBU_RebelHLE4
+	}
+	option = {
+		name = sbu.54.a
+	}
+}
+
+news_event = {
+	id = sbu.55
+	title = sbu.55.t
+	desc = sbu.55.d
+	major = yes
+
+	trigger = {
+		tag = SBU
+		date > 2019.04.14
+		has_government = democratic
+	}
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			SBU = {retire_country_leader = yes}
+		}
+	}
+	option = {
+		name = sbu.55.a
+	}
+}
+
+country_event = {
+	id = sbu.56
+	title = sbu.56.t
+	desc = sbu.56.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.56.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		subtract_from_variable = {wtire = 50}
+	}
+}
+
+country_event = {
+	id = sbu.57
+	title = sbu.57.t
+	desc = sbu.57.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.57.a
+		SBU = {
+			diplomatic_relation = {
+				country = TRB
+				relation = non_aggression_pact
+				active = yes
+			}
+			give_guarantee = TRB
+		}
+	}
+	option = {
+		name = sbu.57.b
+		SBU = {
+			if = {
+				limit = {is_faction_leader = yes}
+				add_to_faction = TRB
+			}
+			else = {
+				create_faction = SBU_TRB_monarch_faction
+				hidden_effect = {
+					add_to_faction = TRB
+				}
+			}
+		}
+	}
+	option = {
+		name = sbu.57.c
+		SBU = {
+			puppet = TRB
+		}
+	}
+	option = {
+		name = sbu.57.f
+		custom_effect_tooltip = unknown_effect_tooltip
+		hidden_effect = {
+			SBU = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = TRB
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sbu.58
+	title = sbu.58.t
+	desc = sbu.58.d
+
+	trigger = {
+		tag = SBU
+		date > 2018.04.30
+		has_government = democratic
+	}
+	fire_only_once = yes
+
+	option = {
+		name = sbu.58.a
+		SBU = { remove_ideas = SBU_Elnia_separatism }
+	}
+}
+
+news_event = {
+	id = sbu.59
+	title = sbu.59.t
+	desc = sbu.59.d
+
+	trigger = {
+		tag = SBU
+		date > 2014.05.01
+		has_government = democratic
+	}
+	fire_only_once = yes
+
+	option = {
+		name = sbu.59.a
+	}
+}
+	
+country_event = {
+	id = sbu.60
+	title = sbu.60.t
+	desc = sbu.60.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.60.a
+	SFL = { country_event = { id = sfl.15 days = 1 } }
+    ai_chance = { 
+	factor = 0.7
+	}
+    }
+    option = {
+    name = sbu.60.b
+	SFL = { country_event = { id = sfl.20 days = 1 } }
+    ai_chance = { factor = 0.3 }
+    }
+}
+
+country_event = {
+	id = sbu.61
+	title = sbu.61.t
+	desc = sbu.61.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.61.a
+	SFL = { give_guarantee = RGY }
+	SFL = { country_event = { id = sfl.16 days = 1 } }
+    ai_chance = { 
+	factor = 0.5
+	}
+    }
+    option = {
+    name = sbu.61.b
+	SBU = { give_guarantee = RGY }
+	SFL = { country_event = { id = sfl.17 days = 1 } }
+    ai_chance = { factor = 0.5 }
+    }
+}
+
+country_event = {
+    id = sbu.62
+    title = sbu.62.t
+    desc = sbu.62.d
+	picture = GFX_news_event
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = SFL
+    }
+
+    option = {
+    name = sfl.62.a
+		SBU = {
+			add_opinion_modifier = {
+			target = SFL
+			modifier = SBU_SFL_bad_deal
+        }
+    }
+		SFL = {
+			add_opinion_modifier = {
+			target = SBU
+			modifier = SBU_SFL_bad_deal
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sbu.63
+	title = sbu.63.t
+	desc = sbu.63.d
+		picture = GFX_report_event_american_hunger_march
+
+    is_triggered_only = yes
+
+	trigger = {
+	TAG = SBU
+	}
+
+    option = {
+    name = sbu.63.a
+	SFL = { give_guarantee = MOF }
+	SFL = { country_event = { id = sfl.19 days = 1 } }
+		ai_chance = { 
+			factor = 0.2
+		}
+    }
+    option = {
+    name = sbu.63.b
+	SFL = { country_event = { id = sfl.18 days = 1 } }
+		ai_chance = { factor = 0.8 }
+    }
+}
+
+country_event = {
+	id = sbu.64
+	title = sbu.64.t
+	desc = sbu.64.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.64.a
+		custom_effect_tooltip = klyachek_choose
+		hidden_effect = {retire_country_leader = yes}
+	}
+	option = {
+		name = sbu.64.b
+		custom_effect_tooltip = alankat_choose
+		hidden_effect = {
+			retire_country_leader = yes
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = democratic
+				long_name = SBU_democratic_party_ahagon_long
+				name = SBU_democratic_party_ahagon
+			}
+		}
+	}
+}
+
+country_event = { # удачный переворот
+	id = sbu.65
+	title = sbu.65.t
+	desc = sbu.65.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.65.a
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_political_power = 100
+		add_war_support = 0.15
+		set_country_flag = sbu_try_success
+		FBU = {transfer_state = 72}
+		UCB = {give_guarantee = FBU}
+
+		hidden_effect = {
+			SBU = {
+				every_owned_state = {
+					add_core_of = FBU
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sbu.66
+	title = sbu.66.t
+	desc = sbu.66.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.66.a
+		set_country_flag = sbu_try_fail
+		set_country_flag = sbu_political_crisis_collapse
+		set_country_flag = sbu_army_crisis_collapse
+	}
+}
+
+country_event = {
+	id = sbu.67
+	title = sbu.67.t
+	desc = sbu.67.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.67.a
+		set_country_flag = sbu_dogovor_trb_crisis
+	}
+}
+
+country_event = {
+	id = sbu.68
+	title = sbu.68.t
+	desc = sbu.68.d
+	hidden = yes
+
+	trigger = {
+		has_country_flag = sbu_try_fail
+	}
+
+	mean_time_to_happen = {days = 23}
+
+	immediate = {
+		if = {
+			limit = {not = {has_country_flag = sbu_dogovor_trb_crisis}}
+			random_list = {
+				20 = {
+					TRB = {country_event = terbia.9}
+					clr_country_flag = sbu_try_fail
+				}
+				80 = {
+
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = sbu.68.a
+	}
+}
+
+country_event = {
+	id = sbu.70
+	title = sbu.70.t
+	desc = sbu.70.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = sbu.70.a
+		release = HLR
+		release = ELN
+		release = SVT
+	}
+}
+
+country_event = {
+	id = sbu.71
+	title = sbu.71.t
+	desc = sbu.71.d
+
+	trigger = {
+		date > 2019.07.21
+		tag = SBU
+		has_government = democratic
+	}
+	fire_only_once = yes
+
+	option = {
+		name = sbu.71.a
+		add_ideas = SBU_corruption_incident
+	}
+}

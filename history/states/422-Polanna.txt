@@ -1,0 +1,33 @@
+
+state={
+	id=422
+	name="STATE_422"
+	manpower = 1620000
+	
+	state_category = town
+	
+	resources={
+		steel = 8 # was: 12
+                oil = 14 # was: 28
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 3
+			7689 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = VRO
+		victory_points = {
+			7689 10
+		}
+
+	}
+	provinces={
+		6279 6362 6489 6520 6521 6522 6590 6624 6666 6667 6701 6721 6744 6745 6837 6838 6855 6873 6894 6911 6966 6967 6968 6989 7041 7042 7065 7066 7099 7100 7137 7160 7161 7215 7216 7235 7236 7279 7303 7353 7354 7375 7376 7425 7426 7439 7494 7495 7496 7517 7547 7580 7581 7582 7602 7620 7697 7698 7759 7760 7761 7821 7875 
+	}
+}

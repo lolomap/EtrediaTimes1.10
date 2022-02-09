@@ -1,0 +1,29 @@
+
+state={
+	id=395
+	name="STATE_395"
+	manpower = 630000
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 64 # was: 82
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = EIK
+		victory_points = {
+			13047 5
+		}
+
+	}
+	provinces={
+		14751 14754 14755 14777 14787 14810 14815 14816 14841 14880 14882 14884 14885 14892 
+	}
+}

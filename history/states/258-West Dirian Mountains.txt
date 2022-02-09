@@ -1,0 +1,25 @@
+
+state={
+	id=258
+	name="STATE_258"
+	resources={
+		steel=48.000
+	}
+	state_category = wasteland
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = DIR
+		#victory_points = {}
+
+	}
+	provinces={
+		12589 12590 12619 12620 12621 12708 12716 12717 12729 12759 12850 12874 
+	}
+	manpower=45077
+	buildings_max_level_factor=1.000
+}

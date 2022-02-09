@@ -1,0 +1,30 @@
+
+state={
+	id=215
+	name="STATE_215"
+	resources={
+		oil=5.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 1
+
+		}
+		add_core_of = SBU
+		victory_points = {
+			5697 5 
+		}
+
+	}
+	provinces={
+		4819 4867 4886 4887 4942 5014 5046 5074 5075 5115 5152 5187 5227 5250 5299 5300 5312 5386 5387 5410 5487 5488 5505 5526 
+	}
+	manpower=1575000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

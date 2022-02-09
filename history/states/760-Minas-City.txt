@@ -1,0 +1,28 @@
+
+state={
+	id=760
+	name="STATE_760"
+	manpower = 3980000
+	state_category = large_town
+	
+	resources={
+		rubber = 20 # was: 22
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+			arms_factory = 1
+		}
+		add_core_of = ATI
+		victory_points = {
+			2315 20
+		}
+
+	}
+	provinces={
+		1680 1686 1716 1746 1747 1766 1820 1834 1841 1884 1960 
+	}
+}

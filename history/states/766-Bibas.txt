@@ -1,0 +1,25 @@
+state={
+	id=766
+	name="STATE_766"
+	manpower = 2340000
+	state_category = rural
+	
+	resources={
+		steel = 8 # was: 10
+	}
+
+	history={
+		owner = NBL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = NBL
+		victory_points = {
+			1700 1
+		}
+
+	}
+	provinces={
+		1194 1204 1214 1248 1256 1267 1281 1299 1307 1308 1312 1347 
+	}
+}

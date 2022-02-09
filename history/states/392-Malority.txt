@@ -1,0 +1,29 @@
+
+state={
+	id=392
+	name="STATE_392"
+	manpower = 880000
+	
+	state_category = rural
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 1
+			14511 = {
+				naval_base = 9
+			}
+		}
+		add_core_of = EIK
+		victory_points = {
+			14511 1
+		}
+
+	}
+	provinces={
+		14511 14524 14546 14561 14583 14590 14593 14608 14613 14614 14619 14620 14622 14625 14626 14629 14630 14645 14669 14670 14680 14681 14687 14689 14694 14701 14702 14709 14718 14722 14723 14724 14732 14741 14749 14750 14768 14818 
+	}
+}

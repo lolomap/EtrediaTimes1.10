@@ -1,0 +1,25 @@
+
+state={
+	id=135
+	name="STATE_135"
+	history={
+		owner = FIL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = FIL
+		victory_points = {
+			12611 5 
+		}
+
+	}
+	provinces={
+		12611 12632 12641 12685 12724 12738 12754 12764 12765 12790 12804 12805 12831 12861 12892 12913 12914 12930 12954 12971 12994 13024 13036 13048 13122 13164 
+	}
+	manpower=890000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=340
+	name="STATE_340"
+	manpower = 1980000
+	
+	state_category = town
+	
+	resources={
+		oil = 6 # was: 12
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 2
+		}
+		add_core_of = EIK
+		victory_points = {
+			12668 5
+		}
+
+	}
+	provinces={
+		8774 9286 14118 14131 14192 14219 14220 14235 14255 14278 14303 14325 14330 14331 
+	}
+}

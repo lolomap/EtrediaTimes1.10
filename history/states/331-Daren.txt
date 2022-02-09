@@ -1,0 +1,29 @@
+
+state={
+	id=331
+	name="STATE_331"
+	resources={
+		steel=26.000
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = EIK
+		victory_points = {
+			12285 5 
+		}
+
+	}
+	provinces={
+		13386 13452 13461 13472 13514 13551 13579 13591 13604 13638 13639 13701 13702 13703 13765 
+	}
+	manpower=3300000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=188
+	name="STATE_188"
+	manpower = 850000
+	
+	state_category = rural
+	
+	resources={
+		steel = 34 # was: 40
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 0
+		}
+		add_core_of = SFl
+		victory_points = {
+			6454 5
+		}
+
+	}
+	provinces={
+		5753 5790 5913 5926 6000 6040 6098 6116 6171 6172 6290 6291 6344 6371 6390 6453 6502 6532 6549 6550 6614 
+	}
+}

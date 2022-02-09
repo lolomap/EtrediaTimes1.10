@@ -1,0 +1,183 @@
+add_namespace = monfua
+
+country_event = {
+	id = monfua.1
+	title = monfua.1.t
+	desc = monfua.1.d
+	picture = GFX_news_event
+	
+        is_triggered_only = yes
+
+	trigger = {
+        TAG = MOF
+    }
+
+	option = {
+		name = monfua.1.a
+                add_ideas = { MOF_fascismpower } 
+        }
+}
+
+country_event = {
+	id = monfua.2
+	title = monfua.2.t
+	desc = monfua.2.d
+	picture = GFX_news_event
+	
+        is_triggered_only = yes
+
+	trigger = {
+        TAG = MOF
+        }
+
+	option = {
+		name = monfua.2.a
+		SFL = {
+			annex_country = {
+			    target = MOF
+			    transfer_troops = yes
+			}
+		}
+                ai_chance = { factor = 90 }
+        }
+	option = {
+	name = monfua.2.b
+		ai_chance = { factor = 10 
+		modifier = {
+		    MOF = {
+			    has_opinion = {
+				target = SBU
+				value > 49
+				}
+			}
+	    factor = 100
+        }
+		}
+        MOF = { add_ideas = MOF_glory_to_independence }
+		MOF = { remove_ideas = MOF_fascismpower }
+        SFL = { country_event = { id = sfl.3 days = 1 } }
+        }
+}
+
+country_event = {
+	id = monfua.3
+	title = monfua.3.t
+	desc = monfua.3.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = MOF
+    }
+
+	option = {
+    name = monfua.3.a
+        hidden_effect = {
+        SFL = {
+        add_to_faction = MOF
+        }
+    }              
+    ai_chance = { factor = 100 }	
+    }
+
+    option = {
+    name = monfua.3.b
+    hidden_effect = {
+    SFL = { add_opinion_modifier = { target = ROOT modifier = SFL_rtt_otkaz } }
+    }
+    ai_chance = { factor = 0 }
+    }
+
+}
+
+country_event = {
+	id = monfua.4
+	title = monfua.4.t
+	desc = monfua.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+	
+	option = {
+	name = monfua.4.b
+	SBU = { country_event = { id = sbu.12 days = 1 } }
+	ai_chance = { factor = 5 }
+	}
+	option = {
+	name = monfua.4.a
+	SBU = { country_event = { id = sbu.13 days = 1 } }
+    MOF = { add_opinion_modifier = { target = SBU modifier = MOF_SBU_relationship } }
+	    ai_chance = { factor = 5 
+            MOF = {
+		        has_opinion = {
+		        target = SBU
+		        value > 4
+		        }
+	        }
+	     factor = 1
+	    }
+    }
+}
+
+country_event = {
+	id = monfua.5
+	title = monfua.5.t
+	desc = monfua.5.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+		name = monfua.5.a
+		SBU = { country_event = { id = sbu.43 days = 1 } }
+		MOF = { 
+			add_opinion_modifier = { target = SBU modifier = MOF_SBU_relationship }
+		    add_timed_idea = { idea = MOF_rise_of_communism days = 360 }
+		}
+		ai_chance = { factor = 0.2 }
+	}
+	option = {
+		name = monfua.5.b
+		SBU = { country_event = { id = sbu.44 days = 1 } }
+		ai_chance = { factor = 0.8 }
+	}
+}
+
+country_event = {
+	id = monfua.6
+	title = monfua.6.t
+	desc = monfua.6.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+	name = monfua.6.a
+		SBU = { country_event = { id = sbu.45 days = 1 } }
+		SBU = {
+			if = {
+				limit = { MOF = { owns_state = 180 controls_state = 180 } } 
+				transfer_state = 180
+				limit = { MOF = { owns_state = 175 controls_state = 175 } } 
+				transfer_state = 175
+				limit = { MOF = { owns_state = 179 controls_state = 179 } } 
+				transfer_state = 179
+				limit = { MOF = { owns_state = 178 controls_state = 178 } } 
+				transfer_state = 178
+			}
+		}
+		ELR = {
+		    if = {
+				limit = { MOF = { owns_state = 169 controls_state = 169 } } 
+				transfer_state = 169
+			}
+		}
+	ai_chance = { factor = 0.3 }
+	}
+	option = {
+	name = monfua.6.b
+		SBU = { country_event = { id = sbu.46 days = 1 } }
+	ai_chance = { factor = 0.7 }
+	}
+}

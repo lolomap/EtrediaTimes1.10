@@ -1,0 +1,32 @@
+
+state={
+	id=216
+	name="STATE_216"
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 1
+			4900 = {
+				naval_base = 5
+			}
+			5137 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = SBU
+		victory_points = {
+			4900 5 
+		}
+
+	}
+	provinces={
+		4243 4275 4304 4350 4368 4401 4402 4433 4434 4448 4481 4515 4516 4533 4547 4568 4585 4600 4645 4646 4719 4736 4760 4784 4785 4804 4868 
+	}
+	manpower=2800000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

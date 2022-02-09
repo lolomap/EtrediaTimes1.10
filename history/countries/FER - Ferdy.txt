@@ -1,0 +1,82 @@
+﻿capital = 272
+
+oob = "FER_2014"
+
+set_research_slots = 3
+set_stability = 0.2
+set_war_support = 0.4
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2014.3.5"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 0
+        fascism = 100
+        communism = 0
+	neutrality = 0
+}
+
+#
+create_country_leader = {
+	name = "Democratic Diria"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Darvin Pouskat"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Free Diria"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Free Diria"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}

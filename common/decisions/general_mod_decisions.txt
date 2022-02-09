@@ -1,0 +1,617 @@
+nuclear_war = {
+	NukeRequest = {
+		visible = {
+			is_in_faction = yes
+			has_war = yes
+			num_of_nukes > 0
+			is_faction_leader = no
+		}
+		available = {
+			not = {has_country_flag = nuke_request_accepted}
+		}
+
+		complete_effect = {
+			#когда обновимся до 1.10 везде надо использовать faction_leader = {}
+			every_other_country = {
+				limit = {
+					is_faction_leader = yes
+					is_in_faction_with = ROOT
+				}
+				country_event = {id = nukemod.1 days = 1}
+			}
+		}
+	}
+}
+
+nuclear_construction = {
+	NukeConstruct = { # CHANGE WITH DAYS_REMOVE AND ADD_DAYS_REMOVE IN 1.10
+		visible = {always = yes}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			any_owned_state = {
+				has_resources_amount = {
+					resource = uranium
+					amount > 1
+				}
+			}
+		}
+
+		cost = 5
+		days_remove = 120
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {ndelay = 360}
+				set_variable = {num_of_reactors = 0}
+				every_owned_state = {
+					owner = {add_to_variable = {num_of_reactors = PREV.building_level@nuclear_reactor}}
+				}
+				divide_variable = {ndelay = num_of_reactors} #Не учитывать реакторы на которые не хватает урана
+			}
+
+			custom_effect_tooltip = nuclear_construction_tip
+
+			random_owned_state = {
+				limit = {industrial_complex > 1}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			
+		}
+		remove_effect = {
+			add_nuclear_bombs = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+foreign_support = {
+	economic_friend_support = {
+		visible = {
+			is_in_faction = yes
+			not = {has_idea = ec_fs_l_b}
+			not = {has_idea = ec_fs_m_b}
+			not = {has_idea = ec_fs_h_b}
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+				check_variable = {FROM.world_influence < ROOT.world_influence}
+			}
+		}
+
+		complete_effect = {
+			ROOT = {
+				add_timed_idea = {idea = ec_fs_h_b days = 120}
+			}
+			FROM = {
+				add_timed_idea = {idea = ec_fs_h_g days = 120}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				set_temp_variable = {raznica_economic_friends = ROOT.world_influence}
+				subtract_from_temp_variable = {raznica_economic_friends = FROM.world_influence}
+				check_variable = {raznica_economic_friends > 4}
+				check_variable = {world_influence > 5}
+				has_war = no
+				has_stability > 0.5
+			}
+		}
+	}
+}
+
+war_measures = {
+	tension_demonstration = {
+		available = {
+			has_war = yes
+		}
+		visible = {
+			has_war = yes
+			always = no
+		}
+
+		target_trigger = {
+			FROM = {
+				not = {has_war_with = ROOT}
+				is_neighbor_of = ROOT
+			}
+		}
+
+		custom_cost_trigger = {
+			has_army_experience > 10
+			command_power > 15
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+			army_experience = -10
+			add_command_power = -15
+			FROM = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 1000
+				}
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 50
+				}
+			}
+		}
+	}
+}
+
+foreign_influence = {
+	close_guarantee ={
+		#available = {
+		#	not = {has_government = democratic}
+		#	not = {has_flag = cgevduring}
+		#}
+
+		#visible = {
+		#	not = {has_government = democratic}
+		#	not = {has_flag = cgevduring}
+		#}
+		available = {always = no} #В разработке
+		visible = {always = no}
+
+		target_trigger = {
+			any_country = {
+				ROOT = {is_justifying_wargoal_against = PREV}
+				is_guaranteed_by = FROM
+			}
+		}
+
+		cost = 150
+
+		complete_effect = {
+			set_country_flag = cgevduring
+			set_variable = {cgpartner = FROM}
+			random_country = {
+				limit = {
+					ROOT = {is_justifying_wargoal_against = PREV}
+					is_guaranteed_by = FROM
+				}
+				ROOT = {set_variable = {cgtarget@FROM = PREV}}
+			}
+
+			country_event = {id = wjmod.1 days = 1}
+		}
+	}
+
+	make_loyal = {
+		available = {
+			OR = {
+				has_government = monarchism
+				has_government = neutrality
+			}
+		}
+		visible = {
+			OR = {
+				has_government = monarchism
+				has_government = neutrality
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				not = {
+					OR = {
+						has_government = monarchism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 30
+		}
+
+		complete_effect = {
+			add_command_power = -30
+			FROM = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					monarchism = 0
+					democratic = 30
+					neutrality = 70
+					fascism = 0
+					communism = 0
+				}
+				set_country_leader_ideology = conservatism
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+political_actions = {
+	#	reset_parlament = {
+	#		available = {
+	#			has_government = democratic
+	#		}
+	#		visible = {
+	#			has_government = democratic
+	#			monarchism < 0.01
+	#		}
+	#
+	#		cost = 50
+	#		days_remove = 30
+	#		days_re_enable = 360
+	#
+	#		complete_effect = {
+	#			add_stability = -0.15
+	#		}
+	#
+	#		remove_effect = {
+	#			custom_effect_tooltip = reset_parlament_tooltip
+	#			hidden_effect = {
+	#				add_stability = 0.1
+	#				set_variable = {td = random}
+	#				if = {limit = {check_variable = {td > 0.6}} set_variable = {td = 0.6}}
+	#				multiply_variable = {td = 100}
+	#				set_variable = {tn = random}
+	#				if = {limit = {check_variable = {tn > 0.5}} set_variable = {tn = 0.5}}
+	#				multiply_variable = {tn = 100}
+	#				set_variable = {tf = random}
+	#				if = {limit = {check_variable = {tf > 0.5}} set_variable = {tf = 0.5}}
+	#				multiply_variable = {tf = 100}
+	#				set_variable = {tc = 100}
+	#				subtract_from_variable = {tc = td}
+	#				subtract_from_variable = {tc = tn}
+	#				subtract_from_variable = {tc = tf}
+	#				if = {limit = {check_variable = {tc < 0}} set_variable = {tc = 0}}
+
+	#				set_variable = {controlid = 0}
+	#				add_to_variable = {controlid = td}
+	#				add_to_variable = {controlid = tn}
+	#				add_to_variable = {controlid = tc}
+	#				add_to_variable = {controlid = tf}
+	#				if = {
+	#					limit = {check_variable = {controlid > 100}}
+	#					set_temp_variable = {raznica = 100}
+	#					subtract_from_temp_variable = {raznica = controlid}
+	#					divide_temp_variable = {raznica = 4}
+	#					add_to_variable = {td = raznica}
+	#					add_to_variable = {tn = raznica}
+	#					add_to_variable = {tf = raznica}
+	#					add_to_variable = {tc = raznica}
+	#				}
+
+	#				set_popularities = {
+	#					democratic = td
+	#					neutrality = tn
+	#					fascism = tf
+	#					communism = tc
+	#					monarchism = 0
+	#				}
+
+	#				if = {
+	#					limit = {democratic < 0.3}
+	#					set_political_party = {
+	#						ideology = democratic 
+	#						popularity = 30
+	#					}
+	#				}
+
+	#				news_event = {id = newss.17}
+	#			}
+	#		}
+
+	#		ai_will_do = {factor = 0.1}
+	#	}
+
+	left_pressure = {
+		available = {
+			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = has_centrism_tooltip
+				OR = {
+					has_country_leader = {name = "Парламент"}
+					has_country_leader = {name = "Anatoly Zhmirinovan"}
+					has_country_leader = {name = "Sebastien Olorezio"}
+					has_country_leader = {name = "kim Tarnetilio"}
+					has_country_leader = {name = "Nurkbultan Memrekaev"}
+					has_country_leader = {name = "Espano Gildo"}
+				}
+			}
+		}
+		visible = {
+			has_government = democratic
+		}
+
+		cost = 25
+
+		days_remove = 120
+
+		complete_effect = {
+			add_stability = 0.105
+			add_ideas = left_pressuring
+		}
+
+		remove_effect = {
+			add_stability = -0.1
+			remove_ideas = left_pressuring
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	right_pressure = {
+		available = {
+			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = has_centrism_tooltip
+				OR = {
+					has_country_leader = {name = "Парламент"}
+					has_country_leader = {name = "Anatoly Zhmirinovan"}
+					has_country_leader = {name = "Sebastien Olorezio"}
+					has_country_leader = {name = "kim Tarnetilio"}
+					has_country_leader = {name = "Nurkbultan Memrekaev"}
+					has_country_leader = {name = "Espano Gildo"}
+				}
+			}
+		}
+		visible = {
+			has_government = democratic
+		}
+
+		cost = 25
+
+		days_remove = 120
+
+		complete_effect = {
+			add_stability = 0.105
+			add_war_support = -0.05
+		}
+
+		remove_effect = {
+			add_stability = -0.1
+			add_war_support = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	support_elite = {
+		available = {
+			has_government = monarchism
+		}
+		visible = {
+			has_government = monarchism
+		}
+
+		cost = 15
+
+		days_remove = 90
+
+		complete_effect = {
+			add_ideas = elite_supporting
+			add_stability = -0.05
+		}
+
+		remove_effect = {
+			remove_ideas = elite_supporting
+			add_stability = 0.05
+		}
+
+		ai_will_do = {factor = 0.6}
+	}
+
+	support_workers = {
+		available = {
+			has_government = monarchism
+		}
+		visible = {
+			has_government = monarchism
+		}
+
+		cost = 15
+
+		days_remove = 90
+
+		complete_effect = {
+			add_ideas = workers_supporting
+			add_stability = 0.05
+		}
+
+		remove_effect = {
+			remove_ideas = workers_supporting
+			add_stability = -0.05
+		}
+
+		ai_will_do = {factor = 0.5}
+	}
+
+	rise_central_power = {
+		available = {
+			has_government = neutrality
+		}
+		visible = {
+			has_government = neutrality
+		}
+
+		cost = 15
+		days_re_enable = 90
+
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.01
+			}
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+	rosguardy = {
+		available = {
+			has_government = neutrality
+		}
+		visible = {
+			has_government = neutrality
+		}
+
+		cost = 15
+
+		days_re_enable = 90
+
+		complete_effect = {
+			add_stability = 0.01
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+	parade = {
+		available = {
+			has_government = neutrality
+		}
+		visible = {
+			has_government = neutrality
+		}
+
+		cost = 15
+
+		days_re_enable = 90
+
+		complete_effect = {
+			add_war_support = 0.01
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+	military_civilians = {
+		available = {
+			has_government = fascism
+			check_variable = {trained_civs_num < 10}
+		}
+		visible = {
+			has_government = fascism
+		}
+
+		cost = 15
+
+		days_re_enable = 120
+
+		complete_effect = {
+			add_manpower = 10000
+			army_experience = 2
+			add_to_variable = {trained_civs_num = 1}
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+	movie_propoganda = {
+		available = {
+			has_government = fascism
+		}
+		visible = {
+			has_government = fascism
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+	military_gov_trade = {
+		available = {
+			has_government = fascism
+		}
+		visible = {
+			has_government = fascism
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 5000
+			    producer = ROOT
+			}
+			add_stability = -0.1
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				has_stability > 7
+			}
+		}
+	}
+
+	update_work_plan = {
+		available = {
+			has_government = communism
+		}
+		visible = {
+			has_government = communism
+		}
+
+		cost = 50
+
+		days_remove = 90
+		days_re_enable = 1080
+
+		complete_effect = {
+			add_ideas = updated_work_plan
+		}
+
+		remove_effect = {
+			remove_ideas = updated_work_plan
+		}
+
+		ai_will_do = {factor = 1}
+	}
+
+}

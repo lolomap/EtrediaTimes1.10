@@ -1,0 +1,29 @@
+
+state={
+	id=424
+	name="STATE_424"
+	manpower = 245000
+	
+	state_category = pastoral
+	
+	resources={
+		chromium = 12 # was: 35
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 1
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = VRO
+		victory_points = {
+			9195 1
+		}
+
+	}
+	provinces={
+		9354 9481 9528 9603 9689 9771 9853 9974 
+	}
+}

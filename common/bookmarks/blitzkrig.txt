@@ -1,0 +1,104 @@
+bookmarks = {
+	bookmark = {
+		name = "MINOR_WORLD_NAME"
+		desc = "MINOR_WORLD_DESC"
+		date = 2014.2.2.12
+		picture = "GFX_select_date_1939"
+		default_country = "EIK"
+		default = yes
+
+		"UCB"={
+			history = "UCB_GATHERING_STORM_DESC"
+                        ideology = democratic
+		}
+
+		"SBU"={
+			history = "SBU_GATHERING_STORM_DESC"
+                        ideology = democratic
+		}
+
+		"YAN"={
+			history = "YAN_GATHERING_STORM_DESC"
+                        ideology = fascism
+		}
+
+		"EIK"={
+			history = "YAN_GATHERING_STORM_DESC"
+                        ideology = fascism
+		}
+
+		"IID"={
+			history = "IID_GATHERING_STORM_DESC"
+                        ideology = neutrality
+		}
+
+		"SFL"={
+			history = "SFL_GATHERING_STORM_DESC"
+                        ideology = democratic
+		}
+
+		"FSC"={
+			history = "FSC_GATHERING_STORM_DESC"
+                        ideology = democratic
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"PIN"={
+			minor = yes
+			history = "PIN_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		"KAR"={
+			minor = yes
+			history = "KAR_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"TRB"={
+			minor = yes
+			history = "TRB_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"TOL"={
+			minor = yes
+			history = "TOL_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SMA" = {
+			minor = yes
+			history = "SMA_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"DIR"={
+			minor = yes
+			history = "DIR_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"TOR"={
+			minor = yes
+			history = "TOR_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"KLU"={
+			minor = yes
+			history = "KLU_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		"MOA"={
+			minor = yes
+			history = "MOA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"CHE"={
+			minor = yes
+			history = "CHE_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

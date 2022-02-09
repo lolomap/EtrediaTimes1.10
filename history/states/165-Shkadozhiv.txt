@@ -1,0 +1,30 @@
+
+state={
+	id=165
+	name="STATE_165"
+	manpower = 2500000
+	
+	state_category = large_town
+	
+	resources={
+		steel = 28 # was: 50
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 3
+                        arms_factory = 1
+		}
+		add_core_of = SFL
+		add_core_of = SZE
+		victory_points = {
+			5346 15
+		}
+
+	}
+	provinces={
+		5346 5347 5446 5485 5501 5543 5560 5618 5642 5662 5663 5684 5734 5809 5858 5874 5896 5910 5945 5946 5982 5983 5998 5999 6023 6096 6097 6112 6142 6194 6232 6306 6307 
+	}
+}

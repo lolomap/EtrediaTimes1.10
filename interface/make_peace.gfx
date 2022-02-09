@@ -1,0 +1,16 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_make_peace_icon"
+		texturefile = "gfx/interface/custom_gui/make_peace.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_make_peace_bg"
+		texturefile = "gfx/interface/achievements_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_peace_all_btn"
+		texturefile = "gfx/interface/big_button_232.dds"
+	}
+}

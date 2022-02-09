@@ -1,0 +1,29 @@
+
+state={
+	id=604
+	name="STATE_604"
+	manpower = 960000
+	
+	state_category = rural
+	
+	resources={
+        steel = 5 # was: 16
+        chromium = 6 # was: 12
+	}
+
+	history={
+		owner = BHI
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = BHI
+		victory_points = {
+			8119 5
+		}
+
+	}
+	provinces={
+		6049 6300 6508 6626 6896 7046 7164 7203 7256 7410 7498 7674 7823 7987 
+	}
+}

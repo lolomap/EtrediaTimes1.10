@@ -1,0 +1,29 @@
+
+state={
+	id=768
+	name="STATE_768"
+	manpower = 1200000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = NIB
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			1547 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = NIB
+		victory_points = {
+			1547 1
+		}
+
+	}
+	provinces={
+		1041 1052 1067 1073 1102 1130 1149 1188 
+	}
+}

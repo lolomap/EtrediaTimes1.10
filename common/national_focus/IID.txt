@@ -1,0 +1,1163 @@
+focus_tree = {
+	id = IID
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IID
+		}
+	}
+	default = no
+	
+	reset_on_civilwar = no
+
+	focus = {
+		id = IID_magna_reto
+		icon = GFX_goal_IID_magna_reto
+		x = 30
+		y = 0
+		cost = 10
+
+		completion_reward = {
+			country_event = {id = dux.7 days = 1}
+		}
+	}
+	
+	focus = {
+		id = IID_solve_pressing_issues
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = IID_magna_reto
+		}
+		mutually_exclusive = {
+			focus = IID_UnexpectedTwist
+		}
+
+		completion_reward = {
+			country_event = {id = dux.8 days = 1}
+		}
+	}
+
+	focus = {
+		id = IID_UnexpectedTwist
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 46
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = IID_magna_reto
+		}
+		mutually_exclusive = {
+			focus = IID_solve_pressing_issues
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_EmpireFirstPlace
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 46
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IID_UnexpectedTwist
+		}
+		mutually_exclusive = {
+			focus = IID_LonSahRevolution
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_LonSahRevolution
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 54
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IID_UnexpectedTwist
+		}
+		mutually_exclusive = {
+			focus = IID_EmpireFirstPlace
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = IID_thirst_for_freedom
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IID_solve_pressing_issues
+		}
+		mutually_exclusive = {
+			focus = IID_continue_the_dux_way
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_continue_the_dux_way
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IID_solve_pressing_issues
+		}
+		mutually_exclusive = {
+			focus = IID_thirst_for_freedom
+		}
+
+		completion_reward = {
+			add_ideas = IID_dux
+		}
+	}
+	
+	focus = {
+		id = IID_big_country_in_the_big_politics
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_continue_the_dux_way
+		}
+
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = 0.05}
+			add_popularity = {ideology = fascism popularity = 0.05}
+			add_popularity = {ideology = communism popularity = 0.05}
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = IID_pressure_to_trp
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_big_country_in_the_big_politics
+		}
+
+		completion_reward = {
+			add_opinion_modifier = {
+				target = TRP
+				modifier = IID_pressureTRP
+			}
+			TRP = {
+				add_opinion_modifier = {
+					target = IID
+					modifier = IID_pressureTRP
+				}
+				country_event = {id = trp.3 days = 1}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_Require_the_eastern_trp
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_pressure_to_trp
+		}
+		mutually_exclusive = {
+			focus = IID_begin_trp_integration
+		}
+
+		completion_reward = {
+			country_event = {id = dux.1 days = 1}
+		}
+	}
+	
+	focus = {
+		id = IID_oil_gigant
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_Require_the_eastern_trp
+		}
+
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = 0.08}
+			add_stability = -0.05
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 89
+			}
+			add_resource = {
+				type = oil
+				amount = 14
+				state = 76
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 107
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_capture_of_the_world_market 
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_oil_gigant
+		}
+
+		completion_reward = {
+			add_ideas = IID_StrategicMemberOfTrading
+		}
+	}
+	
+	focus = {
+		id = IID_finish_off_the_minor
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = IID_Require_the_eastern_trp
+		}
+
+		completion_reward = {
+			TRP = {
+				country_event = {id = trp.4 days = 1}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_begin_trp_integration
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 17
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_pressure_to_trp
+		}
+		mutually_exclusive = {
+			focus = IID_Require_the_eastern_trp
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = iid_integrating_trp
+			TRP = {set_country_flag = iid_integrating}
+		}
+	}
+	
+	focus = {
+		id = IID_construction_in_assental
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 18
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_begin_trp_integration
+		}
+		prerequisite = {
+			focus =	IID_infastructure_projects
+		}
+		available = {
+			TRP = {
+				is_subject_of = IID
+			}
+		}
+
+		completion_reward = {
+			60 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = IID_explore_oilproduction
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 17
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_construction_in_assental
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 59
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_sponsor_instability
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 17
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = IID_explore_oilproduction
+		}
+
+		completion_reward = {
+			TRP = {add_ideas = TRP_GovUpset}
+		}
+	}
+	
+	focus = {
+		id = IID_support_kulishtia
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 16
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_sponsor_instability
+			focus = IID_Require_the_eastern_trp
+		}
+		mutually_exclusive = {
+			focus = IID_invade_to_kulishtia
+		}
+		available = {
+			country_exists = KUL
+		}
+
+		completion_reward = {
+			puppet = KUL
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_invade_to_kulishtia
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 14
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_sponsor_instability
+			focus = IID_Require_the_eastern_trp
+		}
+		mutually_exclusive = {
+			focus = IID_support_kulishtia
+		}
+		available = {
+			country_exists = KUL
+		}
+
+		completion_reward = {
+			country_event = {id = dux.4 days = 1}
+		}
+	}
+	
+	focus = {
+		id = IID_GKZ_project
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = IID_invade_to_kulishtia
+			focus = IID_support_kulishtia
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = karaten_prater_admin_available_loc
+			set_country_flag = karaten_prater_admin_available
+		}
+	}
+	
+	focus = {
+		id = IID_culture_question
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_GKZ_project
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_language_question
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 17
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_GKZ_project
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_attraction_of_large_capital
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_GKZ_project
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			55 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			53 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			54 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_expand_resourse_production
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 12
+		cost = 10
+		prerequisite = {
+			focus = IID_attraction_of_large_capital
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = aluminum
+				amount = 10
+				state = 56
+			}
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 56
+			}
+			add_resource = {
+				type = chrome
+				amount = 5
+				state = 66
+			}
+			add_resource = {
+				type = steel
+				amount = 18
+				state = 66
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_new_praeterian_civilian
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 15
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = IID_expand_resourse_production
+		}
+
+		completion_reward = {
+			KPA = {
+				every_owned_state = {
+					add_core_of = KPA
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_international_investitions
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 24
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_continue_the_dux_way
+		}
+
+		completion_reward = {
+			add_popularity = {ideology = democratic popularity = 0.05}
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_ideas = IID_investations_climate
+		}
+	}
+	
+	focus = {
+		id = IID_expand_industry_on_the_south
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_international_investitions
+		}
+
+		completion_reward = {
+			
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			73 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			77 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_infastructure_projects
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_international_investitions
+		}
+
+		completion_reward = {
+			95 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			96 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			104 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			114 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_dishat
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 21
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_infastructure_projects
+		}
+
+		completion_reward = {
+			country_event = {id = dux.10 days = 1}
+		}
+	}
+	
+	focus = {
+		id = IID_ban_eco
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 21
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = IID_dishat
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			swap_ideas = {
+				add_idea = IID_eco_crisis2
+				remove_idea = IID_eco_crisis
+			}
+		}
+	}
+	
+	focus = {
+		id = IID_only_dux
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 19
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_ban_eco
+		}
+		mutually_exclusive = {
+			focus = IID_only_empire
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_zavod
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 19
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = IID_only_dux
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_and_one_more
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 19
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_zavod
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_only_empire
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 23
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_ban_eco
+		}
+		mutually_exclusive = {
+			focus = IID_only_dux
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_slot_1
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = IID_only_empire
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_neighbors_technology 
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_only_empire
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_expand_MIC
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 24
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = IID_only_empire
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = IID_new_military_industry
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 24
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = IID_expand_MIC
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = IID_ForeignEconomicalIntegration
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 28
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_international_investitions
+		}
+		mutually_exclusive = {
+			focus = IID_SheihsWanro
+		}
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = IID_WestEtrediaPath
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 26
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_ForeignEconomicalIntegration
+		}
+		mutually_exclusive = {
+			focus = IID_EastEtrediaPath
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_EastEtrediaPath
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 30
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_ForeignEconomicalIntegration
+		}
+		mutually_exclusive = {
+			focus = IID_WestEtrediaPath
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_SiburPartner
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 26
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_WestEtrediaPath
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_UCBPartner
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 28
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_WestEtrediaPath
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = IID_YanPartner
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 28
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_WestEtrediaPath
+			focus = IID_EastEtrediaPath
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_MoaderaPartner
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 30
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_EastEtrediaPath
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_EiklPartner
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 32
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_EastEtrediaPath
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_SheihsWanro
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 40
+		y = 4
+
+		prerequisite = {
+			focus = IID_international_investitions
+			focus = IID_EmpireFirstPlace
+		}
+		mutually_exclusive = {
+			focus = IID_ForeignEconomicalIntegration
+		}
+		cost = 10
+
+		completion_reward = {
+			country_event = {id = dux.9 days = 1}
+		}
+	}
+
+	focus = {
+		id = IID_trust_own_power
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 40
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_SheihsWanro
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IID_recrut
+				add_idea = IID_recrut_reduced
+			}
+		}
+	}
+
+	focus = {
+		id = IID_ReduceForeignInfluence
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 38
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_trust_own_power
+		}
+		mutually_exclusive = {
+			focus = IID_HorseMove
+		}
+
+		completion_reward = {
+			100 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			111 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			95 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			102 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IID_OpenNewComplexes
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 38
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_ReduceForeignInfluence
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_HorseMove
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 42
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_trust_own_power
+		}
+		mutually_exclusive = {
+			focus = IID_ReduceForeignInfluence
+		}
+
+		completion_reward = {
+			remove_ideas = IID_neutrality
+			add_timed_idea = {
+				idea = IID_sanctions
+				days = 360
+			}
+
+			swap_ideas = {
+				remove_idea = IID_recrut_reduced
+				add_idea = IID_recrut_reduced2
+			}
+
+			custom_effect_tooltip = iid_horsemove_relationship
+			hidden_effect = {
+				add_opinion_modifier = {target = UCB modifier = UCB_hateIID}
+				add_opinion_modifier = {target = SFL modifier = SFL_hateIID}
+				add_opinion_modifier = {target = KAR modifier = KAR_hateIID}
+				add_opinion_modifier = {target = SBU modifier = SBU_hateIID}
+				add_opinion_modifier = {target = EIK modifier = EIK_hateIID}
+				UCB = {add_opinion_modifier = {target = IID modifier = UCB_hateIID}}
+				SFL = {add_opinion_modifier = {target = IID modifier = SFL_hateIID}}
+				KAR = {add_opinion_modifier = {target = IID modifier = KAR_hateIID}}
+				SBU = {add_opinion_modifier = {target = IID modifier = SBU_hateIID}}
+				EIK = {add_opinion_modifier = {target = IID modifier = EIK_hateIID}}
+			}
+			
+			custom_effect_tooltip = iid_horsemove_factories
+			hidden_effect = {
+				88 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				94 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				95 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				96 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				100 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				102 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				111 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = IID_RemoveSanctions
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 42
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_HorseMove
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_CommieDictatorship
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 54
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_LonSahRevolution
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = IID_RemoveEmperialSoviet
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 52
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_CommieDictatorship
+		}
+	}
+
+	focus = {
+		id = IID_TakeArmy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 54
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_CommieDictatorship
+		}
+	}
+
+	focus = {
+		id = IID_RebelOligarchy
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 56
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_CommieDictatorship
+		}
+	}
+
+}

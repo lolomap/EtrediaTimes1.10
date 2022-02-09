@@ -1,0 +1,30 @@
+
+state={
+	id=625
+	name="STATE_625"
+	manpower = 6700000
+	
+	state_category = rural
+	
+	resources={
+        steel = 12 # was: 18
+        oil = 2 # was: 2
+	}
+
+	history={
+		owner = SOL
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+                        arms_factory = 1
+		}
+		add_core_of = SOL
+		victory_points = {
+			10527 10
+		}
+
+	}
+	provinces={
+		8229 8657 8679 8701 8759 8760 8892 8893 9028 9048 9073 9135 9204 9245 9357 9381 9465 9546 9732 9759 9829 9995 
+	}
+}

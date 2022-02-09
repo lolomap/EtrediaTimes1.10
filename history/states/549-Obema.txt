@@ -1,0 +1,29 @@
+
+state={
+	id=549
+	name="STATE_549"
+	manpower = 498000
+	
+	state_category = town
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 1
+                        dockyard = 0
+			1969 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2058 25
+		}
+
+	}
+	provinces={
+		1958 1981 1999 2044 2074 2096 
+	}
+}

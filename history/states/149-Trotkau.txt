@@ -1,0 +1,32 @@
+state={
+	id=149
+	name="STATE_149"
+	manpower = 670000
+	
+	state_category = town
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 6
+                        air_base = 3
+			14854 = {
+				naval_base = 1
+			}
+			14855 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = PIN
+		victory_points = {
+			14855 2
+		}
+		victory_points = {
+			14854 1
+		}
+
+	}
+	provinces={
+		12563 12633 12646 12647 12648 12660 12686 12707 12727 12757 12758 12767 12780 12809 12810 12849 12872 
+	}
+}

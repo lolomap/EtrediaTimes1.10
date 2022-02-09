@@ -1,0 +1,27 @@
+
+state={
+	id=181
+	name="STATE_181"
+	manpower = 600000
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 1 # was: 1
+	}
+
+	history={
+		owner = SFL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SFl
+		victory_points = {
+			6197 1
+		}
+
+	}
+	provinces={
+		4836 4979 5006 5097 5146 5147 5246 5247 5281 5368 5428 5447 
+	}
+}

@@ -1,0 +1,86 @@
+SFL_neria = {
+	enable = {
+		original_tag = SFL
+	}
+	abort = {
+		NOT = { country_exists = NER }
+	}
+	
+	ai_strategy = {
+		type = puppet 
+		id = "NER"
+		value = 0
+	}
+}
+
+SFL_template_design_1 = {
+	enable = {
+		original_tag = SFL			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}
+
+SFL_template_design_2 = {
+	enable = {
+		original_tag = SFL			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = medium_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 150
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = -200
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -400
+	}
+}

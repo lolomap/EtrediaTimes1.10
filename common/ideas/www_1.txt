@@ -1,0 +1,60 @@
+ideas = {
+    country = {	
+		WWW_bad_country = {
+
+            picture = bad_country
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                stability_factor = -0.1
+                research_speed_factor = -0.25
+                MONTHLY_POPULATION = -0.5
+                army_attack_factor = -0.3
+                army_defence_factor = -0.1
+                army_morale_factor = -0.3
+			}
+		}
+		WWW_medium_country = {
+
+            picture = medium_country
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_speed_buildings_factor = 0.05
+                stability_factor = -0.05
+                army_attack_factor = -0.1
+                army_morale_factor = -0.1
+			}
+		}
+		WWW_best_country = {
+
+            picture = best_country
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_factory_max_efficiency_factor = 0.05
+                research_speed_factor = 0.1
+                stability_factor = 0.05
+                MONTHLY_POPULATION = 0.4
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=711
+	name="STATE_711"
+	manpower = 1680000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = CSH
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CSH
+		victory_points = {
+			619 1
+		}
+
+	}
+	provinces={
+		320 321 331 338 363 386 395 408 434 435 448 458 465 471 492 517 528 535 569 
+	}
+}

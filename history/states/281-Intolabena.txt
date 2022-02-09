@@ -1,0 +1,28 @@
+
+state={
+	id=281
+	name="STATE_281"
+	manpower = 160000
+	
+	state_category = pastoral
+	
+	resources={
+		
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = DIR
+		add_core_of = HEK
+		victory_points = {
+			12077 1
+		}
+
+	}
+	provinces={
+		10148 10283 10284 10409 10554 
+	}
+}

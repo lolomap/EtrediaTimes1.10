@@ -1,0 +1,33 @@
+
+state={
+	id=381
+	name="STATE_381"
+	manpower = 2400000
+	
+	state_category = large_city
+	
+	resources={
+		oil = 2 # was: 4
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 9
+                        industrial_complex = 3
+                        arms_factory = 1
+                        dockyard = 2
+			3053 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			3053 20
+		}
+
+	}
+	provinces={
+		2365 2366 2395 2442 2499 2502 2560 2573 2628 2654 
+	}
+}

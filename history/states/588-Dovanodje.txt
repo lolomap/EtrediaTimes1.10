@@ -1,0 +1,24 @@
+
+state={
+	id=588
+	name="STATE_588"
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+
+		}
+		add_core_of = ZHE
+		victory_points = {
+			3998 5 
+		}
+
+	}
+	provinces={
+		3484 3512 3530 3544 3552 3566 3572 3609 3618 3629 3630 3636 3655 3665 3681 3695 3718 3741 3780 3785 
+	}
+	manpower=2840000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

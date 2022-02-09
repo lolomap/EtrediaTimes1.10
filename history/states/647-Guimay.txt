@@ -1,0 +1,28 @@
+
+state={
+	id=647
+	name="STATE_647"
+	manpower = 5430000
+	
+	state_category = town
+	
+	resources={
+        aluminium = 6 # was: 6
+	}
+
+	history={
+		owner = ZAZ
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+		}
+		add_core_of = ZAZ
+		victory_points = {
+			6434 5
+		}
+
+	}
+	provinces={
+		5022 5123 5175 5376 5377 5514 5554 5633 5743 5763 5887 5951 5972 5991 6151 
+	}
+}

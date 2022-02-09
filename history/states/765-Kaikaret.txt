@@ -1,0 +1,29 @@
+state={
+	id=765
+	name="STATE_765"
+	manpower = 4670000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = NBL
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			arms_factory = 1
+			1457 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = NBL
+		victory_points = {
+			1548 5
+		}
+
+	}
+	provinces={
+		1027 1049 1058 1062 1068 1075 1094 1103 1109 1120 1131 1157 1172 1179 1198 
+	}
+}

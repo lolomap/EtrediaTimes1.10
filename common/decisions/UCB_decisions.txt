@@ -1,0 +1,43 @@
+UCB_subj_integration = {
+	integrate_subjects = {
+		available = {
+			any_other_country = {
+				is_subject_of = UCB
+				all_owned_state = {
+					is_core_of = UCB
+				}
+			}
+			tag = UCB
+		}
+
+		visible = {
+			any_other_country = {
+				is_subject_of = UCB
+				all_owned_state = {
+					is_core_of = UCB
+				}
+			}
+			tag = UCB
+		}
+
+		cost = 150
+
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					is_subject_of = UCB
+					all_owned_state = {
+						is_core_of = UCB
+					}
+				}
+				UCB = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+}

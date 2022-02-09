@@ -1,0 +1,53 @@
+ideas = {
+	high_command = {
+		ferdinand_schorner = {
+
+			available = {
+					has_completed_focus = FIL_new_officers
+				}
+			allowed = {
+				original_tag = FIL
+			}
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 4
+			}
+		}
+	}
+	political_advisor = {
+		Lui_Anderson = {
+			
+			
+			allowed = {
+				original_tag = "FIL"
+			}			
+			available = {
+				has_completed_focus = FIL_comissar
+			}
+			
+			traits = { prince_of_terror  }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	political_advisor = {
+		Benjamin_Nilsson = {
+			
+			
+			allowed = {
+				original_tag = "FIL"
+			}			
+			available = {
+				has_completed_focus = FIL_foreigner_specialist
+			}
+			
+			traits = { captain_of_industry economist }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

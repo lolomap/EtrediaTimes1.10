@@ -1,0 +1,24 @@
+state={
+	id=65
+	name="STATE_65"
+	manpower=1800000
+
+	state_category=town
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			5846 5
+		}
+
+	}
+	provinces={
+		4798 4851 4902 4957 4991 5025 5059 5109 5110 5144 5166 5294 5314 5462 5482 
+	}
+}

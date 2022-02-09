@@ -1,0 +1,30 @@
+state={
+	id=634
+	name="STATE_634"
+	manpower = 8670000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ZOG
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 3
+                        arms_factory = 1
+			4366 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ZOG
+		victory_points = {
+			4366 10
+		}
+
+	}
+	provinces={
+		3750 3756 3936 4211 4411 4540 
+	}
+}

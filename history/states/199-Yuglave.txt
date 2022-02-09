@@ -1,0 +1,28 @@
+
+state={
+	id=199
+	name="STATE_199"
+	resources={
+		aluminium = 47 # was: 55
+	}
+
+	history={
+		owner = RTT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+                        air_base = 5
+		}
+		add_core_of = RTT
+		victory_points = {
+			7129 25
+		}
+
+	}
+	provinces={
+		5528 5606 5813 5835 5836 6007 6008 6028 6158 6179 6210 6312 6418 6478 6515 6660 
+	}
+	manpower=1400000
+	state_category=large_city
+}

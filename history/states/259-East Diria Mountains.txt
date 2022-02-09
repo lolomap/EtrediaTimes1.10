@@ -1,0 +1,22 @@
+
+state={
+	id=259
+	name="STATE_259"
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = DIR
+
+	}
+	provinces={
+		12663 12664 12677 12678 12687 12688 12689 12760 12793 12794 12795 12821 12838 12863 12901 12902 12923 13040 13056 13081 13165 13205 
+	}
+	manpower=19567
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

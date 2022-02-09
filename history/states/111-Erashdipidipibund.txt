@@ -1,0 +1,28 @@
+state={
+	id=111
+	name="STATE_111"
+	resources={
+		tungsten=49.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 0
+
+		}
+		add_core_of = IID
+		victory_points = {
+			9743 25 
+		}
+
+	}
+	provinces={
+		9982 10066 10067 10081 10099 10129 10193 10207 10233 10234 10328 10329 10330 10331 10374 10395 10417 10429 10439 10477 10502 10518 10519 10520 10548 10561 10598 10631 10648 10649 10650 10688 10705 10736 10801 10855 
+	}
+	manpower=7800000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

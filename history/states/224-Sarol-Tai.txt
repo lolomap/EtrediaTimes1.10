@@ -1,0 +1,29 @@
+
+state={
+	id=224
+	name="STATE_224"
+	resources={
+		oil=8.000
+	}
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			6583 10 
+		}
+
+	}
+	provinces={
+		5189 5285 5321 5388 5389 5433 5451 5468 5549 5578 5590 5591 5649 5667 5690 5758 5795 5834 5901 5949 6063 6122 6294 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

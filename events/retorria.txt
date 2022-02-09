@@ -1,0 +1,108 @@
+add_namespace = ret
+
+country_event = {
+	id = ret.1
+	title = ret.1.t
+	desc = ret.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = RET
+	}
+
+	option = {
+	name = ret.1.a 
+		hidden_effect = {
+			RET = { country_event = { id = ret.2 days = 270 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = BER
+        }
+	    create_wargoal = {
+            type = annex_everything
+            target = LEV
+        }
+	}
+}
+
+country_event = {
+	id = ret.2
+	title = ret.2.t
+	desc = ret.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = RET
+	}
+
+	option = {
+	name = ret.2.a 
+		hidden_effect = {
+			RET = { country_event = { id = ret.3 days = 200 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = AKV
+        }
+	}
+}
+
+country_event = {
+	id = ret.3
+	title = ret.3.t
+	desc = ret.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = RET
+	}
+
+	option = {
+	name = ret.3.a 
+		hidden_effect = {
+			RET = { country_event = { id = ret.4 days = 120 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = ZER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = PER
+        }
+	}
+}
+
+country_event = {
+	id = ret.4
+	title = ret.4.t
+	desc = ret.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = RET
+	}
+
+	option = {
+	name = ret.4.a 
+		create_wargoal = {
+            type = annex_everything
+            target = EDD
+        }
+		hidden_effect = {
+			add_manpower = 40000
+		}
+	}
+}

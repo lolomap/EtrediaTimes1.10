@@ -1,0 +1,30 @@
+
+state={
+	id=752
+	name="STATE_752"
+	manpower = 6300000
+	state_category = town
+	
+	resources={
+		steel = 1 # was: 2
+	}
+
+	history={
+		owner = OUS
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 2
+			752 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = OUS
+		victory_points = {
+			752 5
+		}
+
+	}
+	provinces={
+		1196 1254 1279 1304 1305 1322 1323 1335 1360 1367 1375 1382 1403 1411 1427 1432 1433 1471 1481 
+	}
+}

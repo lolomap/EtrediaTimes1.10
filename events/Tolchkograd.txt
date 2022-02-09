@@ -1,0 +1,46 @@
+add_namespace = tolchkograd
+
+country_event = {
+	id = tolchkograd.1
+	title = tolchkograd.1.t
+	desc = tolchkograd.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = TOL
+    }
+	option = {
+		name = tolchkograd.1.a
+                hidden_effect = {
+                EIK = {
+                add_to_faction = TOL
+                }
+                }               
+		ai_chance = { factor = 100 }
+		
+}
+
+}
+
+country_event = {
+	id = tolchkograd.2
+	title = tolchkograd.2.t
+	desc = tolchkograd.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	trigger = {
+        TAG = TOL
+    }
+	option = {
+		name = tolchkograd.2.a
+                TOL = {
+                add_ideas = TOL_eik_vliyanie
+                }            
+		ai_chance = { factor = 100 }
+                }
+		
+}

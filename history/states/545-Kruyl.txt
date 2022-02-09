@@ -1,0 +1,33 @@
+
+state={
+	id=545
+	name="STATE_545"
+	manpower = 4300000
+	
+	state_category = city
+	
+	resources={
+             steel = 8 # was: 10
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 3
+			1871 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			1871 10
+		}
+
+	}
+	provinces={
+		1389 1390 1396 1426 1456 1457 1475 1486 1487 1532 1533 
+	}
+}

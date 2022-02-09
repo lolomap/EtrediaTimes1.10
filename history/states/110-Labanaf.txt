@@ -1,0 +1,26 @@
+state={
+	id=110
+	name="STATE_110"
+	manpower = 3800000
+	state_category = rural
+
+	resources={
+		oil=6.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = IID
+		victory_points = {
+			12895 1
+		}
+
+	}
+	provinces={
+		10559 10560 10597 10613 10661 10662 10669 10704 10715 10735 10753 10754 10763 10784 10785 10836 10837 10838 10870 10890 10908 10926 10927 10958 10959 10973 10984 10995 11033 11079 11087 11103 11137 11138 11139 11168 11228 11252 11270 11337 11347 11486 
+	}
+}

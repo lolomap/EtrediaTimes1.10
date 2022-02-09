@@ -1,0 +1,31 @@
+
+state={
+	id=252
+	name="STATE_252"
+	manpower = 1400000
+	
+	state_category = rural
+	
+	resources={
+                oil = 18 # was: 20
+	}
+
+	history={
+		owner = KAR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 0
+                        dockyard = 0
+		}
+		add_core_of = KAR
+		add_core_of = FSF
+		victory_points = {
+			10427 1
+		}
+
+	}
+	provinces={
+		10538 10564 10617 10625 10636 10694 10695 10741 10790 10824 10842 10895 10962 10963 10987 11022 11039 11064 11158 11222 11274 11381 11397 
+	}
+}

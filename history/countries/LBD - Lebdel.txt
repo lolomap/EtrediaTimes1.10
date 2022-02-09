@@ -1,0 +1,91 @@
+﻿capital = 579
+
+oob = "LBD_2014"
+
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 0.9
+
+add_ideas = {
+        WWW_bad_country
+        nonfree_press
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2010.3.5"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+        democratic = 29
+        fascism = 0
+        communism = 0
+	neutrality = 71
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Ubaida bin Ghaamid"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_anatoly.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Atan bin Jebat"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zulkarnain bin Dumadi"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lukman Budiarto"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Mail bin Putera"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}

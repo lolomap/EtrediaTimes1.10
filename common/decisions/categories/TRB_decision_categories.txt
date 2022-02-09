@@ -1,0 +1,9 @@
+TRB_aldeko_operation = {
+	icon = generic_independence
+	allowed = {
+		original_tag = TRB
+	}
+	visible = {
+		always = yes
+	}
+}

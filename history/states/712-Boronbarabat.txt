@@ -1,0 +1,27 @@
+
+state={
+	id=712
+	name="STATE_712"
+	manpower = 664000
+	state_category = pastoral
+	
+	resources={
+		oil = 22 # was: 24
+	}
+
+	history={
+		owner = CSH
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+		}
+		add_core_of = CSH
+		victory_points = {
+			573 1
+		}
+
+	}
+	provinces={
+		371 377 381 390 423 424 429 455 472 475 478 503 507 524 562 571 605 643 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=705
+	name="STATE_705"
+	manpower = 670000
+	state_category = rural
+	
+	resources={
+		oil = 16 # was: 24
+	}
+
+	history={
+		owner = ZHI
+		buildings = {
+			infrastructure = 3
+                        dockyard = 1
+			1236 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = ZHI
+		victory_points = {
+			1236 5
+		}
+
+	}
+	provinces={
+		883 893 
+	}
+}

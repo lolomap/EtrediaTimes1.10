@@ -1,0 +1,47 @@
+add_namespace = cho
+
+country_event = {
+        id = cho.1
+        title = cho.1.t
+        desc = cho.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = CHO
+    }
+
+    option = {
+	name = cho.1.a
+	add_ideas = { cho_yanthalia }
+	CHO = { add_opinion_modifier = { target = ROOT modifier = cho_yan_commonwealth } }
+    ai_chance = { factor = 90 }
+	}
+    option = {
+	name = cho.1.b
+    YAN = { country_event = { id = yan.13 days = 1 } }
+    ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+        id = cho.2
+        title = cho.2.t
+        desc = cho.2.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = CHO
+    }
+
+    option = {
+	name = cho.2.a
+		MOA = { add_to_faction = CHO }
+    ai_chance = { factor = 100 }
+	}
+    option = {
+	name = cho.2.b
+    ai_chance = { factor = 0 }
+	}
+}

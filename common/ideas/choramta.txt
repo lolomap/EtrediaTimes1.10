@@ -1,0 +1,17 @@
+ideas = {
+    country = {	
+	cho_yanthalia = {
+            picture = fff
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = 0.05
+                                neutrality_drift = 0.08
+                                war_support_factor = 0.1
+			}
+       }
+}
+}

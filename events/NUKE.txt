@@ -1,0 +1,20 @@
+add_namespace = nukemod
+
+country_event = {
+	id = nukemod.1
+	title = nukemod.1.t
+	desc = nukemod.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = nukemod.1.a
+		FROM = {set_country_flag = nuke_request_accepted}
+	}
+	option = {
+		name = nukemod.1.b
+		ai_chance = {
+			factor = 10000
+		}
+	}
+}

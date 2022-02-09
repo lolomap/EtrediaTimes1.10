@@ -1,0 +1,412 @@
+add_namespace = dirnews
+
+country_event = {
+	id = dirnews.1
+	title = dirnews.1.t
+	desc = dirnews.1.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+
+	trigger = {
+        date > 2014.1.5
+        TAG = DIR
+    }
+    mean_time_to_happen = {
+        days = 5
+    }
+
+	option = {
+		name = dirnews.1.b
+        set_politics = {
+        ruling_party = communism 
+		}
+        country_event = { days = 30 id = dirnews.2 }
+        news_event = {
+        id = newss.12
+        days = 1
+        }
+    }
+}
+
+country_event = {
+    id = dirnews.2
+    title = dirnews.2.t
+    desc = dirnews.2.d
+
+    fire_only_once = yes
+
+    trigger = {
+        TAG = DIR
+        date > 2014.1.30
+        NOT = { has_goverment = neutrality }
+	    NOT = { has_goverment = democratic }
+	}
+
+    option = {
+    name = dirnews.2.a
+    hidden_effect = {
+    DEM = {
+            transfer_state = 267
+			transfer_state = 270
+			transfer_state = 271
+			transfer_state = 272
+			transfer_state = 281
+			transfer_state = 277
+			transfer_state = 282
+			transfer_state = 283
+			transfer_state = 284
+			transfer_state = 280
+			transfer_state = 305
+			transfer_state = 306
+			transfer_state = 265
+			transfer_state = 279
+			transfer_state = 275
+			transfer_state = 276
+			transfer_state = 278
+		    add_state_core = 265
+			add_state_core = 267
+			add_state_core = 307
+			add_state_core = 270
+			add_state_core = 271
+			add_state_core = 272
+			add_state_core = 275
+			add_state_core = 276
+			add_state_core = 277
+			add_state_core = 278
+			add_state_core = 279
+			add_state_core = 280
+			add_state_core = 281
+			add_state_core = 282
+			add_state_core = 283
+			add_state_core = 284
+			add_state_core = 305
+			add_state_core = 306
+			add_state_core = 256
+			add_state_core = 257
+			add_state_core = 258
+			add_state_core = 259
+			add_state_core = 260
+			add_state_core = 261
+			add_state_core = 262
+			add_state_core = 263
+			add_state_core = 264
+			add_state_core = 266
+			add_state_core = 268
+			add_state_core = 269
+			add_state_core = 285
+			add_state_core = 286
+			add_state_core = 287
+			add_state_core = 288
+            load_oob = DIR_democrat
+            }
+	}
+    DEM = { declare_war_on = { target = DIR type = annex_everything } }
+    DIR = {
+    load_oob = DIR_communist
+    add_ideas = { DIR_revolt }
+	add_ideas = { DEM_bad_economic }
+	}
+	DEM = {
+    add_ideas = { DIR_revolt }
+	add_ideas = { DEM_bad_economic }
+	}
+	KAR = { country_event = { days = 30 id = kar.1 } }
+	DEM = { country_event = { days = 400 id = dirnews.5 } }
+	}
+	
+    option = {
+    name = dirnews.2.b
+    hidden_effect = {
+	DIR = {
+	}
+    DEM = {
+            transfer_state = 267
+			transfer_state = 270
+			transfer_state = 271
+			transfer_state = 272
+			transfer_state = 281
+			transfer_state = 277
+			transfer_state = 282
+			transfer_state = 283
+			transfer_state = 284
+			transfer_state = 280
+			transfer_state = 305
+			transfer_state = 306
+			transfer_state = 265
+			transfer_state = 279
+			transfer_state = 275
+			transfer_state = 276
+			transfer_state = 278
+		    add_state_core = 265
+		    add_state_core = 307
+			add_state_core = 267
+			add_state_core = 270
+			add_state_core = 271
+			add_state_core = 272
+			add_state_core = 275
+			add_state_core = 276
+			add_state_core = 277
+			add_state_core = 278
+			add_state_core = 279
+			add_state_core = 280
+			add_state_core = 281
+			add_state_core = 282
+			add_state_core = 283
+			add_state_core = 284
+			add_state_core = 305
+			add_state_core = 306
+			add_state_core = 256
+			add_state_core = 257
+			add_state_core = 258
+			add_state_core = 259
+			add_state_core = 260
+			add_state_core = 261
+			add_state_core = 262
+			add_state_core = 263
+			add_state_core = 264
+			add_state_core = 266
+			add_state_core = 268
+			add_state_core = 269
+			add_state_core = 285
+			add_state_core = 286
+			add_state_core = 287
+			add_state_core = 288
+            load_oob = DIR_democrat
+            }
+	}
+	DEM = { change_tag_from = DIR }
+    DEM = { declare_war_on = { target = DIR type = annex_everything } }
+    DIR = {
+    load_oob = DIR_communist
+    add_ideas = { DIR_revolt}
+	add_ideas = { DEM_bad_economic }
+	}
+	DEM = {
+    add_ideas = { DIR_revolt }
+	add_ideas = { DIR_revolt2 }
+	add_ideas = { DEM_bad_economic }
+	}
+	KAR = { country_event = { days = 30 id = kar.1 } }
+	DEM = { country_event = { days = 60 id = dirnews.5 } }
+	}
+}
+
+country_event = {
+	id = dirnews.3
+	title = dirnews.3.t
+	desc = dirnews.3.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+		name = dirnews.3.a
+		DEM = {
+		add_timed_idea = { idea = DIR_KAR_support days = 180 }
+		}
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 4000
+        producer = DEM
+        }
+    }
+}
+
+country_event = {
+    id = dirnews.4
+    title = dirnews.4.t
+    desc = dirnews.4.d
+
+    is_triggered_only = yes
+
+    trigger = {
+        TAG = DEM
+	}
+
+    option = {
+    name = dirnews.4.a
+    hidden_effect = {
+	}
+    SDI = {
+            transfer_state = 267
+			transfer_state = 270
+			transfer_state = 271
+			transfer_state = 272
+			transfer_state = 281
+			transfer_state = 277
+			transfer_state = 282
+		    add_state_core = 265
+			add_state_core = 267
+			add_state_core = 270
+			add_state_core = 271
+			add_state_core = 272
+			add_state_core = 275
+			add_state_core = 276
+            load_oob = DIR_syndicat
+			add_ideas = { DIR_revolt }
+    }
+    SDI = { declare_war_on = { target = DIR type = annex_everything } }
+	SDI = { declare_war_on = { target = DEM type = annex_everything } }
+	}
+	
+    option = {
+    name = dirnews.4.b
+    hidden_effect = {
+	SDI = { change_tag_from = DEM }
+	}
+    SDI = {
+            transfer_state = 269
+			transfer_state = 270
+			transfer_state = 271
+			transfer_state = 272
+			transfer_state = 281
+			transfer_state = 267
+			transfer_state = 282
+			transfer_state = 277
+		    add_state_core = 269
+			add_state_core = 270
+			add_state_core = 271
+			add_state_core = 272
+			add_state_core = 281
+			add_state_core = 267
+			add_state_core = 282
+			add_state_core = 277
+            load_oob = DIR_syndicat
+			add_ideas = { DIR_revolt }
+    }
+    SDI = { declare_war_on = { target = DIR type = annex_everything } }
+	SDI = { declare_war_on = { target = DEM type = annex_everything } }
+	}
+}
+	
+country_event = {
+	id = dirnews.5
+	title = dirnews.5.t
+	desc = dirnews.5.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+		name = dirnews.5.a
+		DEM = {
+		load_oob = DIR_democrat_2
+		add_manpower = 35000
+		}
+    }
+}
+
+country_event = {
+	id = dirnews.6
+	title = dirnews.6.t
+	desc = dirnews.6.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+		name = dirnews.6.a
+		DEM = {
+		load_oob = DIR_democrat_2
+		DEM = { country_event = { days = 360 id = dirnews.5 } }
+		}
+    }
+}
+
+country_event = {
+	id = dirnews.7
+	title = dirnews.7.t
+	desc = dirnews.7.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+		name = dirnews.7.a
+		DEM = {
+		load_oob = DIR_democrat_2
+		}
+    }
+}
+
+country_event = {
+	id = dirnews.8
+	title = dirnews.8.t
+	desc = dirnews.8.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+		name = dirnews.8.a
+		UCB = { country_event = { id = ucnb.15 days = 1 } }
+		add_ideas = { DIR_eik }
+		ai_chance = { 
+		factor = 0.9
+		}
+   	}
+	option = {
+		name = dirnews.8.b
+		ai_chance = {
+		factor = 0.1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+   	}
+}
+
+country_event = {
+	id = dirnews.9
+	title = dirnews.9.t
+	desc = dirnews.9.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = DIR
+	date < 2015.9.9
+	266 = { is_controlled_by = DEM }
+    }
+
+	option = {
+	name = dirnews.9.a
+		BLJ = {
+			transfer_state = 256
+			transfer_state = 257
+			add_state_core = 256
+			add_state_core = 257
+			add_state_core = 266
+			add_state_core = 260
+			add_state_core = 258
+			load_oob = BLJ_bonus
+			BLJ = { set_cosmetic_tag = BLJ_bonus_independent }
+    			BLJ = { declare_war_on = { target = DIR type = annex_everything } }
+			BLJ = { declare_war_on = { target = DEM type = annex_everything } }
+			add_ideas = { DIR_revolt }	
+   		}
+	}
+}

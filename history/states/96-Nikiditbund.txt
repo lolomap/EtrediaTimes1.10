@@ -1,0 +1,28 @@
+state={
+	id=96
+	name="STATE_96"
+	resources={
+		rubber=12.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		add_core_of = IID
+		victory_points = {
+			11456 15 
+		}
+
+	}
+	provinces={
+		9707 9719 9747 9794 9795 9833 9858 
+	}
+	manpower=10200000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

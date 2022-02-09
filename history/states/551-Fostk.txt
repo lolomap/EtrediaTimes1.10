@@ -1,0 +1,39 @@
+
+state={
+	id=551
+	name="STATE_551"
+	manpower = 1209000
+	
+	state_category = town
+	
+	resources={
+             steel = 4 # was: 4
+	}
+
+	history={
+		owner = MOA
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 0
+			2505 = {
+				naval_base = 3
+			}
+			2155 = {
+				naval_base = 1
+			}
+			2739 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MOA
+		victory_points = {
+			2295 1
+		}
+
+	}
+	provinces={
+		1666 1699 1708 1717 1734 1745 1764 1791 1792 1803 1818 1819 1823 1836 1848 1854 1863 1871 1894 1903 1920 1947 2000 2001 2031 2126 2131 2195 2216 2259 2262 
+	}
+}

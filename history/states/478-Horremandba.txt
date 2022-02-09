@@ -1,0 +1,26 @@
+
+state={
+	id=478
+	name="STATE_478"
+	manpower = 430000
+	
+	state_category = town
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 6
+			8723 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CHE
+		victory_points = {
+			8723 5
+		}
+
+	}
+	provinces={
+		7024 7138 7304 7355 7548 7732 7774 7775 7927 
+	}
+}

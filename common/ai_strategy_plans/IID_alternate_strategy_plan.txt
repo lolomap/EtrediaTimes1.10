@@ -1,0 +1,31 @@
+IID_default_plan = {
+	enable = {
+		original_tag = IID
+		OR = {
+			has_game_rule = {
+				rule = IID_AI_BEHAVIOR
+				option = DEFAULT
+			}
+			is_historical_focus_on = yes
+		}
+	}
+
+	focus_factors = {
+		IID_magna_reto = 1000
+		IID_solve_pressing_issues = 1000
+		IID_continue_the_dux_way = 1000
+		IID_ForeignEconomicalIntegration = 1000
+		IID_WestEtrediaPath = 1000
+		IID_Require_the_eastern_trp = 1000
+		IID_invade_to_kulishtia = 1000
+		IID_only_dux = 1000
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

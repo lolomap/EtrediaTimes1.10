@@ -1,0 +1,27 @@
+
+state={
+	id=753
+	name="STATE_753"
+	manpower = 5120000
+	state_category = town
+	
+	resources={
+		steel = 8 # was: 10
+	}
+
+	history={
+		owner = KAN
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = KAN
+		victory_points = {
+			2198 3
+		}
+
+	}
+	provinces={
+		1482 1510 1535 1545 1558 1607 1630 1640 1657 1677 1696 1700 1705 1718 1771 1785 
+	}
+}

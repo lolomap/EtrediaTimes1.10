@@ -1,0 +1,32 @@
+state={
+	id=364
+	name="STATE_364"
+	manpower = 1600000
+	
+	state_category = large_town
+
+	resources={
+		steel = 2 # was: 2
+	}
+	
+	history={
+		owner = IRI
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 1
+                        air_base = 1
+			3797 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = IRI
+		victory_points = {
+			3797 15
+		}
+
+	}
+	provinces={
+		3065 3200 3212 3285 3292 3305 3340 3351 3366 3367 3377 3378 3456 
+	}
+}

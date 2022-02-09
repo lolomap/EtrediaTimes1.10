@@ -1,0 +1,170 @@
+add_namespace = rgy
+
+country_event = {
+	id = rgy.1
+	title = rgy.1.t
+	desc = rgy.1.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = RGY
+    }
+
+	option = {
+    name = rgy.1.a
+        UCB = {
+            add_to_faction = RGY
+        }
+    }
+}
+
+country_event = {
+	id = rgy.2
+	title = rgy.2.t
+	desc = rgy.2.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = RGY
+    }
+
+	option = {
+		name = rgy.2.a
+		SBU = { country_event = { id = sbu.11 days = 360 } }
+		SBU = { country_event = { id = sbu.14 days = 1 } }
+	ai_chance = { factor = 90 }
+    }
+	
+	option = {
+		name = rgy.2.b
+		SBU = { country_event = { id = sbu.10 days = 1 } }
+	ai_chance = { factor = 10 }
+    }
+}
+
+country_event = {
+	id = rgy.3
+	title = rgy.3.t
+	desc = rgy.3.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = RGY
+    }
+
+	option = {
+		name = rgy.3.a
+		SBU = { country_event = { id = sbu.35 days = 1 } }
+	ai_chance = { factor = 80 }
+    }
+	
+	option = {
+		name = rgy.3.b
+		SBU = { country_event = { id = sbu.36 days = 1 } }
+	ai_chance = { factor = 20 }
+    }
+}
+
+country_event = {
+	id = rgy.4
+	title = rgy.4.t
+	desc = rgy.4.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = RGY
+    }
+
+	option = {
+		name = rgy.4.a
+		SBU = { country_event = { id = sbu.37 days = 1 } }
+    }
+}
+
+country_event = {
+	id = rgy.5
+	title = rgy.5.t
+	desc = rgy.5.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = rgy.5.a
+		SFL = {puppet = ROOT}
+		ROOT = {set_politics = {ruling_party = neutrality}}
+		ai_chance = {factor = 70}
+	}
+	option = {
+		name = rgy.5.b
+		SFL = {create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}}
+		ai_chance = {factor = 30}
+	}
+}
+
+country_event = {
+	id = rgy.6
+	title = rgy.6.t
+	desc = rgy.6.d
+	picture = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = rgy.6.a
+		SBU = {
+			annex_country = {
+			    target = RGY
+			    transfer_troops = yes
+			}
+			country_event = { id = sbu.53 days = 1 }
+		}
+		ai_chance = {factor = 70}
+	}
+	option = {
+		name = rgy.6.b
+		SBU = {
+			country_event = { id = sbu.53 days = 1 }
+		}
+		ai_chance = {factor = 30}
+	}
+}
+
+country_event = {
+	id = rgy.7
+	title = rgy.7.t
+	desc = rgy.7.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	option = {
+		name = rgy.7.a
+		RGY = { 
+			add_opinion_modifier = { target = SBU modifier = MOF_SBU_relationship }
+		    add_timed_idea = { idea = MOF_rise_of_communism days = 360 }
+		}
+		ai_chance = { factor = 0.4 }
+	}
+	option = {
+		name = rgy.7.b
+		SBU = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = RGY
+			}
+		}
+		ai_chance = { factor = 0.6 }
+	}
+}

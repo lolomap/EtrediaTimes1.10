@@ -1,0 +1,29 @@
+
+state={
+	id=430
+	name="STATE_430"
+	manpower = 65500
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 98 # was: 150
+	}
+
+	history={
+		owner = KAS
+		buildings = {
+			infrastructure = 1
+                        industrial_complex = 0
+                        arms_facotry = 0
+		}
+		add_core_of = KAS
+		victory_points = {
+			12683 5
+		}
+
+	}
+	provinces={
+		13940 13949 13950 13951 13952 13953 13954 13955 14037 14096 14129 14141 14170 14171 14180 14212 14217 14223 14233 14270 14320 14334 14341 14349 14391 14473 
+	}
+}

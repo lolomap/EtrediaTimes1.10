@@ -1,0 +1,33 @@
+
+state={
+	id=420
+	name="STATE_420"
+	manpower = 9345000
+	
+	state_category = metropolis
+	
+	resources={
+		
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+                        arms_factory = 2
+                        dockyard = 1
+			8686 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = VRO
+		victory_points = {
+			8686 30
+		}
+
+	}
+	provinces={
+		7470 7579 7600 7601 7731 7757 7758 7803 7925 7926 7972 8001 8058 8096 8127 
+	}
+}

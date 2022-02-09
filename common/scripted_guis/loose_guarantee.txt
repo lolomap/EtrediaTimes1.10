@@ -1,0 +1,35 @@
+scripted_gui = {
+	force_embargo = {
+		window_name = "betrayal_window"
+		context_type = selected_country_view
+
+		visible = {
+			ROOT = {has_country_flag = betrayal_window_opened}
+			#always = no
+		}
+
+		effects = {
+			betrayal_exit_button_click = {
+				ROOT = {clr_country_flag = betrayal_window_opened}
+			}
+			cForceBetrayal_click = {
+				var:ROOT.target_betrayal = {set_variable = {from_betrayal_country = PREV}}
+				var:ROOT.target_betrayal = {country_event = {id = mechanics.2 days = 1}}
+			}
+		}
+
+		dynamic_lists = {
+			betrayal_countries_gb = {
+				array = target_betrayal:guaranteelist
+				entry_container = betrayal_countries_entry
+				change_scope = yes
+			}
+		}
+
+		properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+		}
+	}
+}

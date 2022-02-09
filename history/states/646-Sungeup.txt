@@ -1,0 +1,27 @@
+
+state={
+	id=646
+	name="STATE_646"
+	manpower = 3990000
+	
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = ZAZ
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+		}
+		add_core_of = ZAZ
+		victory_points = {
+			5104 10
+		}
+
+	}
+	provinces={
+		3961 4049 4086 4130 4131 4156 4224 4424 4441 4592 4656 4727 
+	}
+}

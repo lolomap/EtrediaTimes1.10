@@ -1,0 +1,29 @@
+
+state={
+	id=311
+	name="STATE_311"
+	history={
+		owner = BAE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+                        air_base = 8
+			14260 = {
+				naval_base = 9
+			}
+
+		}
+		add_core_of = BAE
+		victory_points = {
+			14260 20 
+		}
+
+	}
+	provinces={
+		12200 12226 12245 12283 12284 12375 12382 12391 12392 12445 12495 12496 12497 12520 12604 12622 
+	}
+	manpower=4800000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

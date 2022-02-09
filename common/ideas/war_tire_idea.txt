@@ -1,0 +1,215 @@
+ideas = {
+		hidden_ideas = {
+			war_tire_idea1 = {
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.05
+					war_support_factor = -0.05
+					army_attack_factor = 0
+					army_defence_factor = 0
+					army_morale_factor = 0
+					training_time_army_factor = 0
+				}
+				cancel = {
+					OR = {
+						has_idea = war_tire_idea2
+						has_idea = war_tire_idea3
+						has_idea = war_tire_idea4
+						has_idea = war_tire_idea5
+					}
+				}
+			}
+			war_tire_idea2 = {
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					army_attack_factor = -0.05
+					army_defence_factor = -0.05
+					army_morale_factor = -0.08
+					training_time_army_factor = 0.05
+				}
+				cancel = {
+					OR = {
+						has_idea = war_tire_idea1
+						has_idea = war_tire_idea3
+						has_idea = war_tire_idea4
+						has_idea = war_tire_idea5
+					}
+				}
+			}
+			war_tire_idea3 = {
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.2
+					war_support_factor = -0.2
+					army_attack_factor = -0.1
+					army_defence_factor = -0.1
+					army_morale_factor = -0.15
+					training_time_army_factor = 0.1
+				}
+				cancel = {
+					OR = {
+						has_idea = war_tire_idea2
+						has_idea = war_tire_idea1
+						has_idea = war_tire_idea4
+						has_idea = war_tire_idea5
+					}
+				}
+			}
+			war_tire_idea4 = {
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.3
+					war_support_factor = -0.3
+					army_attack_factor = -0.15
+					army_defence_factor = -0.15
+					army_morale_factor = -0.2
+					training_time_army_factor = 0.15
+				}
+				cancel = {
+					OR = {
+						has_idea = war_tire_idea2
+						has_idea = war_tire_idea3
+						has_idea = war_tire_idea1
+						has_idea = war_tire_idea5
+					}
+				}
+			}
+			war_tire_idea5 = {
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.3
+					war_support_factor = -0.3
+					army_attack_factor = -0.25
+					army_defence_factor = -0.25
+					army_morale_factor = -0.3
+					training_time_army_factor = 0.25
+				}
+				cancel = {
+					OR = {
+						has_idea = war_tire_idea2
+						has_idea = war_tire_idea3
+						has_idea = war_tire_idea4
+						has_idea = war_tire_idea1
+					}
+				}
+			}
+		}
+
+	country = {
+		##############################
+		#      WAR TIRE EFFECTS      #
+		##############################
+
+		wt_rebel = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.5
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				non_core_manpower = -0.1
+			}
+		}
+
+		wt_production_rebel = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.7
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.4
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.3
+			}
+		}
+
+		wt_production_rebel2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.7
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.4
+				consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.3
+			}
+		}
+
+		wt_desertion = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org = -0.1
+			}
+		}
+
+		wt_army_rebel = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = -0.3
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_morale_factor = -0.2
+				army_speed_factor = -0.15
+				army_org = -0.3
+			}
+		}
+
+		wt_army_rebel2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = -0.8
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_morale_factor = -0.4
+				army_speed_factor = -0.5
+				army_org = -0.6
+			}
+		}
+	}
+}

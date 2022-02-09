@@ -1,0 +1,189 @@
+﻿capital = 328
+
+oob = "EIK_2014"
+set_naval_oob = "EIK_2014_naval_legacy"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.5
+
+add_ideas = {
+        WWW_medium_country
+        EIK_corruption01
+        EIK_utechka
+        EIK_militar
+        EIK_velichie
+        EIK_verha
+        limited_conscription
+        free_press
+        general_entry
+}
+
+set_technology = {
+	nukes = 1
+	nuclear_reactor = 1
+	nuclear_rockets = 1
+	nuclear_anti = 1
+	
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+        mechanised_infantry2 = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	jeep_unit_3 = 1
+	motorized_rocket_unit = 1
+	motorized_rocket_unit_2 = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	improved_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	main_battle_tank_2 = 1
+	tech_mountaineers = 1
+
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	transport = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	basic_submarine = 1
+	basic_light_cruiser = 1
+	basic_heavy_cruiser = 1
+}
+
+
+set_convoys = 344
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2008.1.1"
+	election_frequency = 65
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 0
+        democratic = 21
+        fascism = 66
+        communism = 13
+}
+
+#
+create_country_leader = {
+	name = "Vanikh Urssu"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_eik_democratic1.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jakili Nobarans"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_eik_fascism2.dds"
+	expire = "2036.1.1"
+	ideology = nazism
+	traits = {
+		Army_general
+		Imperialist
+	}
+}
+
+create_country_leader = {
+	name = "Vanzader Karamto"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_eik_fascism1.dds"
+	expire = "2025.1.1"
+	ideology = nazism
+	traits = {
+		Nation_leader
+		Accomplice_of_the_oligarchs
+	}
+}
+
+create_country_leader = {
+	name = "Ballitiri Baoughizilli"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_eik_neutrality1.dds"
+	expire = "2033.1.1"
+	ideology = oligarchism
+	traits = {
+		Accomplice_of_the_oligarchs
+	}
+}
+
+create_country_leader = {
+	name = "Tizore Remeko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_eik_communism1.dds"
+	expire = "2042.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Vegim Luga"
+	portrait_path = "gfx/leaders/EIK/portrait_eik_vegim_luga.dds"
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+	
+
+create_corps_commander = {
+	name = "Marush Metarali"
+	portrait_path = "gfx/leaders/EIK/portrait_eik_general_generic.dds"
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Artor Gasho"
+	portrait_path = "gfx/leaders/EIK/portrait_eik_general_generic.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dituror Zhungali"
+	portrait_path = "gfx/leaders/EIK/portrait_eik_general_generic.dds"
+	skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
+}

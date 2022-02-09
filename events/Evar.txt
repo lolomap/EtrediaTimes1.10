@@ -1,0 +1,39 @@
+add_namespace = evar
+
+country_event = {
+	id = evar.1
+	title = evar.1.t
+	desc = evar.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ECE
+    }
+    	
+	option = {
+    name = evar.1.a
+	    ECE = {
+            create_wargoal = {
+            type = annex_everything
+            target = GWA
+            }
+	    }
+	ai_chance = { factor = 2 }
+	}
+	option = {
+    name = evar.1.b
+	    ECE = {
+            create_wargoal = {
+            type = annex_everything
+            target = KYU
+            }
+	    }
+    ai_chance = { factor = 4 }
+	}
+	option = {
+    name = evar.1.c
+	ai_chance = { factor = 4 }
+	}
+}

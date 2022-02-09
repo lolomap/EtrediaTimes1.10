@@ -1,0 +1,25 @@
+state={
+	id=30
+	name="STATE_30"
+	manpower = 1000000
+	
+	state_category = town
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = UCB
+		add_core_of = ORB
+		victory_points = {
+			7356 1
+		}
+
+	}
+	provinces={
+		6243 6262 6382 6430 6431 6493 6509 6525 6526 6527 6568 6569 6610 6629 6671 6750 
+	}
+}

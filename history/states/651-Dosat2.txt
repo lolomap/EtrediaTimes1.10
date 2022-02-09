@@ -1,0 +1,27 @@
+
+state={
+	id=651
+	name="STATE_651"
+	manpower = 3670000
+	state_category = town
+	
+	resources={
+		oil = 2 # was: 4
+	}
+
+	history={
+		owner = DOS
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = DOS
+		victory_points = {
+			918 5
+		}
+
+	}
+	provinces={
+		651 655 656 678 679 684 698 703 709 724 732 746 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=291
+	name="STATE_291"
+	resources={
+		steel=6.000
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = YAN
+		victory_points = {
+			9677 15 
+		}
+
+	}
+	provinces={
+		7656 7729 7855 7871 7889 7943 7982 8018 8019 8177 8178 8276 8314 8352 8372 8394 8488 8531 8577 8611 8612 8688 8712 8804 8899 8976 
+	}
+	manpower=4890000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

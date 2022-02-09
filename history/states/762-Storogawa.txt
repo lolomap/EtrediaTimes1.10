@@ -1,0 +1,26 @@
+
+state={
+	id=762
+	name="STATE_762"
+	manpower = 970000
+	state_category = rural
+	
+	resources={
+		steel = 26 # was: 32
+	}
+
+	history={
+		owner = ATI
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ATI
+		victory_points = {
+			2623 1
+		}
+
+	}
+	provinces={
+		1930 1952 1995 2070 2071 2072 2078 2108 2121 2122 2136 2158 2181 
+	}
+}

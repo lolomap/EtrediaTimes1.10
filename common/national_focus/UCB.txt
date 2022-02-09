@@ -1,0 +1,1193 @@
+focus_tree = {
+	id = UCB
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UCB
+		}
+	}
+	default = no
+	focus = {
+		id = UCB_1
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = UCB_dem_fsc_conversation
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_ndro
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 11
+
+	}
+	focus = {
+		id = UCB_dem_kulishtia
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = UCB_flot1
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10
+		x = 50
+		y = 0
+
+	}
+	focus = {
+		id = UCB_dem_anti_IID
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_fsc_conversation
+		}
+		mutually_exclusive = {
+			focus = UCB_dem_IID
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_iid_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_anti_IID
+		}
+		x = 2
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_ndro2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_ndro
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = UCB_dem_IID
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_fsc_conversation
+		}
+		mutually_exclusive = {
+			focus = UCB_dem_anti_IID
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_newfactories
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_IID
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_kulishtia2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_kulishtia
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = UCB_2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_1
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = UCB_dem1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_2
+		}
+		mutually_exclusive = {
+			focus = UCB_fasc1
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = UCB_dem_foreign_policy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem1
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = UCB_dem_military_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem1
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = UCB_dem_economic_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem1
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = UCB_dem_gov_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem1
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = UCB_dem_stabilnost
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_gov_reform
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = UCB_dem_autonomy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_stabilnost
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = UCB_dem_compromis
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_autonomy
+		}
+		mutually_exclusive = {
+			focus = UCB_dem_battle
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_new_parlament
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_compromis
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_battle
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_autonomy
+		}
+		mutually_exclusive = {
+			focus = UCB_dem_compromis
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_nazi_off
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_battle
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_kolechian_question
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_nazi_off
+			focus = UCB_dem_new_parlament
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = UCB_fasc1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_2
+		}
+		mutually_exclusive = {
+			focus = UCB_dem1
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = UCB_fasc2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc1
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = UCB_fasc_expel_sbu
+		icon = GFX_focus_cze_german_puppet
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc2
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = UCB_fasc_rospusk_parlament
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc2
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = UCB_fasc_united_caratenia
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_rospusk_parlament
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fasc_prepare_for_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_united_caratenia
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = UCB_fasc_south_ORB
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_prepare_for_war
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = UCB_annex_TRP
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_south_ORB
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = UCB_fasc_vroin
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_annex_TRP
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = UCB_fasc_revolt_ibFSC
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_annex_TRP
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = UCB_annex_Diosis
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_revolt_ibFSC
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = UCB_fasc_annex_KUL
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_revolt_ibFSC
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = UCB_fasc_anraks_puppet
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_annex_Diosis
+		}
+		prerequisite = {
+			focus = UCB_fasc_annex_KUL
+		}
+		x = 35
+		y = 11
+
+	}
+	focus = {
+		id = UCB_annex_EGR
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_anraks_puppet
+		}
+		x = 35
+		y = 12
+
+	}
+	focus = {
+		id = UCB_OIK_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_annex_EGR
+		}
+		mutually_exclusive = {
+			focus = UCB_fasc_OIK_friend
+		}
+		x = 34
+		y = 13
+
+	}
+	focus = {
+		id = UCB_fasc_integrate_newregions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_OIK_war
+		}
+		x = 33
+		y = 14
+
+	}
+	focus = {
+		id = UCB_fasc_OIK_friend
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_annex_EGR
+		}
+		mutually_exclusive = {
+			focus = UCB_OIK_war
+		}
+		x = 36
+		y = 13
+
+	}
+	focus = {
+		id = UCB_fasc_war_IID
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_integrate_newregions
+			focus = UCB_fasc_OIK_friend
+		}
+		x = 35
+		y = 15
+
+	}
+	focus = {
+		id = UCB_fasc_military_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc2
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = UCB_fasc_general
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_military_reform
+		}
+		x = 39
+		y = 5
+
+	}
+	focus = {
+		id = UCB_arms1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_general
+		}
+		x = 39
+		y = 6
+
+	}
+	focus = {
+		id = UCB_arms2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_arms1
+		}
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = UCB_fasc_planes_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_arms2
+		}
+		x = 37
+		y = 8
+
+	}
+	focus = {
+		id = UCB_fasc_optimizy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_arms2
+		}
+		x = 39
+		y = 8
+
+	}
+	focus = {
+		id = UCB_fasc_doctrine
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_optimizy
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = UCB_fasc_military_propoganda
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_military_reform
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fasc_priziv
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_military_propoganda
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = UCB_fasc_training
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_priziv
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = UCB_fasc_slot1
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_military_propoganda
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = UCB_flot2
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = UCB_flot1
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = UCB_flot3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = UCB_flot2
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = UCB_podlodki
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = UCB_flot3
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = UCB_dem_dotaci
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_kolechian_question
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_separatism_off
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_dotaci
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = UCB_dem_nologi
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_economic_reform
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = UCB_dem_granty
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_nologi
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = UCB_dem_sbu_investors
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_granty
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_industrial1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_sbu_investors
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_stab_regions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_sbu_investors
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_mgahvatia_oil
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_stab_regions
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_oil_factory
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_mgahvatia_oil
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_industrial2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_industrial1
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = UCB_tajiki
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_industrial2
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_industrial3
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_tajiki
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = UCB_dem_infrastructure1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_industrial1
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_infrastructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_infrastructure1
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_forum
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_industrial3
+		}
+		prerequisite = {
+			focus = UCB_dem_infrastructure2
+		}
+		prerequisite = {
+			focus = UCB_dem_oil_factory
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = UCB_dem_global_reorganize
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_military_reform
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = UCB_dem_infrastructure3
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_global_reorganize
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = UCB_dem_army_training
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_infrastructure3
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_arms1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_army_training
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_arms2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_arms1
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_arms3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_arms2
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_slot1
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_arms1
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = UCB_dem_slot2
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_global_reorganize
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = UCB_dem_tanks
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_slot2
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_pehotka
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_slot2
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = UCB_dem_planes
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_tanks
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = UCB_dem_rearmament
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_planes
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = UCB_dem_sbu
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_foreign_policy
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = UCB_dem_stavka_defense
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_sbu
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = UCB_dem_trp_garant
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_stavka_defense
+		}
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = UCB_fasc_factory1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_expel_sbu
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = UCB_fasc_IID_investors
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_factory1
+		}
+		mutually_exclusive = {
+			focus = UCB_fasc_sami
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = UCB_fasc_sami
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_factory1
+		}
+		mutually_exclusive = {
+			focus = UCB_fasc_IID_investors
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = UCB_fasc_fsc_trade
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_IID_investors
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = UCB_fasc_support_forbusines
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_sami
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = UCB_fasc_electronika
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_support_forbusines
+			focus = UCB_fasc_fsc_trade
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = UCB_fasc_oil_factory
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_electronika
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = UCB_fasc_new_economic
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_oil_factory
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = UCB_fasc_factory2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_new_economic
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = UCB_fasc_factory3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_factory2
+		}
+		x = 29
+		y = 12
+
+	}
+	focus = {
+		id = UCB_fasc_factory4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_factory3
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = UCB_fasc_oil_factory2
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_new_economic
+		}
+		x = 31
+		y = 11
+
+	}
+	focus = {
+		id = UCB_fasc_oil_factory3
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_oil_factory2
+		}
+		x = 31
+		y = 12
+
+	}
+	focus = {
+		id = UCB_fasc_oil_factory4
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_oil_factory3
+		}
+		x = 31
+		y = 13
+
+	}
+	focus = {
+		id = UCB_fasc_infrastructure1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_new_economic
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = UCB_fasc_infrastructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_infrastructure1
+		}
+		x = 27
+		y = 12
+
+	}
+	focus = {
+		id = UCB_fasc_infrastructure3
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_infrastructure2
+		}
+		x = 27
+		y = 13
+
+	}
+	focus = {
+		id = UCB_fasc_podelit
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_fasc_war_IID
+		}
+		x = 35
+		y = 16
+
+	}
+	focus = {
+		id = UCB_ships
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = {
+			focus = UCB_flot3
+		}
+		x = 51
+		y = 3
+
+	}
+}

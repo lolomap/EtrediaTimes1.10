@@ -1,0 +1,29 @@
+
+state={
+	id=509
+	name="STATE_509"
+	manpower = 1000000
+	
+	state_category = town
+
+        resources={
+                 steel = 34 # was: 40
+                 chromium = 9 # was: 12
+        }
+
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 2
+		}
+		add_core_of = LIP
+		victory_points = {
+			3267 5
+		}
+
+	}
+	provinces={
+		3047 3051 3056 3066 3104 3114 3115 3125 3128 3146 3169 3174 3175 3186 3231 
+	}
+}

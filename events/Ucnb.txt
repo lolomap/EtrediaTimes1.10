@@ -1,0 +1,417 @@
+add_namespace = ucnb
+
+country_event = {
+	id = ucnb.1
+	title = ucnb.1.t
+	desc = ucnb.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.1.a 
+    add_ideas = UCB_resist		
+	ai_chance = { 
+	factor = 70	
+        modifier = {
+	    factor = 1000
+		is_historical_focus_on = yes
+		}
+	}
+	}
+
+	option = {
+	name = ucnb.1.b
+	    trigger = {
+		NOT = { has_global_flag = ucb_narabel_not_in_elections }
+		}
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.3
+        }
+	    ai_chance = { 
+	    factor = 30 
+		    modifier = {
+	        factor = 0
+		    is_historical_focus_on = yes
+		    }
+	    }
+    }
+}
+
+country_event = {
+	id = ucnb.2
+	title = ucnb.2.t
+	desc = ucnb.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.2.a 
+                add_ideas = UCB_separatism1		
+		ai_chance = { factor = 100 }
+	}
+
+}
+
+country_event = {
+	id = ucnb.3
+	title = ucnb.3.t
+	desc = ucnb.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.3.a		
+		TAG = UCB
+            KOL = {
+               transfer_state = 24
+               load_oob = KOL_terrorist
+               add_manpower = 20000
+            }
+            hidden_effect = {
+            # KOL = { add_ideas = rebels.1 }
+            KOL = {
+					set_rule = {can_join_factions = no}
+				}
+	        KOL = { declare_war_on = { target = UCB type = take_state generator = { 23 } } }
+            }
+            country_event = { id = ucnb.sep1 days = 15 }
+	hidden_effect = {
+	UCB = {
+	add_ai_strategy = {
+	type = annex
+	id = "KOL"
+	value = 10000
+	}
+	}
+	}
+	}
+}
+
+country_event = {
+	id = ucnb.sep1
+	title = ucnb.sep1.t
+	desc = ucnb.sep1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.sep1.a
+		KIM = {
+			transfer_state = 21
+			load_oob = KIM_terrorist
+			add_manpower = 35000
+		}
+		hidden_effect = {
+			# KIM = { add_ideas = rebels.1 }
+			KIM = {
+				set_rule = {can_join_factions = no}
+			}
+			KIM = { declare_war_on = { target = UCB type = annex_everything } }
+			UCB = {
+				add_ai_strategy = {
+					type = annex
+					id = "KIM"
+					value = 10000
+				}
+				21 = {add_claim_by = UCB}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.4
+	title = ucnb.4.t
+	desc = ucnb.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.4.a
+		UCB = { create_wargoal = { type = take_state_focus generator = { 2 } target = DIN } }
+		DIN = {
+			transfer_state = 2
+			load_oob = DIN_rebels
+			add_manpower = 40000
+		}
+		hidden_effect = {
+			#DIN = { add_ideas = rebels.1 }
+			DIN = {
+				set_rule = {can_join_factions = no}
+			}
+		}	
+	}
+
+}
+
+country_event = {
+	id = ucnb.5
+	title = ucnb.5.t
+	desc = ucnb.5.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.5.a
+		UCB = { create_wargoal = { type = take_state_focus generator = { 10 } target = ARS } }
+		ARS = {
+			transfer_state = 10
+			transfer_state = 71
+			load_oob = ARS_rebels
+			add_manpower = 60000
+		}
+		hidden_effect = {
+			#ARS = { add_ideas = rebels.1 }
+			ARS = {
+				set_rule = {can_join_factions = no}
+			}
+		}	
+	}
+
+}
+
+country_event = {
+	id = ucnb.6
+	title = ucnb.6.t
+	desc = ucnb.6.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.6.a
+		UCB = { create_wargoal = { type = take_state_focus generator = { 32 } target = SRA } }
+		UCB = { create_wargoal = { type = take_state_focus generator = { 33 } target = NRA } }
+		SRA = {
+			transfer_state = 32
+			load_oob = SRA_rebels
+			add_manpower = 40000
+		}
+		NRA = {
+			transfer_state = 33
+			load_oob = NRA_rebels
+			add_manpower = 40000
+		}
+		hidden_effect = {
+			#SRA = { add_ideas = rebels.1 }
+			#NRA = { add_ideas = rebels.1 }
+			SRA = {
+				set_rule = {can_join_factions = no}
+			}
+			NRA = {
+				set_rule = {can_join_factions = no}
+			}
+			NRA = { declare_war_on = { target = SRA type = annex_everything } }
+			SRA = { declare_war_on = { target = NRA type = annex_everything } }
+   	}	
+	}
+
+}
+
+country_event = {
+	id = ucnb.7
+	title = ucnb.7.t
+	desc = ucnb.7.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.7.a		
+        KAR = { country_event = { id = kar.2 days = 1 } }
+    hidden_effect = {
+    UCB = { country_event = { id = ucnb.10 days = 20 } }
+    }
+	}
+}
+
+country_event = {
+	id = ucnb.8
+	title = ucnb.8.t
+	desc = ucnb.8.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.8.a		
+	}
+}
+
+country_event = {
+	id = ucnb.9
+	title = ucnb.9.t
+	desc = ucnb.9.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.9.a
+    SBU = { country_event = { id = sbu.15 days = 1 } }
+    ai_chance = { factor = 80 }		
+	}
+	option = {
+	name = ucnb.9.b		
+	SBU = { country_event = { id = sbu.16 days = 1 } }
+	ai_chance = { factor = 20
+		modifier = {
+		has_government = fascism
+	    factor = 100
+        }
+	}
+	}
+}
+
+country_event = {
+	id = ucnb.10
+	title = ucnb.10.t
+	desc = ucnb.10.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.10.a		
+        PIN = { country_event = { id = pin.1 days = 1 } }
+	}
+}
+
+country_event = {
+	id = ucnb.11
+	title = ucnb.11.t
+	desc = ucnb.11.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.11.a		
+        PIN = { country_event = { id = pin.2 days = 1 } }
+		ai_chance = { factor = 80 }
+	}
+	option = {
+		name = ucnb.11.b		
+        PIN = { country_event = { id = pin.3 days = 1 } }
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = ucnb.12
+	title = ucnb.12.t
+	desc = ucnb.12.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.12.a		
+        PIN = { country_event = { id = pin.4 days = 1 } }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = ucnb.12.b		
+        PIN = { country_event = { id = pin.3 days = 1 } }
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = ucnb.13
+	title = ucnb.13.t
+	desc = ucnb.13.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.13.a		
+	}
+}
+
+country_event = {
+	id = ucnb.14
+	title = ucnb.14.t
+	desc = ucnb.14.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.14.a
+            UCB = {
+            add_to_faction = RTT
+            }
+		add_opinion_modifier = { target = RTT modifier = rtt_ucb_deal }
+	RTT = {	add_opinion_modifier = { target = UCB modifier = rtt_ucb_deal } }
+	ai_chance = { factor = 100 }
+	}
+	option = {
+		name = ucnb.14.b
+	ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = ucnb.15
+	title = ucnb.15.t
+	desc = ucnb.15.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucnb.15.a
+            UCB = {
+            add_to_faction = DIR
+            }
+            UCB = {
+            add_to_faction = DEM
+            }
+		add_opinion_modifier = { target = DIR modifier = rtt_ucb_deal }
+	DIR = {	add_opinion_modifier = { target = UCB modifier = rtt_ucb_deal } }
+	ai_chance = { factor = 100 }
+	}
+	option = {
+		name = ucnb.15.b
+	ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = ucnb.16
+	title = ucnb.16.t
+	desc = ucnb.16.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.16.a
+        FSC = {
+			transfer_state = 31
+			transfer_state = 28
+			transfer_state = 27
+			transfer_state = 23
+		}
+		UCB = {
+			white_peace = FSC
+		}
+	ai_chance = { factor = 70 }
+	}
+	option = {
+	name = ucnb.16.b
+	ai_chance = { factor = 30 }
+	}
+}

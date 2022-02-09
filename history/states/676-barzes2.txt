@@ -1,0 +1,29 @@
+
+state={
+	id=676
+	name="STATE_676"
+	manpower = 4560000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = BRZ
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+			962 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = BRZ
+		victory_points = {
+			962 5
+		}
+
+	}
+	provinces={
+		668 669 689 691 693 711 719 721 723 737 745 747 759 761 771 
+	}
+}

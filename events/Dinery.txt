@@ -1,0 +1,243 @@
+add_namespace = din
+
+country_event = {
+	id = din.1
+	title = din.1.t
+	desc = din.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.1.a 
+		hidden_effect = {
+			DIN = { country_event = { id = din.2 days = 90 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = MIN
+        }
+	    create_wargoal = {
+            type = annex_everything
+            target = RAN
+        }
+	}
+}
+
+country_event = {
+	id = din.2
+	title = din.2.t
+	desc = din.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.2.a 
+		hidden_effect = {
+			DIN = { country_event = { id = din.3 days = 90 } }
+			add_manpower = 40000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = KOS
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = TRI
+        }
+	}
+}
+
+country_event = {
+	id = din.3
+	title = din.3.t
+	desc = din.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.3.a 
+		hidden_effect = {
+			DIN = { country_event = { id = din.4 days = 180 } }
+			add_manpower = 80000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = KOS
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = NIK
+        }
+	}
+}
+
+country_event = {
+	id = din.4
+	title = din.4.t
+	desc = din.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.4.a 
+		create_wargoal = {
+            type = annex_everything
+            target = PER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = EDD
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = IND
+        }
+		hidden_effect = {
+		    DIN = { country_event = { id = din.5 days = 360 } }
+			add_manpower = 100000
+		}
+	}
+}
+
+country_event = {
+	id = din.5
+	title = din.5.t
+	desc = din.5.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.5.a 
+		create_wargoal = {
+            type = annex_everything
+            target = BER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = LEV
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = ZER
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = RET
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = AKV
+        }
+		hidden_effect = {
+		    DIN = { country_event = { id = din.6 days = 180 } }
+			add_manpower = 10000
+		}
+	}
+}
+
+country_event = {
+	id = din.6
+	title = din.6.t
+	desc = din.6.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.6.a 
+		create_wargoal = {
+            type = annex_everything
+            target = SGO
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SVE
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = KIM
+        }
+		hidden_effect = {
+		    DIN = { country_event = { id = din.7 days = 365 } }
+			add_manpower = 40000
+		}
+	}
+}
+
+country_event = {
+	id = din.7
+	title = din.7.t
+	desc = din.7.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = DIN
+	}
+
+	option = {
+	name = din.7.a 
+		create_wargoal = {
+            type = annex_everything
+            target = KUR
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = ARS
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = TIR
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = FLR
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SRA
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = NRA
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = KOL
+        }
+		hidden_effect = {
+			add_manpower = 20000
+		}
+	}
+}

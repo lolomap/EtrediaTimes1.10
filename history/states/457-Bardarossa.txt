@@ -1,0 +1,28 @@
+
+state={
+	id=457
+	name="STATE_457"
+	manpower = 1600000
+
+	resources={
+		rubber = 6 # was: 6
+	}
+	
+	state_category = town
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+		}
+		add_core_of = LON
+		victory_points = {
+			10545 10
+		}
+
+	}
+	provinces={
+		8824 8825 8862 8863 8981 8999 9043 9044 9071 9087 9132 9148 9216 9217 9257 9272 9303 9304 9332 9424 9438 9451 9464 
+	}
+}

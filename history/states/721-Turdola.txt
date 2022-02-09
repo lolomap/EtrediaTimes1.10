@@ -1,0 +1,31 @@
+
+state={
+	id=721
+	name="STATE_721"
+	manpower = 2300000
+	state_category = town
+	
+	resources={
+		rubber = 30 # was: 50
+	}
+
+	history={
+		owner = BOV
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			1783 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = BOV
+		victory_points = {
+			1783 5
+		}
+
+	}
+	provinces={
+		1146 1207 1235 1264 1293 1342 1371 1400 1409 1442 1443 1452 1453 1491 1502 1530 1537 1553 1603 
+	}
+}

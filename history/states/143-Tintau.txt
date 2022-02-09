@@ -1,0 +1,29 @@
+
+state={
+	id=143
+	name="STATE_143"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		steel = 22 # was: 24
+	}
+
+	history={
+		owner = PIN
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 0
+		}
+		add_core_of = PIN
+		victory_points = {
+			11153 5
+		}
+
+	}
+	provinces={
+		11153 11196 11240 11241 11254 11317 11338 11348 11395 11411 11412 11454 11471 11488 11497 11498 11513 11573 11590 11627 11628 11643 11644 11722 
+	}
+}

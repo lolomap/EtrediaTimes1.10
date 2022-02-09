@@ -1,0 +1,31 @@
+
+state={
+	id=206
+	name="STATE_206"
+	resources={
+		oil=13.000
+		aluminium=11.000
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			arms_factory = 3
+                        air_base = 10
+		}
+		add_core_of = SBU
+		add_core_of = SVT
+		victory_points = {
+			5717 25 
+		}
+
+	}
+	provinces={
+		4567 4598 4599 4644 4660 4717 4718 4735 4759 4802 4803 4818 4837 4885 4905 4906 4929 4930 4993 5013 5045 5062 5073 5099 5150 5151 5168 5185 5186 5226 5282 5283 5298 5311 5354 
+	}
+	manpower=11530000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

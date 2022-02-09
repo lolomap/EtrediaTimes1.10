@@ -1,0 +1,29 @@
+
+state={
+	id=265
+	name="STATE_265"
+	manpower = 2511000
+	
+	state_category = large_town
+	
+	resources={
+		oil = 28 # was: 36
+	}
+
+	history={
+		owner = DIR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+                        arms_factory = 0
+		}
+		add_core_of = DIR
+		victory_points = {
+			10198 5
+		}
+
+	}
+	provinces={
+		10198 10236 10347 10348 10360 10525 10526 10539 10552 10637 10671 10707 10718 10719 10757 10791 10792 10877 10978 10979 11040 11142 11159 11209 11275 11289 11435 
+	}
+}

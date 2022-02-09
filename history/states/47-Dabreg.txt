@@ -1,0 +1,27 @@
+state={
+	id=47
+	name="STATE_47"
+	manpower = 2400000
+	
+	state_category = large_city
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 3
+			4798 = {
+				naval_base = 7
+			}
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			4798 20
+		}
+
+	}
+	provinces={
+		4157 4158 4169 4195 4226 4227 4250 4313 4326 
+	}
+}

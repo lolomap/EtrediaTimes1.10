@@ -1,0 +1,120 @@
+add_namespace = sgo
+
+country_event = {
+	id = sgo.1
+	title = sgo.1.t
+	desc = sgo.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SGO
+	}
+
+	option = {
+	name = sgo.1.a 
+		hidden_effect = {
+			SGO = { country_event = { id = sgo.2 days = 180 } }
+			add_manpower = 50000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = SVE
+        }
+	    create_wargoal = {
+            type = annex_everything
+            target = KIM
+        }
+	    create_wargoal = {
+            type = annex_everything
+            target = GLE
+        }
+	}
+}
+
+country_event = {
+	id = sgo.2
+	title = sgo.2.t
+	desc = sgo.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SGO
+	}
+
+	option = {
+	name = sgo.2.a 
+		hidden_effect = {
+			SGO = { country_event = { id = sgo.3 days = 200 } }
+			add_manpower = 60000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = AKV
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = FLR
+        }
+	}
+}
+
+country_event = {
+	id = sgo.3
+	title = sgo.3.t
+	desc = sgo.3.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SGO
+	}
+
+	option = {
+	name = sgo.3.a 
+		hidden_effect = {
+			SGO = { country_event = { id = sgo.4 days = 120 } }
+			add_manpower = 80000
+		}
+		create_wargoal = {
+            type = annex_everything
+            target = RET
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = ZER
+        }
+	}
+}
+
+country_event = {
+	id = sgo.4
+	title = sgo.4.t
+	desc = sgo.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SGO
+	}
+
+	option = {
+	name = sgo.4.a 
+		create_wargoal = {
+            type = annex_everything
+            target = NRA
+        }
+		create_wargoal = {
+            type = annex_everything
+            target = SRA
+        }
+		hidden_effect = {
+			add_manpower = 80000
+		}
+	}
+}

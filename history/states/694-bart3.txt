@@ -1,0 +1,29 @@
+
+state={
+	id=694
+	name="STATE_694"
+	manpower = 1560000
+	
+	state_category = rural
+	
+	resources={
+             steel = 16 # was: 31
+	}
+
+	history={
+		owner = BAR
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 1
+                        dockyard = 1
+		}
+		add_core_of = BAR
+		victory_points = {
+			286 1
+		}
+
+	}
+	provinces={
+		365 379 392 402 404 412 418 426 438 445 451 457 463 484 490 505 508 530 539 
+	}
+}

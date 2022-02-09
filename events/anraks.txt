@@ -1,0 +1,97 @@
+add_namespace = anr
+
+country_event = {
+	id = anr.1
+	title = anr.1.t
+	desc = anr.1.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ANR
+        FSC = { is_puppet_of = ANR }
+    }
+    	
+	option = {
+    name = anr.1.a
+	    ANR = {
+	        annex_country = {
+            target = FSC
+            transfer_troops = no
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = anr.2
+	title = anr.2.t
+	desc = anr.2.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ANR
+		52 = { is_controlled_by = KUL }
+    }
+    	
+	option = {
+	name = anr.2.a
+	ANR = {
+	create_wargoal = {
+    type = annex_everything
+    target = KUL
+    }
+	}
+	}
+}
+
+country_event = {
+	id = anr.3
+	title = anr.3.t
+	desc = anr.3.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ANR
+		46 = { is_controlled_by = KUL }
+    }
+    	
+	option = {
+	name = anr.3.a
+	    ANR = {
+	        create_wargoal = {
+            type = annex_everything
+            target = KUL
+            }
+	    }
+	}
+}
+
+country_event = {
+	id = anr.4
+	title = anr.4.t
+	desc = anr.4.d
+	picture = GFX_news_event
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = ANR
+		51 = { is_controlled_by = KUL }
+    }
+    	
+	option = {
+	name = anr.4.a
+	    ANR = {
+	        create_wargoal = {
+            type = annex_everything
+            target = KUL
+            }
+	    }
+	}
+}

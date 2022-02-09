@@ -1,0 +1,35 @@
+
+state={
+	id=300
+	name="STATE_300"
+	manpower = 7320000
+	
+	state_category = large_city
+	
+	resources={
+	}
+
+	history={
+		owner = YAN
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 0
+                        dockyard = 3
+			5814 = {
+				naval_base = 6
+			}
+			6524 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = YAN
+		victory_points = {
+			5814 25
+		}
+
+	}
+	provinces={
+		4743 4822 4844 4874 4912 5020 5030 5053 5054 5192 5193 5286 5330 5357 5395 5396 5511 5533 5534 5566 5581 5693 5710 
+	}
+}

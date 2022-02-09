@@ -1,0 +1,26 @@
+state={
+	id=154
+	name="STATE_154"
+	manpower = 400000
+	
+	state_category = rural
+	
+	resources={
+                steel = 5 # was: 10
+	}
+
+	history={
+		owner = SHE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SHE
+		victory_points = {
+			13385 1
+		}
+
+	}
+	provinces={
+		13385 13412 13413 13426 13437 13486 13520 13545 13546 13588 13611 13623 13649 13650 13691 13714 13742 13743 13783 13796 13808 
+	}
+}

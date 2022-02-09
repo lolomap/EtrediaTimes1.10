@@ -1,0 +1,33 @@
+state={
+	id=54
+	name="STATE_54"
+	manpower = 5300000
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+			dockyard = 2
+                        air_base = 4
+			8313 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = FSC
+		add_core_of = KUL
+		victory_points = {
+			8313 20
+		}
+
+	}
+	provinces={
+		6651 6708 6766 6767 6822 6862 6935 6995 7053 7144 7224 
+	}
+}

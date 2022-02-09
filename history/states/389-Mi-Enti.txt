@@ -1,0 +1,33 @@
+
+state={
+	id=389
+	name="STATE_389"
+	manpower = 980000
+	
+	state_category = town
+	
+	resources={
+		oil = 8 # was: 16
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 1
+                        arms_factory = 0
+                        dockyard = 0
+			2868 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			2868 5
+		}
+
+	}
+	provinces={
+		2577 2627 2691 
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=99
+	name="STATE_99"
+	manpower = 16000000
+	state_category = city
+
+	resources={
+		oil=6.000
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = IID
+		victory_points = {
+			11212 20
+		}
+
+	}
+	provinces={
+		9444 9496 9549 9564 9644 9645 9778 
+	}
+}

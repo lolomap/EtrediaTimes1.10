@@ -1,0 +1,62 @@
+add_namespace = kar
+
+country_event = {
+	id = kar.1
+	title = kar.1.t
+	desc = kar.1.d
+	picture = GFX_news_even
+	
+        is_triggered_only = yes
+
+	trigger = {
+        TAG = KAR
+        }
+
+	option = {
+		name = kar.1.a
+                hidden_effect = {
+                DEM = { country_event = { days = 1 id = dirnews.3 } }
+                }
+                send_equipment = {
+                equipment = infantry_equipment
+                amount = 4000
+                target = DEM
+                }
+                ai_chance = { factor = 100
+				modifier = {
+                }
+				}
+	}
+	option = {
+		name = kar.1.b
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+	id = kar.2
+	title = kar.2.t
+	desc = kar.2.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KAR
+    }
+
+	option = {
+		name = kar.2.a
+            UCB = {
+            add_to_faction = KAR
+            }
+    ai_chance = { factor = 100 }
+    }
+	option = {
+		name = kar.2.b
+		hidden_effect = {
+		UCB = { country_event = { days = 1 id = ucnb.8 } }
+		}
+    ai_chance = { factor = 0 }
+    }
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=324
+	name="STATE_324"
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 0
+			dockyard = 1
+			13145 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = EIK
+		victory_points = {
+			13145 10 
+		}
+
+	}
+	provinces={
+		13145 13439 13659 13660 13669 13670 13693 13744 13755 13756 13764 13775 13822 13830 13831 13851 13861 13862 13887 13921 13958 13997 14019 14039 14055 14085 14101 
+	}
+	manpower=3400000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

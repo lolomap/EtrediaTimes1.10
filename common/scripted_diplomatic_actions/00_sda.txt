@@ -1,0 +1,82 @@
+#	pressure_embargo = {
+#			visible = {
+#				ROOT = {is_subject = no}
+#				is_subject = no
+#			}
+#
+#			cost = 0
+#
+#			command_power = 0
+#			show_acceptance_on_action_button = yes
+#			requires_acceptance = yes
+#
+#			icon = 1
+#
+#			complete_effect = {
+#				ROOT = {set_var = forced_embargo@PREV}
+#			}
+#
+#			ai_desire = {
+#				base = 0
+#				modifier = {
+#					ROOT = {check_variable = {embargoList^num > 0}}
+#					add = 10
+#				}
+#			}
+
+#			ai_acceptance = {
+#				base_emb = {
+#					base = -3
+#				}
+#				opinion_emb = {
+#					base = 0
+#					modifier = {
+#						has_opinion = {
+#							target = ROOT
+#							value < -20
+#						}
+#						add = -2
+#					}
+#					modifier = {
+#						has_opinion = {
+#							target = ROOT
+#							value < -40
+#						}
+#						add = -3
+#					}
+#					modifier = {
+#						has_opinion = {
+#							target = ROOT
+#							value > 20
+#						}
+#						add = 2
+#					}
+#					modifier = {
+#						has_opinion = {
+#							target = ROOT
+#							value > 40
+#						}
+#						add = 3
+#					}
+#				}
+#				influence_emb = {
+#					base = 0
+#					modifier = {
+#						check_variable = {ROOT.world_influence < world_influence}
+#						add = -10000
+#					}
+#					modifier = {
+#						set_temp_variable = {rwi = ROOT.world_influence}
+#						subtract_from_temp_variable = {rwi = world_influence}
+#						check_variable = {rwi > 2}
+#						add = 2
+#					}
+#					modifier = {
+#						set_temp_variable = {rwi = ROOT.world_influence}
+#						subtract_from_temp_variable = {rwi = world_influence}
+#						check_variable = {rwi > 3}
+#						add = 2
+#					}
+#				}
+#			}
+#	}

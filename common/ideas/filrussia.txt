@@ -1,0 +1,308 @@
+ideas = {
+    country = {	
+	FIL_communism_banned = {
+
+            picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			allowed_civil_war = { has_government = democratic }
+			allowed_civil_war = { has_government = fascism }
+			modifier = {
+				communism_drift = -0.1
+				drift_defence_factor = 0.1
+			}
+		}
+	}
+	country = {	
+	FIL_political_discord = {
+            picture = idea_communism_banned
+			allowed = {
+				always = no
+			}
+			modifier = {
+                    political_power_gain = -0.5
+					stability_factor = -0.2
+			}
+		}
+	}
+	country = {	
+	fascism_up_fil = {
+            picture = idea_communism_banned
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+                  fascism_drift = 0.1
+			}
+		}
+	}
+	country = {	
+	fillrussia_influnce = {
+            picture = idea_communism_banned
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = { has_government = fascism }
+			allowed_civil_war = { has_government = democratic }
+			modifier = {
+                  fascism_drift = 0.15
+			}
+		}
+	}
+	country = {	
+	
+	country = {	
+	FIL_industry_for_state = {
+
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	country = {	
+	FIL_pruge1 = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				 army_org = -5
+				 political_power_gain = -0.75
+				 army_attack_factor = -0.05
+				 army_defence_factor = -0.05
+			}
+		}
+	}
+	country = {	
+	FIL_pruge2 = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				 drift_defence_factor = 0.25
+			}
+		}
+	}
+	country = {	
+	FIL_Mil.rails = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+	country = {	
+	FIL_Mil_Nation1 = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+			}
+		}
+	}
+	country = {	
+	FIL_Mil_Schools1 = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.002
+			}
+		}
+	}
+	country = {	
+	FIL_clan_1_idea = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_gain = 0.2
+				
+			}
+		}
+	}
+	country = {	
+	FIL_clan_2_idea = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_org = 5
+				
+			}
+		}
+	}
+	country = {	
+	FIL_outdated_goverment_1 = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			allowed_civil_war = { has_government = democratic }
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.15
+				political_power_gain = -0.4
+			}
+		}
+	}
+	country = {	
+	FIL_disorder = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.4
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+	}
+	country = {
+	FIL_Duks_sep = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor=-0.05 industrial_capacity_factory=-0.05 production_factory_max_efficiency_factor=-0.05
+			}
+		}
+	}
+	country = {
+	FIL_North_sep = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor=-0.05 industrial_capacity_factory=-0.05 production_factory_max_efficiency_factor=-0.05
+			}
+		}
+	}
+	country = {
+	FIL_church_and_gov = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				conscription = 0.01
+				surrender_limit = 0.4
+				army_org = 5
+			}
+		}
+	}
+	country = {
+	FIL_royal_academy = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+	}
+	country = {
+	FIL_free_education_idea = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+	}
+	country = {
+	FIL_arms_royal = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+	country = {
+	FIL_factory_royal = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = { has_government = monarchism }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+	}
+	country = {
+	FIL_three_year = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	country = {
+	FIL_work_heroism = {
+            picture = idea_man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

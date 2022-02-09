@@ -1,0 +1,25 @@
+state={
+	id=774
+	name="STATE_774"
+	manpower = 623000
+	state_category = rural
+	
+	resources={
+		oil = 8 # was: 8
+	}
+
+	history={
+		owner = MIR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MIR
+		victory_points = {
+			2207 1
+		}
+
+	}
+	provinces={
+		1714 1736 1845 
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=190
+	name="STATE_190"
+	manpower = 650000
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = RGY
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 1
+		}
+		add_core_of = RGY
+		victory_points = {
+			10064 5
+		}
+
+	}
+	provinces={
+		8330 8351 8391 8409 8410 8431 8432 8458 8549 8550 8590 8591 8592 8609 8650 8651 8664 8665 8709 8747 8780 8812 8855 8872 8882 8934 8948 9008 9009 
+	}
+}

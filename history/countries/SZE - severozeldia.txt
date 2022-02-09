@@ -1,0 +1,125 @@
+﻿capital = 165
+
+oob = "SZE_2014"
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.8
+
+add_ideas = {
+        WWW_best_country
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+        mechanised_infantry2 = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+        basic_medium_tank = 1
+	tech_mountaineers = 1
+	synth_oil_experiments = 1
+	transport = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_destroyer = 1
+}
+
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2010.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 65
+        fascism = 24
+        communism = 0
+	neutrality = 11
+}
+
+#
+create_country_leader = {
+	name = "Marko Drivanich"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "portrait_sfl_democratic.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marko Drivanich"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Filipp XXX"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Varfolomei Betonov"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Milosh Betonovich"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Milosh Betonovich"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Milosh Betonovich"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}

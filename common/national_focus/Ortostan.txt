@@ -1,0 +1,880 @@
+focus_tree = {
+	id = Ortostan
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	tag = ORB
+		#}
+	}
+
+	focus = {
+		id = ORB_FindInvestor
+		cost = 10
+		x = 0
+		y = 0
+
+		available = {
+			country_exists = IID
+			IID = {
+				OR = {
+					has_government = monarchism
+					has_government = neutrality
+				}
+			}
+			ORB = {
+				is_subject = no
+				is_ai = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ORBFindIvestitionsDesc
+			set_country_flag = iid_orb_investitions
+		}
+	}
+	
+	focus = {
+		id = ORB_Separatism
+		icon = GFX_goal_generic_special_forces
+		cost = 15
+		x = 1
+		y = 1
+
+		available = {
+			#not = {has_country_flag = orb_slave}
+			not = {
+				AND = {
+					is_ai = yes
+					is_subject = yes 
+				}
+			}
+			has_political_power > 300
+		}
+		prerequisite = {
+			focus = ORB_FindInvestor
+		}
+
+		completion_reward = {
+			add_political_power = -300
+			add_ideas = ORB_SeparatismSelf
+			set_cosmetic_tag = ORB_SEP
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = limited_conscription
+			}
+			set_country_flag = orb_separated
+			set_variable = {iid_influence = 0}
+			if = {
+				limit = {not = {has_dlc = "Together for Victory"}}
+				OVERLORD = {end_puppet = ROOT}
+			}
+			leave_faction = yes
+		}
+	}
+	focus = {
+		id = ORB_production
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = ORB_FindInvestor
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = ORB_Radical
+		icon = GFX_goal_support_fascism
+		cost = 10
+		mutually_exclusive = {
+			focus = ORB_Centrism
+			focus = ORB_Monarchism
+		}
+		available = {
+			has_stability < 0.3
+			has_war_support > 0.4
+			is_subject = no
+		}
+		prerequisite = {
+			focus = ORB_FindInvestor
+		}
+		x = 23
+		y = 1
+
+		completion_reward = {
+			country_event = {id = orb.34 days = 1}
+		}
+	}
+	focus = {
+		id = ORB_Centrism
+		icon = GFX_goal_support_democracy
+		cost = 10
+		mutually_exclusive = {
+			focus = ORB_Radical
+			focus = ORB_Monarchism
+		}
+		prerequisite = {
+			focus = ORB_FindInvestor
+		}
+		x = 17
+		y = 1
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ORB_Monarchism
+		icon = GFX_goal_unknown
+		cost = 10
+		mutually_exclusive = {
+			focus = ORB_Centrism
+			focus = ORB_Radical
+		}
+		available = {
+			has_stability < 0.6
+			has_political_power > 100
+			is_subject = no
+		}
+		prerequisite = {
+			focus = ORB_FindInvestor
+		}
+		x = 11
+		y = 1
+
+		completion_reward = {
+			add_political_power = -100
+			add_timed_idea = {idea = ORB_MonarchismDrift days = 70}
+		}
+	}
+	focus = {
+		id = ORB_TempGovernment
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ORB_Monarchism
+		}
+
+		available = {
+			communism < 0.2
+			democratic < 0.3
+			fascism < 0.5
+		}
+
+		x = 11
+		y = 2
+
+		completion_reward = {
+			add_ideas = ORB_TempGovernmentIdea
+			set_politics = {
+				ruling_party = monarchism
+				elections_allowed = no
+			}
+		}
+
+	}
+	focus = {
+		id = ORB_KingElection
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ORB_TempGovernment
+		}
+		available = {
+			has_political_power > 100
+		}
+		x = 11
+		y = 3
+
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = {
+			    ideology = communism
+			    popularity = -0.1
+			}
+			add_popularity = {
+			    ideology = democratic
+			    popularity = -0.1
+			}
+			retire_country_leader = yes
+		}
+	}
+	focus = {
+		id = ORB_UCBSeparatism
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = ORB_KingElection
+		}
+		x = 9
+		y = 4
+
+		completion_reward = {
+			UCB = {add_ideas = ORB_SponsorSeparatism}
+			add_political_power = -150
+		}
+	}
+	focus = {
+		id = ORB_UCBKill
+		icon = GFX_goal_generic_political_pressure
+		cost = 20
+		prerequisite = {
+			focus = ORB_UCBSeparatism
+		}
+		x = 9
+		y = 5
+
+		available = {
+			has_political_power > 300
+			ORB = {is_subject = no}
+			UCB = {is_subject = no}
+			country_exists = UCB
+		}
+
+		bypass = {
+			OR = {
+				not = {country_exists = UCB}
+				UCB = {all_owned_state = {is_core_of = CTE}}
+				UCB = {check_variable = {world_influence < 1}}
+			}
+		}
+
+		completion_reward = {
+			add_political_power = -300
+			add_manpower = -15000
+			army_experience = 5
+			UCB = {country_event = {id = orb.4 days = 1}}
+		}
+	}
+	focus = {
+		id = ORB_FSCSeparatism
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = ORB_KingElection
+		}
+		x = 13
+		y = 4
+
+		completion_reward = {
+			FSC = {add_ideas = ORB_SponsorSeparatism}
+			add_political_power = -150
+		}
+	}
+	focus = {
+		id = ORB_FSCKill
+		icon = GFX_goal_generic_political_pressure
+		cost = 20
+		prerequisite = {
+			focus = ORB_FSCSeparatism
+		}
+		x = 13
+		y = 5
+
+		available = {
+			has_political_power > 200
+			ORB = {is_subject = no}
+			FSC = {is_subject = no}
+			country_exists = FSC
+		}
+
+		bypass = {
+			not = {country_exists = FSC}
+		}
+
+		completion_reward = {
+			add_political_power = -200
+			add_manpower = -15000
+			army_experience = 5
+			FSC = {country_event = {id = orb.5 days = 1}}
+		}
+	}
+	focus = {
+		id = ORB_MinorWar
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10
+		prerequisite = {
+			focus = ORB_UCBKill
+		}
+		x = 9
+		y = 6
+
+		completion_reward = {
+			custom_effect_tooltip = CrusaderWarLoc
+			hidden_effect = {
+				create_wargoal = {
+				    type = annex_everything
+				    target = TIR
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = KUR
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = ARS
+				}
+				
+				create_wargoal = {
+				    type = annex_everything
+				    target = IND
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = ORB_FSCPuppet
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = ORB_FSCKill
+		}
+		x = 13
+		y = 6
+
+		completion_reward = {
+			custom_effect_tooltip = EastPuppetingLoc
+			hidden_effect = {
+				ORB = {
+					puppet = ANR
+					puppet = NER
+					puppet = KUL
+					add_political_power = -300
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_Populism
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = ORB_Centrism
+		}
+		x = 17
+		y = 2
+
+		completion_reward = {
+			add_political_power = 200
+			add_popularity = {ideology = democratic popularity = 0.05}
+			add_war_support = -0.1
+			hidden_effect = {
+				add_timed_idea = {idea = ORB_PopulismEffect days = 90}
+			}
+		}
+	}
+	focus = {
+		id = ORB_Usurpation
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = ORB_Populism
+		}
+		mutually_exclusive = {focus = ORB_Reforms}
+		x = 15
+		y = 3
+
+		completion_reward = {
+			add_political_power = 50
+			set_popularities = {
+				democratic = 5
+				neutrality = 90
+				fascism = 2
+				communism = 2
+				monarchism = 1
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+	focus = {
+		id = ORB_BorderAggression
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		prerequisite = {
+			focus = ORB_Usurpation
+		}
+		x = 15
+		y = 4
+
+		available = {
+			ORB = {
+				any_state = {
+					any_neighbor_state = {
+						state = 27
+					}
+				}
+				
+			}
+			44 = {owner = {tag = ORB}}
+		}
+
+		completion_reward = {
+			#start_border_war = {
+			#	change_state_after_war = yes
+			#	attacker = {
+			#		state = 44
+			#		on_win = orb.36
+			#		on_lose = orb.37
+			#		on_cancel = orb.38
+			#	}
+			#	defender = {
+			#		state = 27
+			#		on_win = orb.37
+			#		on_lose = orb.36
+			#		on_cancel = orb.38
+			#	}
+			#}
+			27 = {
+				set_border_war = yes
+			}
+		}
+	}
+	focus = {
+		id = ORB_Reforms
+		icon = GFX_goal_generic_demand_territory
+		cost = 50
+		prerequisite = {
+			focus = ORB_Populism
+		}
+		mutually_exclusive = {focus = ORB_Usurpation}
+		x = 19
+		y = 3
+		available = {
+			has_political_power > 200
+		}
+
+		completion_reward = {
+			add_political_power = -200
+			add_stability = 0.1
+			custom_effect_tooltip = no_iid_fsc_influence_tooltip
+			hidden_effect = {
+				set_country_flag = no_iid_fsc_influence
+			}
+		}
+	}
+	focus = {
+		id = ORB_DemExample
+		icon = GFX_goal_generic_propaganda
+		cost = 20
+		prerequisite = {
+			focus = ORB_Reforms
+		}
+		x = 19
+		y = 4
+
+		available = {
+			democratic > 0.75
+			is_subject = no
+			has_government = democratic
+			has_stability > 0.6
+			has_political_power > 200
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 1
+			}
+			add_war_support = -1
+			add_stability = 0.3
+			every_country = {
+				limit = {has_government = democratic}
+				add_opinion_modifier = {
+					target = ORB
+					modifier = ORB_DemExample_opinion
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_InternationalMarket
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ORB_DemExample
+		}
+		x = 19
+		y = 5
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ORB_PeaceSharing
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 19
+		y = 6
+		prerequisite = {
+			focus = ORB_InternationalMarket
+		}
+		available = {
+			world_influence > 10
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ORBFarmPeace
+			add_to_variable = {pi_master = 50}
+		}
+	}
+	
+	focus = {
+		id = ORB_RisePower
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ORB_MinorWar
+			focus = ORB_FSCPuppet
+		}
+		x = 11
+		y = 7
+
+		completion_reward = {
+			create_faction = ORT_KINGSDOM
+			add_political_power = 300
+			add_stability = -0.3
+		}
+	}
+	focus = {
+		id = ORB_FallFeodalism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ORB_RisePower
+		}
+		x = 11
+		y = 8
+
+		completion_reward = {
+			every_country = {
+				limit = {is_puppet_of = ORB}
+				ORB = {annex_country = {target = PREV transfer_troops = yes}}
+			}
+			add_popularity = {
+			    ideology = communism
+			    popularity = -0.1
+			}
+			add_popularity = {
+			    ideology = democratic
+			    popularity = -0.1
+			}
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = ORB_Studying
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = ORB_Separatism
+		}
+		x = 1
+		y = 3
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 3
+				uses = 3
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = ORB_Investitions
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = ORB_production
+		}
+		x = 7
+		y = 2
+
+		completion_reward = {
+			add_ideas = ORB_InvestitionsIdea
+		}
+	}
+	focus = {
+		id = ORB_ResourcesExport
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = ORB_Investitions
+		}
+		x = 5
+		y = 2
+
+		completion_reward = {
+			if = {
+				limit = {has_idea = export_focus}
+				swap_ideas = {remove_idea = export_focus add_idea = free_trade}
+			}
+			else_if = {
+				limit = {has_idea = limited_exports}
+				swap_ideas = {remove_idea = limited_exports add_idea = export_focus}
+			}
+			else_if = {
+				limit = {has_idea = closed_economy}
+				swap_ideas = {remove_idea = closed_economy add_idea = limited_exports}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = ORB_ResourcesImport
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = ORB_ResourcesExport
+		}
+		x = 3
+		y = 2
+
+		completion_reward = {
+			add_ideas = ORB_ImportIdea
+		}
+
+	}
+	focus = {
+		id = ORB_WorkHands
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = ORB_Investitions
+		}
+		x = 5
+		y = 3
+
+		completion_reward = {
+			add_ideas = ORB_WorkHandsIdea
+		}
+	}
+	focus = {
+		id = ORB_UpgradeMines
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = ORB_WorkHands
+		}
+		x = 4
+		y = 4
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 15
+					state = PREV
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_ScienceComplex
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = ORB_Studying
+		}
+		prerequisite = {
+			focus = ORB_WorkHands
+		}
+		prerequisite = {
+			focus = ORB_Investitions
+		}
+		x = 1
+		y = 4
+
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = mechanized_support
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+	focus = {
+		id = ORB_EconomicReforms
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		prerequisite = {
+			focus = ORB_Investitions
+		}
+		x = 7
+		y = 3
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = ORB_BuildingDeal
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 1
+		prerequisite = {
+			focus = ORB_WorkHands
+			focus = ORB_EconomicReforms
+		}
+		x = 6
+		y = 4
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_UpgradeBuilding
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = ORB_UpgradeMines
+			focus = ORB_BuildingDeal
+		}
+		x = 4
+		y = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = ORB_ArmsFactories1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = ORB_BuildingDeal
+		}
+		x = 6
+		y = 5
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_ArmsRace
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		prerequisite = {
+			focus = ORB_ScienceComplex
+		}
+		prerequisite = {
+			focus = ORB_ArmsFactories1
+		}
+		x = 2
+		y = 6
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = ORB_ArmsFactories2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7
+		prerequisite = {
+			focus = ORB_ArmsFactories1
+		}
+		x = 6
+		y = 6
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ORB_DefendBorder
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = ORB_ArmsRace
+		}
+		prerequisite = {
+			focus = ORB_ArmsFactories2
+		}
+		prerequisite = {
+			focus = ORB_UpgradeBuilding
+		}
+		x = 4
+		y = 7
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				        all_provinces = yes
+				        limit_to_border = yes
+				    }
+				}
+			}
+		}
+	}
+}

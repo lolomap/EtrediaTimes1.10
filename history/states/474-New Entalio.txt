@@ -1,0 +1,23 @@
+
+state={
+	id=474
+	name="STATE_474"
+	manpower = 44500
+	
+	state_category = rural
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = CHE
+		victory_points = {
+			10628 1
+		}
+
+	}
+	provinces={
+		9149 9218 9238 
+	}
+}

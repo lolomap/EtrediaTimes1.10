@@ -1,0 +1,24 @@
+
+state={
+	id=453
+	name="STATE_453"
+	manpower = 1000000
+	
+	state_category = town
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 2
+		}
+		add_core_of = LON
+		victory_points = {
+			10657 5
+		}
+
+	}
+	provinces={
+		9170 9237 9273 9305 9397 9506 9570 9652 9690 
+	}
+}

@@ -1,0 +1,345 @@
+protect_self = {
+	TRP_RebelIID = {
+		icon = generic_crisis
+		available = {
+			check_variable = {iid_influence > 0}
+			custom_trigger_tooltip = {
+				tooltip = has_flag_fsc_help_to_trp
+				has_country_flag = fsc_help_to_trp
+			}
+		}
+		visible = {
+			original_tag = TRP
+			has_country_flag = iid_integrating
+		}
+		cost = 70
+
+		complete_effect = {
+			custom_effect_tooltip = TRP_RebelIIDLoc
+			hidden_effect = {
+				subtract_from_variable = {iid_influence = 12.5}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	TRP_AskFSCforHelp = {
+		icon = generic_crisis
+
+		visible = {
+			original_tag = TRP
+			has_country_flag = iid_integrating
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			FSC = {country_event = {id = fscb.14 days = 1}}
+		}
+	}
+
+	ORB_RebelFSC = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {fsc_influence > 0}
+		}
+		visible = {
+			check_variable = {fsc_influence > 0}
+			tag = ORB
+		}
+
+		cost = 70
+
+		complete_effect = {
+			custom_effect_tooltip = ORB_RebelFSCLoc
+			hidden_effect = {
+				subtract_from_variable = {fsc_influence = 20}
+			}
+		}
+
+		ai_will_do = {factor = 0.1}
+	}
+
+	ORB_RebelIID = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {iid_influence > 0}
+		}
+		visible = {
+			check_variable = {iid_influence > 0}
+			tag = ORB
+		}
+
+		cost = 70
+
+		complete_effect = {
+			custom_effect_tooltip = ORB_RebelIIDLoc
+			hidden_effect = {
+				subtract_from_variable = {iid_influence = 20}
+			}
+		}
+		ai_will_do = {factor = 0.1}
+	}
+
+	SBU_RebelLch = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {lch_influence > 0}
+		}
+		visible = {
+			check_variable = {lch_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelLchLoc
+			hidden_effect = {
+				subtract_from_variable = {lch_influence = 30}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+	SBU_RebelEsb = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {esb_influence > 0}
+		}
+		visible = {
+			check_variable = {esb_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelEsbLoc
+			hidden_effect = {
+				subtract_from_variable = {esb_influence = 30}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+	SBU_RebelSin = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {sin_influence > 0}
+		}
+		visible = {
+			check_variable = {sin_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelSinLoc
+			hidden_effect = {
+				subtract_from_variable = {sin_influence = 30}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+	SBU_RebelBak = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {bak_influence > 0}
+		}
+		visible = {
+			check_variable = {bak_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelBakLoc
+			hidden_effect = {
+				subtract_from_variable = {bak_influence = 30}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+	SBU_RebelKar = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {kar_influence > 0}
+		}
+		visible = {
+			check_variable = {kar_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelKarLoc
+			hidden_effect = {
+				subtract_from_variable = {kar_influence = 30}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+	SBU_RebelTrb = {
+		icon = generic_crisis
+
+		available = {
+			check_variable = {trb_influence > 0}
+		}
+		visible = {
+			check_variable = {trb_influence > 0}
+			tag = SBU
+		}
+
+		cost = 15
+
+		complete_effect = {
+			custom_effect_tooltip = SBU_RebelTrbLoc
+			hidden_effect = {
+				subtract_from_variable = {trb_influence = 20}
+			}
+		}
+		ai_will_do = {factor = 1000}
+	}
+
+	SBU_RebelHLE = {
+		allowed = {tag = SBU}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			add_timed_idea = {
+				idea = SBU_HlerianTraktori
+				days = 90
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = SBU_RegionsSponsor
+				days = 30
+			}
+		}
+
+		activation = {
+			always = no
+		}
+		ai_will_do = {factor = 1000}
+	}
+
+	SBU_RebelHLE2 = {
+		allowed = {tag = SBU}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			add_timed_idea = {
+				idea = SBU_HlerianHungry
+				days = 90
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = SBU_RegionsSponsor
+				days = 30
+			}
+		}
+
+		activation = {
+			always = no
+		}
+		ai_will_do = {factor = 1000}
+	}
+
+	SBU_RebelHLE3 = {
+		allowed = {tag = SBU}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 10
+		timeout_effect = {
+			add_timed_idea = {
+				idea = SBU_AngryMiners
+				days = 90
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = SBU_MountsDay
+				days = 5
+			}
+		}
+
+		activation = {
+			always = no
+		}
+		ai_will_do = {factor = 1000}
+	}
+
+	SBU_RebelHLE4 = {
+		allowed = {tag = SBU}
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 10
+		timeout_effect = {
+			add_timed_idea = {
+				idea = SBU_FailedHlerianNewYear
+				days = 120
+			}
+		}
+		complete_effect = {
+			209 = {
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+			}
+			210 = {
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+				damage_building = {
+					type = industrial_factory
+					damage = 10
+				}
+			}
+			211 = {
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+			}
+			186 = {
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+			}
+			189 = {
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+			}
+		}
+
+		activation = {
+			always = no
+		}
+		ai_will_do = {factor = 1000}
+	}
+
+
+#	SBU_RebelELN = {
+#
+#	}
+}

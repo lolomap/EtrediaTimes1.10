@@ -1,0 +1,36 @@
+state={
+	id=38
+	name="STATE_38"
+	manpower = 4980000
+	
+	state_category = metropolis
+	
+	resources={
+	
+	}
+
+	history={
+		owner = OIK
+		buildings = {
+			infrastructure = 9
+                        industrial_complex = 3
+                        arms_factory = 2
+                        dockyard = 3
+                        air_base = 8
+			13952 = {
+				naval_base = 10
+			}
+			14103 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = OIK
+		victory_points = {
+			14176 30
+		}
+
+	}
+	provinces={
+		11990 11991 12034 12047 12105 12155 12186 12221 12238 12252 12342 12377 12414 12485 12512 12848 
+	}
+}

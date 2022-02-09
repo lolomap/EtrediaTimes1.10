@@ -1,0 +1,10 @@
+nuclear_war = {
+	icon = generic_crisis
+	allowed = {always = yes}
+	visible = {always = yes}
+}
+
+nuclear_construction = {
+	allowed = {nuclear_reactor > 0}
+	visible = {has_tech = nukes}
+}

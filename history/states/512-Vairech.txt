@@ -1,0 +1,24 @@
+
+state={
+	id=512
+	name="STATE_512"
+	manpower = 650000
+	
+	state_category = rural
+
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+		}
+		add_core_of = LIP
+		victory_points = {
+			3833 1
+		}
+
+	}
+	provinces={
+		3333 3341 3387 3469 3470 3481 3554 
+	}
+}

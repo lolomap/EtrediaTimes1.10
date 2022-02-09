@@ -1,0 +1,24 @@
+
+state={
+	id=91
+	name="STATE_91"
+	manpower = 5400000
+
+	state_category = town
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+		}
+		add_core_of = IID
+		victory_points = {
+			9593 5 
+		}
+
+	}
+	provinces={
+		7995 7996 8035 8036 8068 8069 8082 8106 8119 8120 8136 8137 8153 8171 8193 8254 8272 8288 8289 8325 8326 8327 8387 8455 8482 8523 8646 
+	}
+}

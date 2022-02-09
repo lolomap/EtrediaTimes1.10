@@ -1,0 +1,28 @@
+
+state={
+	id=621
+	name="STATE_621"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = DNG
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+		add_core_of = DNG
+		victory_points = {
+			7421 1 
+		}
+
+	}
+	provinces={
+		6364 6466 6544 6563 6748 7008 7068 7258 
+	}
+	manpower=1700000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

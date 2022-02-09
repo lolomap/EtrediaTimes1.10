@@ -1,0 +1,33 @@
+
+state={
+	id=523
+	name="STATE_523"
+	manpower = 4220000
+
+	resources={
+		oil = 12 # was: 14
+	}
+	
+	state_category = city
+
+	history={
+		owner = KOI
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 1
+			2973 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = KOI
+		victory_points = {
+			2973 15
+		}
+
+	}
+	provinces={
+		2357 2359 2361 2369 2394 2402 2427 2453 2475 2511 2519 
+	}
+}

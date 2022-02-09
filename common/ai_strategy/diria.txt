@@ -1,0 +1,25 @@
+DIR_war = {
+	enable = {
+		original_tag = DIR
+		EIK = { has_war_with = KAS }
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "EIK"
+		value = 1000
+	}
+}
+
+DIR_war = {
+	enable = {
+		original_tag = DEM
+		EIK = { has_war_with = KAS }
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "EIK"
+		value = 1000
+	}
+}

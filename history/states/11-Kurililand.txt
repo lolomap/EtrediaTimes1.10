@@ -1,0 +1,28 @@
+state={
+	id=11
+	name="STATE_11"
+	manpower = 2165000
+	
+	state_category = large_town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+		}
+		add_core_of = UCB
+		add_core_of = KUR
+		victory_points = {
+			7645 5
+		}
+
+	}
+	provinces={
+		6545 6571 6572 6573 6574 6691 6692 6693 6706 6751 6782 6800 6801 6819 6859 6878 6920 6932 6974 7027 7050 7086 7103 7120 7221 7287 7288 7335 
+	}
+}

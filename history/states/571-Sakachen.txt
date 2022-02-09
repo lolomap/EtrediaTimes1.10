@@ -1,0 +1,29 @@
+
+state={
+	id=571
+	name="STATE_571"
+	manpower = 3660000
+	
+	state_category = large_town
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = TOR
+		victory_points = {
+			3143 15
+		}
+
+	}
+	provinces={
+		2748 2766 2797 2798 2805 2822 2827 2832 2837 2855 2868 2872 2877 2910 2919 2928 2936 2976 3010 
+	}
+}

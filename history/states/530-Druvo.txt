@@ -1,0 +1,32 @@
+
+state={
+	id=530
+	name="STATE_530"
+	manpower = 245324
+	
+	state_category = town
+	
+	resources={
+        tungsten = 6 # was: 6
+        steel = 2 # was: 2
+	}
+
+	history={
+		owner = SBO
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			3073 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SBO
+		victory_points = {
+			3073 1
+		}
+
+	}
+	provinces={
+		2396 2424 2468 2469 2503 2517 2527 2550 2568 2605 2625 2673 
+	}
+}

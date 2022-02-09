@@ -1,0 +1,29 @@
+
+state={
+	id=773
+	name="STATE_773"
+	manpower = 5220000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = MIR
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+			2253 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MIR
+		victory_points = {
+			2253 8
+		}
+
+	}
+	provinces={
+		1559 1613 1622 1668 1679 1684 1697 1701 1719 1752 1759 1793 1794 1833 1838 1839 1866 1874 1881 
+	}
+}

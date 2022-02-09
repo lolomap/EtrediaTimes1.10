@@ -1,0 +1,31 @@
+
+state={
+	id=717
+	name="STATE_717"
+	manpower = 4450000
+	state_category = town
+	
+	resources={
+		steel = 34 # was: 40
+		chromium = 9 # was: 13
+	}
+
+	history={
+		owner = CSH
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+			255 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = CSH
+		victory_points = {
+			255 3
+		}
+
+	}
+	provinces={
+		124 130 131 133 136 139 140 143 144 148 149 150 154 161 163 173 180 
+	}
+}

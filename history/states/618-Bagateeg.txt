@@ -1,0 +1,31 @@
+
+state={
+	id=618
+	name="STATE_618"
+	manpower = 5800000
+	
+	state_category = large_town
+	
+	resources={
+		rubber = 12 # was: 12
+	}
+
+	history={
+		owner = KLU
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 4
+			5958 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = KLU
+		victory_points = {
+			5958 15
+		}
+
+	}
+	provinces={
+		4857 5176 5215 
+	}
+}

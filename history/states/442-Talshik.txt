@@ -1,0 +1,32 @@
+
+state={
+	id=442
+	name="STATE_442"
+	manpower = 989000
+
+	resources={
+		steel = 8 # was: 10
+	}
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = KAS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = KAS
+		add_core_of = TAL
+		victory_points = {
+			12872 1
+		}
+
+	}
+	provinces={
+		10225 10367 10423 10483 10484 10585 10604 10728 10882 10914 10915 11097 11189 11190 11225 11311 11368 11463 
+	}
+}

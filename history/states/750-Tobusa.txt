@@ -1,0 +1,29 @@
+state={
+	id=750
+	name="STATE_750"
+	manpower = 1100000
+	
+	state_category = city
+	
+	resources={
+		steel = 18# was:20
+		aluminium = 10 # was: 14
+		chromium = 6 # was: 10
+	}
+
+	history={
+		owner = BRC
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+		add_core_of = ZHO
+		victory_points = {
+			2271 1
+		}
+
+	}
+	provinces={
+		1704 1709 1778 1799 1849 1907 
+	}
+}

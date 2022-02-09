@@ -1,0 +1,29 @@
+
+state={
+	id=594
+	name="STATE_594"
+	resources={
+		steel=18.000
+		tungsten=6.000
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ZHE
+		victory_points = {
+			4662 1 
+		}
+
+	}
+
+	provinces={
+		3897 3994 4048 4063 4142 4191 4280 4337 4438 4489 4538 4576 4672 4690 4725 4812 4896 4971 4983 
+	}
+	manpower=1830000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

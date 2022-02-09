@@ -1,0 +1,26 @@
+state={
+	id=155
+	name="STATE_155"
+	resources={
+		steel=2.000
+	}
+
+	history={
+		owner = SHE
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = SHE
+		victory_points = {
+			12661 5 
+		}
+
+	}
+	provinces={
+		12661 12715 12728 12743 12811 12820 12836 12886 12922 12945 12957 12958 13011 13039 13053 13054 13066 13092 13105 13142 13143 13144 13201 13202 13220 13231 13292 13327 13328 13344 
+	}
+	manpower=630000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

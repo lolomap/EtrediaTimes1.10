@@ -1,0 +1,32 @@
+
+state={
+	id=581
+	name="STATE_581"
+	manpower = 3740000
+	
+	state_category = town
+	
+	resources={
+		rubber = 6 # was: 8
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 6
+                        arms_factory = 1
+                        dockyard = 1
+			3712 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ZHE
+		victory_points = {
+			3712 5
+		}
+
+	}
+	provinces={
+		3381 3405 3452 3500 3534 3586 3587 3593 3601 3608 3640 3653 3660 3678 
+	}
+}

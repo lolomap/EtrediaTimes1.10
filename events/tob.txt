@@ -1,0 +1,47 @@
+add_namespace = tob
+
+country_event = {
+        id = tob.1
+        title = tob.1.t
+        desc = tob.1.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = TOB
+    }
+
+    option = {
+	name = tob.1.a
+	add_ideas = { cho_yanthalia }
+	TOB = { add_opinion_modifier = { target = ROOT modifier = cho_yan_commonwealth } }
+    ai_chance = { factor = 90 }
+	}
+    option = {
+	name = tob.1.b
+    YAN = { country_event = { id = yan.14 days = 1 } }
+    ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+        id = tob.2
+        title = tob.2.t
+        desc = tob.2.d
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = TOB
+    }
+
+    option = {
+	name = tob.2.a
+		MOA = { add_to_faction = TOB }
+    ai_chance = { factor = 100 }
+	}
+    option = {
+	name = tob.2.b
+    ai_chance = { factor = 0 }
+	}
+}

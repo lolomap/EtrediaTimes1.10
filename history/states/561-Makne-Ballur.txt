@@ -1,0 +1,29 @@
+
+state={
+	id=561
+	name="STATE_561"
+	manpower = 580000
+	
+	state_category = rural
+	
+	resources={
+
+	}
+
+	history={
+		owner = TOR
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 0
+                        arms_factory = 1
+		}
+		add_core_of = TOR
+		victory_points = {
+			3421 1
+		}
+
+	}
+	provinces={
+		3069 3070 3099 3127 3130 3143 3159 3170 
+	}
+}

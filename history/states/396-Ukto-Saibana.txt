@@ -1,0 +1,27 @@
+
+state={
+	id=396
+	name="STATE_396"
+	manpower = 200000
+	
+	state_category = rural
+	
+	resources={
+		oil = 48 # was: 66
+	}
+
+	history={
+		owner = EIK
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = EIK
+		victory_points = {
+			14836 1
+		}
+
+	}
+	provinces={
+		14836 14842 14850 14852 14861 14862 14900 
+	}
+}

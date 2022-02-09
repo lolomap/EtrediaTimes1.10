@@ -1,0 +1,245 @@
+ideas = {
+	country = {	
+	SFL_politizol = {
+
+		picture = polit_
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+		   research_speed_factor = -0.30
+		   consumer_goods_factor = 0.05
+		   join_faction_tension = 0.70
+		   mobilization_laws_cost_factor = 1
+		}
+	}
+
+	SFL_neutralitydrift = {
+		picture = polit_
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			neutrality_drift = 1
+		}
+	}
+
+	SFL_mondrift = {
+		picture = polit_
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			monarchism_drift = 1
+		}
+	}
+
+	SFL_fascismdrift = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+						fascism_drift = 1
+			}
+		}
+
+	SFL_communismdrift = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+						communism_drift = 1
+						trade_opinion_factor = -0.1
+			}
+		}
+
+	SFL_ishtrade = {
+
+		picture = polit_
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+
+		modifier = {
+			trade_opinion_factor = 0.25
+			production_speed_industrial_complex_factor = 0.05
+			production_speed_infrastructure_factor = 0.08
+			production_speed_synthetic_refinery_factor = 0.05
+		}
+	}
+
+	SFL_democratpeople = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+						training_time_army_factor = 0.05
+						democratic_drift = 0.05
+						conscription = -0.01
+			}
+		}
+
+	SFL_nicemove = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+						justify_war_goal_time = -0.5
+			}
+		}
+
+	SFL_communismidea = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+						conscription = 0.01
+						communism_drift = 0.05
+						surrender_limit = 0.2
+						political_power_gain = 0.4
+			}
+	}
+
+	SFL_communismeconomic = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				trade_opinion_factor = -0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				economy_cost_factor = 0.25
+				local_resources_factor = -0.10
+				research_speed_factor = -0.10 
+				stability_factor = -0.10
+			}
+	}
+
+	SFL_spreycommunism = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				SFL = {
+					has_government = communism
+				}
+				SFL = { exists = yes}
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = -0.10
+			}
+	}
+
+	SFL_research = {
+
+			picture = polit_
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			research_speed_factor = 0.10 
+			}
+	}
+
+	SFL_oil_IID = {
+
+			picture = sfl_iid_oil
+
+			available = {
+				SFL = {
+					NOT = {
+					has_war_with = IID
+					}
+			}
+			}
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			production_oil_factor = 0.1
+			}
+	}
+
+}
+}

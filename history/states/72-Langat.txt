@@ -1,0 +1,29 @@
+state={
+	id=72
+	name="STATE_72"
+	manpower = 300000	
+	state_category = enclave
+	
+	resources={
+		
+	}
+
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 4
+                        air_base = 3
+			5602 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SBU
+		victory_points = {
+			5602 1
+		}
+
+	}
+	provinces={
+		4815 4859 4922 
+	}
+}

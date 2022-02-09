@@ -1,0 +1,29 @@
+
+state={
+	id=499
+	name="STATE_499"
+	manpower = 4560000
+
+	resources={
+		steel = 8 # was: 12
+	}
+	
+	state_category = town
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        arms_factory = 2
+		}
+		add_core_of = CHE
+		victory_points = {
+			5200 10
+		}
+
+	}
+	provinces={
+		4152 4222 4297 4298 4356 4390 4505 4573 4589 4670 4747 4875 4934 
+	}
+}

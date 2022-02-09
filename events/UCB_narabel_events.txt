@@ -1,0 +1,642 @@
+add_namespace = ucb
+
+country_event = {
+	id = ucb.1
+	title = ucb.1.t
+	desc = ucb.1.d
+	picture = GFX_news_even
+	
+    fire_only_once = yes
+
+	trigger = {
+        TAG = UCB
+        date > 2014.1.1
+    }
+
+	option = {
+	name = ucb.1.a 
+	add_stability = 0.05
+	    hidden_effect = {
+		    set_global_flag = ucb_narabel_in_elections
+		    add_popularity = {
+                ideology = democratic
+                popularity = 0.08
+            }
+	    }
+	    ai_chance = { 
+	    factor = 80	
+	    }
+	}
+
+	option = {
+	name = ucb.1.b
+	    hidden_effect = {
+		    set_global_flag = ucb_narabel_not_in_elections
+			add_stability = -0.15
+            add_popularity = {
+            ideology = democratic
+            popularity = -0.1
+            }
+			UCB = { country_event = { id = ucb.21 days = 20 } }
+	    }
+	    ai_chance = {
+	    factor = 20 
+		   modifier = {
+	       factor = 0
+		   is_historical_focus_on = yes
+		   }
+	    }
+    }
+}
+
+country_event = {
+	id = ucb.2
+	title = ucb.2.t
+	desc = ucb.2.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.2.a
+	    hidden_effect = {
+	    add_stability = 0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+		}
+		ai_chance = { 
+			factor = 60
+		}
+		trigger = {
+			NOT = { has_global_flag = ucb_narabel_not_in_elections }
+		}
+	}
+
+	option = {
+	name = ucb.2.b
+	    hidden_effect = {
+	        add_stability = -0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
+	    }
+	    ai_chance = {
+	        factor = 15 
+		    modifier = {
+	            factor = 0
+		        is_historical_focus_on = yes
+		    }
+	    }
+	    trigger = {
+		NOT = { has_global_flag = ucb_narabel_not_in_elections }
+		}
+    }
+	
+	option = {
+	name = ucb.2.c
+	add_stability = -0.1
+	add_war_support = -0.1
+	add_political_power = -100
+	    hidden_effect = {
+			UCB = { country_event = { id = ucb.3 days = 60 } }
+	        add_stability = -0.1
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.1
+            }
+		}
+	    ai_chance = {
+			factor = 5
+		    modifier = {
+	        factor = 0
+		    is_historical_focus_on = yes
+		    }
+	    }
+	    trigger = {
+		NOT = { has_global_flag = ucb_narabel_not_in_elections }
+		}
+    }
+	
+	option = {
+	name = ucb.2.j
+		hidden_effect = {
+			UCB = { country_event = { id = ucb.22 days = 60 } }
+	        add_stability = -0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.1
+            }
+		}
+	    ai_chance = {
+			factor = 20
+		    modifier = {
+	        factor = 0
+		    is_historical_focus_on = yes
+		    }
+	    }
+	    trigger = {
+		NOT = { has_global_flag = ucb_narabel_not_in_elections }
+		}
+    }
+	
+	option = {
+	name = ucb.2.o
+	trigger = {
+	has_global_flag = ucb_narabel_not_in_elections }
+    }
+}
+
+country_event = {
+	id = ucb.3
+	title = ucb.3.t
+	desc = ucb.3.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.3.a 
+    hidden_effect = {
+        start_civil_war = {
+            ideology = fascism
+	        ruling_party = democratic
+            capital = 9
+            states = { 2 3 4 5 6 7 10 11 13 15 16 17 18 19 20 21 22 23 24 31 29 }
+            size = 0.7
+        }
+	}
+	    ai_chance = { 
+	    factor = 15
+	    }
+	}
+
+	option = {
+	name = ucb.3.b
+	retire_country_leader = yes
+	hidden_effect = {
+	    UCB = { country_event = { id = ucb.4 days = 1 } }
+	}
+	    ai_chance = {
+	    factor = 85 
+	    }
+    }
+}
+
+country_event = {
+	id = ucb.4
+	title = ucb.4.t
+	desc = ucb.4.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.4.a
+	hidden_effect = {
+		random_list = {
+			60 = { 
+				country_event = { id = ucb.5 days = 15 }
+			}
+			20 = { 
+				country_event = { id = ucb.6 days = 15 }
+			}
+			10 = { 
+				country_event = { id = ucb.7 days = 15 }
+			}
+			10 = { 
+				country_event = { id = ucb.8 days = 15 }
+			}
+		}
+	}
+	    ai_chance = { 
+	    factor = 90
+	    }
+	}
+
+	option = {
+	name = ucb.4.b
+	hidden_effect = {
+	}
+	    ai_chance = {
+	    factor = 10 
+	    }
+    }
+}
+
+country_event = {
+	id = ucb.11
+	title = ucb.11.t
+	desc = ucb.11.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.11.a 
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+		set_politics = {
+	        ruling_party = fascism
+        }
+		hidden_effect = {
+			load_focus_tree = {	tree = UCB_narabel keep_completed = no }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.14
+	title = ucb.14.t
+	desc = ucb.14.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.14.a 
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+		set_politics = {
+	        ruling_party = neutrality
+        }
+		hidden_effect = {
+			load_focus_tree = {	tree = UCB_bndrnk keep_completed = no }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.17
+	title = ucb.17.t
+	desc = ucb.17.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.17.a 
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+		add_stability = 0.05
+		hidden_effect = {
+		retire_country_leader = yes
+		}
+	}
+}
+
+country_event = {
+	id = ucb.20
+	title = ucb.20.t
+	desc = ucb.20.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.20.a 
+        add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+		set_politics = {
+	        ruling_party = communism
+        }
+		hidden_effect = {
+			load_focus_tree = {	tree = UCB_communism keep_completed = no }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.21
+	title = ucb.21.t
+	desc = ucb.21.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.21.a 
+    hidden_effect = {
+        start_civil_war = {
+            ideology = fascism
+	        ruling_party = democratic
+            capital = 9
+            states = { 2 3 4 5 6 7 10 11 13 15 16 17 18 19 20 21 22 23 24 31 29 }
+            size = 0.6
+        }
+	}
+	    ai_chance = { 
+	    factor = 15
+	    }
+	}
+
+	option = {
+	name = ucb.21.b
+	retire_country_leader = yes
+	hidden_effect = {
+	    UCB = { country_event = { id = ucb.4 days = 1 } }
+	}
+	    ai_chance = {
+	    factor = 85
+	    }
+    }
+}
+
+country_event = {
+	id = ucb.22
+	title = ucb.22.t
+	desc = ucb.22.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.22.a
+	    hidden_effect = {
+	        add_stability = 0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+		    add_ideas = ucb_strikes
+			UCB = { country_event = { id = ucb.23 days = 30 } }
+	    }
+	    ai_chance = { 
+	    factor = 70
+	    }
+	}
+	option = {
+	name = ucb.22.b 
+        hidden_effect = {
+		add_stability = -0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
+			add_ideas = ucb_strikes
+			UCB = { country_event = { id = ucb.24 days = 90 } }
+		}
+	    ai_chance = { 
+	    factor = 30
+	    }
+	}
+}
+
+country_event = {
+	id = ucb.23
+	title = ucb.23.t
+	desc = ucb.23.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.23.a
+	    hidden_effect = {
+	        add_stability = 0.05
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
+		    remove_ideas = ucb_strikes
+	    }
+	}
+}
+
+country_event = {
+	id = ucb.24
+	title = ucb.24.t
+	desc = ucb.24.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.24.a
+	    hidden_effect = {
+		    remove_ideas = ucb_strikes
+			add_ideas = FSC_army_bund
+			UCB = { country_event = { id = ucb.25 days = 14 } }
+			set_global_flag = ucb_strikes_demolition
+	    }
+        KOL = {
+            transfer_state = 24
+			transfer_state = 23
+            load_oob = KOL_rebels
+            add_manpower = 20000
+        }
+        KOL = { declare_war_on = { target = UCB type = take_state generator = { 23 } } }
+        ARS = {
+            transfer_state = 10
+            transfer_state = 71
+            load_oob = ARS_rebels
+            add_manpower = 60000
+		declare_war_on = { target = UCB type = take_state generator = { 10 } }
+        }
+		ORB = {
+		    transfer_state = 31
+		    load_oob = ORB_UCB_rebels
+            add_manpower = 60000
+			declare_war_on = { target = UCB type = take_state generator = { 31 } }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.25
+	title = ucb.25.t
+	desc = ucb.25.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.25.a
+	    hidden_effect = {
+		    add_ideas = ucb_strikes
+			UCB = { country_event = { id = ucb.26 days = 35 } }
+	    }
+        DIN = {
+            transfer_state = 2
+            add_manpower = 60000
+        }
+        TRI = {
+            transfer_state = 4
+            add_manpower = 20000
+        }
+        MIN = {
+            transfer_state = 3
+            add_manpower = 20000
+        }
+		NIK = {
+		    transfer_state = 7
+            add_manpower = 10000
+		}
+		RAN = {
+		    transfer_state = 6
+            add_manpower = 20000
+		}
+	}
+}
+
+country_event = {
+	id = ucb.26
+	title = ucb.26.t
+	desc = ucb.26.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.26.a
+        NCU = {
+            transfer_state = 8
+			transfer_state = 12
+			transfer_state = 13
+			transfer_state = 14
+			transfer_state = 15
+			transfer_state = 16
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 19
+			transfer_state = 20
+			transfer_state = 21
+			add_state_core = 2
+			add_state_core = 3
+			add_state_core = 4
+			add_state_core = 5
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 8
+			add_state_core = 9
+			add_state_core = 10
+			add_state_core = 11
+			add_state_core = 12
+			add_state_core = 13
+			add_state_core = 14
+			add_state_core = 15
+			add_state_core = 16
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 19
+			add_state_core = 20
+			add_state_core = 21
+			add_state_core = 22
+			add_state_core = 23
+			add_state_core = 24
+			add_state_core = 25
+			add_state_core = 26
+			add_state_core = 27
+			add_state_core = 28
+			add_state_core = 29
+			add_state_core = 30
+			add_state_core = 31
+			add_state_core = 32
+			add_state_core = 33
+			add_state_core = 34
+			add_state_core = 71
+			add_manpower = 100000
+            load_oob = NCU_army
+			declare_war_on = { target = UCB type = annex_everything }
+        }
+		hidden_effect = {
+		    UCB = {
+			remove_state_core = 2
+			remove_state_core = 3
+			remove_state_core = 4
+			remove_state_core = 5
+			remove_state_core = 6
+			remove_state_core = 7
+			remove_state_core = 8
+			remove_state_core = 9
+			remove_state_core = 10
+			remove_state_core = 11
+			remove_state_core = 12
+			remove_state_core = 13
+			remove_state_core = 14
+			remove_state_core = 15
+			remove_state_core = 16
+			remove_state_core = 17
+			remove_state_core = 18
+			remove_state_core = 19
+			remove_state_core = 20
+			remove_state_core = 21
+			remove_state_core = 22
+			remove_state_core = 23
+			remove_state_core = 24
+			remove_state_core = 25
+			remove_state_core = 26
+			remove_state_core = 27
+			remove_state_core = 28
+			remove_state_core = 29
+			remove_state_core = 30
+			remove_state_core = 31
+			remove_state_core = 32
+			remove_state_core = 33
+			remove_state_core = 34
+		    }
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=691
+	name="STATE_691"
+	manpower = 1300000
+	
+	state_category = rural
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+		}
+		add_core_of = SOU
+		victory_points = {
+			426 1
+		}
+
+	}
+	provinces={
+		199 205 216 246 250 255 258 262 279 288 293 295 314 
+	}
+}

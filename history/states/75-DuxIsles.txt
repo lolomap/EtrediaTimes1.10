@@ -1,0 +1,30 @@
+state={
+	id=75
+	name="STATE_75"
+	manpower = 345000
+	
+	state_category = rural
+	
+	resources={
+		
+	}
+
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 3
+			9142 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = IID
+		add_core_of = BKH
+		victory_points = {
+			9142 1
+		}
+
+	}
+	provinces={
+		7903 8192 8643 
+	}
+}

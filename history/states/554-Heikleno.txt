@@ -1,0 +1,30 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 540000
+	
+	state_category = rural
+	
+	resources={
+		steel = 20 # was: 30
+                chromium = 4 # was: 12
+	}
+
+	history={
+		owner = ESS
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 0
+                        arms_factory = 0
+		}
+		add_core_of = ESS
+		victory_points = {
+			3630 1
+		}
+
+	}
+	provinces={
+		2979 2987 3027 3038 3041 3061 3105 3116 3129 3142 3156 3187 3208 3249 3316 
+	}
+}

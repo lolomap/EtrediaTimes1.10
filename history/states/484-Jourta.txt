@@ -1,0 +1,30 @@
+
+state={
+	id=484
+	name="STATE_484"
+	manpower = 3768000
+
+	resources={
+		steel = 10 # was: 10
+                tungsten = 4 # was: 6
+	}
+	
+	state_category = town
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 2
+                        arms_factory = 0
+		}
+		add_core_of = CHE
+		victory_points = {
+			4647 5
+		}
+
+	}
+	provinces={
+		4260 4279 4355 4470 4488 4537 4623 4635 4636 4669 4745 4746 4793 4824 4933 
+	}
+}

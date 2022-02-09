@@ -1,0 +1,29 @@
+
+state={
+	id=472
+	name="STATE_472"
+	manpower = 3560000
+	
+	state_category = city
+
+	history={
+		owner = CHE
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 2
+                        arms_factory = 0
+                        dockyard = 2
+			7728 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = CHE
+		victory_points = {
+			7728 25
+		}
+
+	}
+	provinces={
+		8828 8842 8887 8888 8918 9013 9045 9113 9133 9171 9202 9326 
+	}
+}

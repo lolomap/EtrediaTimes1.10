@@ -1,0 +1,30 @@
+
+state={
+	id=737
+	name="STATE_737"
+	manpower = 5419000
+	state_category = large_town
+	
+	resources={
+	}
+
+	history={
+		owner = ZHI
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+			arms_factory = 2
+			1375 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ZHI
+		victory_points = {
+			1375 15
+		}
+
+	}
+	provinces={
+		921 926 930 937 943 967 978 979 983 996 1002 1018 1019 1026 1037 1050 1076 1077 1083 1122 
+	}
+}

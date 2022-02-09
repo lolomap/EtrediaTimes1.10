@@ -1,0 +1,27 @@
+
+state={
+	id=375
+	name="STATE_375"
+	manpower = 300000
+	
+	state_category = town
+
+	history={
+		owner = DID
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+			2520 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = DID
+		victory_points = {
+			2520 10
+		}
+
+	}
+	provinces={
+		1806 1830 1878 2015 2087 
+	}
+}

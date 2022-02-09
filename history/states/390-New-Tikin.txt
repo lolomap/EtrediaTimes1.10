@@ -1,0 +1,28 @@
+
+state={
+	id=390
+	name="STATE_390"
+	manpower = 1670000
+	
+	state_category = large_town
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        dockyard = 1
+			3140 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			3140 10
+		}
+
+	}
+	provinces={
+		2459 2482 2487 2505 2525 2532 2571 2572 2579 2580 2636 2637 
+	}
+}

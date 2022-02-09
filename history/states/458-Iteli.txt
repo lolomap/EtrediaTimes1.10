@@ -1,0 +1,27 @@
+
+state={
+	id=458
+	name="STATE_458"
+
+	history={
+		owner = LON
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 0
+			arms_factory = 0
+
+		}
+		add_core_of = LON
+		victory_points = {
+			11018 1 
+		}
+
+	}
+
+	provinces={
+		9131 9147 9236 9355 9378 9423 9463 9482 9544 9555 9619 9667 9668 9669 9785 9786 9826 9885 9919 9953 9992 10036 10162 13633 
+	}
+	manpower=690000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

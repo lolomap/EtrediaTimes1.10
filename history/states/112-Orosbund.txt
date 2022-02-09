@@ -1,0 +1,21 @@
+state={
+	id=112
+	name="STATE_112"
+	history={
+		owner = IID
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = IID
+		victory_points = {
+			9280 1 
+		}
+
+	}
+	provinces={
+		7482 7543 7571 7612 7613 7614 7634 7683 7714 7715 7716 7767 7782 7783 7796 7848 7885 7905 7917 7918 7935 7936 7937 7961 7962 7997 8013 8054 8055 8070 8083 8107 8138 8172 8240 8256 
+	}
+	manpower=3300000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

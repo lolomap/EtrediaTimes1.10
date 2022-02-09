@@ -1,0 +1,32 @@
+
+state={
+	id=511
+	name="STATE_511"
+	manpower = 1970000
+	
+	state_category = town
+
+	history={
+		owner = LIP
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+                        arms_factory = 1
+                        dockyard = 0
+			4266 = {
+				naval_base = 2
+			}
+			4196 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = LIP
+		victory_points = {
+			4266 5
+		}
+
+	}
+	provinces={
+		3475 3496 3524 3537 3541 3546 3561 3590 3597 3607 3656 3657 3689 3733 
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=64
+	name="STATE_64"
+	manpower=2300000
+
+	state_category=town
+
+	resources={
+		steel = 8 # was: 12
+                chromium = 12 # was: 12
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+                        air_base = 1
+		}
+		add_core_of = FSC
+		add_core_of = ANR
+		victory_points = {
+			6463 10 
+		}
+
+	}
+	provinces={
+		5221 5264 5315 5316 5380 5381 5406 5463 5521 5522 5557 5558 5559 5572 5601 5640 5659 5660 5681 5682 5701 5715 5716 5785 5786 5807 5808 5827 5856 5873 5894 5942 5943 5944 5961 
+	}
+}

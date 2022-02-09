@@ -1,0 +1,50 @@
+IND_decisions = {
+	icon = generic_independence
+	allowed = {
+		original_tag = IND
+	}
+	visible = {
+	9 = { is_owned_and_controlled_by = IND }
+	}
+}
+
+ARS_decisions = {
+	icon = generic_independence
+	allowed = {
+	    original_tag = ARS
+	}
+	visible = {
+	10 = { is_owned_and_controlled_by = ARS }
+	}
+}
+
+ucbminors_decisions = {
+	icon = generic_independence
+	allowed = {
+		original_tag = MIN
+		original_tag = TRI
+		original_tag = KOS
+		original_tag = RAN
+		original_tag = PER
+		original_tag = AKV
+		original_tag = ZER
+		original_tag = KUR
+		original_tag = RET
+		original_tag = LEV
+		original_tag = BER
+		original_tag = FLR
+		original_tag = GLE
+		original_tag = SGO
+		original_tag = KIM
+		original_tag = KOL
+		original_tag = EDD
+		original_tag = NIK
+		original_tag = SRA
+		original_tag = NRA
+		original_tag = SVE
+		original_tag = DIN
+	}
+	visible = {
+	always = yes
+	}
+}

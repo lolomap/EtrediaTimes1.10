@@ -1,0 +1,17 @@
+ideas = {
+    country = {
+          rebels.1 = {
+              picture = www
+              allowed = {
+                 always = no
+              }
+              removal_cost = -1
+ 
+              modifier = {
+               ai_focus_aggressive_factor = -0.5
+               join_faction_tension = 10.00
+               ai_get_ally_desire_factor = -100
+              }
+          }
+     }
+}

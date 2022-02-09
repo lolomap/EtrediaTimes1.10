@@ -1,0 +1,32 @@
+
+state={
+	id=16
+	name="STATE_16"
+	manpower = 1000000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 2
+			9780 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = UCB
+		add_core_of = ZER
+		victory_points = {
+			9664 5
+		}
+
+	}
+	provinces={
+		7956 7957 7990 8032 8066 8133 8134 8170 8191 8235 8236 8270 8286 8287 8406 8424 8441 8480 8502 
+	}
+}

@@ -1,0 +1,178 @@
+focus_tree = {
+	id = diria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DEM
+		}
+	}
+	default = no
+	
+	focus = {
+		id = DEM_saldo
+		icon = GFX_goal_dem_budget
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = {
+			remove_ideas = DEM_budget
+		}
+    }
+	
+	focus = {
+		id = DEM_troosp_organization
+		icon = GFX_goal_dem_reorganization
+		cost = 10
+		prerequisite = {
+			focus = DEM_saldo
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		remove_ideas = DEM_army_disorganization
+		}
+    }
+	
+	focus = {
+		id = DEM_fight_for_throne
+		icon = GFX_goal_dem_fight_for_throne
+		cost = 2
+		prerequisite = {
+			focus = DEM_troosp_organization
+		}
+		x = 6
+		y = 2
+    }
+	
+	focus = {
+		id = DEM_anti_monopoly
+		icon = GFX_goal_dem_anti_monopoly
+		cost = 2
+		prerequisite = {
+			focus = DEM_fight_for_throne
+		}
+		x = 10
+		y = 3
+		mutually_exclusive = {
+			focus = DEM_monopoly
+		}
+		completion_reward = {
+		DEM = { country_event = { id = dirnews.4 days = 1 } }
+		}
+		ai_will_do = {
+		    factor = 0.3
+		    modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+		}
+		}
+    }
+	
+	focus = {
+		id = DEM_monopoly
+		icon = GFX_goal_dem_monopoly
+		cost = 2
+		prerequisite = {
+			focus = DEM_fight_for_throne
+		}
+		x = 2
+		y = 3
+		mutually_exclusive = {
+			focus = DEM_anti_monopoly
+		}
+		ai_will_do = {
+		    factor = 0.7
+		}
+    }
+	
+	focus = {
+		id = DEM_free_market
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = DEM_monopoly
+		}
+		x = 1
+		y = 4
+    }
+	
+	focus = {
+		id = DEM_army_restructurize
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_monopoly
+		}
+		x = 3
+		y = 4
+    }
+	
+	focus = {
+		id = DEM_support_from_west
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = DEM_army_restructurize
+		}
+		x = 3
+		y = 5
+    }
+	
+	focus = {
+		id = DEM_investitions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_free_market
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+							size > 0
+							include_locked = yes
+					}
+					OR = {
+					is_in_home_area = yes
+					    NOT = {
+						    owner = {
+								any_owned_state = {
+									free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 5
+    }
+	
+	focus = {
+		id = DEM_foreign_specialists
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_free_market
+		}
+		completion_reward = {
+			add_ideas = DEM_foreign_specialist_idea
+		}
+		x = 0
+		y = 5
+    }
+}

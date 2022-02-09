@@ -1,0 +1,35 @@
+add_namespace = tal
+
+country_event = {
+	id = tal.1
+	title = tal.1.t
+	desc = tal.1.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KAS
+    }
+ 	
+	option = {
+		name = tal.1.a
+        add_threat = 100
+        TAL = {
+            transfer_state = 441
+			transfer_state = 442
+            load_oob = TAL_army
+            add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+			add_manpower = 1000000
+        }
+		TAL = { declare_war_on = { target = KAS type = annex_everything } }
+    }
+}

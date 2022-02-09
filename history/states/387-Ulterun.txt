@@ -1,0 +1,29 @@
+
+state={
+	id=387
+	name="STATE_387"
+	manpower = 540000
+	
+	state_category = rural
+	
+	resources={
+		oil = 4 # was: 4
+                rubber = 8 # was: 8
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 7
+                        industrial_complex = 1
+		}
+		add_core_of = LIV
+		victory_points = {
+			2160 5
+		}
+
+	}
+	provinces={
+		2090 2093 2094 2130 2152 
+	}
+}

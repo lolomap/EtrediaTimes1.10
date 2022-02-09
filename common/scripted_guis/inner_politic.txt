@@ -1,0 +1,31 @@
+scripted_gui = {
+	politic_button = {
+		window_name = "inner_politic_window"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {always = yes}
+
+		effects = {
+			party_button_click = {
+				#add_political_power = 10
+				if = {
+					limit = {not = {has_country_flag = inner_politic_window_opened}}
+					set_country_flag = inner_politic_window_opened
+				}
+				else = {
+					clr_country_flag = inner_politic_window_opened
+				}
+			}
+		}		
+	}
+
+	inner_politic = {
+		window_name = "inner_politic_opened_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = inner_politic_window_opened
+		}
+	}
+}

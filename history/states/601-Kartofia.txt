@@ -1,0 +1,27 @@
+
+state={
+	id=601
+	name="STATE_601"
+	manpower = 43000
+	
+	state_category = pastoral
+	
+	resources={
+		oil = 4 # was: 6
+	}
+
+	history={
+		owner = ZHE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ZHE
+		victory_points = {
+			6209 1
+		}
+
+	}
+	provinces={
+		4970 5105 5122 5158 5196 5213 5260 5333 5399 5400 5441 5455 5472 5583 
+	}
+}

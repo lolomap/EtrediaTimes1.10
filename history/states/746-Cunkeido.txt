@@ -1,0 +1,25 @@
+state={
+	id=746
+	name="STATE_746"
+	manpower = 5560000
+	state_category = town
+	
+	resources={
+	}
+
+	history={
+		owner = CUS
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		add_core_of = CUS
+		victory_points = {
+			1885 1
+		}
+
+	}
+	provinces={
+		1328 1399 1438 1485 1488 1516 
+	}
+}

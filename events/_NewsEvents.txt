@@ -1,0 +1,548 @@
+add_namespace = newss
+
+news_event = { 
+	id = newss.1
+	title = newss.1.t
+	desc = newss.1.d
+	picture = GFX_news_event_001
+
+	major = yes
+ 
+	is_triggered_only = yes
+
+	option = {
+	name = newss.1.a
+		trigger = {
+			NOT = {
+				TAG = EIK
+				TAG = SHE
+			}
+		}
+	set_country_flag = EIK_SHE_war
+	}
+}
+
+news_event = { 
+		id = newss.2
+		title = newss.2.t
+		desc = newss.2.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+
+	major = yes
+
+	mean_time_to_happen = {
+	days = 2
+	}
+
+	trigger = {
+		date > 2014.20.6
+	}        
+
+		option = {
+			   name = newss.2.a
+			   trigger = {
+					   NOT = {
+								TAG = TOB
+					   }
+			   }
+		}
+		option = {
+			   name = newss.2.b
+			   trigger = {
+					   TAG = NIB
+			   }
+		}
+		option = {
+			   name = newss.2.c
+			   trigger = {
+					   TAG = TOB
+			   }
+		}
+}
+
+news_event = { 
+		id = newss.3
+		title = newss.3.t
+		desc = newss.3.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		225 = { is_controlled_by = YAN }
+		225 = { is_owned_by = TRB }
+		YAN = { has_war_with = TRB }
+		NOT = { has_global_flag = fall_of_enterba_yan }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_enterba_yan
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+		option = {
+			   name = newss.3.a
+			   trigger = {
+					   NOT = {
+								TAG = YAN
+								TAG = TRB
+					   }
+			   }
+		}
+		option = {
+			   name = newss.3.b
+			   trigger = {
+			   TAG = YAN
+			   }
+		}
+		option = {
+			   name = newss.3.c
+			   trigger = {
+			   TAG = TRB
+			   }
+		}
+}
+
+news_event = { 
+		id = newss.4
+		title = newss.4.t
+		desc = newss.4.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		217 = { is_controlled_by = YAN }
+		217 = { is_cowned_by = SBU }
+		YAN = { has_war_with = SBU }
+		NOT = { has_global_flag = fall_of_sibursk_yan }
+	}
+
+	immediate = {
+		set_global_flag = fall_of_sibursk_yan
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+		option = {
+			   name = newss.4.a
+			   trigger = {
+					   NOT = {
+								TAG = YAN
+								TAG = EIK
+								TAG = CHE
+								TAG = KOU
+								TAG = ESS
+								TAG = PIN
+								TAG = BAE
+								TAG = TOL
+					   }
+			   }
+		}
+		option = {
+			   name = newss.4.b
+			   trigger = {
+					   TAG = SBU
+			   }
+		}
+		option = {
+			   name = newss.4.c
+			   trigger = {
+					   NOT = {
+							TAG = SBU
+							TAG = YAN
+					   }
+			   }
+		}
+}
+
+news_event = { 
+		id = newss.5
+		title = newss.5.t
+		desc = newss.5.d
+		picture = GFX_news_event_001
+
+	major = yes
+ 
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+		option = {
+		name = newss.5.a
+			trigger = {
+				NOT = {
+					TAG = SBU
+					TAG = TRB
+				}
+			}
+		}
+		option = {
+		name = newss.5.b
+			trigger = {
+				TAG = UCB
+			}
+		} 
+}
+ 
+news_event = { 
+		id = newss.6
+		title = newss.6.t
+		desc = newss.6.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	}
+
+	option = {
+		name = newss.6.a
+		NOT = {
+			TAG = SBU
+			TAG = UCB
+			TAG = VRO
+			TAG = SFL
+			TAG = FSC
+		}
+	}
+}
+
+news_event = { 
+		id = newss.7
+		title = newss.7.t
+		desc = newss.7.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	TAG = SBU
+	}
+
+		option = {
+			   name = newss.7.a
+		}
+}
+
+news_event = { 
+		id = newss.8
+		title = newss.8.t
+		desc = newss.8.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	TAG = UCB
+	}
+
+		option = {
+			   name = newss.8.a
+		}
+}
+
+news_event = { 
+		id = newss.9
+		title = newss.9.t
+		desc = newss.9.d
+		picture = GFX_news_event_001
+		
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	TAG = VRO
+	}
+
+		option = {
+			   name = newss.9.a
+		}
+}
+
+news_event = { 
+		id = newss.10
+		title = newss.10.t
+		desc = newss.10.d
+		picture = GFX_news_event_001
+ 
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	TAG = SFL
+	}
+
+		option = {
+			   name = newss.10.a
+		}
+}
+
+news_event = { 
+		id = newss.11
+		title = newss.11.t
+		desc = newss.11.d
+		picture = GFX_news_event_001
+ 
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+	date > 2014.1.4
+	TAG = FSC
+	}
+
+		option = {
+			   name = newss.11.a
+		}
+}
+
+news_event = { 
+	id = newss.12
+	title = newss.12.t
+	desc = newss.12.d
+	picture = GFX_news_event_001
+ 
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = civil_war_dir
+	}
+
+	option = {
+		name = newss.12.a
+		trigger = {
+			NOT = {
+			tag = DIR
+			}
+		}
+	}
+}
+
+news_event = { 
+		id = newss.13
+		title = newss.13.t
+		desc = newss.13.d
+		picture = GFX_news_event_001
+ 
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = essetria_yan
+	}
+
+	trigger = {
+		NOT = { has_global_flag = essetria_yan }
+	}
+
+	option = {
+	name = newss.13.a
+		trigger = {
+			NOT = {
+			tag = YAN
+			}
+		}
+	}
+}
+
+news_event = { 
+		id = newss.14
+		title = newss.14.t
+		desc = newss.14.d
+		picture = GFX_news_event_001
+ 
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = yan_mobilize
+	}
+
+	trigger = {
+		NOT = { has_global_flag = yan_mobilize }
+	}
+
+	option = {
+	name = newss.14.a
+		trigger = {
+			NOT = {
+			tag = YAN
+			}
+		}
+	}
+}
+
+news_event = { 
+		id = newss.15
+		title = newss.15.t
+		desc = newss.15.d
+		picture = GFX_news_event_001
+ 
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = tor_surrender
+	}
+
+	trigger = {
+		NOT = { has_global_flag = tor_surrender }
+	}
+
+	option = {
+	name = newss.15.a
+		trigger = {
+			NOT = {
+			tag = TOR
+			tag = CHE
+			}
+		}
+	}
+	option = {
+	name = newss.15.b
+		trigger = {
+			tag = CHE
+		}
+	}
+}
+
+news_event = { 
+		id = newss.16
+		title = newss.16.t
+		desc = newss.16.d
+		picture = GFX_news_event_001
+ 
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = pin_yan_alliance
+	}
+
+	trigger = {
+		NOT = { has_global_flag = pin_yan_alliance }
+	}
+
+	option = {
+	name = newss.16.a
+		trigger = {
+			NOT = {
+			tag = PIN
+			}
+		}
+	}
+	option = {
+	name = newss.16.b
+		trigger = {
+			tag = YAN
+		}
+	}
+	
+	option = {
+	name = newss.16.c
+		trigger = {
+			tag = UCB
+			tag = SBU
+			tag = KAR
+			tag = SHE
+			tag = FIL
+		}
+	}
+}
+
+news_event = {
+	id = newss.17
+	title = newss.17.t
+	desc = newss.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = newss.17.a
+	}
+}
+
+news_event = {
+	id = newss.18
+	title = newss.18.t
+	desc = newss.18.d
+
+	#trigger = {
+	#	YAN = {has_completed_focus = YAN_operation_tischatka}
+	#}
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = newss.18.a
+	}
+}
+
+news_event = {
+	id = newss.19
+	title = newss.19.t
+	desc = newss.19.d
+
+	#trigger = {
+	#	EIK = {has_completed_focus = EIK_eastern_block}
+	#}
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = newss.19.a
+	}
+}
+		

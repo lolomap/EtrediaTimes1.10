@@ -1,0 +1,29 @@
+state={
+	id=33
+	name="STATE_33"
+	manpower = 1300000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 0
+                        arms_factory = 1
+		}
+		add_core_of = UCB
+		add_core_of = NRA
+		victory_points = {
+			7961 5
+		}
+
+	}
+	provinces={
+		6575 6650 6752 6783 6898 6921 6933 6975 7011 7104 7121 7122 7166 7263 7320 7414 
+	}
+}

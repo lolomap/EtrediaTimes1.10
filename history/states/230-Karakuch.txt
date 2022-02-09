@@ -1,0 +1,25 @@
+
+state={
+	id=230
+	name="STATE_230"
+	manpower = 900000
+	
+	state_category = rural
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 1
+		}
+		add_core_of = TRB
+		add_core_of = ELN
+		victory_points = {
+			7604 5
+		}
+
+	}
+	provinces={
+		6156 6273 6359 6391 6436 6533 6552 6600 6620 6681 6759 6792 6867 6868 6946 7020 
+	}
+}

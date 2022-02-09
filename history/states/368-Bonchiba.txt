@@ -1,0 +1,29 @@
+
+state={
+	id=368
+	name="STATE_368"
+	manpower = 3500000
+	
+	state_category = town
+
+	history={
+		owner = CHO
+		buildings = {
+			infrastructure = 8
+                        industrial_complex = 3
+                        arms_factory = 0
+                        dockyard = 0
+			3911 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = CHO
+		victory_points = {
+			3911 5
+		}
+
+	}
+	provinces={
+		3229 3230 3257 3309 3352 
+	}
+}

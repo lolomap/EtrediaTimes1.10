@@ -1,0 +1,37 @@
+state={
+	id=45
+	name="STATE_45"
+	manpower = 4200000
+	
+	state_category = city
+	
+	resources={
+		
+	}
+
+	history={
+		owner = FSC
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 2
+                        arms_factory = 1
+ 		        dockyard = 1
+                        air_base = 3
+			5396 = {
+				naval_base = 6
+			}
+			13651 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FSC
+		add_core_of = ORB
+		victory_points = {
+			5618 15
+		}
+
+	}
+	provinces={
+		4325 4340 4376 4458 4474 4492 4527 4528 4626 4639 4640 4657 4695 4729 4751 4769 4816 4828 4860 4877 4975 4976 4986 5038 5039 5040 5141 5142 5162 5179 5217 
+	}
+}

@@ -1,0 +1,339 @@
+ideas = {
+	country = {
+		stability_heaven_f = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_m
+					has_idea = stability_heaven_n
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.2
+				drift_defence_factor = 0.15
+				fascicm_drift = 0.02
+			}
+		}
+		stability_heaven_d = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_m
+					has_idea = stability_heaven_n
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.2
+				drift_defence_factor = 0.15
+				democratic_drift = 0.02
+			}
+		}
+		stability_heaven_c = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_m
+					has_idea = stability_heaven_n
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.2
+				drift_defence_factor = 0.15
+				communism_drift = 0.02
+			}
+		}
+		stability_heaven_n = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_m
+					has_idea = stability_heaven_f
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.2
+				drift_defence_factor = 0.15
+				neutrality_drift = 0.02
+			}
+		}
+		stability_heaven_m = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_n
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.2
+				drift_defence_factor = 0.15
+				monarchism_drift = 0.02
+			}
+		}
+
+		stability_great = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_nice
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_n
+					has_idea = stability_heaven_m
+				}
+			}
+
+			modifier = {
+				surrender_limit = 0.1
+				drift_defence_factor = 0.15
+			}
+		}
+		stability_nice = {
+			allowed = {always = no}
+			removal_cost = -1
+
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_middle
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_n
+					has_idea = stability_heaven_m
+				}
+			}
+		}
+		stability_middle = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_bad
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_n
+					has_idea = stability_heaven_m
+				}
+			}
+
+			modifier = {
+				surrender_limit = -0.15
+				drift_defence_factor = -0.05
+			}
+		}
+		stability_bad = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					has_idea = stability_great
+					has_idea = stability_nice
+					has_idea = stability_middle
+
+					has_idea = stability_heaven_d
+					has_idea = stability_heaven_c
+					has_idea = stability_heaven_f
+					has_idea = stability_heaven_n
+					has_idea = stability_heaven_m
+				}
+			}
+
+			modifier = {
+				surrender_limit = -0.2
+				drift_defence_factor = -0.3
+			}
+		}
+
+
+
+		faction_with_wish = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				ai_get_ally_desire_factor = 1
+			}
+		}
+
+		ec_fs_l_b = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.01
+				production_factory_max_efficiency_factor = -0.01
+				production_factory_start_efficiency_factor = -0.01
+			}
+		}
+
+		ec_fs_l_g = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.01
+				production_factory_max_efficiency_factor = 0.01
+				production_factory_start_efficiency_factor = 0.01
+			}
+		}
+
+		ec_fs_m_b = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+			}
+		}
+
+		ec_fs_m_g = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		ec_fs_h_b = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_start_efficiency_factor = -0.15
+			}
+		}
+
+		ec_fs_h_g = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+		}
+
+		left_pressuring = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		less_workday = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.01
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+		elite_supporting = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.1
+				monarchism_drift = 0.01
+				trade_opinion_factor = 0.05
+			}
+		}
+
+		workers_supporting = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_weekly = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		updated_work_plan = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.3
+			}
+		}
+
+		freedom_wish = {
+			allowed = {always = no}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+	}
+}

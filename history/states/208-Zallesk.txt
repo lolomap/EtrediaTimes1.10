@@ -1,0 +1,25 @@
+
+state={
+	id=208
+	name="STATE_208"
+	history={
+		owner = SBU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 3
+                        air_base = 3
+		}
+		add_core_of = SBU
+		victory_points = {
+			7149 15 
+		}
+
+	}
+	provinces={
+		5370 5466 5563 5564 5604 5622 5623 5645 5722 5735 5736 5737 5771 5811 5831 5832 5860 5878 5899 5915 5987 5988 6002 6003 6004 6005 6042 6076 6118 6119 6143 6173 6235 6236 6237 6251 6272 6357 6358 6372 6435 6454 6477 6513 6598 6599 6616 6617 6680 6714 6736 6771 6827 6848 6866 
+	}
+	manpower=3900000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

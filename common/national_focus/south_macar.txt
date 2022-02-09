@@ -1,0 +1,720 @@
+focus_tree = {
+	id = south_macar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SMA
+		}
+	}
+	default = no
+	continuous_focus_position = {x = 0 y = 92}
+
+	focus = {
+		id = SMA_Politic
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 11
+		y = 0
+		completion_reward = {
+			SMA = {
+				country_event = { 
+					id = sma.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_InternalBorders
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 1
+		prerequisite = { focus = SMA_Politic }
+		completion_reward = {
+			SMA = {
+				country_event = {
+					id = sma.2
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_ComAgit
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		x = 11
+		y = 2
+		prerequisite = { focus = SMA_InternalBorders }
+		completion_reward = {
+			SMA = {
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.05
+				}
+				add_manpower = 500
+				add_stability = 0.02
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SMA_Neighborhood
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		x = 16
+		y = 2
+		prerequisite = { focus = SMA_InternalBorders }
+		completion_reward = {
+			SMA = { country_event = { id = sma.3 days = 1 } }
+		}
+	}
+	focus = {
+		id = SMA_EveryoneWorks
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		x = 11
+		y = 3
+		prerequisite = { focus = SMA_ComAgit }
+		completion_reward = {
+			SMA = { add_ideas = SMA_LaborService }
+		}
+	}
+	focus = {
+		id = SMA_SiburDef
+		icon = GFX_goal_generic_military_deal
+		cost = 10
+		x = 16
+		y = 3
+		prerequisite = { focus = SMA_Neighborhood }
+		bypass = { SMA = { is_guaranteed_by = SBU } }
+		completion_reward = {
+			SBU = { country_event = {id = sbu.48 days = 1}}
+		}
+	}
+	focus = {
+		id = SMA_Gulag
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		x = 8
+		y = 4
+		prerequisite = { focus = SMA_EveryoneWorks }
+		completion_reward = {
+			SMA = {
+				add_ideas = SMA_Gulags
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.1
+				}
+				add_stability = -0.05
+			}
+		}
+	}
+	focus = {
+		id = SMA_OppositionRepression
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		x = 11
+		y = 4
+		prerequisite = { focus = SMA_EveryoneWorks }
+		completion_reward = {
+			SMA = { country_event = {id = sma.4 days = 1} }
+		}
+	}
+	focus = {
+		id = SMA_EliteControl
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		x = 14
+		y = 4
+		prerequisite = { focus = SMA_EveryoneWorks }
+		completion_reward = {
+			SMA = {
+				add_political_power = -200
+				add_stability = -0.05
+				add_war_support = -0.1
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_TradePartner
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 16
+		y = 4
+		prerequisite = { focus = SMA_SiburDef }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SMA_SeaCastle
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		x = 11
+		y = 5
+		prerequisite = { focus = SMA_Gulag }
+		prerequisite = { focus = SMA_OppositionRepression }
+		prerequisite = { focus = SMA_EliteControl }
+		completion_reward = {
+			SMA = { country_event = { id = sma.5 days = 1} }
+		}
+	}
+	focus = {
+		id = SMA_OceanShaft
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		x = 8
+		y = 6
+		prerequisite = { focus = SMA_SeaCastle }
+		completion_reward = {
+			SMA = {
+				362 = { add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3272
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3505
+				}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_FleetModern
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		x = 14
+		y = 6
+		prerequisite = { focus = SMA_SeaCastle }
+		completion_reward = {
+			SMA = {
+				add_tech_bonus = {
+					bonus = 1.0
+					category = naval_equipment
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_CapitalDefend
+		icon = GFX_goal_generic_fortify_city
+		cost = 10
+		x = 8
+		y = 7
+		prerequisite = { focus = SMA_OceanShaft }
+		completion_reward = {
+			SMA = {
+				362 = {add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3272
+				}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_ShipyardsExtend
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		x = 14
+		y = 7
+		prerequisite = { focus = SMA_FleetModern }
+		completion_reward = {
+			SMA = {
+				362 = { add_extra_state_shared_building_slots = 1 }
+				362 = { add_building_construction = {
+				    type = dockyard
+				    level = 1
+				    instant_build = yes
+				}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_YouthAttract
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 11
+		y = 8
+		prerequisite = { focus = SMA_CapitalDefend }
+		prerequisite = { focus = SMA_ShipyardsExtend }
+		completion_reward = {
+			SMA = {
+				add_war_support = 0.05
+				add_manpower = 2000
+			}
+		}
+	}
+	focus = {
+		id = SMA_YoungGenerals
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 8
+		y = 9
+		prerequisite = { focus = SMA_YouthAttract }
+		completion_reward = {
+			SMA = {
+				create_corps_commander = {
+					name = "Генерал 1"
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+				create_corps_commander = {
+					name = "Генерал 2"
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_YoungAdmirals
+		icon = GFX_goal_generic_build_nay
+		cost = 10
+		x = 14
+		y = 9
+		prerequisite = { focus = SMA_YouthAttract }
+		completion_reward = {
+			create_navy_leader = {
+				name = "Адмирал 1"
+				skill = 1
+			}
+			create_navy_leader = {
+				name = "Адмирал 2"
+				skill = 1
+			}
+			SMA = { add_stability = 0.05 }
+		}
+	}
+	focus = {
+		id = SMA_MacarAirship
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		x = 8
+		y = 10
+		prerequisite = { focus = SMA_YoungGenerals }
+		completion_reward = {
+			SMA = {
+				362 = { add_building_construction = {
+				    type = air_base
+				    level = 1
+				    instant_build = yes
+				}
+				}
+				add_manpower = 500
+				add_tech_bonus = {
+					bonus = 1.0
+					category = air_equipment
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_OilScout
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		x = 11
+		y = 10
+		prerequisite = { focus = SMA_YoungAdmirals }
+		completion_reward = {
+			SMA = {
+				add_resource = {
+				    type = oil
+				    amount = 10
+				    state = 362
+				}
+				hidden_effect = {
+					add_timed_idea = { idea = SMA_CrashedBudget days = 90 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_Underwater
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		x = 16
+		y = 10
+		prerequisite = { focus = SMA_YoungAdmirals }
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 1.0
+					category = ss_tech
+				}
+		}
+	}
+	focus = {
+		id = SMA_SandAndWood
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		x = 8
+		y = 11
+		prerequisite = { focus = SMA_MacarAirship }
+		completion_reward = {
+			SMA = { add_ideas = SMA_MacarAirships }
+		}
+	}
+	focus = {
+		id = SMA_OulContainers
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		x = 11
+		y = 11
+		prerequisite = { focus = SMA_OilScout }
+		completion_reward = {
+			SMA = {
+				362 = { add_extra_state_shared_building_slots = 1 }
+				362 = {
+					add_building_construction = {
+					    type = fuel_silo
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_NavalExercises
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		x = 16
+		y = 11
+		prerequisite = { focus = SMA_Underwater }
+		completion_reward = {
+			SMA = {
+				navy_experience = 30
+			}
+		}
+	}
+
+##################################
+##################################
+
+	focus = {
+		id = SMA_MacarIndustry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 25
+		y = 0
+		completion_reward = {
+			SMA = {
+				add_tech_bonus = {
+					bonus = 1.0
+					category = industry
+				}
+			}
+		}
+	}	
+	focus = {
+		id = SMA_CivilQuestion
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		x = 25
+		y = 1
+		prerequisite = { focus = SMA_MacarIndustry }
+		completion_reward = {
+			SMA = {
+				country_event = { id = sma.7 days = 1}
+			}
+		}
+	}
+	focus = {
+		id = SMA_SteelQuestion
+		icon = GFX_goal_generic_construction
+		cost = 10
+		x = 20
+		y = 1
+		prerequisite = { focus = SMA_MacarIndustry }
+		completion_reward = {
+			SMA = {
+				hidden_effect = {
+					add_timed_idea = { idea = SMA_CrashedBudget days = 90 }
+				}
+				add_resource = {
+				    type = steel
+				    amount = 5
+				    state = 362
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_ArmyQuestion
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		x = 30
+		y = 1
+		prerequisite = { focus = SMA_MacarIndustry }
+		completion_reward = {
+			SMA = {
+				country_event = { id = sma.6 days = 1}
+			}
+		}
+	}
+	focus = {
+		id = SMA_MineModern
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		x = 20
+		y = 2
+		prerequisite = { focus = SMA_SteelQuestion }
+		completion_reward = {
+			SMA = {
+				add_resource = {
+				    type = steel
+				    amount = 5
+				    state = 362
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					category = industry
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_MoneyReform
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		x = 25
+		y = 2
+		prerequisite = { focus = SMA_CivilQuestion }
+		completion_reward = {
+			SMA = {
+				add_political_power = 50
+				add_stability = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SMA_BaseReconstruct
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		x = 30
+		y = 2
+		prerequisite = { focus = SMA_ArmyQuestion }
+		completion_reward = {
+			SMA = {
+				add_war_support = 0.05
+				army_experience = 5
+			}
+		}
+	}
+	focus = {
+		id = SMA_OreScout
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		x = 20
+		y = 3
+		prerequisite = { focus = SMA_MineModern }
+		completion_reward = {
+			SMA = {
+				add_stability = 0.05
+				add_resource = {
+				    type = steel
+				    amount = 10
+				    state = 362
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_TaxesOff
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = 23
+		y = 3
+		mutually_exclusive = { focus = SMA_TaxesOn }
+		prerequisite = { focus = SMA_MoneyReform }
+		completion_reward = {
+			SMA = {
+				add_ideas = SMA_LowTaxes
+			}
+		}
+	}
+	focus = {
+		id = SMA_TaxesOn
+		icon = GFX_goal_generic_trade
+		cost = 10
+		x = 27
+		y = 3
+		mutually_exclusive = { focus = SMA_TaxesOff}
+		prerequisite = { focus = SMA_MoneyReform }
+		completion_reward = {
+			SMA = {
+				add_ideas = SMA_HighTaxes
+			}
+		}
+	}
+	focus = {
+		id = SMA_RestoreFleetBase
+		icon = GFX_goal_generic_occypy_states_coastal
+		cost = 10
+		x = 30
+		y = 3
+		prerequisite = { focus = SMA_BaseReconstruct }
+		completion_reward = {
+			362 = {
+					add_building_construction = {
+					    type = naval_base
+					    level = 1
+					    instant_build = yes
+					    province = 3272
+					}
+				}
+		}
+	}
+	focus = {
+		id = SMA_SteelManufacture
+		icon = GFX_focus_generic_steel
+		cost = 10
+		x = 20
+		y = 4
+		prerequisite = { focus = SMA_OreScout }
+		completion_reward = {
+			SMA = {
+				hidden_effect = {
+					add_timed_idea = { idea = SMA_CrashedBudget days = 120 }
+				}
+				362 = { add_extra_state_shared_building_slots = 1 }
+				362 = {
+					add_building_construction = {
+					    type = industrial_complex
+					    level = 1
+					    instant_build = yes
+					}
+				}
+				add_stability = 0.05
+				add_popularity = {
+				    ideology = communism
+				    popularity = 0.05
+				}
+				add_resource = {
+				    type = steel
+				    amount = 5
+				    state = 362
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_ForeignMoney
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = SMA_TaxesOff
+			focus = SMA_TaxesOn
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SMA_MilFactories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 30
+		y = 4
+		prerequisite = { focus = SMA_RestoreFleetBase }
+		completion_reward = {
+			SMA = {
+				hidden_effect = {
+					add_timed_idea = { idea = SMA_CrashedBudget days = 90 }
+				}
+				362 = { add_extra_state_shared_building_slots = 1 }
+				362 = {
+					add_building_construction = {
+					    type = arms_factory
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SMA_IndustryExtend
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 25
+		y = 5
+		prerequisite = { focus = SMA_ForeignMoney }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SMA_Agitation
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 30
+		y = 5
+		prerequisite = { focus = SMA_MilFactories }
+		completion_reward = {
+			SMA = {
+				add_timed_idea = { idea = SMA_Agitation2 days = 190 }
+			}
+		}
+	}
+	focus = {
+		id = SMA_DidoriaCivils
+		icon = GFX_focus_cze_german_puppet
+		cost = 10
+		x = 25
+		y = 6
+		prerequisite = { focus = SMA_IndustryExtend }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SMA_YouthMilitary
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 30
+		y = 6
+		prerequisite = { focus = SMA_Agitation }
+		completion_reward = {
+			SMA = {
+				add_ideas = SMA_YouthMilitaryIdea
+			}
+		}
+	}
+	focus = {
+		id = SMA_AllMilitary
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 30
+		y = 7
+		prerequisite = { focus = SMA_YouthMilitary }
+		completion_reward = {
+			SMA = {
+				add_ideas = SMA_IWEWariors
+			}
+		}
+	}
+}

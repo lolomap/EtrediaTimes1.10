@@ -1,0 +1,31 @@
+state={
+	id=31
+	name="STATE_31"
+	manpower=3050000
+	state_category=large_city
+
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+                        air_base = 5
+			6733 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = UCB
+		add_core_of = ORB
+		victory_points = {
+			6912 20 
+		}
+
+	}
+	provinces={
+		5781 5822 5844 5853 5854 5905 5936 5955 5956 5976 6019 6020 6038 6051 6084 6085 6108 6132 6152 6165 6220 6221 6242 6283 6302 6320 6332 6404 
+	}
+}

@@ -1,0 +1,93 @@
+capital = 180
+
+set_research_slots = 3
+set_stability = 0.3
+set_war_support = 0.3
+
+add_ideas = {
+        WWW_medium_country
+        total_free_press
+        general_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	fighter1 = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
+	motorized_rocket_unit = 1
+	synth_oil_experiments = 1
+	gwtank = 1
+	basic_light_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+}
+
+
+set_convoys = 60
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2012.1.1"
+	election_frequency = 45
+	elections_allowed = yes
+}
+
+set_popularities = {
+        democratic = 4
+        fascism = 96
+        communism = 0
+	neutrality = 0
+}
+
+#
+create_country_leader = {
+	name = "Alexandra Rybka"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "Portrait_mof_democratic.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Terine Narabel"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_taganrog_ivan_ishenko.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Petro Pedroshenko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Vissarionovich"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+

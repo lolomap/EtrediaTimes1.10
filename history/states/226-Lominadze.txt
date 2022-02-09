@@ -1,0 +1,32 @@
+state={
+	id=226
+	name="STATE_226"
+	manpower = 2000000
+	state_category = town
+
+	history={
+		owner = TRB
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			5753 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = TRB
+		victory_points = {
+			5753 5
+		}
+		victory_points = {
+			6016 1
+		}
+		victory_points = {
+			5541 1
+		}
+
+	}
+	provinces={
+		4449 4586 4650 4722 4787 4870 4909 4980 4995 5117 5118 5153 
+	}
+}

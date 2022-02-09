@@ -1,0 +1,28 @@
+state={
+	id=357
+	name="STATE_357"
+	manpower = 670000
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = VRO
+		buildings = {
+			infrastructure = 4
+			5936 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = VRO
+		victory_points = {
+			5936 1
+		}
+
+	}
+	provinces={
+		4845 4951 5103 5157 5331 5491 
+	}
+}

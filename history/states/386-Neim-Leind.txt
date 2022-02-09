@@ -1,0 +1,36 @@
+
+state={
+	id=386
+	name="STATE_386"
+	manpower = 1340000
+	
+	state_category = town
+	
+	resources={
+		oil = 2 # was: 2
+	}
+
+	history={
+		owner = LIV
+		buildings = {
+			infrastructure = 6
+                        industrial_complex = 3
+                        arms_factory = 0
+                        dockyard = 0
+			2821 = {
+				naval_base = 4
+			}
+			2715 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = LIV
+		victory_points = {
+			2769 10
+		}
+
+	}
+	provinces={
+		2174 2178 2193 2210 2213 2242 2248 2268 2280 2287 2288 2295 2302 
+	}
+}
