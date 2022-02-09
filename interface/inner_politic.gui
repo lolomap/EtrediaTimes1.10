@@ -31,7 +31,323 @@ guiTypes = {
 		clipping = yes
 
 		background = { 
-          name = "Background"
-            quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
-        }
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+		}
+
+		instantTextBoxType = {
+			name = "parties_header"
+			text = parties_header_loc
+			position {x = 230 y = 15}
+			maxWidth = 500
+			font = hoi_36header
+		}
+
+		containerWindowType = {
+			name = "party_democratic"
+			position = {x = 50 y = 50}
+			
+			size = {width = 500 height = 100}
+
+			background = { 
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+
+			containerWindowType = {
+				name = "content"
+				position = {x = 20 y = 15}
+
+				instantTextBoxType = {
+					name = "party_name"
+					text = party_dem_name
+					position = {x = 0 y = 0}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_popularity"
+					text = party_dem_pop
+					position = {x = 0 y = 20}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_strong"
+					text = party_dem_strong_loc
+					position = {x = 0 y = 40}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				buttonType = {
+					name = "party_dem_incident_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 300 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+
+				buttonType = {
+					name = "party_dem_aggitation_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 350 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+			}
+
+			
+		}
+		containerWindowType = {
+			name = "party_fascism"
+			position = {x = 50 y = 150}
+
+
+			size = {width = 500 height = 100}
+
+			background = { 
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+
+			containerWindowType = {
+				name = "content"
+				position = {x = 20 y = 15}
+
+				instantTextBoxType = {
+					name = "party_name"
+					text = party_fas_name
+					position = {x = 0 y = 0}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_popularity"
+					text = party_fas_pop
+					position = {x = 0 y = 20}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_strong"
+					text = party_fas_strong_loc
+					position = {x = 0 y = 40}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				buttonType = {
+					name = "party_fas_incident_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 300 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+
+				buttonType = {
+					name = "party_fas_aggitation_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 350 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+			}
+		}
+		containerWindowType = {
+			name = "party_neutrality"
+			position = {x = 50 y = 250}
+
+
+			size = {width = 500 height = 100}
+
+			background = { 
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+
+			containerWindowType = {
+				name = "content"
+				position = {x = 20 y = 15}
+
+				instantTextBoxType = {
+					name = "party_name"
+					text = party_neu_name
+					position = {x = 0 y = 0}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_popularity"
+					text = party_neu_pop
+					position = {x = 0 y = 20}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_strong"
+					text = party_neu_strong_loc
+					position = {x = 0 y = 40}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				buttonType = {
+					name = "party_neu_incident_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 300 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+
+				buttonType = {
+					name = "party_neu_aggitation_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 350 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+			}
+		}
+		containerWindowType = {
+			name = "party_communism"
+			position = {x = 50 y = 350}
+
+
+			size = {width = 500 height = 100}
+
+			background = { 
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+
+			containerWindowType = {
+				name = "content"
+				position = {x = 20 y = 15}
+
+				instantTextBoxType = {
+					name = "party_name"
+					text = party_com_name
+					position = {x = 0 y = 0}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_popularity"
+					text = party_com_pop
+					position = {x = 0 y = 20}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_strong"
+					text = party_com_strong_loc
+					position = {x = 0 y = 40}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				buttonType = {
+					name = "party_com_incident_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 300 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+
+				buttonType = {
+					name = "party_com_aggitation_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 350 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+			}
+		}
+		containerWindowType = {
+			name = "party_monarchism"
+			position = {x = 50 y = 450}
+
+
+			size = {width = 500 height = 100}
+
+			background = { 
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+
+			containerWindowType = {
+				name = "content"
+				position = {x = 20 y = 15}
+
+				instantTextBoxType = {
+					name = "party_name"
+					text = party_mon_name
+					position = {x = 0 y = 0}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_popularity"
+					text = party_mon_pop
+					position = {x = 0 y = 20}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				instantTextBoxType = {
+					name = "party_strong"
+					text = party_mon_strong_loc
+					position = {x = 0 y = 40}
+					maxWidth = 500
+					font = hoi_20b
+				}
+
+				buttonType = {
+					name = "party_mon_incident_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 300 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+
+				buttonType = {
+					name = "party_mon_aggitation_btn"
+					quadTextureSprite = GFX_party_incident_button
+					buttonText = " "
+					buttonFont = hoi_18mbs
+					position = {x = 350 y = 25}
+					orientation = UPPER_RIGHT
+
+				}
+			}
+		}
+	}
 }

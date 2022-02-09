@@ -26,6 +26,14 @@ form_msas_category = {
 
 }
 
+form_ucb_minors_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_scandinavia
+
+}
+
 form_monfua_ish_category = {
 
 	icon = generic_formable_nations

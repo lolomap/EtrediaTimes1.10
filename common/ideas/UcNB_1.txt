@@ -15,6 +15,36 @@ ideas = {
                 political_power_gain = -0.6
 			}
 		}
+		
+		UCB_raskol = {
+
+            picture = hol_liberation
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_war = no
+			}
+			
+			rule = {
+				can_join_factions = no
+				can_send_volunteers = no
+				can_force_government = no
+				can_puppet = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                planning_speed = -0.2
+                army_org_factor = -0.1
+                army_attack_factor = -0.2
+				surrender_limit = 0.3
+			}
+		}
 
 		UCB_poroh_blet = {
 

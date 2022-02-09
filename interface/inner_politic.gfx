@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_party_incident_button"
+		texturefile = "gfx/interface/party_incident_button.dds"
+	}
+}

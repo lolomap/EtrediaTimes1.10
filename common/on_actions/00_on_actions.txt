@@ -1,6 +1,10 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			random_country = {
+				country_event = {id = randev.11 days = 10}
+			}
+
 			if = {
 				limit = {has_start_date > 2014.01.01}
 				ELR = {country_event = grandrandom.1}

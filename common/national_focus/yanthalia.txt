@@ -1183,8 +1183,136 @@ focus_tree = {
 		completion_reward = {
 		YAN = { country_event { id = yan.8 days = 1 } }
 		}
-		x = 41
+		x = 40
 		y = 10
+
+	}
+	focus = {
+		id = YAN_RTT_war
+		icon = GFX_goal_unknown
+		cost = 1
+		will_lead_to_war_with = RTT
+		prerequisite = {
+			focus = YAN_TRB_war
+		}
+		available = {
+		YAN = { has_army_manpower  = { size > 1000000 } }
+			custom_trigger_tooltip = {
+				tooltip = yan_good_perspective
+				controls_state = 289
+				controls_state = 290
+				controls_state = 291
+				controls_state = 292
+				controls_state = 293
+				controls_state = 294
+				controls_state = 295
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = RTT
+				generator = { 199 200 }
+			}
+		}
+		x = 40
+		y = 11
+
+	}
+	focus = {
+		id = YAN_SBO_war
+		icon = GFX_goal_unknown
+		cost = 1
+		will_lead_to_war_with = SBO
+		prerequisite = {
+			focus = YAN_RTT_war
+		}
+		available = {
+		YAN = { has_army_manpower  = { size > 1000000 } }
+			custom_trigger_tooltip = {
+				tooltip = yan_good_perspective
+				controls_state = 289
+				controls_state = 290
+				controls_state = 291
+				controls_state = 292
+				controls_state = 293
+				controls_state = 294
+				controls_state = 295
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SBO
+				generator = { 529 }
+			}
+		}
+		x = 40
+		y = 12
+
+	}
+	focus = {
+		id = YAN_LIP_war
+		icon = GFX_goal_unknown
+		cost = 1
+		will_lead_to_war_with = LIP
+		prerequisite = {
+			focus = YAN_TRB_war
+		}
+		available = {
+		YAN = { has_army_manpower  = { size > 1000000 } }
+			custom_trigger_tooltip = {
+				tooltip = yan_good_perspective
+				controls_state = 289
+				controls_state = 290
+				controls_state = 291
+				controls_state = 292
+				controls_state = 293
+				controls_state = 294
+				controls_state = 295
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = LIP
+				generator = { 508 358 359 360 }
+			}
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = YAN_CHO_war
+		icon = GFX_goal_unknown
+		cost = 1
+		will_lead_to_war_with = CHO
+		prerequisite = {
+			focus = YAN_LIP_war
+		}
+		available = {
+		YAN = { has_army_manpower  = { size > 1000000 } }
+			custom_trigger_tooltip = {
+				tooltip = yan_good_perspective
+				controls_state = 289
+				controls_state = 290
+				controls_state = 291
+				controls_state = 292
+				controls_state = 293
+				controls_state = 294
+				controls_state = 295
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CHO
+				generator = { 366 368 }
+			}
+		}
+		x = 38
+		y = 12
 
 	}
 	focus = {
@@ -1192,10 +1320,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = YAN_TRB_war
+			focus = YAN_prepare_for_war2
 		}
-		x = 41
-		y = 11
+		x = 42
+		y = 10
 
 	}
 	focus = {
@@ -1205,21 +1333,61 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_IRI_factory
 		}
-		x = 41
-		y = 12
+		mutually_exclusive = {
+			focus = YAN_save_ZAM
+		}
+		x = 42
+		y = 11
 
 	}
+	
+	focus = {
+		id = YAN_save_ZAM
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_IRI_factory
+		}
+		mutually_exclusive = {
+			focus = YAN_annex_ZAM
+		}
+		x = 44
+		y = 11
+
+	}
+	
 	focus = {
 		id = YAN_annex_IRI
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
 			focus = YAN_annex_ZAM
+			focus = YAN_save_ZAM
 		}
-		x = 41
-		y = 13
+		mutually_exclusive = {
+			focus = YAN_save_IRI
+		}
+		x = 42
+		y = 12
 
 	}
+	
+	focus = {
+		id = YAN_save_IRI
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = YAN_annex_ZAM
+			focus = YAN_save_ZAM
+		}
+		mutually_exclusive = {
+			focus = YAN_annex_IRI
+		}
+		x = 44
+		y = 12
+
+	}
+
 	focus = {
 		id = YAN_SWEA
 		icon = GFX_goal_unknown

@@ -784,3 +784,22 @@ news_event = { #Конституция
 		name = randnews.1.a
 	}
 }
+
+country_event = {
+	id = randev.11
+	title = randev.11.t
+	desc = randev.11.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			1 = {
+				news_event = newss.20
+			}
+			99 = {
+				country_event = {id = randev.11 days = 360}
+			}
+		}
+	}
+}

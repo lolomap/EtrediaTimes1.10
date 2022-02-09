@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 1 y = 1 }
+
 	focus = {
 		id = UCB_1
 		icon = GFX_goal_unknown
@@ -15,6 +17,9 @@ focus_tree = {
 		x = 27
 		y = 0
 
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = UCB_dem_fsc_conversation
@@ -22,6 +27,9 @@ focus_tree = {
 		cost = 10
 		x = 3
 		y = 7
+		prerequisite = {
+			focus = UCB_dem_stavka_defense
+		}
 
 	}
 	focus = {
@@ -130,6 +138,13 @@ focus_tree = {
 		x = 27
 		y = 1
 
+		completion_reward = {
+			UCB = {
+				remove_ideas = UCB_polit_crisis
+				country_event = { id = ucnb.1 days = 1 }
+			}
+		}
+		
 	}
 	focus = {
 		id = UCB_dem1
@@ -144,6 +159,21 @@ focus_tree = {
 		x = 21
 		y = 2
 
+		available = {
+		    has_government = democratic
+			has_idea = UCB_resist
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}		     
+		    hidden_effect = {
+				UCB = { country_event = { id = ucb.2 days = 10 } }
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_foreign_policy
@@ -210,6 +240,14 @@ focus_tree = {
 		x = 21
 		y = 6
 
+		completion_reward = {
+			add_stability = -0.15
+			add_ideas = { UCB_autonomy }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_compromis
@@ -260,6 +298,13 @@ focus_tree = {
 		x = 22
 		y = 8
 
+		completion_reward = {
+			add_stability = -0.05
+			add_timed_idea = {
+				idea = UCB_zapretnac
+				days = 150
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_kolechian_question
@@ -973,6 +1018,9 @@ focus_tree = {
 		x = 1
 		y = 7
 
+		completion_reward = {
+			give_guarantee = TRP
+		}
 	}
 	focus = {
 		id = UCB_fasc_factory1

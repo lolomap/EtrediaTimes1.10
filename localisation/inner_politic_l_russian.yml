@@ -1,3 +1,20 @@
 ﻿l_russian:
+  parties_header_loc:0 "[Root.GetAdjective] партии"
   parties_button_loc:0 "Партии"
-  
+  party_dem_strong_loc:0 "Оппозиционная сила партии: [?dem_opposition]/100"
+  party_fas_strong_loc:0 "Оппозиционная сила партии: [?fas_opposition]/100"
+  party_com_strong_loc:0 "Оппозиционная сила партии: [?com_opposition]/100"
+  party_neu_strong_loc:0 "Оппозиционная сила партии: [?neu_opposition]/100"
+  party_mon_strong_loc:0 "Оппозиционная сила движения: [?mon_opposition]/100"
+
+  party_dem_pop:0 "Популярность партии: [?party_popularity@democratic|%]/100"
+  party_fas_pop:0 "Популярность партии: [?party_popularity@fascism|%]/100"
+  party_com_pop:0 "Популярность партии: [?party_popularity@communism|%]/100"
+  party_neu_pop:0 "Популярность партии: [?party_popularity@neutrality|%]/100"
+  party_mon_pop:0 "Популярность движения: [?party_popularity@monarchism|%]/100"
+
+  party_dem_name:0 "§B[Root.GetDemocraticParty]:§!"
+  party_fas_name:0 "§L[Root.GetFascistParty]:"
+  party_com_name:0 "§R[Root.GetCommunistParty]:"
+  party_neu_name:0 "§g[Root.GetNeutralParty]:"
+  party_mon_name:0 "§YМонархисты:"

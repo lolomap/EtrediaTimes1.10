@@ -35,6 +35,11 @@ INS_HOL = {
     color_ui = rgb { 255 179 96 }
 }
 
+NWA = {
+    color = rgb { 124 143 191 }
+    color_ui = rgb { 104 123 171 }
+}
+
 HUN_EMPIRE = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }

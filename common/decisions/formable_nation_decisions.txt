@@ -205,6 +205,71 @@ form_msas_category = {
 	}
 }
 
+form_ucb_minors_category = {
+	
+	form_NWalliance = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = TRI
+				original_tag = NIK
+				original_tag = MIN
+			}
+		}
+
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+			    tooltip = form_country_nikland_required_states_tt
+				controls_state = 7
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_minderia_required_states_tt
+				controls_state = 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_trinadia_required_states_tt
+				controls_state = 4
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = TRI
+				original_tag = NIK
+				original_tag = MIN
+			}
+			NOT = { has_global_flag = form_nwa_flag }
+			NOT = {has_cosmetic_tag = NWA}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NWA
+			custom_effect_tooltip = form_country_nwa_coring_states_tt
+			hidden_effect = {
+				3 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				5 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = form_nwa_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 200
+			}
+		}
+	}
+}
+
 form_monfua_ish_category = {
 	
 	form_mof_ish = {

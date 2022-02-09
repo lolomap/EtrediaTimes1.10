@@ -546,3 +546,16 @@ news_event = {
 	}
 }
 		
+news_event = { #KEK
+	id = newss.20
+	title = newss.20.t
+	desc = newss.20.d
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = newss.20.a
+	}
+}

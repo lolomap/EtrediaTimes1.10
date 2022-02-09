@@ -224,16 +224,17 @@ country_event = {
 		}
 	}
 	    ai_chance = { 
-	    factor = 90
+	    factor = 80
 	    }
 	}
 
 	option = {
 	name = ucb.4.b
 	hidden_effect = {
+			country_event = { id = ucb.27 days = 90 }
 	}
 	    ai_chance = {
-	    factor = 10 
+	    factor = 20 
 	    }
     }
 }
@@ -637,6 +638,273 @@ country_event = {
 			remove_state_core = 33
 			remove_state_core = 34
 		    }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.27
+	title = ucb.27.t
+	desc = ucb.27.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.27.a
+		KIM = {
+			transfer_state = 21
+			load_oob = KIM_terrorist
+		}
+		hidden_effect = {
+		UCB = { country_event = { id = ucb.28 days = 30 } }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.28
+	title = ucb.28.t
+	desc = ucb.28.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.28.a
+		DIN = {
+			transfer_state = 2
+		}
+		RAN = {
+			transfer_state = 6
+		}
+		KOS = {
+			transfer_state = 5
+		}
+		TRI = {
+			transfer_state = 4
+		}
+		NIK = {
+			transfer_state = 7
+		}
+		MIN = {
+			transfer_state = 3
+		}
+		KOL = {
+			transfer_state = 24
+			transfer_state = 23
+			load_oob = KOL_rebels
+		}
+		hidden_effect = {
+		UCB = { country_event = { id = ucb.29 days = 15 } }
+		set_global_flag = ucb_parlament_government
+		}
+	}
+}
+
+country_event = {
+	id = ucb.29
+	title = ucb.29.t
+	desc = ucb.29.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.29.a
+		GLE = {
+			transfer_state = 19
+			load_oob = KOL_rebels
+		}
+		FLR = {
+			transfer_state = 22
+			load_oob = KOL_rebels
+		}
+		ARS = {
+			transfer_state = 10
+			transfer_state = 71
+			load_oob = ARS_rebels
+		}
+		ORB = {
+			transfer_state = 31
+			load_oob = ORB_UCB_rebels
+		}
+		hidden_effect = {
+		UCB = { country_event = { id = ucb.30 days = 15 } }
+		}
+	}
+}
+
+country_event = {
+	id = ucb.30
+	title = ucb.30.t
+	desc = ucb.30.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = UCB
+    }
+
+	option = {
+	name = ucb.30.a
+		hidden_effect = {
+        NCU = {
+            transfer_state = 9
+			transfer_state = 29
+			transfer_state = 30
+			add_state_core = 2
+			add_state_core = 3
+			add_state_core = 4
+			add_state_core = 5
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 8
+			add_state_core = 9
+			add_state_core = 10
+			add_state_core = 11
+			add_state_core = 12
+			add_state_core = 13
+			add_state_core = 14
+			add_state_core = 15
+			add_state_core = 16
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 19
+			add_state_core = 20
+			add_state_core = 21
+			add_state_core = 22
+			add_state_core = 23
+			add_state_core = 24
+			add_state_core = 25
+			add_state_core = 26
+			add_state_core = 27
+			add_state_core = 28
+			add_state_core = 29
+			add_state_core = 30
+			add_state_core = 31
+			add_state_core = 32
+			add_state_core = 33
+			add_state_core = 34
+			add_state_core = 71
+			add_manpower = 50000
+            load_oob = Narabel_army
+			declare_war_on = { target = UCB type = annex_everything }
+			declare_war_on = { target = KOL type = annex_everything }
+			declare_war_on = { target = ARS type = annex_everything }
+			declare_war_on = { target = ORB type = annex_everything }
+			declare_war_on = { target = FLR type = annex_everything }
+			declare_war_on = { target = GLE type = annex_everything }
+			declare_war_on = { target = KIM type = annex_everything }
+			add_ideas = UCB_raskol
+        }
+			BDA = {
+				transfer_state = 11
+				transfer_state = 12
+				transfer_state = 14
+				transfer_state = 15
+				transfer_state = 26
+				add_state_core = 11
+				add_state_core = 12
+				add_state_core = 14
+				add_state_core = 15
+				add_state_core = 26
+				add_state_core = 13
+				add_state_core = 23
+				add_state_core = 24
+				add_state_core = 25
+				add_state_core = 27
+				add_state_core = 28
+				add_state_core = 32
+				add_state_core = 33
+				add_state_core = 34
+				load_oob = BDA_army
+				add_manpower = 50000
+				declare_war_on = { target = UCB type = annex_everything }
+				declare_war_on = { target = SUC type = annex_everything }
+				declare_war_on = { target = NCU type = annex_everything }
+				declare_war_on = { target = ARS type = annex_everything }
+				declare_war_on = { target = GLE type = annex_everything }
+				declare_war_on = { target = KIM type = annex_everything }
+				declare_war_on = { target = KOL type = annex_everything }
+				declare_war_on = { target = ORB type = annex_everything }
+				declare_war_on = { target = FLR type = annex_everything }
+				add_ideas = UCB_raskol
+			}
+			SUC = {
+				transfer_state = 8
+				transfer_state = 16
+				transfer_state = 18
+				transfer_state = 20
+				add_state_core = 8
+				add_state_core = 16
+				add_state_core = 18
+				add_state_core = 20
+				add_state_core = 9
+				add_state_core = 13
+				add_state_core = 17
+				add_state_core = 19
+				add_state_core = 22
+				add_state_core = 2
+				add_state_core = 3
+				add_state_core = 4
+				add_state_core = 5
+				add_state_core = 6
+				add_state_core = 7
+				load_oob = SUC_army
+				add_manpower = 50000
+				declare_war_on = { target = UCB type = annex_everything }
+				declare_war_on = { target = BDA type = annex_everything }
+				declare_war_on = { target = NCU type = annex_everything }
+				declare_war_on = { target = ARS type = annex_everything }
+				declare_war_on = { target = GLE type = annex_everything }
+				declare_war_on = { target = KIM type = annex_everything }
+				declare_war_on = { target = KOL type = annex_everything }
+				declare_war_on = { target = ORB type = annex_everything }
+				declare_war_on = { target = FLR type = annex_everything }
+				add_ideas = UCB_raskol
+			}
+			KOL = {
+				declare_war_on = { target = FLR type = annex_everything }
+				declare_war_on = { target = UCB type = annex_everything }
+				declare_war_on = { target = ORB type = annex_everything }
+				add_ideas = UCB_raskol
+			}
+			KIM = {
+				declare_war_on = { target = GLE type = annex_everything }
+				declare_war_on = { target = FLR type = annex_everything }
+				declare_war_on = { target = UCB type = annex_everything }
+				add_ideas = UCB_raskol
+			}
+			UCB = {
+				add_ideas = UCB_raskol
+			}
+			ORB = {
+				add_ideas = UCB_raskol
+				declare_war_on = { target = UCB type = annex_everything }
+			}
+			GLE = {
+				add_ideas = UCB_raskol
+			}
+			ARS = {
+				add_ideas = UCB_raskol
+			}
+			FLR = {
+				add_ideas = UCB_raskol
+			}
 		}
 	}
 }

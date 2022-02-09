@@ -183,3 +183,7 @@ FSF = "countries/Fersofia.txt"
 
 HEK = "countries/Khekia.txt"
 MLT = "countries/Terbia rebellians.txt"
+
+BDA = "countries/BeldpoArmy.txt"
+SUC = "countries/Comitet.txt"
+NWA = "countries/NWAlliance.txt"
