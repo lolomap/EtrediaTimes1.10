@@ -12,12 +12,10 @@ nuclear_war = {
 
 		complete_effect = {
 			#когда обновимся до 1.10 везде надо использовать faction_leader = {}
-			every_other_country = {
-				limit = {
-					is_faction_leader = yes
-					is_in_faction_with = ROOT
+			ROOT = {
+				faction_leader = {
+					country_event = {id = nukemod.1 days = 1}
 				}
-				country_event = {id = nukemod.1 days = 1}
 			}
 		}
 	}

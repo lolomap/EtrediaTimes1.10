@@ -88,364 +88,279 @@ on_actions = {
 			}	
 		}
 	}
-	on_daily = {
+
+	on_weekly_ORB = {
 		effect = {
-
-			# NEW STABILITY MODIFIERS
-			if = {
-				limit = { has_stability > 0.83 }
-				if = {
-					limit = {has_government = fascism} add_ideas = stability_heaven_f
-				}
-				else_if = {
-					limit = {has_government = communism} add_ideas = stability_heaven_c
-				}
-				else_if = {
-					limit = {has_government = democratic} add_ideas = stability_heaven_d
-				}
-				else_if = {
-					limit = {has_government = neutrality} add_ideas = stability_heaven_n
-				}
-				else_if = {
-					limit = {has_government = monarchism} add_ideas = stability_heaven_m
-				}
-			}
-			else_if = {
-				limit = { has_stability > 0.7 } add_ideas = stability_great
-			}
-			else_if = {
-				limit = { has_stability > 0.5 } add_ideas = stability_nice
-			}
-			else_if = {
-				limit = {has_stability > 0.3 } add_ideas = stability_middle
-			}
-			else = {
-				add_ideas = stability_bad
-			}
-
-
-
-			every_other_country = {
-				limit = {
-					is_guaranteed_by = ROOT
-					ROOT = {
-						not = {
-							is_in_array = {
-								array = guaranteelist
-								value = PREV
-							}
-						}
-					}
-				}
-				ROOT = {
-					add_to_array = {
-						array = guaranteelist
-						value = PREV
-					}
-				}
-			}
-
-			every_other_country = {
-				limit = {
-					not = {is_guaranteed_by = ROOT}
-					ROOT = {
-						is_in_array = {
-							array = guaranteelist
-							value = PREV
-						}
-					}
-				}
-				ROOT = {
-					remove_from_array = {
-						array = guaranteelist
-						value = PREV
-					}
-				}
-			}
-
-			######################
-			# INFLUENCE SECTION  #
-			######################
-
-			#ORB
-			if = {
-				limit = {ROOT = {tag = ORB}}
-				
-				if = {
-					limit = {
-						country_exists = FSC
-						FSC = {is_subject = no}
-						ORB = {is_subject = no}
-						ORB = {check_variable = {fsc_influence < 100.14}}
-						ORB = {not = {has_country_flag = no_iid_fsc_influence}}
-					}
-					add_to_variable = {fsc_influence = 0.136}
-				}
-				if = {
-					limit = {
-						country_exists = IID
-						IID = {is_subject = no}
-						ORB = {is_subject = no}
-						ORB = {check_variable = {iid_influence < 100.14}}
-						ORB = {not = {has_country_flag = orb_separated}}
-						ORB = {not = {has_country_flag = no_iid_fsc_influence}}
-						ORB = {has_country_flag = iid_orb_investitions}
-						not = {
-							any_country = {is_subject_of = ORB}
-						}
-					}
-					add_to_variable = {iid_influence = 0.274}
-				}
-
-				if = {
-					limit = {
-						ORB = {check_variable = {fsc_influence > 100}}
-						ORB = {is_subject = no}
-					}
-					FSC = {
-						annex_country = {
-							target = ORB
-							transfer_troops = yes
-						}
-					}
-				}
-				if = {
-					limit = {
-						ORB = {check_variable = {iid_influence > 100}}
-						ORB = {is_subject = no}
-						not = {has_country_flag = orb_separated}
-					}
-					ORB = {country_event = orb.35}
-					IID = {
-						puppet = ORB
-					}
-				}
-			}
-			#Sibur
 			if = {
 				limit = {
-					ROOT = {
-						tag = SBU
+					country_exists = FSC
+					FSC = {is_subject = no}
+					ORB = {is_subject = no}
+					ORB = {check_variable = {fsc_influence < 100.14}}
+					ORB = {not = {has_country_flag = no_iid_fsc_influence}}
+				}
+				add_to_variable = {fsc_influence = 0.952}
+			}
+			if = {
+				limit = {
+					country_exists = IID
+					IID = {is_subject = no}
+					ORB = {is_subject = no}
+					ORB = {check_variable = {iid_influence < 100.14}}
+					ORB = {not = {has_country_flag = orb_separated}}
+					ORB = {not = {has_country_flag = no_iid_fsc_influence}}
+					ORB = {has_country_flag = iid_orb_investitions}
+					not = {
+						any_country = {is_subject_of = ORB}
 					}
 				}
+				add_to_variable = {iid_influence = 1.918}
+			}
 
+			if = {
+				limit = {
+					ORB = {check_variable = {fsc_influence > 100}}
+					ORB = {is_subject = no}
+				}
+				FSC = {
+					annex_country = {
+						target = ORB
+						transfer_troops = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					ORB = {check_variable = {iid_influence > 100}}
+					ORB = {is_subject = no}
+					not = {has_country_flag = orb_separated}
+				}
+				ORB = {country_event = orb.35}
+				IID = {
+					puppet = ORB
+				}
+			}
+		}
+	}
+	on_weekly_SBU = {
+		effect = {
+			if = {
+				limit = {
+					country_exists = LCH
+					LCH = {is_subject_of = SBU}
+					not = {has_country_flag = lch_rebelled}
+				}
+				add_to_variable = {lch_influence = 3.829}
+			}
+			if = {
+				limit = {
+					country_exists = ESB
+					ESB = {is_subject_of = SBU}
+					not = {has_country_flag = esb_rebelled}
+				}
+				add_to_variable = {esb_influence = 3.829}
+			}
+			if = {
+				limit = {
+					country_exists = SIN
+					SIN = {is_subject_of = SBU}
+					not = {has_country_flag = sin_rebelled}
+				}
+				add_to_variable = {sin_influence = 3.829}
+			}
+			if = {
+				limit = {
+					country_exists = BAK
+					BAK = {is_subject_of = SBU}
+					not = {has_country_flag = bak_rebelled}
+				}
+				add_to_variable = {bak_influence = 3.829}
+			}
+			if = {
+				limit = {
+					country_exists = KRA
+					KRA = {is_subject_of = SBU}
+					not = {has_country_flag = kra_rebelled}
+				}
+				add_to_variable = {kra_influence = 3.829}
+			}
+
+			if = {
+				limit = {
+					country_exists = TRB
+					TRB = {is_subject_of = SBU}
+					not = {
+						country_exists = lch
+						country_exists = esb
+						country_exists = sin
+						country_exists = bak
+						country_exists = kra
+					}
+					not = {has_country_flag = trb_rebelled}
+					not = {has_country_flag = SBU_TRBminored}
+				}
+
+				add_to_variable = {trb_influence = 5.6}
+			}
+
+			if = {
+				limit = {
+					check_variable = {trb_influence > 100}
+					country_exists = TRB
+				}
+				TRB = 
+				{
+					start_civil_war = {
+						ideology = communism
+						size = 0.4
+					}
+				}
+				SBU = {
+					set_variable = {trb_influence = 0}
+					set_country_flag = trb_rebelled
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {lch_influence > 100}
+				}
 				if = {
 					limit = {
 						country_exists = LCH
-						LCH = {is_subject_of = SBU}
-						not = {has_country_flag = lch_rebelled}
 					}
-					add_to_variable = {lch_influence = 0.547}
+					SBU = {
+						set_country_flag = lch_rebelled
+						set_variable = {lch_influence = 0}
+					}
+					MLT = {
+						annex_country = {
+							target = LCH
+						}
+						if = {
+							limit = {not = {has_war_with = SBU}}
+							declare_war_on = {type = annex_everything target = SBU}
+						}
+						
+                        load_oob = LCH_2014
+                        add_manpower = 20000
+					}
+				}
+				
+			}
+			if = {
+				limit = {
+					check_variable = {esb_influence > 100}
 				}
 				if = {
 					limit = {
 						country_exists = ESB
-						ESB = {is_subject_of = SBU}
-						not = {has_country_flag = esb_rebelled}
 					}
-					add_to_variable = {esb_influence = 0.547}
+					SBU = {
+						set_country_flag = esb_rebelled
+						set_variable = {esb_influence = 0}
+					}
+					MLT = {
+						annex_country = {
+							target = ESB
+						}
+						if = {
+							limit = {not = {has_war_with = SBU}}
+							declare_war_on = {type = annex_everything target = SBU}
+						}
+						
+                        load_oob = ESB_2014
+                        add_manpower = 20000
+					}
+				}
+				
+			}
+			if = {
+				limit = {
+					check_variable = {sin_influence > 100}
 				}
 				if = {
 					limit = {
 						country_exists = SIN
-						SIN = {is_subject_of = SBU}
-						not = {has_country_flag = sin_rebelled}
 					}
-					add_to_variable = {sin_influence = 0.547}
+					SBU = {
+						set_country_flag = sin_rebelled
+						set_variable = {sin_influence = 0}
+					}
+					MLT = {
+						annex_country = {
+							target = SIN
+						}
+						if = {
+							limit = {not = {has_war_with = SBU}}
+							declare_war_on = {type = annex_everything target = SBU}
+						}
+						
+                        load_oob = SIN_2014
+                        add_manpower = 20000
+					}
+				}
+				
+			}
+			if = {
+				limit = {
+					check_variable = {bak_influence > 100}
 				}
 				if = {
 					limit = {
 						country_exists = BAK
-						BAK = {is_subject_of = SBU}
-						not = {has_country_flag = bak_rebelled}
 					}
-					add_to_variable = {bak_influence = 0.547}
+					SBU = {
+						set_country_flag = bak_rebelled
+						set_variable = {bak_influence = 0}
+					}
+					MLT = {
+						annex_country = {
+							target = BAK
+						}
+						if = {
+							limit = {not = {has_war_with = SBU}}
+							declare_war_on = {type = annex_everything target = SBU}
+						}
+						
+                        load_oob = BAK_2014
+                        add_manpower = 20000
+					}
+				}
+				
+			}
+			if = {
+				limit = {
+					check_variable = {kra_influence > 100}
 				}
 				if = {
 					limit = {
 						country_exists = KRA
-						KRA = {is_subject_of = SBU}
-						not = {has_country_flag = kra_rebelled}
-					}
-					add_to_variable = {kra_influence = 0.547}
-				}
-
-				if = {
-					limit = {
-						country_exists = TRB
-						TRB = {is_subject_of = SBU}
-						not = {
-							country_exists = lch
-							country_exists = esb
-							country_exists = sin
-							country_exists = bak
-							country_exists = kra
-						}
-						not = {has_country_flag = trb_rebelled}
-						not = {has_country_flag = SBU_TRBminored}
-					}
-
-					add_to_variable = {trb_influence = 0.8}
-				}
-
-				if = {
-					limit = {
-						check_variable = {trb_influence > 100}
-						country_exists = TRB
-					}
-					TRB = 
-					{
-						start_civil_war = {
-							ideology = communism
-							size = 0.4
-						}
 					}
 					SBU = {
-						set_variable = {trb_influence = 0}
-						set_country_flag = trb_rebelled
+						set_country_flag = kra_rebelled
+						set_variable = {kra_influence = 0}
+					}
+					MLT = {
+						annex_country = {
+							target = KRA
+						}
+						if = {
+							limit = {not = {has_war_with = SBU}}
+							declare_war_on = {type = annex_everything target = SBU}
+						}
+						
+                        load_oob = KRA_2014
+                        add_manpower = 20000
 					}
 				}
-
-				if = {
-					limit = {
-						check_variable = {lch_influence > 100}
-					}
-					if = {
-						limit = {
-							country_exists = LCH
-						}
-						SBU = {
-							set_country_flag = lch_rebelled
-							set_variable = {lch_influence = 0}
-						}
-						MLT = {
-							annex_country = {
-								target = LCH
-							}
-							if = {
-								limit = {not = {has_war_with = SBU}}
-								declare_war_on = {type = annex_everything target = SBU}
-							}
-							
-                            load_oob = LCH_2014
-                            add_manpower = 20000
-						}
-					}
-					
-				}
-				if = {
-					limit = {
-						check_variable = {esb_influence > 100}
-					}
-					if = {
-						limit = {
-							country_exists = ESB
-						}
-						SBU = {
-							set_country_flag = esb_rebelled
-							set_variable = {esb_influence = 0}
-						}
-						MLT = {
-							annex_country = {
-								target = ESB
-							}
-							if = {
-								limit = {not = {has_war_with = SBU}}
-								declare_war_on = {type = annex_everything target = SBU}
-							}
-							
-                            load_oob = ESB_2014
-                            add_manpower = 20000
-						}
-					}
-					
-				}
-				if = {
-					limit = {
-						check_variable = {sin_influence > 100}
-					}
-					if = {
-						limit = {
-							country_exists = SIN
-						}
-						SBU = {
-							set_country_flag = sin_rebelled
-							set_variable = {sin_influence = 0}
-						}
-						MLT = {
-							annex_country = {
-								target = SIN
-							}
-							if = {
-								limit = {not = {has_war_with = SBU}}
-								declare_war_on = {type = annex_everything target = SBU}
-							}
-							
-                            load_oob = SIN_2014
-                            add_manpower = 20000
-						}
-					}
-					
-				}
-				if = {
-					limit = {
-						check_variable = {bak_influence > 100}
-					}
-					if = {
-						limit = {
-							country_exists = BAK
-						}
-						SBU = {
-							set_country_flag = bak_rebelled
-							set_variable = {bak_influence = 0}
-						}
-						MLT = {
-							annex_country = {
-								target = BAK
-							}
-							if = {
-								limit = {not = {has_war_with = SBU}}
-								declare_war_on = {type = annex_everything target = SBU}
-							}
-							
-                            load_oob = BAK_2014
-                            add_manpower = 20000
-						}
-					}
-					
-				}
-				if = {
-					limit = {
-						check_variable = {kra_influence > 100}
-					}
-					if = {
-						limit = {
-							country_exists = KRA
-						}
-						SBU = {
-							set_country_flag = kra_rebelled
-							set_variable = {kra_influence = 0}
-						}
-						MLT = {
-							annex_country = {
-								target = KRA
-							}
-							if = {
-								limit = {not = {has_war_with = SBU}}
-								declare_war_on = {type = annex_everything target = SBU}
-							}
-							
-                            load_oob = KRA_2014
-                            add_manpower = 20000
-						}
-					}
-					
-				}
+				
 			}
+		}
+	}
 
-			######################
-			# DEMOCRATIC SECTION #
-			######################	ALL THIS SHOULD BE IN ON_WEEKLY OR ON_MONTHLY IN 1.9
+	on_monthly = {
+		effect = {
 			set_variable = {division_inf_factor = num_divisions}
 			multiply_variable = {division_inf_factor = 0.025}
 			set_variable = {factories_inf_factor = num_of_factories}
@@ -514,17 +429,89 @@ on_actions = {
 					add_ideas = wi_economic_faction_trade_influence
 				}
 			}
+		}
+	}
 
-			#НАДО ЧТОБЫ В ON_MONTHLY_ROOT В НОВОЙ ВЕРСИИ ПРОВЕРЯЛОСЬ ОТНОШЕНИЕ
-			#ДЕМОКРАТИЙ К ОСТАЛЬНЫМ РЕЖИМАМ, ЧТОБЫ ОТКЛЮЧАТЬ МИРОТВОРЧЕСТВО ЕСЛИ ДЕМОКРАТИЙ ОЧЕНЬ МАЛО
+	on_weekly = {
+		effect = {
+			
+			if = {
+				limit = { has_stability > 0.83 }
+				if = {
+					limit = {has_government = fascism} add_ideas = stability_heaven_f
+				}
+				else_if = {
+					limit = {has_government = communism} add_ideas = stability_heaven_c
+				}
+				else_if = {
+					limit = {has_government = democratic} add_ideas = stability_heaven_d
+				}
+				else_if = {
+					limit = {has_government = neutrality} add_ideas = stability_heaven_n
+				}
+				else_if = {
+					limit = {has_government = monarchism} add_ideas = stability_heaven_m
+				}
+			}
+			else_if = {
+				limit = { has_stability > 0.7 } add_ideas = stability_great
+			}
+			else_if = {
+				limit = { has_stability > 0.5 } add_ideas = stability_nice
+			}
+			else_if = {
+				limit = {has_stability > 0.3 } add_ideas = stability_middle
+			}
+			else = {
+				add_ideas = stability_bad
+			}
 
-			#################
-			# WTIRE SECTION #
-			#################
+#####################################################################################
+
+			every_other_country = {
+				limit = {
+					is_guaranteed_by = ROOT
+					ROOT = {
+						not = {
+							is_in_array = {
+								array = guaranteelist
+								value = PREV
+							}
+						}
+					}
+				}
+				ROOT = {
+					add_to_array = {
+						array = guaranteelist
+						value = PREV
+					}
+				}
+			}
+
+			every_other_country = {
+				limit = {
+					not = {is_guaranteed_by = ROOT}
+					ROOT = {
+						is_in_array = {
+							array = guaranteelist
+							value = PREV
+						}
+					}
+				}
+				ROOT = {
+					remove_from_array = {
+						array = guaranteelist
+						value = PREV
+					}
+				}
+			}
+
+#####################################################################################
+
 			if = {
 				limit = {ROOT = {has_war = yes}}
 				ROOT = {
-					set_variable = {wtire_to_add = 0.14}
+					set_variable = {wtire_to_add = 0.98}
 					if = {
 						limit = {has_country_flag = do_reduce_wtire}
 						multiply_variable = {wtire_to_add = 0.85}
@@ -539,8 +526,8 @@ on_actions = {
 			}
 			else = {
 				if = {
-					limit = {ROOT = {check_variable = {wtire > 0.13}}}
-					ROOT = {subtract_from_variable = {wtire = 0.14}}
+					limit = {ROOT = {check_variable = {wtire > 0.97}}}
+					ROOT = {subtract_from_variable = {wtire = 0.98}}
 				}
 			}
 
@@ -669,6 +656,13 @@ on_actions = {
 					}
 				}
 			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+
+			
 		}
 	}
 
@@ -957,10 +951,9 @@ on_actions = {
 		}
 	}
 
-
-
-
-
+######################################################
+#VANILLA
+######################################################
 
 
 

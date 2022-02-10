@@ -2343,11 +2343,7 @@ focus_tree = {
 				limit = {
 					SBU = {is_in_faction = yes}
 				}
-				every_country = {
-					limit = {
-						is_in_faction_with = SBU
-						is_faction_leader = yes
-					}
+				faction_leader = {
 					add_to_faction = RTT
 				}
 			}
