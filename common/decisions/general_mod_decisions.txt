@@ -22,7 +22,7 @@ nuclear_war = {
 }
 
 nuclear_construction = {
-	NukeConstruct = { # CHANGE WITH DAYS_REMOVE AND ADD_DAYS_REMOVE IN 1.10
+	NukeConstruct = {
 		visible = {always = yes}
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
@@ -39,12 +39,48 @@ nuclear_construction = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_variable = {ndelay = 360}
+				set_variable = {ndelay = 120}
 				set_variable = {num_of_reactors = 0}
 				every_owned_state = {
 					owner = {add_to_variable = {num_of_reactors = PREV.building_level@nuclear_reactor}}
 				}
-				divide_variable = {ndelay = num_of_reactors} #Не учитывать реакторы на которые не хватает урана
+				set_variable = {uranium_has = resource@uranium}
+				set_variable = {urr = 0}
+
+				while_loop_effect = {
+					limit = { check_variable = {num_of_reactors > 0} }
+					
+					if = {
+						limit = {uranium_has > uranium_cost}
+						add_to_variable = {urr = 1}
+						subtract_from_variable = {uranium_has = uranium_cost}
+					}
+
+					subtract_from_variable = {num_of_reactors = 1}
+				}
+				divide_variable = {ndelay = urr}
+
+				if = {
+					limit = {
+						check_variable = {ndelay < 120}
+					}
+
+					activate_decision = UsedReactors
+					#add_days_remove  = {
+					#	decision = UsedReactors
+					#	days = ndelay
+					#}
+
+					meta_effect = {
+					    text = {
+					        add_days_remove = {
+					            decision = UsedReactors
+					            days = [DAYS]
+					        }
+					    }
+					    DAYS = "[?ndelay]"
+					}
+				}
 			}
 
 			custom_effect_tooltip = nuclear_construction_tip
@@ -55,15 +91,38 @@ nuclear_construction = {
 					type = industrial_complex
 					level = 2
 				}
+				owner = {set_variable = {remember_uranium_factories = PREV}}
 			}
-			
 		}
 		remove_effect = {
 			add_nuclear_bombs = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
+			var:remember_uranium_factories = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	UsedReactors = {
+		visible = {always = no}
+		available = {
+			always = yes
+		}
+
+		days_remove = 1
+
+		remove_effect = {
+			remove_decision = NukeConstruct
+			add_nuclear_bombs = 1
+			var:remember_uranium_factories = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}

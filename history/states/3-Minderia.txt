@@ -19,6 +19,7 @@ state={
 			}
 		}
 		add_core_of = MIN
+		add_core_of = UCB
 		victory_points = {
 			9610 5
 		}

@@ -5,6 +5,7 @@ state={
 	state_category = large_city
 	resources={
 		oil = 20 # was: 30
+		#uranium = 7
 	}
 
 	history={

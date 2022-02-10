@@ -27,7 +27,7 @@ on_actions = {
 			}
 
 			every_country = {
-				set_variable = {uranium_cost = 1}
+				set_variable = {uranium_cost = 2}
 				set_variable = {winfluence_cost = 1}
 			}
 
@@ -361,6 +361,13 @@ on_actions = {
 
 	on_monthly = {
 		effect = {
+			
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			
 			set_variable = {division_inf_factor = num_divisions}
 			multiply_variable = {division_inf_factor = 0.025}
 			set_variable = {factories_inf_factor = num_of_factories}
@@ -385,9 +392,15 @@ on_actions = {
 			every_owned_state = {
 				owner = {add_to_variable = {num_of_nuke_anti = PREV.building_level@anti_nuclear_building}}
 			}
+			every_owned_state = {
+				set_variable = {num_of_nuke_anti = ROOT.num_of_nuke_anti}
+			}
 			set_variable = {num_of_nuke_rockets = 0}
 			every_owned_state = {
 				owner = {add_to_variable = {num_of_nuke_rockets = PREV.building_level@nuclear_rocket_site}}
+			}
+			every_owned_state = {
+				set_variable = {num_of_nuke_rockets = ROOT.num_of_nuke_rockets}
 			}
 
 			if = {
@@ -429,12 +442,9 @@ on_actions = {
 					add_ideas = wi_economic_faction_trade_influence
 				}
 			}
-		}
-	}
 
-	on_weekly = {
-		effect = {
-			
+#####################################################################################
+
 			if = {
 				limit = { has_stability > 0.83 }
 				if = {

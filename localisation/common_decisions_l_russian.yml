@@ -22,6 +22,7 @@
   close_guarantee:0 "Сговор с [From.GetNameDef]"
   nuclear_construction:0 "Ядерное вооружение"
   NukeConstruct:0 "Произвести ядерную бомбу"
+  UsedReactors:0 "Ускорение за количество активных реакторов"
 
   UCB_subj_integration:0 "Интеграция субъектов"
   UCB_subj_integration_desc:0 "Некоторые республики после откола от [UCB.GetNameDef] нуждаются в наведении порядка, подавлении сепаратизма и повторной интеграции их экономики и управления в ОсНБ"
