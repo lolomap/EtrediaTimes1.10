@@ -14,13 +14,13 @@ state={
 			infrastructure = 4
                         industrial_complex = 2
                         air_base = 1
-			9033 = {
+			7808 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = EGR
 		victory_points = {
-			9033 10
+			7808 10
 		}
 
 	}

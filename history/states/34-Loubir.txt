@@ -18,7 +18,7 @@ state={
 		add_core_of = KUR
 		add_core_of = NRA
 		victory_points = {
-			8379 1
+			7262 1
 		}
 
 	}

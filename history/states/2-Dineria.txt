@@ -16,7 +16,7 @@ state={
                         arms_factory = 2
                         dockyard = 1
                         air_base = 6
-			10583 = {
+			9051 = {
 				naval_base = 6
 			}
 
@@ -24,7 +24,7 @@ state={
 		add_core_of = UCB
 		add_core_of = DIN
 		victory_points = {
-			8735 20
+			9051 20
 		}
 
 	}

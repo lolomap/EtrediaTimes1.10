@@ -15,14 +15,14 @@ state={
 			infrastructure = 6
                         industrial_complex = 2
                         anti_nuclear_building = 1
-			8031 = {
+			6973 = {
 				naval_base = 8
 			}
 		}
 		add_core_of = UCB
 		add_core_of = ARS
 		victory_points = {
-			8031 10
+			6973 10
 		}
 
 	}

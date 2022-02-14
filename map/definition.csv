@@ -354,7 +354,7 @@
 353;163;247;169;land;false;unknown;1
 354;197;110;232;land;false;unknown;1
 355;139;243;120;land;false;unknown;1
-356;50;71;24;land;false;unknown;1
+356;50;71;24;lake;false;lakes;0
 357;217;215;230;land;false;unknown;1
 358;226;218;232;land;false;unknown;1
 359;200;196;189;land;false;unknown;1
@@ -816,7 +816,7 @@
 815;15;17;48;land;false;unknown;1
 816;36;21;35;land;false;unknown;1
 817;169;141;198;land;false;unknown;1
-818;67;10;37;land;false;unknown;1
+818;67;10;37;lake;false;lakes;0
 819;160;152;245;land;false;unknown;1
 820;171;214;253;land;false;unknown;1
 821;188;184;189;land;false;unknown;1
@@ -1426,7 +1426,7 @@
 1425;107;222;191;land;false;unknown;1
 1426;170;173;185;land;false;unknown;1
 1427;179;105;242;land;false;unknown;1
-1428;47;25;60;land;false;unknown;1
+1428;47;25;60;lake;false;lakes;0
 1429;187;182;181;land;false;unknown;1
 1430;185;200;226;land;false;unknown;1
 1431;230;191;120;land;false;unknown;1
@@ -4800,7 +4800,7 @@
 4799;190;205;151;land;false;unknown;1
 4800;230;186;123;land;false;unknown;1
 4801;163;212;167;land;false;unknown;1
-4802;153;129;235;land;false;unknown;1
+4802;153;129;235;lake;false;lakes;0
 4803;84;246;215;land;false;unknown;1
 4804;161;233;123;land;false;unknown;1
 4805;210;189;171;land;false;unknown;1
@@ -5661,7 +5661,7 @@
 5660;235;155;206;land;false;unknown;1
 5661;113;245;181;land;false;unknown;1
 5662;204;245;245;land;false;unknown;1
-5663;255;0;0;land;false;unknown;1
+5663;255;0;0;lake;false;lakes;0
 5664;193;174;178;land;false;unknown;1
 5665;250;173;181;land;false;unknown;1
 5666;193;210;227;land;false;unknown;1

@@ -10,14 +10,14 @@ state={
 		buildings = {
 			infrastructure = 7
                         dockyard = 2
-			6983 = {
+			6083 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = UCB
 		add_core_of = ORB
 		victory_points = {
-			6983 2
+			6083 2
 		}
 
 	}

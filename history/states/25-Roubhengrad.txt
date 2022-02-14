@@ -14,7 +14,7 @@ state={
 		add_core_of = UCB
                 add_core_of = TIR
 		victory_points = {
-			6802 5
+			5977 5
 		}
 
 	}

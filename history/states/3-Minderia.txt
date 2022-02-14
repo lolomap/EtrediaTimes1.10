@@ -14,14 +14,14 @@ state={
 		buildings = {
 			infrastructure = 7
                         industrial_complex = 2
-			9610 = {
+			8300 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = MIN
 		add_core_of = UCB
 		victory_points = {
-			9610 5
+			8300 5
 		}
 
 	}

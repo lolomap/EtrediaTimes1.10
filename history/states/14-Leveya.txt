@@ -18,7 +18,7 @@ state={
 		add_core_of = UCB
 		add_core_of = LEV
 		victory_points = {
-			7660 1
+			7706 1
 		}
 
 	}

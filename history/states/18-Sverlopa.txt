@@ -14,7 +14,7 @@ state={
 		buildings = {
 			infrastructure = 8
                         industrial_complex = 1
-			8992 = {
+			7829 = {
 				naval_base = 4
 			}
 		}
@@ -22,7 +22,7 @@ state={
 		add_core_of = SVE
 
 		victory_points = {
-			8992 5
+			7829 5
 		}
 
 	}

@@ -18,7 +18,7 @@ state={
 		add_core_of = UCB
 		add_core_of = BER
 		victory_points = {
-			8663 1
+			7523 1
 		}
 
 	}

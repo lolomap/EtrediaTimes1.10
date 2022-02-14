@@ -17,7 +17,7 @@ state={
 		add_core_of = UCB
 		add_core_of = RET
 		victory_points = {
-			7693 1
+			7738 1
 		}
 
 	}
