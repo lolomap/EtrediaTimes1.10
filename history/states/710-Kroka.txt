@@ -2,11 +2,6 @@
 state={
 	id=710
 	name="STATE_710"
-	manpower = 1400000
-	state_category = rural
-	
-	resources={
-	}
 
 	history={
 		owner = CSH
@@ -14,15 +9,21 @@ state={
 			infrastructure = 2
 			662 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = CSH
 		victory_points = {
-			662 1
+			662 1 
 		}
 
 	}
+
 	provinces={
-		367 394 407 442 443 474 487 502 527 533 
+		356 367 394 407 442 443 474 487 502 527 533 
 	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }
