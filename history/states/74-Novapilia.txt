@@ -13,14 +13,14 @@ state={
 		buildings = {
 			infrastructure = 4
                         dockyard = 4
-			9510 = {
+			8080 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = IID
 		add_core_of = BKH
 		victory_points = {
-			9510 5
+			8080 5
 		}
 
 	}

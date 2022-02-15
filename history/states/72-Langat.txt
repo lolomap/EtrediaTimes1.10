@@ -13,13 +13,13 @@ state={
 		buildings = {
 			infrastructure = 4
                         air_base = 3
-			5602 = {
+			4859 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = SBU
 		victory_points = {
-			5602 1
+			4859 1
 		}
 
 	}

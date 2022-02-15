@@ -10,14 +10,14 @@ state={
 		buildings = {
 			infrastructure = 7
                         industrial_complex = 3
-			4798 = {
+			4157 = {
 				naval_base = 7
 			}
 		}
 		add_core_of = FSC
 		add_core_of = ANR
 		victory_points = {
-			4798 20
+			4157 20
 		}
 
 	}

@@ -9,19 +9,19 @@ state={
 		owner = OIK
 		buildings = {
 			infrastructure = 2
-			12812 = {
+			10752 = {
 				naval_base = 2
 			}
-			12484 = {
+			11133 = {
 				naval_base = 1
 			}
-			12910 = {
+			11049 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = OIK
 		victory_points = {
-			12812 1
+			10752 1
 		}
 
 	}
