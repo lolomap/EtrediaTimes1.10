@@ -16,14 +16,14 @@ state={
                         industrial_complex = 2
                         arms_factory = 1
                         dockyard = 1
-			10207 = {
+			8809 = {
 				naval_base = 7
 			}
 		}
 		add_core_of = UCB
 		add_core_of = PER
 		victory_points = {
-			10207 15
+			8809 15
 		}
 
 	}

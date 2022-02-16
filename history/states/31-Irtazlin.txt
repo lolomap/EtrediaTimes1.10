@@ -14,14 +14,14 @@ state={
 			infrastructure = 5
 			industrial_complex = 2
                         air_base = 5
-			6733 = {
+			5854 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = UCB
 		add_core_of = ORB
 		victory_points = {
-			6912 20 
+			6051 20 
 		}
 
 	}

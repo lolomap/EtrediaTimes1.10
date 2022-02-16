@@ -18,7 +18,7 @@ state={
 		add_core_of = UCB
 		add_core_of = NIK
 		victory_points = {
-			8691 5
+			7605 5
 		}
 
 	}

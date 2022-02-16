@@ -1,0 +1,8 @@
+supply_area={
+	id=335
+	name="SUPPLYAREA_335"
+	value=0
+	states={
+		776 777 774 775 
+	}
+}

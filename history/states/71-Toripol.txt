@@ -13,14 +13,14 @@ state={
 		owner = UCB
 		buildings = {
 			infrastructure = 5
-			7545 = {
+			6331 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = UCB
 		add_core_of = ARS
 		victory_points = {
-			7545 5
+			6331 5
 		}
 
 	}

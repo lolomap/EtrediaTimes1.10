@@ -16,7 +16,7 @@ state={
 		add_core_of = FSC
 		add_core_of = KUL
 		victory_points = {
-			6823 1
+			5995 1
 		}
 
 	}

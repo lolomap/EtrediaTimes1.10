@@ -9,14 +9,14 @@ state={
 		owner = FSC
 		buildings = {
 			infrastructure = 7
-			4664 = {
+			3997 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = FSC
 		add_core_of = ANR
 		victory_points = {
-			4664 1
+			3997 1
 		}
 
 	}

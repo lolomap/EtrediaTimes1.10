@@ -20,7 +20,7 @@ state={
 		add_core_of = UCB
 		add_core_of = SRA
 		victory_points = {
-			7676 5
+			6672 5
 		}
 
 	}

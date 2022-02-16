@@ -15,17 +15,17 @@ state={
 			infrastructure = 7
                         industrial_complex = 3
                         air_base = 2
-			6147 = {
-				naval_base = 5
+			5124 = {
+				naval_base = 3
 			}
-			5799 = {
+			5337 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = FSC
 		add_core_of = ORB
 		victory_points = {
-			6319 10
+			5492 10
 		}
 
 	}

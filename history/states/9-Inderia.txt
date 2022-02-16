@@ -17,14 +17,14 @@ state={
                         arms_factory = 1
                         dockyard = 1
                         air_base = 10
-			8640 = {
+			7476 = {
 				naval_base = 8
 			}
 		}
 		add_core_of = UCB
 		add_core_of = IND
 		victory_points = {
-			8640 25
+			7476 25
 		}
 
 	}

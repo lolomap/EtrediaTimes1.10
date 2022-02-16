@@ -19,7 +19,7 @@ state={
 		add_core_of = UCB
 		add_core_of = NRA
 		victory_points = {
-			7961 5
+			6783 5
 		}
 
 	}

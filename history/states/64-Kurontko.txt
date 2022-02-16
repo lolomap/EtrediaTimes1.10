@@ -20,7 +20,7 @@ state={
 		add_core_of = FSC
 		add_core_of = ANR
 		victory_points = {
-			6463 10 
+			5559 10 
 		}
 
 	}

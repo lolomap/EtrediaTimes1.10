@@ -14,14 +14,14 @@ state={
 		buildings = {
 			infrastructure = 6
                         industrial_complex = 1
-			9347 = {
+			8118 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = UCB
 		add_core_of = AKV
 		victory_points = {
-			9347 5
+			8118 5
 		}
 
 	}

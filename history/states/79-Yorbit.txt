@@ -10,7 +10,7 @@ state={
 		add_core_of = IID
 		add_core_of = BKH
 		victory_points = {
-			8577 1 
+			7593 1 
 		}
 
 	}

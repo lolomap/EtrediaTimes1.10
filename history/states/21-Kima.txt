@@ -20,7 +20,7 @@ state={
 		add_core_of = UCB
 		add_core_of = KIM
 		victory_points = {
-			8383 1
+			7266 1
 		}
 
 	}

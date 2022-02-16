@@ -12,13 +12,13 @@ state={
 		owner = VRO
 		buildings = {
 			infrastructure = 4
-			5936 = {
+			5157 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = VRO
 		victory_points = {
-			5936 1
+			5157 1
 		}
 
 	}

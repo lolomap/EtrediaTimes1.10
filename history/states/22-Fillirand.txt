@@ -18,7 +18,7 @@ state={
 		add_core_of = UCB
 		add_core_of = FLR
 		victory_points = {
-			7428 5
+			6495 5
 		}
 
 	}

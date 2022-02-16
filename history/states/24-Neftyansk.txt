@@ -20,7 +20,7 @@ state={
 		add_core_of = UCB
 		add_core_of = KOL
 		victory_points = {
-			6550 1
+			5698 1
 		}
 
 	}

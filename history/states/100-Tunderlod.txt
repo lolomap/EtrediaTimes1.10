@@ -16,7 +16,7 @@ state={
 		add_core_of = IID
 		add_core_of = SKT
 		victory_points = {
-			11493 15 
+			9875 15 
 		}
 
 	}

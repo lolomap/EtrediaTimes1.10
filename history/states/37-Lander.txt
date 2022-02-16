@@ -15,16 +15,16 @@ state={
 			infrastructure = 8
             industrial_complex = 3
             dockyard = 2
-			11927 = {
+			12305 = {
 				naval_base = 7
 			}
-			11888 = {
+			12170 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = OIK
 		victory_points = {
-			14318 30
+			12169 30
 		}
 
 	}

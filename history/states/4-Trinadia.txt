@@ -15,14 +15,14 @@ state={
 			infrastructure = 7
                         industrial_complex = 1
                         dockyard = 2
-			9012 = {
+			7790 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = UCB
 		add_core_of = TRI
 		victory_points = {
-			9228 5
+			7975 5
 		}
 
 	}

@@ -14,7 +14,7 @@ state={
 		}
 		add_core_of = IID
 		victory_points = {
-			11117 10 
+			9402 10 
 		}
 
 	}

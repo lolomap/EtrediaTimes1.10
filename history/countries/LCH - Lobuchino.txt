@@ -1,4 +1,4 @@
-﻿capital = 17
+﻿capital = 22
 
 oob = "LCH_2014"
 
@@ -31,6 +31,7 @@ set_popularities = {
         fascism = 4
         communism = 44
 	neutrality = 0
+	monarchism = 0
 }
 
 #
@@ -57,9 +58,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nobody"
+	name = "King Pomidorqua I"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	picture = "portrait_LCH_monarchism_king.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -73,6 +74,17 @@ create_country_leader = {
 	picture = "portrait_bydlo_yaroslav_obryga.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "King Pomidorqua I"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_LCH_monarchism_king.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 		#
 	}
