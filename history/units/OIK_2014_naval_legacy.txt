@@ -1,0 +1,54 @@
+units = {
+	fleet = {
+		name = "Island Empire Main Fleet"			
+		naval_base = 14374
+		task_force = {				
+			name = "Emperor Operative"				
+			location = 14374
+			ship = { name = "Ferdenal" definition = battleship equipment = { battleship_1 = { amount = 1 owner = OIK } } }	
+			ship = { name = "HC Landery" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "HC Chanskaly" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = OIK } } }
+            ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "LC Erms Type 02" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = OIK } } }
+            ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = OIK } } }
+            ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+			ship = { name = "OIK Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = OIK } } }
+        }
+	}
+}

@@ -1,0 +1,197 @@
+division_template = {
+	name = "Mechanized Division"
+
+	division_names_group = BLJ_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Baljury Militia"
+
+	division_names_group = BLJ_inf_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Tank-Division"
+
+	division_names_group = BLJ_arm_01
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Dir motorized"
+
+	division_names_group = BLJ_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "MNT division"		
+	division_names_group = BLJ_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }	
+		mountaineers = { x = 1 y = 1 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		artillery = { x = 0 y = 1 } 	
+	}
+}
+
+units = {
+	division = {
+		name = "MNT division"
+		location = 12136
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+    }
+
+	division = {
+		name = "MNT division"
+		location = 12136
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12136
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+}

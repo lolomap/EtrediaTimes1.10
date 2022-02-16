@@ -1,0 +1,172 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = ATI_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Main Tank-Division"
+
+	division_names_group = ATI_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mech. Rocket Brigade"
+
+	division_names_group = ATI_arm_02
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 2315
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Main Tank-Division"
+		location = 2315
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 2315
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 2315
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+}

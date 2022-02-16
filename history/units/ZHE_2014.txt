@@ -1,0 +1,216 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = ZHE_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Main Tank-Division"
+
+	division_names_group = ZHE_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+        modern_armor = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "motorized"
+
+	division_names_group = ZHE_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 3406 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "motorized"
+		location = 3406 
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 3406 
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.3
+
+        }
+}

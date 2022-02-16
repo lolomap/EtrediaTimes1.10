@@ -1,0 +1,97 @@
+units = {
+	fleet = {
+		name = "Moadera Fleet"			
+		naval_base = 1874
+		task_force = {				
+			name = "Main Moadera Unity"				
+			location = 1874
+			ship = { name = "Mardera" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MOA } } }	
+			ship = { name = "HC-1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "HC-1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOA } } }	
+			ship = { name = "HC-1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOA } } }	
+            ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+            ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "LC-1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "MDT-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MOA } } }
+		}					
+		task_force = {					
+			name = "First Submarine Unity"				
+			location = 1874
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
+		}
+	}
+}

@@ -1,0 +1,116 @@
+units = {
+	fleet = {
+		name = "UCB South Fleet"			
+		naval_base = 8031
+		task_force = {				
+			name = "Linkor Operative"				
+			location = 8031
+			ship = { name = "Vinington" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }	
+			ship = { name = "Irtazlin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Toripol" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "HC Vinington" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "HC Neirst Berst" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Donel The Admiral" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Harbany" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Marech" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+            ship = { name = "LC Dinerian Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 05 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Dinerian Type 07 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Inderian Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Inderian Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+            ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCB Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+		}
+		task_force = {	
+			name = "Submarine Unity"				
+			location = 8031
+            ship = { name = "SUCB Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Dryer 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Dryer 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Dryer 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "SUCB Karpah 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
+        }
+	}
+	fleet = {
+		name = "UCB North Fleet"			
+		naval_base = 10207
+		task_force = {				
+			name = "Linkor Operative"				
+			location = 10207
+			ship = { name = "Perdonburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }	
+			ship = { name = "Inderia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "HC Inderia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "HC Neirst Berst II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Donel The Admiral II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Dinery" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Zerandy" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Akvary I" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Akvary II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "Akvary III" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }
+            ship = { name = "LC Zerandy Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Zerandy Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Zerandy Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Zerandy Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Akvary Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Akvary Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "LC Akvary Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = UCB } } }
+            ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+			ship = { name = "UCBD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = UCB } } }
+		}
+	}
+}

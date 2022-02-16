@@ -1,0 +1,83 @@
+division_template = {
+	name = "Du-fur Jaghoza"
+
+	division_names_group = BHI_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized Du-fur Jaghoza"
+
+	division_names_group = BHI_arm_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Du-Fur-Iniolo"
+
+	division_names_group = BHI_arm_02
+
+	regiments = {
+		jeep = { x = 0 y = 0 }
+		jeep = { x = 0 y = 1 }
+		jeep = { x = 1 y = 0 }
+		jeep = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Du-fur Jaghoza"
+		location = 6300
+		division_template = "Du-fur Jaghoza"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+
+	division = {
+		name = "Motorized Du-fur Jaghoza"
+		location = 6300
+		division_template = "Motorized Du-fur Jaghoza"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+
+	division = {
+		name = "Du-Fur-Iniolo"
+		location = 6300
+		division_template = "Du-Fur-Iniolo"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Du-Fur-Iniolo"
+		location = 6300
+		division_template = "Du-Fur-Iniolo"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+}

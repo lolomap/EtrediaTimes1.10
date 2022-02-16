@@ -1,0 +1,135 @@
+units = {
+	fleet = {
+		name = "Kongelige YANske Marine"			
+		naval_base = 6904 # Kristiansand
+		task_force = {				
+			name = "Main Ecerora Unity"				
+			location = 6904
+			ship = { name = "Erceran" definition = battleship equipment = { battleship_1 = { amount = 1 owner = YAN } } }	
+			ship = { name = "Kaibara" definition = battleship equipment = { battleship_1 = { amount = 1 owner = YAN } } }	
+			ship = { name = "Ecerora" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }				
+			ship = { name = "Udransk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "Ragabay" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "Terse" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "Ontrilatini" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "Garbes Marine" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "Gabe" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+            ship = { name = "LC_New_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+            ship = { name = "LC_Type 1 22" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+            ship = { name = "LC_Type 1 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 49" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 52" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 61" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 73" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 84" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 90" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 01" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 02" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 03" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A4" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B4" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B5" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A5" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A6" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A7" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B6" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B7" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A8" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A9" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B8" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B9" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A11" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A12" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A14" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A15" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A17" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A18" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS A19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "HNoMS B19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+		}					
+		task_force = {					
+			name = "First Submarine Unity"				
+			location = 6904
+			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Troll" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Gerald" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Ogarasht" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Vodar" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Kas" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }								
+		}
+	}
+	fleet = {
+		name = "Drerora Fleet"			
+		naval_base = 10493
+		task_force = {				
+			name = "Second Operative"				
+			location = 10493
+			ship = { name = "Drerora" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 44" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 110" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 012" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 092" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "LC_Type 1 099" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "YAND Type 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Kacha" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Eriron" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Koiber" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Karacar" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Novijas" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Poper" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Validol" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+			ship = { name = "SYAN Viagra" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
+		}
+	}
+}

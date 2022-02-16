@@ -1,0 +1,35 @@
+units = {
+	fleet = {
+		name = "TRB Fleet"			
+		naval_base = 5753
+		task_force = {				
+			name = "Linkor OPS"				
+			location = 5753
+			ship = { name = "Horezhin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TRB } } }
+            ship = { name = "Light Cruiser Enterba Type 01 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "Light Cruiser Enterba Type 01 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "Light Cruiser Enterba Type 01 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRB } } }
+            ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "TAFs Unity F1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TRB } } }
+            ship = { name = "STRB Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Dryer 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Dryer 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Dryer 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+			ship = { name = "STRB Karpah 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TRB } } }
+        }
+    }
+}	

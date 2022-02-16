@@ -1,0 +1,37 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = IRI_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 3065
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.4
+
+    }
+
+	division = {
+		name = "Infantry Division"
+		location = 3065
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.4
+
+    }
+}

@@ -1,0 +1,70 @@
+units = {
+	fleet = {
+		name = "SBU Fleet"			
+		naval_base = 4900
+		task_force = {				
+			name = "Linkor OPS"				
+			location = 4900
+			ship = { name = "Kalicih The Great" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }	
+			ship = { name = "Siburska" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Elska I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Elska II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Maiskop" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Nailaska The Admiral" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Ur-Dalganec" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "Barichech" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SBU } } }
+            ship = { name = "LC Kzhechen Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 05 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 07 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Sbruska Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Sbruska Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Sbruska Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Sbruska Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 08 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 09 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "LC Kzhechen Type 10 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SBU } } }
+            ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "HNoMS B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SBU } } }
+            ship = { name = "SSBU Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Dryer 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Dryer 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Dryer 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+			ship = { name = "SSBU Karpah 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SBU } } }
+        }
+    }
+}	

@@ -1,0 +1,118 @@
+units = {
+	fleet = {
+		name = "Naisparate Baensli Marines"			
+		naval_base = 14260
+		task_force = {				
+			name = "Baensli Fleet"				
+			location = 14260
+			ship = { name = "Fshezen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Baensli" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Eiklindstind" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Bardakly" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Ugar" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Postanov" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Vanzad" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser New Type" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Heavy Cruiser Old Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAE } } }		
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "LC_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAE } } }		
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = BAE } } }
+            ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+            ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "Destroyer Old Type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAE } } }
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }
+			ship = { name = "BAE Submarine 2009" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2011" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2011" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2013" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2013" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2013" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2013" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2013" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "BAE Submarine 2008" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAE } } }	
+			ship = { name = "EIK Submarine 1978" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BAE } } }	
+		}
+	}
+}

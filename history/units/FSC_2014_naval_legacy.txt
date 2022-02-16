@@ -1,0 +1,92 @@
+units = {
+	fleet = {
+		name = "FSC Main Fleet"			
+		naval_base = 4798
+		task_force = {				
+			name = "Main Operative"				
+			location = 4798
+			ship = { name = "Tornovar" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FSC } } }	
+			ship = { name = "HC Sargon" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "HC Pausffen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "Georg II" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
+            ship = { name = "LC Ortostan Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "LC Ortostan Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "LC Ortostan Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "LC Ortostan Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+            ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 4" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 3" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSC Destr 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+		}
+		task_force = {	
+			name = "Submarine Unity"				
+			location = 4798
+            ship = { name = "SFSC Suko 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Urdas 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+        }
+	}
+	fleet = {
+		name = "FSC Kulishtia Fleet"			
+		naval_base = 8313
+		task_force = {				
+			name = "Linkor Operative"				
+			location = 8313
+			ship = { name = "HC Kulishtia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
+            ship = { name = "LC Ortostan Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "LC Ortostan Type 07 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "LC Ortostan Type 08 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
+            ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A2" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD A1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD B1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "FSCD B1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FSC } } }
+		}
+		task_force = {	
+			name = "Submarine Unity"				
+			location = 8313
+            ship = { name = "SFSC Suko 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+			ship = { name = "SFSC Suko 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
+        }
+	}
+}

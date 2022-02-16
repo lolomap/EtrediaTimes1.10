@@ -1,0 +1,353 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = SFL_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+
+division_template = {
+	name = "Main Tank-Division"
+
+	division_names_group = SFL_arm_01
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+        modern_armor = { x = 2 y = 2 }
+        modern_armor = { x = 2 y = 3 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "SFL motorized"
+
+	division_names_group = SFL_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+                motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mech. Rocket Brigade"
+
+	division_names_group = SFL_arm_03
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+		motorized_rocket_brigade = { x = 0 y = 2 }
+		motorized_rocket_brigade = { x = 0 y = 3 }
+		motorized_rocket_brigade = { x = 0 y = 4 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "MNT division"		
+	division_names_group = SFL_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		 	
+	}
+}
+
+units = {
+	#Infantry Division
+	division = {
+		name = "Main Tank-Division"
+		location = 4782
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Infantry Division"
+		location = 4782
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Tank-Division"
+		location = 4782
+		division_template = "Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Tank-Division"
+		location = 4782
+		division_template = "Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "Tank-Division"
+		location = 4782
+		division_template = "Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+	#Infantry Division
+	division = {
+		name = "Tank-Division"
+		location = 4782
+		division_template = "Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "MNT division"
+		location = 4782
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "MNT division"
+		location = 4782
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "MNT division"
+		location = 4782
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "SFL motorized"
+		location = 4782
+		division_template = "SFL motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+	#Infantry Division
+	division = {
+		name = "SFL motorized"
+		location = 4782
+		division_template = "SFL motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "SFL motorized"
+		location = 4782
+		division_template = "SFL motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "SFL motorized"
+		location = 4782
+		division_template = "SFL motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	#Infantry Division
+	division = {
+		name = "SFL motorized"
+		location = 4782
+		division_template = "SFL motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 4782
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 4782
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+}

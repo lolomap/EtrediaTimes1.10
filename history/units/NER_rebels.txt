@@ -1,0 +1,129 @@
+division_template = {
+	name = "Infantry"
+
+	division_names_group = NER_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "mechanized"
+
+	division_names_group = NER_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+                mechanized = { x = 1 y = 0 }
+                mechanized = { x = 1 y = 1 }
+                mechanized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4653
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 4653
+		division_template = "mechanized"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 4653
+		division_template = "mechanized"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+}

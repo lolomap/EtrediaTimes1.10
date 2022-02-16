@@ -1,0 +1,522 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = SBU_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Main Tank-Division"
+
+	division_names_group = SBU_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+        modern_armor = { x = 1 y = 2 }
+        modern_armor = { x = 1 y = 3 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Mech. Rocket Brigade"
+
+	division_names_group = SBU_arm_02
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+		motorized_rocket_brigade = { x = 0 y = 2 }
+		motorized_rocket_brigade = { x = 0 y = 3 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Tank-Division"
+
+	division_names_group = SBU_arm_03
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+                light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		mechanized = { x = 3 y = 0 }
+                mechanized = { x = 3 y = 1 }
+                mechanized = { x = 3 y = 2 }
+                mechanized = { x = 3 y = 3 }
+                motorized = { x = 4 y = 0 }
+                motorized = { x = 4 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "SBU motorized"
+
+	division_names_group = SBU_arm_04
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+                motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+                motorized = { x = 2 y = 0 }
+                motorized = { x = 2 y = 1 }
+                motorized = { x = 2 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "SBU Mechanized"
+
+	division_names_group = SBU_arm_05
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "MNT division"		
+	division_names_group = SBU_mnt_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }	
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }	
+	}
+	support = { 	
+	}
+}
+
+units = {
+	division = {
+		name = "Main Tank-Division"
+		location = 5076
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 5076
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 5076
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 5076
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 5076
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "SBU motorized"
+		location = 5076
+		division_template = "SBU motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 5076
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 5076
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 5076
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 5076
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+
+	division = {
+		name = "SBU Mechanized"
+		location = 5076
+		division_template = "SBU Mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "SBU Mechanized"
+		location = 5076
+		division_template = "SBU Mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+
+	division = {
+		name = "SBU Mechanized"
+		location = 5076
+		division_template = "SBU Mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+
+	division = {
+		name = "SBU Mechanized"
+		location = 5076
+		division_template = "SBU Mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+		
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 8640
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+
+    }
+
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 8640
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 8640
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+		
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 8640
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Mech. Rocket Brigade"
+		location = 8640
+		division_template = "Mech. Rocket Brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+}

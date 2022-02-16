@@ -1,0 +1,83 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = LOD_inf_01
+
+	regiments = {
+	infantry = { x = 0 y = 0 }
+	infantry = { x = 0 y = 1 }
+	infantry = { x = 0 y = 2 }
+	infantry = { x = 1 y = 0 }
+	infantry = { x = 1 y = 1 }
+	infantry = { x = 1 y = 2 }
+	infantry = { x = 2 y = 0 }
+	infantry = { x = 2 y = 1 }
+	infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mot. Rifl. Brigade"
+
+	division_names_group = LOD_arm_01
+
+	regiments = {
+        mechanized = { x = 0 y = 0 }
+	mechanized = { x = 0 y = 1 }
+	mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Medium Tank-Division"
+
+	division_names_group = KLU_arm_02
+
+	regiments = {
+		medium_armor  = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+                medium_armor = { x = 1 y = 0 }
+                medium_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+                mechanized = { x = 2 y = 1 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 3704
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Mot. Rifl. Brigade"
+		location = 3704
+		division_template = "Mot. Rifl. Brigade"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Mot. Rifl. Brigade"
+		location = 3704
+		division_template = "Mot. Rifl. Brigade"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+}

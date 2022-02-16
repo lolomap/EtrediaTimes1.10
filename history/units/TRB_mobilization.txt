@@ -1,0 +1,100 @@
+division_template = {
+	name = "Trbska Gvarda"
+
+	division_names_group = TRB_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		jeep = { x = 1 y = 0 }
+		jeep = { x = 1 y = 1 }
+		jeep = { x = 2 y = 0 }
+		jeep = { x = 2 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Trbska Gvarda"
+		location = 8364
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+
+	division = {
+		name = "Trbska Gvarda"
+		location = 8364
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 7049
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 6038
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 6038
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 6038
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 6583
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 8366
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 8155
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+	
+	division = {
+		name = "Trbska Gvarda"
+		location = 4856
+		division_template = "Trbska Gvarda"
+		start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+    }
+}
