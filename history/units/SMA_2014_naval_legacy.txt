@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "Macar Mariore"			
+		naval_base = 3272
+		task_force = {				
+			name = "Main Ecerora Unity"				
+			location = 3272
+            ship = { name = "LC_Macarian_Type 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "HNoMS MAR-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "HNoMS MAR-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "HNoMS MAR-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "HNoMS MAR-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "HNoMS MAR-1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SMA } } }
+			ship = { name = "OCEAN FFR" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SMA } } }
+		}					
+	}
+}

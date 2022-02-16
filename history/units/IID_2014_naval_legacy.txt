@@ -1,0 +1,91 @@
+units = {
+	fleet = {
+		name = "IID First Fleet"			
+		naval_base = 12726
+		task_force = {				
+			name = "First Fleet"				
+			location = 12726
+			ship = { name = "DUX" definition = battleship equipment = { battleship_1 = { amount = 1 owner = IID } } }
+			ship = { name = "HC Praeter" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "HC Ksiplovkur" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+		}
+	}
+	fleet = {
+		name = "IID Second Fleet"			
+		naval_base = 9510
+		task_force = {				
+			name = "Second Fleet"				
+			location = 9510
+			ship = { name = "HC Mayanest" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "LC DUX type" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "IID SMOL type" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+			ship = { name = "DUX SUBMARINE" definition = submarine equipment = { submarine_1 = { amount = 1 owner = IID } } }
+		}
+	}
+}

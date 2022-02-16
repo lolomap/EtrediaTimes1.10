@@ -1,0 +1,178 @@
+division_template = {
+	name = "Infantry Militia"
+
+	division_names_group = SOL_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Reguba Division"
+
+	division_names_group = SOL_inf_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized Division"
+
+	division_names_group = SOL_arm_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Militia"
+		location = 13493
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 13306
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 12925
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 12777
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+	division = {
+		name = "Infantry Militia"
+		location = 12264
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 11829
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 11746
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Reguba Division"
+		location = 11746
+		division_template = "Reguba Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Reguba Division"
+		location = 12777
+		division_template = "Reguba Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 10527
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.3
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 10630
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.4
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 9508
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.4
+
+        }
+
+	division = {
+		name = "Infantry Militia"
+		location = 9687
+		division_template = "Infantry Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.3
+
+        }
+
+}

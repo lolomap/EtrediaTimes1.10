@@ -89,7 +89,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 300 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_incident_btn_loc
 				}
 
 				buttonType = {
@@ -99,7 +99,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_aggitation_btn_loc
 				}
 			}
 
@@ -152,7 +152,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 300 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_incident_btn_loc
 				}
 
 				buttonType = {
@@ -162,7 +162,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_aggitation_btn_loc
 				}
 			}
 		}
@@ -213,7 +213,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 300 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_incident_btn_loc
 				}
 
 				buttonType = {
@@ -223,7 +223,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_aggitation_btn_loc
 				}
 			}
 		}
@@ -274,7 +274,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 300 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_incident_btn_loc
 				}
 
 				buttonType = {
@@ -284,7 +284,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_aggitation_btn_loc
 				}
 			}
 		}
@@ -335,7 +335,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 300 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_incident_btn_loc
 				}
 
 				buttonType = {
@@ -345,7 +345,7 @@ guiTypes = {
 					buttonFont = hoi_18mbs
 					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
-
+					pdx_tooltip = party_aggitation_btn_loc
 				}
 			}
 		}

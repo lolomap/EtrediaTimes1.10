@@ -1,0 +1,116 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = KVU_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized Division"
+
+	division_names_group = KVU_arm_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mechanized Division"
+
+	division_names_group = KVU_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		jeep = { x = 1 y = 0 }
+		jeep = { x = 1 y = 1 }
+		jeep = { x = 2 y = 0 }
+		jeep = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 10122
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 10122
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 10122
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+    }
+	
+	division = {
+		name = "Infantry Division"
+		location = 10122
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+    }
+	
+	division = {
+		name = "Mechanized Division"
+		location = 10122
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Mechanized Division"
+		location = 10122
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "Motorized Division"
+		location = 10122
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+}

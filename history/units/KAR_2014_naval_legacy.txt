@@ -1,0 +1,53 @@
+units = {
+	fleet = {
+		name = "Kartilian Fleet"			
+		naval_base = 13313
+		task_force = {				
+			name = "Main Operative"				
+			location = 13313
+			ship = { name = "Battleshile" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KAR } } }	
+			ship = { name = "HC 1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "HC 1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KAR } } }
+            ship = { name = "LC 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "LC 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "LC 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "LC 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "LC 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KAR } } }
+            ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+			ship = { name = "KAR Destroyer 1" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KAR } } }
+		}
+		task_force = {	
+			name = "Submarine Unity"				
+			location = 13313
+            ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+			ship = { name = "SKAR Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KAR } } }
+        }
+	}
+}

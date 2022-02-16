@@ -1,0 +1,59 @@
+division_template = {
+	name = "Jihad Auto"
+
+	division_names_group = EMF_inf_01
+
+	regiments = {
+		jeep = { x = 0 y = 0 }
+		jeep = { x = 0 y = 1 }
+		jeep = { x = 1 y = 0 }
+		jeep = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Jihad Auto"
+		location = 5539
+		division_template = "Jihad Auto"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Jihad Auto"
+		location = 5539
+		division_template = "Jihad Auto"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "Jihad Auto"
+		location = 5539
+		division_template = "Jihad Auto"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+
+	division = {
+		name = "Jihad Auto"
+		location = 4581
+		division_template = "Jihad Auto"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+
+	division = {
+		name = "Jihad Auto"
+		location = 5076
+		division_template = "Jihad Auto"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+}

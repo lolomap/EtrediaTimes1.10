@@ -1,0 +1,58 @@
+units = {
+	fleet = {
+		name = "Orbfleet"
+		task_force = {
+			name = "Orbfleet"
+			ship = {
+				name = ""
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = ORB
+                    }
+				}
+			}
+			ship = {
+				name = ""
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = ORB
+                    }
+				}
+			}
+			ship = {
+				name = ""
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = ORB
+                    }
+				}
+			}
+			ship = {
+				name = ""
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = ORB
+                    }
+				}
+			}
+			ship = {
+				name = ""
+				definition = battleship
+				equipment = {
+					ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = ORB
+                    }
+				}
+			}
+		}
+	}
+}

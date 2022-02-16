@@ -1,0 +1,290 @@
+division_template = {
+	name = "Infantry"
+
+	division_names_group = ANR_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Tank-Division"
+
+	division_names_group = ANR_arm_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+                medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		mechanized = { x = 2 y = 0 }
+                mechanized = { x = 2 y = 1 }
+                mechanized = { x = 2 y = 2 }
+                mechanized = { x = 2 y = 3 }
+                mechanized = { x = 3 y = 0 }
+                mechanized = { x = 3 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "mechanized"
+
+	division_names_group = ANR_arm_02
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+                mechanized = { x = 1 y = 0 }
+                mechanized = { x = 1 y = 1 }
+                mechanized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry"
+		location = 4928
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4928
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5070
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5203
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5261
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5286
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+
+	division = {
+		name = "Infantry"
+		location = 5286
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5342
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 5242
+		division_template = "mechanized"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5343
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4953
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 4798
+		division_template = "mechanized"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 4664
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5181
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 5181
+		division_template = "Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 4798
+		division_template = "mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+
+	division = {
+		name = "mechanized"
+		location = 4798
+		division_template = "mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+
+	division = {
+		name = "mechanized"
+		location = 4798
+		division_template = "mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 6075
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 6109
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 5820
+		division_template = "mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "mechanized"
+		location = 6280
+		division_template = "mechanized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.3
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 6281
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 6612
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.5
+
+        }
+
+	division = {
+		name = "Infantry"
+		location = 5965
+		division_template = "Infantry"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.5
+
+        }
+}

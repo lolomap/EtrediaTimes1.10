@@ -1,0 +1,110 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = SHE_inf_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mechanized Division"
+
+	division_names_group = SHE_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+	}
+	support = {
+        recon = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 13511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 13511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 13511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 13511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 13511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Mechanized Division"
+		location = 13511
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Mechanized Division"
+		location = 13511
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Mechanized Division"
+		location = 13511
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+
+        }
+}

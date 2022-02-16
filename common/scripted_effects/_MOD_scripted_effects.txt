@@ -1,0 +1,63 @@
+people_discontent_dem_power = {
+	add_to_variable = {fas_opposition_factor = 1}
+	add_to_variable = {neu_opposition_factor = 1}
+	add_to_variable = {com_opposition_factor = 1}
+	add_to_variable = {mon_opposition_factor = 1}
+}
+people_discontent_fas_power = {
+	add_to_variable = {dem_opposition_factor = 1}
+	add_to_variable = {neu_opposition_factor = 1}
+	add_to_variable = {com_opposition_factor = 1}
+	add_to_variable = {mon_opposition_factor = 1}
+}
+people_discontent_neu_power = {
+	add_to_variable = {fas_opposition_factor = 1}
+	add_to_variable = {dem_opposition_factor = 1}
+	add_to_variable = {com_opposition_factor = 1}
+	add_to_variable = {mon_opposition_factor = 1}
+}
+people_discontent_com_power = {
+	add_to_variable = {fas_opposition_factor = 1}
+	add_to_variable = {neu_opposition_factor = 1}
+	add_to_variable = {dem_opposition_factor = 1}
+	add_to_variable = {mon_opposition_factor = 1}
+}
+people_discontent_mon_power = {
+	add_to_variable = {fas_opposition_factor = 1}
+	add_to_variable = {neu_opposition_factor = 1}
+	add_to_variable = {com_opposition_factor = 1}
+	add_to_variable = {dem_opposition_factor = 1}
+}
+
+
+
+people_discontent_dem_power_end = {
+	add_to_variable = {fas_opposition_factor = -1}
+	add_to_variable = {neu_opposition_factor = -1}
+	add_to_variable = {com_opposition_factor = -1}
+	add_to_variable = {mon_opposition_factor = -1}
+}
+people_discontent_fas_power_end = {
+	add_to_variable = {dem_opposition_factor = -1}
+	add_to_variable = {neu_opposition_factor = -1}
+	add_to_variable = {com_opposition_factor = -1}
+	add_to_variable = {mon_opposition_factor = -1}
+}
+people_discontent_neu_power_end = {
+	add_to_variable = {fas_opposition_factor = -1}
+	add_to_variable = {dem_opposition_factor = -1}
+	add_to_variable = {com_opposition_factor = -1}
+	add_to_variable = {mon_opposition_factor = -1}
+}
+people_discontent_com_power_end = {
+	add_to_variable = {fas_opposition_factor = -1}
+	add_to_variable = {neu_opposition_factor = -1}
+	add_to_variable = {dem_opposition_factor = -1}
+	add_to_variable = {mon_opposition_factor = -1}
+}
+people_discontent_mon_power_end = {
+	add_to_variable = {fas_opposition_factor = -1}
+	add_to_variable = {neu_opposition_factor = -1}
+	add_to_variable = {com_opposition_factor = -1}
+	add_to_variable = {dem_opposition_factor = -1}
+}

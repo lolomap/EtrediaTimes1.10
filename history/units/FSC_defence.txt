@@ -1,0 +1,155 @@
+division_template = {
+	name = "militia"
+
+	division_names_group = FSC_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "militia"
+		location = 5420
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5641
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5569
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5783
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5586
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5946
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5964
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 6007
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 6057
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5420
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 6125
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 6175
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 6219
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5803
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "militia"
+		location = 5644
+		division_template = "militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 1
+
+        }
+}

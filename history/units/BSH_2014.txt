@@ -1,0 +1,138 @@
+division_template = {
+	name = "Royal guard"
+
+	division_names_group = BSH_inf_01
+
+	regiments = {
+	infantry = { x = 0 y = 0 }
+	infantry = { x = 0 y = 1 }
+	infantry = { x = 0 y = 2 }
+	infantry = { x = 1 y = 0 }
+	infantry = { x = 1 y = 1 }
+	infantry = { x = 1 y = 2 }
+	infantry = { x = 2 y = 0 }
+	infantry = { x = 2 y = 1 }
+	infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "light Armor Division"
+
+	division_names_group = BSH_arm_01
+
+	regiments = {
+	light_armor = { x = 0 y = 0 }
+	light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+	light_armor = { x = 0 y = 3 }
+	motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 3 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized Division"
+
+	division_names_group = BSH_arm_02
+
+	regiments = {
+	motorized = { x = 0 y = 0 }
+	motorized = { x = 0 y = 1 }
+	motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mot. Rifl. Brigade"
+
+	division_names_group = BSH_arm_03
+
+	regiments = {
+        mechanized = { x = 0 y = 0 }
+	mechanized = { x = 0 y = 1 }
+	mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Royal guard"
+		location = 12363
+		division_template = "Royal guard"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Royal guard"
+		location = 12634
+		division_template = "Royal guard"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Royal guard"
+		location = 13050
+		division_template = "Royal guard"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Royal guard"
+		location = 13620
+		division_template = "Royal guard"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Royal guard"
+		location = 11545
+		division_template = "Royal guard"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "light Armor Division"
+		location = 12098
+		division_template = "light Armor Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Motorized Division"
+		location = 12098
+		division_template = "Motorized Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+}

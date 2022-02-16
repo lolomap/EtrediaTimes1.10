@@ -1,0 +1,40 @@
+units = {
+	fleet = {
+		name = "EIklind Nord Fleet"			
+		naval_base = 17186
+		task_force = {				
+			name = "Eklind Fleet"				
+			location = 17186
+			ship = { name = "Heavy Cruiser Empire Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = EIK } } }		
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }
+            ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "Destroyer New Type" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+			ship = { name = "EIK Submarine 2012" definition = submarine equipment = { submarine_2 = { amount = 1 owner = EIK } } }
+		}
+	}
+}

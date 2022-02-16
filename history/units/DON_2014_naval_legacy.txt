@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Emperor's Fleet"			
+		naval_base = 2939
+		task_force = {				
+			name = "Main Emperor's Fleet"				
+			location = 2939
+			ship = { name = "Doronas I" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+			ship = { name = "Donat Empire" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+			ship = { name = "Sburski" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+			ship = { name = "Alski" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
+			ship = { name = "Admiral Tisay" definition = submarine equipment = { submarine_1 = { amount = 1 owner = DON } } }
+		}					
+	}
+}

@@ -1,0 +1,102 @@
+division_template = {
+	name = "INF RGY 2"
+
+	division_names_group = RGY_inf_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "MNT division"		
+	division_names_group = RGY_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 			
+	}
+}
+
+units = {
+	#Infantry Division
+	division = {
+		name = "INF RGY 2"
+		location = 8749
+		division_template = "INF RGY 2"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "INF RGY 2"
+		location = 8749
+		division_template = "INF RGY 2"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 8749
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 8749
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 8749
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 8749
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "MNT division"
+		location = 8749
+		division_template = "MNT division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+}

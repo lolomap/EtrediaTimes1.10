@@ -1,0 +1,60 @@
+division_template = {
+	name = "Sverlops Heavy tank"
+
+	division_names_group = SVE_arm_01
+
+	regiments = {
+		motorized_rocket_brigade = { x = 0 y = 0 }
+		motorized_rocket_brigade = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		mechanized = { x = 1 y = 5 }
+		modern_armor = { x = 2 y = 0 }
+		modern_armor = { x = 2 y = 1 }
+        modern_armor = { x = 2 y = 2 }
+        modern_armor = { x = 2 y = 3 }
+		modern_armor = { x = 3 y = 0 }
+		modern_armor = { x = 3 y = 1 }
+        modern_armor = { x = 3 y = 2 }
+        modern_armor = { x = 3 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+	
+		
+units = {
+	#Infantry Division
+	division = {
+		name = "Sverlops Heavy tank"
+		location = 7829
+		division_template = "Sverlops Heavy tank"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Sverlops Heavy tank"
+		location = 7829
+		division_template = "Sverlops Heavy tank"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Sverlops Heavy tank"
+		location = 7829
+		division_template = "Sverlops Heavy tank"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+}

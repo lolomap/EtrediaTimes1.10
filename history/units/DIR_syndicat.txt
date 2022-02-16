@@ -1,0 +1,232 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = SDI_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Syndicat militia"
+
+	division_names_group = SDI_inf_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Tank-Division"
+
+	division_names_group = SDI_arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+                motorized = { x = 1 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Syndicat motorized"
+
+	division_names_group = SDI_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+                motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 12601
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 12717
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 12509
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 12510
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 11928
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12601
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12420
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12342
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12156
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11928
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11758
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11927
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11811
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11659
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 11373
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12455
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Syndicat militia"
+		location = 12357
+		division_template = "Syndicat militia"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.6
+
+        }
+
+}

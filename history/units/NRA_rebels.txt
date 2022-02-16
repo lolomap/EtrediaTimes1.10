@@ -1,0 +1,89 @@
+division_template = {
+	name = "Peoples Brigade"
+
+	division_names_group = NRA_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "motorized"
+
+	division_names_group = NRA_arm_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+                motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	#Infantry Division
+	division = {
+		name = "Peoples Brigade"
+		location = 7557
+		division_template = "Peoples Brigade"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+	division = {
+		name = "Peoples Brigade"
+		location = 7557
+		division_template = "Peoples Brigade"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+	division = {
+		name = "Peoples Brigade"
+		location = 7557
+		division_template = "Peoples Brigade"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+	division = {
+		name = "Peoples Brigade"
+		location = 7557
+		division_template = "Peoples Brigade"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+	division = {
+		name = "Peoples Brigade"
+		location = 7557
+		division_template = "Peoples Brigade"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+	division = {
+		name = "motorized"
+		location = 7557
+		division_template = "motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+}

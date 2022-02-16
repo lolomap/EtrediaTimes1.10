@@ -1,0 +1,57 @@
+units = {
+	fleet = {
+		name = "Chespen Main Fleet"			
+		naval_base = 5866
+		task_force = {				
+			name = "Main Operative"				
+			location = 5866
+			ship = { name = "HC Uruira 1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "HC Uruira 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "HC Uruira 3" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "HC Uruira 4" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "HC Uruira 5" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHE } } }
+            ship = { name = "LC Buhido Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 05 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "LC Buhido Type 07 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "CHE Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CHE } } }
+            ship = { name = "SCHE 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "SCHE 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "SCHE 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHE } } }
+			ship = { name = "SCHE 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CHE } } }
+	    }
+    }
+}

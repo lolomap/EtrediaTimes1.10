@@ -14,6 +14,11 @@
  workers_supporting:0 "Поддержка рабочих"
  updated_work_plan:0 "Обновленный рабочий план"
  faction_with_wish:0 "Благодарность за помощь"
+ people_discontent_dem:0 "Народные возмущения"
+ people_discontent_fas:0 "Народные возмущения"
+ people_discontent_neu:0 "Народные возмущения"
+ people_discontent_com:0 "Народные возмущения"
+ people_discontent_mon:0 "Народные возмущения"
 
  freedom_wish:0 "Рука демократии"
  freedom_wish_DESC:0 "Наш народ, видя повсеместное распространение демократии, поверил в сказки о правах человека и прочей чепухе"

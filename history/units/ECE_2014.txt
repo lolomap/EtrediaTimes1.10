@@ -1,0 +1,128 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = ECE_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "light Armor Division"
+
+	division_names_group = ECE_arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 3 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized Division"
+
+	division_names_group = ECE_arm_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Mot. Rifl. Brigade"
+
+	division_names_group = ECE_arm_03
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 7117
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 7117
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 7117
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 7117
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.9
+
+        }
+
+	division = {
+		name = "Motorized Division"
+		location = 7117
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Mot. Rifl. Brigade"
+		location = 7117
+		division_template = "Mot. Rifl. Brigade"
+		start_experience_factor = 0.2
+                start_equipment_factor = 1
+
+        }
+
+}

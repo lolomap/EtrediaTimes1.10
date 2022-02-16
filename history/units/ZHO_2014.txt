@@ -1,0 +1,108 @@
+division_template = {
+	name = "Infantry Division"
+
+	division_names_group = ZHO_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Tank-Division"
+
+	division_names_group = ZHO_arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+                motorized = { x = 1 y = 1 }
+                motorized = { x = 1 y = 2 }
+                motorized = { x = 1 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "Infantry Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 1
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+
+	division = {
+		name = "Tank-Division"
+		location = 1751
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.6
+
+        }
+}

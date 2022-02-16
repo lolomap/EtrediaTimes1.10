@@ -1,0 +1,52 @@
+units = {
+	fleet = {
+		name = "Versh Main Fleet"			
+		naval_base = 8686
+		task_force = {				
+			name = "Main Operative"				
+			location = 8686
+			ship = { name = "FullSten" definition = battleship equipment = { battleship_1 = { amount = 1 owner = VRO } } }	
+			ship = { name = "HC Fullunsburg" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "HC Vershia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "Timuria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VRO } } }
+            ship = { name = "LC Santes Type 01 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "LC Santes Type 02 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "LC Santes Type 03 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "LC Santes Type 04 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "LC Santes Type 05 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "LC Santes Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "VRO Destroyer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VRO } } }
+            ship = { name = "SVRO 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+			ship = { name = "SVRO 11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VRO } } }
+	    }
+    }
+}

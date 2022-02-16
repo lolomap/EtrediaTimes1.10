@@ -367,6 +367,26 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
+
+			add_to_variable = {dem_opposition_delta = 0.07}
+			add_to_variable = {fas_opposition_delta = 0.07}
+			add_to_variable = {neu_opposition_delta = 0.07}
+			add_to_variable = {com_opposition_delta = 0.07}
+			add_to_variable = {mon_opposition_delta = 0.07}
+
+			multiply_variable = {dem_opposition_delta = dem_opposition_factor}
+			multiply_variable = {fas_opposition_delta = fas_opposition_factor}
+			multiply_variable = {neu_opposition_delta = neu_opposition_factor}
+			multiply_variable = {com_opposition_delta = com_opposition_factor}
+			multiply_variable = {mon_opposition_delta = mon_opposition_factor}
+
+			add_to_variable = {dem_opposition = dem_opposition_delta}
+			add_to_variable = {fas_opposition = fas_opposition_delta}
+			add_to_variable = {neu_opposition = neu_opposition_delta}
+			add_to_variable = {com_opposition = com_opposition_delta}
+			add_to_variable = {mon_opposition = mon_opposition_delta}
+
+			########################################################################
 			
 			set_variable = {division_inf_factor = num_divisions}
 			multiply_variable = {division_inf_factor = 0.025}

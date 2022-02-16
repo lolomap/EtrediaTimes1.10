@@ -162,6 +162,312 @@ country_event = {
 	}
 }
 
+########################################################
+
+country_event = { #Пропагандисткая кампания против dem
+	id = mechanics.4
+	title = mechanics.4.t
+	desc = mechanics.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.4.a
+		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
+		divide_temp_variable = {corrupt_chance = 5}
+		multiply_temp_variable = {corrupt_chance = 7}
+		if = {
+			limit = {check_variable = {corrupt_chance > 90} }
+			set_temp_variable = {corrupt_chance = 90}
+		}
+		set_temp_variable = {corrupt_chance_fail = 100}
+		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		random_list = {
+			var:corrupt_chance = {
+				country_event = mechanics.9
+				set_temp_variable = {popularity_to_reduce = party_popularity_100@democratic}
+				multiply_temp_variable = {popularity_to_reduce = -0.003}
+				if = {limit = {check_variable = {popularity_to_reduce > -0.01}} set_temp_variable = {popularity_to_reduce = -0.01}}
+				add_popularity = {ideology = democratic popularity = popularity_to_reduce}
+			}
+			var:corrupt_chance_fail = {
+				country_event = mechanics.10
+				custom_effect_tooltip = people_discontent_effect_loc
+				hidden_effect = {
+					if = {limit = {has_government = democratic} add_timed_idea = {idea = people_discontent_dem days = 60}}
+					else_if = {limit = {has_government = fascism} add_timed_idea = {idea = people_discontent_fas days = 60}}
+					else_if = {limit = {has_government = neutrality} add_timed_idea = {idea = people_discontent_neu days = 60}}
+					else_if = {limit = {has_government = communism} add_timed_idea = {idea = people_discontent_com days = 60}}
+					else_if = {limit = {has_government = monarchism} add_timed_idea = {idea = people_discontent_mon days = 60}}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = mechanics.4.b
+		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
+		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
+		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
+		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		multiply_temp_variable = {pp_to_reduce = -1}
+		add_political_power = pp_to_reduce
+		add_timed_idea = {idea = antipropoganda_against_dem days = 60}
+	}
+	option = {
+		name = mechanics.4.c
+	}
+}
+
+country_event = { #Пропагандисткая кампания против fas
+	id = mechanics.5
+	title = mechanics.5.t
+	desc = mechanics.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.4.a
+		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
+		divide_temp_variable = {corrupt_chance = 5}
+		multiply_temp_variable = {corrupt_chance = 7}
+		if = {
+			limit = {check_variable = {corrupt_chance > 90} }
+			set_temp_variable = {corrupt_chance = 90}
+		}
+		set_temp_variable = {corrupt_chance_fail = 100}
+		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		random_list = {
+			var:corrupt_chance = {
+				country_event = mechanics.9
+				set_temp_variable = {popularity_to_reduce = party_popularity_100@fascism}
+				multiply_temp_variable = {popularity_to_reduce = -0.003}
+				if = {limit = {check_variable = {popularity_to_reduce > -0.01}} set_temp_variable = {popularity_to_reduce = -0.01}}
+				add_popularity = {ideology = fascism popularity = popularity_to_reduce}
+			}
+			var:corrupt_chance_fail = {
+				country_event = mechanics.10
+				custom_effect_tooltip = people_discontent_effect_loc
+				hidden_effect = {
+					if = {limit = {has_government = democratic} add_timed_idea = {idea = people_discontent_dem days = 60}}
+					else_if = {limit = {has_government = fascism} add_timed_idea = {idea = people_discontent_fas days = 60}}
+					else_if = {limit = {has_government = neutrality} add_timed_idea = {idea = people_discontent_neu days = 60}}
+					else_if = {limit = {has_government = communism} add_timed_idea = {idea = people_discontent_com days = 60}}
+					else_if = {limit = {has_government = monarchism} add_timed_idea = {idea = people_discontent_mon days = 60}}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = mechanics.4.b
+		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
+		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
+		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
+		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		multiply_temp_variable = {pp_to_reduce = -1}
+		add_political_power = pp_to_reduce
+		add_timed_idea = {idea = antipropoganda_against_fas days = 60}
+
+	}
+	option = {
+		name = mechanics.4.c
+	}
+}
+
+country_event = { #Пропагандисткая кампания против neu
+	id = mechanics.6
+	title = mechanics.6.t
+	desc = mechanics.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.4.a
+		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
+		divide_temp_variable = {corrupt_chance = 5}
+		multiply_temp_variable = {corrupt_chance = 7}
+		if = {
+			limit = {check_variable = {corrupt_chance > 90} }
+			set_temp_variable = {corrupt_chance = 90}
+		}
+		set_temp_variable = {corrupt_chance_fail = 100}
+		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		random_list = {
+			var:corrupt_chance = {
+				country_event = mechanics.9
+				set_temp_variable = {popularity_to_reduce = party_popularity_100@neutrality}
+				multiply_temp_variable = {popularity_to_reduce = -0.003}
+				if = {limit = {check_variable = {popularity_to_reduce > -0.01}} set_temp_variable = {popularity_to_reduce = -0.01}}
+				add_popularity = {ideology = neutrality popularity = popularity_to_reduce}
+			}
+			var:corrupt_chance_fail = {
+				country_event = mechanics.10
+				custom_effect_tooltip = people_discontent_effect_loc
+				hidden_effect = {
+					if = {limit = {has_government = democratic} add_timed_idea = {idea = people_discontent_dem days = 60}}
+					else_if = {limit = {has_government = fascism} add_timed_idea = {idea = people_discontent_fas days = 60}}
+					else_if = {limit = {has_government = neutrality} add_timed_idea = {idea = people_discontent_neu days = 60}}
+					else_if = {limit = {has_government = communism} add_timed_idea = {idea = people_discontent_com days = 60}}
+					else_if = {limit = {has_government = monarchism} add_timed_idea = {idea = people_discontent_mon days = 60}}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = mechanics.4.b
+		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
+		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
+		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
+		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		multiply_temp_variable = {pp_to_reduce = -1}
+		add_political_power = pp_to_reduce
+		add_timed_idea = {idea = antipropoganda_against_neu days = 60}
+
+	}
+	option = {
+		name = mechanics.4.c
+	}
+}
+
+country_event = { #Пропагандисткая кампания против com
+	id = mechanics.7
+	title = mechanics.7.t
+	desc = mechanics.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.4.a
+		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
+		divide_temp_variable = {corrupt_chance = 5}
+		multiply_temp_variable = {corrupt_chance = 7}
+		if = {
+			limit = {check_variable = {corrupt_chance > 90} }
+			set_temp_variable = {corrupt_chance = 90}
+		}
+		set_temp_variable = {corrupt_chance_fail = 100}
+		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		random_list = {
+			var:corrupt_chance = {
+				country_event = mechanics.9
+				set_temp_variable = {popularity_to_reduce = party_popularity_100@communism}
+				multiply_temp_variable = {popularity_to_reduce = -0.003}
+				if = {limit = {check_variable = {popularity_to_reduce > -0.01}} set_temp_variable = {popularity_to_reduce = -0.01}}
+				add_popularity = {ideology = communism popularity = popularity_to_reduce}
+			}
+			var:corrupt_chance_fail = {
+				country_event = mechanics.10
+				custom_effect_tooltip = people_discontent_effect_loc
+				hidden_effect = {
+					if = {limit = {has_government = democratic} add_timed_idea = {idea = people_discontent_dem days = 60}}
+					else_if = {limit = {has_government = fascism} add_timed_idea = {idea = people_discontent_fas days = 60}}
+					else_if = {limit = {has_government = neutrality} add_timed_idea = {idea = people_discontent_neu days = 60}}
+					else_if = {limit = {has_government = communism} add_timed_idea = {idea = people_discontent_com days = 60}}
+					else_if = {limit = {has_government = monarchism} add_timed_idea = {idea = people_discontent_mon days = 60}}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = mechanics.4.b
+		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
+		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
+		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
+		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		multiply_temp_variable = {pp_to_reduce = -1}
+		add_political_power = pp_to_reduce
+		add_timed_idea = {idea = antipropoganda_against_com days = 60}
+
+	}
+	option = {
+		name = mechanics.4.c
+	}
+}
+
+country_event = { #Пропагандисткая кампания против mon
+	id = mechanics.8
+	title = mechanics.8.t
+	desc = mechanics.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.4.a
+		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
+		divide_temp_variable = {corrupt_chance = 5}
+		multiply_temp_variable = {corrupt_chance = 7}
+		if = {
+			limit = {check_variable = {corrupt_chance > 90} }
+			set_temp_variable = {corrupt_chance = 90}
+		}
+		set_temp_variable = {corrupt_chance_fail = 100}
+		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		random_list = {
+			var:corrupt_chance = {
+				country_event = mechanics.9
+				set_temp_variable = {popularity_to_reduce = party_popularity_100@monarchism}
+				multiply_temp_variable = {popularity_to_reduce = -0.003}
+				if = {limit = {check_variable = {popularity_to_reduce > -0.01}} set_temp_variable = {popularity_to_reduce = -0.01}}
+				add_popularity = {ideology = monarchism popularity = popularity_to_reduce}
+			}
+			var:corrupt_chance_fail = {
+				country_event = mechanics.10
+				custom_effect_tooltip = people_discontent_effect_loc
+				hidden_effect = {
+					if = {limit = {has_government = democratic} add_timed_idea = {idea = people_discontent_dem days = 60}}
+					else_if = {limit = {has_government = fascism} add_timed_idea = {idea = people_discontent_fas days = 60}}
+					else_if = {limit = {has_government = neutrality} add_timed_idea = {idea = people_discontent_neu days = 60}}
+					else_if = {limit = {has_government = communism} add_timed_idea = {idea = people_discontent_com days = 60}}
+					else_if = {limit = {has_government = monarchism} add_timed_idea = {idea = people_discontent_mon days = 60}}
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = mechanics.4.b
+		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
+		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
+		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
+		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		multiply_temp_variable = {pp_to_reduce = -1}
+		add_political_power = pp_to_reduce
+		add_timed_idea = {idea = antipropoganda_against_mon days = 60}
+	}
+	option = {
+		name = mechanics.4.c
+	}
+}
+
+country_event = { # коррупц скандал норм
+	id = mechanics.9
+	title = mechanics.9.t
+	desc = mechanics.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.9.a
+	}
+}
+
+country_event = { # коррупц скандал фейл
+	id = mechanics.10
+	title = mechanics.10.t
+	desc = mechanics.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.10.a
+	}
+}
+
+#####################################################
+
 country_event = {#Аншлюз
 	id = onactev.1
 	title = onactev.1.t
