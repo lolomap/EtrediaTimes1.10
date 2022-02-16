@@ -17,13 +17,13 @@ state={
                         industrial_complex = 1
                         arms_factory = 1
                         dockyard = 3
-			13313 = {
+			11472 = {
 				naval_base = 9
 			}
 		}
 		add_core_of = KAR
 		victory_points = {
-			13313 15
+			11472 15
 		}
 
 	}

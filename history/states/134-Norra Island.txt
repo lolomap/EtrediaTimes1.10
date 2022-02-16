@@ -14,13 +14,13 @@ state={
 			infrastructure = 3
                         dockyard = 1
 			air_base = 1
-			15488 = {
+			13139 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = FIL
 		victory_points = {
-			12882 1
+			13139 1
 		}
 
 	}

@@ -14,13 +14,13 @@ state={
 		owner = DID
 		buildings = {
 			infrastructure = 2
-			2711 = {
+			2189 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = DID
 		victory_points = {
-			2711 5
+			2189 5
 		}
 
 	}

@@ -16,13 +16,13 @@ state={
                         industrial_complex = 2
                         arms_factory = 1
                         dockyard = 2
-			8846 = {
+			7659 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = YAN
 		victory_points = {
-			8846 15
+			7659 15
 		}
 
 	}

@@ -10,13 +10,13 @@ state={
 		owner = TRB
 		buildings = {
 			infrastructure = 4
-			5213 = {
+			4517 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = TRB
 		victory_points = {
-			5213 5
+			4517 5
 		}
 
 	}

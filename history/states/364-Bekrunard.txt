@@ -16,13 +16,19 @@ state={
                         industrial_complex = 2
                         arms_factory = 1
                         air_base = 1
-			3797 = {
+			3200 = {
 				naval_base = 4
+			}
+			3065 = {
+				naval_base = 1
 			}
 		}
 		add_core_of = IRI
 		victory_points = {
-			3797 15
+			3200 10
+		}
+		victory_points = {
+			3065 1
 		}
 
 	}

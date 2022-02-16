@@ -15,13 +15,13 @@ state={
 		owner = DON
 		buildings = {
 			infrastructure = 3
-			2936 = {
+			2430 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = DON
 		victory_points = {
-			2936 1
+			2360 1
 		}
 
 	}

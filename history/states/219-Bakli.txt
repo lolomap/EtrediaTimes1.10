@@ -15,7 +15,7 @@ state={
 			industrial_complex = 0
 			arms_factory = 0
 			dockyard = 1
-			5000 = {
+			4202 = {
 				naval_base = 2
 
 			}
@@ -23,7 +23,7 @@ state={
 		}
 		add_core_of = TRB
 		victory_points = {
-			5000 1 
+			4202 1 
 		}
 
 	}

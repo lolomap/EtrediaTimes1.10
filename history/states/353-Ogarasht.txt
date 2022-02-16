@@ -13,16 +13,16 @@ state={
 		owner = YAN
 		buildings = {
 			infrastructure = 4
-			7330 = {
+			6463 = {
 				naval_base = 2
 			}
-			7513 = {
+			6215 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = YAN
 		victory_points = {
-			7330 5
+			6463 5
 		}
 
 	}

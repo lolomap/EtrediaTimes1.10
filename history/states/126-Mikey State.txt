@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = FIL
 		victory_points = {
-			13857 5 
+			11899 5 
 		}
 
 	}

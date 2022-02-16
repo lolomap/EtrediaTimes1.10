@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = LIV
 		victory_points = {
-			2357 5
+			2371 5
 		}
 
 	}

@@ -11,7 +11,7 @@ state={
 		add_core_of = SBU
 		add_core_of = SVT
 		victory_points = {
-			5136 5 
+			4383 5 
 		}
 
 	}

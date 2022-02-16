@@ -12,9 +12,6 @@ state={
 		}
 		add_core_of = TRB
 		add_core_of = RTT
-		victory_points = {
-			6761 3 
-		}
 
 	}
 	provinces={

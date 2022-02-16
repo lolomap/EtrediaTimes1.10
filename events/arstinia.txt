@@ -77,3 +77,38 @@ country_event = {
         }
 	}
 }
+
+country_event = {
+	id = ars.4
+	title = ars.4.t
+	desc = ars.4.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = ARS
+	}
+
+	option = {
+	name = ars.4.a 
+        country_event = { days = 10 id = ars.5 }
+	}
+}
+
+country_event = {
+	id = ars.5
+	title = ars.5.t
+	desc = ars.5.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = ARS
+	}
+
+	option = {
+	name = ars.5.a 
+	}
+}

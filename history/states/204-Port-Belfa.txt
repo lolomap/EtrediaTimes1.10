@@ -7,14 +7,17 @@ state={
 			infrastructure = 7
 			industrial_complex = 1
 			dockyard = 2
-                        4503 = {
+                        3885 = {
                         naval_base = 10
                         }
 		}
 		add_core_of = SBU
 		add_core_of = SVT
 		victory_points = {
-			4503 10 
+			3885 10 
+		}
+		victory_points = {
+			4215 1
 		}
 
 	}

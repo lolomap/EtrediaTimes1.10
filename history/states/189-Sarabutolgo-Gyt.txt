@@ -21,7 +21,7 @@ state={
 		add_core_of = RGY
 		add_core_of = HLR
 		victory_points = {
-			9447 10
+			8199 10
 		}
 
 	}

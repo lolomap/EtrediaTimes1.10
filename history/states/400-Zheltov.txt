@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = EIK
 		victory_points = {
-			14435 5
+			14563 5
 		}
 
 	}

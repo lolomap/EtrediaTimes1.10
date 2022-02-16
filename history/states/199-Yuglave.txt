@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = RTT
 		victory_points = {
-			7129 25
+			6008 25
 		}
 
 	}

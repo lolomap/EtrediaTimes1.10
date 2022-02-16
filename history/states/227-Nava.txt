@@ -9,14 +9,14 @@ state={
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
-			5311 = {
+			4762 = {
 				naval_base = 5
 			}
 
 		}
 		add_core_of = TRB
 		victory_points = {
-			5311 1 
+			4762 1 
 		}
 
 	}

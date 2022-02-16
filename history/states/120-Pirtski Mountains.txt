@@ -13,9 +13,6 @@ state={
 
 		}
 		add_core_of = FIL
-		victory_points = {
-			13465 1 
-		}
 
 	}
 	provinces={

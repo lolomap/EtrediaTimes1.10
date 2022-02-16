@@ -14,13 +14,13 @@ state={
 		owner = DIR
 		buildings = {
 			infrastructure = 5
-			12245 = {
+			10529 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = DIR
 		victory_points = {
-			12245 1
+			10529 1
 		}
 
 	}

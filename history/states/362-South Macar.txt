@@ -18,19 +18,19 @@ state={
                         arms_factory = 1
                         dockyard = 1
                         air_base = 1
-                        3272 = { 
+                        2698 = { 
                              naval_base = 3
                         }
-                        3505 = { 
+                        2915 = { 
                              naval_base = 1
                         }
 		}
 		add_core_of = SMA
 		victory_points = {
-			3272 5
+			2698 5
 		}
                 victory_points = {
-                        3505 1
+                        2915 1
                 }
 
 	}

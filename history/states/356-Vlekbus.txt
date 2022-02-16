@@ -17,25 +17,22 @@ state={
 			infrastructure = 5
             dockyard = 1
             nuclear_rocket_site = 1
-			10341 = {
+			8911 = {
 				naval_base = 4
 			}
-			9773 = {
+			8729 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = YAN
 		victory_points = {
-			10341 5
+			8911 5
 		}
 		victory_points = {
-			9310 1
+			8729 1
 		}
 		victory_points = {
-			9520 1
-		}
-		victory_points = {
-			9433 1
+			8377 1
 		}
 
 	}

@@ -9,16 +9,16 @@ state={
 		owner = IRI
 		buildings = {
 			infrastructure = 3
-                        4114 = { 
+                        3487 = { 
                              naval_base = 1
                         }
-                        4341 = { 
+                        3731 = { 
                              naval_base = 1
                         }
 		}
 		add_core_of = IRI
 		victory_points = {
-			4114 1
+			3487 1
 		}
 
 	}

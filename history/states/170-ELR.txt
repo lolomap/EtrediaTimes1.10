@@ -14,14 +14,18 @@ state={
 			infrastructure = 8
                         industrial_complex = 3
                         arms_factory = 1
-			4453 = {
+			3840 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = ELR
 		victory_points = {
-			4453 10
+			4123 10
 		}
+		victory_points = {
+			3840 5
+		}
+
 
 	}
 	provinces={

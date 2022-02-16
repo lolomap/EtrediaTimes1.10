@@ -9,19 +9,16 @@ state={
 		owner = TRB
 		buildings = {
 			infrastructure = 4
-			3774 = {
+			3268 = {
 				naval_base = 5
 			}
-			3868 = {
-				naval_base = 2
-			}
-			3930 = {
+			3178 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = NMA
 		victory_points = {
-			3774 5
+			3268 5
 		}
 
 	}

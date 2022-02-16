@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = SHE
 		victory_points = {
-			13385 1
+			13714 1
 		}
 
 	}

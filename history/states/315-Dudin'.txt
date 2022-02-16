@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = BAE
 		victory_points = {
-			12784 1
+			13058 1
 		}
 
 	}

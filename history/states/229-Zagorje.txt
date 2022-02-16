@@ -21,7 +21,7 @@ state={
 		add_core_of = TRB
 		add_core_of = ELN
 		victory_points = {
-			8364 25
+			7111 25
 		}
 
 	}

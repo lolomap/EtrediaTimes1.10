@@ -12,7 +12,7 @@ state={
 		}
 		add_core_of = TRB
 		victory_points = {
-			5678 3 
+			4891 3 
 		}
 
 	}

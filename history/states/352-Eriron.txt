@@ -14,16 +14,16 @@ state={
 		buildings = {
 			infrastructure = 3
                         air_base = 1
-			10452 = {
+			8941 = {
 				naval_base = 2
 			}
-			9379 = {
+			8093 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = YAN
 		victory_points = {
-			10452 1
+			8941 1
 		}
 
 	}

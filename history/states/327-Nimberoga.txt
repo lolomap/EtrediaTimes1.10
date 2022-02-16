@@ -13,13 +13,13 @@ state={
                         industrial_complex = 0
                         arms_factory = 1
                         dockyard = 1
-			14242 = {
+			14569 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = EIK
 		victory_points = {
-			14266 5
+			14569 5
 		}
 
 	}

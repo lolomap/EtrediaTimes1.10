@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = PIN
 		victory_points = {
-			11540 15
+			11892 15
 		}
 
 	}

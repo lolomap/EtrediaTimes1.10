@@ -6,11 +6,13 @@ state={
 		buildings = {
 			infrastructure = 4
 			dockyard = 2
-
+			12920 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = PIN
 		victory_points = {
-			12547 5 
+			12920 5 
 		}
 
 	}

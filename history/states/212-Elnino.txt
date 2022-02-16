@@ -20,7 +20,22 @@ state={
 		add_core_of = SBU
 		add_core_of = ELN
 		victory_points = {
-			6954 25 
+			6060 25 
+		}
+		victory_points = {
+			5624 1
+		}
+		victory_points = {
+			5879 1
+		}
+		victory_points = {
+			6415 1 
+		}
+		victory_points = {
+			6196 1 
+		}
+		victory_points = {
+			6584 1 
 		}
 
 	}
