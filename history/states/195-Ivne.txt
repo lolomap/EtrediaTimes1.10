@@ -12,7 +12,7 @@ state={
 		}
 		add_core_of = RGY
 		victory_points = {
-			7727 1
+			6716 1
 		}
 
 	}

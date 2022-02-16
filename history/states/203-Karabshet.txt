@@ -14,7 +14,10 @@ state={
 		add_core_of = SBU
 		add_core_of = MOF
 		victory_points = {
-			6558 5 
+			5702 5 
+		}
+		victory_points = {
+			5225 1 
 		}
 
 	}

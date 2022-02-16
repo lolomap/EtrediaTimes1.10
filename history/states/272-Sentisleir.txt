@@ -17,13 +17,13 @@ state={
                         industrial_complex = 1
                         arms_factory = 1
 			dockyard = 1
-			11527 = {
+			9862 = {
 				naval_base = 5
 			}
 		}
 		add_core_of = DIR
 		victory_points = {
-			11527 10
+			9862 10
 		}
 
 	}

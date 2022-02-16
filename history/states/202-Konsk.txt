@@ -9,7 +9,7 @@ state={
 			industrial_complex = 0
 			arms_factory = 1
 			dockyard = 1
-			4211 = {
+			3822 = {
 				naval_base = 4
 
 			}
@@ -18,7 +18,10 @@ state={
 		add_core_of = SBU
 		add_core_of = MOF
 		victory_points = {
-			4462 10 
+			4214 10 
+		}
+		victory_points = {
+			3822 2
 		}
 
 	}

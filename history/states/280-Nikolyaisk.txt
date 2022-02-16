@@ -12,13 +12,13 @@ state={
 		}
 		add_core_of = DIR
 		victory_points = {
-			11794 5 
+			10069 5 
 		}
 		victory_points = {
-			11317 1 
+			10137 1 
 		}
 		victory_points = {
-			11779 1 
+			9736 1 
 		}
 
 	}

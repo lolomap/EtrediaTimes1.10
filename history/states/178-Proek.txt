@@ -11,7 +11,7 @@ state={
 		}
 		add_core_of = MOF
 		victory_points = {
-			6614 5 
+			5897 5 
 		}
 
 	}

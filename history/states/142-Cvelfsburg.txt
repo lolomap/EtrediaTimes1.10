@@ -17,13 +17,13 @@ state={
                         industrial_complex = 2
                         arms_factory = 1
                         dockyard = 1
-			14107 = {
+			12158 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = PIN
 		victory_points = {
-			11523 20
+			11879 20
 		}
 
 	}

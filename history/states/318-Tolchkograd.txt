@@ -18,13 +18,13 @@ state={
                         arms_factory = 1
                         air_base = 3
                         dockyard = 1
-			13492 = {
+			11620 = {
 				naval_base = 7
 			}
 		}
 		add_core_of = TOL
 		victory_points = {
-			13492 20
+			11620 20
 		}
 
 	}

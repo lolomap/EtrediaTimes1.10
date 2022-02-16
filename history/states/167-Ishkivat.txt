@@ -14,7 +14,7 @@ state={
 		add_core_of = SFL
 		add_core_of = SZE
 		victory_points = {
-			7269 1 
+			7294 1 
 		}
 
 	}

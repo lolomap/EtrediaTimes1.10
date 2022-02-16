@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = KAR
 		victory_points = {
-			11836 10
+			10144 5
 		}
 
 	}

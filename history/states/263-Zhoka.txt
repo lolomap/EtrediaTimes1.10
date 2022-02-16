@@ -11,13 +11,13 @@ state={
 			arms_factory = 1
                         air_base = 8
 			dockyard = 1
-			11341 = {
+			11560 = {
 				naval_base = 5
 			}
 		}
 		add_core_of = DIR
 		victory_points = {
-			11341 15 
+			11560 15 
 		}
 
 	}

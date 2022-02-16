@@ -22,7 +22,7 @@ state={
 		}
 		add_core_of = YAN
 		victory_points = {
-			9623 20
+			7999 20
 		}
 
 	}

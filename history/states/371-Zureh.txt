@@ -15,13 +15,13 @@ state={
 		buildings = {
 			infrastructure = 3
                         industrial_complex = 1
-			2738 = {
+			2215 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = DON
 		victory_points = {
-			2738 1
+			2215 1
 		}
 
 	}

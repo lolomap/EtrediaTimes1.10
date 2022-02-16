@@ -8,13 +8,13 @@ state={
 			infrastructure = 7
 			industrial_complex = 5
                         air_base = 10
-			5232 = {
+			4534 = {
 				naval_base = 5
 			}
 		}
 		add_core_of = SBU
 		victory_points = {
-			5370 30 
+			4647 30 
 		}
 
 	}

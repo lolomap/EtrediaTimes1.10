@@ -19,7 +19,7 @@ state={
 		add_core_of = KAR
 		add_core_of = FSF
 		victory_points = {
-			10914 5
+			9392 5
 		}
 
 	}

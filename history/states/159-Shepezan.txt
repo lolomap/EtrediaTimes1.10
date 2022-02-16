@@ -12,7 +12,7 @@ state={
 		}
 		add_core_of = SFL
 		victory_points = {
-			4478 5 
+			4938 5 
 		}
 
 	}

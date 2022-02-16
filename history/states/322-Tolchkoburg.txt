@@ -20,7 +20,7 @@ state={
 		}
 		add_core_of = TOL
 		victory_points = {
-			13800 10
+			11810 10
 		}
 
 	}

@@ -18,16 +18,16 @@ state={
 			infrastructure = 5
                         industrial_complex = 2
                         dockyard = 1
-			2567 = {
+			2060 = {
 				naval_base = 3
 			}
-			2555 = {
+			2019 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = LIV
 		victory_points = {
-			2567 10
+			2060 10
 		}
 
 	}

@@ -21,7 +21,7 @@ state={
 		add_core_of = SBU
 		add_core_of = HLR
 		victory_points = {
-			8318 15 
+			7035 15 
 		}
 
 	}

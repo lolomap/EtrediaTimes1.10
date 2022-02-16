@@ -7,14 +7,14 @@ state={
 			infrastructure = 6
 			industrial_complex = 2
 			dockyard = 2
-			3816 = {
+			3847 = {
 				naval_base = 8
 			}
 
 		}
 		add_core_of = SFL
 		victory_points = {
-			3816 25 
+			3847 25 
 		}
 
 	}

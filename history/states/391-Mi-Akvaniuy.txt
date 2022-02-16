@@ -10,13 +10,13 @@ state={
 		owner = LIV
 		buildings = {
 			infrastructure = 5
-			3369 = {
+			2790 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = LIV
 		victory_points = {
-			3369 5
+			2790 5
 		}
 
 	}

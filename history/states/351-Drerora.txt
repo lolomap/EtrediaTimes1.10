@@ -19,16 +19,16 @@ state={
                         dockyard = 2
                         air_base = 7
                         anti_nuclear_building = 1
-			10493 = {
+			9083 = {
 				naval_base = 7
 			}
-			10639 = {
+			9213 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = YAN
 		victory_points = {
-			10571 30
+			9183 30
 		}
 
 	}

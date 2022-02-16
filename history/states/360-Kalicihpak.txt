@@ -12,13 +12,13 @@ state={
                         industrial_complex = 0
                         arms_factory = 0
                         dockyard = 0
-			4212 = {
+			3831 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = LIP
 		victory_points = {
-			4212 1
+			3831 1
 		}
 
 	}

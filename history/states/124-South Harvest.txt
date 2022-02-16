@@ -13,14 +13,14 @@ state={
 		owner = FIL
 		buildings = {
 			infrastructure = 6
-			14009 = {
+			11960 = {
 				naval_base = 4
 			}
 			air_base = 4
 		}
 		add_core_of = FIL
 		victory_points = {
-			14009 10
+			11960 10
 		}
 
 	}

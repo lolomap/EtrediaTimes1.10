@@ -11,13 +11,13 @@ state={
 		buildings = {
 			infrastructure = 6
                         dockyard = 1
-			13863 = {
+			14144 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = EIK
 		victory_points = {
-			13863 15
+			14144 15
 		}
 
 	}

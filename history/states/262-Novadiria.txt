@@ -8,14 +8,20 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
                         air_base = 5
-			11442 = {
+			11712 = {
 				naval_base = 3
 			}
 
 		}
 		add_core_of = DIR
 		victory_points = {
+			11712 1 
+		}
+		victory_points = {
 			11442 1 
+		}
+		victory_points = {
+			12322 1 
 		}
 
 	}

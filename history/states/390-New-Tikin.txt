@@ -12,13 +12,13 @@ state={
 			infrastructure = 5
                         industrial_complex = 2
                         dockyard = 1
-			3140 = {
+			2532 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = LIV
 		victory_points = {
-			3140 10
+			2532 10
 		}
 
 	}

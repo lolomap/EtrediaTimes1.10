@@ -18,7 +18,7 @@ state={
 		add_core_of = DIR
 		add_core_of = HEK
 		victory_points = {
-			11928 5
+			10263 5
 		}
 
 	}

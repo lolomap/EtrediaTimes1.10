@@ -19,7 +19,7 @@ rubber = 34 # was: 60
 		}
 		add_core_of = YAN
 		victory_points = {
-			5862 15
+			5051 15
 		}
 
 	}
