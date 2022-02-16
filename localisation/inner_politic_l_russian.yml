@@ -18,3 +18,6 @@
   party_com_name:0 "§R[Root.GetCommunistParty]:"
   party_neu_name:0 "§g[Root.GetNeutralParty]:"
   party_mon_name:0 "§YМонархисты:"
+
+  party_incident_btn_loc:0 "Пропагандисткая кампания против"
+  party_aggitation_btn_loc:0 "Переговоры с представителями партии"

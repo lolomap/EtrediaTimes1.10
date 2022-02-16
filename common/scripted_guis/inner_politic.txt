@@ -27,5 +27,23 @@ scripted_gui = {
 		visible = {
 			has_country_flag = inner_politic_window_opened
 		}
+
+		effects = {
+			party_dem_incident_btn_click = {
+				country_event = mechanics.4
+			}
+			party_fas_incident_btn_click = {
+				country_event = mechanics.5
+			}
+			party_neu_incident_btn_click = {
+				country_event = mechanics.6
+			}
+			party_com_incident_btn_click = {
+				country_event = mechanics.7
+			}
+			party_mon_incident_btn_click = {
+				country_event = mechanics.8
+			}
+		}
 	}
 }

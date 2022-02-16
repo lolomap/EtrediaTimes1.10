@@ -21,7 +21,7 @@ ideas = {
 			modifier = {
 				surrender_limit = 0.2
 				drift_defence_factor = 0.15
-				fascicm_drift = 0.02
+				fascism_drift = 0.02
 			}
 		}
 		stability_heaven_d = {
@@ -333,6 +333,143 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				democratic_drift = 0.1
+			}
+		}
+
+		people_discontent_dem = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+				people_discontent_dem_power = yes
+			}
+			on_remove = {
+				people_discontent_dem_power_end = yes
+			}
+
+			modifier = {
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				neutrality_drift = 0.01
+				monarchism_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+		people_discontent_fas = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+				people_discontent_fas_power = yes
+			}
+			on_remove = {
+				people_discontent_fas_power_end = yes
+			}
+
+			modifier = {
+				democratic_drift = 0.01
+				communism_drift = 0.01
+				neutrality_drift = 0.01
+				monarchism_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+		people_discontent_neu = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+				people_discontent_neu_power = yes
+			}
+			on_remove = {
+				people_discontent_neu_power_end = yes
+			}
+			
+			modifier = {
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				democratic_drift = 0.01
+				monarchism_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+		people_discontent_com = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+				people_discontent_com_power = yes
+			}
+			on_remove = {
+				people_discontent_com_power_end = yes
+			}
+			
+			modifier = {
+				fascism_drift = 0.01
+				democratic_drift = 0.01
+				neutrality_drift = 0.01
+				monarchism_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+		people_discontent_mon = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+				people_discontent_mon_power = yes
+			}
+			on_remove = {
+				people_discontent_mon_power_end = yes
+			}
+			
+			modifier = {
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				neutrality_drift = 0.01
+				democratic_drift = 0.01
+				stability_factor = -0.1
+			}
+		}
+
+		antipropoganda_against_dem = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.01
+			}
+		}
+		antipropoganda_against_fas = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = -0.01
+			}
+		}
+		antipropoganda_against_neu = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = -0.01
+			}
+		}
+		antipropoganda_against_com = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = -0.01
+			}
+		}
+		antipropoganda_against_mon = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				monarchism_drift = -0.01
 			}
 		}
 	}
