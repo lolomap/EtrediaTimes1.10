@@ -39,6 +39,12 @@ focus_tree = {
 		x = 2
 		y = 11
 
+		available = {
+			country_exists = ORB
+			ORB = {is_subject = no}
+			not = {country_exists = FSC}
+		}
+
 	}
 	focus = {
 		id = UCB_dem_kulishtia
@@ -46,6 +52,12 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 11
+
+		available = {
+			country_exists = KUL
+			KUL = {is_subject = no}
+			not = {country_exists = FSC}
+		}
 
 	}
 	focus = {
@@ -996,6 +1008,15 @@ focus_tree = {
 		x = 3
 		y = 5
 
+		completion_reward = {
+			hidden_effect = {create_faction = UCB_scuit_ally}
+			SBU = {
+				country_event = {
+						id = sbu.1
+						days = 1
+					}
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_stavka_defense
@@ -1007,6 +1028,12 @@ focus_tree = {
 		x = 3
 		y = 6
 
+		completion_reward = {
+			add_timed_idea = {
+				idea = UCB_scuit
+				days = 360
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_trp_garant

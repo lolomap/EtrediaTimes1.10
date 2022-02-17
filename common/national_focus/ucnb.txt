@@ -2,10 +2,10 @@ focus_tree = {
 	id = ucnb
 	country = {
 		factor = 0
-		#modifier = {
-		#	add = 10
-		#	tag = UCB
-		#}
+		modifier = {
+			add = 0
+			tag = EGR
+		}
 	}
 	default = no
 	focus = {

@@ -210,6 +210,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_dem days = 60}
@@ -265,6 +266,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_fas days = 60}
@@ -321,6 +323,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_neu days = 60}
@@ -377,6 +380,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_com days = 60}
@@ -433,6 +437,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_mon days = 60}
@@ -572,6 +577,23 @@ country_event = {
 	option = {
 		name = onactev.3.a
 	}
+}
+
+country_event = {
+	id = onactev.4
+	title = onactev.4.t
+	desc = onactev.4.d
+
+	fire_only_once = yes
+	trigger = {
+		TAL = {is_ai = no}
+	}
+	mean_time_to_happen = {days = 0}
+
+	immediate = {
+		play_song = "TALSHIK"
+	}
+	option = {name = onactev.4.a}
 }
 
 #country_event = {	# Митинги у монархов вход 
