@@ -121,6 +121,14 @@ ideas = {
 			}
 			
 			removal_cost = -1
+
+			on_add = {
+				add_to_variable = {fas_opposition_factor = 1}
+			}
+			on_remove = {
+				add_to_variable = {fas_opposition_factor = -1}
+			}
+
 	
 
 			modifier = {
@@ -178,6 +186,21 @@ ideas = {
 		 
 			modifier = {
 				political_power_gain = -0.4
+			}
+		}
+
+		UCB_resist2 = {
+	
+        picture = ss
+		 
+                allowed = {
+                       always = no
+                }
+			   
+        removal_cost = -1
+		 
+			modifier = {
+				political_power_gain = -0.2
 			}
 		}
 
