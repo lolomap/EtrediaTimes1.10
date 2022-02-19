@@ -28,6 +28,7 @@ scripted_gui = {
 			has_country_flag = inner_politic_window_opened
 		}
 
+
 		effects = {
 			party_dem_incident_btn_click = {
 				country_event = mechanics.4
@@ -44,6 +45,26 @@ scripted_gui = {
 			party_mon_incident_btn_click = {
 				country_event = mechanics.8
 			}
+		}
+
+		triggers = {
+			party_dem_incident_btn_visible = {not = {has_government = democratic}}
+			party_fas_incident_btn_visible = {not = {has_government = fascism}}
+			party_neu_incident_btn_visible = {not = {has_government = neutrality}}
+			party_com_incident_btn_visible = {not = {has_government = communism}}
+			party_mon_incident_btn_visible = {not = {has_government = monarchism}}
+
+			party_dem_aggitation_btn_visible = {not = {has_government = democratic}}
+			party_fas_aggitation_btn_visible = {not = {has_government = fascism}}
+			party_neu_aggitation_btn_visible = {not = {has_government = neutrality}}
+			party_com_aggitation_btn_visible = {not = {has_government = communism}}
+			party_mon_aggitation_btn_visible = {not = {has_government = monarchism}}
+
+			party_dem_strong_visible = {not = {has_government = democratic}}
+			party_fas_strong_visible = {not = {has_government = fascism}}
+			party_neu_strong_visible = {not = {has_government = neutrality}}
+			party_com_strong_visible = {not = {has_government = communism}}
+			party_mon_strong_visible = {not = {has_government = monarchism}}
 		}
 	}
 }

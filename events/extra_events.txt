@@ -210,6 +210,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_dem days = 60}
@@ -265,6 +266,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_fas days = 60}
@@ -321,6 +323,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_neu days = 60}
@@ -377,6 +380,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_com days = 60}
@@ -433,6 +437,7 @@ country_event = { #Пропагандисткая кампания против 
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
 		else_if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {pp_to_reduce = 10}}
+		else = {set_temp_variable = {pp_to_reduce = 50}}
 		multiply_temp_variable = {pp_to_reduce = -1}
 		add_political_power = pp_to_reduce
 		add_timed_idea = {idea = antipropoganda_against_mon days = 60}
@@ -463,6 +468,250 @@ country_event = { # коррупц скандал фейл
 
 	option = {
 		name = mechanics.10.a
+	}
+}
+
+country_event = {	# ивенты от стабки на изменение силы и поддержки партий (случайные)
+	id = mechanics.11
+	title = mechanics.11.t
+	desc = mechanics.11.d
+
+	mean_time_to_happen = {days = 30}
+
+	trigger = {is_ai = no}
+
+	option = {name = mechanics.11.a}
+	immediate = {
+		random_list = {
+			1 = {set_variable = {rand_ideology = 1}}
+			1 = {set_variable = {rand_ideology = 2}}
+			1 = {set_variable = {rand_ideology = 3}}
+			1 = {set_variable = {rand_ideology = 4}}
+			1 = {set_variable = {rand_ideology = 5}}
+		}
+		if = {
+			limit = {
+				not = {
+					OR = {
+						AND = {check_variable = {rand_ideology = 1} has_government = democratic}
+						AND = {check_variable = {rand_ideology = 2} has_government = fascism}
+						AND = {check_variable = {rand_ideology = 3} has_government = neutrality}
+						AND = {check_variable = {rand_ideology = 4} has_government = communism}
+						AND = {check_variable = {rand_ideology = 5} has_government = monarchism}
+					}
+				}
+			}
+
+			random_list = {
+				60 = {
+					if = {limit = {has_stability < 0.8} set_temp_variable = {can_e1 = 1}}
+					if = {limit = {has_stability < 0.5} set_temp_variable = {can_e2 = 1}}
+					if = {limit = {has_stability < 0.3} set_temp_variable = {can_e3 = 1}}
+					if = {limit = {has_stability < 0.1} set_temp_variable = {can_e4 = 1}}
+
+					random_list = {
+						1 = {country_event = mechanics.12}
+						var:can_e1 = {country_event = mechanics.13}
+						var:can_e2 = {country_event = mechanics.14}
+						var:can_e3 = {country_event = mechanics.15}
+						var:can_e4 = {country_event = mechanics.16}
+					}
+				}
+				40 = {
+
+				}
+			}
+		}
+	}
+}
+
+country_event = { # изменение в полит поле
+	id = mechanics.12
+	title = mechanics.12.t
+	desc = mechanics.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.12.a
+		if = {
+			limit = {check_variable = {rand_ideology = 1}}
+			add_popularity = {ideology = democratic popularity = 0.03}
+			add_to_variable = {dem_opposition = 1}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 2}}
+			add_popularity = {ideology = fascism popularity = 0.03}
+			add_to_variable = {fas_opposition = 1}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 3}}
+			add_popularity = {ideology = neutrality popularity = 0.03}
+			add_to_variable = {neu_opposition = 1}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 4}}
+			add_popularity = {ideology = communism popularity = 0.03}
+			add_to_variable = {com_opposition = 1}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 5}}
+			add_popularity = {ideology = monarchism popularity = 0.03}
+			add_to_variable = {mon_opposition = 1}
+		}
+		custom_effect_tooltip = change_party_power
+	}
+}
+
+country_event = { # рост настроений
+	id = mechanics.13
+	title = mechanics.13.t
+	desc = mechanics.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.13.a
+		if = {
+			limit = {check_variable = {rand_ideology = 1}}
+			add_popularity = {ideology = democratic popularity = 0.06}
+			add_to_variable = {dem_opposition = 2}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 2}}
+			add_popularity = {ideology = fascism popularity = 0.06}
+			add_to_variable = {fas_opposition = 2}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 3}}
+			add_popularity = {ideology = neutrality popularity = 0.06}
+			add_to_variable = {neu_opposition = 2}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 4}}
+			add_popularity = {ideology = communism popularity = 0.06}
+			add_to_variable = {com_opposition = 2}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 5}}
+			add_popularity = {ideology = monarchism popularity = 0.06}
+			add_to_variable = {mon_opposition = 2}
+		}
+		custom_effect_tooltip = change_party_power
+	}
+}
+
+country_event = { # выступления партии
+	id = mechanics.14
+	title = mechanics.14.t
+	desc = mechanics.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.14.a
+		if = {
+			limit = {check_variable = {rand_ideology = 1}}
+			add_popularity = {ideology = democratic popularity = 0.08}
+			add_to_variable = {dem_opposition = 4}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 2}}
+			add_popularity = {ideology = fascism popularity = 0.08}
+			add_to_variable = {fas_opposition = 4}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 3}}
+			add_popularity = {ideology = neutrality popularity = 0.08}
+			add_to_variable = {neu_opposition = 4}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 4}}
+			add_popularity = {ideology = communism popularity = 0.08}
+			add_to_variable = {com_opposition = 4}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 5}}
+			add_popularity = {ideology = monarchism popularity = 0.08}
+			add_to_variable = {mon_opposition = 4}
+		}
+		custom_effect_tooltip = change_party_power
+	}
+}
+
+country_event = { # организованная опоз
+	id = mechanics.15
+	title = mechanics.15.t
+	desc = mechanics.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.15.a
+		if = {
+			limit = {check_variable = {rand_ideology = 1}}
+			add_popularity = {ideology = democratic popularity = 0.1}
+			add_to_variable = {dem_opposition = 6}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 2}}
+			add_popularity = {ideology = fascism popularity = 0.1}
+			add_to_variable = {fas_opposition = 6}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 3}}
+			add_popularity = {ideology = neutrality popularity = 0.1}
+			add_to_variable = {neu_opposition = 6}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 4}}
+			add_popularity = {ideology = communism popularity = 0.1}
+			add_to_variable = {com_opposition = 6}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 5}}
+			add_popularity = {ideology = monarchism popularity = 0.1}
+			add_to_variable = {mon_opposition = 6}
+		}
+		custom_effect_tooltip = change_party_power
+	}
+}
+
+country_event = { # требуют отставку
+	id = mechanics.16
+	title = mechanics.16.t
+	desc = mechanics.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.16.a
+		if = {
+			limit = {check_variable = {rand_ideology = 1}}
+			add_popularity = {ideology = democratic popularity = 0.1}
+			add_to_variable = {dem_opposition = 10}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 2}}
+			add_popularity = {ideology = fascism popularity = 0.1}
+			add_to_variable = {fas_opposition = 10}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 3}}
+			add_popularity = {ideology = neutrality popularity = 0.1}
+			add_to_variable = {neu_opposition = 10}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 4}}
+			add_popularity = {ideology = communism popularity = 0.1}
+			add_to_variable = {com_opposition = 10}
+		}
+		if = {
+			limit = {check_variable = {rand_ideology = 5}}
+			add_popularity = {ideology = monarchism popularity = 0.1}
+			add_to_variable = {mon_opposition = 10}
+		}
+		custom_effect_tooltip = change_party_power
 	}
 }
 
@@ -572,6 +821,23 @@ country_event = {
 	option = {
 		name = onactev.3.a
 	}
+}
+
+country_event = {
+	id = onactev.4
+	title = onactev.4.t
+	desc = onactev.4.d
+
+	fire_only_once = yes
+	trigger = {
+		TAL = {is_ai = no}
+	}
+	mean_time_to_happen = {days = 0}
+
+	immediate = {
+		play_song = "TALSHIK"
+	}
+	option = {name = onactev.4.a}
 }
 
 #country_event = {	# Митинги у монархов вход 

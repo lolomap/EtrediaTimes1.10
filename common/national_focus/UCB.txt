@@ -39,6 +39,12 @@ focus_tree = {
 		x = 2
 		y = 11
 
+		available = {
+			country_exists = ORB
+			ORB = {is_subject = no}
+			not = {country_exists = FSC}
+		}
+
 	}
 	focus = {
 		id = UCB_dem_kulishtia
@@ -46,6 +52,12 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 11
+
+		available = {
+			country_exists = KUL
+			KUL = {is_subject = no}
+			not = {country_exists = FSC}
+		}
 
 	}
 	focus = {
@@ -218,6 +230,10 @@ focus_tree = {
 		x = 21
 		y = 4
 
+
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = UCB_dem_stabilnost
@@ -229,6 +245,13 @@ focus_tree = {
 		x = 21
 		y = 5
 
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				add_idea = UCB_resist2
+				remove_idea = UCB_resist
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_autonomy
@@ -262,6 +285,11 @@ focus_tree = {
 		x = 20
 		y = 7
 
+		completion_reward = {
+			add_stability = 0.05
+			remove_ideas = UCB_resist2
+			remove_ideas = UCB_resist
+		}
 	}
 	focus = {
 		id = UCB_dem_new_parlament
@@ -273,6 +301,14 @@ focus_tree = {
 		x = 20
 		y = 8
 
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_battle
@@ -287,6 +323,14 @@ focus_tree = {
 		x = 22
 		y = 7
 
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+
 	}
 	focus = {
 		id = UCB_dem_nazi_off
@@ -299,7 +343,7 @@ focus_tree = {
 		y = 8
 
 		completion_reward = {
-			add_stability = -0.05
+			add_political_power = 150
 			add_timed_idea = {
 				idea = UCB_zapretnac
 				days = 150
@@ -996,6 +1040,15 @@ focus_tree = {
 		x = 3
 		y = 5
 
+		completion_reward = {
+			hidden_effect = {create_faction = UCB_scuit_ally}
+			SBU = {
+				country_event = {
+						id = sbu.1
+						days = 1
+					}
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_stavka_defense
@@ -1007,6 +1060,12 @@ focus_tree = {
 		x = 3
 		y = 6
 
+		completion_reward = {
+			add_timed_idea = {
+				idea = UCB_scuit
+				days = 360
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_trp_garant

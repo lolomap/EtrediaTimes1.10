@@ -47,7 +47,7 @@ guiTypes = {
 			name = "party_democratic"
 			position = {x = 50 y = 50}
 			
-			size = {width = 500 height = 100}
+			size = {width = 550 height = 100}
 
 			background = { 
 				name = "Background"
@@ -75,7 +75,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_dem_strong"
 					text = party_dem_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -87,7 +87,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 300 y = 25}
+					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_incident_btn_loc
 				}
@@ -97,7 +97,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 350 y = 25}
+					position = {x = 400 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_aggitation_btn_loc
 				}
@@ -110,7 +110,7 @@ guiTypes = {
 			position = {x = 50 y = 150}
 
 
-			size = {width = 500 height = 100}
+			size = {width = 550 height = 100}
 
 			background = { 
 				name = "Background"
@@ -138,7 +138,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_fas_strong"
 					text = party_fas_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -150,7 +150,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 300 y = 25}
+					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_incident_btn_loc
 				}
@@ -160,7 +160,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 350 y = 25}
+					position = {x = 400 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_aggitation_btn_loc
 				}
@@ -171,7 +171,7 @@ guiTypes = {
 			position = {x = 50 y = 250}
 
 
-			size = {width = 500 height = 100}
+			size = {width = 550 height = 100}
 
 			background = { 
 				name = "Background"
@@ -199,7 +199,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_neu_strong"
 					text = party_neu_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -211,7 +211,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 300 y = 25}
+					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_incident_btn_loc
 				}
@@ -221,7 +221,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 350 y = 25}
+					position = {x = 400 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_aggitation_btn_loc
 				}
@@ -232,7 +232,7 @@ guiTypes = {
 			position = {x = 50 y = 350}
 
 
-			size = {width = 500 height = 100}
+			size = {width = 550 height = 100}
 
 			background = { 
 				name = "Background"
@@ -260,7 +260,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_com_strong"
 					text = party_com_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -272,7 +272,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 300 y = 25}
+					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_incident_btn_loc
 				}
@@ -282,7 +282,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 350 y = 25}
+					position = {x = 400 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_aggitation_btn_loc
 				}
@@ -293,7 +293,7 @@ guiTypes = {
 			position = {x = 50 y = 450}
 
 
-			size = {width = 500 height = 100}
+			size = {width = 550 height = 100}
 
 			background = { 
 				name = "Background"
@@ -321,7 +321,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_mon_strong"
 					text = party_mon_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -333,7 +333,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 300 y = 25}
+					position = {x = 350 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_incident_btn_loc
 				}
@@ -343,7 +343,7 @@ guiTypes = {
 					quadTextureSprite = GFX_party_incident_button
 					buttonText = " "
 					buttonFont = hoi_18mbs
-					position = {x = 350 y = 25}
+					position = {x = 400 y = 25}
 					orientation = UPPER_RIGHT
 					pdx_tooltip = party_aggitation_btn_loc
 				}
