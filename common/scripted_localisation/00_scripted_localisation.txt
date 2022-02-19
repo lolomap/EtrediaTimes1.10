@@ -141,3 +141,30 @@ defined_text = {
 		localization_key = stab_cap_b
 	}
 }
+
+defined_text = {
+	name = random_party_name
+	text = {
+		trigger = {check_variable = {rand_ideology = 1}}
+		localization_key = "[Root.GetDemocraticParty]"
+	}
+	text = {
+		trigger = {check_variable = {rand_ideology = 2}}
+		localization_key = "[Root.GetFascistParty]"
+	}
+	text = {
+		trigger = {check_variable = {rand_ideology = 3}}
+		localization_key = "[Root.GetNeutralParty]"
+	}
+	text = {
+		trigger = {check_variable = {rand_ideology = 4}}
+		localization_key = "[Root.GetCommunistParty]"
+	}
+	text = {
+		trigger = {check_variable = {rand_ideology = 5}}
+		localization_key = "Монархизм"
+	}
+	text = {
+		localization_key = "_СЛУЧАЙНАЯ ПАРТИЯ_"
+	}
+}
