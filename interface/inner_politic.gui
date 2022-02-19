@@ -75,7 +75,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_dem_strong"
 					text = party_dem_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -138,7 +138,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_fas_strong"
 					text = party_fas_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -199,7 +199,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_neu_strong"
 					text = party_neu_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -260,7 +260,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_com_strong"
 					text = party_com_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
@@ -321,7 +321,7 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "party_strong"
+					name = "party_mon_strong"
 					text = party_mon_strong_loc
 					position = {x = 0 y = 40}
 					maxWidth = 500
