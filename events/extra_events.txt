@@ -173,6 +173,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -182,6 +184,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -206,6 +209,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -229,6 +235,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -238,6 +246,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -262,6 +271,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -286,6 +298,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -295,6 +309,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -319,6 +334,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -343,6 +361,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -352,6 +372,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -376,6 +397,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -400,6 +424,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -409,6 +435,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -433,6 +460,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -479,6 +509,7 @@ country_event = {	# ивенты от стабки на изменение си�
 	mean_time_to_happen = {days = 30}
 
 	trigger = {is_ai = no}
+	hidden = yes
 
 	option = {name = mechanics.11.a}
 	immediate = {
