@@ -9,7 +9,7 @@ scripted_gui = {
 		triggers = {
 			nuke_province_moded_visible = {
 				not = {is_controlled_by = ROOT}
-				#always = yes
+				#always = no
 			}
 			nuke_province_click_enabled = {
 				owner = {

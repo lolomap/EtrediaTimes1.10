@@ -313,9 +313,16 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
-				war_support_weekly = 0.1
+				war_support_weekly = 0.01
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		balance_supporting = {
+			allowed = {always = no} removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
 			}
 		}
 
