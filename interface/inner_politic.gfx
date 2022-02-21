@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_party_incident_button"
 		texturefile = "gfx/interface/party_incident_button.dds"
 	}
+	SpriteType = {
+		name = "GFX_party_discussion_button"
+		texturefile = "gfx/interface/party_discussion_button.dds"
+	}
 }

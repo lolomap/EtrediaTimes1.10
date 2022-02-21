@@ -35,11 +35,16 @@ scripted_gui = {
 								}
 							}
 						}
+						if = {
+							limit = {check_variable = {selected_prov > 0}}
 
-						launch_nuke = {
-							state = PREV
-							use_nuke = yes
+							launch_nuke = {
+								state = PREV
+								use_nuke = yes
+								province = selected_prov
+							}
 						}
+						
 					}
 				}
 			}
