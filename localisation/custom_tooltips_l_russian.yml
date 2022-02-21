@@ -86,3 +86,5 @@
   change_party_power:0 "§RРост оппозиционной силы [random_party_name]§!"
   reduce_party_power:0 "§GСнижение оппозиционной силы [random_party_name]§!"
   reduce_party_power_nontarget:0 "§GСнижение оппозиционной силы партии§!"
+
+  province_id_gui_display:0 "[?current_province]"

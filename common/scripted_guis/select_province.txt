@@ -1,0 +1,27 @@
+scripted_gui = {
+	state_1_pc = {
+		window_name = "state_choose_province_window"
+		context_type = selected_state_context
+		parent_window_name = province_info_window
+
+		visible = {always = yes}
+
+		dynamic_lists = {
+			province_buttons_gb = {
+				array = THIS.provincesArray
+				entry_container = province_button_entry
+				value = current_province
+			}
+		}
+
+		effects = {
+			province_select_btn_click = {
+				#ROOT = {add_political_power = 10}
+				ROOT = {goto_province = current_province}
+				ROOT = {
+					set_variable = {selected_prov = current_province}
+				}
+			}
+		}
+	}
+}
