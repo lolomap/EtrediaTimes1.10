@@ -14,7 +14,7 @@ state={
 		}
 		add_core_of = LON
 		victory_points = {
-			11360 1
+			9758 1
 		}
 
 	}

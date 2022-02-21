@@ -17,13 +17,13 @@ state={
                         industrial_complex = 0
                         arms_factory = 0
                         dockyard = 1
-			3505 = {
+			3190 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = TOR
 		victory_points = {
-			3505 5
+			3190 5
 		}
 
 	}

@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = UNC
 		victory_points = {
-			7517 5
+			6543 5
 		}
 
 	}

@@ -16,13 +16,13 @@ state={
 			infrastructure = 6
                         industrial_complex = 4
                         arms_factory = 1
-			4401 = {
+			3790 = {
 				naval_base = 8
 			}
 		}
 		add_core_of = LOD
 		victory_points = {
-			4401 15
+			3790 15
 		}
 
 	}

@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = ZHE
 		victory_points = {
-			6209 1
+			5213 1
 		}
 
 	}

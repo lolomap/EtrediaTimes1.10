@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = KCE
 		victory_points = {
-			4105 1
+			3535 1
 		}
 
 	}

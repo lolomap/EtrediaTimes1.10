@@ -22,7 +22,7 @@ state={
 		add_core_of = EIK
 		add_core_of = TSH
 		victory_points = {
-			11699 1
+			13158 1
 		}
 
 	}

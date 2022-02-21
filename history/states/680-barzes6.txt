@@ -9,7 +9,7 @@ state={
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 1
-			1128 = {
+			835 = {
 				naval_base = 4
 
 			}
@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = BRZ
 		victory_points = {
-			1128 15 
+			835 15 
 		}
 
 	}

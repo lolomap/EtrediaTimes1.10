@@ -13,13 +13,13 @@ state={
                         industrial_complex = 1
                         arms_factory = 1
                         dockyard = 0
-			1969 = {
+			1999 = {
 				naval_base = 5
 			}
 		}
 		add_core_of = MOA
 		victory_points = {
-			2058 25
+			1999 1
 		}
 
 	}

@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = BUP
 		victory_points = {
-			907 1
+			570 1
 		}
 
 	}

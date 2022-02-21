@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = KOI
 		victory_points = {
-			3127 1
+			2567 1
 		}
 
 	}

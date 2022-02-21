@@ -16,31 +16,31 @@ state={
 			infrastructure = 4
                         industrial_complex = 3
                         dockyard = 1
-			2837 = {
+			2303 = {
 				naval_base = 2
 			}
-			2914 = {
+			2368 = {
 				naval_base = 1
 			}
-			2706 = {
+			2276 = {
 				naval_base = 1
 			}
-			2838 = {
+			2184 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = SKI
 		victory_points = {
-			2837 5
+			2303 5
 		}
 		victory_points = {
-			2914 1
+			2368 1
 		}
 		victory_points = {
-			2706 1
+			2276 1
 		}
 		victory_points = {
-			2838 1
+			2184 1
 		}
 
 	}

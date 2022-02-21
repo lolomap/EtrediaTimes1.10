@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = BAR
 		victory_points = {
-			740 30
+			534 30
 		}
 
 	}

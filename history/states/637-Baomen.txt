@@ -14,13 +14,13 @@ state={
 		buildings = {
 			infrastructure = 3
                         industrial_complex = 2
-			3712 = {
+			3087 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = KCE
 		victory_points = {
-			3712 10
+			3087 10
 		}
 
 	}

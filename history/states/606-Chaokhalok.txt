@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = TUB
 		victory_points = {
-			9686 1
+			9189 1
 		}
 
 	}

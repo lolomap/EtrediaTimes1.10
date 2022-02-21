@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = BOU
 		victory_points = {
-			3786 5
+			3555 5
 		}
 
 	}

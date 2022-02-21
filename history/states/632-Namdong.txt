@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = ECE
 		victory_points = {
-			8659 10
+			7861 10
 		}
 
 	}

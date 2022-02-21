@@ -15,13 +15,13 @@ state={
 			infrastructure = 3
                         industrial_complex = 1
 			arms_factory = 1
-			1612 = {
+			1187 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = KBS
 		victory_points = {
-			1612 5
+			1187 5
 		}
 
 	}

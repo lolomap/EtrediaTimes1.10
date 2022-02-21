@@ -12,13 +12,13 @@ state={
 			infrastructure = 6
                         industrial_complex = 2
                         arms_factory = 1
-			6300 = {
+			5476 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = DNG
 		victory_points = {
-			6300 20
+			5476 20
 		}
 
 	}

@@ -14,13 +14,13 @@ state={
 			infrastructure = 5
                         industrial_complex = 2
 			arms_factory = 1
-			972 = {
+			685 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = PAL
 		victory_points = {
-			972 5
+			685 5
 		}
 
 	}

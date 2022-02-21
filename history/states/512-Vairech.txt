@@ -14,7 +14,7 @@ state={
 		}
 		add_core_of = LIP
 		victory_points = {
-			3833 1
+			3469 1
 		}
 
 	}

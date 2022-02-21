@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = ZAZ
 		victory_points = {
-			6434 5
+			5633 5
 		}
 
 	}

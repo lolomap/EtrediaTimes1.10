@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = LBD
 		victory_points = {
-			4049 15 
+			3697 15 
 		}
 
 	}

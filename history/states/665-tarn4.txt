@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = TRN
 		victory_points = {
-			1154 3
+			866 3
 		}
 
 	}

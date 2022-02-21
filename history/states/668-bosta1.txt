@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = KBS
 		victory_points = {
-			1410 1
+			1044 1
 		}
 
 	}

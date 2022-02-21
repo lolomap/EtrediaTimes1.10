@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = BSH
 		victory_points = {
-			12407 5
+			10681 5
 		}
 
 	}

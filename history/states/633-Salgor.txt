@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = KYU
 		victory_points = {
-			7692 5
+			6689 5
 		}
 
 	}

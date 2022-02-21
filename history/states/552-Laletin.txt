@@ -18,25 +18,25 @@ state={
                         industrial_complex = 1
                         arms_factory = 0
                         dockyard = 0
-			2122 = {
+			1447 = {
 				naval_base = 5
 			}
-			1818 = {
+			1261 = {
 				naval_base = 2
 			}
-			1746 = {
+			1484 = {
 				naval_base = 3
 			}
-			1921 = {
+			1570 = {
 				naval_base = 1
 			}
-			1693 = {
+			1272 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = MOA
 		victory_points = {
-			2122 5
+			1447 5
 		}
 
 	}

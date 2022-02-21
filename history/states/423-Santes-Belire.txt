@@ -15,13 +15,13 @@ state={
 		buildings = {
 			infrastructure = 6
                         industrial_complex = 2
-			9588 = {
+			8282 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = VRO
 		victory_points = {
-			9588 10
+			8282 10
 		}
 
 	}

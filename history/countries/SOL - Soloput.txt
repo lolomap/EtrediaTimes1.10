@@ -1,4 +1,4 @@
-﻿capital = 630
+﻿capital = 625
 
 OOB = "SOL_2014"
 

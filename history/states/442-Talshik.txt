@@ -22,7 +22,7 @@ state={
 		add_core_of = KAS
 		add_core_of = TAL
 		victory_points = {
-			12872 1
+			10915 1
 		}
 
 	}
