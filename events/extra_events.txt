@@ -173,6 +173,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -182,6 +184,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -206,6 +209,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -217,6 +223,12 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.c
+		trigger = {not = {has_country_flag = party_discreditation_cd}}
+
+		set_country_flag = {flag = party_discreditation_cd days = 120 value = 1}
+		add_popularity = {ideology = democratic popularity = -0.05}
+		custom_effect_tooltip = reduce_party_power_nontarget
+		add_to_variable = {dem_opposition = -1}
 	}
 }
 
@@ -229,6 +241,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -238,6 +252,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -262,6 +277,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -274,6 +292,12 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.c
+		trigger = {not = {has_country_flag = party_discreditation_cd}}
+
+		set_country_flag = {flag = party_discreditation_cd days = 120 value = 1}
+		add_popularity = {ideology = fascism popularity = -0.05}
+		custom_effect_tooltip = reduce_party_power_nontarget
+		add_to_variable = {fas_opposition = -1}
 	}
 }
 
@@ -286,6 +310,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -295,6 +321,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -319,6 +346,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -331,6 +361,12 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.c
+		trigger = {not = {has_country_flag = party_discreditation_cd}}
+
+		set_country_flag = {flag = party_discreditation_cd days = 120 value = 1}
+		add_popularity = {ideology = neutrality popularity = -0.05}
+		custom_effect_tooltip = reduce_party_power_nontarget
+		add_to_variable = {neu_opposition = -1}
 	}
 }
 
@@ -343,6 +379,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -352,6 +390,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -376,6 +415,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -388,6 +430,12 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.c
+		trigger = {not = {has_country_flag = party_discreditation_cd}}
+
+		set_country_flag = {flag = party_discreditation_cd days = 120 value = 1}
+		add_popularity = {ideology = communism popularity = -0.05}
+		custom_effect_tooltip = reduce_party_power_nontarget
+		add_to_variable = {com_opposition = -1}
 	}
 }
 
@@ -400,6 +448,8 @@ country_event = { #Пропагандисткая кампания против 
 
 	option = {
 		name = mechanics.4.a
+		trigger = {not = {has_country_flag = corruption_incident_cd}}
+		
 		set_temp_variable = {corrupt_chance = party_popularity_100@ruling_party}
 		divide_temp_variable = {corrupt_chance = 5}
 		multiply_temp_variable = {corrupt_chance = 7}
@@ -409,6 +459,7 @@ country_event = { #Пропагандисткая кампания против 
 		}
 		set_temp_variable = {corrupt_chance_fail = 100}
 		subtract_from_temp_variable = {corrupt_chance_fail = corrupt_chance}
+		set_country_flag = {flag = corruption_incident_cd days = 90 value = 1}
 		random_list = {
 			var:corrupt_chance = {
 				country_event = mechanics.9
@@ -433,6 +484,9 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.b
+		trigger = {not = {has_country_flag = antireklama_cd}}
+
+		set_country_flag = {flag = antireklama_cd days = 90 value = 1}
 		if = {limit = {has_idea = total_free_press} set_temp_variable = {pp_to_reduce = 75}}
 		else_if = {limit = {has_idea = free_press} set_temp_variable = {pp_to_reduce = 50}}
 		else_if = {limit = {has_idea = nonfree_press} set_temp_variable = {pp_to_reduce = 30}}
@@ -444,6 +498,12 @@ country_event = { #Пропагандисткая кампания против 
 	}
 	option = {
 		name = mechanics.4.c
+		trigger = {not = {has_country_flag = party_discreditation_cd}}
+
+		set_country_flag = {flag = party_discreditation_cd days = 120 value = 1}
+		add_popularity = {ideology = monarchism popularity = -0.05}
+		custom_effect_tooltip = reduce_party_power_nontarget
+		add_to_variable = {mon_opposition = -1}
 	}
 }
 
@@ -479,6 +539,7 @@ country_event = {	# ивенты от стабки на изменение си�
 	mean_time_to_happen = {days = 30}
 
 	trigger = {is_ai = no}
+	hidden = yes
 
 	option = {name = mechanics.11.a}
 	immediate = {
@@ -838,6 +899,28 @@ country_event = {
 		play_song = "TALSHIK"
 	}
 	option = {name = onactev.4.a}
+}
+
+country_event = {
+	id = onactev.5
+	title = onactev.5.t
+	desc = onactev.5.d
+
+	hidden = yes
+	mean_time_to_happen = {days = 7}
+	trigger = {
+		has_idea = workers_supporting
+		has_idea = elite_supporting
+	}
+
+	immediate = {
+		remove_ideas = workers_supporting
+		remove_ideas = elite_supporting
+		add_timed_idea = {
+			idea = balance_supporting
+			days = 30
+		}
+	}
 }
 
 #country_event = {	# Митинги у монархов вход 

@@ -85,28 +85,28 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = nuke_pro_sl
-	text = {
-		trigger = {
-			owner = {
-				check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
-			}
-		}
-		localization_key = nuke_pro_yes
-	}
-	text = {
-		trigger = {
-			owner = {
-				check_variable = {num_of_nuke_anti > ROOT.num_of_nuke_rockets}
-			}
-			localization_key = nuke_pro_no
-		}
-	}
-	text = {
-		localization_key = nuke_pro_mid
-	}
-}
+#defined_text = {
+#	name = nuke_pro_sl
+#	text = {
+#		trigger = {
+#			owner = {
+#				check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
+#			}
+#		}
+#		localization_key = nuke_pro_yes
+#	}
+#	text = {
+#		trigger = {
+#			owner = {
+#				check_variable = {num_of_nuke_anti > ROOT.num_of_nuke_rockets}
+#			}
+#			localization_key = nuke_pro_no
+#		}
+#	}
+#	text = {
+#		localization_key = nuke_pro_mid
+#	}
+#}
 
 defined_text = {
 	name = is_world_influence_more_2_sl
