@@ -171,6 +171,7 @@ country_event = { #Пропагандисткая кампания против 
 
 	is_triggered_only = yes
 
+	option = {name = mechanics.4.j}
 	option = {
 		name = mechanics.4.a
 		trigger = {not = {has_country_flag = corruption_incident_cd}}
@@ -239,6 +240,7 @@ country_event = { #Пропагандисткая кампания против 
 
 	is_triggered_only = yes
 
+	option = {name = mechanics.4.j}
 	option = {
 		name = mechanics.4.a
 		trigger = {not = {has_country_flag = corruption_incident_cd}}
@@ -308,6 +310,7 @@ country_event = { #Пропагандисткая кампания против 
 
 	is_triggered_only = yes
 
+	option = {name = mechanics.4.j}
 	option = {
 		name = mechanics.4.a
 		trigger = {not = {has_country_flag = corruption_incident_cd}}
@@ -377,6 +380,7 @@ country_event = { #Пропагандисткая кампания против 
 
 	is_triggered_only = yes
 
+	option = {name = mechanics.4.j}
 	option = {
 		name = mechanics.4.a
 		trigger = {not = {has_country_flag = corruption_incident_cd}}
@@ -446,6 +450,7 @@ country_event = { #Пропагандисткая кампания против 
 
 	is_triggered_only = yes
 
+	option = {name = mechanics.4.j}
 	option = {
 		name = mechanics.4.a
 		trigger = {not = {has_country_flag = corruption_incident_cd}}
@@ -538,7 +543,7 @@ country_event = {	# ивенты от стабки на изменение си�
 
 	mean_time_to_happen = {days = 30}
 
-	trigger = {is_ai = no}
+	#trigger = {is_ai = no}
 	hidden = yes
 
 	option = {name = mechanics.11.a}
@@ -773,6 +778,128 @@ country_event = { # требуют отставку
 			add_to_variable = {mon_opposition = 10}
 		}
 		custom_effect_tooltip = change_party_power
+	}
+}
+
+country_event = {	#победа конфликт
+	id = mechanics.17
+	title = mechanics.17.t
+	desc = mechanics.17.d
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.17.a
+
+	}
+	immediate = {
+		random_list = {
+			30 = {
+				var:state_border_attack@FROM = {
+					add_state_claim = FROM
+					create_wargoal = {
+						type = take_state_focus
+						target = ROOT
+						generator = {FROM}
+					}
+					country_event = mechanics.20
+				}
+			}
+			70 = {var:state_border_attack@FROM = {country_event = mechanics.21}}
+		}
+	}
+}
+
+country_event = {	#проигрыш конфликт
+	id = mechanics.18
+	title = mechanics.18.t
+	desc = mechanics.18.d
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.18.a
+	}
+	immediate = {
+		random_list = {
+			30 = {
+				var:state_border_attack@FROM = {
+					add_state_claim = FROM
+					create_wargoal = {
+						type = take_state
+						target = ROOT
+						generator = FROM
+					}
+					country_event = mechanics.20
+				}
+			}
+			70 = {var:state_border_attack@FROM = {country_event = mechanics.22}}
+		}
+	}
+}
+
+country_event = {	#ничья конфликт
+	id = mechanics.19
+	title = mechanics.19.t
+	desc = mechanics.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.19.a
+	}
+}
+
+country_event = {	#дать корку конфликт
+	id = mechanics.20
+	title = mechanics.20.t
+	desc = mechanics.20.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.20.a
+
+	}
+}
+
+country_event = {	#не дать корку победа конфликт
+	id = mechanics.21
+	title = mechanics.21.t
+	desc = mechanics.21.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.21.a
+		add_political_power = -50
+		add_stability = -0.03
+	}
+}
+
+country_event = {	# не дать корку проигрыш конфликт
+	id = mechanics.22
+	title = mechanics.22.t
+	desc = mechanics.22.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.22.a
+		add_political_power = -150
+		add_stability = -0.05
+	}
+}
+
+country_event = { # конфликт защита
+	id = mechanics.23
+	title = mechanics.23.t
+	desc = mechanics.23.d
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.23.a
 	}
 }
 

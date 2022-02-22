@@ -87,6 +87,9 @@
  mechanics.14.t:0 "[random_party_name] выступления"
  mechanics.15.t:0 "Организованная [random_party_name] оппозиция"
  mechanics.16.t:0 "[random_party_name] требует отставки правительства"
+ mechanics.20.t:0 "Предлог для войны"
+ mechanics.21.t:0 "Неудачная провокация"
+ mechanics.22.t:0 "Поражение в пограничном конфликте"
 
 
  randev.2.t:0 "Митинги в столице"

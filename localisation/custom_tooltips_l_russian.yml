@@ -88,3 +88,4 @@
   reduce_party_power_nontarget:0 "§GСнижение оппозиционной силы партии§!"
 
   province_id_gui_display:0 "[?current_province]"
+  border_war_button_loc:0 "Начать пограничный конфликт\n----------------\n\nНаше отношение к ним -20 и ниже"
