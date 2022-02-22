@@ -1,0 +1,55 @@
+scripted_gui = {
+	nuke_moded = {
+		window_name = "border_war_window"
+		context_type = selected_state_context
+		parent_window_name = province_info_window
+
+		visible = {always = yes}
+
+		triggers = {
+			start_bw_btn_click_enabled = {
+				owner = {
+					has_opinion = {
+						target = ROOT
+						value < -19
+					}
+				}
+			}
+			start_bw_btn_visible = {
+				any_neighbor_state = {
+					owner = {tag = ROOT}
+				}
+				owner = {not = {tag = ROOT}}
+			}
+		}
+
+		effects = {
+			start_bw_btn_click = {
+				owner = {set_variable ={state_border_attack@PREV = ROOT}}
+				random_neighbor_state = {
+					limit = {is_owned_by = ROOT}
+
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = THIS
+							num_provinces = 1
+							on_win = mechanics.23
+							on_lose = mechanics.23
+							on_cancel = mechanics.23
+						}
+					
+						defender = {
+							state = PREV
+							num_provinces = 1
+							on_win = mechanics.18
+							on_lose = mechanics.17
+							on_cancel = mechanics.23
+						}
+					}
+
+				}
+			}
+		}
+	}
+}

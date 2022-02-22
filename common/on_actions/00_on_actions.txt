@@ -540,7 +540,12 @@ on_actions = {
 #####################################################################################
 
 			if = {
-				limit = {ROOT = {has_war = yes}}
+				limit = {
+					OR = {
+						ROOT = {has_war = yes}
+						ROOT = {has_border_war = yes}
+					}
+				}
 				ROOT = {
 					set_variable = {wtire_to_add = 0.98}
 					if = {
