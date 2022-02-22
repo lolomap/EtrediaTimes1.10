@@ -16,10 +16,13 @@ state={
 			infrastructure = 7
                         industrial_complex = 3
                         dockyard = 1
+			635 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = BAR
 		victory_points = {
-			462 10
+			611 10
 		}
 
 	}

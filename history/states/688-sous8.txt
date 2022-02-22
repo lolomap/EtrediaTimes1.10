@@ -20,7 +20,7 @@ state={
 		}
 		add_core_of = SOU
 		victory_points = {
-			234 10
+			369 10
 		}
 
 	}

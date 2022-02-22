@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = KVU
 		victory_points = {
-			12994 10
+			11205 10
 		}
 
 	}

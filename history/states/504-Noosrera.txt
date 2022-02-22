@@ -13,13 +13,13 @@ state={
                         industrial_complex = 3
                         arms_factory = 0
                         dockyard = 1
-			4252 = {
+			3643 = {
 				naval_base = 8
 			}
 		}
 		add_core_of = BOU
 		victory_points = {
-			4252 15
+			3625 15
 		}
 
 	}

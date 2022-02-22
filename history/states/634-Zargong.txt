@@ -14,13 +14,13 @@ state={
 			infrastructure = 6
                         industrial_complex = 3
                         arms_factory = 1
-			4366 = {
+			3756 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = ZOG
 		victory_points = {
-			4366 10
+			3756 10
 		}
 
 	}

@@ -14,9 +14,9 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = SOL
+		add_core_of = BSH
 		victory_points = {
-			12169 1
+			10470 1
 		}
 
 	}

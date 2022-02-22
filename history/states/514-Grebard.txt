@@ -13,7 +13,7 @@ state={
 		}
 		add_core_of = CHO
 		victory_points = {
-			3203 1
+			2934 1
 		}
 
 	}

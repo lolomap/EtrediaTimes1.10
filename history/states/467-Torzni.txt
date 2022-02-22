@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = CHE
 		victory_points = {
-			8995 1
+			9828 2
 		}
 
 	}

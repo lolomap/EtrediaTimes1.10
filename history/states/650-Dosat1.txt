@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = DOS
 		victory_points = {
-			986 1
+			717 1
 		}
 
 	}

@@ -12,13 +12,13 @@ state={
 			infrastructure = 5
                         industrial_complex = 2
                         arms_factory = 1
-			8537 = {
-				naval_base = 6
+			7395 = {
+				naval_base = 4
 			}
 		}
 		add_core_of = KLU
 		victory_points = {
-			8537 10
+			7395 10
 		}
 
 	}

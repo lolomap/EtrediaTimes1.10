@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = BHI
 		victory_points = {
-			8119 5
+			7046 5
 		}
 
 	}

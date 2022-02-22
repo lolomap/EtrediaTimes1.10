@@ -14,13 +14,13 @@ state={
 			infrastructure = 4
                         industrial_complex = 1
 			arms_factory = 1
-			1138 = {
+			823 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = NEV
 		victory_points = {
-			1138 10
+			823 10
 		}
 
 	}

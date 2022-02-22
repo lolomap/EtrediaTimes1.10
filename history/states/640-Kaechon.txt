@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = GAR
 		victory_points = {
-			5837 5
+			5035 5
 		}
 
 	}

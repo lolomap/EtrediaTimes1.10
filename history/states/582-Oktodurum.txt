@@ -11,13 +11,13 @@ state={
 		buildings = {
 			infrastructure = 7
                         industrial_complex = 1
-			4020 = {
+			3471 = {
 				naval_base = 5
 			}
 		}
 		add_core_of = ZHE
 		victory_points = {
-			4020 5
+			3471 5
 		}
 
 	}

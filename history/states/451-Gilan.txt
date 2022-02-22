@@ -12,13 +12,13 @@ state={
 			infrastructure = 9
                         industrial_complex = 0
                         arms_factory = 0
-			8258 = {
+			8267 = {
 				naval_base = 7
 			}
 		}
 		add_core_of = LON
 		victory_points = {
-			8258 10
+			8267 10
 		}
 
 	}

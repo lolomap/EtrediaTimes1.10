@@ -17,13 +17,13 @@ state={
                         industrial_complex = 2
                         arms_factory = 1
                         dockyard = 1
-			2973 = {
+			2369 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = KOI
 		victory_points = {
-			2973 15
+			2369 15
 		}
 
 	}

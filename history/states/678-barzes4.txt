@@ -16,7 +16,7 @@ state={
 		}
 		add_core_of = BRZ
 		victory_points = {
-			1219 1
+			898 1
 		}
 
 	}

@@ -20,7 +20,7 @@ state={
 		}
 		add_core_of = SOL
 		victory_points = {
-			10527 10
+			9073 10
 		}
 
 	}

@@ -14,13 +14,13 @@ state={
 		buildings = {
 			infrastructure = 3
                         industrial_complex = 1
-			775 = {
+			547 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = LGH
 		victory_points = {
-			775 2
+			547 2
 		}
 
 	}

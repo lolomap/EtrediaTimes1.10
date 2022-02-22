@@ -15,13 +15,13 @@ state={
 		buildings = {
 			infrastructure = 6
                         dockyard = 1
-			2740 = {
+			2556 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = TOR
 		victory_points = {
-			2740 10
+			2556 10
 		}
 
 	}

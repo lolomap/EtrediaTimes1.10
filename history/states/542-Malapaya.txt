@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = MOA
 		victory_points = {
-			1610 10
+			1681 10
 		}
 
 	}

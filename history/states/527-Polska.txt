@@ -16,13 +16,13 @@ state={
                         industrial_complex = 1
                         arms_factory = 0
                         dockyard = 1
-			3004 = {
+			2452 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = SBO
 		victory_points = {
-			3004 5
+			2452 5
 		}
 
 	}

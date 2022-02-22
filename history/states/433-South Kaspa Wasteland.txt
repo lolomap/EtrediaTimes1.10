@@ -17,7 +17,6 @@ state={
                         arms_facotry = 0
 		}
 		add_core_of = KAS
-		#victory_points = {}
 
 	}
 	provinces={

@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = DNG
 		victory_points = {
-			7421 1 
+			6748 1 
 		}
 
 	}

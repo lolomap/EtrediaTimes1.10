@@ -13,13 +13,13 @@ state={
                         industrial_complex = 3
                         arms_factory = 0
                         dockyard = 2
-			2969 = {
+			2841 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = GOD
 		victory_points = {
-			2969 10
+			2841 10
 		}
 
 	}

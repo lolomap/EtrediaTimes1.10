@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = HOR
 		victory_points = {
-			6572 5
+			5712 5
 		}
 
 	}

@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = PAL
 		victory_points = {
-			919 1
+			662 3
 		}
 
 	}

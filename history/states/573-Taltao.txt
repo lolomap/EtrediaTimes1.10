@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = TOR
 		victory_points = {
-			3381 5
+			3151 5
 		}
 
 	}

@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = KAS
 		victory_points = {
-			13506 1
+			13893 1
 		}
 
 	}

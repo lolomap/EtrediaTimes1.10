@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = VRO
 		victory_points = {
-			10092 5
+			10805 5
 		}
 
 	}

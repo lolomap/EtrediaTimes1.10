@@ -13,13 +13,13 @@ state={
                         industrial_complex = 1
                         arms_factory = 1
                         dockyard = 0
-			6188 = {
+			5374 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = CHE
 		victory_points = {
-			6188 20
+			5374 20
 		}
 
 	}
