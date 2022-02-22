@@ -375,6 +375,7 @@ armor_generic = {
 				modern_armor = 6
 				motorized_rocket_brigade = 2
 				mechanized = 6
+				modern_sp_artillery_brigade = 2
 			}
 		}
 		
@@ -484,7 +485,8 @@ garrison_generic = {
 			}
 			
 			regiments = {
-				infantry = 4
+				infantry = 2
+				jeep = 4
 			}
 		}
 		
@@ -590,7 +592,7 @@ suppression_generic = {
 			}
 			
 			regiments = {
-				cavalry = 6
+				jeep = 6
 			}
 		}
 		
@@ -700,8 +702,8 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 4
-				mechanized = 4
+				infantry = 3
+				mechanized = 6
 				artillery_brigade = 2
 			}
 		}
@@ -835,9 +837,9 @@ infantry_big_generic = {
 			}
 			
 			regiments = {
-				infantry = 6
-				mechanized = 8
-				artillery_brigade = 2
+				infantry = 3
+				mechanized = 9
+				modern_sp_artillery_brigade = 2
 			}
 		}
 		
@@ -1055,7 +1057,10 @@ marines_generic = {
 			}
 			
 			regiments = {
-				marine = 9
+				marine = 7
+				mechanized = 3
+				modern_sp_artillery_brigade = 2
+				modern_armor = 2
 			}
 		}
 
