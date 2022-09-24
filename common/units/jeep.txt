@@ -1,11 +1,11 @@
 sub_units = {
 
 	jeep = {
-		sprite = mechanized
+		sprite = jeep
 		map_icon_category = infantry
 
-		priority = 900
-		ai_priority = 700
+		priority = 600
+		ai_priority = 200
 		active = yes
 
 		type = {
@@ -27,15 +27,15 @@ sub_units = {
 		hard_attack = 2.0
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 60
+		max_strength = 25
+		max_organisation = 70
 		default_morale = 0.3
-		manpower = 600
+		manpower = 400
 
 		#Misc Abilities
 		training_time = 120
-		suppression = 1
-		weight = 0.8
+		suppression = 4
+		weight = 0.6
 		
 		supply_consumption = 0.12
 		
@@ -48,8 +48,8 @@ sub_units = {
 		transport = jeep_equipment
 
 		need = {
-			jeep_equipment = 50
-			infantry_equipment = 50
+			jeep_equipment = 25
+			infantry_equipment = 200
 		}
 
 		forest = {
@@ -65,7 +65,7 @@ sub_units = {
 			attack = -0.1
 		}
 		urban = {
-			attack = -0.1
+			attack = -0.05
 			defence = 0.05
 		}
 		river = {

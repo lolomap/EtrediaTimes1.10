@@ -95,7 +95,7 @@ division_template = {
 units = {
 	division = {
 		name = "Mechanized Division"
-		location = 12601
+		location = 11423
 		division_template = "Mechanized Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.4
@@ -104,7 +104,7 @@ units = {
 	
 	division = {
 		name = "Dir motorized"
-		location = 12601
+		location = 11423
 		division_template = "Dir motorized"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -113,7 +113,7 @@ units = {
 	
 	division = {
 		name = "Dir motorized"
-		location = 12601
+		location = 11423
 		division_template = "Dir motorized"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -122,7 +122,7 @@ units = {
 	
 	division = {
 		name = "Dir motorized"
-		location = 12601
+		location = 11423
 		division_template = "Dir motorized"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -131,7 +131,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12601
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -140,7 +140,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12601
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -320,7 +320,7 @@ units = {
 	
 	division = {
 		name = "Mechanized Division"
-		location = 12260
+		location = 11423
 		division_template = "Mechanized Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.4
@@ -338,7 +338,7 @@ units = {
 	
 	division = {
 		name = "Mechanized Division"
-		location = 11777
+		location = 11423
 		division_template = "Mechanized Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.4
@@ -347,52 +347,7 @@ units = {
 	
 	division = {
 		name = "Mechanized Division"
-		location = 11794
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 12510
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 12510
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 12510
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 12510
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 12510
+		location = 11423
 		division_template = "Mechanized Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.4
@@ -410,7 +365,7 @@ units = {
 	
 	division = {
 		name = "MNT division"
-		location = 12447
+		location = 11423
 		division_template = "MNT division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.6
@@ -419,7 +374,7 @@ units = {
 
 	division = {
 		name = "Democrat Militia"
-		location = 12772
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -428,7 +383,7 @@ units = {
 
 	division = {
 		name = "Democrat Militia"
-		location = 12772
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -437,7 +392,7 @@ units = {
 
 	division = {
 		name = "Democrat Militia"
-		location = 12772
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -446,7 +401,7 @@ units = {
 
 	division = {
 		name = "Democrat Militia"
-		location = 12772
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -455,16 +410,7 @@ units = {
 
 	division = {
 		name = "Democrat Militia"
-		location = 12772
-		division_template = "Democrat Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.8
-
-    }
-	
-	division = {
-		name = "Democrat Militia"
-		location = 12772
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -473,7 +419,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12699
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -482,7 +428,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12699
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -491,7 +437,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12700
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -500,7 +446,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12700
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -509,7 +455,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12510
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -527,7 +473,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 11657
+		location = 12510
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -536,7 +482,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 11657
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.8
@@ -545,7 +491,16 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12505
+		location = 11423
+		division_template = "Democrat Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.8
+
+    }
+	
+	division = {
+		name = "Democrat Militia"
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -561,7 +516,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 12623
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -569,7 +524,7 @@ units = {
 	
 	division = {
 		name = "Democrat Militia"
-		location = 13157
+		location = 11423
 		division_template = "Democrat Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8

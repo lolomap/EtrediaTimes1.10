@@ -29,30 +29,13 @@ SBU_template_design_1 = {
 	}
 	ai_strategy = {
 		type = template_prio
-		id = medium_armor
-		value = 80
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = template_prio
 		id = mechanized
 		value = 120
 	}
 	ai_strategy = {
 		type = template_prio
 		id = motorized
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -400
+		value = 10
 	}
 }
 
@@ -65,29 +48,12 @@ SBU_template_design_2 = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = medium_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = role_ratio
 		id = mechanized
 		value = 120
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = -200
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -400
+		value = 50
 	}
 }

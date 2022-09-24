@@ -239,3 +239,23 @@ country_event = {
         ai_chance = { factor = 10 }
     }
 }
+
+country_event = {
+    id = terbia.10
+    title = terbia.10.t
+    desc = terbia.10.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+	name = terbia.10.a
+		DIR = { country_event = dircom.9 days = 1 }
+	ai_chance = { factor = 70 }
+	}
+	option = {
+	name = terbia.10.b
+		DIR = { country_event = dircom.10 days = 1 }
+	ai_chance = { factor = 30 }
+	}
+}

@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Emperor's Fleet"			
-		naval_base = 2939
+		naval_base = 2352
 		task_force = {				
 			name = "Main Emperor's Fleet"				
-			location = 2939
+			location = 2352
 			ship = { name = "Doronas I" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
 			ship = { name = "Donat Empire" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }
 			ship = { name = "Sburski" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DON } } }

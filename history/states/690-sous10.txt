@@ -2,29 +2,33 @@
 state={
 	id=690
 	name="STATE_690"
-	manpower = 2780000
-	
-	state_category = town
 
 	history={
 		owner = SOU
 		buildings = {
 			infrastructure = 5
-                        industrial_complex = 3
+			industrial_complex = 3
 			350 = {
 				naval_base = 3
+
 			}
 			437 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = SOU
 		victory_points = {
-			350 5
+			350 5 
 		}
 
 	}
+
 	provinces={
 		318 319 330 335 345 350 353 357 358 368 373 388 396 397 398 415 421 436 437 479 522 
 	}
+	manpower=2780000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

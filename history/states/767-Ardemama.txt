@@ -15,13 +15,13 @@ state={
 			infrastructure = 4
                         industrial_complex = 2
 			arms_factory = 1
-			1474 = {
+			1063 = {
 				naval_base = 8
 			}
 		}
 		add_core_of = NIB
 		victory_points = {
-			1534 10
+			1118 10
 		}
 
 	}

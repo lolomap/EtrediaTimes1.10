@@ -145,7 +145,7 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -154,7 +154,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -163,7 +163,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -172,7 +172,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -181,7 +181,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -189,7 +189,7 @@ units = {
         }
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -198,7 +198,7 @@ units = {
 
 	division = {
 		name = "MNT division"
-		location = 8640
+		location = 7476
 		division_template = "MNT division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -207,7 +207,7 @@ units = {
 
 	division = {
 		name = "MNT division"
-		location = 8640
+		location = 7476
 		division_template = "MNT division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -216,7 +216,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -225,7 +225,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -234,7 +234,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -243,7 +243,7 @@ units = {
 
 	division = {
 		name = "Infantry Division"
-		location = 8640
+		location = 7476
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -251,7 +251,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -259,7 +259,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -267,7 +267,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -275,7 +275,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -283,7 +283,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -291,7 +291,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -299,7 +299,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -307,7 +307,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -315,7 +315,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -323,7 +323,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -331,7 +331,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -339,7 +339,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -347,7 +347,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -355,7 +355,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -363,7 +363,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -371,7 +371,7 @@ units = {
 	
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -379,7 +379,7 @@ units = {
 
 	division = {
 		name = "Mot. Rifl. Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Mot. Rifl. Brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -387,7 +387,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -395,7 +395,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -403,7 +403,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -411,7 +411,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -419,7 +419,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -427,7 +427,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -435,7 +435,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -443,7 +443,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -451,7 +451,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -459,7 +459,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -467,7 +467,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -475,7 +475,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -483,7 +483,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -491,7 +491,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -499,7 +499,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -507,7 +507,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -515,7 +515,7 @@ units = {
 	
 	division = {
 		name = "Militia Brigade"
-		location = 8640
+		location = 7476
 		division_template = "Militia Brigade"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.9
@@ -523,7 +523,7 @@ units = {
 
 	division = {
 		name = "Main Tank-Division"
-		location = 8640
+		location = 7476
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -531,7 +531,7 @@ units = {
 	
 	division = {
 		name = "Main Tank-Division"
-		location = 8640
+		location = 7476
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -539,7 +539,7 @@ units = {
 
 	division = {
 		name = "Main Tank-Division"
-		location = 8640
+		location = 7476
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9

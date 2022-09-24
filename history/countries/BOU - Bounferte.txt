@@ -9,6 +9,7 @@ set_war_support = 0.4
 add_ideas = {
         www_best_country
         total_free_press
+	second_corruption_level
 }
 
 set_technology = {
@@ -17,8 +18,6 @@ set_technology = {
 	motorised_infantry = 1
         mechanised_infantry = 1
 	jeep_unit = 1
-	jeep_unit_2 = 1
-	jeep_unit_3 = 1
 	infantry_weapons = 1
 	early_fighter = 1
 	motorised_infantry = 1

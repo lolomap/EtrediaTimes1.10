@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Kongelige YANske Marine"			
-		naval_base = 6904 # Kristiansand
+		naval_base = 6184
 		task_force = {				
 			name = "Main Ecerora Unity"				
-			location = 6904
+			location = 6184
 			ship = { name = "Erceran" definition = battleship equipment = { battleship_1 = { amount = 1 owner = YAN } } }	
 			ship = { name = "Kaibara" definition = battleship equipment = { battleship_1 = { amount = 1 owner = YAN } } }	
 			ship = { name = "Ecerora" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }				
@@ -65,7 +65,7 @@ units = {
 		}					
 		task_force = {					
 			name = "First Submarine Unity"				
-			location = 6904
+			location = 6315
 			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
 			ship = { name = "SYAN Troll" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
 			ship = { name = "SYAN Gerald" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YAN } } }
@@ -76,10 +76,10 @@ units = {
 	}
 	fleet = {
 		name = "Drerora Fleet"			
-		naval_base = 10493
+		naval_base = 9083
 		task_force = {				
 			name = "Second Operative"				
-			location = 10493
+			location = 9083
 			ship = { name = "Drerora" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = YAN } } }
 			ship = { name = "LC_Type 1 44" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }
 			ship = { name = "LC_Type 1 110" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YAN } } }

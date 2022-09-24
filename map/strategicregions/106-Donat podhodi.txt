@@ -4,7 +4,7 @@ strategic_region={
 	provinces={
 		2702 2707 2763 2779 2811 2940 2966 3096 
 	}
-	naval_terrain=water_shallow_sea
+	naval_terrain=water_deep_ocean
 	weather={
 	}
 }

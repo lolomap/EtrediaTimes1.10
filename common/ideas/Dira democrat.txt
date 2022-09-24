@@ -15,12 +15,13 @@ ideas = {
 		}
 		
 		DEM_bad_economic = {
-            #picture = 
+            picture = usa_great_depression_2
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
+				trade_laws_cost_factor = 1
                 political_power_gain = -0.15
 				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.3

@@ -14,6 +14,7 @@ state={
                         arms_factory = 0
 		}
 		add_core_of = CHE
+		add_core_of = EYC
 		victory_points = {
 			8792 5
 		}

@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Moadera Fleet"			
-		naval_base = 1874
+		naval_base = 1429
 		task_force = {				
 			name = "Main Moadera Unity"				
-			location = 1874
+			location = 1429
 			ship = { name = "Mardera" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MOA } } }	
 			ship = { name = "HC-1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOA } } }
 			ship = { name = "HC-1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MOA } } }	
@@ -73,7 +73,7 @@ units = {
 		}					
 		task_force = {					
 			name = "First Submarine Unity"				
-			location = 1874
+			location = 1429
 			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
 			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }
 			ship = { name = "SYAN Dryer" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MOA } } }

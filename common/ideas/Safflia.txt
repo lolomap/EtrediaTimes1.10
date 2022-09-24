@@ -18,6 +18,62 @@ ideas = {
 		   mobilization_laws_cost_factor = 1
 		}
 	}
+	
+	SFL_fascist_army = {
+		picture = idea_great_safflia_course
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		modifier = {
+		    war_support_factor = 0.05
+		    fascism_drift = 0.02
+		    army_attack_factor = 0.12
+			army_defence_factor = 0.12
+			army_morale_factor = 0.05
+		}
+	}
+
+	SFL_great_safflia_course = {
+
+		picture = idea_great_safflia_course
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		modifier = {
+		    political_power_gain = 0.3
+		    stability_factor = 0.15
+		    war_support_factor = 0.15
+		    fascism_drift = 0.02
+		    neutrality_drift = 0.02
+		    monarchism_drift = 0.02
+		}
+	}
+	
+	SFL_protectionism = {
+
+		picture = idea_great_safflia_course
+
+		allowed = {
+			always = no
+		}
+		
+		removal_cost = -1
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		    stability_factor = 0.1
+			production_speed_buildings_factor = 0.1
+		    global_building_slots_factor = 0.1
+		}
+	}
 
 	SFL_neutralitydrift = {
 		picture = polit_
@@ -35,7 +91,7 @@ ideas = {
 	}
 
 	SFL_mondrift = {
-		picture = polit_
+		picture = bra_monarchist_uprising
 
 		allowed = {
 			always = no

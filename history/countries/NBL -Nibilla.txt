@@ -8,12 +8,14 @@ set_war_support = 0.2
 
 add_ideas = {
         www_bad_country
+	sixth_corruption_level
 }
 
 set_technology = {
 	infantry_weapons = 1
 	motorised_infantry = 1
 	gw_artillery = 1
+	jeep_unit = 1
 }
 
 

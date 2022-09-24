@@ -11,6 +11,7 @@ add_ideas = {
         total_free_press
         general_entry
         SBU_little_sburska_zvezda
+	fourth_corruption_level
 }
 
 set_technology = {
@@ -19,6 +20,7 @@ set_technology = {
         tech_support = 1
 	infantry_weapons = 1
 	motorised_infantry = 1
+	jeep_unit = 1
 	gw_artillery = 1
 	tech_mountaineers = 1
         mechanised_infantry = 1

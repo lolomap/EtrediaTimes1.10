@@ -10,6 +10,7 @@ add_ideas = {
         WWW_medium_country
         unfree_press
         free_entry
+	fourth_corruption_level
 }
 
 set_technology = {
@@ -22,6 +23,8 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	advanced_medium_tank = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	main_battle_tank = 1
 	tech_mountaineers = 1
 	tactical_bomber1 = 1

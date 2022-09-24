@@ -7,8 +7,9 @@ state={
 	state_category = rural
 	
 	resources={
-		
+		uranium = 7 # was: 7
 	}
+
 
 	history={
 		owner = KAS

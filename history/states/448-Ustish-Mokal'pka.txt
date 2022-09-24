@@ -13,11 +13,11 @@ state={
 	history={
 		owner = LON
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		add_core_of = LON
 		victory_points = {
-			10726 1
+			11029 1
 		}
 
 	}

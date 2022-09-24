@@ -12,11 +12,406 @@ focus_tree = {
 	focus = {
 		id = DIR_revolution
 		icon = GFX_goal_unknown
-		cost = 1
-		x = 6
+		cost = 2
+		x = 10
 		y = 0
 		completion_reward = {
 		DIR = { country_event = { id = dirnews.1 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_holywar
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_revolution
+		}
+		available = {
+			has_war = yes
+		}
+		cost = 1
+		x = 10
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			DIR = { add_timed_idea = { idea = DIR_holyoffensive days = 120 } }
+		}
+    }
+	focus = {
+		id = DIR_open_reseves
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_holywar
+		}
+		cost = 3
+		x = 6
+		y = 2
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12000
+				producer = DIR
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100
+				producer = DIR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = DIR
+			}
+		}
+    }
+	focus = {
+		id = DIR_open_trade
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_holywar
+		}
+		cost = 3
+		x = 8
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = free_trade
+			}
+		}
+    }
+	focus = {
+		id = DIR_track_down_national_traitors
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_holywar
+		}
+		cost = 5
+		x = 10
+		y = 3
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			DIR = { country_event = { id = dircom.1 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_grand_offensive
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_open_trade
+		}
+		prerequisite = {
+			focus = DIR_open_reseves
+		}
+		cost = 10
+		x = 7
+		y = 3
+		available = {
+			DIR = { has_army_manpower  = { size > 400000 } }
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.15
+			DIR = { add_timed_idea = { idea = DIR_grand_offensive_idea days = 120 } }
+		}
+    }
+	focus = {
+		id = DIR_strengthen_the_power
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_track_down_national_traitors
+		}
+		cost = 10
+		x = 10
+		y = 4
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.15
+		}
+    }
+	focus = {
+		id = DIR_com_foreign_policy
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_strengthen_the_power
+		}
+		cost = 10
+		x = 6
+		y = 5
+		completion_reward = {
+			DIR = { country_event = { id = dircom.4 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_com_economic
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_strengthen_the_power
+		}
+		cost = 10
+		x = 14
+		y = 5
+		completion_reward = {
+			add_stability = 0.1
+		}
+    }
+	focus = {
+		id = DIR_com_slaves
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_economic
+		}
+		cost = 10
+		x = 14
+		y = 6
+		completion_reward = {
+			add_ideas = { DIR_slaves }
+		}
+    }
+	focus = {
+		id = DIR_com_start_privatization_ownership
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_slaves
+		}
+		cost = 10
+		x = 14
+		y = 7
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_start_reorganization_civil_industry
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_start_privatization_ownership
+		}
+		cost = 10
+		x = 12
+		y = 8
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_start_reorganization_military_industry
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_start_privatization_ownership
+		}
+		cost = 10
+		x = 14
+		y = 8
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_call_rtt_to_arms
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_foreign_policy
+		}
+		available = {
+			RTT = { has_government = communism }
+		}
+		cost = 10
+		x = 4
+		y = 6
+		completion_reward = {
+			RTT = { country_event = { id = rttevent.5 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_request_toru_weapons
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_foreign_policy
+		}
+		available = {
+			TOR = { has_government = communism }
+		}
+		cost = 10
+		x = 6
+		y = 6
+		completion_reward = {
+			TOR = { country_event = { id = toru.4 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_request_terbia_help
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_foreign_policy
+		}
+		available = {
+			TRB = { has_government = communism }
+		}
+		cost = 10
+		x = 8
+		y = 6
+		completion_reward = {
+			TRB = { country_event = { id = terbia.10 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_race_for_world_recognition
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_call_rtt_to_arms
+		}
+		prerequisite = {
+			focus = DIR_request_toru_weapons
+		}
+		available = {
+			DIR = { has_stability > 0.2 }
+ 		}
+		cost = 10
+		x = 6
+		y = 7
+		completion_reward = {
+			YAN = { country_event = { id = dircom.11 days = 1 } }
+			EIK = { country_event = { id = dircom.11 days = 1 } }
+			SBU = { country_event = { id = dircom.11 days = 1 } }
+			UCB = { country_event = { id = dircom.11 days = 1 } }
+			MOA = { country_event = { id = dircom.11 days = 1 } }
+			IID = { country_event = { id = dircom.11 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIR_com_regional_autonomies
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_strengthen_the_power
+		}
+		cost = 10
+		x = 10
+		y = 5
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_increase_party_role_everywhere
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_regional_autonomies
+		}
+		cost = 10
+		x = 10
+		y = 6
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_pacify_radicals
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_strengthen_the_power
+		}
+		cost = 10
+		x = 12
+		y = 5
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_party_purge
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_pacify_radicals
+		}
+		cost = 10
+		x = 12
+		y = 6
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_internal_politics
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_strengthen_the_power
+		}
+		cost = 10
+		x = 17
+		y = 5
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_save_free_religious
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_internal_politics
+		}
+		mutually_exclusive = {
+			focus = DIR_com_decline_religious
+		}
+		cost = 10
+		x = 16
+		y = 6
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_national_autonomies
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_save_free_religious
+			focus = DIR_com_decline_religious
+		}
+		mutually_exclusive = {
+			focus = DIR_com_commi_heaven
+		}
+		cost = 10
+		x = 16
+		y = 7
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_decline_religious
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_internal_politics
+		}
+		mutually_exclusive = {
+			focus = DIR_com_save_free_religious
+		}
+		cost = 10
+		x = 18
+		y = 6
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = DIR_com_commi_heaven
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_save_free_religious
+			focus = DIR_com_decline_religious
+		}
+		mutually_exclusive = {
+			focus = DIR_com_national_autonomies
+		}
+		cost = 10
+		x = 18
+		y = 7
+		completion_reward = {
+			
 		}
     }
 }

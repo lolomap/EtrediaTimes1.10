@@ -187,6 +187,23 @@ ideas = {
 	            democratic_drift = 0.02
 			}
 		}
+		
+		EIK_nord_ideals = {
+			picture = eik_nord_ideals
+			allowed = {
+				always = no
+			}
+				
+			removal_cost = -1
+		
+			modifier = {
+				drift_defence_factor = 0.05
+	            political_power_gain = 0.05
+				stability_factor = 0.05
+	            neutrality_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
 
 		EIK_military_formations = {
 	        picture = chi_army_corruption
@@ -222,8 +239,8 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.2
-				political_power_gain = -0.5
+				stability_factor = -0.05
+				political_power_gain = -0.15
 			}
 		}
 
@@ -241,9 +258,9 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.1
-				political_power_gain = -0.5
-				fascism_drift = -0.2
+				stability_factor = -0.05
+				political_power_gain = -0.15
+				fascism_drift = -0.02
 			}
 		}
 
@@ -251,9 +268,9 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.3
-				political_power_gain = -0.5
-				democratic_drift = 0.5
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				democratic_drift = 0.03
 			}
 		}
 
@@ -261,10 +278,10 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = -0.05
 				consumer_goods_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.1
-				production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.15
 			}		
 		}
 
@@ -273,7 +290,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.15
 			}
 		}
 
@@ -290,9 +307,9 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.15
-				political_power_gain = -0.3
-				fascism_drift = -0.15
+				stability_factor = -0.08
+				political_power_gain = -0.15
+				fascism_drift = -0.02
 			}
 		}
 
@@ -300,9 +317,9 @@ ideas = {
 			allowed = {always = no} removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.2
-				fascism_drift = -0.2
-				political_power_gain = -0.3
+				stability_factor = -0.1
+				fascism_drift = -0.02
+				political_power_gain = -0.15
 			}
 		}
 	}

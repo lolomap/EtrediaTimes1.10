@@ -11,6 +11,7 @@ add_ideas = {
         total_free_press
         general_entry
         DON_politics
+	first_corruption_level
 }
 
 set_technology = {
@@ -19,6 +20,7 @@ set_technology = {
 	infantry_weapons = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	gw_artillery = 1
 
 	basic_light_tank = 1
@@ -51,7 +53,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Espano Gildo"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
-	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	picture = "portrait_cho_democratic.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

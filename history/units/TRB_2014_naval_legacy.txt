@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "TRB Fleet"			
-		naval_base = 5753
+		naval_base = 4202
 		task_force = {				
 			name = "Linkor OPS"				
-			location = 5753
+			location = 4202
 			ship = { name = "Horezhin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TRB } } }
             ship = { name = "Light Cruiser Enterba Type 01 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRB } } }
 			ship = { name = "Light Cruiser Enterba Type 01 1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TRB } } }

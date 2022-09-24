@@ -22,9 +22,9 @@ sub_units = {
 
 		combat_width = 3
 
-		manpower = 500
+		manpower = 250
 		need = {
-			artillery_equipment = 36
+			artillery_equipment = 25
 		}
 		
 		max_strength = 0.6
@@ -96,10 +96,10 @@ sub_units = {
 
 		combat_width = 3
 		transport = motorized_equipment
-		manpower = 500
+		manpower = 250
 		need = {
-			artillery_equipment = 36
-			motorized_equipment = 50
+			artillery_equipment = 25
+			motorized_equipment = 40
 		}
 		
 		max_strength = 0.6
@@ -168,10 +168,10 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			rocket_artillery_equipment = 36
+			rocket_artillery_equipment = 16
 		}
 		
-		manpower = 500
+		manpower = 250
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6
@@ -239,11 +239,11 @@ sub_units = {
 		combat_width = 3
 		transport = motorized_equipment
 		need = {
-			rocket_artillery_equipment = 36
+			rocket_artillery_equipment = 30
 			motorized_equipment = 50
 		}
 		
-		manpower = 500
+		manpower = 250
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6
@@ -312,11 +312,11 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			motorized_rocket_equipment = 20
+			motorized_rocket_equipment = 8
 			motorized_equipment = 15
 		}
 		
-		manpower = 500
+		manpower = 120
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6

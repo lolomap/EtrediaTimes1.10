@@ -1,7 +1,7 @@
 state={
 	id=11
 	name="STATE_11"
-	manpower = 2165000
+	manpower = 1980000
 	
 	state_category = large_town
 	
@@ -12,7 +12,7 @@ state={
 	history={
 		owner = UCB
 		buildings = {
-			infrastructure = 5
+			infrastructure = 4
                         industrial_complex = 1
 		}
 		add_core_of = UCB

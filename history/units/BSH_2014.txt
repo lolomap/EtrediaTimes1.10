@@ -74,7 +74,7 @@ division_template = {
 units = {
 	division = {
 		name = "Royal guard"
-		location = 12363
+		location = 10681
 		division_template = "Royal guard"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -83,7 +83,7 @@ units = {
 
 	division = {
 		name = "Royal guard"
-		location = 12634
+		location = 11545
 		division_template = "Royal guard"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -92,7 +92,7 @@ units = {
 
 	division = {
 		name = "Royal guard"
-		location = 13050
+		location = 11177
 		division_template = "Royal guard"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.8
@@ -101,7 +101,7 @@ units = {
 
 	division = {
 		name = "Royal guard"
-		location = 13620
+		location = 10642
 		division_template = "Royal guard"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.7
@@ -110,7 +110,7 @@ units = {
 
 	division = {
 		name = "Royal guard"
-		location = 11545
+		location = 10886
 		division_template = "Royal guard"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -119,7 +119,7 @@ units = {
 
 	division = {
 		name = "light Armor Division"
-		location = 12098
+		location = 10642
 		division_template = "light Armor Division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.7
@@ -128,7 +128,7 @@ units = {
 
 	division = {
 		name = "Motorized Division"
-		location = 12098
+		location = 10472
 		division_template = "Motorized Division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.8

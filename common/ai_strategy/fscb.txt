@@ -1,0 +1,91 @@
+
+FSC_protect_ortostan = {
+	enable = {
+		original_tag = FSC
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "ORB"
+		value = 100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ORB"
+		value = 100
+	}
+	ai_strategy = {
+		type = support
+		id = "ORB"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ORB"
+		value = 200
+	}
+}
+
+FSC_UCB_rivalry = {
+	enable = {
+		original_tag = FSC
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "UCB"
+		value = 1000
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = "UCB"
+		value = 100
+	}
+}
+
+FSC_UCB_war = {
+	enable = {
+		date > 2017.1.1				
+	}
+	abort = { 
+		date > 2019.1.1
+	}
+	
+	ai_strategy = {
+		type = declare_war
+		id = "UCB"
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "UCB"
+		value = 10
+	}
+}
+
+FSC_template_design_1 = {
+	enable = {
+		original_tag = FSC			
+	}
+	abort = { 
+		always = no
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -400
+	}
+}

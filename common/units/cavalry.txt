@@ -7,8 +7,8 @@ sub_units = {
 	cavalry = {
 		sprite = cavalry
 		map_icon_category = other
-		priority = 599
-		ai_priority = 200
+		priority = 250
+		ai_priority = 10
 		active = yes
 		cavalry = yes
 
@@ -28,7 +28,7 @@ sub_units = {
 		max_organisation = 70
 		max_strength = 25
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 500
 
 		#Misc Abilities
 		maximum_speed = 0.6

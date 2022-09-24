@@ -20,7 +20,7 @@ division_template = {
 units = {
 	division = {
 		name = "Trbska Gvarda"
-		location = 8364
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -28,7 +28,7 @@ units = {
 
 	division = {
 		name = "Trbska Gvarda"
-		location = 8364
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -36,7 +36,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 7049
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -44,7 +44,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 6038
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -52,7 +52,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 6038
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -60,7 +60,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 6038
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -68,7 +68,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 6583
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -76,7 +76,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 8366
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -84,7 +84,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 8155
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -92,7 +92,7 @@ units = {
 	
 	division = {
 		name = "Trbska Gvarda"
-		location = 4856
+		location = 5253
 		division_template = "Trbska Gvarda"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8

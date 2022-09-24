@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "FSC Main Fleet"			
-		naval_base = 4798
+		naval_base = 4157
 		task_force = {				
 			name = "Main Operative"				
-			location = 4798
+			location = 4157
 			ship = { name = "Tornovar" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FSC } } }	
 			ship = { name = "HC Sargon" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "HC Pausffen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
@@ -35,7 +35,7 @@ units = {
 		}
 		task_force = {	
 			name = "Submarine Unity"				
-			location = 4798
+			location = 4157
             ship = { name = "SFSC Suko 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "SFSC Suko 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "SFSC Suko 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
@@ -52,10 +52,10 @@ units = {
 	}
 	fleet = {
 		name = "FSC Kulishtia Fleet"			
-		naval_base = 8313
+		naval_base = 7144
 		task_force = {				
 			name = "Linkor Operative"				
-			location = 8313
+			location = 7144
 			ship = { name = "HC Kulishtia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FSC } } }
             ship = { name = "LC Ortostan Type 06 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "LC Ortostan Type 07 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FSC } } }
@@ -80,7 +80,7 @@ units = {
 		}
 		task_force = {	
 			name = "Submarine Unity"				
-			location = 8313
+			location = 7144
             ship = { name = "SFSC Suko 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "SFSC Suko 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }
 			ship = { name = "SFSC Suko 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FSC } } }

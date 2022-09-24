@@ -11,6 +11,12 @@ UCB_kolechia = {
 		id = "KOL"
 		value = 10000
 	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "KOL"
+		value = 500
+	}
 }
 
 UCB_kima = {
@@ -25,6 +31,12 @@ UCB_kima = {
 		type = annex
 		id = "KIM"
 		value = 10000
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "KIM"
+		value = 500
 	}
 }
 
@@ -41,6 +53,12 @@ UCB_dineria = {
 		id = "DIN"
 		value = 10000
 	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "DIN"
+		value = 500
+	}
 }
 
 UCB_arstinia = {
@@ -55,6 +73,12 @@ UCB_arstinia = {
 		type = annex
 		id = "ARS"
 		value = 10000
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "ARS"
+		value = 500
 	}
 }
 
@@ -71,6 +95,12 @@ UCB_northrachia = {
 		id = "NRA"
 		value = 10000
 	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "NRA"
+		value = 500
+	}
 }
 
 UCB_southrachia = {
@@ -86,6 +116,12 @@ UCB_southrachia = {
 		id = "SRA"
 		value = 10000
 	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SRA"
+		value = 500
+	}
 }
 
 ucb_protect_democratic_sheregia = {
@@ -99,22 +135,22 @@ ucb_protect_democratic_sheregia = {
 	ai_strategy = {
 		type = protect
 		id = "SHE"
-		value = 1000
+		value = 100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "SHE"
-		value = 500
+		value = 200
 	}
 	ai_strategy = {
 		type = support
 		id = "SHE"
-		value = 200
+		value = 100
 	}
 	ai_strategy = {
 		type = alliance
 		id = "SHE"
-		value = 1000
+		value = 100
 	}
 }
 
@@ -127,17 +163,6 @@ UCB_template_design_1 = {
 	}
 	ai_strategy = {
 		type = template_prio
-		id = medium_armor
-		value = 110
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 40
-	}
-	ai_strategy = {
-		type = template_prio
 		id = mechanized
 		value = 130
 	}
@@ -145,12 +170,6 @@ UCB_template_design_1 = {
 		type = template_prio
 		id = motorized
 		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -400
 	}
 }
 
@@ -163,17 +182,6 @@ UCB_template_design_2 = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = medium_armor
-		value = 90
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = heavy_armor
-		value = 40
-	}
-	ai_strategy = {
-		type = role_ratio
 		id = mechanized
 		value = 150
 	}
@@ -181,11 +189,5 @@ UCB_template_design_2 = {
 		type = role_ratio
 		id = motorized
 		value = -200
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -400
 	}
 }

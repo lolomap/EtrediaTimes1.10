@@ -20,7 +20,7 @@ division_template = {
 units = {
 	division = {
 		name = "Peoples Brigade"
-		location = 11883
+		location = 11560
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -29,7 +29,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 11883
+		location = 11560
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -38,7 +38,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 11883
+		location = 11560
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -47,7 +47,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 11883
+		location = 11560
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1

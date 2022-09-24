@@ -12,6 +12,7 @@ add_ideas = {
         nonfree_press
         general_entry
         ZHE_conscritpiont_problem
+	fifth_corruption_level
 }
 
 	set_autonomy = {
@@ -29,6 +30,7 @@ set_technology = {
 	gw_artillery = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	motorized_rocket_unit = 1
 	gwtank = 1
 	advanced_medium_tank = 1

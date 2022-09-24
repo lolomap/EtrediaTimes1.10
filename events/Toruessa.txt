@@ -104,3 +104,23 @@ country_event = {
 	ai_chance = { factor = 10 }
 	}
 }
+
+country_event = {
+	id = toru.4
+	title = toru.4.t
+	desc = toru.4.d
+	picure = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = toru.4.a
+		DIR = { country_event = dircom.7 days = 6 }
+	ai_chance = { factor = 35 }
+	}
+	option = {
+		name = toru.4.b
+		DIR = { country_event = dircom.8 days = 2 }
+	ai_chance = { factor = 65 }
+	}
+}

@@ -14,6 +14,7 @@ state={
                         arms_factory = 0
 		}
 		add_core_of = CHE
+		add_core_of = EON
 		victory_points = {
 			4125 1
 		}

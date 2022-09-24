@@ -61,7 +61,7 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Militia"
-		location = 13493
+		location = 9073
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.6
@@ -70,7 +70,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 13306
+		location = 10808
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.7
@@ -79,7 +79,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 12925
+		location = 10113
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.7
@@ -88,7 +88,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 12777
+		location = 1018
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -96,7 +96,7 @@ units = {
         }
 	division = {
 		name = "Infantry Militia"
-		location = 12264
+		location = 11129
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.9
@@ -105,7 +105,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 11829
+		location = 11621
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -114,7 +114,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 11746
+		location = 11466
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -123,7 +123,7 @@ units = {
 
 	division = {
 		name = "Reguba Division"
-		location = 11746
+		location = 11129
 		division_template = "Reguba Division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -132,7 +132,7 @@ units = {
 
 	division = {
 		name = "Reguba Division"
-		location = 12777
+		location = 10808
 		division_template = "Reguba Division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.7
@@ -141,7 +141,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 10527
+		location = 10587
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.3
@@ -150,7 +150,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 10630
+		location = 10176
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.4
@@ -159,7 +159,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 9508
+		location = 10113
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.4
@@ -168,7 +168,7 @@ units = {
 
 	division = {
 		name = "Infantry Militia"
-		location = 9687
+		location = 10918
 		division_template = "Infantry Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.3

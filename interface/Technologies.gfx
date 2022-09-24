@@ -21,11 +21,6 @@ spriteTypes = {
 		name = "GFX_motorized_rocket_unit_4_medium"
 		texturefile = "gfx/interface/technologies/motorized_rocket_unit_4.dds"
 	}
-	
-	SpriteType = {
-		name = "GFX_jeep_equipment_medium"
-		texturefile = "gfx/interface/technologies/jeep_unit_1.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_jeep_unit_1_medium"
@@ -34,7 +29,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_jeep_unit_2_medium"
-		texturefile = "gfx/interface/technologies/jeep_unit_1.dds"
+		texturefile = "gfx/interface/technologies/jeep_unit_2.dds"
 	}
 	
 	SpriteType = {
@@ -237,8 +232,8 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_mechanised_infantry_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds"
-	}	
-	
+	}
+
 	SpriteType = {
 		name = "GFX_interwar_antitank_medium"
 		texturefile = "gfx/interface/technologies/AT_1_allies.dds"

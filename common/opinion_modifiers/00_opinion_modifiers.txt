@@ -34,6 +34,10 @@ opinion_modifiers = {
 	IID_pressureTRP = {
 		value = -50
 	}
+	
+	fsc_ucb_ortostan_deal = {
+		value = 15
+	}
 
 	FSC_friendly_advisor_in_TRP = {
 		value = 25

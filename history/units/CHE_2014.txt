@@ -436,3 +436,28 @@ units = {
 
         }
 }
+
+air_wings = {
+	481 = {
+		fighter_equipment_0 = {
+			owner = "CHE" 
+			creator = "CHE"
+			amount = 100
+		}
+		CAS_equipment_0 = {
+			owner = "CHE" 
+			creator = "CHE"
+			amount = 40
+		}
+		nav_bomber_equipment_1 = {
+			owner = "CHE" 
+			creator = "CHE"
+			amount = 10
+		}
+		tac_bomber_equipment_1 = {
+			owner = "CHE" 
+			creator = "CHE"
+			amount = 8
+		}
+	}
+}

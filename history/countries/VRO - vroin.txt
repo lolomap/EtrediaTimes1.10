@@ -11,6 +11,7 @@ add_ideas = {
         www_medium_country
         nonfree_press
         general_entry
+	fourth_corruption_level
 }
 
 set_technology = {
@@ -28,7 +29,6 @@ set_technology = {
 	basic_light_tank = 1
 	advanced_medium_tank = 1
 	jeep_unit = 1
-	jeep_unit_2 = 1
 	main_battle_tank = 1
 	main_battle_tank_2 = 1
 	tech_mountaineers = 1
@@ -44,6 +44,7 @@ set_technology = {
 	early_battleship = 1
 
 	early_fighter = 1
+	CAS1 = 1
 	fighter1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
@@ -72,7 +73,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Anatoly Kats"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
-	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	picture = "portrait_vro_democratic.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -83,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Timur Danilov"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "portrait_taganrog_ivan_ishenko.dds"
+	picture = "portrait_vro_fascism.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -94,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Timur Nafikov"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "portrait_bydlo_yaroslav_obryg.dds"
+	picture = "portrait_vro_fascism.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

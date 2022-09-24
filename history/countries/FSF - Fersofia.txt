@@ -25,6 +25,8 @@ set_technology = {
 	basic_light_tank = 1
         basic_medium_tank = 1
 	advanced_medium_tank = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	main_battle_tank = 1
 
 	early_fighter = 1

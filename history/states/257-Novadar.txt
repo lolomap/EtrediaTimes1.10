@@ -16,8 +16,12 @@ state={
 
 		}
 		add_core_of = DIR
+		add_core_of = BLJ
 		victory_points = {
 			11673 1 
+		}
+		victory_points = {
+			11419 1 
 		}
 
 	}

@@ -14,8 +14,6 @@ state={
 		owner = UCB
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 0
-			arms_factory = 0
 			nuclear_rocket_site = 1
 		}
 		add_core_of = UCB

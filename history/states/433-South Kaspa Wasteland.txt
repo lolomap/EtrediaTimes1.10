@@ -17,6 +17,7 @@ state={
                         arms_facotry = 0
 		}
 		add_core_of = KAS
+		add_core_of = NSH
 
 	}
 	provinces={

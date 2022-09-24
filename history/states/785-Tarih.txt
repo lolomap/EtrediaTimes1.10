@@ -1,14 +1,22 @@
 state={
 	id=785
 	name="STATE_785"
+	manpower=650000
+	state_category=rural
+
+	history={
+		owner = UCB
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = UCB
+		add_core_of = KUR
+		victory_points = {
+			6992 1 
+		}
+
+	}
 	provinces={
 		6570 6690 6781 6799 6842 6919 6992 7049 7141 7142 7260 7308 7334 7360 7398 
-	}
-	manpower=0
-	buildings_max_level_factor=1.000
-	
-	history = {
-		owner = UCB
-		add_core_of = UCB
 	}
 }

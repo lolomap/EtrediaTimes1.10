@@ -16,6 +16,7 @@ set_technology = {
         tech_support = 1
 	infantry_weapons = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	motorized_rocket_unit = 1
 	early_fighter = 1
 	motorised_infantry = 1

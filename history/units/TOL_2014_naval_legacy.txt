@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Tolchkograd Main Fleet"			
-		naval_base = 13492
+		naval_base = 11620
 		task_force = {				
 			name = "Tolchkograd Main Fleet"				
-			location = 13492
+			location = 11620
             ship = { name = "LC Muscle Type 02" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TOL } } }
 			ship = { name = "TOL Destr 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TOL } } }
 			ship = { name = "TOL Destr 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TOL } } }

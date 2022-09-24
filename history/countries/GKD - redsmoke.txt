@@ -9,11 +9,13 @@ set_war_support = 0.1
 add_ideas = {
         total_nonfree_press
         limited_entry
+	fifth_corruption_level
 }
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	jeep_unit = 1
 }
 
 

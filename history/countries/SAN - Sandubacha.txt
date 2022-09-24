@@ -1,0 +1,65 @@
+﻿capital = 490
+
+oob = "SAN_2014"
+
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.6
+
+add_ideas = {
+        www_bad_country
+        nonfree_press
+        general_entry
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_support = 1
+	infantry_weapons = 1
+	early_fighter = 1
+	motorised_infantry = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	motorized_rocket_unit = 1
+	gw_artillery = 1
+
+	gwtank = 1
+	basic_light_tank = 1
+        basic_medium_tank = 1
+	improved_medium_tank = 1
+	improved_light_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+
+	tech_mountaineers = 1
+	tactical_bomber1 = 1
+	synth_oil_experiments = 1
+        fuel_silos = 1
+	transport = 1
+	early_submarine = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_destroyer = 1
+
+	early_fighter = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+}
+
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 0
+    democratic = 0
+    neutrality = 100
+    communism = 0
+}

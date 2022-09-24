@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Versh Main Fleet"			
-		naval_base = 8686
+		naval_base = 7470
 		task_force = {				
 			name = "Main Operative"				
-			location = 8686
+			location = 7470
 			ship = { name = "FullSten" definition = battleship equipment = { battleship_1 = { amount = 1 owner = VRO } } }	
 			ship = { name = "HC Fullunsburg" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VRO } } }
 			ship = { name = "HC Vershia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VRO } } }

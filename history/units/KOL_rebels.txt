@@ -41,7 +41,7 @@ units = {
 	#Infantry Division
 	division = {
 		name = "Peoples Brigade"
-		location = 6408
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -50,7 +50,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6408
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -59,7 +59,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6408
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -68,7 +68,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6408
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -77,7 +77,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6533
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -86,7 +86,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6533
+		location = 5637
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.3
                 start_equipment_factor = 1
@@ -95,7 +95,7 @@ units = {
 
 	division = {
 		name = "motorized"
-		location = 6533
+		location = 5637
 		division_template = "motorized"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.7

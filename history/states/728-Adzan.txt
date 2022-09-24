@@ -15,13 +15,13 @@ state={
 			infrastructure = 4
                         industrial_complex = 2
 			arms_factory = 1
-			1607 = {
+			1379 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = KTL
 		victory_points = {
-			1607 15
+			1379 15
 		}
 
 	}

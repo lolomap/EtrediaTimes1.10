@@ -39,7 +39,7 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -48,7 +48,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -57,7 +57,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -66,7 +66,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -75,7 +75,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -84,7 +84,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -93,7 +93,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -102,7 +102,7 @@ units = {
 
 	division = {
 		name = "Infantry"
-		location = 4653
+		location = 4212
 		division_template = "Infantry"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -111,7 +111,7 @@ units = {
 
 	division = {
 		name = "mechanized"
-		location = 4653
+		location = 4212
 		division_template = "mechanized"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -120,7 +120,7 @@ units = {
 
 	division = {
 		name = "mechanized"
-		location = 4653
+		location = 4212
 		division_template = "mechanized"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1

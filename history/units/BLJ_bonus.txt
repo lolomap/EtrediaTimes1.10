@@ -89,7 +89,7 @@ division_template = {
 units = {
 	division = {
 		name = "MNT division"
-		location = 12136
+		location = 12022
 		division_template = "MNT division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.7
@@ -98,7 +98,7 @@ units = {
 
 	division = {
 		name = "MNT division"
-		location = 12136
+		location = 12022
 		division_template = "MNT division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.7
@@ -107,7 +107,61 @@ units = {
 
 	division = {
 		name = "Baljury Militia"
-		location = 12136
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
+		division_template = "Baljury Militia"
+		start_experience_factor = 0.1
+                start_equipment_factor = 0.6
+
+    }
+
+	division = {
+		name = "Baljury Militia"
+		location = 12022
 		division_template = "Baljury Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.6
@@ -125,7 +179,7 @@ units = {
 
 	division = {
 		name = "Baljury Militia"
-		location = 12136
+		location = 12022
 		division_template = "Baljury Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.6
@@ -134,61 +188,7 @@ units = {
 
 	division = {
 		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
-		division_template = "Baljury Militia"
-		start_experience_factor = 0.1
-                start_equipment_factor = 0.6
-
-    }
-
-	division = {
-		name = "Baljury Militia"
-		location = 12136
+		location = 12022
 		division_template = "Baljury Militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 0.6

@@ -536,6 +536,514 @@ country_event = { # коррупц скандал фейл
 	}
 }
 
+country_event = {	# ивенты на коорупцию (случайные)
+	id = mechanics.24
+	title = mechanics.24.t
+	desc = mechanics.24.d
+
+	mean_time_to_happen = {days = 40}
+
+	#trigger = {is_ai = no}
+	hidden = yes
+
+	option = {name = mechanics.24.a}
+	immediate = {
+
+		if = {
+
+			random_list = {
+				4 = { if = {limit = {has_stability < 0.8} set_temp_variable = {can_c1 = 1}} random_list = { var:can_c1 = {country_event = mechanics.26} } }
+				4 = { if = {limit = {has_stability < 0.5} set_temp_variable = {can_c2 = 1}} random_list = { var:can_c2 = {country_event = mechanics.27} } }
+				4 = { if = {limit = {has_stability < 0.3} set_temp_variable = {can_c3 = 1}} random_list = { var:can_c3 = {country_event = mechanics.28} } }
+				4 = { if = {limit = {has_stability < 0.1} set_temp_variable = {can_c4 = 1}} random_list = { var:can_c4 = {country_event = mechanics.29} } }
+				2 = { if = {limit = {has_war_support < 0.5} set_temp_variable = {can_c5 = 1}} random_list = { var:can_c5 = {country_event = mechanics.30} } }
+				2 = { if = {limit = {has_war_support < 0.1} set_temp_variable = {can_c6 = 1}} random_list = { var:can_c6 = {country_event = mechanics.31} } }
+				2 = { if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {can_c7 = 1}} random_list = { var:can_c7 = {country_event = mechanics.32} } }
+				2 = { if = {limit = {has_idea = nonfree_press} set_temp_variable = {can_c8 = 1}} random_list = { var:can_c8 = {country_event = mechanics.33} } }
+				2 = { if = {limit = {has_idea = closed_entry} set_temp_variable = {can_c9 = 1}} random_list = { var:can_c9 = {country_event = mechanics.34} } }
+				2 = { if = {limit = {has_idea = total_free_press} set_temp_variable = {can_c10 = 1}} random_list = { var:can10 = {country_event = mechanics.35} } }
+
+				72 = {
+
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Скандал из-за госзакупок
+	id = mechanics.25
+	title = mechanics.25.t
+	desc = mechanics.25.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.25.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # Скандал из-за госзакупок
+	id = mechanics.26
+	title = mechanics.26.t
+	desc = mechanics.26.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.26.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # государственный тенд
+	id = mechanics.27
+	title = mechanics.27.t
+	desc = mechanics.27.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.27.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # недобор бюджетных средств 
+	id = mechanics.28
+	title = mechanics.28.t
+	desc = mechanics.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.28.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # фиксация налоговых махинаций
+	id = mechanics.29
+	title = mechanics.29.t
+	desc = mechanics.29.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.29.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # устаревшая техника
+	id = mechanics.30
+	title = mechanics.30.t
+	desc = mechanics.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.30.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # утрата боеспособности армии
+	id = mechanics.31
+	title = mechanics.31.t
+	desc = mechanics.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.31.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # чиновники паразитируют на гос сми
+	id = mechanics.32
+	title = mechanics.32.t
+	desc = mechanics.32.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.32.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # нереалистичные расходы
+	id = mechanics.33
+	title = mechanics.33.t
+	desc = mechanics.33.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.33.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # организованная коррупция на границе
+	id = mechanics.34
+	title = mechanics.34.t
+	desc = mechanics.34.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.34.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = sixth_corruption_level
+			add_stability = -0.1
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = -0.08
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = -0.03
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = -0.02
+		}
+	}
+}
+
+country_event = { # Скандал из-за госзакупок
+	id = mechanics.35
+	title = mechanics.35.t
+	desc = mechanics.35.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mechanics.35.a
+		
+		if = {
+			limit = { has_idea = sixth_corruption_level }
+			add_ideas = fifth_corruption_level
+			add_stability = 0.05
+		}
+		else_if = {
+			limit = { has_idea = fifth_corruption_level }
+			add_ideas = fourth_corruption_level
+			add_stability = 0.04
+		}
+		else_if = {
+			limit = { has_idea = fourth_corruption_level }
+			add_ideas = third_corruption_level
+			add_stability = 0.03
+		}
+		else_if = {
+			limit = { has_idea = third_corruption_level }
+			add_ideas = second_corruption_level
+			add_stability = 0.02
+		}
+		else_if = {
+			limit = { has_idea = second_corruption_level }
+			add_ideas = first_corruption_level
+			add_stability = 0.02
+		}
+		else_if = {
+			limit = { has_idea = first_corruption_level }
+			add_ideas = first_corruption_level
+			add_stability = 0.01
+		}
+	}
+}
+
 country_event = {	# ивенты от стабки на изменение силы и поддержки партий (случайные)
 	id = mechanics.11
 	title = mechanics.11.t
@@ -569,7 +1077,7 @@ country_event = {	# ивенты от стабки на изменение си�
 			}
 
 			random_list = {
-				60 = {
+				30 = {
 					if = {limit = {has_stability < 0.8} set_temp_variable = {can_e1 = 1}}
 					if = {limit = {has_stability < 0.5} set_temp_variable = {can_e2 = 1}}
 					if = {limit = {has_stability < 0.3} set_temp_variable = {can_e3 = 1}}
@@ -583,7 +1091,7 @@ country_event = {	# ивенты от стабки на изменение си�
 						var:can_e4 = {country_event = mechanics.16}
 					}
 				}
-				40 = {
+				70 = {
 
 				}
 			}
