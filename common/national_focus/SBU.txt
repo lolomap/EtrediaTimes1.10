@@ -1179,6 +1179,7 @@ focus_tree = {
 				tooltip = sbu_try_success_tooltip
 				has_country_flag = sbu_try_success
 			}
+            UCB = {has_government = democratic}
 		}
 
 		completion_reward = {
@@ -1987,6 +1988,7 @@ focus_tree = {
 				name = "Iret Kolert"
 				ruling_only = yes
 			}
+            has_political_power > 250
 		}
 
 		completion_reward = {
@@ -2066,12 +2068,16 @@ focus_tree = {
 		}
 		x = 33
 		y = 7
-
+    
 		available = {
 			has_army_manpower = {
-    			size > 500000
+    			size > 300000
     		}
 		}
+
+        bypass = {
+            not = {country_exists = RGY}
+        }
 
 		completion_reward = {
 			RGY = {

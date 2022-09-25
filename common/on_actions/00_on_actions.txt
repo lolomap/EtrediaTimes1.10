@@ -199,6 +199,31 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					has_country_leader = {
+						name = "Iret Kolert"
+						ruling_only = yes
+					}
+				}
+				add_to_variable = {kolert_long = 7}
+			}
+			if = {
+				limit = {
+					check_variable = {kolert_long > 365}
+				}
+				set_variable = { sbu_frev_rand = random }
+				multiply_variable = {sbu_frev_rand = 100}
+				if = {
+					limit = {check_variable = {sbu_frev_rand < 20}}
+					country_event = {id = sbu.65 days = 1}
+				}
+				else = {
+					country_event = {id = sbu.66 days = 1}
+					add_ideas = SBU_SFL_lost_economic_war
+				}
+			}
+
+			if = {
+				limit = {
 					country_exists = LCH
 					LCH = {is_subject_of = SBU}
 					not = {has_country_flag = lch_rebelled}
@@ -319,8 +344,8 @@ on_actions = {
 						add_core = 198
 						add_core = 225
 						
-                        load_oob = LCH_2014
-                        add_manpower = 20000
+						load_oob = LCH_2014
+						add_manpower = 20000
 					}
 				}
 				
@@ -370,8 +395,8 @@ on_actions = {
 						add_core = 198
 						add_core = 225
 						
-                        load_oob = ESB_2014
-                        add_manpower = 20000
+						load_oob = ESB_2014
+						add_manpower = 20000
 					}
 				}
 				
@@ -421,8 +446,8 @@ on_actions = {
 						add_core = 198
 						add_core = 225
 						
-                        load_oob = SIN_2014
-                        add_manpower = 20000
+						load_oob = SIN_2014
+						add_manpower = 20000
 					}
 				}
 				
@@ -472,8 +497,8 @@ on_actions = {
 						add_core = 198
 						add_core = 225
 						
-                        load_oob = BAK_2014
-                        add_manpower = 20000
+						load_oob = BAK_2014
+						add_manpower = 20000
 					}
 				}
 				
@@ -523,8 +548,8 @@ on_actions = {
 						add_core = 198
 						add_core = 225
 						
-                        load_oob = KRA_2014
-                        add_manpower = 20000
+						load_oob = KRA_2014
+						add_manpower = 20000
 					}
 				}
 				
@@ -925,8 +950,8 @@ on_actions = {
 					limit = {country_exists = MOF}
 					EMF = {
 						annex_country = {
-						    target = MOF
-						    transfer_troops = yes
+							target = MOF
+							transfer_troops = yes
 						}
 					}
 				}
