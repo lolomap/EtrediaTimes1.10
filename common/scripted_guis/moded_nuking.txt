@@ -1,5 +1,5 @@
 scripted_gui = {
-	nuke_moded = {
+	nuke_moded_ = {
 		window_name = "nuking_replace_window"
 		context_type = selected_state_context
 		parent_window_name = province_info_window

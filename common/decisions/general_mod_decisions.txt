@@ -11,7 +11,6 @@ nuclear_war = {
 		}
 
 		complete_effect = {
-			#когда обновимся до 1.10 везде надо использовать faction_leader = {}
 			ROOT = {
 				faction_leader = {
 					country_event = {id = nukemod.1 days = 1}
@@ -26,12 +25,19 @@ nuclear_construction = {
 		visible = {always = yes}
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
-			any_owned_state = {
-				has_resources_amount = {
-					resource = uranium
-					amount > 1
+			#any_owned_state = {
+			#	has_resources_amount = {
+			#		resource = uranium
+			#		amount > 1
+			#	}
+			#}
+            
+            custom_trigger_tooltip = {
+				tooltip = nuclear_construction_conditions
+				check_variable = {
+					resource@uranium > 1
 				}
-			}
+            }
 		}
 
 		cost = 5
