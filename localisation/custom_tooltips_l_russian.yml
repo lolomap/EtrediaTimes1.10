@@ -81,6 +81,7 @@
   nuke_pro_no:0 "§R Количество вражеских ПРО:[?num_of_nuke_anti] §!\n"
   nuke_pro_mid:0 "§Y Количество вражеских ПРО:[?num_of_nuke_anti] §!\n"
   nuclear_construction_tip:0 "§GВремя на сборку бомбы будет уменьшенно за каждый реактор, на который хватает урана.\nОдин реактор потребляет §Y[?uranium_cost]§! урана§!\n\n"
+  nuclear_construction_conditions:0 "Урана не меньше чем 2"
 
   people_discontent_effect_loc:0 "§WУвеличение популярности всех оппозиционных партий: §R+0.01§!\nУвеличение силы всех оппозиционных партий §R+0.01§!\n§!"
   change_party_power:0 "§RРост оппозиционной силы [random_party_name]§!"
