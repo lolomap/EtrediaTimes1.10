@@ -13,13 +13,13 @@ state={
 		buildings = {
 			infrastructure = 3
                         industrial_complex = 2
-			2535 = {
+			2028 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = MCH
 		victory_points = {
-			2535 5
+			2028 5
 		}
 
 	}

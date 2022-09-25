@@ -10,8 +10,8 @@ state={
 		owner = YAN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			arms_factory = 1
+			industrial_complex = 2
+			arms_factory = 2
 			air_base = 3
 
 		}
@@ -26,5 +26,5 @@ state={
 	}
 	manpower=4890000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=Large_town
 }

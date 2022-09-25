@@ -313,3 +313,28 @@ units = {
         start_equipment_factor = 0.7
     }
 }
+
+air_wings = {
+	420 = {
+		fighter_equipment_0 = {
+			owner = "VRO" 
+			creator = "VRO"
+			amount = 125
+		}
+		CAS_equipment_0 = {
+			owner = "VRO" 
+			creator = "VRO"
+			amount = 64
+		}
+		nav_bomber_equipment_1 = {
+			owner = "VRO" 
+			creator = "VRO"
+			amount = 18
+		}
+		tac_bomber_equipment_1 = {
+			owner = "VRO" 
+			creator = "VRO"
+			amount = 6
+		}
+	}
+}

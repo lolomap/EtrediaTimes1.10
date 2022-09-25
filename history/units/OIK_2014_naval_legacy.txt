@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "Island Empire Main Fleet"			
-		naval_base = 14374
+		naval_base = 12342
 		task_force = {				
 			name = "Emperor Operative"				
-			location = 14374
+			location = 12342
 			ship = { name = "Ferdenal" definition = battleship equipment = { battleship_1 = { amount = 1 owner = OIK } } }	
 			ship = { name = "HC Landery" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = OIK } } }
 			ship = { name = "HC Chanskaly" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = OIK } } }

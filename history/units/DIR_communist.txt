@@ -149,7 +149,7 @@ units = {
 
 	division = {
 		name = "MNT division"
-		location = 14198
+		location = 11751
 		division_template = "MNT division"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.8
@@ -158,7 +158,7 @@ units = {
 
 	division = {
 		name = "MNT division"
-		location = 14639
+		location = 11751
 		division_template = "MNT division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.8
@@ -167,7 +167,7 @@ units = {
 
 	division = {
 		name = "Tank-Division"
-		location = 13019
+		location = 11423
 		division_template = "Tank-Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.4
@@ -176,7 +176,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12920
+		location = 10979
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -185,7 +185,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12683
+		location = 11751
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.5
@@ -194,7 +194,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -203,7 +203,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -212,7 +212,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -221,7 +221,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -230,7 +230,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -239,7 +239,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -248,7 +248,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -257,7 +257,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -266,7 +266,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -275,7 +275,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -284,7 +284,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -293,7 +293,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -302,7 +302,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -311,7 +311,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -320,7 +320,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -329,7 +329,7 @@ units = {
 
 	division = {
 		name = "Communist Militia"
-		location = 12450
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.7
@@ -338,7 +338,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13180
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -347,7 +347,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12936
+		location = 11148
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.4
@@ -356,7 +356,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12988
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -365,7 +365,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12734
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.4
@@ -374,7 +374,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12788
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -383,7 +383,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12921
+		location = 10979
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.2
@@ -392,7 +392,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12869
+		location = 11751
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -401,7 +401,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13639
+		location = 11385
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.3
@@ -455,7 +455,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13252
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -464,7 +464,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13159
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.4
@@ -473,7 +473,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 12771
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -482,7 +482,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13527
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.5
@@ -491,7 +491,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13419
+		location = 11423
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -509,7 +509,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 13990
+		location = 11751
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -518,7 +518,7 @@ units = {
 	
 	division = {
 		name = "Communist Militia"
-		location = 15240
+		location = 11751
 		division_template = "Communist Militia"
 		start_experience_factor = 0.1
         start_equipment_factor = 0.8
@@ -527,7 +527,7 @@ units = {
 
 	division = {
 		name = "Dir motorized"
-		location = 13966
+		location = 11435
 		division_template = "Dir motorized"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.4
@@ -536,16 +536,7 @@ units = {
 
 	division = {
 		name = "Dir motorized"
-		location = 13419
-		division_template = "Dir motorized"
-		start_experience_factor = 0.3
-                start_equipment_factor = 0.4
-
-    }
-	
-	division = {
-		name = "Dir motorized"
-		location = 13419
+		location = 11423
 		division_template = "Dir motorized"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.4
@@ -554,7 +545,16 @@ units = {
 	
 	division = {
 		name = "Dir motorized"
-		location = 13419
+		location = 11423
+		division_template = "Dir motorized"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.4
+
+    }
+	
+	division = {
+		name = "Dir motorized"
+		location = 11423
 		division_template = "Dir motorized"
 		start_experience_factor = 0.3
                 start_equipment_factor = 0.4

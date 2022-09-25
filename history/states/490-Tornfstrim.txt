@@ -2,9 +2,9 @@
 state={
 	id=490
 	name="STATE_490"
-	manpower = 1456000
+	manpower = 3456000
 	
-	state_category = rural
+	state_category = town
 
         resources={
                  chromium = 50 # was: 50
@@ -14,12 +14,11 @@ state={
 		owner = CHE
 		buildings = {
 			infrastructure = 4
-                        industrial_complex = 0
-                        arms_factory = 0
 		}
 		add_core_of = CHE
+		add_core_of = SAN
 		victory_points = {
-			3707 1
+			3707 3
 		}
 
 	}

@@ -7,12 +7,70 @@ ucbminors_decisions = {
 		fire_only_once = no
 		
 		available = {
-			has_manpower < 100000
+			has_manpower < 50000
 		}
 
 	    visible = {
-	    always = yes
+			OR = {
+				original_tag = DIN
+				original_tag = RAN
+				original_tag = MIN
+				original_tag = NIK
+				original_tag = KOS
+				original_tag = TRI
+				original_tag = PER
+				original_tag = ZER
+				original_tag = EDD
+				original_tag = IND
+				original_tag = BER
+				original_tag = LEV
+				original_tag = RET
+				original_tag = AKV
+				original_tag = ARS
+				original_tag = ORB
+				original_tag = KUR
+				original_tag = TIR
+				original_tag = SRA
+				original_tag = NRA
+				original_tag = SGO
+				original_tag = SVE
+				original_tag = GLE
+				original_tag = KIM
+				original_tag = FLR
+				original_tag = KOL
+			}
 	    }
+		
+		allowed = {
+			OR = {
+				original_tag = DIN
+				original_tag = RAN
+				original_tag = MIN
+				original_tag = NIK
+				original_tag = KOS
+				original_tag = TRI
+				original_tag = PER
+				original_tag = ZER
+				original_tag = EDD
+				original_tag = IND
+				original_tag = BER
+				original_tag = LEV
+				original_tag = RET
+				original_tag = AKV
+				original_tag = ARS
+				original_tag = ORB
+				original_tag = KUR
+				original_tag = TIR
+				original_tag = SRA
+				original_tag = NRA
+				original_tag = SGO
+				original_tag = SVE
+				original_tag = GLE
+				original_tag = KIM
+				original_tag = FLR
+				original_tag = KOL
+			}
+		}
 
         days_remove = 120
 
@@ -28,6 +86,145 @@ ucbminors_decisions = {
 	            factor = 10
 		        has_manpower < 50000
 		    }
+			modifier = {
+	            factor = 10
+		        ruling_party = fascism
+		    }
+			modifier = {
+	            factor = 10
+		        ruling_party = neutrality
+		    }
+			modifier = {
+	            factor = 10
+		        ruling_party = monarchism
+		    }
+		}
+	}
+	
+	unite_karatenia = {
+	
+		icon = generic_nationalism
+		
+		fire_only_once = no
+		
+		available = {
+			always = yes
+		}
+
+	    visible = {
+			OR = {
+				original_tag = DIN
+				original_tag = RAN
+				original_tag = MIN
+				original_tag = NIK
+				original_tag = KOS
+				original_tag = TRI
+				original_tag = PER
+				original_tag = ZER
+				original_tag = EDD
+				original_tag = IND
+				original_tag = BER
+				original_tag = LEV
+				original_tag = RET
+				original_tag = AKV
+				original_tag = ARS
+				original_tag = ORB
+				original_tag = KUR
+				original_tag = TIR
+				original_tag = SRA
+				original_tag = NRA
+				original_tag = SGO
+				original_tag = SVE
+				original_tag = GLE
+				original_tag = KIM
+				original_tag = FLR
+				original_tag = KOL
+			}
+	    }
+		
+		allowed = {
+			OR = {
+				original_tag = DIN
+				original_tag = RAN
+				original_tag = MIN
+				original_tag = NIK
+				original_tag = KOS
+				original_tag = TRI
+				original_tag = PER
+				original_tag = ZER
+				original_tag = EDD
+				original_tag = IND
+				original_tag = BER
+				original_tag = LEV
+				original_tag = RET
+				original_tag = AKV
+				original_tag = ARS
+				original_tag = ORB
+				original_tag = KUR
+				original_tag = TIR
+				original_tag = SRA
+				original_tag = NRA
+				original_tag = SGO
+				original_tag = SVE
+				original_tag = GLE
+				original_tag = KIM
+				original_tag = FLR
+				original_tag = KOL
+			}
+		}
+		complete_effect = {
+		set_rule = {
+			can_declare_war_on_same_ideology = yes
+		}
+		random_neighbor_country = {
+			limit = {
+				OR = {
+					original_tag = ARS
+					original_tag = DIN
+					original_tag = TRI
+					original_tag = NIK
+					original_tag = MIN
+					original_tag = RAN
+					original_tag = PER
+					original_tag = ZER
+					original_tag = KOS
+					original_tag = IND
+					original_tag = KUR
+					original_tag = BER
+					original_tag = RET
+					original_tag = EDD
+					original_tag = LEV
+					original_tag = ORB
+					original_tag = TIR
+					original_tag = SGO
+					original_tag = KOL
+					original_tag = SRA
+					original_tag = NRA
+					original_tag = AKV
+					original_tag = SVE
+					original_tag = GLE
+					original_tag = KIM
+					original_tag = FLR
+				}
+			}
+			PREV = {
+				every_owned_state = {
+					add_claim_by = PREV.PREV
+				}
+			}
+
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = PREV
+				value = 100
+			}
+
+			add_ai_strategy = {
+				type = declare_war
+				id = PREV
+				value = 100
+			}
+		}
 		}
 	}
 }

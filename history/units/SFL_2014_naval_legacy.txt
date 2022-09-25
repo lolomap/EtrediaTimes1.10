@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "The Great Beton"			
-		naval_base = 4460
+		naval_base = 3847
 		task_force = {				
 			name = "Main Safflia Unity"				
-			location = 4460
+			location = 3847
 			ship = { name = "Varmalagy" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SFL } } }	
 			ship = { name = "Dalovburg" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SFL } } }				
 			ship = { name = "Shepezan" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = SFL } } }

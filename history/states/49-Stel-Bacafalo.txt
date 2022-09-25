@@ -9,6 +9,7 @@ state={
 		owner = FSC
 		buildings = {
 			infrastructure = 7
+			dockyard = 2
 			3997 = {
 				naval_base = 2
 			}

@@ -9,6 +9,7 @@ set_war_support = 0.1
 add_ideas = {
         www_best_country
         total_free_press
+	second_corruption_level
 }
 
 set_technology = {
@@ -20,6 +21,8 @@ set_technology = {
         mechanised_infantry = 1
 	advanced_medium_tank = 1
 	main_battle_tank = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 }
 
 

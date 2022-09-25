@@ -14,7 +14,62 @@ spriteTypes = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_eik_nord_ideals"
+		texturefile = "gfx/interface/ideas/idea_eik_nord_ideals.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sixth_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_sixth_corruption_level.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fifth_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_fifth_corruption_level.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fourth_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_fourth_corruption_level.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_third_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_third_corruption_level.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_second_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_second_corruption_level.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_first_corruption_level"
+		texturefile = "gfx/interface/ideas/idea_first_corruption_level.dds"
+	}
 
+	spriteType = {
+		name = "GFX_idea_wt_army_desertion"
+		texturefile = "gfx/interface/ideas/idea_wt_army_desertion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_great_safflia_course"
+		texturefile = "gfx/interface/ideas/idea_great_safflia_course.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_army_rebel"
+		texturefile = "gfx/interface/ideas/idea_wt_army_rebel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_army_rebel2"
+		texturefile = "gfx/interface/ideas/idea_wt_army_rebel2.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_tol_traditions"
 		texturefile = "gfx/interface/ideas/idea_tol_traditions.dds"

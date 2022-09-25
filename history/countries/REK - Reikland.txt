@@ -1,0 +1,33 @@
+capital = 266
+
+oob = "REK_2014"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.5
+
+set_technology = {
+	infantry_weapons = 1
+
+	motorised_infantry = 1
+	jeep_unit = 1
+	gw_artillery = 1
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2014.3.5"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 20
+    fascism = 15
+    communism = 5
+	neutrality = 60
+}
+
+

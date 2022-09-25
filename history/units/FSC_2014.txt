@@ -4,15 +4,16 @@ division_template = {
 	division_names_group = FSC_inf_01
 
 	regiments = {
-                mechanized = { x = 0 y = 0 }
-                mechanized = { x = 0 y = 1 }
-                mechanized = { x = 0 y = 2 }
-                infantry = { x = 1 y = 0 }
-                infantry = { x = 1 y = 1 }
-                infantry = { x = 1 y = 2 }
-                infantry = { x = 2 y = 0 }
-                infantry = { x = 2 y = 1 }
-                infantry = { x = 2 y = 2 }
+        mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+        mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
 	}
 	support = {
         engineer = { x = 0 y = 0 }
@@ -27,12 +28,12 @@ division_template = {
 	division_names_group = FSC_arm_01
 
 	regiments = {
-                mechanized = { x = 0 y = 0 }
-                mechanized = { x = 0 y = 1 }
-                mechanized = { x = 0 y = 2 }
-                mechanized = { x = 1 y = 0 }
-                mechanized = { x = 1 y = 1 }
-                mechanized = { x = 1 y = 2 }
+        mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+        mechanized = { x = 0 y = 2 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
 	}
 	support = {
         engineer = { x = 0 y = 0 }
@@ -50,9 +51,9 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-                motorized = { x = 1 y = 0 }
-                motorized = { x = 1 y = 1 }
-                motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -75,6 +76,8 @@ division_template = {
 	}
 	support = {
         recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -89,9 +92,9 @@ division_template = {
 		motorized_rocket_brigade = { x = 0 y = 2 }
 		motorized_rocket_brigade = { x = 0 y = 3 }
 		motorized_rocket_brigade = { x = 0 y = 4 }
-                mechanized = { x = 1 y = 0 }
-                mechanized = { x = 1 y = 1 }
-                mechanized = { x = 1 y = 2 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -103,7 +106,7 @@ units = {
 
 	division = {
 		name = "Mech. Rocket Brigade"
-		location = 5307
+		location = 5728
 		division_template = "Mech. Rocket Brigade"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -112,7 +115,7 @@ units = {
 
 	division = {
 		name = "Mech. Rocket Brigade"
-		location = 5307
+		location = 5492
 		division_template = "Mech. Rocket Brigade"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -121,7 +124,7 @@ units = {
 
 	division = {
 		name = "Mech. Rocket Brigade"
-		location = 5307
+		location = 5037
 		division_template = "Mech. Rocket Brigade"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -130,7 +133,7 @@ units = {
 
 	division = {
 		name = "Mech. Rocket Brigade"
-		location = 5307
+		location = 5037
 		division_template = "Mech. Rocket Brigade"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -139,7 +142,7 @@ units = {
 
 	division = {
 		name = "Main Tank-Division"
-		location = 5307
+		location = 5766
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -148,7 +151,7 @@ units = {
 
 	division = {
 		name = "Main Tank-Division"
-		location = 5307
+		location = 5420
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.9
@@ -157,25 +160,55 @@ units = {
 
 	division = {
 		name = "Main Tank-Division"
-		location = 5307
+		location = 5306
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.5
-                start_equipment_factor = 0.8
-
-        }
+        start_equipment_factor = 0.8
+    }
 
 	division = {
 		name = "Main Tank-Division"
-		location = 5307
+		location = 5492
 		division_template = "Main Tank-Division"
-		start_experience_factor = 0.5
-                start_equipment_factor = 1
-
-        }
+		start_experience_factor = 0.3
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Main Tank-Division"
+		location = 5492
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Main Tank-Division"
+		location = 5039
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Main Tank-Division"
+		location = 4989
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "Main Tank-Division"
+		location = 6247
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 1
+    }
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5611
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -184,7 +217,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5419
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -193,7 +226,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5217
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -202,7 +235,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5141
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -211,7 +244,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 4877
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -220,7 +253,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 4169
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -229,7 +262,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 4157
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -238,7 +271,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5559
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -247,7 +280,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5807
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -256,7 +289,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 5995
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -265,7 +298,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 6728
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.7
@@ -274,16 +307,71 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 6447
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
-                start_equipment_factor = 0.7
-
-        }
-
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 4475
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.7
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 4492
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 5421
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 5339
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 5124
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 5571
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Infantry"
+		location = 5479
+		division_template = "FSCB Infantry"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.9
+    }
+	
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 6247
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.4
                 start_equipment_factor = 0.9
@@ -292,7 +380,7 @@ units = {
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 6247
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.4
                 start_equipment_factor = 0.9
@@ -301,7 +389,7 @@ units = {
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 5067
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.4
                 start_equipment_factor = 0.9
@@ -310,7 +398,7 @@ units = {
 
 	division = {
 		name = "FSCB Mechanized"
-		location = 5307
+		location = 4170
 		division_template = "FSCB Mechanized"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -319,7 +407,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 6631
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -328,7 +416,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 6880
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -337,7 +425,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 6995
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -346,7 +434,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 7144
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -355,7 +443,7 @@ units = {
 
 	division = {
 		name = "FSCB Infantry"
-		location = 5307
+		location = 7144
 		division_template = "FSCB Infantry"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -364,34 +452,65 @@ units = {
 
 	division = {
 		name = "FSCB Mechanized"
-		location = 5307
+		location = 5895
 		division_template = "FSCB Mechanized"
 		start_experience_factor = 0.5
-                start_equipment_factor = 0.8
+                start_equipment_factor = 0.9
 
         }
 
 	division = {
 		name = "FSCB Mechanized"
-		location = 5307
+		location = 5424
 		division_template = "FSCB Mechanized"
 		start_experience_factor = 0.5
-                start_equipment_factor = 0.8
+                start_equipment_factor = 0.9
 
         }
 
 	division = {
 		name = "FSCB Mechanized"
-		location = 5307
+		location = 4212
 		division_template = "FSCB Mechanized"
-		start_experience_factor = 0.5
-                start_equipment_factor = 0.8
-
-        }
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Mechanized"
+		location = 6089
+		division_template = "FSCB Mechanized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Mechanized"
+		location = 6497
+		division_template = "FSCB Mechanized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Mechanized"
+		location = 5109
+		division_template = "FSCB Mechanized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
+	
+	division = {
+		name = "FSCB Mechanized"
+		location = 4019
+		division_template = "FSCB Mechanized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.9
+    }
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 5058
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -400,7 +519,7 @@ units = {
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 5058
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -409,7 +528,7 @@ units = {
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 4816
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
@@ -418,10 +537,35 @@ units = {
 
 	division = {
 		name = "FSCB motorised"
-		location = 5307
+		location = 4816
 		division_template = "FSCB motorised"
 		start_experience_factor = 0.5
                 start_equipment_factor = 0.8
 
         }
+}
+
+air_wings = {
+	51 = {
+		fighter_equipment_1 = {
+			owner = "FSC" 
+			creator = "FSC"
+			amount = 445
+		}
+		CAS_equipment_0 = {
+			owner = "FSC" 
+			creator = "FSC"
+			amount = 100
+		}
+		nav_bomber_equipment_1 = {
+			owner = "FSC" 
+			creator = "FSC"
+			amount = 24
+		}
+		tac_bomber_equipment_1 = {
+			owner = "FSC" 
+			creator = "FSC"
+			amount = 12
+		}
+	}
 }

@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "UCB South Fleet"			
-		naval_base = 8031
+		naval_base = 6083
 		task_force = {				
 			name = "Linkor Operative"				
-			location = 8031
+			location = 6083
 			ship = { name = "Vinington" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }	
 			ship = { name = "Irtazlin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
 			ship = { name = "Toripol" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
@@ -46,7 +46,7 @@ units = {
 		}
 		task_force = {	
 			name = "Submarine Unity"				
-			location = 8031
+			location = 6083
             ship = { name = "SUCB Dryer 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
 			ship = { name = "SUCB Dryer 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
 			ship = { name = "SUCB Dryer 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = UCB } } }
@@ -61,10 +61,10 @@ units = {
 	}
 	fleet = {
 		name = "UCB North Fleet"			
-		naval_base = 10207
+		naval_base = 8809
 		task_force = {				
 			name = "Linkor Operative"				
-			location = 10207
+			location = 8809
 			ship = { name = "Perdonburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }	
 			ship = { name = "Inderia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = UCB } } }
 			ship = { name = "HC Inderia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = UCB } } }

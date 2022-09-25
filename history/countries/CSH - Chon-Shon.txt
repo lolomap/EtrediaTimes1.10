@@ -9,6 +9,7 @@ set_war_support = 0.6
 
 add_ideas = {
         WWW_medium_country
+	third_corruption_level
 }
 
 set_technology = {
@@ -31,7 +32,6 @@ set_technology = {
 	motorised_infantry = 1
         mechanised_infantry = 1
 	jeep_unit = 1
-	jeep_unit_2 = 1
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1

@@ -19,7 +19,7 @@ division_template = {
 units = {
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -28,7 +28,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -37,7 +37,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -46,7 +46,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -55,7 +55,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -64,7 +64,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -73,7 +73,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 10859
+		location = 10936
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1

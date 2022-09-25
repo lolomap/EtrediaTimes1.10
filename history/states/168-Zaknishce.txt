@@ -9,7 +9,7 @@ state={
 		owner = SFL
 		buildings = {
 			infrastructure = 5
-
+                        industrial_complex = 1
 		}
 		add_core_of = SFL
 		add_core_of = SZE

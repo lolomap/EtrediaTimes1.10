@@ -1,0 +1,14 @@
+alliance_koul = {
+	enable = {
+		tag = KLU
+	}
+	abort = {
+		NOT = { country_exists = ZHE }
+	}
+	
+	ai_strategy = {
+		type = occupation_policy
+		id = "ROOT"			
+		value = 3
+	}
+}

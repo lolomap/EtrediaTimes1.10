@@ -10,6 +10,7 @@ add_ideas = {
         WWW_best_country
         total_free_press
         general_entry
+	first_corruption_level
 }
 
 set_technology = {
@@ -21,6 +22,8 @@ set_technology = {
 	fighter1 = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	motorized_rocket_unit = 1
 	synth_oil_experiments = 1
 	gwtank = 1

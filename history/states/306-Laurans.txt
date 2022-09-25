@@ -2,6 +2,11 @@
 state={
 	id=306
 	name="STATE_306"
+
+	resources={
+		uranium = 4 # was: 4
+	}
+
 	history={
 		owner = DIR
 		buildings = {

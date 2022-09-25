@@ -143,6 +143,255 @@ political_actions = {
 			}
 		}
 	}
+	
+	anti_corruption_measures_1 = {
+
+		icon = generic_industry
+
+		available = {
+			NOT = { has_idea = first_corruption_level }
+		}
+
+		visible = {
+			has_idea = WWW_best_country
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+		}
+
+		days_remove = 10
+		days_re_enable = 120
+
+		cost = 100
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					if = {
+						limit = { has_idea = sixth_corruption_level }
+						add_ideas = fifth_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = fifth_corruption_level }
+						add_ideas = fourth_corruption_level 
+					}
+					else_if = {
+						limit = { has_idea = fourth_corruption_level }
+						add_ideas = third_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = third_corruption_level }
+						add_ideas = second_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = second_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = first_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					add_stability = 0.05
+				}
+				50 = {
+					add_stability = 0.02
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.3
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.1
+			}
+			modifier = {
+				add = 1
+				has_idea = sixth_corruption_level
+			}
+			modifier = {
+				add = 2
+				has_idea = fifth_corruption_level
+			}
+			modifier = {
+				add = 1
+				has_idea = fourth_corruption_level
+			}
+		}
+	}
+	
+	anti_corruption_measures_2 = {
+
+		icon = generic_industry
+
+		available = {
+			NOT = { has_idea = first_corruption_level }
+		}
+
+		visible = {
+			has_idea = WWW_medium_country
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+		}
+
+		days_remove = 30
+		days_re_enable = 180
+
+		cost = 150
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					if = {
+						limit = { has_idea = sixth_corruption_level }
+						add_ideas = fifth_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = fifth_corruption_level }
+						add_ideas = fourth_corruption_level 
+					}
+					else_if = {
+						limit = { has_idea = fourth_corruption_level }
+						add_ideas = third_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = third_corruption_level }
+						add_ideas = second_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = second_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = first_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					add_stability = 0.05
+				}
+				50 = {
+					add_stability = 0.02
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.3
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.1
+			}
+			modifier = {
+				add = 1
+				has_idea = sixth_corruption_level
+			}
+			modifier = {
+				add = 1
+				has_idea = fifth_corruption_level
+			}
+		}
+	}
+	
+	anti_corruption_measures_3 = {
+
+		icon = generic_industry
+
+		available = {
+			NOT = { has_idea = first_corruption_level }
+		}
+
+		visible = {
+			has_idea = WWW_bad_country
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+		}
+
+		days_remove = 30
+		days_re_enable = 240
+
+		cost = 200
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					if = {
+						limit = { has_idea = sixth_corruption_level }
+						add_ideas = fifth_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = fifth_corruption_level }
+						add_ideas = fourth_corruption_level 
+					}
+					else_if = {
+						limit = { has_idea = fourth_corruption_level }
+						add_ideas = third_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = third_corruption_level }
+						add_ideas = second_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = second_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					else_if = {
+						limit = { has_idea = first_corruption_level }
+						add_ideas = first_corruption_level
+					}
+					add_stability = 0.05
+				}
+				50 = {
+					add_stability = 0.02
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0.1
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.3
+			}
+			modifier = {
+				add = 1
+				has_stability < 0.1
+			}
+			modifier = {
+				add = 1
+				has_idea = sixth_corruption_level
+			}
+		}
+	}
 }
 
 propaganda_efforts = {

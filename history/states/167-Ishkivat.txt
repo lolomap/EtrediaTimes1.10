@@ -7,7 +7,7 @@ state={
 		owner = SFL
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 0
+			industrial_complex = 1
 			arms_factory = 0
 
 		}

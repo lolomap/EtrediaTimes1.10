@@ -20,7 +20,7 @@ division_template = {
 units = {
 	division = {
 		name = "militia"
-		location = 5420
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -29,7 +29,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5641
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -38,7 +38,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5569
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -47,7 +47,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5783
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -56,7 +56,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5586
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -65,7 +65,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5946
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -74,7 +74,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5964
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -83,7 +83,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 6007
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -92,7 +92,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 6057
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -101,7 +101,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5420
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -110,7 +110,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 6125
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -119,7 +119,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 6175
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -128,7 +128,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 6219
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -137,7 +137,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5803
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1
@@ -146,7 +146,7 @@ units = {
 
 	division = {
 		name = "militia"
-		location = 5644
+		location = 5058 
 		division_template = "militia"
 		start_experience_factor = 0.1
                 start_equipment_factor = 1

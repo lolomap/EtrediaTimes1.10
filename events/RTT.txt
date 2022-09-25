@@ -111,3 +111,28 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = rttevent.5
+	title = rttevent.5.t
+	desc = rttevent.5.d
+	picure = GFX_news_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = rttevent.5.a
+		RTT = { declare_war_on = { target = DEM type = puppet } }
+	ai_chance = { factor = 5 }
+	}
+	option = {
+		name = rttevent.5.b
+		DIR = { country_event = dircom.5 days = 1 }
+	ai_chance = { factor = 40 }
+	}
+	option = {
+		name = rttevent.5.c
+		DIR = { country_event = dircom.6 days = 10 }
+	ai_chance = { factor = 55 }
+	}
+}

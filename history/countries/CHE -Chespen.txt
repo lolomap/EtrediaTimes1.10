@@ -11,6 +11,7 @@ add_ideas = {
         www_medium_country
         nonfree_press
         limited_entry
+	fifth_corruption_level
 }
 
 	set_autonomy = {
@@ -26,6 +27,7 @@ set_technology = {
 	early_fighter = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	motorized_rocket_unit = 1
 	gw_artillery = 1
 
@@ -48,6 +50,7 @@ set_technology = {
 	early_destroyer = 1
 
 	early_fighter = 1
+	CAS1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1

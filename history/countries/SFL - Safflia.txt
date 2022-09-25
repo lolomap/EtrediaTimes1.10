@@ -12,6 +12,7 @@ add_ideas = {
         SFL_politizol
         total_free_press
         free_entry
+	first_corruption_level
 }
 
 set_technology = {
@@ -23,6 +24,8 @@ set_technology = {
 	motorised_infantry = 1
         mechanised_infantry = 1
         mechanised_infantry2 = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	motorized_rocket_unit = 1
 	motorized_rocket_unit_2 = 1
 	gw_artillery = 1

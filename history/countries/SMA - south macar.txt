@@ -27,6 +27,7 @@ set_technology = {
 	early_submarine = 1
 	early_light_cruiser = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 }
 
 set_convoys = 80

@@ -18,6 +18,7 @@ state={
 			}
 		}
 		add_core_of = CHE
+		add_core_of = KRT
 		victory_points = {
 			4621 20
 		}

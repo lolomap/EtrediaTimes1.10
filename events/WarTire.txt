@@ -14,7 +14,7 @@ country_event = {
 		check_variable = {wtire > 1}
 	}
 
-	mean_time_to_happen = { 
+	mean_time_to_happen = {
 		days = 120
 		modifier = {
 			factor = 2.0
@@ -172,7 +172,7 @@ country_event = {
 		name = wte.1.a
 		ROOT = {
 			add_timed_idea = {idea = wt_rebel days = 90}
-			add_political_power = -100
+			add_political_power = -50
 		}
 	}
 }
@@ -189,7 +189,7 @@ country_event = {
 		name = wte.2.a
 		ROOT = {
 			add_timed_idea = {idea = wt_production_rebel days = 60}
-			add_political_power = -200
+			add_political_power = -50
 		}
 	}
 }
@@ -206,7 +206,7 @@ country_event = {
 		name = wte.3.a
 		ROOT = {
 			add_timed_idea = {idea = wt_production_rebel2 days = 30}
-			add_political_power = -200
+			add_political_power = -75
 		}
 	}
 }

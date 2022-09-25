@@ -83,9 +83,9 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			medium_tank_artillery_equipment = 36
+			medium_tank_artillery_equipment = 16
 		}
-		manpower = 500
+		manpower = 250
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6
@@ -279,9 +279,9 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			modern_tank_artillery_equipment = 40
+			modern_tank_artillery_equipment = 12
 		}
-		manpower = 500
+		manpower = 100
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6

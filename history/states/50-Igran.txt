@@ -9,7 +9,7 @@ state={
 		owner = FSC
 		buildings = {
 			infrastructure = 6
-                        dockyard = 1
+                        arms_factory = 1
 		}
 		add_core_of = FSC
 		add_core_of = ANR

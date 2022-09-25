@@ -292,3 +292,26 @@ country_event = {
 		name = 42.b
 	}
 }
+
+country_event = {
+	id = orb.43
+	title = orb.43.t
+	desc = orb.43.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = orb.43.a
+
+		UCB = {annex_country = {target = ORB transfer_troops = yes}}
+		UCB = { country_event = { id = ucnb.23 days = 1 } }
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = 43.b
+		UCB = { country_event = { id = ucnb.24 days = 1 } }
+	}
+}

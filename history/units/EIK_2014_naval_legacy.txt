@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "EIklind Nord Fleet"			
-		naval_base = 17186
+		naval_base = 14285
 		task_force = {				
 			name = "Eklind Fleet"				
-			location = 17186
+			location = 14285
 			ship = { name = "Heavy Cruiser Empire Type" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = EIK } } }		
 			ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }
             ship = { name = "LC_Type 2" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = EIK } } }

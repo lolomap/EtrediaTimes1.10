@@ -21,6 +21,7 @@ state={
 			}
 		}
 		add_core_of = YAN
+		add_core_of = EST
 		victory_points = {
 			6463 5
 		}

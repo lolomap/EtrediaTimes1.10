@@ -11,23 +11,23 @@ state={
 		owner = UCB
 		buildings = {
 			infrastructure = 3
-			1777 = {
+			1829 = {
 				naval_base = 6
 			}
-			1845 = {
+			2101 = {
 				naval_base = 1
 			}
-			2326 = {
+			1339 = {
 				naval_base = 1
 			}
-			2616 = {
+			1401 = {
 				naval_base = 1
 			}
 		}
 		add_core_of = UCB
 		add_core_of = CTE
 		victory_points = {
-			2326 1
+			1829 1
 		}
 
 	}

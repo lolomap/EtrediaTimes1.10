@@ -9,7 +9,12 @@ SFL_neria = {
 	ai_strategy = {
 		type = puppet 
 		id = "NER"
-		value = 0
+		value = -100000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "NER"
+		value = 500
 	}
 }
 
@@ -22,30 +27,13 @@ SFL_template_design_1 = {
 	}
 	ai_strategy = {
 		type = template_prio
-		id = medium_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = template_prio
 		id = mechanized
 		value = 150
 	}
 	ai_strategy = {
 		type = template_prio
 		id = motorized
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -400
+		value = 20
 	}
 }
 
@@ -58,29 +46,12 @@ SFL_template_design_2 = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = medium_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = role_ratio
 		id = mechanized
 		value = 150
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = -200
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -400
+		value = 50
 	}
 }

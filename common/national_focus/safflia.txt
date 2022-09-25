@@ -76,7 +76,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		cost = 10
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.7
 		}
 		prerequisite = {
 			focus = SFL_neutralityy
@@ -93,14 +93,173 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
-
+	}
+	focus = {
+		id = SFL_government_reforms
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_monarh
+		}
+		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = total_free_press
+				add_idea = nonfree_press
+			}
+		}
+		x = 3
+		y = 5
+	}
+	focus = {
+		id = SFL_great_safflia_course
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_government_reforms
+		}
+		completion_reward = {
+			SFL = { add_ideas = SFL_great_safflia_course }
+		}
+		x = 3
+		y = 6
+	}
+	focus = {
+		id = SFL_economic_reforms
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_monarh
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy 
+				add_idea = low_economic_mobilisation 
+			}
+			add_ideas = SFL_protectionism
+		}
+		x = 5
+		y = 5
+	}
+	focus = {
+		id = SFL_mon_industry1
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_economic_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 5
+		y = 6
+	}
+	focus = {
+		id = SFL_mon_industry2
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_economic_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 7
+		y = 6
+	}
+	focus = {
+		id = SFL_mon_research
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_mon_industry1
+		}
+		prerequisite = {
+			focus = SFL_mon_industry2
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 5
+		y = 7
+	}
+	focus = {
+		id = SFL_military_reforms
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_monarh
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = limited_conscription 
+			}
+		}
+		x = 1
+		y = 5
+	}
+	focus = {
+		id = SFL_mon_military_industry1
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_military_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 6
+	}
+	focus = {
+		id = SFL_mon_military_industry2
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = SFL_military_reforms
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = -1
+		y = 6
 	}
 	focus = {
 		id = SFL_demking
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10
 		ai_will_do = {
-			factor = 0.5
+			factor = 0.3
 		}
 		prerequisite = {
 			focus = SFL_neutralityy
@@ -662,12 +821,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_monarh
 		}
+		available = {
+			SFL = { has_army_manpower  = { size > 350000 } }
+		}
 		completion_reward = {
-		add_ideas = { SFL_nicemove }
+			add_ideas = { SFL_nicemove }
 		}
 		x = 4
-		y = 7
-
+		y = 8
 	}
 	focus = {
 		id = SFL_attackmof
@@ -684,7 +845,7 @@ focus_tree = {
 			}
 		}
 		x = 4
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -702,7 +863,7 @@ focus_tree = {
 			}
 		}
 		x = 2
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -716,7 +877,7 @@ focus_tree = {
 			RGY = {country_event = {id = rgy.5 days = 1}}
 		}
 		x = 6
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -795,8 +956,93 @@ focus_tree = {
 			}
 		}
 		x = 4
-		y = 9
-
+		y = 10
+	}
+	focus = {
+		id = SFL_attackfsc
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SFL_greatsafflia
+		}
+		will_lead_to_war_with = FSC
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FSC
+			}
+		}
+		x = 3
+		y = 11
+	}
+	focus = {
+		id = SFL_annexrgy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SFL_greatsafflia
+		}
+		completion_reward = {
+			SFL = {
+				annex_country = {
+					target = RGY
+					transfer_troops = yes
+				}
+				add_state_core = 189
+				add_state_core = 190
+				add_state_core = 191
+				add_state_core = 192
+				add_state_core = 193
+				add_state_core = 194
+				add_state_core = 195
+				add_state_core = 196
+				add_state_core = 197
+			}
+		}
+		x = 5
+		y = 11
+	}
+	focus = {
+		id = SFL_attacksbu
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SFL_annexrgy
+		}
+		prerequisite = {
+			focus = SFL_attackfsc
+		}
+		will_lead_to_war_with = SBU
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SBU
+			}
+		}
+		x = 4
+		y = 12
+	}
+	focus = {
+		id = SFL_attacktrbrtt
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = SFL_attacksbu
+		}
+		will_lead_to_war_with = TRB
+		will_lead_to_war_with = RTT
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TRB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = RTT
+			}
+		}
+		x = 4
+		y = 13
 	}
 	focus = {
 		id = SFL_opinion
@@ -1088,6 +1334,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_political_power = 50
+			165 = { remove_core_of = SZE }
+			168 = { remove_core_of = SZE }
+			187 = { remove_core_of = SZE }
 		}
 		x = 19
 		y = 4
@@ -1367,10 +1616,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_complex
 		}
-		prerequisite = {
-			focus = SFL_arms2
-		}
-		x = 19
+		x = 18
 		y = 9
 
 	}
@@ -1379,10 +1625,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SFL_propoganda
+			focus = SFL_complex
 		}
-		x = 19
-		y = 10
+		x = 20
+		y = 9
 
 	}
 	focus = {
@@ -1396,7 +1642,7 @@ focus_tree = {
 			focus = SFL_souz
 		}
 		x = 18
-		y = 11
+		y = 10
 
 	}
 	focus = {
@@ -1410,19 +1656,7 @@ focus_tree = {
 			focus = SFL_odin
 		}
 		x = 20
-		y = 11
-
-	}
-	focus = {
-		id = SFL_preparewar
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = SFL_souz
-			focus = SFL_odin
-		}
-		x = 19
-		y = 12
+		y = 10
 
 	}
 	focus = {
@@ -1430,10 +1664,15 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SFL_preparewar
+			focus = SFL_souz
+			focus = SFL_odin
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = SFL_fascist_army
 		}
 		x = 19
-		y = 13
+		y = 11
 
 	}
 	focus = {
@@ -1455,8 +1694,8 @@ focus_tree = {
 				target = ELR
 			}
 		}
-		x = 19
-		y = 13
+		x = 16
+		y = 12
 
 	}
 	focus = {
@@ -1464,7 +1703,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SFL_fascismmofelr
+			focus = SFL_fascismarmy
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1473,8 +1712,8 @@ focus_tree = {
 				generator = { 68 69 70 }
 			}
 		}
-		x = 19
-		y = 14
+		x = 18
+		y = 12
 
 	}
 	focus = {
@@ -1482,7 +1721,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SFL_neria
+			focus = SFL_fascismarmy
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1491,8 +1730,8 @@ focus_tree = {
 				generator = { 202 203 }
 			}
 		}
-		x = 19
-		y = 15
+		x = 20
+		y = 12
 
 	}
 	focus = {

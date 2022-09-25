@@ -7,8 +7,8 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					stability_factor = -0.05
-					war_support_factor = -0.05
+					stability_factor = -0.03
+					war_support_factor = -0.03
 					army_attack_factor = 0
 					army_defence_factor = 0
 					army_morale_factor = 0
@@ -30,11 +30,11 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					stability_factor = -0.1
+					stability_factor = -0.05
 					war_support_factor = -0.1
 					army_attack_factor = -0.05
 					army_defence_factor = -0.05
-					army_morale_factor = -0.08
+					army_morale_factor = -0.05
 					training_time_army_factor = 0.05
 				}
 				cancel = {
@@ -53,11 +53,11 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					stability_factor = -0.2
-					war_support_factor = -0.2
-					army_attack_factor = -0.1
-					army_defence_factor = -0.1
-					army_morale_factor = -0.15
+					stability_factor = -0.1
+					war_support_factor = -0.15
+					army_attack_factor = -0.08
+					army_defence_factor = -0.08
+					army_morale_factor = -0.1
 					training_time_army_factor = 0.1
 				}
 				cancel = {
@@ -76,8 +76,8 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					stability_factor = -0.3
-					war_support_factor = -0.3
+					stability_factor = -0.15
+					war_support_factor = -0.2
 					army_attack_factor = -0.15
 					army_defence_factor = -0.15
 					army_morale_factor = -0.2
@@ -129,10 +129,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = -0.5
+				political_power_gain = -0.2
+				conscription_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_buildings_factor = -0.05
-				non_core_manpower = -0.1
+				industry_repair_factor = -0.1
 			}
 		}
 
@@ -143,11 +144,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = -0.7
-				production_factory_max_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.4
-				consumer_goods_factor = 0.3
-				production_speed_buildings_factor = -0.3
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.4
+				production_factory_max_efficiency_factor = -0.25
+				production_speed_buildings_factor = -0.25
+				industry_repair_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.5
 			}
 		}
 
@@ -157,12 +159,13 @@ ideas = {
 			}
 			removal_cost = -1
 
-			modifier = {
-				political_power_gain = -0.7
-				production_factory_max_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.4
+			modifier = {	
 				consumer_goods_factor = 0.3
-				production_speed_buildings_factor = -0.3
+				political_power_gain = -0.7
+				production_factory_max_efficiency_factor = -0.45
+				production_speed_buildings_factor = -0.45
+				industry_repair_factor = -0.8
+				production_factory_efficiency_gain_factor = -0.85
 			}
 		}
 
@@ -170,12 +173,14 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			picture = wt_army_desertion
 			removal_cost = -1
 
 			modifier = {
-				non_core_manpower = -0.1
+				conscription_factor = -0.1
 				army_attack_factor = -0.05
 				army_defence_factor = -0.05
+				army_morale_factor = -0.1
 				army_org = -0.1
 			}
 		}
@@ -184,15 +189,15 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			picture = wt_army_rebel
 			removal_cost = -1
 
 			modifier = {
-				non_core_manpower = -0.3
-				army_attack_factor = -0.15
-				army_defence_factor = -0.15
-				army_morale_factor = -0.2
-				army_speed_factor = -0.15
-				army_org = -0.3
+				conscription_factor = -0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_morale_factor = -0.15
+				army_speed_factor = -0.25
 			}
 		}
 
@@ -200,15 +205,16 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			picture = wt_army_rebel2
 			removal_cost = -1
 
-			modifier = {
-				non_core_manpower = -0.8
-				army_attack_factor = -0.3
-				army_defence_factor = -0.3
-				army_morale_factor = -0.4
+			modifier = {	
+				conscription_factor = -0.5
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_morale_factor = -0.3
+				army_org = -0.3
 				army_speed_factor = -0.5
-				army_org = -0.6
 			}
 		}
 	}

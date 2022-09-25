@@ -8,13 +8,14 @@ set_stability = 0.2
 set_war_support = 0.1
 
 add_ideas = {
+        WWW_best_country
         UCB_polit_crisis
         UCB_poroh_blet
         UCB_corruption
-        WWW_best_country
         UCB_des_army
         total_free_press
         limited_entry
+	fourth_corruption_level
 }
 
 	set_autonomy = {
@@ -53,8 +54,6 @@ set_technology = {
 	motorized_rocket_unit_3 = 1
 	jeep_unit = 1
 	jeep_unit_2 = 1
-	jeep_unit_3 = 1
-	jeep_unit_4 = 1
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1

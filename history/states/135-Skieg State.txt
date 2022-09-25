@@ -2,6 +2,11 @@
 state={
 	id=135
 	name="STATE_135"
+
+	resources={
+		uranium = 2 # was: 2
+	}
+
 	history={
 		owner = FIL
 		buildings = {

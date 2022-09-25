@@ -47,6 +47,10 @@ on_actions = {
 						original_tag = GWA
 						original_tag = KYU
 						original_tag = DNG
+						original_tag = KLU
+						original_tag = BSH
+						original_tag = SOL
+						original_tag = YEO
 					}
 				}
 				set_rule = {
@@ -65,6 +69,10 @@ on_actions = {
 							original_tag = GWA
 							original_tag = KYU
 							original_tag = DNG
+							original_tag = KLU
+							original_tag = BSH
+							original_tag = SOL
+							original_tag = YEO
 						}
 					}
 					PREV = {
@@ -76,16 +84,41 @@ on_actions = {
 					add_ai_strategy = {
 						type = prepare_for_war
 						id = PREV
-						value = 1000
+						value = 10
 					}
 
 					add_ai_strategy = {
 						type = declare_war
 						id = PREV
-						value = 1000
+						value = 100
 					}
 				}
-			}	
+				random_neighbor_country = {
+					limit = {
+						OR = {
+							original_tag = UNC
+							original_tag = GAR
+							original_tag = KCE
+							original_tag = LOD
+							original_tag = ZOG
+							original_tag = HOR
+							original_tag = ECE
+							original_tag = GWA
+							original_tag = KYU
+							original_tag = DNG
+							original_tag = KLU
+							original_tag = BSH
+							original_tag = SOL
+							original_tag = YEO
+						}
+					}
+					PREV = {
+						every_owned_state = {
+							add_claim_by = PREV.PREV
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -142,6 +175,26 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_weekly_DIR = {
+		effect = {
+			if = {
+				limit = { 
+					country_exists = DIR
+					DIR = {is_subject_of = DEM}
+				}
+				DEM = { annex_country = { target = DIR } }
+			}
+			if = {
+				limit = { 
+					country_exists = DEM
+					DEM = {is_subject_of = DIR}
+				}
+				DIR = { annex_country = { target = DEM } }
+			}
+		}
+	}
+	
 	on_weekly_SBU = {
 		effect = {
 			if = {
@@ -242,6 +295,30 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
+						add_core = 361
+						add_core = 218
+						add_core = 219
+						add_core = 220
+						add_core = 221
+						add_core = 222
+						add_core = 223
+						add_core = 224
+						add_core = 226
+						add_core = 227
+						add_core = 228
+						add_core = 229
+						add_core = 230
+						add_core = 231
+						add_core = 232
+						add_core = 233
+						add_core = 234
+						add_core = 235
+						add_core = 236
+						add_core = 196
+						add_core = 197
+						add_core = 198
+						add_core = 225
+						
                         load_oob = LCH_2014
                         add_manpower = 20000
 					}
@@ -268,6 +345,30 @@ on_actions = {
 							limit = {not = {has_war_with = SBU}}
 							declare_war_on = {type = annex_everything target = SBU}
 						}
+						
+						add_core = 361
+						add_core = 218
+						add_core = 219
+						add_core = 220
+						add_core = 221
+						add_core = 222
+						add_core = 223
+						add_core = 224
+						add_core = 226
+						add_core = 227
+						add_core = 228
+						add_core = 229
+						add_core = 230
+						add_core = 231
+						add_core = 232
+						add_core = 233
+						add_core = 234
+						add_core = 235
+						add_core = 236
+						add_core = 196
+						add_core = 197
+						add_core = 198
+						add_core = 225
 						
                         load_oob = ESB_2014
                         add_manpower = 20000
@@ -296,6 +397,30 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
+						add_core = 361
+						add_core = 218
+						add_core = 219
+						add_core = 220
+						add_core = 221
+						add_core = 222
+						add_core = 223
+						add_core = 224
+						add_core = 226
+						add_core = 227
+						add_core = 228
+						add_core = 229
+						add_core = 230
+						add_core = 231
+						add_core = 232
+						add_core = 233
+						add_core = 234
+						add_core = 235
+						add_core = 236
+						add_core = 196
+						add_core = 197
+						add_core = 198
+						add_core = 225
+						
                         load_oob = SIN_2014
                         add_manpower = 20000
 					}
@@ -322,6 +447,30 @@ on_actions = {
 							limit = {not = {has_war_with = SBU}}
 							declare_war_on = {type = annex_everything target = SBU}
 						}
+						
+						add_core = 361
+						add_core = 218
+						add_core = 219
+						add_core = 220
+						add_core = 221
+						add_core = 222
+						add_core = 223
+						add_core = 224
+						add_core = 226
+						add_core = 227
+						add_core = 228
+						add_core = 229
+						add_core = 230
+						add_core = 231
+						add_core = 232
+						add_core = 233
+						add_core = 234
+						add_core = 235
+						add_core = 236
+						add_core = 196
+						add_core = 197
+						add_core = 198
+						add_core = 225
 						
                         load_oob = BAK_2014
                         add_manpower = 20000
@@ -350,6 +499,30 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
+						add_core = 361
+						add_core = 218
+						add_core = 219
+						add_core = 220
+						add_core = 221
+						add_core = 222
+						add_core = 223
+						add_core = 224
+						add_core = 226
+						add_core = 227
+						add_core = 228
+						add_core = 229
+						add_core = 230
+						add_core = 231
+						add_core = 232
+						add_core = 233
+						add_core = 234
+						add_core = 235
+						add_core = 236
+						add_core = 196
+						add_core = 197
+						add_core = 198
+						add_core = 225
+						
                         load_oob = KRA_2014
                         add_manpower = 20000
 					}
@@ -360,9 +533,8 @@ on_actions = {
 	}
 
 	on_monthly = {
-		effect = {
-			
-		}
+	
+	
 	}
 
 	on_weekly = {

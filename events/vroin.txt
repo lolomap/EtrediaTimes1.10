@@ -50,3 +50,25 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+country_event = {
+        id = vro.3
+        title = vro.3.t
+        desc = vro.3.d
+
+    is_triggered_only = yes
+
+    option = {
+		name = vro.3.a
+		UCB = { create_faction = UCB_VRO_GRAND_ETREDIA }
+		UCB = {
+            add_to_faction = VRO
+        }
+		ai_chance = { factor = 70 }
+	}
+    option = {
+		name = vro.3.b
+		ai_chance = { factor = 30 }
+		UCB = { country_event = { id = ucbf.3 days = 1 } }
+	}
+}

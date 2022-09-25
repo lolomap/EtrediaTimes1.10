@@ -9,8 +9,8 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = UCB_polit1
-		text = UCB_polit1
+		id = UCB_1
+		text = UCB_1
 		icon = GFX_focus_generic_self_management
 		cost = 10
 		x = 12
@@ -21,8 +21,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = UCB_polit2
-		text = UCB_polit2
+		id = UCB_2
+		text = UCB_2
 		icon = GFX_focus_usa_voter_registration_act
 		cost = 1
 		prerequisite = {
@@ -35,16 +35,16 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					UCB = {
-							remove_ideas = UCB_polit_crisis
-							country_event = { id = ucnb.1 days = 1 }
-							}
-						}
+				UCB = {
+					remove_ideas = UCB_polit_crisis
+					country_event = { id = ucnb.1 days = 1 }
+				}
 			}
+	}
 
 	focus = {
-		id = UCB_democratic1
-		text = UCB_democratic1
+		id = UCB_dem1
+		text = UCB_dem1
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -73,25 +73,7 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = UCB_democratic3
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = UCB_democratic1
-		}
-		x = 5
-		y = 3
-			completion_reward = {
-					add_ideas = { UCB_promka }
-					add_popularity = {
-							ideology = democratic
-							popularity = 0.05
-						}
-				}
-
-	}
+	
 	focus = {
 		id = UCB_democratic2
 		icon = GFX_goal_unknown
@@ -102,14 +84,13 @@ focus_tree = {
 		x = 8
 		y = 3
 			completion_reward = {
-					add_stability = -0.15
-					add_ideas = { UCB_autonomy }
+					add_stability = 0.1
 					add_popularity = {
-							ideology = democratic
-							popularity = 0.02
-						}
-				}
-
+						ideology = democratic
+						popularity = 0.1
+					}
+			add_ideas = { UCB_autonomy }
+			}
 	}
 	focus = {
 		id = UCB_democratic4

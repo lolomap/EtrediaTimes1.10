@@ -200,3 +200,28 @@ units = {
 
         }
 }
+
+air_wings = {
+	537 = {
+		fighter_equipment_0 = {
+			owner = "MOA" 
+			creator = "MOA"
+			amount = 266
+		}
+		CAS_equipment_0 = {
+			owner = "MOA" 
+			creator = "MOA"
+			amount = 87
+		}
+		nav_bomber_equipment_1 = {
+			owner = "MOA" 
+			creator = "MOA"
+			amount = 337
+		}
+		tac_bomber_equipment_1 = {
+			owner = "MOA" 
+			creator = "MOA"
+			amount = 18
+		}
+	}
+}

@@ -13,6 +13,7 @@ add_ideas = {
         neutrality_idea
         total_free_press
         free_entry
+	third_corruption_level
 }
 
 set_technology = {
@@ -24,6 +25,7 @@ set_technology = {
 	early_fighter = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	motorized_rocket_unit = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -76,7 +78,7 @@ set_convoys = 1100
 create_country_leader = {
 	name = "Aleki Multiauaopele"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
-	picture = "portrait_ucb_anatoly.dds"
+	picture = "portrait_moa_democratic.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -87,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Apineru Fanene"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "portrait_taganrog_ivan_ishenko.dds"
+	picture = "portrait_moa_fascism.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

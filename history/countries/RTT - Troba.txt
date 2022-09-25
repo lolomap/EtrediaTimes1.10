@@ -11,6 +11,7 @@ add_ideas = {
         limited_conscription
         total_nonfree_press
         limited_entry
+	third_corruption_level
 }
 
 set_technology = {
@@ -26,6 +27,8 @@ set_technology = {
 	fuel_silos = 1
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	motorized_rocket_unit = 1
 	basic_light_tank = 1
 	improved_light_tank = 1

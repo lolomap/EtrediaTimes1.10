@@ -19,7 +19,7 @@ division_template = {
 units = {
 	division = {
 		name = "Jihad Auto"
-		location = 5539
+		location = 4904
 		division_template = "Jihad Auto"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -27,7 +27,7 @@ units = {
 	
 	division = {
 		name = "Jihad Auto"
-		location = 5539
+		location = 4904
 		division_template = "Jihad Auto"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -35,7 +35,7 @@ units = {
 	
 	division = {
 		name = "Jihad Auto"
-		location = 5539
+		location = 4904
 		division_template = "Jihad Auto"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -43,7 +43,7 @@ units = {
 
 	division = {
 		name = "Jihad Auto"
-		location = 4581
+		location = 4904
 		division_template = "Jihad Auto"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
@@ -51,7 +51,7 @@ units = {
 
 	division = {
 		name = "Jihad Auto"
-		location = 5076
+		location = 4904
 		division_template = "Jihad Auto"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9

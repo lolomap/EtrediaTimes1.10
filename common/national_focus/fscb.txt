@@ -1067,6 +1067,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = { 
+			UCB = { 
+				NOT = { 
+					has_idea = { UCB_poroh_blet }
+				}
+			}
+		}
 		completion_reward = {
 		UCB = { country_event = { id = ucnb.2 } }
 		}
@@ -1081,9 +1088,17 @@ focus_tree = {
 		prerequisite = {
 			focus = FSC_raskachatucnb
 		}
+		will_lead_to_war_with = UCB
 		completion_reward = {
 		UCB = { country_event = { id = ucnb.3 } }
 		add_threat = 1
+		}
+		bypass = { 
+			UCB = { 
+				NOT = { 
+					has_idea = { UCB_poroh_blet }
+				}
+			}
 		}
 		x = 7
 		y = 11
@@ -1096,9 +1111,10 @@ focus_tree = {
 		prerequisite = {
 			focus = FSC_sponsorkolechianterrorist
 		}
+		will_lead_to_war_with = UCB
 		completion_reward = {
-		country_event = { id = fscb.1 }
-		add_threat = 10
+			country_event = { id = fscb.1 }
+			add_threat = 10
 		}
 		x = 7
 		y = 12

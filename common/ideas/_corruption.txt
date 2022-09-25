@@ -1,0 +1,143 @@
+ideas = {
+
+        corruption_laws = {
+            law = yes
+
+            first_corruption_level = {
+            picture = first_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 6
+
+                modifier = {
+					consumer_goods_factor = -0.05
+					stability_factor = 0.1
+					master_ideology_drift = 0.03
+					research_speed_factor = 0.07
+					drift_defence_factor = 0.1
+					political_advisor_cost_factor = -0.1
+					industrial_capacity_factory = 0.08
+					industry_free_repair_factor = 0.1
+                }
+
+                cancel_if_invalid = no
+            }
+
+            second_corruption_level = {
+			picture = second_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 5
+
+                modifier = {
+					consumer_goods_factor = -0.02
+					stability_factor = 0.05
+					master_ideology_drift = 0.02
+					research_speed_factor = 0.04
+					drift_defence_factor = 0.05
+					political_advisor_cost_factor = -0.05
+					industrial_capacity_factory = 0.05
+					industry_free_repair_factor = 0.05
+                }
+
+                cancel_if_invalid = no 
+            }
+
+
+            third_corruption_level = {
+			picture = third_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 4
+
+                modifier = {
+					stability_factor = 0.02
+					political_power_gain = 0.05
+					master_ideology_drift = 0.01
+					research_speed_factor = 0.02
+					drift_defence_factor = 0.03
+                }
+
+                cancel_if_invalid = no
+            }
+
+
+            fourth_corruption_level = {
+            picture = fourth_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 3
+				
+				default = yes
+
+                modifier = {
+					consumer_goods_factor = 0.02
+					political_power_gain = 0.1
+					stability_factor = -0.02
+					research_speed_factor = -0.02
+					drift_defence_factor = -0.02
+					political_advisor_cost_factor = 0.08
+                }
+
+                cancel_if_invalid = no
+            }
+			
+			fifth_corruption_level = {
+            picture = fifth_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 2
+
+                modifier = {
+					consumer_goods_factor = 0.03
+					political_power_gain = 0.2
+					stability_factor = -0.05
+					research_speed_factor = -0.05
+					drift_defence_factor = -0.05
+					political_advisor_cost_factor = 0.1
+					industrial_capacity_factory = -0.05
+					industry_free_repair_factor = -0.05
+                }
+
+                cancel_if_invalid = no
+            }
+			
+			sixth_corruption_level = {
+            picture = sixth_corruption_level
+ 
+                removal_cost = -1
+				allowed_to_remove = {
+					always = no
+				}
+                level = 1
+
+                modifier = {
+					consumer_goods_factor = 0.05
+					political_power_gain = 0.25
+					stability_factor = -0.1
+					research_speed_factor = -0.07
+					drift_defence_factor = -0.1
+					political_advisor_cost_factor = 0.15
+					industrial_capacity_factory = -0.08
+					industry_free_repair_factor = -0.1
+                }
+
+                cancel_if_invalid = no
+            }
+		}
+}

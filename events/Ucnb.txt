@@ -10,14 +10,14 @@ country_event = {
 
 	option = {
 	name = ucnb.1.a 
-    add_ideas = UCB_resist		
-	ai_chance = { 
-	factor = 70	
-        modifier = {
-	    factor = 1000
-		is_historical_focus_on = yes
+		UCB = { add_ideas = UCB_resist }	
+		ai_chance = { 
+			factor = 70	
+				modifier = {
+					factor = 1000
+					is_historical_focus_on = yes
+				}
 		}
-	}
 	}
 
 	option = {
@@ -29,14 +29,14 @@ country_event = {
             ruling_party = fascism
         }
         add_popularity = {
-        ideology = fascism
-        popularity = 0.3
+			ideology = fascism
+			popularity = 0.3
         }
 	    ai_chance = { 
-	    factor = 30 
-		    modifier = {
-	        factor = 0
-		    is_historical_focus_on = yes
+			factor = 30 
+				modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 		    }
 	    }
     }
@@ -52,8 +52,7 @@ country_event = {
 
 	option = {
 		name = ucnb.2.a 
-                add_ideas = UCB_separatism1		
-		ai_chance = { factor = 100 }
+            add_timed_idea = { idea = UCB_separatism1 days = 120 }	
 	}
 
 }
@@ -413,5 +412,183 @@ country_event = {
 	option = {
 	name = ucnb.16.b
 	ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = ucnb.17
+	title = ucnb.17.t
+	desc = ucnb.17.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.17.a
+		UCB = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+		ai_chance = { factor = 40 }
+	}
+	option = {
+	name = ucnb.17.b
+		UCB = { add_ideas = ucb_no_kol_guber } 
+		ai_chance = { factor = 60 }
+	}
+}
+
+country_event = {
+	id = ucnb.18
+	title = ucnb.18.t
+	desc = ucnb.18.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.18.a
+		UCB = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.19
+	title = ucnb.19.t
+	desc = ucnb.19.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.19.a
+		UCB = {
+			add_political_power = 25
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+		FSC = { country_event = { id = fscb.16 days = 1 } } 31 = { add_core_of = FSC }
+		ai_chance = { factor = 70 }
+	}
+	
+	option = {
+	name = ucnb.19.b
+		UCB = {
+			add_stability = 0.05
+			add_war_support = -0.1
+		}
+		FSC = { country_event = { id = fscb.17 days = 1 } } 31 = { add_core_of = FSC }
+		add_opinion_modifier = { target = FSC modifier = fsc_ucb_ortostan_deal }
+		FSC = {	add_opinion_modifier = { target = UCB modifier = fsc_ucb_ortostan_deal } }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = ucnb.20
+	title = ucnb.20.t
+	desc = ucnb.20.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.20.a
+	}
+}
+
+country_event = {
+	id = ucnb.21
+	title = ucnb.21.t
+	desc = ucnb.21.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.21.a
+		create_wargoal = {
+			type = puppet
+			target = IID
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.22
+	title = ucnb.22.t
+	desc = ucnb.22.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.22.a
+		add_stability = 0.05
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.08
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.23
+	title = ucnb.23.t
+	desc = ucnb.23.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.23.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.24
+	title = ucnb.24.t
+	desc = ucnb.24.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.24.a
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = ucnb.25
+	title = ucnb.25.t
+	desc = ucnb.25.d
+	picture = GFX_news_event
+	
+	is_triggered_only = yes
+
+	option = {
+	name = ucnb.25.a
+		add_stability = -0.08
+		UCB = {add_ideas = ucb_democratic_opposition }
 	}
 }

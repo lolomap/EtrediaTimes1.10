@@ -12,13 +12,13 @@ state={
 		owner = BOV
 		buildings = {
 			infrastructure = 2
-			1360 = {
+			965 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = BOV
 		victory_points = {
-			1360 1
+			965 1
 		}
 
 	}

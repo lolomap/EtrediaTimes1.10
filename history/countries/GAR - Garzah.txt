@@ -9,6 +9,7 @@ set_war_support = 0.4
 add_ideas = {
         WWW_bad_country
         nonfree_press
+	fifth_corruption_level
 }
 
 set_technology = {
@@ -19,6 +20,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
         mechanised_infantry = 1
+	jeep_unit = 1
 	gwtank = 1
 }
 

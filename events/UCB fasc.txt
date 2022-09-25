@@ -1,0 +1,64 @@
+add_namespace = ucbf
+
+country_event = {
+	id = ucbf.1
+	title = ucbf.1.t
+	desc = ucbf.1.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucbf.1.a
+		add_war_support = 0.15
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+		}
+		set_cosmetic_tag = UCB_NARABEL_PRIKOL
+	}
+}
+
+country_event = {
+	id = ucbf.2
+	title = ucbf.2.t
+	desc = ucbf.2.d
+	picture = GFX_news_even
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ucbf.2.a
+		add_stability = -0.05
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+	}
+}

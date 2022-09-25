@@ -9,6 +9,7 @@ set_war_support = 0.1
 add_ideas = {
         WWW_bad_country
         free_press
+	fifth_corruption_level
 }
 
 set_technology = {

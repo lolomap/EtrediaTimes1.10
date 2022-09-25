@@ -14,13 +14,13 @@ state={
 			infrastructure = 5
                         industrial_complex = 2
 			arms_factory = 2
-			1375 = {
+			967 = {
 				naval_base = 6
 			}
 		}
 		add_core_of = ZHI
 		victory_points = {
-			1375 15
+			967 15
 		}
 
 	}

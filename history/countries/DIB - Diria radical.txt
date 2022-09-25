@@ -1,0 +1,99 @@
+﻿capital = 307
+
+oob = "DIB_2014"
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.9
+
+add_ideas = {
+        WWW_bad_country
+        total_nonfree_press
+        closed_entry
+	third_corruption_level
+}
+
+set_technology = {
+        tech_engineers = 1
+        tech_recon = 1
+        tech_support = 1
+	infantry_weapons = 1
+        mechanised_infantry = 1
+	jeep_unit = 1
+	motorized_rocket_unit = 1
+	early_fighter = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+        basic_medium_tank = 1
+	advanced_medium_tank = 1
+	main_battle_tank = 1
+	tech_mountaineers = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	synth_oil_experiments = 1
+}
+
+set_convoys = 25
+
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2012.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 0
+        democratic = 4
+        fascism = 1
+        communism = 95
+}
+
+#
+
+create_country_leader = {
+	name = "Narvin Poroka"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "2023.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Poup Skari"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_bydlo_yaroslav_obryga.dds"
+	expire = "2041.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Sanch Barabar"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Yukat Oftar"
+	portrait_path = "gfx/leaders/SAU/Portrait_Araa_Generic_land_3.dds"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}

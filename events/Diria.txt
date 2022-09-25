@@ -9,11 +9,11 @@ country_event = {
     fire_only_once = yes
 
 	trigger = {
-        date > 2014.1.5
+        date > 2014.1.13
         TAG = DIR
     }
     mean_time_to_happen = {
-        days = 5
+        days = 1
     }
 
 	option = {
@@ -98,6 +98,10 @@ country_event = {
 			add_state_core = 286
 			add_state_core = 287
 			add_state_core = 288
+			add_state_core = 786
+			add_state_core = 834
+			add_state_core = 835
+			add_state_core = 836
             load_oob = DIR_democrat
             }
 	}
@@ -172,6 +176,9 @@ country_event = {
 			add_state_core = 286
 			add_state_core = 287
 			add_state_core = 288
+			add_state_core = 786
+			add_state_core = 834
+			add_state_core = 836
             load_oob = DIR_democrat
             }
 	}
@@ -211,8 +218,13 @@ country_event = {
 		}
         add_equipment_to_stockpile = {
         type = infantry_equipment
-        amount = 4000
-        producer = DEM
+        amount = 5000
+        producer = KAR
+        }
+		add_equipment_to_stockpile = {
+        type = mechanized_equipment
+        amount = 200
+        producer = KAR
         }
     }
 }
@@ -231,6 +243,7 @@ country_event = {
     option = {
     name = dirnews.4.a
     hidden_effect = {
+		DEM = { country_event = { id = dirnews.10 days = 4 } }
 	}
     SDI = {
             transfer_state = 267
@@ -251,13 +264,13 @@ country_event = {
 			add_ideas = { DIR_revolt }
     }
     SDI = { declare_war_on = { target = DIR type = annex_everything } }
-	SDI = { declare_war_on = { target = DEM type = annex_everything } }
 	}
 	
     option = {
     name = dirnews.4.b
     hidden_effect = {
-	SDI = { change_tag_from = DEM }
+		DEM = { country_event = { id = dirnews.10 days = 4 } }
+		SDI = { change_tag_from = DEM }
 	}
     SDI = {
             transfer_state = 269
@@ -280,7 +293,6 @@ country_event = {
 			add_ideas = { DIR_revolt }
     }
     SDI = { declare_war_on = { target = DIR type = annex_everything } }
-	SDI = { declare_war_on = { target = DEM type = annex_everything } }
 	}
 }
 	
@@ -322,26 +334,6 @@ country_event = {
 		DEM = {
 		load_oob = DIR_democrat_2
 		DEM = { country_event = { days = 360 id = dirnews.5 } }
-		}
-    }
-}
-
-country_event = {
-	id = dirnews.7
-	title = dirnews.7.t
-	desc = dirnews.7.d
-	picture = GFX_news_even
-	
-    is_triggered_only = yes
-
-	trigger = {
-        TAG = DEM
-    }
-
-	option = {
-		name = dirnews.7.a
-		DEM = {
-		load_oob = DIR_democrat_2
 		}
     }
 }
@@ -404,9 +396,32 @@ country_event = {
 			add_state_core = 258
 			load_oob = BLJ_bonus
 			BLJ = { set_cosmetic_tag = BLJ_bonus_independent }
-    			BLJ = { declare_war_on = { target = DIR type = annex_everything } }
+			BLJ = { declare_war_on = { target = DIR type = annex_everything } }
 			BLJ = { declare_war_on = { target = DEM type = annex_everything } }
 			add_ideas = { DIR_revolt }	
    		}
+	}
+}
+
+country_event = {
+	id = dirnews.10
+	title = dirnews.10.t
+	desc = dirnews.10.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.10.a
+		DEM = { add_stability = 0.1 }
+		SDI = { declare_war_on = { target = DEM type = annex_everything } }
+	}
+	option = {
+	name = dirnews.10.b
+		add_political_power = 150
 	}
 }

@@ -8,6 +8,7 @@ add_ideas = {
         www_best_country
         free_press
         general_entry
+	first_corruption_level
 }
 
 set_technology = {
@@ -26,8 +27,6 @@ set_technology = {
         mechanised_infantry2 = 1
 	jeep_unit = 1
 	jeep_unit_2 = 1
-	jeep_unit_3 = 1
-	jeep_unit_4 = 1
 	motorized_rocket_unit = 1
 	motorized_rocket_unit_2 = 1
 	motorized_rocket_unit_3 = 1

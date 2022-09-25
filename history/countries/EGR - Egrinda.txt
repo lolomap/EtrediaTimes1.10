@@ -11,6 +11,7 @@ add_ideas = {
         total_free_press
         free_entry
         DON_politics
+	first_corruption_level
 }
 
 set_technology = {
@@ -27,6 +28,8 @@ set_technology = {
 
 	motorised_infantry = 1
         mechanised_infantry = 1
+	jeep_unit = 1
+	jeep_unit_2 = 1
 	gw_artillery = 1
 	tech_mountaineers = 1
 	early_submarine = 1

@@ -1,10 +1,10 @@
 units = {
 	fleet = {
 		name = "SBU Fleet"			
-		naval_base = 4900
+		naval_base = 4275
 		task_force = {				
 			name = "Linkor OPS"				
-			location = 4900
+			location = 4275
 			ship = { name = "Kalicih The Great" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }	
 			ship = { name = "Siburska" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }
 			ship = { name = "Elska I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SBU } } }

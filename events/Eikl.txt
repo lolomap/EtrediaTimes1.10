@@ -996,5 +996,7 @@ country_event = { # не использовался
 
 	option = {
 		name = eik.30.a
+		add_political_power = 50
+		add_ideas = EIK_nord_ideals
 	}
 }
