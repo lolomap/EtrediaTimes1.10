@@ -213,7 +213,7 @@ on_actions = {
 				set_variable = { sbu_frev_rand = random }
 				multiply_variable = {sbu_frev_rand = 100}
 				if = {
-					limit = {check_variable = {sbu_frev_rand < 20}}
+					limit = {check_variable = {sbu_frev_rand < 80}}
 					country_event = {id = sbu.65 days = 1}
 				}
 				else = {
