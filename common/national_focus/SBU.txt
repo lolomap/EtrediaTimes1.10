@@ -2293,6 +2293,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_north_buffer
+        icon = GFX_goal_sbu_north_buffer
 		x = 6
 		y = 6
 		cost = 15
@@ -2335,6 +2336,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_RTT_question
+        icon = GFX_goal_sbu_rtt_question
 		x = 6
 		y = 7
 		cost = 10

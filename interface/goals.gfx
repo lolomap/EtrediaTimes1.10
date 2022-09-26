@@ -1,4 +1,15 @@
-spriteTypes = {	
+spriteTypes = {
+
+SpriteType = {
+	name = "GFX_goal_sbu_rtt_question"
+	texturefile="gfx/interface/goals/goal_sbu_rtt_question.dds"
+}
+
+
+    SpriteType = {
+		name = "GFX_goal_sbu_north_buffer"
+		texturefile="gfx/interface/goals/goal_sbu_north_buffer.dds"
+	}	
 
 	SpriteType = {
 		name = "GFX_goal_eik_independence"
