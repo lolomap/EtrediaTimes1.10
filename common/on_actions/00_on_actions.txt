@@ -119,6 +119,15 @@ on_actions = {
 					}
 				}
 			}
+
+            #################
+            # START NUCLEAR #
+            #################
+            EIK = {add_nuclear_bombs = 31}
+            UCB = {add_nuclear_bombs = 65}
+            SBU = {add_nuclear_bombs = 36}
+            YAN = {add_nuclear_bombs = 28}
+            CHE = {add_nuclear_bombs = 8}
 		}
 	}
 

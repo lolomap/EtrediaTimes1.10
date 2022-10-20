@@ -987,7 +987,7 @@ country_event = { #Запуск случайного олигархическо�
 	option = {name = eik.29.a}
 }
 
-country_event = { # не использовался
+country_event = {
 	id = eik.30
 	title = eik.30.t
 	desc = eik.30.d
