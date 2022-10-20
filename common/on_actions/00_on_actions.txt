@@ -217,7 +217,7 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					check_variable = {kolert_long > 365}
+					check_variable = {kolert_long > 720}
 				}
 				set_variable = { sbu_frev_rand = random }
 				multiply_variable = {sbu_frev_rand = 100}
