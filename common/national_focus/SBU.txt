@@ -850,6 +850,24 @@ focus_tree = {
 
 		completion_reward = {
 			set_country_leader_ideology = conservatism
+            set_party_name = {
+                ideology = neutrality
+                long_name = SBU_democratic_party_long
+                name = SBU_democratic_party
+            }
+            set_party_name = {
+				ideology = democratic
+				long_name = SBU_democratic_party_ahagon_long
+				name = SBU_democratic_party_ahagon
+			}
+            hidden_effect = {
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no
+                }
+                retire_country_leader = yes
+                set_cosmetic_tag = SBU_democratic
+            }
 		}
 	}
 
@@ -862,8 +880,8 @@ focus_tree = {
 		mutually_exclusive = {focus = SBU_populistic_expansion}
 
 		completion_reward = {
-			add_timed_idea = {idea = neutrality_idea days = 360}
-			add_timed_idea = {idea = DON_politics days = 120}
+			add_timed_idea = {idea = neutrality_idea days = 720}
+			add_timed_idea = {idea = DON_politics days = 720}
 
 		}
 	}
@@ -876,11 +894,36 @@ focus_tree = {
 
 		prerequisite = {focus = SBU_exit_world_politics}
 		mutually_exclusive = {focus = SBU_dprs_authority}
+
+        available = {
+            has_stability > 0.45
+            neutrality > 0.15
+            democratic > 0.2
+        }
+
+        completion_reward = {
+            add_political_power = 50
+            set_variable = {ahagon_help = party_popularity@neutrality}
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = -1
+            }
+            hidden_effect = {
+                add_popularity = {
+                    ideology = democratic
+                    popularity = ahagon_help
+                }
+            }
+        }
 	}
 
 	focus = {
 		id = SBU_election
-		cost = 10
+		cost = 5
 		x = 37
 		y = 8
 
@@ -949,14 +992,16 @@ focus_tree = {
 		prerequisite = {focus = SBU_election}
 
 		completion_reward = {
-			retire_country_leader = yes
-			retire_country_leader = yes
-			retire_country_leader = yes
-			set_party_name = {
-				ideology = democratic
-				long_name = SBU_democratic_party_ahagon_long
-				name = SBU_democratic_party_ahagon
-			}
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+                election_frequency = 72
+            }
+			hidden_effect = {
+                retire_country_leader = yes
+                retire_country_leader = yes
+                retire_country_leader = yes
+            }
 		}
 	}
 
@@ -969,6 +1014,11 @@ focus_tree = {
 		prerequisite = {focus = SBU_ahagon_supremacy}
 
 		available = {
+            has_stability > 0.7
+            custom_trigger_tooltip = {
+                tooltip = "Мировое влияние > 60"
+                check_variable = {world_influence > 60}
+            }
 			TRB = {has_government = communism}
 		}
 
@@ -1042,13 +1092,13 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.01
+				popularity = -0.02
 			}
 			add_popularity = {
 				ideology = monarchism
-				popularity = -0.02
+				popularity = -0.04
 			}
-			add_stability = -0.01
+			add_stability = -0.005
 		}
 
 	}
@@ -1069,9 +1119,9 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = -0.03
+				popularity = -0.06
 			}
-			add_stability = -0.05
+			add_stability = -0.02
 		}
 	}
 	focus = {
@@ -1096,8 +1146,8 @@ focus_tree = {
 				ideology = democratic
 				popularity = -0.03
 			}
-			add_stability = -0.1
-			add_political_power = 50
+			add_stability = -0.01
+			add_political_power = 250
 		}
 
 	}
@@ -1121,13 +1171,20 @@ focus_tree = {
 	focus = {
 		id = SBU_yanthalia_friend
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 15
 		prerequisite = {
 			focus = SBU_external_friend
 		}
 		x = 35
 		y = 4
 
+        completion_reward = {
+            diplomatic_relation = {
+                country = YAN
+                relation = non_aggression_pact
+                active = yes
+            }
+        }
 	}
 	focus = {
 		id = SBU_fascism
