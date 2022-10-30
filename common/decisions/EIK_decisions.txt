@@ -211,6 +211,12 @@ EIK_oligarchism_rejection = {
 			tag = EIK
 			check_variable = {eik_oligarchism < 0.1}
 			has_government = fascism
+			not = {
+				AND = {
+					is_ai = yes
+					is_historical_focus = yes
+				}
+			}
 		}
 		activation = {
 			check_variable = {eik_oligarchism < 0.1}

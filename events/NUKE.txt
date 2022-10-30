@@ -18,3 +18,25 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+    id = nukemod.2
+    title = nukemod.2.t
+    desc = nukemod.2.d
+
+    is_triggered_only = yes
+    hidden = yes
+    
+    immediate = {
+        meta_effect = {
+            text = {
+                add_days_remove = {
+                    decision = NukeConstruct
+                    days = [DAYS]
+                }
+            }
+            DAYS = "[?remove_days_ur]"
+        }
+    }    
+    option = {name = nukemod.2.a}
+}

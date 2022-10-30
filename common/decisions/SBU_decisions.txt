@@ -284,6 +284,7 @@ SBU_fascist_revolution = {
 			original_tag = SBU
 			has_country_flag = sbu_start_revolution_activity
 		}
+        fire_only_once = yes
 
 		cost = 150
 		complete_effect = {

@@ -142,6 +142,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Dragan Kzhachich"
+	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
+	picture = "Portrait_sbu_democratic.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Anler Rigel"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_bydlo_yaroslav_obryg.dds"
