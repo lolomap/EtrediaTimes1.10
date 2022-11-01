@@ -932,7 +932,11 @@ focus_tree = {
 				controls_state = 170
 			}
 
-			RGY = {is_puppet_of  = SFL}
+			OR = {
+                RGY = {is_puppet_of  = SFL}  
+                not = {country_exists = RGY}
+            }
+            
 
 			is_subject = no
 		}
@@ -982,6 +986,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_greatsafflia
 		}
+        available = {
+            RGY = {
+                is_subject_of = SFL
+            }
+        }
+        bypass = {
+            not = {country_exists = RGY}
+        }
+
 		completion_reward = {
 			SFL = {
 				annex_country = {
