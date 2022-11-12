@@ -86,7 +86,7 @@ ideas = {
 
 
 		modifier = {
-			neutrality_drift = 1
+			neutrality_drift = 0.2
 		}
 	}
 
@@ -101,7 +101,7 @@ ideas = {
 
 
 		modifier = {
-			monarchism_drift = 1
+			monarchism_drift = 0.2
 		}
 	}
 

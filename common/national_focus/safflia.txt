@@ -84,6 +84,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SFL_demking
 		}
+
+        available = {
+            monarchism > 0.7
+        }
+
 		completion_reward = {
 			set_politics = {
 				ruling_party = monarchism
@@ -101,6 +106,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_monarh
 		}
+        
 		completion_reward = {
 			add_political_power = 100
 			swap_ideas = {
@@ -267,6 +273,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SFL_monarh
 		}
+
+        available = {
+            neutrality > 0.4
+            democratic < 0.5
+            communism < 0.05
+        }
 		completion_reward = {
 			add_political_power = 50
 			set_politics = {
@@ -932,7 +944,11 @@ focus_tree = {
 				controls_state = 170
 			}
 
-			RGY = {is_puppet_of  = SFL}
+			OR = {
+                RGY = {is_puppet_of  = SFL}  
+                not = {country_exists = RGY}
+            }
+            
 
 			is_subject = no
 		}
@@ -982,6 +998,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_greatsafflia
 		}
+        available = {
+            RGY = {
+                is_subject_of = SFL
+            }
+        }
+        bypass = {
+            not = {country_exists = RGY}
+        }
+
 		completion_reward = {
 			SFL = {
 				annex_country = {
