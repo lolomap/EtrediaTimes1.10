@@ -26,6 +26,10 @@ on_actions = {
 				}
 			}
 
+            UCB = {
+                country_event = {id = ucnb.26 days = 790}
+            }
+
 			every_country = {
 				set_variable = {uranium_cost = 2}
 				set_variable = {winfluence_cost = 1}

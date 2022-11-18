@@ -189,8 +189,21 @@ focus_tree = {
 		x = 27
 		y = 1
 
+        available = {
+            has_country_leader = {name = "Dmirin Randerko"}
+            date < 2016.1.1
+        }
+
+        bypass = {
+            OR = {
+                has_country_leader = {name = "Anatoly Zhmirinovan"}
+                has_country_leader = {name = "Terine Narabel"}
+            }
+        }
+
 		completion_reward = {
 			UCB = {
+                retire_country_leader = yes
 				remove_ideas = UCB_polit_crisis
 				country_event = { id = ucnb.1 days = 1 }
 			}
