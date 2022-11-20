@@ -185,6 +185,7 @@ country_event = {
 	name = ucb.3.b
 	retire_country_leader = yes
 	hidden_effect = {
+        retire_country_leader = yes
 	    UCB = { country_event = { id = ucb.4 days = 1 } }
 	}
 	    ai_chance = {
