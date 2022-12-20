@@ -35,6 +35,8 @@ on_actions = {
 			every_country = {
 				set_variable = {uranium_cost = 2}
 				set_variable = {winfluence_cost = 1}
+
+                encount_minors = yes
 			}
 
 			#########################
@@ -2059,7 +2061,8 @@ on_actions = {
 	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
 	on_annex = {
 		effect = {
-			ROOT = {clear_array = embargoList}
+			#ROOT = {clear_array = embargoList}
+            ROOT = {encount_minors = yes}
 		}
 	}
 

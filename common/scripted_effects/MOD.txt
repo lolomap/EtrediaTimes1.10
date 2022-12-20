@@ -1,0 +1,15 @@
+encount_minors = {
+    every_owned_state = {
+        for_each_loop = {
+            array = THIS.core_countries
+            value = v
+            if = {
+                limit = {
+                    var:v = {not = {tag = PREV.owner}}
+                    owner = {not = {is_in_array = {minor_countries = v}}}
+                }
+                owner = {add_to_array = {minor_countries = v}}
+            }
+        }
+    }
+}

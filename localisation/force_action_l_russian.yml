@@ -1,0 +1,6 @@
+﻿l_russian:
+    FORCE_ACTION_TITLE: "Предъявить требования"
+    fa_send: "Отправить требование"	
+    fa_puppet: "Назначить лояльное правительство"
+    fa_cores: "Возврат национальных территорий [ROOT.GetNameDef]"
+    fa_minor: "Освободить [THIS.GetNameDef]"

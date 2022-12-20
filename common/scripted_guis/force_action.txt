@@ -1,0 +1,32 @@
+scripted_gui = {
+    force_action = {
+        window_name = "force_action_window"
+        parent_window_token = selected_country_view 
+        context_type = selected_country_context
+
+		visible = {
+			ROOT = {has_country_flag = force_action_win_opened}
+			#always = yes
+		}
+
+        effects = {
+			faw_exit_button_click = {
+				ROOT = {clr_country_flag = force_action_win_opened}
+			}
+        }
+
+        dynamic_lists = {
+			minors_gb = {
+				array = minor_countries
+				entry_container = minors_entry
+				change_scope = yes
+			}
+		}
+
+		properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+		}
+    }
+}
