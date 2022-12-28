@@ -1,4 +1,113 @@
 scripted_gui = {
+    crysis = {
+        window_name = "crysis_window"
+        
+        visible = {
+            has_global_flag = political_crysis
+        }
+
+        triggers = {
+            sender_choose_button_click_enabled = {
+                not = {or = {tag = global.sender_crysis tag = global.to_crysis}}
+                not = {is_in_array = {global.crysis_senders = THIS}}
+                not = {is_in_array = {global.crysis_tos = THIS}}
+            }
+            to_choose_button_click_enabled = {
+                not = {or = {tag = global.sender_crysis tag = global.to_crysis}}
+                not = {is_in_array = {global.crysis_senders = THIS}}
+                not = {is_in_array = {global.crysis_tos = THIS}}
+            }
+        }
+
+        effects = {
+            sender_choose_button_click = {
+                add_to_array = {global.crysis_senders = ROOT}
+                remove_from_array = {global.crysis_majors = ROOT}
+                d_calc_crysis = yes
+            }
+            to_choose_button_click = {
+                add_to_array = {global.crysis_tos = ROOT}
+                remove_from_array = {global.crysis_majors = ROOT}
+                d_calc_crysis = yes
+            }
+        }
+
+        properties = {
+			senderFlag = {
+				image = [?global.sender_crysis.GetFlag]
+			}
+            toFlag = {
+				image = [?global.to_crysis.GetFlag]
+			}
+            senderFlagBorder = {
+                frame = global.sender_crysis_op_status
+            }
+            toFlagBorder = {
+                frame =  global.to_crysis_op_status
+            }
+		}
+    }
+    crysis_senders = {
+        window_name = "sender_help_window"
+        parent_window_name = "crysis_window"
+
+        dynamic_lists = {
+			senders_gb = {
+				array = global.crysis_senders
+				entry_container = major_entry
+				change_scope = yes
+			}
+		}
+
+        properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+            cFlagBorder = {
+                frame = is_highest_crysis
+            }
+		}
+    }
+    crysis_tos = {
+        window_name = "to_help_window"
+        parent_window_name = "crysis_window"
+
+        dynamic_lists = {
+			tos_gb = {
+				array = global.crysis_tos
+				entry_container = major_entry
+				change_scope = yes
+			}
+		}
+
+        properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+            cFlagBorder = {
+                frame = is_highest_crysis
+            }
+		}
+    }
+    crysis_waiters = {
+        window_name = "waiters_window"
+        parent_window_name = "crysis_window"
+
+        dynamic_lists = {
+			waiters_gb = {
+				array = global.crysis_majors
+				entry_container = major_entry
+				change_scope = yes
+			}
+		}
+
+        properties = {
+			cFlag = {
+				image = [THIS.GetFlag]
+			}
+		}
+    }
+
     force_action = {
         window_name = "force_action_window"
         parent_window_token = selected_country_view 
@@ -13,7 +122,68 @@ scripted_gui = {
 			faw_exit_button_click = {
 				ROOT = {clr_country_flag = force_action_win_opened}
 			}
+
+            cRelease_click = {
+                set_global_flag = political_crysis
+                set_variable = {global.to_crysis = FROM}
+                set_variable = {global.sender_crysis = ROOT}
+                set_variable = {global.minor_crysis = THIS}
+
+                set_variable = {global.type_crysis = 2}
+
+                encount_majors = yes
+            }
+
+            cores_button_click = {
+                set_global_flag = political_crysis
+                set_variable = {global.to_crysis = THIS}
+                set_variable = {global.sender_crysis = ROOT}
+
+                set_variable = {global.type_crysis = 1}
+
+                encount_majors = yes
+            }
+
+            puppet_button_click = {
+                set_global_flag = political_crysis
+                set_variable = {global.to_crysis = THIS}
+                set_variable = {global.sender_crysis = ROOT}
+
+                set_variable = {global.type_crysis = 0}
+
+                encount_majors = yes
+            }
         }
+
+        triggers = {
+            cRelease_visible = {
+                not = {ROOT = {tag = PREV}}
+			}
+            cFlag_visible = {
+                not = {ROOT = {tag = PREV}}
+			}
+            cFlagBorder_visible = {
+                not = {ROOT = {tag = PREV}}
+			}
+            cName_visible = {
+                not = {ROOT = {tag = PREV}}
+			}
+
+            #l2_visible = {always = no} cores_button_visible = {always = no}
+            
+            cRelease_click_enabled = {
+                not = {has_global_flag = political_crysis}
+            }
+            puppet_button_click_enabled = {
+                not = {has_global_flag = political_crysis}
+            }
+			cores_button_click_enabled = {
+                not = {has_global_flag = political_crysis}
+				any_owned_state = {
+                    is_core_of = ROOT
+                }
+			}
+		}
 
         dynamic_lists = {
 			minors_gb = {

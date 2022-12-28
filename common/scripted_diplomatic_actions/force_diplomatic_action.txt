@@ -1,6 +1,9 @@
 scripted_diplomatic_actions = {
     force_action = {
         visible = {alway = yes}
+        selectable = {
+            not = {has_global_flag = political_crysis}
+        }
 
         show_acceptance_on_action_button = no
 		requires_acceptance = no
@@ -9,6 +12,7 @@ scripted_diplomatic_actions = {
             ROOT = {
                 set_country_flag = force_action_win_opened
                 set_variable = {target_force_action = PREV}
+                
             }
         }
 

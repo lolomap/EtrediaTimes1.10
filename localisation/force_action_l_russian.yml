@@ -4,3 +4,11 @@
     fa_puppet: "Назначить лояльное правительство"
     fa_cores: "Возврат национальных территорий [ROOT.GetNameDef]"
     fa_minor: "Освободить [THIS.GetNameDef]"
+
+    cw_title: "Политический кризис"
+    cw_title_bot: "[cw_title_bot_sl]"
+    cw_cname: "[THIS.GetNameDef]"
+    cw_cname_hl: "§Y[THIS.GetNameDef]§!"
+    cw_waiters: "Воздержались"
+    sender_name: "[?global.sender_crysis.GetNameDef]"
+    to_name: "[?global.to_crysis.GetNameDef]"

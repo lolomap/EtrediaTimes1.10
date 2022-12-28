@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_button_ban"
+		texturefile = "gfx/interface/button_ban.dds"
+	}
+
+    spriteType = {
+        name = "GFX_diplo_countrylist_flag_frame_mini"
+        texturefile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+        noOfFrames = 2
+    }
+}
