@@ -127,6 +127,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Dmirin Randerko"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "portrait_ucb_dmirin.dds"
+	expire = "2015.12.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Terine Narabel"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_ucb_narabel.dds"

@@ -5,14 +5,14 @@ guiTypes = {
 		orientation = lower_left
 		size = { width=436 height=496 }
 
-		buttonType = {
-			name = "start_bw_btn"
-			position = {x = 0 y = 0}
-			quadTextureSprite = "GFX_button_94x31"
+		# buttonType = {
+		# 	name = "start_bw_btn"
+		# 	position = {x = 0 y = 0}
+		# 	quadTextureSprite = "GFX_button_94x31"
 
-			#buttonText = parties_button_loc
-			buttonFont = hoi_18mbs
-			pdx_tooltip = border_war_button_loc
-		}
+		# 	#buttonText = parties_button_loc
+		# 	buttonFont = hoi_18mbs
+		# 	pdx_tooltip = border_war_button_loc
+		# }
 	}
 }

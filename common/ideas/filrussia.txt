@@ -52,7 +52,6 @@ ideas = {
 			}
 		}
 	}
-	country = {	
 	
 	country = {	
 	FIL_industry_for_state = {

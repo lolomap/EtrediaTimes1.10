@@ -1,0 +1,142 @@
+d_calc_wi = {
+    set_variable = {division_inf_factor = num_divisions}
+    multiply_variable = {division_inf_factor = 0.025}
+    set_variable = {factories_inf_factor = num_of_factories}
+    multiply_variable = {factories_inf_factor = 0.03}
+    set_variable = {nuke_inf_factor = num_of_nukes}
+
+    set_variable = {world_influence = 0}
+    add_to_variable = {world_influence = division_inf_factor}
+    add_to_variable = {world_influence = factories_inf_factor}
+    add_to_variable = {world_influence = nuke_inf_factor}
+    multiply_variable = {world_influence = winfluence_cost}
+}
+
+d_calc_wi_e = {
+    every_country = {
+        set_variable = {division_inf_factor = num_divisions}
+        multiply_variable = {division_inf_factor = 0.025}
+        set_variable = {factories_inf_factor = num_of_factories}
+        multiply_variable = {factories_inf_factor = 0.03}
+        set_variable = {nuke_inf_factor = num_of_nukes}
+
+        set_variable = {world_influence = 0}
+        add_to_variable = {world_influence = division_inf_factor}
+        add_to_variable = {world_influence = factories_inf_factor}
+        add_to_variable = {world_influence = nuke_inf_factor}
+        multiply_variable = {world_influence = winfluence_cost}
+    }
+}
+
+encount_minors = {
+    every_owned_state = {
+        for_each_loop = {
+            array = THIS.core_countries
+            value = v
+            if = {
+                limit = {
+                    var:v = {not = {tag = PREV.owner}}
+                    owner = {not = {is_in_array = {minor_countries = v}}}
+                }
+                owner = {add_to_array = {minor_countries = v}}
+            }
+        }
+    }
+}
+
+encount_majors = {
+    clear_array = global.crysis_majors
+    every_country = {
+        limit = {
+            not = {tag = global.sender_crysis}
+            not = {tag = global.to_crysis}
+            OR = {
+                AND = {
+                    var:global.sender_crysis = {is_major = yes}
+                    is_major = yes
+                }
+                AND = {
+                    var:global.sender_crysis = {is_major = no}
+                    OR = {
+                        var:global.sender_crysis = {is_in_array = {neighbors = PREV}}
+                        var:global.to_crysis = {is_in_array = {neighbors = PREV}}
+                    }
+                }
+            }
+            
+            not = {is_in_array {global.crysis_majors = THIS}}
+        }
+
+        add_to_array = {global.crysis_majors = THIS}
+    }
+}
+
+d_calc_crysis = {
+
+    for_each_scope_loop = {
+        array = global.crysis_senders
+        set_variable = {is_highest_crysis = 1}
+    }
+    for_each_scope_loop = {
+        array = global.crysis_tos
+        set_variable = {is_highest_crysis = 1}
+    }
+
+    set_variable = {global.cr_smax = 0}
+    set_variable = {global.cr_tmax = 0}
+
+    set_variable = {global.cr_send_op = global.sender_crysis}
+    set_variable = {global.cr_to_op = global.to_crysis}
+
+    for_each_scope_loop = {
+        array = global.crysis_senders
+        if = {
+            limit = {check_variable = {world_influence > global.cr_smax}}
+            set_variable = {global.cr_smax = world_influence}
+            set_variable = {global.cr_send_op = THIS}
+        }
+    }
+    for_each_scope_loop = {
+        array = global.crysis_tos
+        if = {
+            limit = {check_variable = {world_influence > global.cr_tmax}}
+            set_variable = {global.cr_tmax = world_influence}
+            set_variable = {global.cr_to_op = THIS}
+        }
+    }
+
+    log = "[?global.cr_send_op.GetTag] [?global.cr_smax]"
+    log = "[?global.cr_to_op.GetTag] [?global.cr_tmax]"
+
+    var:global.sender_crysis = {
+        if = {
+            limit = {check_variable = {global.cr_smax > world_influence}}
+            var:global.cr_send_op = { set_variable = {is_highest_crysis = 2} }
+        }
+        else = {
+            set_variable = {global.cr_send_op = THIS}
+            set_variable = {global.sender_crysis_op_status = 2}
+        }
+    }
+
+    var:global.to_crysis = {
+        if = {
+            limit = {check_variable = {global.cr_smax > world_influence}}
+            var:global.cr_to_op = { set_variable = {is_highest_crysis = 2} }
+        }
+        else = {
+            set_variable = {global.cr_to_op = THIS}
+            set_variable = {global.to_crysis_op_status = 2}
+        }
+    }
+}
+
+d_crto = {
+    add_to_array = {global.crysis_tos = ROOT}
+    remove_from_array = {global.crysis_majors = ROOT}
+}
+
+d_crsend = {
+    add_to_array = {global.crysis_senders = ROOT}
+    remove_from_array = {global.crysis_majors = ROOT}
+}

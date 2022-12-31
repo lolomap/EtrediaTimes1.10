@@ -592,3 +592,29 @@ country_event = {
 		UCB = {add_ideas = ucb_democratic_opposition }
 	}
 }
+
+country_event = {
+    id = ucnb.26
+    title = ucnb.26.t
+    desc = ucnb.26.d
+    
+    hidden = yes
+    is_triggered_only = yes
+
+    option = {name = ucnb.26.a}
+    immediate = {
+        if = {
+            limit = {
+                has_country_leader = {name = "Dmirin Randerko"}
+            }
+            if = {
+                limit = {has_government = democratic}
+                retire_country_leader = yes
+            }
+            else = {
+                load_focus_tree = generic
+            }
+            
+        }
+    }
+}
