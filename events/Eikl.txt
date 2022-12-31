@@ -433,7 +433,7 @@ country_event = { # доп.средства армии
 		name = eik.16.a
 		custom_effect_tooltip = eik_army_change
 		add_to_variable = {eik_army = 0.05}
-		add_timed_idea = {idea = EIK_army_goods days = 120}
+		add_timed_idea = {idea = EIK_army_goods days = 60}
 
 		ai_chance = {
 			base = 1
@@ -473,7 +473,7 @@ country_event = { # офицеры форма
 		name = eik.16.a
 		custom_effect_tooltip = eik_army_change
 		add_to_variable = {eik_army = 0.05}
-		add_timed_idea = {idea = EIK_army_goods days = 120}
+		add_timed_idea = {idea = EIK_army_goods days = 60}
 
 		ai_chance = {
 			base = 1
@@ -553,7 +553,7 @@ country_event = { # коррцп скандал
 		name = eik.16.a
 		custom_effect_tooltip = eik_army_change
 		add_to_variable = {eik_army = 0.15}
-		add_timed_idea = {idea = EIK_censorship days = 120}
+		add_timed_idea = {idea = EIK_censorship days = 45}
 
 		ai_chance = {
 			base = 1
@@ -600,7 +600,7 @@ country_event = { # военный завод
 		name = eik.16.a
 		custom_effect_tooltip = eik_army_change
 		add_to_variable = {eik_army = 0.1}
-		add_timed_idea = {idea = EIK_factory_corruption days = 360}
+		add_timed_idea = {idea = EIK_factory_corruption days = 120}
 
 		ai_chance = {
 			base = 1
@@ -743,7 +743,7 @@ country_event = { # перераспределение средств (оли)
 		name = eik.16.a
 		custom_effect_tooltip = eik_oligarchism_change
 		add_to_variable = {eik_oligarchism = 0.05}
-		add_timed_idea = {idea = EIK_industrial_privilege days = 240}
+		add_timed_idea = {idea = EIK_industrial_privilege days = 80}
 
 		ai_chance = {
 			base = 1
@@ -784,7 +784,7 @@ country_event = { # транспорт полярники
 		name = eik.16.a
 		custom_effect_tooltip = eik_oligarchism_change
 		add_to_variable = {eik_oligarchism = 0.05}
-		add_timed_idea = {idea = EIK_infrastructure_corruption days = 90}
+		add_timed_idea = {idea = EIK_infrastructure_corruption days = 60}
 
 		ai_chance = {
 			base = 1
@@ -828,7 +828,7 @@ country_event = { # губернатор сбил
 		name = eik.16.a
 		custom_effect_tooltip = eik_oligarchism_change
 		add_to_variable = {eik_oligarchism = 0.05}
-		add_timed_idea = {idea = EIK_court_falsification days = 90}
+		add_timed_idea = {idea = EIK_court_falsification days = 45}
 
 		ai_chance = {
 			base = 1
@@ -869,7 +869,7 @@ country_event = { # эколог катастрофа
 		name = eik.16.a
 		custom_effect_tooltip = eik_oligarchism_change
 		add_to_variable = {eik_oligarchism = 0.15}
-		add_timed_idea = {idea = EIK_censorship days = 120}
+		add_timed_idea = {idea = EIK_censorship days = 30}
 
 		ai_chance = {
 			base = 1
@@ -910,7 +910,7 @@ country_event = { # кортежи
 		name = eik.16.a
 		custom_effect_tooltip = eik_oligarchism_change
 		add_to_variable = {eik_oligarchism = 0.1}
-		add_timed_idea = {idea = EIK_police_block days = 120}
+		add_timed_idea = {idea = EIK_police_block days = 30}
 
 		ai_chance = {
 			base = 1

@@ -1,0 +1,26 @@
+state={
+	id=827
+	name="STATE_827"
+	resources={
+	}
+
+	history={
+		owner = BRT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		add_core_of = BRT
+		victory_points = {
+			11303 15 
+		}
+
+	}
+	provinces={
+		10514 10515 10591 10659 10761 10762 10851 10920 10954 10971 11031 11075 11132 11151 11179 11285 11303 11360 11392 11451 11640 
+	}
+	manpower=7256000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

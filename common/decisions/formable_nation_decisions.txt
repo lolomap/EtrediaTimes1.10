@@ -168,8 +168,9 @@ form_msas_category = {
 				166 = { add_core_of = ROOT }
 				167 = { add_core_of = ROOT }
 				168 = { add_core_of = ROOT }
-				353 = { add_core_of = ROOT }
-				354 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
 			}
 			# Sweden
 			custom_effect_tooltip = form_country_sweden_coring_states_tt
