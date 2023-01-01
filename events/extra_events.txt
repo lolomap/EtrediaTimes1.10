@@ -1413,6 +1413,62 @@ country_event = { # конфликт защита
 
 #####################################################
 
+country_event = { # Кризис закончился
+    id = mechanics.36
+    title = mechanics.36.t
+    desc = mechanics.36.d
+    hidden = yes
+    is_triggered_only = yes
+
+    option = {
+        name = mechanics.36.a
+    }
+
+    immediate = {
+        set_variable = {global.crysis_timer = 0}
+        clr_global_flag = political_crysis
+        every_country = {
+            clr_country_flag = crysis_allow
+        }
+        set_variable = {global.cr_press_clicked = 0}
+        ###########
+
+
+
+
+
+
+        ###########
+        clr_global_flag = cr_a_allow
+        clr_global_flag = cr_d_allow
+    }
+}
+
+country_event = {
+    id = mechanics.37
+    title = mechanics.37.t
+    desc = mechanics.37.d
+    hidden = yes
+    is_triggered_only = yes
+
+    option = {
+        name = mechanics.37.a
+    }
+
+    immediate = {
+        if = {
+            limit = {has_global_flag = political_crysis}
+            add_to_variable = {global.crysis_timer = 1.666}
+            random_country = {country_event = {id = mechanics.37 days = 1}}
+        }
+        else = {
+            random_country = {country_event = mechanics.36}
+        }
+    }
+}
+
+
+
 country_event = {#Аншлюз
 	id = onactev.1
 	title = onactev.1.t

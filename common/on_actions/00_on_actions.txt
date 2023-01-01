@@ -1,6 +1,8 @@
 on_actions = {
 	on_startup = {
 		effect = {
+            set_variable = {global.cr_d_status = 2}
+
 			random_country = {
 				country_event = {id = randev.11 days = 10}
 			}

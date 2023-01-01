@@ -130,6 +130,28 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
 		}
 
+        iconType = {
+            name = "pb"
+            spriteType = "GFX_crysis_pb"
+            position = {x = 20 y = 25}
+            alwaystransparent = yes
+        }
+        
+        iconType = {
+            name = "attackIcon"
+            quadTextureSprite = "GFX_crysis_status"
+            position = {x = 30 y = 50}
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "defIcon"
+            quadTextureSprite = "GFX_crysis_status"
+            position = {x = -130 y = 50}
+            alwaystransparent = yes
+            orientation = "UPPER_RIGHT"
+            frame = 2
+        }
+
         instantTextBoxType = {
 			name = "l1"
 			position = {x = 0 y = 50}
@@ -215,6 +237,21 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
         }
 
+        iconType = {
+            name = "send_allow"
+            quadTextureSprite = "GFX_surrender_icon"
+            position = {x = 180 y = 115}
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "to_allow"
+            quadTextureSprite = "GFX_surrender_icon"
+            position = {x = -225 y = 115}
+            alwaystransparent = yes
+            orientation = "UPPER_RIGHT"
+        }
+
         instantTextBoxType = {
 			name = "l3"
 			position = {x = 0 y = 125}
@@ -226,13 +263,31 @@ guiTypes = {
 			alwaystransparent = yes
             orientation = UPPER_LEFT
 		}
+
+        buttonType = {
+            name = "press_button"
+            spriteType = "GFX_button_221x34"
+			buttonText = cw_press
+			buttonFont = hoi_18mbs
+			position = { x = 50 y = 525 }
+			Orientation = "UPPER_LEFT"
+        }
+
+        buttonType = {
+            name = "allow_button"
+            spriteType = "GFX_button_221x34"
+			buttonText = cw_allow
+			buttonFont = hoi_18mbs
+			position = { x = -300 y = 525 }
+			Orientation = "UPPER_RIGHT"
+        }
     }
 
     containerWindowType = {
         name = "sender_help_window"
         position = {x = 20 y = 150}
         orientation = UPPER_LEFT
-        size = {width = 225 height = 425}
+        size = {width = 225 height = 360}
 
         margin = {
             top = 15
@@ -263,7 +318,7 @@ guiTypes = {
         name = "to_help_window"
         position = {x = -255 y = 150}
         orientation = UPPER_RIGHT
-        size = {width = 225 height = 425}
+        size = {width = 225 height = 360}
 
         margin = {
             top = 15
@@ -294,7 +349,7 @@ guiTypes = {
         name = "waiters_window"
         position = {x = -115 y = -150}
         orientation = CENTER
-        size = {width = 225 height = 425}
+        size = {width = 225 height = 360}
 
         margin = {
             top = 15
@@ -336,10 +391,16 @@ guiTypes = {
 		iconType = {
 			name = "cFlagBorder"
 			quadTextureSprite = "GFX_diplo_countrylist_flag_frame_mini"
-            frame = 1
 			position = {x = -8 y = -2}
 			alwaystransparent = yes
 		}
+
+        iconType = {
+            name = "cAllow"
+            quadTextureSprite = "GFX_surrender_icon"
+            position = {x = 145 y = 7}
+            alwaystransparent = yes
+        }
 
 
 		instantTextBoxType = {
@@ -348,7 +409,7 @@ guiTypes = {
 			text = cw_cname
 			font = hoi_18mbs
 			format = left
-            maxWidth = 115
+            maxWidth = 100
 			
 			alwaystransparent = yes
 		}

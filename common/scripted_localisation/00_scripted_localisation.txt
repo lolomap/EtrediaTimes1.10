@@ -201,3 +201,14 @@ defined_text = {
         localization_key = cw_cname
     }
 }
+
+defined_text = {
+    name = cw_allow_sl
+    text = {
+        trigger = {
+            has_country_flag = crysis_allow
+        }
+        localization_key = cw_allow_n
+    }
+    text = {localization_key = cw_allow_y}
+}

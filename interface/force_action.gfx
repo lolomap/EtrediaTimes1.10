@@ -1,0 +1,20 @@
+spriteTypes = {
+    progressbartype = {
+        name = "GFX_crysis_pb"
+        textureFile1 = "gfx/interface/strategicair/progress_good.dds"
+        textureFile2 = "gfx/interface/strategicair/progress_bad.dds"
+        color = {0.0 1.0 0.0}
+        colortwo = {1.0 0.0 0.0}
+        size = { 
+            x = 700
+            y = 20
+        }
+        effectFile = "gfx/FX/progress.lua"
+    }
+
+    spriteType = {
+        name = "GFX_crysis_status"
+        texturefile = "gfx/interface/crysis_status.dds"
+        noOfFrames = 3
+    }
+}

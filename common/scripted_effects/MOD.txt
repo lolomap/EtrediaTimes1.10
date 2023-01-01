@@ -82,6 +82,9 @@ d_calc_crysis = {
         set_variable = {is_highest_crysis = 1}
     }
 
+    set_variable = {global.sender_crysis_op_status = 1}
+    set_variable = {global.to_crysis_op_status = 1}
+
     set_variable = {global.cr_smax = 0}
     set_variable = {global.cr_tmax = 0}
 
