@@ -1,0 +1,42 @@
+crysis_startable = {
+    not = {has_global_flag = political_crysis}
+    not = {has_global_flag = war_crysis}
+    not = {is_subject_of = ROOT}
+}
+crysis_startable_minor = {
+    not = {has_global_flag = political_crysis}
+    not = {has_global_flag = war_crysis}
+    FROM = {not = {is_subject_of = ROOT}}
+}
+
+crysis_capitulated = {
+    var:global.to_crysis = {
+        surrender_progress > 0.89
+    }
+}
+
+crysis_minor_occupy = {
+    check_variable = {global.type_crysis = 2}
+    var:global.to_crysis = {
+        all_controlled_state = {
+           NOT = {is_core_of = var:global.minor_crysis}
+        }
+    }
+}
+
+crysis_cores_occupy = {
+    check_variable = {global.type_crysis = 1}
+    var:global.to_crysis = {
+        all_controlled_state = {
+            NOT = {is_core_of = var:global.sender_crysis}
+        }
+    }
+}
+
+crysis_rewardable = {
+    OR = {
+        crysis_capitulated = yes
+        crysis_minor_occupy = yes
+        crysis_cores_occupy = yes
+    }
+}

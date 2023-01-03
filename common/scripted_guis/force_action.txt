@@ -15,21 +15,35 @@ scripted_gui = {
 
         triggers = {
             sender_choose_button_click_enabled = {
-                not = {or = {tag = global.sender_crysis tag = global.to_crysis}}
-                not = {is_in_array = {global.crysis_senders = THIS}}
-                not = {is_in_array = {global.crysis_tos = THIS}}
+                NOT = {or = {tag = global.sender_crysis tag = global.to_crysis}}
+                NOT = {is_in_array = {global.crysis_senders = THIS}}
+                NOT = {is_in_array = {global.crysis_tos = THIS}}
             }
             to_choose_button_click_enabled = {
-                not = {or = {tag = global.sender_crysis tag = global.to_crysis}}
-                not = {is_in_array = {global.crysis_senders = THIS}}
-                not = {is_in_array = {global.crysis_tos = THIS}}
+                NOT = {or = {tag = global.sender_crysis tag = global.to_crysis}}
+                NOT = {is_in_array = {global.crysis_senders = THIS}}
+                NOT = {is_in_array = {global.crysis_tos = THIS}}
             }
 
             press_button_click_enabled = {
                 OR = {tag = global.cr_send_op tag = global.cr_to_op}
+                NOT = {has_country_flag = crysis_allow}
             }
             allow_button_click_enabled = {
-                
+                NOT = {has_country_flag = crysis_press}
+            }
+
+            attackIcon_visible = {
+                OR = {
+                    var:global.cr_send_op = {has_country_flag = crysis_press}
+                    check_variable = {global.cr_a_status = 3}
+                }
+            }
+            defIcon_visible = {
+                OR = {
+                    var:global.cr_to_op = {has_country_flag = crysis_press}
+                    check_variable = {global.cr_d_status = 3}
+                }
             }
 
             send_allow_visible = {
@@ -53,15 +67,24 @@ scripted_gui = {
             }
 
             press_button_click = {
-                add_to_variable = {global.cr_press_clicked = 1}
                 if = {
-                    limit = {check_variable = {global.cr_press_clicked > 1}}
-                    random_country = {country_event = {id = mechanics.36 days = 2}}
+                    limit = {NOT = {has_country_flag = crysis_press}}
+                    add_to_variable = {global.cr_press_clicked = 1}
+                    set_country_flag = crysis_press
+                    if = {
+                        limit = {check_variable = {global.cr_press_clicked > 1}}
+                        force_press = yes
+                        random_country = {country_event = {id = mechanics.36 days = 2}}
+                    }
+                }
+                else = {
+                    clr_country_flag = crysis_press
+                    subtract_from_variable = {global.cr_press_clicked = 1}
                 }
             }
             allow_button_click = {
                 if = {
-                    limit = {not = {has_country_flag = crysis_allow}}
+                    limit = {NOT = {has_country_flag = crysis_allow}}
                     set_country_flag = crysis_allow
                 }
                 else = {clr_country_flag = crysis_allow}
@@ -95,6 +118,7 @@ scripted_gui = {
                     limit = {check_variable = {cr_a_count = cr_a_max}}
                     set_variable = {global.cr_a_status = 3}
                     set_global_flag = cr_a_allow
+                    force_press = yes
                     random_country = {country_event = {id = mechanics.36 days = 2}}
                 }
                 else = {set_variable = {global.cr_a_status = 1}}
@@ -103,6 +127,7 @@ scripted_gui = {
                     limit = {check_variable = {cr_d_count = cr_d_max}}
                     set_variable = {global.cr_d_status = 3}
                     set_global_flag = cr_d_allow
+                    force_press = yes
                     random_country = {country_event = {id = mechanics.36 days = 2}}
                 }
                 else = {set_variable = {global.cr_d_status = 2}}
@@ -277,28 +302,28 @@ scripted_gui = {
 
         triggers = {
             cRelease_visible = {
-                not = {ROOT = {tag = PREV}}
+                NOT = {ROOT = {tag = PREV}}
 			}
             cFlag_visible = {
-                not = {ROOT = {tag = PREV}}
+                NOT = {ROOT = {tag = PREV}}
 			}
             cFlagBorder_visible = {
-                not = {ROOT = {tag = PREV}}
+                NOT = {ROOT = {tag = PREV}}
 			}
             cName_visible = {
-                not = {ROOT = {tag = PREV}}
+                NOT = {ROOT = {tag = PREV}}
 			}
 
             #l2_visible = {always = no} cores_button_visible = {always = no}
             
             cRelease_click_enabled = {
-                not = {has_global_flag = political_crysis}
+                crysis_startable_minor = yes
             }
             puppet_button_click_enabled = {
-                not = {has_global_flag = political_crysis}
+                crysis_startable = yes
             }
 			cores_button_click_enabled = {
-                not = {has_global_flag = political_crysis}
+                crysis_startable = yes
 				any_owned_state = {
                     is_core_of = ROOT
                 }

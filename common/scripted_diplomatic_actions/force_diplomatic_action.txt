@@ -1,8 +1,8 @@
 scripted_diplomatic_actions = {
     force_action = {
-        visible = {alway = yes}
+        visible = {always = yes}
         selectable = {
-            not = {has_global_flag = political_crysis}
+            crysis_startable = yes
         }
 
         show_acceptance_on_action_button = no

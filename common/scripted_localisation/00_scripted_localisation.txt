@@ -212,3 +212,14 @@ defined_text = {
     }
     text = {localization_key = cw_allow_y}
 }
+
+defined_text = {
+    name = cw_press_sl
+    text = {
+        trigger = {
+            has_country_flag = crysis_press
+        }
+        localization_key = cw_press_n
+    }
+    text = {localization_key = cw_press_y}
+}
