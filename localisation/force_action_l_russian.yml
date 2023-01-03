@@ -3,7 +3,7 @@
     FORCE_ACTION_ACTION_DESC: ""
     fa_send: "Отправить требование"	
     fa_puppet: "Назначить лояльное правительство"
-    fa_cores: "Возврат национальных территорий [ROOT.GetNameDef]"
+    fa_cores: "Возврат территорий к [ROOT.GetNameDef]"
     fa_minor: "Освободить [THIS.GetNameDef]"
     political_crysis: "Политический кризис"
     war_crysis: "Локальный конфликт"

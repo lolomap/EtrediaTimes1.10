@@ -1904,12 +1904,33 @@ focus_tree = {
 
 	focus = {
 		id = SBU_air_domination
-		cost = 5
+		cost = 10
 		x = 3
-		y = 12
+		y = 10
 
 		prerequisite = {focus = SBU_far_war}
+
+        completion_reward = {
+            add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 3
+				category = air_doctrine
+			}	
+        }
 	}
+
+    #focus = {
+	#	id = SBU_dir_camps
+	#	cost = 10
+	#	x = 3
+	#	y = 11
+    #
+	#	prerequisite = {focus = SBU_air_domination}
+    #
+    #    completion_reward = {       
+    #    }
+	#}
 
 	focus = {
 		id = SBU_tallas
@@ -1927,10 +1948,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_macar_operation
-		cost = 5
+		cost = 10
 		x = 6
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {SMA = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
@@ -1941,10 +1963,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_didor_operation
-		cost = 5
+		cost = 10
 		x = 8
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {DID = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
@@ -1955,10 +1978,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_donat_operation
-		cost = 5
+		cost = 10
 		x = 10
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {DON = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
