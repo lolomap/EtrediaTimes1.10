@@ -479,5 +479,22 @@ ideas = {
 				monarchism_drift = -0.01
 			}
 		}
+
+        sender_loose_crysis = {
+			allowed = {always = no}
+			removal_cost = -1
+
+			on_add = {
+                subtract_from_variable = {winfluence_cost = 0.15}
+			}
+			on_remove = {
+                add_to_variable = {winfluence_cost = 0.15}
+			}
+
+			modifier = {
+                custom_modifier_tooltip = world_influence_cost_15
+				political_power_factor = -0.25
+			}
+		}
 	}
 }

@@ -7,6 +7,7 @@
   wtire_reduce_10:0 "Военная усталость уменьшится на §G10§!\n"
   wtire_reduce_focus:0 "Рост военной усталости: §G-15%§!\n"
   world_influence_cost_10:0 "Штраф к мировому влиянию : §R10%§!\n"
+  world_influence_cost_15:0 "Штраф к мировому влиянию : §R15%§!\n"
 
   UCBCrashLoc:0 "Развал [UCB.GetNameDef]\n"
   FSCCrashLoc:0 "Развал [FSC.GetNameDef]\n"

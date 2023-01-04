@@ -14,6 +14,7 @@ d_calc_wi = {
     set_variable = {factories_inf_factor = num_of_factories}
     multiply_variable = {factories_inf_factor = 0.03}
     set_variable = {nuke_inf_factor = num_of_nukes}
+    multiply_variable = {nuke_inf_factor = 0.5}
 
     set_variable = {world_influence = 0}
     add_to_variable = {world_influence = division_inf_factor}
@@ -24,17 +25,7 @@ d_calc_wi = {
 
 d_calc_wi_e = {
     every_country = {
-        set_variable = {division_inf_factor = num_divisions}
-        multiply_variable = {division_inf_factor = 0.025}
-        set_variable = {factories_inf_factor = num_of_factories}
-        multiply_variable = {factories_inf_factor = 0.03}
-        set_variable = {nuke_inf_factor = num_of_nukes}
-
-        set_variable = {world_influence = 0}
-        add_to_variable = {world_influence = division_inf_factor}
-        add_to_variable = {world_influence = factories_inf_factor}
-        add_to_variable = {world_influence = nuke_inf_factor}
-        multiply_variable = {world_influence = winfluence_cost}
+        d_calc_wi = yes
     }
 }
 
@@ -176,7 +167,12 @@ crysis_reward = {
         limit = {check_variable = {global.type_crysis = 1}}
         var:global.to_crysis = {
             every_owned_state = {
-                limit = {is_core_of = global.sender_crysis}
+                limit = {
+                    OR = {
+                        is_claimed_by = global.sender_crysis
+                        is_core_of = global.sender_crysis
+                    }
+                }
                 var:global.sender_crysis = {
                     transfer_state = PREV
                 }

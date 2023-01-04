@@ -240,6 +240,17 @@ scripted_gui = {
         parent_window_token = selected_country_view 
         context_type = selected_country_context
 
+        ai_enabled = {always = yes}
+        #ai_test_interval = 336 #Every 14 days
+        ai_test_scopes = test_neighbouring_countries
+        ai_weights = {
+            faw_exit_button_click = {ai_will_do = {base = 0 modifier = {crysis_startable = no add = 10000}}}
+            cRelease_click = {ai_will_do = {base = 1}}
+            puppet_button_click = {ai_will_do = {base = 1}}
+            cores_button_click = {ai_will_do = {base = 2}}
+        }
+
+
 		visible = {
 			ROOT = {has_country_flag = force_action_win_opened}
 			#always = yes
@@ -265,6 +276,8 @@ scripted_gui = {
                 random_country = {country_event = {id = mechanics.37 days = 1}}
                 encount_majors = yes
                 d_calc_crysis = yes
+
+                ROOT = {clr_country_flag = force_action_win_opened}
             }
 
             cores_button_click = {
@@ -281,6 +294,8 @@ scripted_gui = {
                 random_country = {country_event = {id = mechanics.37 days = 1}}
                 encount_majors = yes
                 d_calc_crysis = yes
+
+                ROOT = {clr_country_flag = force_action_win_opened}
             }
 
             puppet_button_click = {
@@ -297,6 +312,8 @@ scripted_gui = {
                 random_country = {country_event = {id = mechanics.37 days = 1}}
                 encount_majors = yes
                 d_calc_crysis = yes
+
+                ROOT = {clr_country_flag = force_action_win_opened}
             }
         }
 
@@ -325,7 +342,10 @@ scripted_gui = {
 			cores_button_click_enabled = {
                 crysis_startable = yes
 				any_owned_state = {
-                    is_core_of = ROOT
+                    OR = {
+                        is_claimed_by = ROOT
+                        is_core_of = ROOT
+                    }
                 }
 			}
 		}

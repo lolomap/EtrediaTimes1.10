@@ -6,7 +6,9 @@
     fa_cores: "Возврат территорий к [ROOT.GetNameDef]"
     fa_minor: "Освободить [THIS.GetNameDef]"
     political_crysis: "Политический кризис"
-    war_crysis: "Локальный конфликт"
+    war_crysis_: "Локальный конфликт"
+    war_crysis: "Разросшийся кризис"
+    crysis_delay: "Кризис менее года назад"
 
     cw_title: "Политический кризис"
     cw_title_bot: "[cw_title_bot_sl]"

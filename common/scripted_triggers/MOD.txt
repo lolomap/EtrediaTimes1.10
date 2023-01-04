@@ -1,12 +1,16 @@
 crysis_startable = {
     not = {has_global_flag = political_crysis}
     not = {has_global_flag = war_crysis}
+    not = {has_country_flag = crysis_delay}
     not = {is_subject_of = ROOT}
+    not = {has_war_with = ROOT}
 }
 crysis_startable_minor = {
     not = {has_global_flag = political_crysis}
     not = {has_global_flag = war_crysis}
+    not = {has_country_flag = crysis_delay}
     FROM = {not = {is_subject_of = ROOT}}
+    not = {has_war_with = ROOT}
 }
 
 crysis_capitulated = {
@@ -28,7 +32,12 @@ crysis_cores_occupy = {
     check_variable = {global.type_crysis = 1}
     var:global.to_crysis = {
         all_controlled_state = {
-            NOT = {is_core_of = var:global.sender_crysis}
+            NOT = {
+                OR = {
+                    is_claimed_by = var:global.sender_crysis
+                    is_core_of = var:global.sender_crysis
+                }
+            }
         }
     }
 }

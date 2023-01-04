@@ -1425,7 +1425,7 @@ country_event = { # Кризис закончился
     }
 
     immediate = {
-
+        set_country_flag = {flag = crysis_delay days = 360 value = 1}
         if = { # Оба не уступили
             limit = {
                 var:global.cr_send_op = {has_country_flag = crysis_press}
@@ -1466,7 +1466,13 @@ country_event = { # Кризис закончился
                 var:global.cr_send_op = {not = {has_country_flag = crysis_press}}
                 var:global.cr_to_op = {has_country_flag = crysis_press}
             }
-            
+            for_each_scope_loop = {
+                array = global.crysis_senders
+                add_timed_idea = {idea = sender_loose_crysis days = 150}
+            }
+            var:global.sender_crysis = {
+                add_timed_idea = {idea = sender_loose_crysis days = 150}
+            }
         }
         else_if = { # Оборона уступила
             limit = {
