@@ -35,7 +35,7 @@
   SBU_right_effect_desc:0 "§BМы вернемся к нашему историческому маршруту§!\n"
   SBU_left_effect_desc:0 "§BМы пойдем по пути прогрессивизма и реформ§!\n"
   sbu_ready_for_revolution_tooltip:0 "Переворот подготовлен\n"
-  sbu_try_revolution:0 "Попытка переворота\n§BТекущий шанс на успех: [?sbu_frev_total]%§!\n"
+  sbu_try_revolution:0 "Попытка переворота\n§BТекущий шанс на успех: [?sbu_frev_total]% из 85%§!\n"
   sbu_try_success_tooltip:0 "Переворот прошел успешно\n"
   sbu_try_fail_tooltip:0 "§RПроизошла неудачная попытка военного переворота§!\n"
   sbu_paranoid_effect_tooltip:0 "§BБудет начато расследование§!\n"

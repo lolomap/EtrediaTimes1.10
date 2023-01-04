@@ -1,5 +1,40 @@
 spriteTypes = {
 
+    SpriteType = {
+        name = "GFX_goal_sbu_ban_ligurtorgal"
+        texturefile="gfx/interface/goals/goal_sbu_ban_ligurtorgal.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_children_savatia"
+        texturefile="gfx/interface/goals/goal_sbu_children_savatia.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_moadera_debt"
+        texturefile="gfx/interface/goals/goal_sbu_moadera_debt.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_tallas"
+        texturefile="gfx/interface/goals/goal_sbu_talassa.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_telluris"
+        texturefile="gfx/interface/goals/goal_sbu_telluris.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_terbian_revolution"
+        texturefile="gfx/interface/goals/goal_sbu_terbian_revolution.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_wise_choise"
+        texturefile="gfx/interface/goals/goal_sbu_wise_choise.dds"
+    }
+
 SpriteType = {
 	name = "GFX_goal_sbu_rtt_question"
 	texturefile="gfx/interface/goals/goal_sbu_rtt_question.dds"

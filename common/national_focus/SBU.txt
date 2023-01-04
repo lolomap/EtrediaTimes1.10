@@ -219,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_children_of_Savaty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_children_savatia
 		cost = 10
 		prerequisite = {
 			focus = SBU_klyachek_plan
@@ -422,7 +422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_Terbian_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_terbian_revolution
 		cost = 10
 		available = {
 			TRB = {NOT = { has_government = communism }}
@@ -758,7 +758,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_popularity = {ideology = democratic popularity = 0.05}
-			custom_effect_tooltip = sbu_paranoid_effect_tooltip
+			#custom_effect_tooltip = sbu_paranoid_effect_tooltip
 		}
 	}
 
@@ -1023,7 +1023,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			complete_national_focus = SBU_aldeko_operation
+			complete_national_focus = SBU_terbia_compromiss
 		}
 	}
 
@@ -1207,6 +1207,10 @@ focus_tree = {
 			custom_effect_tooltip = sbu_try_revolution
 			hidden_effect = {
 				clr_country_flag = sbu_start_revolution_activity
+                if = {
+                    limit = {check_variable = {sbu_frev_total > 85}}
+                    subtract_from_variable = {sbu_frev_total = 15}
+                }
 				set_variable = { sbu_frev_rand = random }
 				multiply_variable = {sbu_frev_rand = 100}
 				if = {
@@ -1827,6 +1831,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_sburska_zvezda_help
+        icon = GFX_goal_sburska_zvezda_potential
 		cost = 4
 		x = 1
 		y = 8
@@ -1855,6 +1860,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_moadera_debt
+        icon = GFX_goal_sbu_moadera_debt
 		cost = 6
 		x = 1
 		y = 10
@@ -1877,6 +1883,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_telluris
+        icon = GFX_goal_sbu_telluris
 		cost = 5
 		x = 3
 		y = 9
@@ -1934,6 +1941,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_tallas
+        icon = GFX_goal_sbu_tallas
 		cost = 5
 		x = 6
 		y = 9
@@ -2026,6 +2034,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_ban_ligur_torgal
+        icon = GFX_goal_sbu_ban_ligurtorgal
 		cost = 10
 		x = 7
 		y = 1
@@ -2051,6 +2060,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_wise_choise
+        icon = GFX_goal_sbu_wise_choise
 		cost = 20
 		x = 10
 		y = 6
