@@ -139,8 +139,8 @@ ideas = {
 		}
 		targeted_modifier = {
 			tag = DEM
-			attack_bonus_against = 0.3
-			defense_bonus_against = 0.3
+			attack_bonus_against = 0.5
+			defense_bonus_against = 0.5
 		}
 	}
 	
@@ -153,6 +153,19 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.15
+			}
+	}
+	
+	DIR_regional_autonomies = {
+            picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.02
+				stability_factor = 0.05
+				political_power_gain = 0.15
 			}
 	}
 

@@ -425,3 +425,31 @@ country_event = {
 		add_political_power = 150
 	}
 }
+
+country_event = {
+	id = dirnews.11
+	title = dirnews.11.t
+	desc = dirnews.11.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.11.a
+		add_stability = 0.07
+		add_manpower = 24000
+		275 = {
+			add_manpower = 127000
+		}
+		306 = {
+			add_manpower = 92000
+		}
+		279 = {
+			add_manpower = 34000
+		}
+	}
+}

@@ -1,0 +1,75 @@
+division_template = {
+	name = "International brigade"
+
+	division_names_group = DIR_inf_01
+
+	regiments = {
+		jeep = { x = 0 y = 0 }
+		jeep = { x = 0 y = 1 }
+		jeep = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 } 
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "International armor division"	
+	division_names_group = DIR_arm_01
+
+	regiments = {
+		mechanized = { x = 0 y = 0 }	
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }	
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }	
+	}
+	support = {		
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }	
+	}
+}
+units = {
+	division = {
+		name = "International brigade"
+		location = 11423
+		division_template = "International brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	division = {
+		name = "International brigade"
+		location = 11423
+		division_template = "International brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	division = {
+		name = "International brigade"
+		location = 11423
+		division_template = "International brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	division = {
+		name = "International brigade"
+		location = 11423
+		division_template = "International brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	division = {
+		name = "International armor division"
+		location = 11423
+		division_template = "International armor division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+}

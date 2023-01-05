@@ -9,15 +9,14 @@ state={
 			infrastructure = 5
 			industrial_complex = 4
 			arms_factory = 2
-			2145 = {
+			1658 = {
 				naval_base = 5
-
 			}
 
 		}
 		add_core_of = MIR
 		victory_points = {
-			2145 15 
+			1658 15 
 		}
 
 	}
