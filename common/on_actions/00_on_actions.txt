@@ -1010,6 +1010,8 @@ on_actions = {
 
 	on_release_as_free = {
 		effect = {
+            FROM = {encount_minors = yes}
+
 			if = {
 				limit = {
 					ROOT = {tag = HLR}
@@ -1041,6 +1043,8 @@ on_actions = {
 	}
 	on_release_as_puppet = {
 		effect = {
+            FROM = {encount_minors = yes}
+            
 			if = {
 				limit = {
 					ROOT = {tag = HLR}

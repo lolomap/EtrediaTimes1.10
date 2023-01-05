@@ -1425,22 +1425,84 @@ country_event = { # Кризис закончился
     }
 
     immediate = {
+        set_country_flag = {flag = crysis_delay days = 360 value = 1}
+        if = { # Оба не уступили
+            limit = {
+                var:global.cr_send_op = {has_country_flag = crysis_press}
+                var:global.cr_to_op = {has_country_flag = crysis_press}
+            }
+            set_global_flag = {
+                flag = war_crysis
+                days = 180
+                value = 1
+            }
+            random_country = {country_event = mechanics.38}
+            var:global.sender_crysis = {
+                declare_war_on = {
+                    target = global.to_crysis
+                    type = annex_everything
+                }
+
+                var:global.to_crysis = {
+                    for_each_scope_loop = {
+                        array = global.crysis_senders
+                        add_to_war = {
+                            targeted_alliance = PREV.PREV
+                            enemy = PREV
+                        }
+                    }
+                    for_each_scope_loop = {
+                        array = global.crysis_tos
+                        add_to_war = {
+                            targeted_alliance = PREV
+                            enemy = PREV.PREV
+                        }
+                    }
+                }
+            }
+        }
+        else_if = { # Атака уступила
+            limit = {
+                var:global.cr_send_op = {not = {has_country_flag = crysis_press}}
+                var:global.cr_to_op = {has_country_flag = crysis_press}
+            }
+            for_each_scope_loop = {
+                array = global.crysis_senders
+                add_timed_idea = {idea = sender_loose_crysis days = 150}
+            }
+            var:global.sender_crysis = {
+                add_timed_idea = {idea = sender_loose_crysis days = 150}
+            }
+        }
+        else_if = { # Оборона уступила
+            limit = {
+                var:global.cr_send_op = {has_country_flag = crysis_press}
+                var:global.cr_to_op = {not = {has_country_flag = crysis_press}}
+            }
+            
+            crysis_reward = yes
+        }
+
+
+        ########
         set_variable = {global.crysis_timer = 0}
         clr_global_flag = political_crysis
         every_country = {
             clr_country_flag = crysis_allow
+            clr_country_flag = crysis_press
         }
         set_variable = {global.cr_press_clicked = 0}
-        ###########
+        
+        set_variable = {global.cr_smax = 0}
+        set_variable = {global.cr_tmax = 0}
+        set_variable = {global.cr_send_op = 0}
+        set_variable = {global.cr_to_op = 0}
 
-
-
-
-
-
-        ###########
         clr_global_flag = cr_a_allow
         clr_global_flag = cr_d_allow
+
+        set_variable = {global.cr_a_status = 1}
+        set_variable = {global.cr_d_status = 2}
     }
 }
 
@@ -1462,7 +1524,34 @@ country_event = {
             random_country = {country_event = {id = mechanics.37 days = 1}}
         }
         else = {
-            random_country = {country_event = mechanics.36}
+            force_press = yes
+            random_country = {country_event = {id = mechanics.36 days = 2}}
+        }
+    }
+}
+
+country_event = {
+    id = mechanics.38
+    title = mechanics.38.t
+    desc = mechanics.38.d
+    hidden = yes
+    is_triggered_only = yes
+
+    option = {
+        name = mechanics.38.a
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_global_flag = war_crysis
+                var:global.sender_crysis = {surrender_progress < 0.1}
+                crysis_rewardable = no
+            }
+            random_country = {country_event = {id = mechanics.38 days = 7}}
+        }
+        else = {
+            d_end_war_crysis = yes
         }
     }
 }
@@ -2024,7 +2113,7 @@ country_event = {
 				ruling_party = monarchism
 				ideology = democratic
 				size = 0.2
-				only_own_territory = yes
+				
 			}
 		}
 	}
@@ -2036,7 +2125,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = monarchism
 				size = 0.8
-				only_own_territory = no
+				
 			}
 		}
 	}

@@ -36,14 +36,27 @@ scripted_gui = {
 							}
 						}
 						if = {
-							limit = {check_variable = {selected_prov > 0}}
-
-							launch_nuke = {
-								state = PREV
-								use_nuke = yes
-								province = selected_prov
-							}
-							set_variable = {selected_prov = 0}
+							limit = {
+                                OR = {
+                                    check_variable = {selected_prov > 0}
+                                    is_ai = yes
+                                }
+                            }
+                            if = {
+                                limit = {is_ai = no}
+                                launch_nuke = {
+                                    state = PREV
+                                    use_nuke = yes
+                                    province = selected_prov
+                                }
+                                set_variable = {selected_prov = 0}
+                            }
+                            else = {
+                                launch_nuke = {
+                                    state = PREV
+                                    use_nuke = yes
+                                }
+                            }
 						}
 						
 					}
@@ -55,6 +68,7 @@ scripted_gui = {
 			always = yes
 			
 		}
+        ai_test_scopes = test_enemy_controlled_states
 
 		ai_weights = {
 			nuke_province_moded_click = {

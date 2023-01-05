@@ -9,11 +9,11 @@ scripted_diplomatic_actions = {
 					}
 				}
 				is_subject = no
-				not = {in_faction_with = PREV}
+				not = {is_in_faction_with = PREV}
 				not = {has_war_with = PREV}
 			}
 			not = {is_subject_of = ROOT}
-			not = {in_faction_with = ROOT}
+			not = {is_in_faction_with = ROOT}
 			not = {has_war_with = ROOT}
 		}
 		cost = 0

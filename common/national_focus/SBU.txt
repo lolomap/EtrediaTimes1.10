@@ -219,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_children_of_Savaty
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_children_savatia
 		cost = 10
 		prerequisite = {
 			focus = SBU_klyachek_plan
@@ -422,7 +422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_Terbian_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_terbian_revolution
 		cost = 10
 		available = {
 			TRB = {NOT = { has_government = communism }}
@@ -551,26 +551,26 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
-		id = SBU_absolutism
-		icon = GFX_focus_eng_imperial_federation
-		cost = 10
-		prerequisite = {
-			focus = SBU_we_can_repeat
-		}
-		mutually_exclusive = {
-			focus = SBU_monarchism
-		}
-		completion_reward = {
-			SBU = { country_event = { id = sbu.31 days = 1 } }
-		}
-		ai_will_do = {
-			factor = 0.3
-		}
-		x = 21
-		y = 5
-
-	}
+	#focus = {
+	#	id = SBU_absolutism
+	#	icon = GFX_focus_eng_imperial_federation
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = SBU_we_can_repeat
+	#	}
+	#	mutually_exclusive = {
+	#		focus = SBU_monarchism
+	#	}
+	#	completion_reward = {
+	#		SBU = { country_event = { id = sbu.31 days = 1 } }
+	#	}
+	#	ai_will_do = {
+	#		factor = 0.3
+	#	}
+	#	x = 21
+	#	y = 5
+    #
+	#}
 	focus = {
 		id = SBU_monarchism
 		icon = GFX_focus_eng_god_save_the_king
@@ -578,16 +578,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SBU_we_can_repeat
 		}
-		mutually_exclusive = {
-			focus = SBU_absolutism
-		}
+		#mutually_exclusive = {
+		#	focus = SBU_absolutism
+		#}
 		completion_reward = {
 			SBU = { country_event = { id = sbu.32 days = 1 } }
 		}
 		ai_will_do = {
 			factor = 0.7
 		}
-		x = 25
+		x = 23
 		y = 5
 
 	}
@@ -758,7 +758,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_popularity = {ideology = democratic popularity = 0.05}
-			custom_effect_tooltip = sbu_paranoid_effect_tooltip
+			#custom_effect_tooltip = sbu_paranoid_effect_tooltip
 		}
 	}
 
@@ -1023,7 +1023,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			complete_national_focus = SBU_aldeko_operation
+			complete_national_focus = SBU_terbia_compromiss
 		}
 	}
 
@@ -1207,6 +1207,10 @@ focus_tree = {
 			custom_effect_tooltip = sbu_try_revolution
 			hidden_effect = {
 				clr_country_flag = sbu_start_revolution_activity
+                if = {
+                    limit = {check_variable = {sbu_frev_total > 85}}
+                    subtract_from_variable = {sbu_frev_total = 15}
+                }
 				set_variable = { sbu_frev_rand = random }
 				multiply_variable = {sbu_frev_rand = 100}
 				if = {
@@ -1827,6 +1831,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_sburska_zvezda_help
+        icon = GFX_goal_sburska_zvezda_potential
 		cost = 4
 		x = 1
 		y = 8
@@ -1855,6 +1860,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_moadera_debt
+        icon = GFX_goal_sbu_moadera_debt
 		cost = 6
 		x = 1
 		y = 10
@@ -1877,6 +1883,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_telluris
+        icon = GFX_goal_sbu_telluris
 		cost = 5
 		x = 3
 		y = 9
@@ -1904,15 +1911,37 @@ focus_tree = {
 
 	focus = {
 		id = SBU_air_domination
-		cost = 5
+		cost = 10
 		x = 3
-		y = 12
+		y = 10
 
 		prerequisite = {focus = SBU_far_war}
+
+        completion_reward = {
+            add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 3
+				category = air_doctrine
+			}	
+        }
 	}
+
+    #focus = {
+	#	id = SBU_dir_camps
+	#	cost = 10
+	#	x = 3
+	#	y = 11
+    #
+	#	prerequisite = {focus = SBU_air_domination}
+    #
+    #    completion_reward = {       
+    #    }
+	#}
 
 	focus = {
 		id = SBU_tallas
+        icon = GFX_goal_sbu_tallas
 		cost = 5
 		x = 6
 		y = 9
@@ -1927,10 +1956,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_macar_operation
-		cost = 5
+		cost = 10
 		x = 6
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {SMA = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
@@ -1941,10 +1971,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_didor_operation
-		cost = 5
+		cost = 10
 		x = 8
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {DID = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
@@ -1955,10 +1986,11 @@ focus_tree = {
 
 	focus = {
 		id = SBU_donat_operation
-		cost = 5
+		cost = 10
 		x = 10
 		y = 10
 		prerequisite = {focus = SBU_tallas}
+        available = {DON = {any_owned_state = {is_controlled_by = YAN}}}
 
 		completion_reward = {
 			add_timed_idea = {idea = SBU_tallasIdea days = 70}
@@ -2002,6 +2034,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_ban_ligur_torgal
+        icon = GFX_goal_sbu_ban_ligurtorgal
 		cost = 10
 		x = 7
 		y = 1
@@ -2027,6 +2060,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_wise_choise
+        icon = GFX_goal_sbu_wise_choise
 		cost = 20
 		x = 10
 		y = 6

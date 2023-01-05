@@ -1,9 +1,20 @@
+d_mtest = {
+    if = {
+        limit = {crysis_capitulated = yes}
+        log = "yes"
+    }
+    else = {log = "no"}
+}
+
+####
+
 d_calc_wi = {
     set_variable = {division_inf_factor = num_divisions}
     multiply_variable = {division_inf_factor = 0.025}
     set_variable = {factories_inf_factor = num_of_factories}
     multiply_variable = {factories_inf_factor = 0.03}
     set_variable = {nuke_inf_factor = num_of_nukes}
+    multiply_variable = {nuke_inf_factor = 0.5}
 
     set_variable = {world_influence = 0}
     add_to_variable = {world_influence = division_inf_factor}
@@ -14,17 +25,7 @@ d_calc_wi = {
 
 d_calc_wi_e = {
     every_country = {
-        set_variable = {division_inf_factor = num_divisions}
-        multiply_variable = {division_inf_factor = 0.025}
-        set_variable = {factories_inf_factor = num_of_factories}
-        multiply_variable = {factories_inf_factor = 0.03}
-        set_variable = {nuke_inf_factor = num_of_nukes}
-
-        set_variable = {world_influence = 0}
-        add_to_variable = {world_influence = division_inf_factor}
-        add_to_variable = {world_influence = factories_inf_factor}
-        add_to_variable = {world_influence = nuke_inf_factor}
-        multiply_variable = {world_influence = winfluence_cost}
+        d_calc_wi = yes
     }
 }
 
@@ -45,6 +46,8 @@ encount_minors = {
 }
 
 encount_majors = {
+    clear_array = global.crysis_senders
+    clear_array = global.crysis_tos
     clear_array = global.crysis_majors
     every_country = {
         limit = {
@@ -142,4 +145,92 @@ d_crto = {
 d_crsend = {
     add_to_array = {global.crysis_senders = ROOT}
     remove_from_array = {global.crysis_majors = ROOT}
+}
+
+force_press = {
+    if = {
+        limit = {NOT = {check_variable = {global.cr_d_status = 3}}}
+        var:global.cr_to_op = {set_country_flag = crysis_press}
+    }
+    if = {
+        limit = {NOT = {check_variable = {global.cr_a_status = 3}}}
+        var:global.cr_send_op = {set_country_flag = crysis_press}
+    }
+}
+
+crysis_reward = {
+    if = { #марионетка
+        limit = {check_variable = {global.type_crysis = 0}}
+        var:global.sender_crysis = {puppet = global.to_crysis}
+    }
+    else_if = { #корки
+        limit = {check_variable = {global.type_crysis = 1}}
+        var:global.to_crysis = {
+            every_owned_state = {
+                limit = {
+                    OR = {
+                        is_claimed_by = global.sender_crysis
+                        is_core_of = global.sender_crysis
+                    }
+                }
+                var:global.sender_crysis = {
+                    transfer_state = PREV
+                }
+            }
+        }
+    }
+    else_if = { #минор
+        limit = {check_variable = {global.type_crysis = 2}}
+        var:global.to_crysis = {
+            release_on_controlled = global.minor_crysis
+        }
+    }
+}
+
+d_end_war_crysis = {
+    clr_global_flag = war_crysis
+    
+    if = {
+        limit = {
+            crysis_minor_occupy = yes
+            check_variable = {global.type_crysis = 2}
+        }
+        set_temp_variable = {cr_reward_wait = 1}
+    }
+    else_if = {
+        limit = {
+            crysis_cores_occupy = yes
+            check_variable = {global.type_crysis = 1}
+        }
+        set_temp_variable = {cr_reward_wait = 1}
+    }
+    else_if = {
+        limit = {
+            crysis_capitulated = yes
+        }
+        set_temp_variable = {cr_reward_wait = 1}
+    }
+
+
+    var:global.sender_crysis = {
+        white_peace = global.to_crysis
+    }
+    for_each_scope_loop = {
+        array = global.crysis_senders
+        for_each_scope_loop = {
+            array = global.crysis_tos
+            white_peace = PREV
+            white_peace = global.sender_crysis
+        }
+    }
+    for_each_scope_loop = {
+        array = global.crysis_senders
+        white_peace = global.to_crysis
+    }
+
+
+    if = {
+        limit - {check_variable = {cr_reward_wait = 1}}
+        crysis_reward = yes
+    }
 }
