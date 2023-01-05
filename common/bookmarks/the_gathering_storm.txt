@@ -10,36 +10,96 @@ bookmarks = {
 		"UCB"={
 			history = "UCB_GATHERING_STORM_DESC"
                         ideology = democratic
+            ideas = {
+                UCB_polit_crisis
+                UCB_poroh_blet
+                UCB_des_army
+            }
+            focuses={
+                UCB_2
+                UCB_dem_fsc_conversation
+                UCB_fasc_rospusk_parlament
+            }
 		}
 
 		"SBU"={
 			history = "SBU_GATHERING_STORM_DESC"
                         ideology = democratic
+            ideas = {
+                SBU_Hleria
+                SBU_Elnia_separatism
+            }
+            focuses = {
+                SBU_aldeko_operation
+                SBU_sburska_zvezda
+                SBU_fascism
+            }
 		}
 
 		"YAN"={
 			history = "YAN_GATHERING_STORM_DESC"
                         ideology = fascism
+            ideas = {
+                YAN_demobilisation
+            }
+            focuses = {
+                YAN_ocean_countries
+                YAN_armiya
+                YAN_New_country_name
+            }
 		}
 
 		"EIK"={
 			history = "YAN_GATHERING_STORM_DESC"
                         ideology = fascism
+            ideas = {
+                EIK_militar
+                EIK_velichie
+                EIK_verha
+            }
+            focuses = {
+                EIK_ultimatum_to_sheregia
+                EIK_one_party_system
+                EIK_war_with_diria
+            }
 		}
 
 		"IID"={
 			history = "IID_GATHERING_STORM_DESC"
                         ideology = neutrality
+            ideas = {
+                IID_recrut
+                IID_eco_crisis
+                IID_neutrality
+            }
+            focuses = {
+                IID_Require_the_eastern_trp
+                IID_dishat
+                IID_GKZ_project
+            }
 		}
 
 		"SFL"={
 			history = "SFL_GATHERING_STORM_DESC"
                         ideology = democratic
+            ideas = {
+                SFL_politizol
+            }
+            focuses = {
+                SFL_Polit_izolyacia
+                SFL_mofsouz
+                SFL_monarh
+            }
 		}
 
 		"FSC"={
 			history = "FSC_GATHERING_STORM_DESC"
                         ideology = democratic
+            focuses = {
+                FSC_sponsorkolechianterrorist
+                FSC_declarerequirements
+                FSC_NewCaratenianState
+            }
 		}
 
 		"---"={

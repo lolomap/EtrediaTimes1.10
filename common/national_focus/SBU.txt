@@ -551,26 +551,26 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
-		id = SBU_absolutism
-		icon = GFX_focus_eng_imperial_federation
-		cost = 10
-		prerequisite = {
-			focus = SBU_we_can_repeat
-		}
-		mutually_exclusive = {
-			focus = SBU_monarchism
-		}
-		completion_reward = {
-			SBU = { country_event = { id = sbu.31 days = 1 } }
-		}
-		ai_will_do = {
-			factor = 0.3
-		}
-		x = 21
-		y = 5
-
-	}
+	#focus = {
+	#	id = SBU_absolutism
+	#	icon = GFX_focus_eng_imperial_federation
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = SBU_we_can_repeat
+	#	}
+	#	mutually_exclusive = {
+	#		focus = SBU_monarchism
+	#	}
+	#	completion_reward = {
+	#		SBU = { country_event = { id = sbu.31 days = 1 } }
+	#	}
+	#	ai_will_do = {
+	#		factor = 0.3
+	#	}
+	#	x = 21
+	#	y = 5
+    #
+	#}
 	focus = {
 		id = SBU_monarchism
 		icon = GFX_focus_eng_god_save_the_king
@@ -578,16 +578,16 @@ focus_tree = {
 		prerequisite = {
 			focus = SBU_we_can_repeat
 		}
-		mutually_exclusive = {
-			focus = SBU_absolutism
-		}
+		#mutually_exclusive = {
+		#	focus = SBU_absolutism
+		#}
 		completion_reward = {
 			SBU = { country_event = { id = sbu.32 days = 1 } }
 		}
 		ai_will_do = {
 			factor = 0.7
 		}
-		x = 25
+		x = 23
 		y = 5
 
 	}
