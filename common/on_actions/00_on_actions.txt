@@ -1,6 +1,12 @@
 on_actions = {
 	on_startup = {
 		effect = {
+            SBU = {
+                set_variable_to_random = sbu_frev_rand
+                log = "[?sbu_frev_rand]"
+				multiply_variable = {sbu_frev_rand = 100}
+            }
+
             set_variable = {global.cr_d_status = 2}
 
 			random_country = {

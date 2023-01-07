@@ -1,3 +1,4 @@
+
 nuclear_war = {
 	NukeRequest = {
 		visible = {
@@ -175,6 +176,8 @@ war_measures = {
 }
 
 foreign_influence = {
+    
+
 	close_guarantee ={
 		#available = {
 		#	not = {has_government = democratic}
@@ -269,80 +272,6 @@ foreign_influence = {
 }
 
 political_actions = {
-	#	reset_parlament = {
-	#		available = {
-	#			has_government = democratic
-	#		}
-	#		visible = {
-	#			has_government = democratic
-	#			monarchism < 0.01
-	#		}
-	#
-	#		cost = 50
-	#		days_remove = 30
-	#		days_re_enable = 360
-	#
-	#		complete_effect = {
-	#			add_stability = -0.15
-	#		}
-	#
-	#		remove_effect = {
-	#			custom_effect_tooltip = reset_parlament_tooltip
-	#			hidden_effect = {
-	#				add_stability = 0.1
-	#				set_variable = {td = random}
-	#				if = {limit = {check_variable = {td > 0.6}} set_variable = {td = 0.6}}
-	#				multiply_variable = {td = 100}
-	#				set_variable = {tn = random}
-	#				if = {limit = {check_variable = {tn > 0.5}} set_variable = {tn = 0.5}}
-	#				multiply_variable = {tn = 100}
-	#				set_variable = {tf = random}
-	#				if = {limit = {check_variable = {tf > 0.5}} set_variable = {tf = 0.5}}
-	#				multiply_variable = {tf = 100}
-	#				set_variable = {tc = 100}
-	#				subtract_from_variable = {tc = td}
-	#				subtract_from_variable = {tc = tn}
-	#				subtract_from_variable = {tc = tf}
-	#				if = {limit = {check_variable = {tc < 0}} set_variable = {tc = 0}}
-
-	#				set_variable = {controlid = 0}
-	#				add_to_variable = {controlid = td}
-	#				add_to_variable = {controlid = tn}
-	#				add_to_variable = {controlid = tc}
-	#				add_to_variable = {controlid = tf}
-	#				if = {
-	#					limit = {check_variable = {controlid > 100}}
-	#					set_temp_variable = {raznica = 100}
-	#					subtract_from_temp_variable = {raznica = controlid}
-	#					divide_temp_variable = {raznica = 4}
-	#					add_to_variable = {td = raznica}
-	#					add_to_variable = {tn = raznica}
-	#					add_to_variable = {tf = raznica}
-	#					add_to_variable = {tc = raznica}
-	#				}
-
-	#				set_popularities = {
-	#					democratic = td
-	#					neutrality = tn
-	#					fascism = tf
-	#					communism = tc
-	#					monarchism = 0
-	#				}
-
-	#				if = {
-	#					limit = {democratic < 0.3}
-	#					set_political_party = {
-	#						ideology = democratic 
-	#						popularity = 30
-	#					}
-	#				}
-
-	#				news_event = {id = newss.17}
-	#			}
-	#		}
-
-	#		ai_will_do = {factor = 0.1}
-	#	}
 
 	left_pressure = {
 		available = {

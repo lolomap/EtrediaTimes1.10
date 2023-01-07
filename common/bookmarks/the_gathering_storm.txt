@@ -32,7 +32,7 @@ bookmarks = {
             focuses = {
                 SBU_aldeko_operation
                 SBU_sburska_zvezda
-                SBU_fascism
+                SBU_fascism_focus
             }
 		}
 

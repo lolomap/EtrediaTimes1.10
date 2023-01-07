@@ -1,6 +1,21 @@
 spriteTypes = {
 
     SpriteType = {
+        name = "GFX_goal_sbu_ucb_enemy"
+        texturefile="gfx/interface/goals/goal_sbu_ucb_enemy.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_fascism"
+        texturefile="gfx/interface/goals/goal_sbu_fascism.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_paranoid"
+        texturefile="gfx/interface/goals/goal_sbu_paranoid.dds"
+    }
+
+    SpriteType = {
         name = "GFX_goal_sbu_ban_ligurtorgal"
         texturefile="gfx/interface/goals/goal_sbu_ban_ligurtorgal.dds"
     }
