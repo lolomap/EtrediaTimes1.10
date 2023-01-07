@@ -859,6 +859,13 @@
  DIR_com_national_autonomies:0 "Национальные автономии для меньшинств"
  DIR_com_decline_religious:0 "Непоколебимость в вопросе религии"
  DIR_com_commi_heaven:0 "Единый и неделимый рай"
+ DIR_buy_weapons:0 "Закупка оружия в Арстильдии"
+ DIR_mobilize_baljur:0 "Мобилизовать Балджуров"
+ DIR_mobilize_baensli:0 "Мобилизовать Баенслийцов"
+ DIR_mobilize_volunteers:0 "Призвать добровольцев со всего мира"
+ DIR_final_mobilization:0 "Вынужденная домобилизация резерва"
+ DIR_requisition_civilian_technic:0 "Реквизировать гражданскую технику"
+ 
  DEM_saldo:0 "Перераспределение бюджета"
  DEM_troosp_organization:0 "Порядок в армии"
  DEM_fight_for_throne:0 "Битва за трон"

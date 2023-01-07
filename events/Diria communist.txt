@@ -734,3 +734,171 @@ country_event = {
 		DIB = { declare_war_on = { target = SDI type = annex_everything } }
 	}
 }
+
+country_event = {
+	id = dircom.25
+	title = dircom.25.t
+	desc = dircom.25.d
+	picture = GFX_report_event_british_inspect_troops
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DIR
+    }
+
+	option = {
+		name = dircom.25.a
+		add_political_power = 50
+		add_stability = -0.05
+    }
+	
+	option = {
+		name = dircom.25.b
+		add_political_power = -50
+		add_stability = 0.5
+    }
+}
+
+country_event = {
+	id = dircom.26
+	title = dircom.26.t
+	desc = dircom.26.d
+	picture = GFX_report_event_british_inspect_troops
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DIR
+    }
+
+	option = {
+		name = dircom.26.a
+		add_political_power = 25
+		add_stability = 0.05
+    }
+}
+
+country_event = {
+	id = dircom.27
+	title = dircom.27.t
+	desc = dircom.27.d
+	picture = GFX_report_event_british_inspect_troops
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DIR
+    }
+
+	option = {
+		name = dircom.27.a
+		add_stability = 0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = BAR
+        }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = CSH
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 25
+			producer = BAR
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 50
+			producer = CSH
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 25
+			producer = SOU
+        }
+    }
+}
+
+country_event = {
+	id = dircom.28
+	title = dircom.28.t
+	desc = dircom.28.d
+	picture = GFX_report_event_british_inspect_troops
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DIR
+    }
+
+	option = {
+		name = dircom.28.a
+		add_stability = 0.05
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = BAR
+        }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = CSH
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 50
+			producer = BAR
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 50
+			producer = CSH
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 50
+			producer = SOU
+        }
+    }
+}
+
+country_event = {
+	id = dircom.29
+	title = dircom.29.t
+	desc = dircom.29.d
+	picture = GFX_report_event_british_inspect_troops
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DIR
+    }
+
+	option = {
+		name = dircom.29.a
+		add_stability = 0.05
+		add_political_power = -25
+		DIR = { add_manpower = -84000 }
+		307 = {
+			add_manpower = -450000
+		}
+		288 = {
+			add_manpower = -87000
+		}
+		287 = {
+			add_manpower = -56000
+		}
+		263 = {
+			add_manpower = -84300
+		}
+		264 = {
+			add_manpower = -34000
+		}
+		hidden_effect = {
+			DEM = { country_event = { id = dirnews.11 days = 1 } }
+		}
+    }
+}

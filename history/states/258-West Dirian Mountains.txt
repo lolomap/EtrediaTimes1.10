@@ -6,6 +6,7 @@ state={
 		steel=48.000
 	}
 	state_category = wasteland
+	impassable = yes
 
 	history={
 		owner = DIR

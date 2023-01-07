@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 1400 y = 1 }
 	
 	focus = {
 		id = DIR_revolution
@@ -66,6 +67,13 @@ focus_tree = {
 				producer = DIR
 			}
 		}
+		ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
     }
 	focus = {
 		id = DIR_open_trade
@@ -82,6 +90,9 @@ focus_tree = {
 				add_idea = free_trade
 			}
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_track_down_national_traitors
@@ -96,6 +107,13 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = -0.05
 			DIR = { country_event = { id = dircom.1 days = 1 } }
+		}
+		ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
 		}
     }
 	focus = {
@@ -118,6 +136,9 @@ focus_tree = {
 			add_stability = 0.15
 			DIR = { add_timed_idea = { idea = DIR_grand_offensive_idea days = 120 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_strengthen_the_power
@@ -132,6 +153,13 @@ focus_tree = {
 			add_political_power = 25
 			add_stability = 0.15
 		}
+		ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
     }
 	focus = {
 		id = DIR_com_foreign_policy
@@ -145,6 +173,9 @@ focus_tree = {
 		completion_reward = {
 			DIR = { country_event = { id = dircom.4 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_economic
@@ -158,6 +189,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_slaves
@@ -165,12 +199,15 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_com_economic
 		}
-		cost = 10
+		cost = 5
 		x = 14
 		y = 6
 		completion_reward = {
 			add_ideas = { DIR_slaves }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_start_privatization_ownership
@@ -178,12 +215,68 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_com_slaves
 		}
-		cost = 10
+		cost = 5
 		x = 14
 		y = 7
 		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.05
 			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 1
+	    }
+    }
+	focus = {
+		id = DIR_requisition_civilian_technic
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_start_privatization_ownership
+		}
+		cost = 5
+		x = 16
+		y = 8
+		completion_reward = {
+			add_political_power = -50
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1450
+				producer = DIR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 220
+				producer = DIR
+			}
+			add_equipment_to_stockpile = {
+				type = jeep_equipment
+				amount = 2300
+				producer = DIR
+			}
+			hidden_effect = {
+				DIR = { country_event = { id = dircom.29 days = 90 } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_start_reorganization_civil_industry
@@ -191,12 +284,30 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_com_start_privatization_ownership
 		}
-		cost = 10
+		cost = 20
 		x = 12
 		y = 8
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_start_reorganization_military_industry
@@ -208,8 +319,48 @@ focus_tree = {
 		x = 14
 		y = 8
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 1
+	    }
+    }
+	focus = {
+		id = DIR_buy_weapons
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_start_reorganization_military_industry
+		}
+		cost = 10
+		x = 14
+		y = 9
+		completion_reward = {
+			add_political_power = -50
+			DIR = { country_event = { id = dircom.27 days = 5 } }
+			hidden_effect = {
+				DIR = { country_event = { id = dircom.28 days = 35 } }
+				DIR = { country_event = { id = dircom.28 days = 60 } }
+				DIR = { country_event = { id = dircom.28 days = 90 } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_call_rtt_to_arms
@@ -226,6 +377,9 @@ focus_tree = {
 		completion_reward = {
 			RTT = { country_event = { id = rttevent.5 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_request_toru_weapons
@@ -242,6 +396,9 @@ focus_tree = {
 		completion_reward = {
 			TOR = { country_event = { id = toru.4 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_request_terbia_help
@@ -258,6 +415,9 @@ focus_tree = {
 		completion_reward = {
 			TRB = { country_event = { id = terbia.10 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_race_for_world_recognition
@@ -282,6 +442,9 @@ focus_tree = {
 			MOA = { country_event = { id = dircom.11 days = 1 } }
 			IID = { country_event = { id = dircom.11 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_regional_autonomies
@@ -289,12 +452,16 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_strengthen_the_power
 		}
-		cost = 10
+		cost = 5
 		x = 10
 		y = 5
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_ideas = { DIR_regional_autonomies }
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_increase_party_role_everywhere
@@ -302,12 +469,106 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_com_regional_autonomies
 		}
-		cost = 10
+		cost = 5
 		x = 10
 		y = 6
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.12
+			}
 		}
+		ai_will_do = {
+			factor = 1
+	    }
+    }
+	focus = {
+		id = DIR_mobilize_baljur
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_com_increase_party_role_everywhere
+		}
+		cost = 5
+		x = 10
+		y = 7
+		available = {
+			DIR = {
+				has_stability > 0.1
+				has_war_support > 0.5
+			}
+		}
+		completion_reward = {
+			load_oob = DIRco1
+		}
+		ai_will_do = {
+			factor = 3
+	    }
+    }
+	focus = {
+		id = DIR_final_mobilization
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_mobilize_baljur
+		}
+		cost = 5
+		x = 8
+		y = 8
+		available = {
+			DIR = {
+				capitulation_level > 0.2
+			}
+		}
+		completion_reward = {
+			load_oob = DIRco4
+		}
+		ai_will_do = {
+			factor = 1
+	    }
+    }
+	focus = {
+		id = DIR_mobilize_baensli
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_mobilize_baljur
+		}
+		cost = 5
+		x = 10
+		y = 8
+		available = {
+			DIR = {
+				has_stability > 0.15
+				has_war_support > 0.6
+			}
+		}
+		completion_reward = {
+			load_oob = DIRco2
+		}
+		ai_will_do = {
+			factor = 3
+	    }
+    }
+	focus = {
+		id = DIR_mobilize_volunteers
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DIR_mobilize_baensli
+		}
+		cost = 10
+		x = 10
+		y = 9
+		available = {
+			DIR = {
+				has_stability > 0.25
+				has_war_support > 0.7
+			}
+		}
+		completion_reward = {
+			load_oob = DIRco3
+		}
+		ai_will_do = {
+			factor = 3
+	    }
     }
 	focus = {
 		id = DIR_com_pacify_radicals
@@ -315,11 +576,18 @@ focus_tree = {
 		prerequisite = {
 			focus = DIR_strengthen_the_power
 		}
-		cost = 10
+		cost = 8
 		x = 12
 		y = 5
 		completion_reward = {
-			
+			DIR = { country_event = { id = dircom.25 days = 1 } } 
+		}
+		ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
 		}
     }
 	focus = {
@@ -332,7 +600,14 @@ focus_tree = {
 		x = 12
 		y = 6
 		completion_reward = {
-			
+			DIR = { country_event = { id = dircom.26 days = 1 } } 
+		}
+		ai_will_do = {
+				factor = 1
+				modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
 		}
     }
 	focus = {
@@ -347,6 +622,9 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_save_free_religious
@@ -363,6 +641,9 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_national_autonomies
@@ -380,6 +661,9 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_decline_religious
@@ -396,6 +680,9 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 	focus = {
 		id = DIR_com_commi_heaven
@@ -413,5 +700,8 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		ai_will_do = {
+			factor = 1
+	    }
     }
 }
