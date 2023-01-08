@@ -306,6 +306,14 @@ focus_tree = {
 		x = 12
 		y = 5
 
+        bypass = {not = {country_exists = RGY}}
+
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = safflia_compromiss
+            }
+            custom_effect_tooltip = safflia_compromiss_tooltip
+        }
 	}
 	focus = {
 		id = SBU_profsouz
@@ -744,6 +752,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_paranoid
+        icon = GFX_goal_sbu_paranoid
 		cost = 2
 		x = 38
 		y = 0
@@ -753,6 +762,7 @@ focus_tree = {
 				tooltip = sbu_try_fail_tooltip
 				has_country_flag = sbu_try_fail
 			}
+            has_government = democratic
 		}
 
 		completion_reward = {
@@ -1187,8 +1197,8 @@ focus_tree = {
         }
 	}
 	focus = {
-		id = SBU_fascism
-		icon = GFX_focus_eng_special_air_service
+		id = SBU_fascism_focus
+		icon = GFX_goal_sbu_fascism
 		cost = 10
 		prerequisite = {
 			focus = SBU_fascist_parlament
@@ -1211,10 +1221,11 @@ focus_tree = {
                     limit = {check_variable = {sbu_frev_total > 85}}
                     subtract_from_variable = {sbu_frev_total = 15}
                 }
-				set_variable = { sbu_frev_rand = random }
-				multiply_variable = {sbu_frev_rand = 100}
+                
+				set_variable = {frval = sbu_frev_rand}
+                
 				if = {
-					limit = {check_variable = {sbu_frev_total > sbu_frev_rand}}
+					limit = {check_variable = {sbu_frev_total > frval}}
 					country_event = {id = sbu.65 days = 1}
 				}
 				else = {
@@ -1229,6 +1240,7 @@ focus_tree = {
 
 	focus = {
 		id = SBU_ucb_enemy
+        icon = GFX_goal_sbu_ucb_enemy
 		cost = 5
 		x = 35
 		y = 6
@@ -1646,7 +1658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_RTT_diplomacy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_rtt_question
 		cost = 10
 		prerequisite = {
 			focus = SBU_Terbian_revolution
@@ -2136,7 +2148,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SBU_fascism
+			focus = SBU_fascism_focus
 		}
 		x = 33
 		y = 6

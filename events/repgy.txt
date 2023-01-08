@@ -168,3 +168,37 @@ country_event = {
 		ai_chance = { factor = 0.6 }
 	}
 }
+
+country_event = {
+    id = rgy.8
+    title = rgy.8.t
+    desc = rgy.8.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = rgy.8.a
+        every_owned_state = {
+            add_core_of = SFL
+        }
+        SFL = {annex_country = {target = RGY transfer_troops = yes}}
+        ai_chance = {
+            factor = 0.2
+            modifier = {
+                has_government = democratic
+                factor = 10
+            }
+        }
+    }
+    option = {
+        name = rgy.8.b
+        add_political_power = -200
+        ai_chance = {
+            factor = 0.8
+            modifier = {
+                has_political_power < 200
+                factor = 0
+            }
+        }
+    }
+}

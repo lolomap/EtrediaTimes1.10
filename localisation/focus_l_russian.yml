@@ -673,6 +673,7 @@
  SBU_above_all:0 "Выше всех"
  SBU_above_all_desc:0 "Лишь молниеносные действия приведут нас к успеху. Радикальное движение Лигур-Торгал имеет самую широкую поддержку и средства из всех правых сил в стране, так что именно на них мы сделаем ставку"
  SBU_fascist_parlament:0 "Фашисты в парламенте"
+ SBU_fascism_focus: "Военный переворот"
  SBU_monarchism_discreditations:0 "Дискредитация короны"
  SBU_communists_discreditations:0 "Дискредитация коммунистов"
  SBU_democrat_discreditations:0 "Дискредитация либералов"

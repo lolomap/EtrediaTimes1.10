@@ -95,6 +95,40 @@ form_scandinavia_category = {
 }
 
 form_msas_category = {
+
+    form_msas2 = {
+        #icon = generic_form_nation
+
+        allowed = {
+            original_tag = SFL
+        }
+        visible = {
+            original_tag = SFL
+            has_global_flag = form_scandinavia_flag
+        }
+
+        available = {
+            is_subject = no
+            has_global_flag = form_scandinavia_flag
+            NOT = {
+                SBU = {
+                    custom_trigger_tooltip = {
+                        tooltip = safflia_compromiss_trigger_tooltip
+                        has_country_flag = safflia_compromiss
+                    }
+                }
+            }
+        }
+
+        cost = 100
+        days_remove = 120
+
+        complete_effect = {}
+
+        remove_effect = {
+            RGY = {country_event = {id = rgy.8 days = 1}}
+        }
+    }
 	
 	form_msas = {
 
@@ -192,7 +226,7 @@ form_msas_category = {
 				177 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
-				news_event = { id = wtt_news.53 hours = 6 }
+				#news_event = { id = wtt_news.53 hours = 6 }
 				set_global_flag = form_scandinavia_flag
 			}
 		}
@@ -204,6 +238,8 @@ form_msas_category = {
 			}
 		}
 	}
+
+    
 }
 
 form_ucb_minors_category = {
