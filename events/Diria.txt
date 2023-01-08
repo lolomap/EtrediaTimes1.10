@@ -111,18 +111,31 @@ country_event = {
     add_ideas = { DIR_revolt }
 	add_ideas = { DEM_bad_economic }
 	}
+	DIR = {
+		teleport_armies = {
+			limit = {
+				has_war_together_with = ROOT
+			}
+			to_state_array = owned_controlled_states
+		}
+	}
 	DEM = {
     add_ideas = { DIR_revolt }
 	add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
-	DEM = { country_event = { days = 400 id = dirnews.5 } }
 	}
 	
     option = {
     name = dirnews.2.b
     hidden_effect = {
 	DIR = {
+		teleport_armies = {
+			limit = {
+				has_war_together_with = ROOT
+			}
+			to_state_array = owned_controlled_states
+		}
 	}
     DEM = {
             transfer_state = 267
@@ -195,7 +208,6 @@ country_event = {
 	add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
-	DEM = { country_event = { days = 60 id = dirnews.5 } }
 	}
 }
 
@@ -312,7 +324,7 @@ country_event = {
 		name = dirnews.5.a
 		DEM = {
 		load_oob = DIR_democrat_2
-		add_manpower = 35000
+		add_manpower = 20000
 		}
     }
 }
@@ -332,9 +344,10 @@ country_event = {
 	option = {
 		name = dirnews.6.a
 		DEM = {
-		load_oob = DIR_democrat_2
-		DEM = { country_event = { days = 360 id = dirnews.5 } }
+			load_oob = DIR_democrat_2
+			add_manpower = 35000
 		}
+		DEM = { country_event = { days = 360 id = dirnews.5 } }
     }
 }
 
@@ -451,5 +464,24 @@ country_event = {
 		279 = {
 			add_manpower = 34000
 		}
+	}
+}
+
+country_event = {
+	id = dirnews.12
+	title = dirnews.12.t
+	desc = dirnews.12.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.12.a
+		add_stability = 0.05
+		add_political_power = 50
 	}
 }

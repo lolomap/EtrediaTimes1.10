@@ -75,5 +75,76 @@ ideas = {
 				experience_gain_army_factor = 0.05
 			}
 		}
+
+		DEM_fight_for_throne = {
+
+			picture = 
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			targeted_modifier = {
+				tag = DIR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	
+		DEM_free_market_idea = {
+
+			picture = civilian_economy
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				trade_laws_cost_factor = 5
+				economy_cost_factor = 5
+			}
+		}
+		
+		DEM_production_restructurize_idea = {
+
+			picture = SPR_collectivized_society
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.08
+			}
+		}
+		
+		DEM_weapon_reusable_idea = {
+
+			picture = SPR_collectivized_society
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				equipment_capture_factor = 0.08
+				army_defence_factor = 0.05
+                army_attack_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
 	}
 }
