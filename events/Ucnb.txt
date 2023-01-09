@@ -229,7 +229,10 @@ country_event = {
 		name = ucnb.7.a		
         KAR = { country_event = { id = kar.2 days = 1 } }
     hidden_effect = {
-    UCB = { country_event = { id = ucnb.10 days = 20 } }
+        if = {
+            limit = {PIN = {is_in_faction = no}}
+            UCB = { country_event = { id = ucnb.10 days = 20 } }
+        }
     }
 	}
 }

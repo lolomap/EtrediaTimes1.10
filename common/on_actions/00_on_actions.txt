@@ -1,6 +1,17 @@
 on_actions = {
 	on_startup = {
 		effect = {
+
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = allow_crysis
+                        option = FREE
+                    }
+                }
+                set_global_flag = CRYSIS_ALLOWED
+            }
+
             SBU = {
                 set_variable_to_random = sbu_frev_rand
                 log = "[?sbu_frev_rand]"

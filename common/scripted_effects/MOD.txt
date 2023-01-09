@@ -230,7 +230,7 @@ d_end_war_crysis = {
 
 
     if = {
-        limit - {check_variable = {cr_reward_wait = 1}}
+        limit = {check_variable = {cr_reward_wait = 1}}
         crysis_reward = yes
     }
 }
