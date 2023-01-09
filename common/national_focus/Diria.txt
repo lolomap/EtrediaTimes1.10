@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 1000 y = 1 }
 	
 	focus = {
 		id = DEM_saldo
@@ -141,7 +142,7 @@ focus_tree = {
 			focus = DEM_monopoly
 			focus = DEM_anti_monopoly
 		}
-		bypass = { NOT = { has_completed_focus = DEM_anti_monopoly } }
+		bypass = { has_completed_focus = DEM_anti_monopoly }
 		completion_reward = {
 			add_ideas = DEM_free_market_idea
 		}
@@ -212,7 +213,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DEM_free_market
 		}
-		bypass = { NOT = { has_completed_focus = DEM_anti_monopoly } }
+		bypass = { has_completed_focus = DEM_anti_monopoly }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -262,5 +263,22 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
+    }
+	
+	focus = {
+		id = DEM_new_free_humans
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = DEM_foreign_specialists
+		}
+		prerequisite = {
+			focus = DEM_support_from_west
+		}
+		completion_reward = {
+			
+		}
+		x = 7
+		y = 6
     }
 }

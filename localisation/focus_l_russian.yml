@@ -878,6 +878,7 @@
  DEM_foreign_specialists:0 "Пригласить иностранных специалистов"
  DEM_mobilize_people:0 "Мобилизация народа"
  DEM_weapon_reusable:0 "Хватай винтовку!"
+ DEM_new_free_humans:0 "Новый свободный гражданин"
  SMA_Politic:0 "Политика Южного Мацара"
  SMA_InternalBorders:0 "Внутренние рубежи"
  SMA_ComAgit:0 "Коммунистическая агитация в селах"
