@@ -1,4 +1,7 @@
 ﻿l_russian:
+  RULE_ALLOW_CRYSIS:0 "Разрешить полит. кризисы"
+  
+
   RULE_OPTION_MONARCHIST:0 "Монархизм"
   RULE_OPTION_NEUTRALITY:0 "Авторитаризм"
   SBU_AI_BEHAVIOR:0 "Сибурленд"
