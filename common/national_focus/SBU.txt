@@ -1045,7 +1045,65 @@ focus_tree = {
 
 		prerequisite = {focus = SBU_exit_world_politics}
 		mutually_exclusive = {focus = SBU_liberal_save}
+
+        completion_reward = {
+            swap_ideas = {
+                add_idea = nonfree_press
+                remove_idea = free_press
+            }
+            if = {
+                limit = {has_idea = limited_conscription}
+                swap_ideas = {
+                    add_idea = extensive_conscription
+                    remove_idea = limited_conscription
+                }
+            }
+            else = {
+                swap_ideas = {
+                    add_idea = limited_conscription
+                    remove_idea = volunteer_only
+                }
+            }
+        }
 	}
+
+    focus = {
+        id = SBU_au_friend
+		cost = 10
+		x = 41
+		y = 8
+
+		prerequisite = {focus = SBU_dprs_authority}
+
+        available = {
+            TRB = {has_government = neutrality}
+        }
+
+        completion_reward = {
+            TRB = {country_event = {id = sbu.72 days = 1}}
+        }
+    }
+
+    focus = {
+        id = SBU_langat_expansion
+		cost = 10
+		x = 39
+		y = 8
+
+		prerequisite = {focus = SBU_dprs_authority}
+
+        available = {
+            FSC = {has_war_with = UCB}
+        }
+
+        completion_reward = {
+            create_wargoal = {
+                type = take_state_focus
+                target = FSC
+                generator = {45}
+            }
+        }
+    }
 
 	focus = {
 		id = SBU_populistic_expansion
@@ -2269,8 +2327,27 @@ focus_tree = {
 		}
 		
 	}
+	#focus = {
+	#	id = SBU_war_with_Safflia
+	#	icon = GFX_goal_unknown
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = SBU_war_with_MOF
+	#		focus = SBU_divide_MOF
+	#	}
+	#	x = 33
+	#	y = 10
+	#	bypass = {not = {country_exists = SFL}}
+
+	#	completion_reward = {
+	#		create_wargoal = {
+	#		    type = puppet_wargoal_focus
+	#		    target = SFL
+	#		}
+	#	}
+	#}
 	focus = {
-		id = SBU_war_with_Safflia
+		id = SBU_war_with_TRB
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -2279,24 +2356,6 @@ focus_tree = {
 		}
 		x = 33
 		y = 10
-		bypass = {not = {country_exists = SFL}}
-
-		completion_reward = {
-			create_wargoal = {
-			    type = puppet_wargoal_focus
-			    target = SFL
-			}
-		}
-	}
-	focus = {
-		id = SBU_war_with_TRB
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = SBU_war_with_Safflia
-		}
-		x = 33
-		y = 12
 		bypass = {not = {country_exists = TRB}}
 
 		completion_reward = {
@@ -2315,7 +2374,7 @@ focus_tree = {
 			focus = SBU_war_with_TRB
 		}
 		x = 33
-		y = 13
+		y = 11
 		bypass = {not = {country_exists = RTT}}
 
 		completion_reward = {
@@ -2331,7 +2390,8 @@ focus_tree = {
 			focus = SBU_war_with_TRB
 		}
 		x = 31
-		y = 13
+		y = 11
+        bypass = {not = {country_exists = TRB}}
 
 		available = {
 			TRB = {is_puppet_of = SBU}
@@ -2339,7 +2399,14 @@ focus_tree = {
 
 		completion_reward = {
 			TRB = {set_cosmetic_tag = TRB_Reichssib}
-			SBU = {
+            hidden_effect = {
+                TRB = {
+                    every_state = {
+                        transfer_state_to = SBU
+                    }
+                }
+            }
+			TRB = {
 				transfer_state = 226
 				transfer_state = 221
 				transfer_state = 224
@@ -2357,6 +2424,74 @@ focus_tree = {
 			}
 		}
 	}
+
+    focus = {
+		id = SBU_pin_invite
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_war_with_TRB
+		}
+		x = 35
+		y = 11
+		bypass = {not = {country_exists = PIN}}
+
+		completion_reward = {
+			PIN = {country_event = {id = sbu.73 days = 1}}
+		}
+
+	}
+
+    focus = {
+		id = SBU_kar_pressure
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_pin_invite
+		}
+        prerequisite = {
+            focus = SBU_reichsiburekorat_terbia
+        }
+		x = 33
+		y = 12
+		bypass = {not = {country_exists = KAR}}
+
+		completion_reward = {
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = KAR
+			}
+		}
+
+	}
+
+    focus = {
+		id = SBU_third_way
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SBU_kar_pressure
+		}
+		x = 33
+		y = 13
+        
+        available = {UCB = {has_war_with = EIK}}
+        will_lead_to_war_with = EIK
+        will_lead_to_war_with = UCB
+
+		completion_reward = {
+			declare_war_on = {
+                target = UCB
+                type = puppet_wargoal_focus
+            }
+            declare_war_on = {
+                target = EIK
+                type = puppet_wargoal_focus
+            }
+		}
+
+	}
+
 	focus = {
 		id = SBU_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard

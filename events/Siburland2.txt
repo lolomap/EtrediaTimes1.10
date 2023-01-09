@@ -1770,3 +1770,64 @@ country_event = {
 		add_ideas = SBU_corruption_incident
 	}
 }
+
+country_event = {
+	id = sbu.72
+	title = sbu.72.t
+	desc = sbu.72.d
+
+    is_triggered_only = yes
+
+
+	option = {
+		name = sbu.72.a
+
+        SBU = {
+            create_faction = sbu_trb_neu_faction
+            add_to_faction = TRB
+            hidden_effect = {
+                ELN = {
+                    transfer_state = 212
+                    transfer_state = 213
+                    transfer_state = 230
+                }
+            }
+            add_to_faction = ELN
+        }
+		ai_chance = {factor = 0.7}
+	}
+    option = {
+		name = sbu.72.b
+        ai_chance = {factor = 0.3}
+	}
+}
+
+country_event = {
+	id = sbu.73
+	title = sbu.73.t
+	desc = sbu.73.d
+
+    is_triggered_only = yes
+
+
+	option = {
+		name = sbu.73.a
+
+        SBU = {
+            add_to_faction = PIN
+        }
+		ai_chance = {
+            factor = 0.7
+            modifier = {
+                PIN = {is_in_faction = yes}
+                factor = 0
+            }
+        }
+	}
+    option = {
+		name = sbu.73.b
+        ai_chance = {
+            factor = 0.3
+        }
+	}
+}
