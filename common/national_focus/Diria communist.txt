@@ -516,7 +516,7 @@ focus_tree = {
 		y = 8
 		available = {
 			DIR = {
-				capitulation_level > 0.2
+				surrender_progress > 0.3
 			}
 		}
 		completion_reward = {
