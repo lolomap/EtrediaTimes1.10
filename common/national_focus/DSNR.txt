@@ -1,0 +1,129 @@
+focus_tree = {
+	id = dsnr
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DIB
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1 }
+	
+	focus = {
+		id = DIB_faro_faro
+		icon = GFX_goal_dem_budget
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+    }
+	focus = {
+		id = DIB_mobilize_baensli_militia
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_faro_faro
+		}
+		cost = 10
+		x = 10
+		y = 1
+		completion_reward = {
+			add_state_core = 825
+			add_state_core = 824
+			load_oob = DSNR_bae
+		}
+    }
+	focus = {
+		id = DIB_find_weapons
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_mobilize_baensli_militia
+		}
+		cost = 10
+		x = 10
+		y = 2
+		completion_reward = {
+			DIB = { country_event = { id = dsnr.1 days = 1 } }
+		}
+    }
+	focus = {
+		id = DIB_purge
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_find_weapons
+		}
+		available = {
+			262 = { is_controlled_by = DIB }
+			825 = { is_controlled_by = DIB }
+		}
+		cost = 10
+		x = 10
+		y = 3
+		completion_reward = {
+			DIR = {
+				remove_state_core = 825
+				remove_state_core = 825
+			}
+			add_stablity = 0.15
+			add_war_support = 0.1
+			add_political_power = 150
+		}
+    }
+	focus = {
+		id = DIB_educate_red_army
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_purge
+		}
+		cost = 20
+		x = 8
+		y = 4
+		completion_reward = {
+			add_ideas = DIB_red_army
+		}
+    }
+	focus = {
+		id = DIB_raise_steel_spirit
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_purge
+		}
+		cost = 20
+		x = 10
+		y = 4
+		completion_reward = {
+			add_ideas = DIB_steel_spirit
+		}
+    }
+	focus = {
+		id = DIB_figth_for_victory
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_purge
+		}
+		cost = 20
+		x = 12
+		y = 4
+		completion_reward = {
+			add_ideas = DIB_last_stand
+		}
+    }
+	focus = {
+		id = DIB_grab
+		icon = GFX_goal_dem_budget
+		prerequisite = {
+			focus = DIB_figth_for_victory
+			focus = DIB_raise_steel_spirit
+			focus = DIB_educate_red_army
+		}
+		cost = 10
+		x = 10
+		y = 5
+		completion_reward = {
+			add_ideas = DIB_marauders
+		}
+    }
+
+}

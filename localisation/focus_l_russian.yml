@@ -884,6 +884,16 @@
  DEM_mobilize_people:0 "Мобилизация народа"
  DEM_weapon_reusable:0 "Хватай винтовку!"
  DEM_new_free_humans:0 "Новый свободный гражданин"
+ 
+ DIB_faro_faro:0 "Фаро фаро фаро!"
+ DIB_mobilize_baensli_militia:0 "Мобилизовать баенслийских селян"
+ DIB_find_weapons:0 "Найти оружие любой ценой"
+ DIB_purge:0 "Очистить страну"
+ DIB_educate_red_army:0 "Воспитать новую армию"
+ DIB_raise_steel_spirit:0 "Взрастить стальную волю"
+ DIB_figth_for_victory:0 "Война до победы!"
+ DIB_grab:0 "Бери - Хватай!"
+ 
  SMA_Politic:0 "Политика Южного Мацара"
  SMA_InternalBorders:0 "Внутренние рубежи"
  SMA_ComAgit:0 "Коммунистическая агитация в селах"

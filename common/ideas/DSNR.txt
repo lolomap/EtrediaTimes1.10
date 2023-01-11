@@ -1,0 +1,87 @@
+ideas = {
+    country = {
+	
+		DIB_red_army = {
+            picture = 
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+				recruitable_population = 0.05
+				breakthrough_factor = 0.08
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				planning_speed = 0.05
+			}
+		}
+		
+		DIB_steel_spirit = {
+            picture = 
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_government = democratic
+			}
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.1
+				war_stability_factor = 0.2
+				conscription_factor = 0.1
+				planning_speed = 0.1
+				max_dig_in_factor = 0.15
+				dig_in_speed_factor = 0.1
+				
+				select_effect = {
+					custom_effect_tooltip = wtire_reduce_focus
+					set_country_flag = do_reduce_wtire
+				}
+			}
+		}
+		
+		DIB_last_stand = {
+            picture = 
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.5
+				army_core_attack_factor = 0.12
+				army_core_defence_factor = 0.12
+			}
+		}
+		
+		DIB_marauders = {
+            picture = 
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				equipment_capture = 0.15
+				experience_gain_factor = -0.1
+				resistance_growth = 0.1
+				resistance_target = 0.05
+			}
+		}
+	
+	}
+}

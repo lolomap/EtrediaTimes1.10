@@ -140,6 +140,7 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
+				equipment_capture = 0.1
 				equipment_capture_factor = 0.08
 				army_defence_factor = 0.05
                 army_attack_factor = 0.05
