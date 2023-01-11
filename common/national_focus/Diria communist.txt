@@ -620,7 +620,8 @@ focus_tree = {
 		x = 17
 		y = 5
 		completion_reward = {
-			
+			add_ideas = DIR_fight_for_idea1
+			add_war_support = 0.1
 		}
 		ai_will_do = {
 			factor = 1
@@ -639,7 +640,20 @@ focus_tree = {
 		x = 16
 		y = 6
 		completion_reward = {
+			remove_idea = DIR_fight_for_idea1
+			add_ideas = DIR_fight_for_idea2
 			
+			add_war_support = 0.05
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.08
+			}
+			add_popularity = {
+				ideology = monarchism
+				popularity = 0.05
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -659,7 +673,16 @@ focus_tree = {
 		x = 16
 		y = 7
 		completion_reward = {
+			remove_idea = DIR_fight_for_idea2
+			add_ideas = DIR_fight_for_idea3
 			
+			add_stability = 0.08
+			add_political_power = 50
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.08
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -678,7 +701,14 @@ focus_tree = {
 		x = 18
 		y = 6
 		completion_reward = {
+			remove_idea = DIR_fight_for_idea1
+			add_ideas = DIR_fight_for_idea2
 			
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -698,7 +728,14 @@ focus_tree = {
 		x = 18
 		y = 7
 		completion_reward = {
+			remove_idea = DIR_fight_for_idea2
+			add_ideas = DIR_fight_for_idea3
 			
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
 		}
 		ai_will_do = {
 			factor = 1

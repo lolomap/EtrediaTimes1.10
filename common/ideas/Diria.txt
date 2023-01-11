@@ -169,5 +169,59 @@ ideas = {
 			}
 	}
 	
+	DIR_fight_for_idea1 = {
+            picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 0.5
+				communism_drift = 0.02
+				stability_factor = 0.04
+			}
+			targeted_modifier = {
+				tag = DEM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+	}
+	
+	DIR_fight_for_idea2 = {
+            picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 0.8
+				communism_drift = 0.03
+				stability_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = DEM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+	}
+	
+	DIR_fight_for_idea3 = {
+            picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 1
+				communism_drift = 0.04
+				stability_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = DEM
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+	}
+	
 	}
 }
