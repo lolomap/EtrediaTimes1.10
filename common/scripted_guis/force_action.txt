@@ -4,6 +4,7 @@ scripted_gui = {
         
         visible = {
             has_global_flag = political_crysis
+            not = {has_country_flag = crysis_win_minimized}
             OR = {
                 is_in_array = {global.crysis_majors = THIS}
                 is_in_array = {global.crysis_senders = THIS}
@@ -28,9 +29,21 @@ scripted_gui = {
             press_button_click_enabled = {
                 OR = {tag = global.cr_send_op tag = global.cr_to_op}
                 NOT = {has_country_flag = crysis_allow}
+                OR = {
+                    is_in_array = {global.crysis_senders = THIS}
+                    is_in_array = {global.crysis_tos = THIS}
+                    tag = global.sender_crysis
+                    tag = global.to_crysis
+                }
             }
             allow_button_click_enabled = {
                 NOT = {has_country_flag = crysis_press}
+                OR = {
+                    is_in_array = {global.crysis_senders = THIS}
+                    is_in_array = {global.crysis_tos = THIS}
+                    tag = global.sender_crysis
+                    tag = global.to_crysis
+                }
             }
 
             attackIcon_visible = {
@@ -55,6 +68,10 @@ scripted_gui = {
         }
 
         effects = {
+            winmode_button_click = {
+                set_country_flag = crysis_win_minimized
+            }
+
             sender_choose_button_click = {
                 add_to_array = {global.crysis_senders = ROOT}
                 remove_from_array = {global.crysis_majors = ROOT}

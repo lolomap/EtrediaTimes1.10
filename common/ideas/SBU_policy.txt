@@ -15,7 +15,7 @@ ideas = {
 			picture = traditional
 			
 			modifier = {
-			    add_stability_factor = 0.3
+			    stability_factor = 0.3
 			}
 		}
 	}  

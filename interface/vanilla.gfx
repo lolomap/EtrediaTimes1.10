@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_button_ban"
 		texturefile = "gfx/interface/button_ban.dds"
 	}
+    spriteType = {
+		name = "GFX_cancel_button"
+		texturefile = "gfx/interface/cancel_transfer_button.dds"
+	}
 
     spriteType = {
         name = "GFX_diplo_countrylist_flag_frame_mini"

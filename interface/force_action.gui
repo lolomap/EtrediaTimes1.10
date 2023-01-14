@@ -130,6 +130,13 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
 		}
 
+        buttonType = {
+			name = "winmode_button"
+			quadTextureSprite = "GFX_cancel_button"
+			position = {x = -30 y = 0}
+            Orientation = "UPPER_RIGHT"
+		}
+
         iconType = {
             name = "pb"
             spriteType = "GFX_crysis_pb"
@@ -281,6 +288,8 @@ guiTypes = {
 			position = { x = -300 y = 525 }
 			Orientation = "UPPER_RIGHT"
         }
+
+        
     }
 
     containerWindowType = {

@@ -4,6 +4,7 @@ crysis_startable = {
     not = {has_country_flag = crysis_delay}
     not = {is_subject_of = ROOT}
     not = {has_war_with = ROOT}
+    threat > 0.09
 }
 crysis_startable_minor = {
     not = {has_global_flag = political_crysis}
@@ -11,6 +12,7 @@ crysis_startable_minor = {
     not = {has_country_flag = crysis_delay}
     FROM = {not = {is_subject_of = ROOT}}
     not = {has_war_with = ROOT}
+    threat > 0.09
 }
 
 crysis_capitulated = {

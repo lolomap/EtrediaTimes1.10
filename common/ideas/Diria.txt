@@ -78,7 +78,7 @@ ideas = {
 			}
 	}
 	
-	DIR_revolt = {
+	DIR_revolt2 = {
 
             picture = hol_liberation
 

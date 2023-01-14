@@ -73,22 +73,7 @@ foreign_influence = {
 
 		visible = {
 			has_government = communism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-						has_government = communism
-					}
-				}
-			}
+			
 			FROM = {
 				is_puppet_of = ROOT
 				communism < 0.99
@@ -138,22 +123,7 @@ foreign_influence = {
 
 		visible = {
 			has_government = fascism
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-						has_government = fascism
-					}
-				}
-			}
+			
 			FROM = {
 				is_puppet_of = ROOT
 				fascism < 0.99
@@ -310,21 +280,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 				NOT = { has_government = communism }
 			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_concessions_to_the_trade_unions
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-					}
-				}
-			}
+			
 		}
 
 		target_array = subjects
@@ -380,21 +336,7 @@ foreign_influence = {
 				is_puppet_of = ROOT
 				NOT = { has_government = fascism }
 			}
-			NOT = {
-				AND = {
-					tag = ENG
-					has_completed_focus = ENG_organize_the_blackshirts
-					FROM = {
-						OR = {
-							tag = CAN
-							tag = SAF
-							tag = RAJ
-							tag = AST
-							tag = NZL
-						}
-					}
-				}
-			}
+			
 		}
 
 		target_array = subjects

@@ -1,9 +1,5 @@
 d_mtest = {
-    if = {
-        limit = {crysis_capitulated = yes}
-        log = "yes"
-    }
-    else = {log = "no"}
+    log = "[?global.wi_countries^0.world_influence]"
 }
 
 ####
@@ -21,12 +17,27 @@ d_calc_wi = {
     add_to_variable = {world_influence = factories_inf_factor}
     add_to_variable = {world_influence = nuke_inf_factor}
     multiply_variable = {world_influence = winfluence_cost}
+    
+    #add_to_array = {global.wi_values = world_influence}
+    #set_variable = {global.wi_countries^world_influence = THIS}
 }
 
 d_calc_wi_e = {
+    #clear_array = global.wi_values
     every_country = {
+        limit = {is_major = yes}
         d_calc_wi = yes
     }
+}
+
+d_sort_wi = {
+    set_temp_variable = { table_qs_compare = 0 }
+    set_variable = {high = global.wi_countries^num}
+    subtract_from_variable = { high = 1 }
+    set_variable = { low = 0 }
+    table_quicksort = yes
+    #start_create_sorted_array = yes
+
 }
 
 encount_minors = {
