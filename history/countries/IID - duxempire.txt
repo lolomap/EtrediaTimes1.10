@@ -21,7 +21,7 @@ add_ideas = {
 
 set_autonomy = {
 	target = GKD
-	autonomous_state = autonomy_vassal
+	autonomous_state = autonomy_puppet
 }
 
 set_technology = {

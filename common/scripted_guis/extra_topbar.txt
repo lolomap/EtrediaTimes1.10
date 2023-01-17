@@ -28,6 +28,7 @@ scripted_gui = {
                     clr_country_flag = winfluence_opened
                 }
                 else = {
+                    d_sort_wi = yes
                     set_country_flag = winfluence_opened
                 }
             }
@@ -47,5 +48,26 @@ scripted_gui = {
 				change_scope = yes
 			}
 		}
+
+        triggers = {
+            cName_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cFlagBorder_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cFlag_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cWI_visible = {
+                check_variable = {world_influence > 0}
+            }
+        }
+
+        properties = {
+            cFlag = {
+				image = [THIS.GetFlag]
+			}
+        }
     }
 }

@@ -35,12 +35,44 @@ d_calc_wi_e = {
 }
 
 d_sort_wi = {
-    set_temp_variable = { table_qs_compare = 0 }
-    set_variable = {high = global.wi_countries^num}
-    subtract_from_variable = { high = 1 }
-    set_variable = { low = 0 }
-    table_quicksort = yes
+    #set_temp_variable = { table_qs_compare = 0 }
+    #set_variable = {high = global.wi_countries^num}
+    #subtract_from_variable = { high = 1 }
+    #set_variable = { low = 0 }
+    #table_quicksort = yes
     #start_create_sorted_array = yes
+
+    for_each_loop = {
+		array = global.wi_countries
+		set_temp_variable = { j = i }
+		subtract_from_temp_variable = { j = 1 }
+        var:v = {log = "[?world_influence]"}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = j
+					value = 0
+					compare = greater_than_or_equals
+				}
+                var:v = {
+                    var:global.wi_countries^j = {
+                        check_variable = {
+                            var = PREV.world_influence
+                            value = world_influence
+                            compare = greater_than
+                        }
+                    }
+                }
+			}
+			set_temp_variable = { j_plus_1 = j }
+			add_to_temp_variable = { j_plus_1 = 1 }
+			set_variable = { global.wi_countries^j_plus_1 = global.wi_countries^j }
+			subtract_from_temp_variable = { j = 1 }
+		}
+		set_temp_variable = { j_plus_1 = j }
+		add_to_temp_variable = { j_plus_1 = 1 }
+		set_variable = { global.wi_countries^j_plus_1 = v }
+	}
 
 }
 

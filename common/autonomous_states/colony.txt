@@ -42,6 +42,7 @@ autonomy_state = {
 			limit = { has_dlc = "Death or Dishonor" }
 			NOT = { has_government = fascism }
 		}
+        OVERLORD = {not = {has_government = monarchism}}
 	}
 	
 	can_take_level = {

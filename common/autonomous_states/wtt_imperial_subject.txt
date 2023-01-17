@@ -37,7 +37,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
+		OVERLORD = {has_government = monarchism}
 	}
 	
 	can_take_level = {

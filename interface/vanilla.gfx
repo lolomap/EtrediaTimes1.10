@@ -8,6 +8,10 @@ spriteTypes = {
 		name = "GFX_cancel_button"
 		texturefile = "gfx/interface/cancel_transfer_button.dds"
 	}
+    spriteType = {
+		name = "GFX_base_entry_bg"
+		texturefile = "gfx/interface/base_entry_bg.dds"
+	}
 
     spriteType = {
         name = "GFX_diplo_countrylist_flag_frame_mini"
