@@ -50,8 +50,8 @@ set_popularities = {
 	neutrality = 6
 }
 
-create_faction = Kouli
-add_to_faction = KLU
+#create_faction = Kouli
+#add_to_faction = KLU
 
 set_convoys = 45
 

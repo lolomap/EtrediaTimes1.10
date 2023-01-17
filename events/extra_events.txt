@@ -1425,7 +1425,7 @@ country_event = { # Кризис закончился
     }
 
     immediate = {
-        set_country_flag = {flag = crysis_delay days = 360 value = 1}
+        var:global.sender_crysis = {set_country_flag = {flag = crysis_delay days = 360 value = 1}}
         if = { # Оба не уступили
             limit = {
                 var:global.cr_send_op = {has_country_flag = crysis_press}
@@ -1490,6 +1490,11 @@ country_event = { # Кризис закончился
         every_country = {
             clr_country_flag = crysis_allow
             clr_country_flag = crysis_press
+            clr_country_flag = cr_ai_press
+            clr_country_flag = cr_ai_allow
+            clr_country_flag = crysis_scared
+            clr_country_flag = cr_ai_completed
+            clr_country_flag = crysis_angry
         }
         set_variable = {global.cr_press_clicked = 0}
         

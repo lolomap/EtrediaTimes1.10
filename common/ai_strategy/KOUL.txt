@@ -1,5 +1,5 @@
 alliance_koul = {
-	enable = {
+	allowed = {
 		tag = KLU
 	}
 	abort = {
@@ -11,4 +11,57 @@ alliance_koul = {
 		id = "ROOT"			
 		value = 3
 	}
+}
+
+alliance_koul1 = {
+	allowed = {
+		not = {original_tag = KLU}
+	}
+    enable = {
+        not = {original_tag = KLU}
+    }
+
+    reversed = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = KLU	
+		value = -1000
+	}
+}
+
+alliance_koul2 = {
+	allowed = {
+		not = {original_tag = KLU}
+	}
+    enable = {
+        not = {original_tag = KLU}
+    }
+
+    reversed = yes
+	
+	ai_strategy = {
+        type = diplo_action_acceptance
+        id = KLU
+        value = -1000
+        target = join_allies
+    }
+}
+
+alliance_koul3 = {
+	allowed = {
+		not = {original_tag = KLU}
+	}
+    enable = {
+        not = {original_tag = KLU}
+    }
+
+    reversed = yes
+	
+	ai_strategy = {
+        type = diplo_action_desire
+        id = KLU
+        value = -1000
+        target = call_allies
+    }
 }

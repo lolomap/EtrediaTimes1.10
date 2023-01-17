@@ -418,7 +418,7 @@ guiTypes = {
 			text = cw_cname
 			font = hoi_18mbs
 			format = left
-            maxWidth = 100
+            maxWidth = 120
 			
 			alwaystransparent = yes
 		}

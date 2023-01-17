@@ -14,6 +14,196 @@ scripted_gui = {
             }
         }
 
+        ai_enabled = {
+			always = yes	
+		}
+        ai_test_interval = 240 #Every 10 days
+        ai_weights = {
+            sender_choose_button_click = {
+                ai_will_do = {
+                    base = 0
+
+                    modifier = {
+                        set_temp_variable_to_random = cr_ai_random_choose
+                        check_variable = {cr_ai_random_choose < 0.3}
+                        add = 10
+                    }
+
+                    modifier = {
+						has_war_support < 0.3
+						var:global.sender_crysis = {ROOT = {not = {has_opinion = {target = PREV value > 99}}}}
+                        add = -99
+                    }
+					modifier = {
+						var:global.sender_crysis = {ROOT = {has_opinion = {target = PREV value > 99}}}
+                        add = 100
+                    }
+					modifier = {
+						has_war_support > 0.29
+						add = 5
+					}
+					modifier = {
+						var:global.to_crysis = {any_owned_state = {OR = {is_claimed_by = ROOT is_core_of = ROOT}}}
+						add = 50
+					}
+					modifier = {
+						is_ally_with = var:global.sender_crysis
+						add = 50
+					}
+                    modifier = {
+                        OR = {
+                            has_government = democratic
+                            has_government = communism
+                        }
+                        var:global.sender_crysis = {
+                            OR = {
+                                has_government = fascist
+                                has_government = monarchism
+                                has_government = neutrality
+                            }
+                        }
+                        add = -30
+                    }
+                    modifier = {
+                        has_government = democratic
+                        any_of_scopes = {
+                            array = global.crysis_senders
+                            has_government = fascist
+                            has_government = communist
+                        }
+                        add = -15
+                    }
+
+                    modifier = {
+                        OR = {
+                            tag = SFL
+                            tag = MOF
+                        }
+                        OR = {
+                            var:global.sender_crysis = {tag = ELR}
+                            var:global.minor_crysis = {tag = ELR}
+                        }
+                        add = -10
+                    }
+                    modifier = {
+                        OR = {
+                            tag = SBU
+                        }
+                        OR = {
+                            var:global.sender_crysis = {tag = ELR}
+                            var:global.minor_crysis = {tag = ELR}
+                        }
+                        add = 10
+                    }
+                }
+            }
+
+            to_choose_button_click = {
+                ai_will_do = {
+                    base = 0
+
+                    modifier = {
+                        set_temp_variable_to_random = cr_ai_random_choose
+                        check_variable = {cr_ai_random_choose < 0.3}
+                        add = 10
+                    }
+
+                    modifier = {
+						has_war_support < 0.3
+						var:global.to_crysis = {ROOT = {not = {has_opinion = {target = PREV value > 99}}}}
+                        add = -99
+                    }
+					modifier = {
+						var:global.to_crysis = {ROOT = {has_opinion = {target = PREV value > 99}}}
+                        add = 100
+                    }
+					modifier = {
+						has_war_support > 0.29
+						add = 5
+					}
+					modifier = {
+						var:global.sender_crysis = {any_owned_state = {OR = {is_claimed_by = ROOT is_core_of = ROOT}}}
+						add = 50
+					}
+					modifier = {
+						is_ally_with = var:global.to_crysis
+						add = 50
+					}
+                    modifier = {
+                        OR = {
+                            has_government = democratic
+                            has_government = communism
+                        }
+                        var:global.to_crysis = {
+                            OR = {
+                                has_government = fascist
+                                has_government = monarchism
+                                has_government = neutrality
+                            }
+                        }
+                        add = -30
+                    }
+                    modifier = {
+                        has_government = democratic
+                        any_of_scopes = {
+                            array = global.crysis_tos
+                            has_government = fascist
+                            has_government = communist
+                        }
+                        add = -15
+                    }
+
+                    modifier = {
+                        OR = {
+                            tag = SFL
+                            tag = MOF
+                        }
+                        OR = {
+                            var:global.to_crysis = {tag = ELR}
+                        }
+                        add = -10
+                    }
+                    modifier = {
+                        OR = {
+                            tag = SBU
+                        }
+                        OR = {
+                            var:global.to_crysis = {tag = ELR}
+                        }
+                        add = 10
+                    }
+                }
+            }
+
+            press_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        has_country_flag = cr_ai_press
+                        add = 100
+                    }
+                    modifier = {
+                        has_country_flag = cr_ai_completed
+                        add = -1000000
+                    }
+                }
+            }
+
+            allow_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        has_country_flag = cr_ai_allow
+                        add = 100
+                    }
+                    modifier = {
+                        has_country_flag = cr_ai_completed
+                        add = -1000000
+                    }
+                }
+            }
+        }
+
         triggers = {
             sender_choose_button_click_enabled = {
                 NOT = {or = {tag = global.sender_crysis tag = global.to_crysis}}
@@ -88,6 +278,7 @@ scripted_gui = {
                     limit = {NOT = {has_country_flag = crysis_press}}
                     add_to_variable = {global.cr_press_clicked = 1}
                     set_country_flag = crysis_press
+                    set_country_flag = cr_ai_completed
                     if = {
                         limit = {check_variable = {global.cr_press_clicked > 1}}
                         force_press = yes
@@ -103,6 +294,7 @@ scripted_gui = {
                 if = {
                     limit = {NOT = {has_country_flag = crysis_allow}}
                     set_country_flag = crysis_allow
+                    set_country_flag = cr_ai_completed
                 }
                 else = {clr_country_flag = crysis_allow}
 
@@ -261,10 +453,31 @@ scripted_gui = {
         #ai_test_interval = 336 #Every 14 days
         ai_test_scopes = test_neighbouring_countries
         ai_weights = {
-            faw_exit_button_click = {ai_will_do = {base = 0 modifier = {crysis_startable = no add = 10000}}}
-            cRelease_click = {ai_will_do = {base = 1}}
-            puppet_button_click = {ai_will_do = {base = 1}}
-            cores_button_click = {ai_will_do = {base = 2}}
+            faw_exit_button_click = {ai_will_do = {base = 0 modifier = {crysis_startable = no add = 100}}}
+            cRelease_click = {
+                ai_will_do = {base = 0
+                modifier = {
+                    ROOT = {has_country_flag = crysis_ai_minor@PREV}
+                    add = 10000
+                }
+                }
+            }
+            puppet_button_click = {
+                ai_will_do = {base = 0
+                modifier = {
+                    ROOT = {has_country_flag = crysis_ai_puppet@PREV}
+                    add = 10000
+                }
+                }
+            }
+            cores_button_click = {
+                ai_will_do = {base = 0
+                modifier = {
+                    ROOT = {has_country_flag = crysis_ai_cores@PREV}
+                    add = 100000
+                }
+                }
+            }
         }
 
 
@@ -295,6 +508,8 @@ scripted_gui = {
                 d_calc_crysis = yes
 
                 ROOT = {clr_country_flag = force_action_win_opened}
+                ROOT = {clr_country_flag = crysis_ai_minor@PREV}
+                ROOT = {clr_country_flag = crysis_ai_ready@PREV}
             }
 
             cores_button_click = {
@@ -313,6 +528,8 @@ scripted_gui = {
                 d_calc_crysis = yes
 
                 ROOT = {clr_country_flag = force_action_win_opened}
+                ROOT = {clr_country_flag = crysis_ai_cores@PREV}
+                ROOT = {clr_country_flag = crysis_ai_ready@PREV}
             }
 
             puppet_button_click = {
@@ -331,6 +548,8 @@ scripted_gui = {
                 d_calc_crysis = yes
 
                 ROOT = {clr_country_flag = force_action_win_opened}
+                ROOT = {clr_country_flag = crysis_ai_puppet@PREV}
+                ROOT = {clr_country_flag = crysis_ai_ready@PREV}
             }
         }
 
