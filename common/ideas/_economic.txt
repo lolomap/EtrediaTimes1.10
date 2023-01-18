@@ -92,14 +92,7 @@ ideas = {
 		low_economic_mobilisation = {
 			
 			available = {
-				has_war_support > 0.15
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.3
-					
-				}	
+				has_war_support > 0.15	
 			}
 			on_add = {
 				
@@ -136,14 +129,6 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.25
-
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.5
-					
-				}
 			}
 
 			cost = 150
@@ -190,15 +175,7 @@ ideas = {
 							}
 						}
 					}
-				}
-
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.75
-					
-				}		
+				}	
 			}
 		
 			cost = 150
@@ -237,14 +214,6 @@ ideas = {
 						tag = ROOT 
 						ratio > 0.5
 					}
-				}
-
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.9
-					
 				}
 			}
 			on_add = {
