@@ -79,7 +79,7 @@ d_calc_wi = {
     add_to_variable = {eresources_inf_factor = esteel_inf_factor}
     add_to_variable = {eresources_inf_factor = echromium_inf_factor}
     add_to_variable = {eresources_inf_factor = euranium_inf_factor}
-    multiply_variable = {eresources_inf_factor = 0.07}
+    multiply_variable = {eresources_inf_factor = 0.05}
     
 
     set_variable = {world_influence = 0}

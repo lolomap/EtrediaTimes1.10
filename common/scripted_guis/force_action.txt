@@ -493,24 +493,28 @@ scripted_gui = {
 			}
 
             cRelease_click = {
-                set_global_flag = {
-                    flag = political_crysis
-                    days = 60
-                    value = 1
+                if = {
+                    limit = {NOT = {FROM = {tag = PREV}}}
+
+                    set_global_flag = {
+                        flag = political_crysis
+                        days = 60
+                        value = 1
+                    }
+                    set_variable = {global.to_crysis = FROM}
+                    set_variable = {global.sender_crysis = ROOT}
+                    set_variable = {global.minor_crysis = THIS}
+
+                    set_variable = {global.type_crysis = 2}
+                    
+                    random_country = {country_event = {id = mechanics.37 days = 1}}
+                    encount_majors = yes
+                    d_calc_crysis = yes
+
+                    ROOT = {clr_country_flag = force_action_win_opened}
+                    ROOT = {clr_country_flag = crysis_ai_minor@PREV}
+                    ROOT = {clr_country_flag = crysis_ai_ready@PREV}
                 }
-                set_variable = {global.to_crysis = FROM}
-                set_variable = {global.sender_crysis = ROOT}
-                set_variable = {global.minor_crysis = THIS}
-
-                set_variable = {global.type_crysis = 2}
-                
-                random_country = {country_event = {id = mechanics.37 days = 1}}
-                encount_majors = yes
-                d_calc_crysis = yes
-
-                ROOT = {clr_country_flag = force_action_win_opened}
-                ROOT = {clr_country_flag = crysis_ai_minor@PREV}
-                ROOT = {clr_country_flag = crysis_ai_ready@PREV}
             }
 
             cores_button_click = {
@@ -521,6 +525,7 @@ scripted_gui = {
                 }
                 set_variable = {global.to_crysis = THIS}
                 set_variable = {global.sender_crysis = ROOT}
+                set_variable = {global.minor_crysis = 0}
 
                 set_variable = {global.type_crysis = 1}
 
@@ -541,6 +546,7 @@ scripted_gui = {
                 }
                 set_variable = {global.to_crysis = THIS}
                 set_variable = {global.sender_crysis = ROOT}
+                set_variable = {global.minor_crysis = 0}
 
                 set_variable = {global.type_crysis = 0}
 

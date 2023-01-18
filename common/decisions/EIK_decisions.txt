@@ -8,6 +8,7 @@ EIK_oligarchism_rejection = {
 		allowed = {
 			tag = EIK
 			has_government = fascism
+            not = {has_idea = first_corruption_level}
 		}
 		activation = {
 			not = {has_country_flag = eik_cd_oli_event}
@@ -109,6 +110,7 @@ EIK_oligarchism_rejection = {
 			has_idea = EIK_verha
 			has_government = fascism
 			not = {has_country_leader_with_trait = Army_general}
+            not = {has_idea = first_corruption_level}
 		}
 		activation = {
 			not = {has_country_flag = eik_cd_army_event}
