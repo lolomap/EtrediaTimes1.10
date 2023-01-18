@@ -77,6 +77,10 @@
 
  IID_monarchism_party:0 "ИП-ИД"
  IID_monarchism_party_long:0 "Имперская Партия Имени Дукса"
+ IID_communism_party:0 "Эко-анархисты"
+ IID_communism_party_long:0 "Эко-анархисты"
+ GKD_monarchism_party:0 "ИП-ИД"
+ GKD_monarchism_party_long:0 "Имперская Партия Имени Дукса"
 
  SFL_democratic_party:0 "Партия свободы"
  SFL_democratic_party_long:0 "Партия свободы"
@@ -97,3 +101,12 @@
  TRP_fascism_party_long:0 "Партия «Возрождение нации»"
  TRP_neutrality_party:0 "Центральная Воля"
  TRP_neutrality_party_long:0 "Партия «Центральная Воля»"
+
+ KAR_neutrality_party: "Natien-Demokratier Front"
+ KAR_neutrality_party_long: "Natien-Demokratier Front"
+ KAR_communism_party: "Po slobodu á liude"
+ KAR_communism_party_long: "Po slobodu á liude"
+ KAR_fascism_party: "Nationier Monarkismej Unie"
+ KAR_fascism_party_long: "Nationier Monarkismej Unie"
+ KAR_democratic_party: "Kracht vô Folke"
+ KAR_democratic_party_long: "Kracht vô Folke"

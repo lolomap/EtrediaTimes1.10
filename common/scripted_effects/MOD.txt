@@ -11,15 +11,83 @@ d_mtest = {
 d_calc_wi = {
     set_variable = {division_inf_factor = num_divisions}
     multiply_variable = {division_inf_factor = 0.025}
+
     set_variable = {factories_inf_factor = num_of_factories}
     multiply_variable = {factories_inf_factor = 0.03}
+
     set_variable = {nuke_inf_factor = num_of_nukes}
     multiply_variable = {nuke_inf_factor = 0.5}
+
+    set_temp_variable = {oil_inf_factor = resource_produced@oil}
+    multiply_temp_variable = {oil_inf_factor = 0.125}
+
+    set_temp_variable = {aluminium_inf_factor = resource_produced@aluminium}
+    multiply_temp_variable = {aluminium_inf_factor = 0.325}
+
+    set_temp_variable = {rubber_inf_factor = resource_produced@rubber}
+    multiply_temp_variable = {rubber_inf_factor = 0.125}
+
+    set_temp_variable = {tungsten_inf_factor = resource_produced@tungsten}
+    multiply_temp_variable = {tungsten_inf_factor = 0.8}
+
+    set_temp_variable = {steel_inf_factor = resource_produced@steel}
+    multiply_temp_variable = {steel_inf_factor = 0.1}
+
+    set_temp_variable = {chromium_inf_factor = resource_produced@chromium}
+    multiply_temp_variable = {chromium_inf_factor = 0.179}
+
+    set_temp_variable = {uranium_inf_factor = resource_produced@uranium}
+    multiply_temp_variable = {uranium_inf_factor = 3}
+
+    set_variable = {resources_inf_factor = 0}
+    add_to_variable = {resources_inf_factor = oil_inf_factor}
+    add_to_variable = {resources_inf_factor = aluminium_inf_factor}
+    add_to_variable = {resources_inf_factor = rubber_inf_factor}
+    add_to_variable = {resources_inf_factor = tungsten_inf_factor}
+    add_to_variable = {resources_inf_factor = steel_inf_factor}
+    add_to_variable = {resources_inf_factor = chromium_inf_factor}
+    add_to_variable = {resources_inf_factor = uranium_inf_factor}
+    multiply_variable = {resources_inf_factor = 0.02}
+
+
+    set_temp_variable = {eoil_inf_factor = resource_exported@oil}
+    multiply_temp_variable = {eoil_inf_factor = 0.125}
+
+    set_temp_variable = {ealuminium_inf_factor = resource_exported@aluminium}
+    multiply_temp_variable = {ealuminium_inf_factor = 0.325}
+
+    set_temp_variable = {erubber_inf_factor = resource_exported@rubber}
+    multiply_temp_variable = {erubber_inf_factor = 0.125}
+
+    set_temp_variable = {etungsten_inf_factor = resource_exported@tungsten}
+    multiply_temp_variable = {etungsten_inf_factor = 0.8}
+
+    set_temp_variable = {esteel_inf_factor = resource_exported@steel}
+    multiply_temp_variable = {esteel_inf_factor = 0.1}
+
+    set_temp_variable = {echromium_inf_factor = resource_exported@chromium}
+    multiply_temp_variable = {echromium_inf_factor = 0.179}
+
+    set_temp_variable = {euranium_inf_factor = resource_exported@uranium}
+    multiply_temp_variable = {euranium_inf_factor = 3}
+
+    set_variable = {eresources_inf_factor = 0}
+    add_to_variable = {eresources_inf_factor = eoil_inf_factor}
+    add_to_variable = {eresources_inf_factor = ealuminium_inf_factor}
+    add_to_variable = {eresources_inf_factor = erubber_inf_factor}
+    add_to_variable = {eresources_inf_factor = etungsten_inf_factor}
+    add_to_variable = {eresources_inf_factor = esteel_inf_factor}
+    add_to_variable = {eresources_inf_factor = echromium_inf_factor}
+    add_to_variable = {eresources_inf_factor = euranium_inf_factor}
+    multiply_variable = {eresources_inf_factor = 0.07}
+    
 
     set_variable = {world_influence = 0}
     add_to_variable = {world_influence = division_inf_factor}
     add_to_variable = {world_influence = factories_inf_factor}
     add_to_variable = {world_influence = nuke_inf_factor}
+    add_to_variable = {world_influence = resources_inf_factor}
+    add_to_variable = {world_influence = eresources_inf_factor}
     multiply_variable = {world_influence = winfluence_cost}
     
     #add_to_array = {global.wi_values = world_influence}
@@ -238,6 +306,16 @@ crysis_reward = {
         var:global.to_crysis = {
             release_on_controlled = global.minor_crysis
         }
+    }
+}
+
+d_show_crysis = {
+    if = {
+        limit = {has_country_flag = cheat_show_cr_win}
+        clr_country_flag = cheat_show_cr_win
+    }
+    else = {
+        set_country_flag = cheat_show_cr_win
     }
 }
 

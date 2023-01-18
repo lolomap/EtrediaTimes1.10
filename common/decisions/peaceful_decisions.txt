@@ -20,7 +20,7 @@ peaceful_democratic = {
 					OR = {
 						custom_trigger_tooltip = {
 							tooltip = world_influence_major
-							check_variable = {world_influence > 7}
+							check_variable = {world_influence > 20}
 						}
 						is_major = yes
 					}
@@ -55,14 +55,14 @@ peaceful_democratic = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = world_influence_major
-					check_variable = {world_influence > 7}
+					check_variable = {world_influence > 20}
 				}
 				is_major = yes
 			}
 		}
 
 		cost = 50
-		days_re_enable = 180
+		days_re_enable = 100
 
 		complete_effect = {
 			add_war_support = -0.01
@@ -90,7 +90,7 @@ peaceful_democratic = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = world_influence_major
-					check_variable = {world_influence > 7}
+					check_variable = {world_influence > 20}
 				}
 				is_major = yes
 			}
@@ -114,9 +114,9 @@ peaceful_democratic = {
 						has_government = communism
 					}
 					OR = {
-						has_stability < 0.5
+						has_stability < 0.6
 						AND = {
-							has_war_support < 0.5
+							has_war_support < 0.7
 							has_war = yes
 						}
 					}
@@ -148,7 +148,7 @@ peaceful_democratic = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = world_influence_major
-					check_variable = {world_influence > 7}
+					check_variable = {world_influence > 20}
 				}
 				is_major = yes
 			}
@@ -187,7 +187,7 @@ peaceful_democratic = {
 			has_added_tension_amount < 1
 			check_variable = {pi_master > 15}
 			OR = {
-				check_variable = {world_influence > 5}
+				check_variable = {world_influence > 20}
 				is_major = yes
 			}
 
@@ -224,9 +224,10 @@ peaceful_democratic = {
 				num_of_nukes > 0
 			}
 			OR = {
-				check_variable = {world_influence > 5}
+				check_variable = {world_influence > 20}
 				is_major = yes
 			}
+            always = no
 		}
 		cost = 200
 	}

@@ -37,7 +37,7 @@ set_popularities = {
 }
 #
 create_country_leader = {
-	name = "Anatoly Zhmirinovan"
+	name = "Bob Evans"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
 	picture = "portrait_bydlo_yaroslav_obryg.dds"
 	expire = "1965.1.1"
@@ -48,7 +48,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Terine Narabel"
+	name = "Bob Evans"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_taganrog_ivan_ishenko.dds"
 	expire = "1965.1.1"
@@ -59,7 +59,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "END spectator"
+	name = "End Spectator"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_bydlo_yaroslav_obryg.dds"
 	expire = "1965.1.1"
@@ -70,11 +70,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kakt f"
+	name = "Kakt F."
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_bydlo_yaroslav_obryga.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dux the Emperor"
+	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+	picture = "Portrait_iid_neutrality.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 		#
 	}

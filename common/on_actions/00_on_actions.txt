@@ -212,6 +212,14 @@ on_actions = {
 				ORB = {country_event = orb.35}
 				IID = {
 					puppet = ORB
+                    ORB = {
+                        set_politics = {
+                            ruling_party = neutrality
+                            elections_allowed = no
+                        }
+                        add_popularity = {ideology = neutrality popularity = 0.2}
+                        set_country_leader_ideology = conservatism
+                    }
 				}
 			}
 		}
@@ -851,7 +859,7 @@ on_actions = {
             }
 
 			if = {
-				limit = {check_variable = {world_influence > 5}}
+				limit = {check_variable = {world_influence > 10}}
 				if = {
 					limit = {not = {has_idea = wi_trade_influence}}
 					add_ideas = wi_trade_influence
@@ -896,14 +904,14 @@ on_actions = {
 			}
 
 			if = {
-				limit = {check_variable = {faction_influence > 5}}
+				limit = {check_variable = {faction_influence > 29}}
 				if = {
 					limit = {not = {has_idea = wi_faction_trade_influence}}
 					add_ideas = wi_faction_trade_influence
 				}
 			}
 			if = {
-				limit = {check_variable = {faction_influence > 7}}
+				limit = {check_variable = {faction_influence > 49}}
 				if = {
 					limit = {
 						not = {has_idea = wi_economic_faction_trade_influence}
@@ -1198,13 +1206,7 @@ on_actions = {
 						ruling_party = neutrality
 						elections_allowed = no
 					}
-					set_popularities = {
-						monarchism = 0
-						democratic = 30
-						neutrality = 70
-						fascism = 0
-						communism = 0
-					}
+					add_popularity = {ideology = neutrality popularity = 0.2}
 					set_country_leader_ideology = conservatism
 				}
 				
@@ -1282,24 +1284,18 @@ on_actions = {
 				limit = {
 					FROM = {has_government = monarchism}
 				}
-				FROM = {
-					set_autonomy = {
-						target = ROOT
-						autonomous_state = autonomy_vassal
-					}
-				}
+				#FROM = {
+				#	set_autonomy = {
+				#		target = ROOT
+				#		autonomous_state = autonomy_vassal
+				#	}
+				#}
 				ROOT = {
 					set_politics = {
 						ruling_party = neutrality
 						elections_allowed = no
 					}
-					set_popularities = {
-						monarchism = 0
-						democratic = 30
-						neutrality = 70
-						fascism = 0
-						communism = 0
-					}
+					add_popularity = {ideology = neutrality popularity = 0.2}
 					set_country_leader_ideology = conservatism
 				}
 			}
@@ -1363,6 +1359,37 @@ on_actions = {
 					}
 				}
 			}
+            else_if = {
+                limit = {
+                    original_tag = IID
+                }
+
+                if = {
+                    limit = {IID = {has_government = communism}}
+                    GKD = {
+                        set_politics = {
+                            ruling_party = monarchism
+                            elections_allowed = no
+                        }
+                        add_popularity = {ideology = monarchism popularity = 0.4}
+                    }
+                    IID = {
+                        set_autonomy = {
+                            target = GKD
+                            autonomy_state = autonomy_free
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        IID = {has_government = monarchism}
+                        GKD = {has_government = monarchism}
+                    }
+                    IID = {
+                        annex_country = {target = GKD transfer_troops = yes}
+                    }
+                }
+            }
 
 			
 		}

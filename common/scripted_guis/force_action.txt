@@ -11,6 +11,7 @@ scripted_gui = {
                 is_in_array = {global.crysis_tos = THIS}
                 tag = global.sender_crysis
                 tag = global.to_crysis
+                has_country_flag = cheat_show_cr_win
             }
         }
 

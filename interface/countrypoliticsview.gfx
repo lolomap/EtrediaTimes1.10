@@ -1,4 +1,9 @@
 spriteTypes = {
+
+    spriteType = {
+        name = "GFX_ideology_IID_anarchist_communism"
+        texturefile = "gfx/interface/ideologies/eco_anarchism.dds"
+    }
 	
 	#Government in Exile
 
