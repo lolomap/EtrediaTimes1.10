@@ -580,7 +580,7 @@ focus_tree = {
     #
 	#}
 	focus = {
-		id = SBU_monarchism
+		id = SBU_monarchism_focus
 		icon = GFX_focus_eng_god_save_the_king
 		cost = 10
 		prerequisite = {
@@ -604,8 +604,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		cost = 10
 		prerequisite = {
-			focus = SBU_monarchism
-			focus = SBU_absolutism
+			focus = SBU_monarchism_focus
 		}
 		completion_reward = {
 		    RGY = { country_event = { id = rgy.3 days = 1 } }
@@ -622,7 +621,10 @@ focus_tree = {
 			focus = SBU_treat_with_RGY
 		}
 		completion_reward = {
-		    RGY = { country_event = { id = rgy.4 days = 1 } }
+            every_state = {
+                limit = {is_core_of = HLR}
+                add_core_of = SBU
+            }
 		}
 		x = 23
 		y = 7
@@ -631,12 +633,41 @@ focus_tree = {
 	focus = {
 		id = SBU_safflian_problem
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 25
 		prerequisite = {
 			focus = SBU_RGY_integration
 		}
 		completion_reward = {
-			#need
+			RGY = {
+                every_owned_state = {
+                    limit = {is_core_of = RGY}
+                    add_core_of = SBU
+                }
+            }
+		    SFL = {
+                every_owned_state = {
+                    limit = {is_core_of = SFL}
+                    add_core_of = SBU
+                }
+            }
+            MOF = {
+                every_owned_state = {
+                    limit = {is_core_of = MOF}
+                    add_core_of = SBU
+                }
+            }
+            ELR = {
+                every_owned_state = {
+                    limit = {is_core_of = ELR}
+                    add_core_of = SBU
+                }
+            }
+            TRB = {
+                every_owned_state = {
+                    limit = {is_core_of = TRB}
+                    add_core_of = SBU
+                }
+            }
 		}
 		x = 25
 		y = 8
@@ -650,19 +681,24 @@ focus_tree = {
 			focus = SBU_RGY_integration
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					TRB = {
-						OR = {
-							has_government = communism
-							has_government = fascism
-						}
-					}
-				}
-				SBU = { country_event = { id = sbu.2 days = 1 } }
-			}
-			else = {
-				TRB = {country_event = { id = sbu.57 days = 1 }}
+			#if = {
+			#	limit = {
+			#		TRB = {
+			#			OR = {
+			#				has_government = communism
+			#				has_government = fascism
+			#			}
+			#		}
+			#	}
+			#	SBU = { country_event = { id = sbu.2 days = 1 } }
+			#}
+			#else = {
+			#	TRB = {country_event = { id = sbu.57 days = 1 }}
+			#}
+
+            create_wargoal = {
+			    type = annex_everything
+			    target = TRB
 			}
 		}
 		x = 21
@@ -678,7 +714,9 @@ focus_tree = {
 			focus = SBU_pacify_terbia
 		}
 		completion_reward = {
-			
+			ELR = {
+                country_event = {id = sbu.74 days = 1}
+            }
 		}
 		x = 23
 		y = 9
@@ -714,13 +752,13 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_MOF_integration
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
 			focus = SBU_treat_with_Monfua
 		}
 		completion_reward = {
-		    SBU = { country_event = { id = sbu.34 days = 1 } }
+		    ELR = {country_event = {id = sbu.75 days = 1}}
 		}
 		x = 25
 		y = 10
@@ -2168,37 +2206,7 @@ focus_tree = {
 		x = 21
 		y = 9
 		completion_reward = {
-			if = {
-				limit = {
-					country_exists = TRB
-					TRB = {
-						not = {
-							in_faction_with = SBU
-							is_subject_of = SBU
-						}
-					}
-				}
-				TRB = {
-					annex_country = {
-						target = RTT
-						transfer_troops = yes
-					}
-				}
-			}
-			else = {
-				diplomatic_relation = {
-				    country = RTT
-				    relation = military_access
-				    active = yes
-				}
-				RTT = {
-					diplomatic_relation = {
-				    	country = SBU
-				    	relation = military_access
-				    	active = yes
-				    }
-				}
-			}
+			
 		}
 	}
 	focus = {

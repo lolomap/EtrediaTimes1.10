@@ -116,7 +116,7 @@ SBU_monarchist_plan = {
 	focus_factors = {
 		SBU_right = 1000
 		SBU_Empire = 1000
-		SBU_monarchism = 1000
+		SBU_monarchism_focus = 1000
 	}
 
 

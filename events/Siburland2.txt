@@ -836,8 +836,17 @@ country_event = {
 	TAG = SBU
 	}
     option = {
-    name = sbu.35.a
-	give_guarantee = RGY
+        name = sbu.35.a
+	    puppet = RGY
+        RGY = {
+            set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+            }
+            add_popularity = {ideology = neutrality popularity = 0.2}
+            set_country_leader_ideology = conservatism
+        }
+        transfer_state = 189
     }
 }
 
@@ -1422,6 +1431,7 @@ country_event = {
 		add_stability = 0.05
 		add_war_support = 0.05
 		subtract_from_variable = {wtire = 50}
+        set_cosmetic_tag = SBU_ISH
 	}
 }
 
@@ -1826,6 +1836,84 @@ country_event = {
 	}
     option = {
 		name = sbu.73.b
+        ai_chance = {
+            factor = 0.3
+        }
+	}
+}
+
+country_event = {
+	id = sbu.74
+	title = sbu.74.t
+	desc = sbu.74.d
+
+    is_triggered_only = yes
+
+
+	option = {
+		name = sbu.74.a
+
+        load_oob = ELR_SBU_help
+        declare_war_on = {
+            target = MOF
+            type = annex_everything
+        }
+
+		ai_chance = {
+            factor = 0.7
+        }
+	}
+    option = {
+		name = sbu.74.b
+
+        SBU = {
+            create_wargoal = {
+                type = annex_everything
+                target = ELR
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = MOF
+            }
+        }
+
+        ai_chance = {
+            factor = 0.3
+        }
+	}
+}
+
+country_event = {
+	id = sbu.75
+	title = sbu.75.t
+	desc = sbu.75.d
+
+    is_triggered_only = yes
+
+
+	option = {
+		name = sbu.75.a
+
+        SBU = {annex_country = {target = ELR transfer_troops = no}}
+
+		ai_chance = {
+            factor = 0.7
+        }
+	}
+    option = {
+		name = sbu.75.b
+
+        SBU = {
+            create_wargoal = {
+                type = annex_everything
+                target = ELR
+            }
+        }
+        delete_units = {
+            division_template = "ISH Division"
+            disband = yes
+        }
+
         ai_chance = {
             factor = 0.3
         }

@@ -61,13 +61,13 @@ country_event = {
 	option = {
 		name = rgy.3.a
 		SBU = { country_event = { id = sbu.35 days = 1 } }
-	ai_chance = { factor = 80 }
+	ai_chance = { factor = 40 }
     }
 	
 	option = {
 		name = rgy.3.b
 		SBU = { country_event = { id = sbu.36 days = 1 } }
-	ai_chance = { factor = 20 }
+	ai_chance = { factor = 60 }
     }
 }
 
