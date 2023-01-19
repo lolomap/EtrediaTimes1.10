@@ -1125,6 +1125,31 @@ on_actions = {
 		effect = {
 			clr_country_flag = nuke_request_accepted
 
+            if = {
+                limit = {
+                    NOT = {
+                        any_country = {
+                            OR = {
+                                has_idea = DIR_revolt
+                                has_idea = DIR_revolt2
+                            }
+                        }
+                    }
+                }
+
+                DIR = {
+                    delete_dirian_militia = yes
+                }
+                DEM = {
+                    delete_dirian_militia = yes
+                }
+                SDI = {
+                    delete_dirian_militia = yes
+                }
+                DIB = {
+                    delete_dirian_militia = yes
+                }
+            }
 			if = {
 				limit = {
 					FROM = {

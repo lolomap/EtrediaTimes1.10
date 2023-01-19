@@ -8,6 +8,26 @@ d_mtest = {
 
 ####
 
+delete_dirian_militia = {
+    delete_units = {
+        division_template = "Democrat Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Communist Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Pupil Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Syndicat militia"
+        disband = yes
+    }
+}
+
+
 d_calc_wi = {
     set_variable = {division_inf_factor = num_divisions}
     multiply_variable = {division_inf_factor = 0.025}

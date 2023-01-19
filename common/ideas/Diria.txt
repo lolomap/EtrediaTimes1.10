@@ -87,6 +87,10 @@ ideas = {
 			}
 			
 			removal_cost = -1
+
+            cancel = {
+                has_war = no
+            }
 	
 
 			modifier = {
