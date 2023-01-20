@@ -1531,6 +1531,11 @@ country_event = {
         }
         else = {
             force_press = yes
+            #set_global_flag = {
+            #    flag = pc_show_delay
+            #    days = 2
+            #    value = 1
+            #}
             random_country = {country_event = {id = mechanics.36 days = 2}}
         }
     }

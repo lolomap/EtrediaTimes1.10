@@ -272,6 +272,41 @@ guiTypes = {
             orientation = UPPER_LEFT
 		}
 
+        instantTextBoxType = {
+			name = "l4"
+			position = {x = 110 y = 65}
+			text = cw_wis
+			font = hoi_30header
+			
+			alwaystransparent = yes
+            orientation = UPPER_LEFT
+		}
+
+        instantTextBoxType = {
+			name = "l5"
+			position = {x = -335 y = 65}
+			text = cw_wit
+			font = hoi_30header
+            format = right
+			
+			alwaystransparent = yes
+            orientation = UPPER_RIGHT
+		}
+
+        iconType = {
+            name = "wii1"
+            quadTextureSprite = "GFX_world_influence_icon"
+            position = {x = 155 y = 65}
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "wii2"
+            quadTextureSprite = "GFX_world_influence_icon"
+            position = {x = -205 y = 65}
+            alwaystransparent = yes
+            orientation = UPPER_RIGHT
+        }
+
         buttonType = {
             name = "press_button"
             spriteType = "GFX_button_221x34"

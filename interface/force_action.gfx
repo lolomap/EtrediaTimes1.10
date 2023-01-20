@@ -22,4 +22,9 @@ spriteTypes = {
         name = "GFX_crysis_globe"
         texturefile = "gfx/interface/globe_etredia.dds"
     }
+
+    spriteType = {
+        name = "GFX_blank"
+        texturefile = "gfx/interface/blank.dds"
+    }
 }

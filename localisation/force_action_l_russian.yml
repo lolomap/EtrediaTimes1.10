@@ -15,6 +15,8 @@
     cw_cname: "[THIS.GetNameDef]"
     cw_cname_hl: "§Y[THIS.GetNameDef]§!"
     cw_waiters: "Воздержались"
+    cw_wis: "[?global.crysis_s_totalwi|1]"
+    cw_wit: "[?global.crysis_t_totalwi|1]"
     cw_allow: "[cw_allow_sl]"
     cw_allow_y: "Уступить"
     cw_allow_n: "Отменить"
