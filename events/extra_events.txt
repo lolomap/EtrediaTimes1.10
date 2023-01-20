@@ -1067,17 +1067,18 @@ country_event = {	# ивенты от стабки на изменение си�
 			limit = {
 				not = {
 					OR = {
-						AND = {check_variable = {rand_ideology = 1} has_government = democratic}
-						AND = {check_variable = {rand_ideology = 2} has_government = fascism}
-						AND = {check_variable = {rand_ideology = 3} has_government = neutrality}
-						AND = {check_variable = {rand_ideology = 4} has_government = communism}
-						AND = {check_variable = {rand_ideology = 5} has_government = monarchism}
+						#AND = {check_variable = {rand_ideology = 1} has_government = democratic}
+						#AND = {check_variable = {rand_ideology = 2} has_government = fascism}
+						#AND = {check_variable = {rand_ideology = 3} has_government = neutrality}
+						#AND = {check_variable = {rand_ideology = 4} has_government = communism}
+						#AND = {check_variable = {rand_ideology = 5} has_government = monarchism}
 					}
 				}
+                always = yes
 			}
 
 			random_list = {
-				30 = {
+				15 = {
 					if = {limit = {has_stability < 0.8} set_temp_variable = {can_e1 = 1}}
 					if = {limit = {has_stability < 0.5} set_temp_variable = {can_e2 = 1}}
 					if = {limit = {has_stability < 0.3} set_temp_variable = {can_e3 = 1}}
@@ -1091,7 +1092,7 @@ country_event = {	# ивенты от стабки на изменение си�
 						var:can_e4 = {country_event = mechanics.16}
 					}
 				}
-				70 = {
+				85 = {
 
 				}
 			}
@@ -1425,7 +1426,7 @@ country_event = { # Кризис закончился
     }
 
     immediate = {
-        set_country_flag = {flag = crysis_delay days = 360 value = 1}
+        var:global.sender_crysis = {set_country_flag = {flag = crysis_delay days = 360 value = 1}}
         if = { # Оба не уступили
             limit = {
                 var:global.cr_send_op = {has_country_flag = crysis_press}
@@ -1490,6 +1491,11 @@ country_event = { # Кризис закончился
         every_country = {
             clr_country_flag = crysis_allow
             clr_country_flag = crysis_press
+            clr_country_flag = cr_ai_press
+            clr_country_flag = cr_ai_allow
+            clr_country_flag = crysis_scared
+            clr_country_flag = cr_ai_completed
+            clr_country_flag = crysis_angry
         }
         set_variable = {global.cr_press_clicked = 0}
         

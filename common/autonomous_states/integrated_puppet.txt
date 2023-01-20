@@ -50,6 +50,7 @@ autonomy_state = {
 			}
 			OVERLORD = { not = { tag = JAP } }
 		}
+        OVERLORD = {not = {has_government = monarchism}}
 	}
 	
 	can_take_level = {

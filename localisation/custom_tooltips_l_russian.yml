@@ -22,7 +22,7 @@
   attack_for_dem_tooltip:0 "Продолжить за либералов\n"
   has_milcivs_less_then:0 "Использовалось менее 10 раз\n"
   no_iid_fsc_influence_tooltip:0 "Ослабление давления [IID.GetNameDef] и [FSC.GetNameDef]\n"
-  world_influence_major:0 "Мировое влияние больше чем §Y7\n"
+  world_influence_major:0 "Мировое влияние больше чем §Y20\n"
   pi_master_more_then_30:0 "Больше 30 очков миротворчества\n"
   ORBFindIvestitionsDesc:0 "ИИД поддержит Ортостан, что позволит нам начать проведение собственной политики\n"
   ORBFarmPeace:0 "Будет полученно 50 очков миротворчества\n"

@@ -17,4 +17,9 @@ spriteTypes = {
         texturefile = "gfx/interface/crysis_status.dds"
         noOfFrames = 3
     }
+
+    spriteType = {
+        name = "GFX_crysis_globe"
+        texturefile = "gfx/interface/globe_etredia.dds"
+    }
 }

@@ -5,18 +5,6 @@ music = {
 }
 
 music = {
-	name = "Monarchism1"
-	file = "m1.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "Monarchism2"
-	file = "m2.ogg"
-	volume = 0.65
-}
-
-music = {
 	name = "Monarchism3"
 	file = "m3.ogg"
 	volume = 0.65

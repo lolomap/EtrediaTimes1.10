@@ -2,7 +2,7 @@ ideas = {
     country = {
 	
 		DIB_red_army = {
-            picture = 
+            #picture = 
 			allowed = {
 				always = no
 			}
@@ -24,7 +24,7 @@ ideas = {
 		}
 		
 		DIB_steel_spirit = {
-            picture = 
+            #picture = 
 			allowed = {
 				always = no
 			}
@@ -41,15 +41,16 @@ ideas = {
 				max_dig_in_factor = 0.15
 				dig_in_speed_factor = 0.1
 				
-				select_effect = {
-					custom_effect_tooltip = wtire_reduce_focus
-					set_country_flag = do_reduce_wtire
-				}
+			}
+
+			select_effect = {
+				custom_effect_tooltip = wtire_reduce_focus
+				set_country_flag = do_reduce_wtire
 			}
 		}
 		
 		DIB_last_stand = {
-            picture = 
+            #picture = 
 			allowed = {
 				always = no
 			}
@@ -66,7 +67,7 @@ ideas = {
 		}
 		
 		DIB_marauders = {
-            picture = 
+            #picture = 
 			allowed = {
 				always = no
 			}

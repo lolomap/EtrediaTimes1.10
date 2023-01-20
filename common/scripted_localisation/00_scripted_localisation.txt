@@ -1,4 +1,11 @@
 defined_text = {
+    name = TableGetVariableToSort
+    text = {localization_key = "world_influence"}
+}
+
+
+
+defined_text = {
 	name = GFX_goal_diria_war
 	text = {
 		trigger = {

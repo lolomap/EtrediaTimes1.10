@@ -21,7 +21,7 @@ add_ideas = {
 
 set_autonomy = {
 	target = GKD
-	autonomous_state = autonomy_vassal
+	autonomous_state = autonomy_puppet
 }
 
 set_technology = {
@@ -104,7 +104,7 @@ create_country_leader = {
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_bydlo_yaroslav_obryga.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = anarchist_communism
 	traits = {
 		#
 	}

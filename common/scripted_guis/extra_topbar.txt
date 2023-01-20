@@ -11,32 +11,63 @@ scripted_gui = {
 				#has_war = yes
 				always = no
 			}
+
+            crysis_window_maximize_visible = {
+                has_global_flag = political_crysis
+            }
 		}
 
 		effects = {
-			make_peace_alert_button_click = {
-				if = {
-					limit = {not = {has_country_flag = opened_peace_window}}
-					set_country_flag = opened_peace_window
-				}
-				else = {
-					clr_country_flag = opened_peace_window
-				}
-			}
-		}
+            crysis_window_maximize_click = {
+                clr_country_flag = crysis_win_minimized
+            }
 
-		ai_enabled = { always = yes }
-
-		ai_weights = {
-			make_peace_alert_button_click = {
-				ai_will_do = {
-					factor = 100
-					modifier = {
-						factor = 0
-						has_country_flag = opened_peace_window
-					}
-				}
-			}
+            world_influence_button_click = {
+                if = {
+                    limit = {has_country_flag = winfluence_opened}
+                    clr_country_flag = winfluence_opened
+                }
+                else = {
+                    d_sort_wi = yes
+                    set_country_flag = winfluence_opened
+                }
+            }
 		}
 	}
+
+    winfluence = {
+        window_name = "winfluence_window"
+        context_type = player_context
+
+        visible = {has_country_flag = winfluence_opened}
+
+        dynamic_lists = {
+			countries_gb = {
+				array = global.wi_countries
+				entry_container = wi_countries_entry
+				change_scope = yes
+			}
+		}
+
+        triggers = {
+            cName_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cFlagBorder_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cFlag_visible = {
+                check_variable = {world_influence > 0}
+            }
+            cWI_visible = {
+                check_variable = {world_influence > 0}
+            }
+        }
+
+        properties = {
+            cFlag = {
+				image = [THIS.GetFlag]
+			}
+        }
+    }
 }

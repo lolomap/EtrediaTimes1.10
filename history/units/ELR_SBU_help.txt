@@ -1,0 +1,140 @@
+division_template = {
+	name = "ISH Division"
+
+	division_names_group = ELR_inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 4088
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+	
+	division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+    division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+    division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+    division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+    division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+    division = {
+		name = "ISH Division"
+		location = 3860
+		division_template = "ISH Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+    }
+}

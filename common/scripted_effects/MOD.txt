@@ -1,6 +1,6 @@
 d_mtest = {
     if = {
-        limit = {crysis_capitulated = yes}
+        limit = {KLU = {is_major = yes}}
         log = "yes"
     }
     else = {log = "no"}
@@ -8,25 +8,160 @@ d_mtest = {
 
 ####
 
+delete_dirian_militia = {
+    delete_units = {
+        division_template = "Democrat Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Communist Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Pupil Militia"
+        disband = yes
+    }
+    delete_units = {
+        division_template = "Syndicat militia"
+        disband = yes
+    }
+}
+
+
 d_calc_wi = {
     set_variable = {division_inf_factor = num_divisions}
     multiply_variable = {division_inf_factor = 0.025}
+
     set_variable = {factories_inf_factor = num_of_factories}
     multiply_variable = {factories_inf_factor = 0.03}
+
     set_variable = {nuke_inf_factor = num_of_nukes}
     multiply_variable = {nuke_inf_factor = 0.5}
+
+    set_temp_variable = {oil_inf_factor = resource_produced@oil}
+    multiply_temp_variable = {oil_inf_factor = 0.125}
+
+    set_temp_variable = {aluminium_inf_factor = resource_produced@aluminium}
+    multiply_temp_variable = {aluminium_inf_factor = 0.325}
+
+    set_temp_variable = {rubber_inf_factor = resource_produced@rubber}
+    multiply_temp_variable = {rubber_inf_factor = 0.125}
+
+    set_temp_variable = {tungsten_inf_factor = resource_produced@tungsten}
+    multiply_temp_variable = {tungsten_inf_factor = 0.8}
+
+    set_temp_variable = {steel_inf_factor = resource_produced@steel}
+    multiply_temp_variable = {steel_inf_factor = 0.1}
+
+    set_temp_variable = {chromium_inf_factor = resource_produced@chromium}
+    multiply_temp_variable = {chromium_inf_factor = 0.179}
+
+    set_temp_variable = {uranium_inf_factor = resource_produced@uranium}
+    multiply_temp_variable = {uranium_inf_factor = 3}
+
+    set_variable = {resources_inf_factor = 0}
+    add_to_variable = {resources_inf_factor = oil_inf_factor}
+    add_to_variable = {resources_inf_factor = aluminium_inf_factor}
+    add_to_variable = {resources_inf_factor = rubber_inf_factor}
+    add_to_variable = {resources_inf_factor = tungsten_inf_factor}
+    add_to_variable = {resources_inf_factor = steel_inf_factor}
+    add_to_variable = {resources_inf_factor = chromium_inf_factor}
+    add_to_variable = {resources_inf_factor = uranium_inf_factor}
+    multiply_variable = {resources_inf_factor = 0.02}
+
+
+    set_temp_variable = {eoil_inf_factor = resource_exported@oil}
+    multiply_temp_variable = {eoil_inf_factor = 0.125}
+
+    set_temp_variable = {ealuminium_inf_factor = resource_exported@aluminium}
+    multiply_temp_variable = {ealuminium_inf_factor = 0.325}
+
+    set_temp_variable = {erubber_inf_factor = resource_exported@rubber}
+    multiply_temp_variable = {erubber_inf_factor = 0.125}
+
+    set_temp_variable = {etungsten_inf_factor = resource_exported@tungsten}
+    multiply_temp_variable = {etungsten_inf_factor = 0.8}
+
+    set_temp_variable = {esteel_inf_factor = resource_exported@steel}
+    multiply_temp_variable = {esteel_inf_factor = 0.1}
+
+    set_temp_variable = {echromium_inf_factor = resource_exported@chromium}
+    multiply_temp_variable = {echromium_inf_factor = 0.179}
+
+    set_temp_variable = {euranium_inf_factor = resource_exported@uranium}
+    multiply_temp_variable = {euranium_inf_factor = 3}
+
+    set_variable = {eresources_inf_factor = 0}
+    add_to_variable = {eresources_inf_factor = eoil_inf_factor}
+    add_to_variable = {eresources_inf_factor = ealuminium_inf_factor}
+    add_to_variable = {eresources_inf_factor = erubber_inf_factor}
+    add_to_variable = {eresources_inf_factor = etungsten_inf_factor}
+    add_to_variable = {eresources_inf_factor = esteel_inf_factor}
+    add_to_variable = {eresources_inf_factor = echromium_inf_factor}
+    add_to_variable = {eresources_inf_factor = euranium_inf_factor}
+    multiply_variable = {eresources_inf_factor = 0.05}
+    
 
     set_variable = {world_influence = 0}
     add_to_variable = {world_influence = division_inf_factor}
     add_to_variable = {world_influence = factories_inf_factor}
     add_to_variable = {world_influence = nuke_inf_factor}
+    add_to_variable = {world_influence = resources_inf_factor}
+    add_to_variable = {world_influence = eresources_inf_factor}
     multiply_variable = {world_influence = winfluence_cost}
+    
+    #add_to_array = {global.wi_values = world_influence}
+    #set_variable = {global.wi_countries^world_influence = THIS}
 }
 
 d_calc_wi_e = {
+    #clear_array = global.wi_values
     every_country = {
+        #limit = {is_major = yes}
         d_calc_wi = yes
     }
+}
+
+d_sort_wi = {
+    #set_temp_variable = { table_qs_compare = 0 }
+    #set_variable = {high = global.wi_countries^num}
+    #subtract_from_variable = { high = 1 }
+    #set_variable = { low = 0 }
+    #table_quicksort = yes
+    #start_create_sorted_array = yes
+
+    for_each_loop = {
+		array = global.wi_countries
+		set_temp_variable = { j = i }
+		subtract_from_temp_variable = { j = 1 }
+        var:v = {log = "[?world_influence]"}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = j
+					value = 0
+					compare = greater_than_or_equals
+				}
+                var:v = {
+                    var:global.wi_countries^j = {
+                        check_variable = {
+                            var = PREV.world_influence
+                            value = world_influence
+                            compare = greater_than
+                        }
+                    }
+                }
+			}
+			set_temp_variable = { j_plus_1 = j }
+			add_to_temp_variable = { j_plus_1 = 1 }
+			set_variable = { global.wi_countries^j_plus_1 = global.wi_countries^j }
+			subtract_from_temp_variable = { j = 1 }
+		}
+		set_temp_variable = { j_plus_1 = j }
+		add_to_temp_variable = { j_plus_1 = 1 }
+		set_variable = { global.wi_countries^j_plus_1 = v }
+	}
+
 }
 
 encount_minors = {
@@ -94,6 +229,9 @@ d_calc_crysis = {
     set_variable = {global.cr_send_op = global.sender_crysis}
     set_variable = {global.cr_to_op = global.to_crysis}
 
+
+    set_variable = {global.crysis_s_totalwi = 0}
+    set_variable = {global.crysis_t_totalwi = 0}
     for_each_scope_loop = {
         array = global.crysis_senders
         if = {
@@ -101,6 +239,7 @@ d_calc_crysis = {
             set_variable = {global.cr_smax = world_influence}
             set_variable = {global.cr_send_op = THIS}
         }
+        add_to_variable = {global.crysis_s_totalwi = world_influence}
     }
     for_each_scope_loop = {
         array = global.crysis_tos
@@ -109,6 +248,7 @@ d_calc_crysis = {
             set_variable = {global.cr_tmax = world_influence}
             set_variable = {global.cr_to_op = THIS}
         }
+        add_to_variable = {global.crysis_t_totalwi = world_influence}
     }
 
     log = "[?global.cr_send_op.GetTag] [?global.cr_smax]"
@@ -123,6 +263,7 @@ d_calc_crysis = {
             set_variable = {global.cr_send_op = THIS}
             set_variable = {global.sender_crysis_op_status = 2}
         }
+        add_to_variable = {global.crysis_s_totalwi = world_influence}
     }
 
     var:global.to_crysis = {
@@ -134,6 +275,7 @@ d_calc_crysis = {
             set_variable = {global.cr_to_op = THIS}
             set_variable = {global.to_crysis_op_status = 2}
         }
+        add_to_variable = {global.crysis_t_totalwi = world_influence}
     }
 }
 
@@ -184,6 +326,16 @@ crysis_reward = {
         var:global.to_crysis = {
             release_on_controlled = global.minor_crysis
         }
+    }
+}
+
+d_show_crysis = {
+    if = {
+        limit = {has_country_flag = cheat_show_cr_win}
+        clr_country_flag = cheat_show_cr_win
+    }
+    else = {
+        set_country_flag = cheat_show_cr_win
     }
 }
 

@@ -81,27 +81,37 @@ TRB_aldeko_operation = {
 	}
 	
 	TRB_start_mobilization = {
-			visible = {
-				original_tag = TRB
-				TRB = { has_war_with = SBU }
-				TRB = { has_government = communism }
-			}
-			available = {
-				TRB = { has_war_with = SBU }
-				TRB = { has_government = communism }
-			}
-			cost = 50
+        visible = {
+            original_tag = TRB
+            TRB = { has_war_with = SBU }
+            TRB = { has_government = communism }
+        }
+        available = {
+            TRB = { has_war_with = SBU }
+            TRB = { has_government = communism }
+        }
+        cost = 50
 
-			complete_effect = {
-				TRB = {
-					add_war_support = -0.1
-					swap_ideas = {
-						remove_idea = limited_conscription
-						add_idea = extensive_conscription
-					}
-					load_oob = TRB_mobilization
-				}
-			}
+        complete_effect = {
+            TRB = {
+                add_war_support = -0.1
+                swap_ideas = {
+                    remove_idea = limited_conscription
+                    add_idea = extensive_conscription
+                }
+                random_owned_controlled_state = {
+                    #load_oob = TRB_mobilization
+
+                    for_loop_effect = {
+                        end = 9
+                        create_unit = {
+                            division = "name = \"Trbska Gvarda\" division_template = \"Trbska Gvarda\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+                            owner = TRB
+                        }
+                    }
+                }
+            }
+        }
 		ai_will_do = {
 			factor = 100
 		}
