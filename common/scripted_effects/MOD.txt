@@ -1,9 +1,5 @@
 d_mtest = {
-    if = {
-        limit = {KLU = {is_major = yes}}
-        log = "yes"
-    }
-    else = {log = "no"}
+    clear_array = global.wi_countries
 }
 
 ####

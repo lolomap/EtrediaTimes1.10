@@ -2235,6 +2235,7 @@ country_event = {
 	id = randev.11
 	title = randev.11.t
 	desc = randev.11.d
+    hidden = yes
 
 	is_triggered_only = yes
 

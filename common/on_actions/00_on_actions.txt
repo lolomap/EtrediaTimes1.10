@@ -631,8 +631,12 @@ on_actions = {
 					}
 					
 					set_temp_variable = {crysis_wish = -45}
+                    set_temp_variable = {widif = ROOT.world_influence}
+					subtract_from_temp_variable = {widif = THIS.world_influence}
 
 					#НАЛИЧИЕ ПРИЧИНЫ
+
+                    #КОРКИ
 					if = {
 						limit = {ROOT = {has_government = democratic}}
 
@@ -656,6 +660,66 @@ on_actions = {
 							set_temp_variable = {cr_ai_cores = 1}
 						}
 					}
+                    #
+
+                    #МИНОР
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    has_government = democratic
+                                    has_government = neutrality
+                                    has_government = communism
+                                }
+                            }
+                        }
+
+                        if = {
+                            limit = {
+                                ROOT = {has_opinion = {target = PREV value > -80}}
+                                any_controlled_state = {
+                                    not = {is_core_of = PREV}
+                                }
+                            }
+                            set_temp_variable = {cur_c_check = THIS}
+                            random_scope_in_array = {
+                                array = minor_countries
+                                limit = {
+                                    var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
+                                }
+                                add_to_temp_variable = {crysis_wish = 40}
+                                set_temp_variable = {cr_ai_minor = 1}
+                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                            }
+                        }
+                        else = {
+                            set_temp_variable = {cur_c_check = THIS}
+                            random_scope_in_array = {
+                                array = minor_countries
+                                add_to_temp_variable = {crysis_wish = 40}
+                                set_temp_variable = {cr_ai_minor = 1}
+                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                            }
+                        }
+                    }
+                    else_if = {
+                        limit = {ROOT = {has_opinion = {target = PREV value < -99}}}
+
+                        if = {
+                            limit = {check_variable = {widif > 4}}
+                            set_temp_variable = {cur_c_check = THIS}
+                            random_scope_in_array = {
+                                array = occupied_countries
+                                limit = {
+                                    var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
+                                }
+                                add_to_temp_variable = {crysis_wish = 30}
+                                set_temp_variable = {cr_ai_minor = 1}
+                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                            }
+                        }
+                    }
+                    #
 
 					#ОБЩИЕ ПАРАМЕТРЫ
 					if = {limit = {ROOT={is_in_faction=yes}}
@@ -678,8 +742,6 @@ on_actions = {
 					}
 
 					#РАЗНИЦА ВЛИЯНИЙ
-					set_temp_variable = {widif = ROOT.world_influence}
-					subtract_from_temp_variable = {widif = THIS.world_influence}
 					if = {limit = {check_variable = {widif > 0}}
 						add_to_temp_variable = {crysis_wish = 5}
 					}
@@ -712,17 +774,22 @@ on_actions = {
 							limit = {
 								check_variable = {crysis_chance > crysis_fire}
 							}
-							#log = "[ROOT.GetTag] crysis [THIS.GetTag]"
-							ROOT = {set_country_flag = crysis_ai_ready@PREV}
+
+                            if = {
+                                limit = {
+                                    check_variable = {cr_ai_cores > 0}
+                                }
+                                ROOT = {set_country_flag = crysis_ai_cores@PREV}
+                            }
+                            else_if = {
+                                limit = {
+                                    check_variable = {cr_ai_minor > 0}
+                                }
+                                ROOT = {var:cr_ai_minor_target = {ROOT = {set_country_flag = crysis_ai_minor@PREV}}}
+                            }
 						}
 
-						if = {
-							limit = {
-								check_variable = {cr_ai_cores > 0}
-								ROOT = {has_country_flag = crysis_ai_ready@PREV}
-							}
-							ROOT = {set_country_flag = crysis_ai_cores@PREV}
-						}
+						
 					}
 				}
 			}
@@ -753,6 +820,14 @@ on_actions = {
                         }
                         set_country_flag = crysis_angry
                     }
+
+                    if = {
+                        limit = {
+                            check_variable = {widif > 0.51}
+                            OR = {has_government = fascism has_government = communism}
+                        }
+                        set_country_flag = crysis_push_fc
+                    }
                 }
                 else_if = {
                     limit = {
@@ -772,6 +847,14 @@ on_actions = {
                         }
                         set_country_flag = crysis_angry
                     }
+
+                    if = {
+                        limit = {
+                            check_variable = {widif > 0.51}
+                            OR = {has_government = fascism has_government = communism}
+                        }
+                        set_country_flag = crysis_push_fc
+                    }
                 }
 
                 if = {
@@ -783,7 +866,7 @@ on_actions = {
                     }
 
                     if = {
-                        limit = {has_country_flag = crysis_scared}
+                        limit = {has_country_flag = crysis_scared NOT = {has_country_flag = crysis_push_fc}}
                         if = {
                             limit = {
                                 set_temp_variable_to_random = cr_ai_allow_wish
@@ -793,7 +876,7 @@ on_actions = {
                         }
                     }
                     else_if = {
-                        limit = {not = {has_country_flag = crysis_angry}}
+                        limit = {not = {has_country_flag = crysis_angry} NOT = {has_country_flag = crysis_push_fc}}
                         if = {
                             limit = {
                                 set_temp_variable_to_random = cr_ai_allow_wish
@@ -801,6 +884,10 @@ on_actions = {
                             }
                             set_country_flag = cr_ai_allow
                         }
+                    }
+                    else_if = {
+                        limit = {has_country_flag = crysis_push_fc}
+                        set_country_flag = cr_ai_press
                     }
                 }
                 else = {

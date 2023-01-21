@@ -7,15 +7,6 @@ crysis_startable = {
     not = {has_non_aggression_pact_with = ROOT}
     threat > 0.09
 }
-crysis_startable_minor = {
-    not = {has_global_flag = political_crysis}
-    not = {has_global_flag = war_crysis}
-    ROOT = {not = {has_country_flag = crysis_delay}}
-    FROM = {not = {is_subject_of = ROOT}}
-    FROM = {not = {has_war_with = ROOT}}
-    FROM = {not = {has_non_aggression_pact_with = ROOT}}
-    threat > 0.09
-}
 
 crysis_capitulated = {
     var:global.to_crysis = {
