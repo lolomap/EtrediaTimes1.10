@@ -1,6 +1,9 @@
 scripted_diplomatic_actions = {
-    accecpt_existance = {
-        visible = {has_country_flag = BRAND_NEW_COUNTRY}
+    accept_existance = {
+        visible = {
+            has_country_flag = BRAND_NEW_COUNTRY
+            ROOT = {NOT = {has_country_flag = ACCEPT_EXISTANCE_@PREV}}
+        }
 
         show_acceptance_on_action_button = no
 		requires_acceptance = no

@@ -1347,9 +1347,11 @@ on_actions = {
 
 	on_release_as_free = {
 		effect = {
-            add_threat = -10
+            FROM = {add_threat = -10}
 
             FROM = {encount_minors = yes}
+
+            clr_country_flag = BRAND_NEW_COUNTRY
 
 			if = {
 				limit = {
@@ -1383,8 +1385,9 @@ on_actions = {
 	on_release_as_puppet = {
 		effect = {
             FROM = {encount_minors = yes}
+            clr_country_flag = BRAND_NEW_COUNTRY
 
-            add_threat = -4
+            FROM = {add_threat = -4}
             
 			if = {
 				limit = {
