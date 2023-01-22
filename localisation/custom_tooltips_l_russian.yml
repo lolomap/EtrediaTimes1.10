@@ -1,4 +1,6 @@
 ﻿l_russian:
+  ALLOW_ACCEPT_EXISTANCE_tooltip: "Мы должны признать независимость этого государства"
+
   has_world_war:0 "§RУчаствует в мировой войне§!\n"
 
   wtire_more_then_150:0 "§RВоенная усталость > 150§!\n"

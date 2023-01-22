@@ -1,14 +1,15 @@
 ideas = {
-    country = {	
+    country_type_status = {	
 		WWW_bad_country = {
 
             picture = bad_country
 
-			allowed = {
-				always = no
-			}
+			allowed_to_remove = {
+                always = no
+            }
 			
 			removal_cost = -1
+            level = 1
 	
 
 			modifier = {
@@ -19,16 +20,21 @@ ideas = {
                 army_defence_factor = -0.1
                 army_morale_factor = -0.3
 			}
+
+            cancel_if_invalid = no
 		}
 		WWW_medium_country = {
 
             picture = medium_country
 
-			allowed = {
-				always = no
-			}
+			allowed_to_remove = {
+                always = no
+            }
 			
 			removal_cost = -1
+            level = 2
+
+            default = yes
 	
 
 			modifier = {
@@ -37,16 +43,19 @@ ideas = {
                 army_attack_factor = -0.1
                 army_morale_factor = -0.1
 			}
+
+            cancel_if_invalid = no
 		}
 		WWW_best_country = {
 
             picture = best_country
 
-			allowed = {
-				always = no
-			}
+			allowed_to_remove = {
+                always = no
+            }
 			
 			removal_cost = -1
+            level = 3
 	
 
 			modifier = {
@@ -55,6 +64,8 @@ ideas = {
                 stability_factor = 0.05
                 MONTHLY_POPULATION = 0.4
 			}
+
+            cancel_if_invalid = no
 		}
 	}
 }

@@ -28,3 +28,5 @@
   RebelPeaceInfluenceLoc:0 "Противостояние внешнему давлению -[?world_influence]"
   RebelPeaceInfluence:0 "Давление от демократических государств [?peaceful_influence]/100"
   RebelPeaceInfluence_desc:0 "Если давление станет максимальным, то мы не сможем иметь цели войны против других государств"
+
+  ACCEPT_EXISTANCE_TITLE: "Признать независимость"

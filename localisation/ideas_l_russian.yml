@@ -59,6 +59,16 @@
  fifth_corruption_level:0 "Высокий уровень коррупции"
  sixth_corruption_level:0 "Государство-клептократия"
 
+ stability_bad: "Низкая легитимность"
+ stability_middle: "Удовлетворительная легитимность"
+ stability_nice: "Нормальная легитимность"
+ stability_great: "Высокая легитимность"
+ stability_heaven_m: "Лидер нации"
+ stability_heaven_n: "Лидер нации"
+ stability_heaven_c: "Лидер нации"
+ stability_heaven_f: "Лидер нации"
+ stability_heaven_d: "Лидер нации"
+
  TRP_GovUpset:0 "Обреченность государства"
  TRB_call_for_unity_1:0 "Борьба за независимость"
  ORB_WorkHandsIdea:0 "Новые рабочие места"

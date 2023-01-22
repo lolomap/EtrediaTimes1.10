@@ -1,8 +1,14 @@
 ideas = {
-	country = {
+	stability_modifiers = {
 		stability_heaven_f = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
+
+            allowed = {
+                has_government = fascism
+            }
 
 			cancel = {
 				OR = {
@@ -17,6 +23,7 @@ ideas = {
 					has_idea = stability_heaven_n
 				}
 			}
+            level = 9
 
 			modifier = {
 				surrender_limit = 0.2
@@ -25,8 +32,14 @@ ideas = {
 			}
 		}
 		stability_heaven_d = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
+
+            allowed = {
+                has_government = democratic
+            }
 
 			cancel = {
 				OR = {
@@ -41,6 +54,7 @@ ideas = {
 					has_idea = stability_heaven_n
 				}
 			}
+            level = 8
 
 			modifier = {
 				surrender_limit = 0.2
@@ -49,8 +63,14 @@ ideas = {
 			}
 		}
 		stability_heaven_c = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
+
+            allowed = {
+                has_government = communism
+            }
 
 			cancel = {
 				OR = {
@@ -65,6 +85,7 @@ ideas = {
 					has_idea = stability_heaven_n
 				}
 			}
+            level = 7
 
 			modifier = {
 				surrender_limit = 0.2
@@ -73,8 +94,14 @@ ideas = {
 			}
 		}
 		stability_heaven_n = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
+
+            allowed = {
+                has_government = neutrality
+            }
 
 			cancel = {
 				OR = {
@@ -89,6 +116,7 @@ ideas = {
 					has_idea = stability_heaven_f
 				}
 			}
+            level = 6
 
 			modifier = {
 				surrender_limit = 0.2
@@ -97,8 +125,14 @@ ideas = {
 			}
 		}
 		stability_heaven_m = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
+
+            allowed = {
+                has_government = monarchism
+            }
 
 			cancel = {
 				OR = {
@@ -113,6 +147,7 @@ ideas = {
 					has_idea = stability_heaven_n
 				}
 			}
+            level = 5
 
 			modifier = {
 				surrender_limit = 0.2
@@ -122,7 +157,9 @@ ideas = {
 		}
 
 		stability_great = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
 
 			cancel = {
@@ -138,6 +175,7 @@ ideas = {
 					has_idea = stability_heaven_m
 				}
 			}
+            level = 4
 
 			modifier = {
 				surrender_limit = 0.1
@@ -145,10 +183,13 @@ ideas = {
 			}
 		}
 		stability_nice = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
 
-
+            level = 3
+            default = yes
 			cancel = {
 				OR = {
 					has_idea = stability_great
@@ -164,7 +205,9 @@ ideas = {
 			}
 		}
 		stability_middle = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
 
 			cancel = {
@@ -180,6 +223,7 @@ ideas = {
 					has_idea = stability_heaven_m
 				}
 			}
+            level = 2
 
 			modifier = {
 				surrender_limit = -0.15
@@ -187,7 +231,9 @@ ideas = {
 			}
 		}
 		stability_bad = {
-			allowed = {always = no}
+			allowed_to_remove = {
+                always = no
+            }
 			removal_cost = -1
 
 			cancel = {
@@ -203,14 +249,16 @@ ideas = {
 					has_idea = stability_heaven_m
 				}
 			}
+            level = 1
 
 			modifier = {
 				surrender_limit = -0.2
 				drift_defence_factor = -0.3
 			}
 		}
+    }
 
-
+    country = {
 
 		faction_with_wish = {
 			allowed = {always = no}

@@ -30,6 +30,79 @@
 #			}
 #		}
 
+DIPLOMACY_OFFER_FACTION_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
+
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
+DIPLOMACY_SEND_ATTACHE_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
+DIPLOMACY_NONAGGRESSIONPACT_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
+DIPLOMACY_IMPROVERELATION_ENABLE_TRIGGER = {
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+}
+
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 	NOT = {
@@ -83,6 +156,15 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 
 DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
@@ -276,6 +358,15 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 	if = {
@@ -311,6 +402,15 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 	if = {
@@ -346,6 +446,15 @@ DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 	if = {
@@ -381,6 +490,15 @@ DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
@@ -437,6 +555,15 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
@@ -493,6 +620,15 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	if = {
@@ -540,6 +676,15 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	if = {
@@ -776,4 +921,13 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+    if = {
+        limit = {
+            FROM = {has_country_flag = BRAND_NEW_COUNTRY}
+        }
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
+            has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
 }

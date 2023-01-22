@@ -28,8 +28,10 @@ idea_categories = {
 
 	government_1 = {
 		slot = press_laws
-                slot = migration_laws
+        slot = migration_laws
 		slot = corruption_laws
+        slot = country_type_status
+        slot = stability_modifiers
 		
 		cost = 150
 		removal_cost = 0
