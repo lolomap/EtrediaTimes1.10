@@ -5,7 +5,8 @@ crysis_startable = {
     not = {is_subject_of = ROOT}
     not = {has_war_with = ROOT}
     not = {has_non_aggression_pact_with = ROOT}
-    threat > 0.09
+    not = {OR = {has_idea = DIR_revolt has_idea = DIR_revolt2}}
+    threat > 0.04
 }
 
 crysis_capitulated = {
@@ -42,5 +43,24 @@ crysis_rewardable = {
         crysis_capitulated = yes
         crysis_minor_occupy = yes
         crysis_cores_occupy = yes
+    }
+}
+
+is_asian = {
+    OR = {
+        original_tag = UNC
+        original_tag = GAR
+        original_tag = KCE
+        original_tag = LOD
+        original_tag = ZOG
+        original_tag = HOR
+        original_tag = ECE
+        original_tag = GWA
+        original_tag = KYU
+        original_tag = DNG
+        original_tag = KLU
+        original_tag = BSH
+        original_tag = SOL
+        original_tag = YEO
     }
 }

@@ -519,7 +519,7 @@ scripted_gui = {
                     d_calc_crysis = yes
 
                     ROOT = {clr_country_flag = force_action_win_opened}
-                    var:v = {ROOT = {clr_country_flag = crysis_ai_minor@PREV}}
+                    var:ROOT.cr_ai_minor_target = {ROOT = {clr_country_flag = crysis_ai_minor@PREV}}
                     ROOT = {clr_country_flag = crysis_ai_ready@PREV}
                 }
             }

@@ -106,26 +106,7 @@ country_event = {
 		
 	option = {
 	    name = fscb.5.a
-		FSC = {
-	        white_peace = UCB
-	        diplomatic_relation	= {country = UCB relation = non_aggression_pact active = yes}
-			country_event = { id = fscb.6 days = 30 }
-			country_event = { id = fscb.10 days = 5 }
-			add_timed_idea = { idea = FSC_lose days = 240 }
-		}
-		hidden_effect = {
-			FSC = { 
-			    swap_ideas = {
-				    remove_idea = extensive_conscription
-		            add_idea = disarmed_nation
-	            }
-			    swap_ideas = {
-				    remove_idea = limited_conscription
-		            add_idea = disarmed_nation
-	            }
-				add_manpower = -1000000
-		    }
-		}
+		UCB = {country_event = {id = fscb.18 days = 1}}
 
 		ai_chance = {
 			factor = 90
@@ -520,4 +501,45 @@ country_event = {
 			popularity = 0.1
 		}
 	}
+}
+
+country_event = {
+    id = fscb.18
+    title = fscb.18.t
+    desc = fscb.18.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = fscb.18.a
+        FSC = {
+	        white_peace = UCB
+	        diplomatic_relation	= {country = UCB relation = non_aggression_pact active = yes}
+			country_event = { id = fscb.6 days = 30 }
+			country_event = { id = fscb.10 days = 5 }
+			add_timed_idea = { idea = FSC_lose days = 240 }
+		}
+		hidden_effect = {
+			FSC = { 
+			    swap_ideas = {
+				    remove_idea = extensive_conscription
+		            add_idea = disarmed_nation
+	            }
+			    swap_ideas = {
+				    remove_idea = limited_conscription
+		            add_idea = disarmed_nation
+	            }
+				add_manpower = -1000000
+		    }
+		}
+    }
+    option = {
+        name = fscb.18.b
+        FSC = {
+		    add_timed_idea = { idea = FSC_desperate_defense days = 120 }
+		}
+		hidden_effect = {
+		    FSC = { country_event = { id = fscb.11 days = 30 } }
+		}
+    }
 }

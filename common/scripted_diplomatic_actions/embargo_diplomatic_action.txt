@@ -29,7 +29,7 @@ scripted_diplomatic_actions = {
 				limit = {
 					ROOT = {is_major = yes}
 				}
-				ROOT = {add_threat = 2}
+				#ROOT = {add_threat = 2}
 			}
 			ROOT = {
 				add_to_array = {embargoList = PREV}
@@ -92,7 +92,7 @@ scripted_diplomatic_actions = {
 			}
 			modifier = {
 				ROOT = {
-					check_variable = {world_influence < 2.1}
+					check_variable = {world_influence < 4}
 				}
 				add = -900
 			}

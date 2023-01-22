@@ -160,6 +160,28 @@ d_sort_wi = {
 
 }
 
+war_crysis_ban_factions = {
+    if = {
+        limit = {not = {is_in_faction}}
+
+        if = {
+            limit = {has_rule = can_join_factions}
+            set_country_flag = wcrysis_can_join_factions
+        }
+        else = {clr_country_flag = wcrysis_can_join_factions}
+        
+        set_rule = {can_join_factions = no}
+    }
+}
+
+war_crysis_unban_factions = {
+    if = {
+        limit = {has_country_flag = wcrysis_can_join_factions}
+        set_rule = {can_join_factions = yes}
+        clr_country_flag = wcrysis_can_join_factions
+    }
+}
+
 encount_minors = {
     every_owned_state = {
         for_each_loop = {
@@ -197,6 +219,7 @@ encount_majors = {
                     }
                 }
             }
+            has_war = no
             
             not = {is_in_array {global.crysis_majors = THIS}}
         }
@@ -300,6 +323,11 @@ crysis_reward = {
     if = { #марионетка
         limit = {check_variable = {global.type_crysis = 0}}
         var:global.sender_crysis = {puppet = global.to_crysis}
+
+        if = {
+            limit = {var:global.sender_crysis = {has_government = democratic}}
+            add_threat = -5
+        }
     }
     else_if = { #корки
         limit = {check_variable = {global.type_crysis = 1}}
@@ -362,6 +390,7 @@ d_end_war_crysis = {
 
     var:global.sender_crysis = {
         white_peace = global.to_crysis
+        war_crysis_unban_factions = yes
     }
     for_each_scope_loop = {
         array = global.crysis_senders
@@ -369,11 +398,13 @@ d_end_war_crysis = {
             array = global.crysis_tos
             white_peace = PREV
             white_peace = global.sender_crysis
+            war_crysis_unban_factions = yes
         }
     }
     for_each_scope_loop = {
         array = global.crysis_senders
         white_peace = global.to_crysis
+        war_crysis_unban_factions = yes
     }
 
 

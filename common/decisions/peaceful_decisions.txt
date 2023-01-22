@@ -6,7 +6,7 @@ peaceful_democratic = {
 			OR = {
 				AND = {
 					has_government = democratic
-					has_added_tension_amount < 2
+					has_added_tension_amount < 5
 				}
 			}
 		}
@@ -15,7 +15,7 @@ peaceful_democratic = {
 			OR = {
 				AND = {
 					has_government = democratic
-					has_added_tension_amount < 2
+					has_added_tension_amount < 5
 					check_variable = {pi_master > 3}
 					OR = {
 						custom_trigger_tooltip = {
@@ -47,11 +47,11 @@ peaceful_democratic = {
 
 		available = {
 			has_government = democratic
-			has_added_tension_amount < 1
+			has_added_tension_amount < 15
 		}
 		visible = {
 			has_government = democratic
-			has_added_tension_amount < 1
+			has_added_tension_amount < 5
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = world_influence_major
@@ -61,22 +61,22 @@ peaceful_democratic = {
 			}
 		}
 
-		cost = 50
-		days_re_enable = 100
+		cost = 25
+		days_re_enable = 50
 
 		complete_effect = {
-			add_war_support = -0.01
+			add_war_support = -0.005
 			add_to_variable = {pi_master = 1}
 			add_command_power = -10
 			every_other_country = {
 				if = {
 					limit = {has_government = fascism}
-					add_war_support = -0.01
-					add_stability = -0.01
+					add_war_support = -0.005
+					add_stability = -0.002
 				}
 				else = {
-					add_war_support = -0.01
-					add_political_power = 5
+					add_war_support = -0.005
+					add_political_power = 10
 				}
 			}
 		}
@@ -208,7 +208,7 @@ peaceful_democratic = {
 
 		available = {
 			has_government = democratic
-			has_added_tension_amount < 2
+			has_added_tension_amount < 5
 			custom_trigger_tooltip = {
 				tooltip = pi_master_more_then_40
 				check_variable = {pi_master > 40}
@@ -218,7 +218,7 @@ peaceful_democratic = {
 		}
 		visible = {
 			has_government = democratic
-			has_added_tension_amount < 2
+			has_added_tension_amount < 5
 			check_variable = {pi_master > 15}
 			any_country = {
 				num_of_nukes > 0

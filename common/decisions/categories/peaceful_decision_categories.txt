@@ -3,8 +3,8 @@ peaceful_democratic = {
 	
 	visible = {
 		has_government = democratic
-		has_added_tension_amount < 2
-		threat > 0.1
+		has_added_tension_amount < 5
+		#threat > 0.05
 		OR = {
 			is_ai = no
 			is_historical_focus_on = no
