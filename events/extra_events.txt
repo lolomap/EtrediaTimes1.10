@@ -1439,14 +1439,21 @@ country_event = { # Кризис закончился
             }
             random_country = {country_event = mechanics.38}
             var:global.sender_crysis = {
+                war_crysis_ban_factions = yes
+
                 declare_war_on = {
                     target = global.to_crysis
                     type = annex_everything
                 }
 
                 var:global.to_crysis = {
+                    war_crysis_ban_factions = yes
+
                     for_each_scope_loop = {
                         array = global.crysis_senders
+
+                        war_crysis_ban_factions = yes
+
                         add_to_war = {
                             targeted_alliance = PREV.PREV
                             enemy = PREV
@@ -1454,6 +1461,9 @@ country_event = { # Кризис закончился
                     }
                     for_each_scope_loop = {
                         array = global.crysis_tos
+
+                        war_crysis_ban_factions = yes
+
                         add_to_war = {
                             targeted_alliance = PREV
                             enemy = PREV.PREV
@@ -1556,10 +1566,10 @@ country_event = {
         if = {
             limit = {
                 has_global_flag = war_crysis
-                var:global.sender_crysis = {surrender_progress < 0.1}
+                var:global.sender_crysis = {surrender_progress < 0.8}
                 crysis_rewardable = no
             }
-            random_country = {country_event = {id = mechanics.38 days = 7}}
+            random_country = {country_event = {id = mechanics.38 days = 3}}
         }
         else = {
             d_end_war_crysis = yes
@@ -2235,6 +2245,7 @@ country_event = {
 	id = randev.11
 	title = randev.11.t
 	desc = randev.11.d
+    hidden = yes
 
 	is_triggered_only = yes
 

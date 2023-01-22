@@ -4,7 +4,7 @@
     fa_send: "Отправить требование"	
     fa_puppet: "Назначить лояльное правительство"
     fa_cores: "Возврат территорий к [ROOT.GetNameDef]"
-    fa_minor: "Освободить [THIS.GetNameDef]"
+    fa_minor: "Освободить [?v.GetNameDef]"
     political_crysis: "Политический кризис"
     war_crysis_: "Локальный конфликт"
     war_crysis: "Разросшийся кризис"

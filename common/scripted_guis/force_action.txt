@@ -456,27 +456,33 @@ scripted_gui = {
         ai_weights = {
             faw_exit_button_click = {ai_will_do = {base = 0 modifier = {crysis_startable = no add = 100}}}
             cRelease_click = {
-                ai_will_do = {base = 0
-                modifier = {
-                    ROOT = {has_country_flag = crysis_ai_minor@PREV}
-                    add = 10000
-                }
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        var:ROOT.cr_ai_minor_target = {ROOT = {has_country_flag = crysis_ai_minor@PREV}}
+                        any_controlled_state = {
+                            is_core_of = var:ROOT.cr_ai_minor_target
+                        }
+                        add = 10000
+                    }
                 }
             }
             puppet_button_click = {
-                ai_will_do = {base = 0
-                modifier = {
-                    ROOT = {has_country_flag = crysis_ai_puppet@PREV}
-                    add = 10000
-                }
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        ROOT = {has_country_flag = crysis_ai_puppet@PREV}
+                        add = 10000
+                    }
                 }
             }
             cores_button_click = {
-                ai_will_do = {base = 0
-                modifier = {
-                    ROOT = {has_country_flag = crysis_ai_cores@PREV}
-                    add = 100000
-                }
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        ROOT = {has_country_flag = crysis_ai_cores@PREV}
+                        add = 100000
+                    }
                 }
             }
         }
@@ -494,16 +500,17 @@ scripted_gui = {
 
             cRelease_click = {
                 if = {
-                    limit = {NOT = {FROM = {tag = PREV}}}
+                    limit = {always = yes}
 
                     set_global_flag = {
                         flag = political_crysis
                         days = 60
                         value = 1
                     }
-                    set_variable = {global.to_crysis = FROM}
+                    set_variable = {global.to_crysis = THIS}
                     set_variable = {global.sender_crysis = ROOT}
-                    set_variable = {global.minor_crysis = THIS}
+                    log = "[?v.GetTag]"
+                    set_variable = {global.minor_crysis = ROOT.cr_ai_minor_target}
 
                     set_variable = {global.type_crysis = 2}
                     
@@ -512,7 +519,7 @@ scripted_gui = {
                     d_calc_crysis = yes
 
                     ROOT = {clr_country_flag = force_action_win_opened}
-                    ROOT = {clr_country_flag = crysis_ai_minor@PREV}
+                    var:ROOT.cr_ai_minor_target = {ROOT = {clr_country_flag = crysis_ai_minor@PREV}}
                     ROOT = {clr_country_flag = crysis_ai_ready@PREV}
                 }
             }
@@ -577,7 +584,7 @@ scripted_gui = {
             #l2_visible = {always = no} cores_button_visible = {always = no}
             
             cRelease_click_enabled = {
-                crysis_startable_minor = yes
+                crysis_startable = yes
             }
             puppet_button_click_enabled = {
                 crysis_startable = yes
@@ -597,13 +604,14 @@ scripted_gui = {
 			minors_gb = {
 				array = minor_countries
 				entry_container = minors_entry
-				change_scope = yes
+				change_scope = no
+                value = v
 			}
 		}
 
 		properties = {
 			cFlag = {
-				image = [THIS.GetFlag]
+				image = [?v.GetFlag]
 			}
             
 		}
