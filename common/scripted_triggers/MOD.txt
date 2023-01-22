@@ -1,11 +1,16 @@
 crysis_startable = {
     not = {has_global_flag = political_crysis}
     not = {has_global_flag = war_crysis}
-    ROOT = {not = {has_country_flag = crysis_delay}}
     not = {is_subject_of = ROOT}
     not = {has_war_with = ROOT}
     not = {has_non_aggression_pact_with = ROOT}
     not = {OR = {has_idea = DIR_revolt has_idea = DIR_revolt2}}
+
+    ROOT = {
+        not = {has_country_flag = crysis_delay}
+        is_subject = no
+    }
+
     threat > 0.04
 }
 

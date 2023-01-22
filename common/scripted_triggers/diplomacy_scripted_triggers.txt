@@ -30,6 +30,26 @@
 #			}
 #		}
 
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+    if = {
+        limit = {has_country_flag = banned_for_factions}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
+        }
+    }
+}
+
+DIPLOMACY_CALL_ALL_ALLIES_ENABLE_TRIGGER = {
+    if = {
+        limit = {has_country_flag = banned_for_factions}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
+        }
+    }
+}
+
 DIPLOMACY_OFFER_FACTION_ENABLE_TRIGGER = {
     if = {
         limit = {
@@ -38,6 +58,13 @@ DIPLOMACY_OFFER_FACTION_ENABLE_TRIGGER = {
         custom_trigger_tooltip = {
             tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
             has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+    if = {
+        limit = {has_country_flag = banned_for_factions}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
         }
     }
 }
@@ -53,6 +80,13 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
             has_country_flag = ACCEPT_EXISTANCE_@FROM
         }
     }
+    if = {
+        limit = {has_country_flag = banned_for_factions}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
+        }
+    }
 }
 
 DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
@@ -63,6 +97,13 @@ DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
         custom_trigger_tooltip = {
             tooltip = ALLOW_ACCEPT_EXISTANCE_tooltip
             has_country_flag = ACCEPT_EXISTANCE_@FROM
+        }
+    }
+    if = {
+        limit = {has_country_flag = banned_for_factions}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
         }
     }
 }

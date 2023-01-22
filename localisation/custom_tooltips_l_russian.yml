@@ -1,5 +1,6 @@
 ﻿l_russian:
   ALLOW_ACCEPT_EXISTANCE_tooltip: "Мы должны признать независимость этого государства"
+  ALLOW_BANNED_CRYSIS_tooltip: "Нельзя во время войны из-за кризиса"
 
   has_world_war:0 "§RУчаствует в мировой войне§!\n"
 

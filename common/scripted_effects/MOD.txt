@@ -171,6 +171,7 @@ war_crysis_ban_factions = {
         else = {clr_country_flag = wcrysis_can_join_factions}
         
         set_rule = {can_join_factions = no}
+        set_country_flag = banned_for_factions
     }
 }
 
@@ -180,6 +181,7 @@ war_crysis_unban_factions = {
         set_rule = {can_join_factions = yes}
         clr_country_flag = wcrysis_can_join_factions
     }
+    clr_country_flag = banned_for_factions
 }
 
 encount_minors = {
@@ -220,6 +222,7 @@ encount_majors = {
                 }
             }
             has_war = no
+            is_subject = no
             
             not = {is_in_array {global.crysis_majors = THIS}}
         }
