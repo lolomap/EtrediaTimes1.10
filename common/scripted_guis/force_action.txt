@@ -510,7 +510,8 @@ scripted_gui = {
                     set_variable = {global.to_crysis = THIS}
                     set_variable = {global.sender_crysis = ROOT}
                     log = "[?v.GetTag]"
-                    set_variable = {global.minor_crysis = ROOT.cr_ai_minor_target}
+                    #set_variable = {global.minor_crysis = ROOT.cr_ai_minor_target}
+                    set_variable = {global.minor_crysis = v}
 
                     set_variable = {global.type_crysis = 2}
                     
