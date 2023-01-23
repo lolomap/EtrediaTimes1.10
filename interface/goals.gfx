@@ -1,6 +1,21 @@
 spriteTypes = {
 
     SpriteType = {
+        name = "GFX_goal_sbu_siburian_alliance"
+        texturefile="gfx/interface/goals/goal_sbu_siburian_alliance.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_annex_RGY"
+        texturefile="gfx/interface/goals/goal_sbu_annex_RGY.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_divide_MOF"
+        texturefile="gfx/interface/goals/goal_sbu_divide_MOF.dds"
+    }
+
+    SpriteType = {
         name = "GFX_goal_sbu_ucb_enemy"
         texturefile="gfx/interface/goals/goal_sbu_ucb_enemy.dds"
     }
