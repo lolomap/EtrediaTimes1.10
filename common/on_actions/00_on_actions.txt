@@ -2,6 +2,8 @@ on_actions = {
 	on_startup = {
 		effect = {
 
+            TAL = {scoped_play_song = "TALSHIK"}
+
             if = {
                 limit = {
                     has_game_rule = {
