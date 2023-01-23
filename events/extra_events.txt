@@ -1456,7 +1456,7 @@ country_event = { # Кризис закончился
 
                         set_temp_variable_to_random = scare_leave_chance
                         if = {
-                            limit = {OR = {check_variable = {scare_leave_chance > 0.99} is_ai = no}}
+                            limit = {OR = {check_variable = {scare_leave_chance > 0.01} is_ai = no}}
                             add_to_war = {
                                 targeted_alliance = PREV.PREV
                                 enemy = PREV
@@ -1470,7 +1470,7 @@ country_event = { # Кризис закончился
 
                         set_temp_variable_to_random = scare_leave_chance
                         if = {
-                            limit = {OR = {check_variable = {scare_leave_chance > 0.99} is_ai = no}}
+                            limit = {OR = {check_variable = {scare_leave_chance > 0.01} is_ai = no}}
                             add_to_war = {
                                 targeted_alliance = PREV
                                 enemy = PREV.PREV
