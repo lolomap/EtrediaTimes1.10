@@ -230,6 +230,12 @@ encount_majors = {
 
         add_to_array = {global.crysis_majors = THIS}
     }
+    if = {
+        limit = {var:global.to_crysis = {is_subject = yes}}
+        var:global.to_crysis = {
+            OVERLORD = {add_to_array = {global.crysis_majors = THIS}}
+        }
+    }
 }
 
 d_calc_crysis = {

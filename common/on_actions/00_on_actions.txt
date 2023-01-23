@@ -21,6 +21,25 @@ on_actions = {
                     set_country_flag = BRAND_NEW_COUNTRY
                 }
             }
+            #Не признаны: Террапилья ИИДшником, Лебдел, Солопут, Кюрю, Гванчинь и Хорга,Дирийцы
+            TRP = {
+                set_country_flag = BRAND_NEW_COUNTRY
+                set_country_flag = ai_not_accept_existance
+                every_other_country = {
+                    limit = {NOT = {tag = IID}}
+                    set_country_flag = ACCEPT_EXISTANCE_@PREV
+                }
+            }
+            LBD = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
+            SOL = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
+            KYU = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
+            GWA = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
+            HOR = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
+            DEM = {set_country_flag = ai_not_accept_existance}
+            BLJ = {set_country_flag = ai_not_accept_existance}
+            SDI = {set_country_flag = ai_not_accept_existance}
+            DIB = {set_country_flag = ai_not_accept_existance}
+
 
             SBU = {
                 set_variable_to_random = sbu_frev_rand
