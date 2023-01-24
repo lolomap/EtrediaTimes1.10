@@ -22,6 +22,10 @@ on_actions = {
                     limit = {NOT = {country_exists = THIS}}
                     set_country_flag = BRAND_NEW_COUNTRY
                 }
+                
+				set_variable = {uranium_cost = 2}
+				set_variable = {winfluence_cost = 1}
+
             }
             #Не признаны: Террапилья ИИДшником, Лебдел, Солопут, Кюрю, Гванчинь и Хорга,Дирийцы
             TRP = {
@@ -83,11 +87,9 @@ on_actions = {
             }
 
 			every_country = {
-				set_variable = {uranium_cost = 2}
-				set_variable = {winfluence_cost = 1}
-
                 encount_minors = yes
 			}
+
 
 			#########################
 			# ASIAN MINORS WANT WAR #
