@@ -1269,7 +1269,7 @@ focus_tree = {
 
 		completion_reward = {
 			SBU = {
-				add_ideas = SBU_eastblock_friend
+				add_timed_idea = {idea = SBU_eastblock_friend days = 120}
 				EIK = { add_opinion_modifier = { target = ROOT modifier = SBU_eik_relations } }
 			}
 		}
@@ -2211,7 +2211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_siburian_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_siburian_alliance
 		cost = 10
 		prerequisite = {
 			focus = SBU_fascism_focus
@@ -2231,7 +2231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_annex_RGY
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_annex_RGY
 		cost = 10
 		prerequisite = {
 			focus = SBU_siburian_alliance
@@ -2285,7 +2285,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_divide_MOF
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_divide_MOF
 		cost = 10
 		prerequisite = {
 			focus = SBU_annex_RGY

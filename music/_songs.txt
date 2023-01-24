@@ -6,7 +6,7 @@ music = {
 	chance = {
 		modifier = {
 			tag = TAL
-			factor = 100
+			add = 100000
 		}
 		modifier = {
 			not = {tag = TAL}

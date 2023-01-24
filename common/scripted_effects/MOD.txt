@@ -225,7 +225,7 @@ encount_majors = {
             has_war = no
             is_subject = no
             
-            not = {is_in_array {global.crysis_majors = THIS}}
+            not = {is_in_array = {global.crysis_majors = THIS}}
         }
 
         add_to_array = {global.crysis_majors = THIS}
