@@ -400,7 +400,7 @@ d_end_war_crysis = {
 
     var:global.sender_crysis = {
         white_peace = global.to_crysis
-        
+        war_crysis_unban_factions = yes
     }
     for_each_scope_loop = {
         array = global.crysis_senders
@@ -408,7 +408,7 @@ d_end_war_crysis = {
             array = global.crysis_tos
             white_peace = PREV
             white_peace = global.sender_crysis
-            
+            war_crysis_unban_factions = yes
         }
     }
     for_each_scope_loop = {
@@ -416,7 +416,7 @@ d_end_war_crysis = {
         for_each_scope_loop = {
             array = global.crysis_tos
             white_peace = PREV
-            
+            war_crysis_unban_factions = yes
         }
         white_peace = global.to_crysis
     }
@@ -425,14 +425,14 @@ d_end_war_crysis = {
         for_each_scope_loop = {
             array = global.crysis_senders
             white_peace = PREV
-            
+            war_crysis_unban_factions = yes
         }
         white_peace = global.sender_crysis
     }
     for_each_scope_loop = {
         array = global.crysis_senders
         white_peace = global.to_crysis
-        
+        war_crysis_unban_factions = yes
     }
 
 
