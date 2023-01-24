@@ -647,11 +647,12 @@ on_actions = {
 			every_neighbor_country = {
 				if = {
 					limit = {
+                        is_historical_focus_on = no
 						crysis_startable = yes
 						ROOT = {
 							has_opinion = {
 								target = PREV
-								value < -19
+								value < -39
 							}
 						}
                         threat < 0.7
@@ -755,7 +756,7 @@ on_actions = {
 					if = {limit = {is_in_faction=yes}
 						add_to_temp_variable = {crysis_wish = -5}
 					}
-					if = {limit = {ROOT={has_opinion={target=PREV value<-39}}}
+					if = {limit = {ROOT={has_opinion={target=PREV value<-69}}}
 						add_to_temp_variable = {crysis_wish = 5}
 					}
 					if = {limit = {ROOT={has_war=yes}}
@@ -847,7 +848,10 @@ on_actions = {
                         is_in_array = {global.crysis_senders = ROOT}
                     }
                     set_temp_variable = {widif = global.crysis_s_totalwi}
-                    divide_temp_variable = {widif = global.crysis_t_totalwi}
+                    if = {
+                        limit = {check_variable = {global.crysis_t_totalwi > 1}}
+                        divide_temp_variable = {widif = global.crysis_t_totalwi}
+                    }
                     if = {
                         limit = {
                             check_variable = {widif < 0.51}
@@ -901,6 +905,11 @@ on_actions = {
                     }
                 }
 
+                
+                set_temp_variable_to_random = cr_ai_allow_wish
+                if = {limit = {is_in_array = {global.crysis_senders = ROOT}}
+                    add_to_temp_variable = {cr_ai_allow_wish = 0.05}
+                }
                 if = {
                     limit = {
                         OR = {
@@ -913,8 +922,7 @@ on_actions = {
                         limit = {has_country_flag = crysis_scared}
                         if = {
                             limit = {
-                                set_temp_variable_to_random = cr_ai_allow_wish
-                                check_variable = {cr_ai_allow_wish < 0.1}
+                                check_variable = {cr_ai_allow_wish < 0.2}
                             }
                             set_country_flag = cr_ai_allow
                         }
@@ -923,15 +931,19 @@ on_actions = {
                         limit = {not = {has_country_flag = crysis_angry}}
                         if = {
                             limit = {
-                                set_temp_variable_to_random = cr_ai_allow_wish
-                                check_variable = {cr_ai_allow_wish < 0.01}
+                                check_variable = {cr_ai_allow_wish < 0.025}
                             }
                             set_country_flag = cr_ai_allow
                         }
                     }
-                    else_if = {
-                        limit = {has_country_flag = crysis_push_fc}
-                        set_country_flag = cr_ai_press
+                    else = {
+                        if = {
+                            limit = {has_country_flag = crysis_push_fc}
+                            set_country_flag = cr_ai_press
+                        }
+                        if = {limit = {check_variable = {cr_ai_allow_wish < 0.06}}
+                            set_country_flag = cr_ai_allow
+                        }
                     }
                 }
                 else = {
@@ -939,7 +951,6 @@ on_actions = {
                         limit = {has_country_flag = crysis_scared}
                         if = {
                             limit = {
-                                set_temp_variable_to_random = cr_ai_allow_wish
                                 check_variable = {cr_ai_allow_wish < 0.3}
                             }
                             set_country_flag = cr_ai_allow
@@ -949,9 +960,13 @@ on_actions = {
                         limit = {not = {has_country_flag = crysis_angry}}
                         if = {
                             limit = {
-                                set_temp_variable_to_random = cr_ai_allow_wish
                                 check_variable = {cr_ai_allow_wish < 0.05}
                             }
+                            set_country_flag = cr_ai_allow
+                        }
+                    }
+                    else = {
+                        if = {limit = {check_variable = {cr_ai_allow_wish < 0.12}}
                             set_country_flag = cr_ai_allow
                         }
                     }
