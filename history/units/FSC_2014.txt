@@ -547,7 +547,7 @@ units = {
 
 air_wings = {
 	51 = {
-		fighter_equipment_1 = {
+		jet_fighter_equipment_1 = {
 			owner = "FSC" 
 			creator = "FSC"
 			amount = 445

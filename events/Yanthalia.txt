@@ -427,3 +427,63 @@ country_event = {
 	name = yan.21.a
     }
 }
+
+country_event = {
+        id = yan.22
+        title = yan.22.t
+        desc = yan.22.d
+
+		is_triggered_only = yes
+
+		option = {
+			trigger = {
+			original_tag = YAN
+			}
+			name = yan.22.a
+			YAN = { 
+				transfer_state = 233
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 236
+			}
+			add_army_experience = 15
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+		option = {
+			trigger = {
+			original_tag = TRB
+			}
+			name = yan.22.b
+			political_power = -50
+			add_war_support = -0.15
+			add_stability = -0.05
+		}
+}
+
+country_event = {
+        id = yan.23
+        title = yan.23.t
+        desc = yan.23.d
+
+		is_triggered_only = yes
+
+		option = {
+			trigger = {
+			original_tag = YAN
+			}
+			name = yan.23.a
+			political_power = -150
+			add_war_support = -0.1
+			add_stability = -0.1
+		}
+		option = {
+			trigger = {
+			original_tag = TRB
+			}
+			name = yan.23.b
+			political_power = 150
+			add_stability = 0.25
+			add_war_support = 0.5
+		}
+}

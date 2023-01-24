@@ -18,3 +18,95 @@ default = {
 	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
 	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
 }
+
+UCB = {
+	male = {
+		names = { Neirst Felix Taiko Terine Anot Anatoly Boris Sladko Paul Nartis Lucas 
+			Jordane Isamo Sladoslash Magbe Tokshe Karlo Vlad John Robert }
+	}
+	female = {
+		names = { Women }
+	}
+	surnames = {
+		Narabel Ortiz Delingo Orfier Nitago Radbo Zarchih Vairaho Roshanne Ralle Hoffmann Perepo Kisch Depiche
+	}
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon }
+}
+
+SBU = {
+	male = {
+		names = { Khari Tihomir Til Brajko Vukota Sergey Dragan Ilert John Loh Bobas }
+	}
+	female = {
+		names = { Women }
+	}
+	surnames = {
+		Kolert Razhko Sapat Bitjko Kolovar Kzhachich Kvasikh Norsh 
+		}
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon }
+}
+
+FSC = {
+	male = {
+		names = { Tbor Yar Lebrich Terine Anot Anatoly Boris Vladimir Paul Nartis Chob 
+			Iek Darnek Cavik Magbe Tokshe Karlo Vlad John Robert }
+	}
+	female = {
+		names = { KisKis }
+	}
+	surnames = {
+		Narabel Ortiz Delingo Venteron Smif Libarhe Xiavi Vairaho Roshanne Ralle Potoka Perepo Gonzale Piri Meth
+	}
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+}
+
+KAR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Hildegard }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Kartilia" "Dolfo" "Fighter of Gekelen" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+PIN = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Hildegard }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Pinka" "Dolfo" "Fighter of Cvelsfburg" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+SHE = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie Hildegard }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Sheregia" "Dolfo" "Fighter of Glivven" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}

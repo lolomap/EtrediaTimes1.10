@@ -1,7 +1,7 @@
 equipments = {
 
 	motorized_equipment = {
-		year = 1936
+		year = 1980
 
 		is_archetype = yes
 		picture = archetype_motorized_equipment		
@@ -30,7 +30,7 @@ equipments = {
 	}
 
 	motorized_equipment_1 = {
-		year = 1936
+		year = 1980
 
 		archetype = motorized_equipment
 		priority = 30			

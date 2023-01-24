@@ -1,0 +1,13 @@
+YAN_internal_politics = {
+	visible = {
+		always = yes
+	}
+}
+
+YAN_external_politics = {
+	visible = {
+		original_tag = YAN
+		SBU = { has_completed_focus = SBU_aldeko_operation }
+		SBU = { has_war = yes }
+	}
+}

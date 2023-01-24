@@ -299,7 +299,7 @@ units = {
 
 air_wings = {
 	142 = {
-		fighter_equipment_0 = {
+		jet_fighter_equipment_1 = {
 			owner = "PIN" 
 			creator = "PIN"
 			amount = 86

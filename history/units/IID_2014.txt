@@ -257,7 +257,7 @@ units = {
 
 air_wings = {
 	94 = {
-		fighter_equipment_0 = {
+		jet_fighter_equipment_1 = {
 			owner = "IID" 
 			creator = "IID"
 			amount = 115

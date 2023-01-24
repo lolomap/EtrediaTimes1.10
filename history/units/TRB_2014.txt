@@ -396,3 +396,28 @@ units = {
 
         }
 }
+
+air_wings = {
+	225 = {
+		jet_fighter_equipment_1 = {
+			owner = "TRB" 
+			creator = "TRB"
+			amount = 105
+		}
+		CAS_equipment_1 = {
+			owner = "TRB" 
+			creator = "TRB"
+			amount = 36
+		}
+		nav_bomber_equipment_1 = {
+			owner = "TRB" 
+			creator = "TRB"
+			amount = 25
+		}
+		tac_bomber_equipment_1 = {
+			owner = "TRB" 
+			creator = "TRB"
+			amount = 10
+		}
+	}
+}

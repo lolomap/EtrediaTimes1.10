@@ -249,6 +249,8 @@
  YAN_min_taxes:0 "Малый уровень налогов"
  YAN_max_taxes:0 "Огромный уровень налогов"
  YAN_fascism_idea:0 "Победа фашистских идеалов"
+ YAN_voenprom_subsidii:0 "Субсидирование военпрома"
+ YAN_cool_officers:0 "Новая программа подготовки офицеров"
  DIR_government_crisis:0 "Кризис власти"
  DIR_popular_unrest:0 "Народные волнения"
  DIR_radical_lobby:0 "Радикальное лобби в генералитете"
