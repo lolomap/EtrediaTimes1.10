@@ -274,30 +274,6 @@ on_actions = {
 	
 	on_weekly_SBU = {
 		effect = {
-			if = {
-				limit = {
-					has_country_leader = {
-						name = "Iret Kolert"
-						ruling_only = yes
-					}
-				}
-				add_to_variable = {kolert_long = 7}
-			}
-			if = {
-				limit = {
-					check_variable = {kolert_long > 720}
-				}
-				set_variable = { sbu_frev_rand = random }
-				multiply_variable = {sbu_frev_rand = 100}
-				if = {
-					limit = {check_variable = {sbu_frev_rand < 80}}
-					country_event = {id = sbu.65 days = 1}
-				}
-				else = {
-					country_event = {id = sbu.66 days = 1}
-					add_ideas = SBU_SFL_lost_economic_war
-				}
-			}
 
 			if = {
 				limit = {
