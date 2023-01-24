@@ -9,11 +9,40 @@ ideas = {
 	
 			modifier = {
 				political_power_gain = 0.1
-                                justify_war_goal_time = -0.3
-                                fascism_drift = 0.02
-                                war_support_factor = 0.1
+                justify_war_goal_time = -0.3
+                fascism_drift = 0.02
+                war_support_factor = 0.1
 			}
-       }
+    }
+	
+	YAN_cool_officers = {
+        picture = fff
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+	
+		modifier = {
+            command_power_gain_mult = 0.05
+			experience_gain_army_factor = 0.08
+			training_time_factor = -0.1
+		}
+    }
+	
+	YAN_voenprom_subsidii = {
+		picture = fff
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+	
+		modifier = {
+            production_factory_efficiency_gain_factor = 0.08
+			production_speed_arms_factory_factor = 0.15
+			production_oil_factor = 0.15
+			repair_speed_arms_factory_factor = 0.2
+		}
+    }
 	   
 	YAN_fascism_idea = {
         picture = fff

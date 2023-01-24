@@ -316,7 +316,7 @@ units = {
 
 air_wings = {
 	420 = {
-		fighter_equipment_0 = {
+		jet_fighter_equipment_1 = {
 			owner = "VRO" 
 			creator = "VRO"
 			amount = 125

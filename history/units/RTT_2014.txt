@@ -151,3 +151,18 @@ units = {
 
         }
 }
+
+air_wings = {
+	199 = {
+		jet_fighter_equipment_1 = {
+			owner = "RTT" 
+			creator = "RTT"
+			amount = 265
+		}
+		CAS_equipment_1 = {
+			owner = "RTT" 
+			creator = "RTT"
+			amount = 30
+		}
+	}
+}

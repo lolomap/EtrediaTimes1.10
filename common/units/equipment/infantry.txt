@@ -3,7 +3,7 @@
 equipments = {
 
 	infantry_equipment = {
-		year = 1936
+		year = 1980
 	
 		is_archetype = yes
 		picture = archetype_infantry_equipment		
@@ -42,7 +42,7 @@ equipments = {
 	}
 
 	infantry_equipment_0 = {
-		year = 1918
+		year = 1980
 	
 		archetype = infantry_equipment
 		active = yes
@@ -54,7 +54,7 @@ equipments = {
 
 	# Regular infantry  1936
 	infantry_equipment_1 = {
-		year = 1936
+		year = 2014
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
@@ -76,7 +76,7 @@ equipments = {
 
 	# Improved weapons  ~1939
 	infantry_equipment_2 = {
-		year = 1939
+		year = 2016
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
@@ -101,7 +101,7 @@ equipments = {
 	
 	# Advanced weapons  ~1942
 	infantry_equipment_3 = {
-		year = 1942
+		year = 2018
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_2

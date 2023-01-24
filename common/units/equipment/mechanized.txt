@@ -15,7 +15,7 @@ equipments = {
 		interface_category = interface_category_land
 		
 		#Misc Abilities
-		maximum_speed = 26
+		maximum_speed = 30
 		reliability = 0.7
 		
 		#Defensive Abilities
@@ -39,7 +39,7 @@ equipments = {
 			rubber = 1
 		}
 		
-		fuel_consumption = 2.4
+		fuel_consumption = 2
 	}
 
 	# ~1941

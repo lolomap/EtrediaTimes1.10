@@ -191,7 +191,7 @@ equipments = {
 
 		archetype = motorized_rocket_equipment
 		priority = 70
-		visual_level = 0
+		visual_level = 1
 	}
 	
 	motorized_rocket_equipment_2 = {
@@ -233,7 +233,7 @@ equipments = {
 		parent = motorized_rocket_equipment_2
 		picture = archetype_motorized_rocket_equipment_3			
 		priority = 40
-		visual_level = 1
+		visual_level = 2
 		
 		#Misc Abilities
 		reliability = 0.8
@@ -265,7 +265,7 @@ equipments = {
 		parent = motorized_rocket_equipment_3
 		picture = archetype_motorized_rocket_equipment_4			
 		priority = 40
-		visual_level = 1
+		visual_level = 2
 		
 		#Misc Abilities
 		reliability = 0.8
