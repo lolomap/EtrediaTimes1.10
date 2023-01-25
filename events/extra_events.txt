@@ -1574,7 +1574,7 @@ country_event = {
         if = {
             limit = {
                 has_global_flag = war_crysis
-                var:global.sender_crysis = {surrender_progress < 0.8}
+                var:global.sender_crysis = {surrender_progress < 0.1}
                 crysis_rewardable = no
             }
             random_country = {country_event = {id = mechanics.38 days = 3}}

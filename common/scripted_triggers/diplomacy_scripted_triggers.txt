@@ -30,6 +30,16 @@
 #			}
 #		}
 
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+    if = {
+        limit = {FROM = {has_country_flag = banned_for_factions}}
+        custom_trigger_tooltip = {
+            tooltip = ALLOW_BANNED_CRYSIS_tooltip
+            always = no
+        }
+    }
+}
+
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
     if = {
         limit = {has_country_flag = banned_for_factions}
