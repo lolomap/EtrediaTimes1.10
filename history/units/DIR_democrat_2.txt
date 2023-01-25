@@ -161,22 +161,4 @@ units = {
                 start_equipment_factor = 0.4
 
     }
-
-	division = {
-		name = "Mechanized Division"
-		location = 8627
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
-
-	division = {
-		name = "Mechanized Division"
-		location = 8627
-		division_template = "Mechanized Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.4
-
-    }
 }

@@ -102,18 +102,17 @@ country_event = {
 			add_state_core = 287
 			add_state_core = 288
 			add_state_core = 786
-			add_state_core = 834
+			add_state_core = 824
 			add_state_core = 825
-			add_state_core = 835
-			add_state_core = 836
+			add_state_core = 826
             load_oob = DIR_democrat
             }
 	}
     DEM = { declare_war_on = { target = DIR type = annex_everything } }
     DIR = {
-    load_oob = DIR_communist
-    add_ideas = { DIR_revolt }
-	add_ideas = { DEM_bad_economic }
+		load_oob = DIR_communist
+		add_ideas = { DIR_revolt }
+		add_ideas = { DEM_bad_economic }
 	}
 	DIR = {
 		teleport_armies = {
@@ -124,10 +123,11 @@ country_event = {
 		}
 	}
 	DEM = {
-    add_ideas = { DIR_revolt }
-	add_ideas = { DEM_bad_economic }
+		add_ideas = { DIR_revolt }
+		add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
+	KAR = { country_event = { days = 240 id = kar.4 } }
 	}
 	
     option = {
@@ -195,23 +195,22 @@ country_event = {
 			add_state_core = 287
 			add_state_core = 288
 			add_state_core = 786
-			add_state_core = 834
+			add_state_core = 824
 			add_state_core = 825
-			add_state_core = 836
+			add_state_core = 826
             load_oob = DIR_democrat
             }
 	}
 	DEM = { change_tag_from = DIR }
     DEM = { declare_war_on = { target = DIR type = annex_everything } }
     DIR = {
-    load_oob = DIR_communist
-    add_ideas = { DIR_revolt}
-	add_ideas = { DEM_bad_economic }
+		load_oob = DIR_communist
+		add_ideas = { DIR_revolt}
+		add_ideas = { DEM_bad_economic }
 	}
 	DEM = {
-    add_ideas = { DIR_revolt }
-	add_ideas = { DIR_revolt2 }
-	add_ideas = { DEM_bad_economic }
+		add_ideas = { DIR_revolt }
+		add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
 	}
@@ -329,8 +328,8 @@ country_event = {
 	option = {
 		name = dirnews.5.a
 		DEM = {
-		load_oob = DIR_democrat_2
-		add_manpower = 20000
+			load_oob = DIR_democrat_2
+			add_manpower = 20000
 		}
     }
 }
@@ -489,5 +488,88 @@ country_event = {
 	name = dirnews.12.a
 		add_stability = 0.05
 		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = dirnews.13
+	title = dirnews.13.t
+	desc = dirnews.13.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.13.a
+		DEM = { add_ideas = { DEM_KAR_dept } }
+	}
+}
+
+country_event = {
+	id = dirnews.14
+	title = dirnews.14.t
+	desc = dirnews.14.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.14.a
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = dirnews.15
+	title = dirnews.15.t
+	desc = dirnews.15.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.15.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3600
+			producer = TRB
+        }
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 105
+			producer = TRB
+        }
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 80
+			producer = TRB
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 80
+			producer = TRB
+        }
+		add_equipment_to_stockpile = {
+			type = jeep_equipment
+			amount = 150
+			producer = TRB
+        }
+		add_equipment_to_stockpile = {
+			type = modern_tank_equipment
+			amount = 25
+			producer = TRB
+        }
 	}
 }

@@ -1,0 +1,11 @@
+DEM_external_politics = {
+	visible = {
+		always = yes
+	}
+}
+
+DEM_internal_politics = {
+	visible = {
+		original_tag = DEM
+	}
+}

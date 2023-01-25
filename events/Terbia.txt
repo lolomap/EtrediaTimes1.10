@@ -259,3 +259,22 @@ country_event = {
 	ai_chance = { factor = 30 }
 	}
 }
+
+country_event = {
+    id = terbia.11
+    title = terbia.11.t
+    desc = terbia.11.d
+    picture = GFX_news_event
+
+    is_triggered_only = yes
+
+    option = {
+	name = terbia.11.a
+		DEM = { country_event = dirnews.15 days = 1 }
+		ai_chance = { factor = 80 }
+	}
+	option = {
+	name = terbia.11.b
+		ai_chance = { factor = 20 }
+	}
+}

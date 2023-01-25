@@ -60,3 +60,28 @@ country_event = {
     ai_chance = { factor = 0 }
     }
 }
+
+country_event = {
+	id = kar.3
+	title = kar.3.t
+	desc = kar.3.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KAR
+    }
+
+	option = {
+		name = kar.3.a
+            DEM = { country_event = { id = dirnews.13 days = 1 } }
+			KAR = { add_ideas = DEM_KAR_loan }
+		ai_chance = { factor = 100 }
+    }
+	option = {
+		name = kar.3.b
+			DEM = { country_event = { id = dem.14 days = 1 } }
+		ai_chance = { factor = 0 }
+    }
+}

@@ -600,7 +600,8 @@ focus_tree = {
 		x = 12
 		y = 6
 		completion_reward = {
-			DIR = { country_event = { id = dircom.26 days = 1 } } 
+			DIR = { country_event = { id = dircom.26 days = 1 } }
+			DIR = { set_country_flag = DIR_commi_purge_complete_flag }
 		}
 		ai_will_do = {
 				factor = 1
