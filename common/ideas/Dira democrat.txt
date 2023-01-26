@@ -217,7 +217,79 @@ ideas = {
 		
 			modifier = {
 				stability_factor = -0.05
-				consumer_goods_factor = 0.08
+				consumer_goods_factor = 0.05
+			}
+		}
+		DEM_KAR_migrants = {
+			picture = civilian_economy
+			allowed = {
+				always = no
+			}
+			cancel = {
+				if = {
+					DEM = { has_war = no }
+				}
+				else_if = {
+					KAR = { has_idea = closed_entry }
+				}
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.25
+				consumer_goods_factor = 0.03
+			}
+		}
+		DEM_after_war_debts = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+		DEM_after_war_debts = {
+			picture = after_war_debts
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_factor = -0.25
+				democratic_drift = -0.01
+			}
+		}
+		DEM_grand_inflation = {
+			picture = grand_inflation
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.25
 			}
 		}
 	}

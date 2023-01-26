@@ -231,17 +231,22 @@ country_event = {
 	option = {
 		name = dirnews.3.a
 		DEM = {
-		add_timed_idea = { idea = DIR_KAR_support days = 180 }
+			add_timed_idea = { idea = DIR_KAR_support days = 180 }
 		}
         add_equipment_to_stockpile = {
-        type = infantry_equipment
-        amount = 5000
-        producer = KAR
+			type = infantry_equipment
+			amount = 10000
+			producer = KAR
         }
 		add_equipment_to_stockpile = {
-        type = mechanized_equipment
-        amount = 200
-        producer = KAR
+			type = support_equipment
+			amount = 500
+			producer = KAR
+        }
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 200
+			producer = KAR
         }
     }
 }
@@ -571,5 +576,82 @@ country_event = {
 			amount = 25
 			producer = TRB
         }
+	}
+}
+country_event = {
+	id = dirnews.16
+	title = dirnews.16.t
+	desc = dirnews.16.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.16.a
+		DEM = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+			}
+		}
+	}
+}
+country_event = {
+	id = dirnews.17
+	title = dirnews.17.t
+	desc = dirnews.17.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.17.a
+		DEM = { 
+			add_equipment_to_stockpile = {
+				type = modern_tank_equipment
+				amount = 25
+			}
+			add_equipment_to_stockpile = {
+				type = mechanized_equipment
+				amount = 100
+			}
+		}
+	}
+}
+country_event = {
+	id = dirnews.18
+	title = dirnews.18.t
+	desc = dirnews.18.d
+	picture = GFX_news_even
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = DEM
+    }
+
+	option = {
+	name = dirnews.18.a
+		DEM = { 
+			add_political_power = 100
+			custom_effect_tooltip = wtire_reduce_20
+			subtract_from_variable = {wtire = 20}
+		}
 	}
 }

@@ -14,6 +14,7 @@
   world_influence_cost_15:0 "Штраф к мировому влиянию : §R15%§!\n"
 
   DEM_train_modern_army_tooltip:0 "§CНам станет доступна подготовка новых войск при поддержке Картилии§"
+  kar_political_support_tooltip:0 "§Мы поможем Дирии сохранить внутренную стабильность государства.§"
   UCBCrashLoc:0 "Развал [UCB.GetNameDef]\n"
   FSCCrashLoc:0 "Развал [FSC.GetNameDef]\n"
   CrusaderWarLoc:0 "Цель войны со странами Каратена\n"

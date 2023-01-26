@@ -1,0 +1,180 @@
+KAR_dirian_civil_war = {
+	new_tranche_of_light_military_support = {
+		fire_only_once = no
+		cost = 25
+		days_re_enable = 60
+		days_remove = 30
+		visible = {
+			original_tag = KAR
+			DEM = { has_completed_focus = DEM_train_modern_army }
+			DEM = { has_war_with = DIR }
+		}
+		available = {
+			has_equipment = { infantry_equipment > 2500 }
+			has_equipment = { support_equipment > 100 }
+			has_equipment = { artillery_equipment > 50 }
+		}
+		
+		complete_effect = {
+			DEM = {
+				country_event = { id = demnews.16 days = 1 }
+			}
+			KAR = { 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -2500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -100
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				DEM = { surrender_progress > 0.15 }
+			}
+			modifier = {
+				factor = 2
+				DEM = { surrender_progress > 0.25 }
+			}
+			modifier = {
+				factor = 4
+				DEM = { surrender_progress > 0.3 }
+			}
+			modifier = {
+				factor = 5
+				DEM = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				factor = -1
+				DIR = { surrender_progress > 0.1 }
+			}
+			modifier = {
+				factor = -1
+				DIR = { surrender_progress > 0.3 }
+			}
+			modifier = {
+				factor = -20
+				KAR = { has_war = yes }
+			}
+		}
+	}
+	new_tranche_of_armor_military_support = {
+		fire_only_once = no
+		cost = 25
+		days_re_enable = 60
+		days_remove = 30
+		visible = {
+			original_tag = KAR
+			DEM = { has_completed_focus = DEM_support_from_west }
+			DEM = { has_war_with = DIR }
+		}
+		available = {
+			has_equipment = { modern_tank_equipment > 25 }
+			has_equipment = { mechanized_equipment > 100 }
+		}
+		
+		complete_effect = {
+			DEM = {
+				country_event = { id = demnews.17 days = 1 }
+			}
+			KAR = { 
+				add_equipment_to_stockpile = {
+					type = modern_tank_equipment
+					amount = -25
+				}
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment
+					amount = -100
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 1
+				DEM = { surrender_progress > 0.15 }
+			}
+			modifier = {
+				factor = 1
+				DEM = { surrender_progress > 0.25 }
+			}
+			modifier = {
+				factor = 2
+				DEM = { surrender_progress > 0.3 }
+			}
+			modifier = {
+				factor = 5
+				DEM = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				factor = -1
+				DIR = { surrender_progress > 0.3 }
+			}
+			modifier = {
+				factor = -20
+				KAR = { has_war = yes }
+			}
+		}	
+	}
+	political_support_for_diria = {
+		fire_only_once = no
+		cost = 15
+		days_re_enable = 120
+		visible = {
+			original_tag = KAR
+			DEM = { has_completed_focus = DEM_support_from_west }
+			DEM = { has_war_with = DIR }
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = { kar_political_support_tooltip }
+			hidden_effect = {
+				DEM = {
+					country_event = { id = dirnews.18 days = 1 }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	direct_intervention = {
+		fire_only_once = yes
+		cost = 50
+		visible = {
+			original_tag = KAR
+			DEM = { has_war_with = DIR }
+		}
+		available = {
+			DEM = { surrender_progress > 0.3 }
+			date > 2017.1.1
+		}
+		
+		complete_effect = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = -100
+				KAR = { has_war = yes }
+			}
+			modifier = {
+				factor = 5
+				DEM = { surrender_progress > 0.5 }
+			}
+		}
+	}
+}

@@ -9,8 +9,8 @@ DEM_internal_politics = {
 		visible = {
 			original_tag = DEM
 			DEM = { has_completed_focus = DEM_train_modern_army }
-			DEM = { has_war = yes }
-			DEM = { has_army_manpower  = { size < 400000 } }
+			DEM = { has_war_with = DIR }
+			DEM = { has_army_manpower  = { size < 300000 } }
 		}
 		
 		complete_effect = {
@@ -36,8 +36,8 @@ DEM_internal_politics = {
 		visible = {
 			original_tag = DEM
 			DEM = { has_completed_focus = DEM_train_modern_army }
-			DEM = { has_war = yes }
-			DEM = { has_army_manpower  = { size < 400000 } }
+			DEM = { has_war_with = DIR }
+			DEM = { has_army_manpower  = { size < 300000 } }
 		}
 		
 		complete_effect = {

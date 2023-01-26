@@ -129,12 +129,12 @@ focus_tree = {
 		x = 7
 		y = 3
 		available = {
-			DIR = { has_army_manpower  = { size > 400000 } }
+			DIR = { has_army_manpower  = { size > 300000 } }
 		}
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.15
-			DIR = { add_timed_idea = { idea = DIR_grand_offensive_idea days = 120 } }
+			DIR = { add_timed_idea = { idea = DIR_grand_offensive_idea days = 160 } }
 		}
 		ai_will_do = {
 			factor = 1

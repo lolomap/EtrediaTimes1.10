@@ -6,26 +6,27 @@ country_event = {
 	desc = kar.1.d
 	picture = GFX_news_even
 	
-        is_triggered_only = yes
+    is_triggered_only = yes
 
 	trigger = {
         TAG = KAR
-        }
+    }
 
 	option = {
 		name = kar.1.a
-                hidden_effect = {
+            hidden_effect = {
                 DEM = { country_event = { days = 1 id = dirnews.3 } }
-                }
-                send_equipment = {
+            }
+            send_equipment = {
                 equipment = infantry_equipment
                 amount = 4000
                 target = DEM
-                }
-                ai_chance = { factor = 100
+            }
+            ai_chance = { 
+				factor = 100
 				modifier = {
                 }
-				}
+			}
 	}
 	option = {
 		name = kar.1.b
@@ -46,16 +47,16 @@ country_event = {
     }
 
 	option = {
-		name = kar.2.a
-            UCB = {
+	name = kar.2.a
+        UCB = {
             add_to_faction = KAR
-            }
-    ai_chance = { factor = 100 }
+        }
+	ai_chance = { factor = 100 }
     }
 	option = {
-		name = kar.2.b
+	name = kar.2.b
 		hidden_effect = {
-		UCB = { country_event = { days = 1 id = ucnb.8 } }
+			UCB = { country_event = { days = 1 id = ucnb.8 } }
 		}
     ai_chance = { factor = 0 }
     }
@@ -83,5 +84,24 @@ country_event = {
 		name = kar.3.b
 			DEM = { country_event = { id = dem.14 days = 1 } }
 		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+	id = kar.4
+	title = kar.4.t
+	desc = kar.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = KAR
+    }
+
+	option = {
+		name = kar.4.a
+			KAR = { add_ideas = DEM_KAR_migrants }
+			add_political_power = -50
     }
 }
