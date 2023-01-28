@@ -16,6 +16,14 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_YAN_demobilisation"
+		texturefile = "gfx/interface/ideas/idea_YAN_demobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_YAN_chill"
+		texturefile = "gfx/interface/ideas/idea_YAN_chill.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_DIB_last_stand"
 		texturefile = "gfx/interface/ideas/idea_DIB_last_stand.dds"
 	}

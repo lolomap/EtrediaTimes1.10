@@ -1,6 +1,36 @@
 spriteTypes = {
 
     SpriteType = {
+        name = "GFX_goal_YAN_militaryplan"
+        texturefile="gfx/interface/goals/goal_YAN_militaryplan.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_politicplan"
+        texturefile="gfx/interface/goals/goal_YAN_politicplan.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_economicplan"
+        texturefile="gfx/interface/goals/goal_YAN_economicplan.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_goal_YAN_armiya"
+        texturefile="gfx/interface/goals/goal_YAN_armiya.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_ocean_countries"
+        texturefile="gfx/interface/goals/goal_YAN_ocean_countries.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_plan"
+        texturefile="gfx/interface/goals/goal_YAN_plan.dds"
+    }
+	
+	SpriteType = {
         name = "GFX_goal_sbu_siburian_alliance"
         texturefile="gfx/interface/goals/goal_sbu_siburian_alliance.dds"
     }

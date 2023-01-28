@@ -12,6 +12,7 @@ add_ideas = {
         free_press
         general_entry
         YAN_demobilisation
+	YAN_chill
 	fifth_corruption_level
 }
 

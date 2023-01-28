@@ -41,11 +41,12 @@ bookmarks = {
                         ideology = fascism
             ideas = {
                 YAN_demobilisation
+				YAN_chill
             }
             focuses = {
-                YAN_ocean_countries
+                YAN_plan
                 YAN_armiya
-                YAN_New_country_name
+				YAN_ocean_countries
             }
 		}
 

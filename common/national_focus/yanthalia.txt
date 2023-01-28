@@ -131,7 +131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_plan
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_goal_YAN_plan
 		cost = 5
 		x = 23
 		y = 0
@@ -145,7 +145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_militaryplan
-		icon = GFX_focus_generic_license_production
+		icon = GFX_goal_YAN_militaryplan
 		cost = 1
 		prerequisite = {
 			focus = YAN_plan
@@ -162,7 +162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_economicplan
-		icon = GFX_focus_hol_the_foundations_of_defense
+		icon = GFX_goal_YAN_economicplan
 		cost = 1
 		prerequisite = {
 			focus = YAN_plan
@@ -170,7 +170,7 @@ focus_tree = {
 		x = 23
 		y = 1
 		ai_will_do = {
-			factor = 1
+			factor = 2
 	    }
 		completion_reward = {
 		YAN = { country_event = { id = yan.11 days = 1 } }
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_politicplan
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_goal_YAN_politicplan
 		cost = 1
 		prerequisite = {
 			focus = YAN_plan
@@ -192,7 +192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_armiya
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_goal_YAN_armiya
 		cost = 10
 		prerequisite = {
 			focus = YAN_militaryplan
@@ -467,7 +467,7 @@ focus_tree = {
 		x = 23
 		y = 3
 		ai_will_do = {
-			factor = 1
+			factor = 2
 	    }
 
 	}
@@ -1100,7 +1100,7 @@ focus_tree = {
 			focus = YAN_Empire_ambitions
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 2
 	    }
 		completion_reward = {
 		add_popularity = { ideology = fascism popularity = 0.1 }
@@ -1170,7 +1170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_ocean_countries
-		icon = GFX_goal_unknown
+		icon = GFX_goal_YAN_ocean_countries
 		cost = 10
 		prerequisite = {
 			focus = YAN_Karcih_plan

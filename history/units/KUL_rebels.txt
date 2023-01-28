@@ -24,14 +24,14 @@ division_template = {
 	division_names_group = KUL_arm_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-                light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+        modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
 		mechanized = { x = 2 y = 0 }
-                mechanized = { x = 2 y = 1 }
-                mechanized = { x = 2 y = 2 }
-                mechanized = { x = 2 y = 3 }
+        mechanized = { x = 2 y = 1 }
+        mechanized = { x = 2 y = 2 }
+        mechanized = { x = 2 y = 3 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -47,9 +47,9 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-                motorized = { x = 1 y = 0 }
-                motorized = { x = 1 y = 1 }
-                motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -66,11 +66,11 @@ division_template = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
 		mechanized = { x = 0 y = 2 }
-                mechanized = { x = 0 y = 3 }
-                infantry = { x = 1 y = 0 }
-                infantry = { x = 1 y = 1 }
-                infantry = { x = 1 y = 2 }
-                infantry = { x = 1 y = 3 }
+        mechanized = { x = 0 y = 3 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 1 y = 3 }
 	}
 	support = {
         recon = { x = 0 y = 0 }

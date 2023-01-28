@@ -24,16 +24,16 @@ division_template = {
 	division_names_group = ANR_arm_01
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-                medium_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+        modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
 		mechanized = { x = 2 y = 0 }
-                mechanized = { x = 2 y = 1 }
-                mechanized = { x = 2 y = 2 }
-                mechanized = { x = 2 y = 3 }
-                mechanized = { x = 3 y = 0 }
-                mechanized = { x = 3 y = 1 }
+        mechanized = { x = 2 y = 1 }
+        mechanized = { x = 2 y = 2 }
+        mechanized = { x = 2 y = 3 }
+        mechanized = { x = 3 y = 0 }
+        mechanized = { x = 3 y = 1 }
 	}
 	support = {
         engineer = { x = 0 y = 0 }
@@ -49,9 +49,9 @@ division_template = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
 		mechanized = { x = 0 y = 2 }
-                mechanized = { x = 1 y = 0 }
-                mechanized = { x = 1 y = 1 }
-                mechanized = { x = 1 y = 2 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+        mechanized = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }

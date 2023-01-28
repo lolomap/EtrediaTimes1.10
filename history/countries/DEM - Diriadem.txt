@@ -57,7 +57,7 @@ set_popularities = {
 
 #
 create_country_leader = {
-	name = "Ardre Minh"
+	name = "Andre Minh"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
 	picture = "portrait_DEM_democratic.dds"
 	expire = "1965.1.1"

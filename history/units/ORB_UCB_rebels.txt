@@ -23,16 +23,16 @@ division_template = {
 	division_names_group = ORB_arm_01
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-                medium_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+        modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
 		mechanized = { x = 2 y = 0 }
-                mechanized = { x = 2 y = 1 }
-                mechanized = { x = 2 y = 2 }
-                mechanized = { x = 2 y = 3 }
-                mechanized = { x = 3 y = 0 }
-                mechanized = { x = 3 y = 1 }
+        mechanized = { x = 2 y = 1 }
+        mechanized = { x = 2 y = 2 }
+        mechanized = { x = 2 y = 3 }
+        mechanized = { x = 3 y = 0 }
+        mechanized = { x = 3 y = 1 }
 	}
 	support = {
         engineer = { x = 0 y = 0 }
@@ -48,9 +48,9 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
-                motorized = { x = 1 y = 0 }
-                motorized = { x = 1 y = 1 }
-                motorized = { x = 1 y = 2 }
+        motorized = { x = 1 y = 0 }
+        motorized = { x = 1 y = 1 }
+        motorized = { x = 1 y = 2 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -62,7 +62,7 @@ units = {
 	#Infantry Division
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -71,7 +71,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -80,7 +80,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -89,7 +89,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -98,7 +98,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -107,7 +107,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -116,7 +116,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -125,7 +125,7 @@ units = {
 
 	division = {
 		name = "Peoples Brigade"
-		location = 6912
+		location = 5492
 		division_template = "Peoples Brigade"
 		start_experience_factor = 0.2
                 start_equipment_factor = 1
@@ -134,7 +134,7 @@ units = {
 
 	division = {
 		name = "Tank-Division"
-		location = 6912
+		location = 5492
 		division_template = "Tank-Division"
 		start_experience_factor = 0.2
                 start_equipment_factor = 0.7

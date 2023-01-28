@@ -213,6 +213,7 @@ country_event = {
 		add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
+	KAR = { country_event = { days = 240 id = kar.4 } }
 	}
 }
 
