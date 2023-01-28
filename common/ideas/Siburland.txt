@@ -427,5 +427,57 @@ ideas = {
 
 		}
 	}
+
+    SBU_ISH_TRB = {
+        allowed = {always = no}
+		removal_cost = -1
+
+        cancel = {
+            all_controlled_state = {not = {is_core_of = TRB}}
+        }
+
+		modifier = {
+			stability_factor = -0.15
+            communism_drift = 0.02
+		}
+    }
+    SBU_ISH_SFL = {
+        allowed = {always = no}
+		removal_cost = -1
+        cancel = {
+            all_controlled_state = {not = {is_core_of = SFL}}
+        }
+
+		modifier = {
+			stability_factor = -0.15
+            democratic_drift = 0.02
+		}
+    }
+
+    SBU_ISH_TRB2 = {
+        allowed = {always = no}
+		removal_cost = -1
+
+        cancel = {
+            all_controlled_state = {not = {is_core_of = TRB}}
+        }
+
+		modifier = {
+			stability_factor = -0.08
+            communism_drift = 0.015
+		}
+    }
+    SBU_ISH_SFL2 = {
+        allowed = {always = no}
+		removal_cost = -1
+        cancel = {
+            all_controlled_state = {not = {is_core_of = SFL}}
+        }
+
+		modifier = {
+			stability_factor = -0.08
+            democratic_drift = 0.015
+		}
+    }
 }
 }

@@ -47,6 +47,7 @@
   sbu_paranoid_effect_tooltip:0 "§CБудет начато расследование§!\n"
   sbu_reduse_collapse_chance:0 "§CУменьшает вероятность коллапса§!\n"
   sbu_terbia_war_chance:0 "§CБудет убран шанс тербской интервенции§!\n"
+  ISH_rebel_tooltip: "§CОткрывает решения для ослабления сопротивления§!"
   safflia_compromiss_tooltip: "МСАС не будет претендовать на [RGY.GetNameDef]"
   safflia_compromiss_trigger_tooltip: "Не найден компромисс с Саффлией"
   form_scandinavia_flag: "МСАС существует"

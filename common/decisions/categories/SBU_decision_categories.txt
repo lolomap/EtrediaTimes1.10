@@ -12,3 +12,7 @@ SBU_sburska_zvezda_war = {
 		surrender_progress < 0.3
 	}
 }
+
+SBU_ISH_rebellion = {
+    visible = {has_country_flag = ISH_REBEL}
+}

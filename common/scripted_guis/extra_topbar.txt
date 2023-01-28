@@ -46,6 +46,7 @@ scripted_gui = {
 				array = global.wi_countries
 				entry_container = wi_countries_entry
 				change_scope = yes
+                index = wi_i
 			}
 		}
 

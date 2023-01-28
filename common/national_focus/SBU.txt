@@ -633,7 +633,7 @@ focus_tree = {
 	focus = {
 		id = SBU_safflian_problem
 		icon = GFX_goal_unknown
-		cost = 25
+		cost = 30
 		prerequisite = {
 			focus = SBU_RGY_integration
 		}
@@ -663,6 +663,12 @@ focus_tree = {
                 }
             }
             TRB = {
+                every_owned_state = {
+                    limit = {is_core_of = TRB}
+                    add_core_of = SBU
+                }
+            }
+            RTT = {
                 every_owned_state = {
                     limit = {is_core_of = TRB}
                     add_core_of = SBU
@@ -1250,7 +1256,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = -0.03
+				popularity = -0.1
 			}
 			add_stability = -0.01
 			add_political_power = 250
@@ -1306,6 +1312,8 @@ focus_tree = {
 				tooltip = sbu_ready_for_revolution_tooltip
 				has_country_flag = sbu_ready_for_revolution
 			}
+            democratic < 0.4
+            fascism > 0.25
 		}
 
 		completion_reward = {
@@ -2187,7 +2195,10 @@ focus_tree = {
 				name = "Iret Kolert"
 				ruling_only = yes
 			}
-            has_political_power > 100
+            if = {
+                limit = {is_ai = no}
+                has_political_power > 200
+            }
 		}
 
 		completion_reward = {
@@ -2199,14 +2210,20 @@ focus_tree = {
 	focus = {
 		id = SBU_ultimatum_RTT
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SBU_pacify_terbia
 		}
 		x = 21
 		y = 9
+
+        available = {
+            OR = {has_idea = SBU_ISH_TRB has_idea = SBU_ISH_SFL}
+        }
+
 		completion_reward = {
-			
+			custom_effect_tooltip = ISH_rebel_tooltip
+            hidden_effect = {set_country_flag = ISH_REBEL}
 		}
 	}
 	focus = {
@@ -2406,6 +2423,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            set_country_flag = SBU_TRBminored
+            set_variable = {trb_influence = 0}
 			TRB = {set_cosmetic_tag = TRB_Reichssib}
             hidden_effect = {
                 TRB = {

@@ -185,7 +185,7 @@ defined_text = {
     }
     text = {
         trigger = {check_variable = {global.type_crysis = 1}}
-        localization_key = "Терроториальные претензии к [?global.to_crysis.GetNameDef] от [?global.sender_crysis.GetNameDef]"
+        localization_key = "Территориальные претензии к [?global.to_crysis.GetNameDef] от [?global.sender_crysis.GetNameDef]"
     }
     text = {
         trigger = {check_variable = {global.type_crysis = 2}}

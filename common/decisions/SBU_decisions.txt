@@ -347,3 +347,42 @@ SBU_fascist_revolution = {
 		}
 	}
 }
+
+SBU_ISH_rebellion = {
+    SBU_military_SFL = {
+        visible = {
+			original_tag = SBU
+			has_idea = SBU_ISH_SFL
+		}
+		fire_only_once = yes
+
+		cost = 100
+		complete_effect = {
+			swap_ideas = {
+                add_idea = SBU_ISH_SFL2
+                remove_idea = SBU_ISH_SFL
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+    SBU_military_TRB = {
+        visible = {
+			original_tag = SBU
+			has_idea = SBU_ISH_TRB
+		}
+		fire_only_once = yes
+
+		cost = 100
+		complete_effect = {
+			swap_ideas = {
+                add_idea = SBU_ISH_TRB2
+                remove_idea = SBU_ISH_TRB
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+}
