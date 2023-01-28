@@ -63,7 +63,7 @@ d_calc_wi = {
     add_to_variable = {resources_inf_factor = steel_inf_factor}
     add_to_variable = {resources_inf_factor = chromium_inf_factor}
     add_to_variable = {resources_inf_factor = uranium_inf_factor}
-    multiply_variable = {resources_inf_factor = 0.02}
+    multiply_variable = {resources_inf_factor = 0.015}
 
 
     set_temp_variable = {eoil_inf_factor = resource_exported@oil}
@@ -95,7 +95,7 @@ d_calc_wi = {
     add_to_variable = {eresources_inf_factor = esteel_inf_factor}
     add_to_variable = {eresources_inf_factor = echromium_inf_factor}
     add_to_variable = {eresources_inf_factor = euranium_inf_factor}
-    multiply_variable = {eresources_inf_factor = 0.05}
+    multiply_variable = {eresources_inf_factor = 0.03}
     
 
     set_variable = {world_influence = 0}
