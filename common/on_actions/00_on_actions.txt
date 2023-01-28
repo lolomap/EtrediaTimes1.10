@@ -615,6 +615,29 @@ on_actions = {
 	
 	}
 
+    on_monthly_SBU = {
+        if = {
+            limit = {
+                has_government = democratic
+                any_owned_state = {
+                    owner = {tag = SFL}
+                }
+            }
+
+            release_puppet_on_controlled = SFL
+        }
+        if = {
+            limit = {
+                has_government = democratic
+                any_owned_state = {
+                    owner = {tag = TRB}
+                }
+            }
+
+            release_puppet_on_controlled = TRB
+        }
+    }
+
 	on_weekly = {
 		effect = {
             ####################################################################
@@ -1252,6 +1275,7 @@ on_actions = {
 	on_peaceconference_ended = {
 		effect = {
 			clr_country_flag = nuke_request_accepted
+            ROOT = {clr_country_flag = nuke_request_accepted}
             ROOT = {add_threat = -0.1}
 
             if = {
@@ -1303,6 +1327,7 @@ on_actions = {
 					end_puppet = TRB
 				}
 			}
+            
 			if = {
 				limit = {
 					FROM = {tag = MOF}
@@ -2298,6 +2323,21 @@ on_actions = {
 		effect = {
 			#ROOT = {clear_array = embargoList}
             ROOT = {encount_minors = yes}
+
+            if = {
+                limit = {
+                    ROOT = {tag = SBU has_government = monarchism}
+                }
+
+                if = {
+                    limit = {FROM = {tag = TRB}}
+                    add_ideas = SBU_ISH_TRB
+                }
+                if = {
+                    limit = {FROM = {tag = SFL}}
+                    add_ideas = SBU_ISH_SFL
+                }
+            }
 		}
 	}
 
