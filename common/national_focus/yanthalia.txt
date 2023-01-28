@@ -1320,9 +1320,27 @@ focus_tree = {
 		completion_reward = {
 		YAN = { country_event { id = yan.8 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 3
+	        modifier = {
+				factor = -3
+				date < 2016.1.1
+			}
+			modifier = {
+				factor = -2
+				date < 2017.1.1
+			}
+			modifier = {
+				factor = 1
+				date > 2018.1.1
+			}
+			modifier = {
+				factor = 1
+				SBU = { has_completed_focus = SBU_aldeko_operation }
+			}
+		}
 		x = 40
 		y = 10
-
 	}
 	focus = {
 		id = YAN_RTT_war

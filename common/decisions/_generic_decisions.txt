@@ -162,7 +162,7 @@ political_actions = {
 			stability_weekly = 0.005
 		}
 
-		days_remove = 10
+		days_remove = 14
 		days_re_enable = 120
 
 		cost = 100
@@ -249,7 +249,7 @@ political_actions = {
 			stability_weekly = 0.005
 		}
 
-		days_remove = 30
+		days_remove = 35
 		days_re_enable = 180
 
 		cost = 150
@@ -332,7 +332,7 @@ political_actions = {
 			stability_weekly = 0.005
 		}
 
-		days_remove = 30
+		days_remove = 42
 		days_re_enable = 240
 
 		cost = 200

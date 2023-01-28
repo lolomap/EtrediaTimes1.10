@@ -50,7 +50,7 @@ bookmarks = {
 		}
 
 		"EIK"={
-			history = "YAN_GATHERING_STORM_DESC"
+			history = "EIK_GATHERING_STORM_DESC"
                         ideology = fascism
             ideas = {
                 EIK_militar

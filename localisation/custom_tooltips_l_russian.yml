@@ -6,12 +6,15 @@
 
   wtire_more_then_150:0 "§RВоенная усталость > 150§!\n"
   wtire_reduce_70:0 "Военная усталость уменьшится на §G70§!\n"
+  wtire_reduce_50:0 "Военная усталость уменьшится на §G50§!\n"
   wtire_reduce_20:0 "Военная усталость уменьшится на §G20§!\n"
   wtire_reduce_10:0 "Военная усталость уменьшится на §G10§!\n"
   wtire_reduce_focus:0 "Рост военной усталости: §G-15%§!\n"
   world_influence_cost_10:0 "Штраф к мировому влиянию : §R10%§!\n"
   world_influence_cost_15:0 "Штраф к мировому влиянию : §R15%§!\n"
 
+  DEM_train_modern_army_tooltip:0 "§CНам станет доступна подготовка новых войск при поддержке Картилии§"
+  kar_political_support_tooltip:0 "§Мы поможем Дирии сохранить внутренную стабильность государства.§"
   UCBCrashLoc:0 "Развал [UCB.GetNameDef]\n"
   FSCCrashLoc:0 "Развал [FSC.GetNameDef]\n"
   CrusaderWarLoc:0 "Цель войны со странами Каратена\n"

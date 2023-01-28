@@ -1,0 +1,5 @@
+KAR_dirian_civil_war = {
+	visible = {
+		DEM = { has_war_with = DIR }
+	}
+}

@@ -66,7 +66,7 @@ focus_tree = {
 		DEM = { country_event = { id = dirnews.4 days = 1 } }
 		}
 		ai_will_do = {
-		    factor = 0.3
+		    factor = 0.4
 		    modifier = {
 			factor = 0
 			is_historical_focus_on = yes
@@ -96,6 +96,42 @@ focus_tree = {
 				country_event = { id = dirnews.6 days = 160 }
 			}
 		}
+		ai_will_do = {
+		    factor = 0.7
+		    modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = DEM_no_to_mobilization
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = DEM_anti_monopoly
+			focus = DEM_monopoly
+		}
+		mutually_exclusive = {
+			focus = DEM_mobilize_people
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.25
+			add_war_support = -0.05
+			custom_effect_tooltip = wtire_reduce_50
+			subtract_from_variable = {wtire = 50}
+		}
+		ai_will_do = {
+		    factor = 0.3
+		    modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	
 	focus = {
@@ -104,11 +140,56 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = DEM_mobilize_people
+			focus = DEM_no_to_mobilization
 		}
 		x = 10
 		y = 5
 		completion_reward = {
 			add_ideas = DEM_weapon_reusable_idea
+		}
+	}
+	
+	focus = {
+		id = DEM_stay_for_long
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = DEM_weapon_reusable
+		}
+		available = {
+			DEM = { NOT = { has_idea = DEM_fast_and_fury_idea } }
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+			DEM = { add_timed_idea = { idea = DEM_stay_for_long_idea days = 90 } }
+		}
+		ai_will_do = {
+		    factor = 0
+		}
+	}
+	
+	focus = {
+		id = DEM_fast_and_fury
+		icon = GFX_
+		cost = 5
+		available = {
+			DEM = { NOT = { has_idea = DEM_stay_for_long_idea } }
+		}
+		prerequisite = {
+			focus = DEM_weapon_reusable
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			DEM = { add_timed_idea = { idea = DEM_fast_and_fury_idea days = 90 } }
+		}
+		ai_will_do = {
+		    factor = 0
+		    modifier = {
+				factor = 1
+				date > 2017.1.1
+			}
 		}
 	}
 	
@@ -130,7 +211,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-		    factor = 0.7
+		    factor = 0.6
 		}
     }
 	
@@ -215,6 +296,7 @@ focus_tree = {
 		}
 		bypass = { has_completed_focus = DEM_anti_monopoly }
 		completion_reward = {
+			add_political_power = -100
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -256,6 +338,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = DEM_mobilize_people
+			focus = DEM_no_to_mobilization
 		}
 		completion_reward = {
 			add_ideas = DEM_foreign_specialist_idea
@@ -264,7 +347,6 @@ focus_tree = {
 		x = 8
 		y = 5
     }
-	
 	focus = {
 		id = DEM_new_free_humans
 		icon = GFX_goal_unknown
@@ -276,9 +358,125 @@ focus_tree = {
 			focus = DEM_support_from_west
 		}
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.1
+			add_ideas = DEM_new_democrats
 		}
 		x = 7
 		y = 6
+    }
+	focus = {
+		id = DEM_kar_debt
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_new_free_humans
+		}
+		completion_reward = {
+			KAR = { country_event = kar.3 days = 1 }
+		}
+		x = 6
+		y = 7
+    }
+	focus = {
+		id = DEM_weapons_from_trb
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_new_free_humans
+		}
+		cancel_if_invalid = yes
+		available = { 
+			TRB = { NOT = { has_government = communism } }
+		}
+		completion_reward = {
+			TRB = { country_event = terbia.11 days = 1 }
+		}
+		x = 8
+		y = 7
+    }
+	focus = {
+		id = DEM_train_modern_army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_kar_debt
+		}
+		prerequisite = {
+			focus = DEM_weapons_from_trb
+		}
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = DEM_train_modern_army_tooltip
+			load_oob = DEM_KAR_modern_army
+		}
+		x = 7
+		y = 8
+    }
+	focus = {
+		id = DEM_pact_with_society
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_train_modern_army
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			custom_effect_tooltip = wtire_reduce_50
+			subtract_from_variable = {wtire = 50}
+		}
+		x = 7
+		y = 9
+    }
+	focus = {
+		id = DEM_fight_with_internal_enemies
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_pact_with_society
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = sixth_corruption_level }
+				DEM = { add_ideas = fourth_corruption_level }
+			}
+			else_if = {
+				limit = { has_idea = fifth_corruption_level }
+				DEM = { add_ideas = third_corruption_level }
+			}
+			else_if = {
+				limit = { has_idea = fourth_corruption_level }
+				DEM = { add_ideas = second_corruption_level }
+			}
+			else_if = {
+				limit = { has_idea = third_corruption_level }
+				DEM = { add_ideas = first_corruption_level }
+			}
+			else_if = {
+				limit = { has_idea = second_corruption_level }
+				DEM = { add_ideas = first_corruption_level }
+			}
+			else_if = {
+				limit = { has_idea = first_corruption_level }
+				DEM = { add_ideas = first_corruption_level }
+			}
+		}
+		x = 6
+		y = 10
+    }
+	focus = {
+		id = DEM_fight_with_external_enemies
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DEM_pact_with_society
+		}
+		completion_reward = {
+			
+		}
+		x = 8
+		y = 10
     }
 }

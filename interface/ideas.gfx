@@ -16,6 +16,23 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_DIB_last_stand"
+		texturefile = "gfx/interface/ideas/idea_DIB_last_stand.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DEM_grand_inflation"
+		texturefile = "gfx/interface/ideas/idea_DEM_grand_inflation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DEM_after_war_debts"
+		texturefile = "gfx/interface/ideas/idea_DEM_after_war_debts.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_closed_entry"
+		texturefile = "gfx/interface/ideas/idea_closed_entry.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_eik_nord_ideals"
 		texturefile = "gfx/interface/ideas/idea_eik_nord_ideals.dds"
 	}

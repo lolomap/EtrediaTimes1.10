@@ -610,7 +610,7 @@ country_event = {
 
 	trigger = {
         TAG = DIR
-		date > 2014.7.1
+		date > 2014.9.1
 		NOT = { has_country_flag = DIR_commi_purge_complete_flag }
     }
     mean_time_to_happen = {

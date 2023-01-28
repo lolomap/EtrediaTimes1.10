@@ -1,0 +1,59 @@
+DEM_external_politics = {
+}
+
+DEM_internal_politics = {
+	train_armor_division = {
+		fire_only_once = no
+		cost = 100
+		days_re_enable = 120
+		visible = {
+			original_tag = DEM
+			DEM = { has_completed_focus = DEM_train_modern_army }
+			DEM = { has_war_with = DIR }
+			DEM = { has_army_manpower  = { size < 300000 } }
+		}
+		
+		complete_effect = {
+			DEM = {
+				275 = {
+				create_unit = {
+					division = "name = \"KRT armor brigade\" division_template = \"KRT armor brigade\" start_experience_factor = 0.5"
+					owner = DEM
+					prioritize_location = 8627
+				}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}	
+	}
+	train_mechanized_division = {
+		fire_only_once = no
+		cost = 50
+		days_re_enable = 120
+		visible = {
+			original_tag = DEM
+			DEM = { has_completed_focus = DEM_train_modern_army }
+			DEM = { has_war_with = DIR }
+			DEM = { has_army_manpower  = { size < 300000 } }
+		}
+		
+		complete_effect = {
+			DEM = {
+				275 = {
+				create_unit = {
+					division = "name = \"KRT mechanized brigade\" division_template = \"KRT mechanized brigade\" start_experience_factor = 0.5"
+					owner = DEM
+					prioritize_location = 8627
+				}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}	
+	}
+}

@@ -13,7 +13,6 @@ ideas = {
 				production_speed_buildings_factor = -0.3
 			}
 		}
-		
 		DEM_bad_economic = {
             picture = usa_great_depression_2
 			allowed = {
@@ -28,7 +27,6 @@ ideas = {
 				production_speed_buildings_factor = -0.6
 			}
 		}
-		
 		DEM_army_disorganization = {
             #picture = 
 			allowed = {
@@ -46,7 +44,6 @@ ideas = {
 				experience_gain_army_factor = -0.5
 			}
 		}
-		
 		DEM_corporat_problem = {
             #picture = 
 			allowed = {
@@ -59,11 +56,13 @@ ideas = {
                 production_factory_start_efficiency_factor = -0.05
 			}
 		}
-		
 		DEM_foreign_specialist_idea = {
             #picture = 
 			allowed = {
 				always = no
+			}
+			cancel = {
+				has_war = no
 			}
 			removal_cost = -1
 			modifier = {
@@ -71,17 +70,17 @@ ideas = {
                 army_attack_factor = 0.05
                 training_time_army_factor = -0.1
                 army_morale_factor = 0.08
+				experience_gain_army = 0.05
 				experience_gain_army_unit_factor = 0.1
-				experience_gain_army_factor = 0.05
 			}
 		}
-
 		DEM_fight_for_throne = {
-
-			picture = 
-
+			picture = eng_for_the_good_of_the_revolution
 			allowed = {
 				always = no
+			}
+			cancel = {
+				has_war = no
 			}
 			
 			removal_cost = -1
@@ -92,11 +91,8 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
-	
 		DEM_free_market_idea = {
-
 			picture = civilian_economy
-
 			allowed = {
 				always = no
 			}
@@ -111,11 +107,8 @@ ideas = {
 				economy_cost_factor = 5
 			}
 		}
-		
 		DEM_production_restructurize_idea = {
-
 			picture = SPR_collectivized_society
-
 			allowed = {
 				always = no
 			}
@@ -128,13 +121,13 @@ ideas = {
 				consumer_goods_factor = 0.08
 			}
 		}
-		
 		DEM_weapon_reusable_idea = {
-
 			picture = SPR_collectivized_society
-
 			allowed = {
 				always = no
+			}
+			cancel = {
+				has_war = no
 			}
 			
 			removal_cost = -1
@@ -145,6 +138,158 @@ ideas = {
 				army_defence_factor = 0.05
                 army_attack_factor = 0.05
 				army_morale_factor = 0.05
+			}
+		}
+		DEM_stay_for_long_idea = {
+			picture = FRA_fortification_focus
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				army_defence_factor = -0.35
+                army_attack_factor = -0.35
+				production_speed_bunker_factor = 0.5
+				production_speed_coastal_bunker_factor = 0.5
+				production_speed_arms_factory_factor = 0.3
+			}
+		}
+		DEM_fast_and_fury_idea = {
+			picture = FRA_fortification_focus
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+                army_speed_factor = 0.3
+				breakthrough_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = -0.1
+			}
+		}
+		DEM_new_democrats = {
+			picture = FRA_fortification_focus
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+                army_core_defence_factor = 0.1
+				add_stability = 0.05
+				democratic_drift = 0.03
+				communism_drift = -0.02
+				monarchism_drift = -0.02
+			}
+		}
+		DEM_KAR_dept = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		DEM_KAR_loan = {
+			picture = civilian_economy
+			allowed = {
+				always = no
+			}
+			cancel = {
+				DEM = { has_war = no }
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		DEM_KAR_migrants = {
+			picture = civilian_economy
+			allowed = {
+				always = no
+			}
+			cancel = {
+				if = {
+					DEM = { has_war = no }
+				}
+				else_if = {
+					KAR = { has_idea = closed_entry }
+				}
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.25
+				consumer_goods_factor = 0.03
+			}
+		}
+		DEM_after_war_debts = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+		DEM_after_war_debts = {
+			picture = after_war_debts
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_factor = -0.25
+				democratic_drift = -0.01
+			}
+		}
+		DEM_grand_inflation = {
+			picture = grand_inflation
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = no
+			}
+			
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.25
 			}
 		}
 	}

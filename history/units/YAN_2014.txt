@@ -473,7 +473,7 @@ air_wings = {
 		jet_fighter_equipment_1 = {
 			owner = "YAN" 
 			creator = "YAN"
-			amount = 368
+			amount = 508
 		}
 		CAS_equipment_0 = {
 			owner = "YAN" 

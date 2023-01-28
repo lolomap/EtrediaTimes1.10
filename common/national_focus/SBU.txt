@@ -120,12 +120,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
                 modifier = {
-			    factor = 100
-			    date > 2018.1.1
+			    factor = 1
+			    date > 2017.10.1
 		        }
 				modifier = {
 			    factor = -1
-			    date < 2018.1.1
+			    date < 2017.10.1
 		        }
 		}
 		x = 1
@@ -149,7 +149,7 @@ focus_tree = {
 		TRB = { country_event = { id = terbia.5 days = 1 } }
 		}
 		ai_will_do = {
-		factor = 20
+		factor = 0.5
 		    modifier = {
 			factor = 0
 			is_historical_focus_on = yes
@@ -175,8 +175,8 @@ focus_tree = {
 			focus = SBU_terbia_compromiss
 		}
 		completion_reward = {
-		SBU = { create_faction = SBU_anti_yan }
-		TRB = { country_event = { id = terbia.6 days = 1 } }
+			SBU = { create_faction = SBU_anti_yan }
+			TRB = { country_event = { id = terbia.6 days = 1 } }
 		}
 		x = 5
 		y = 5
