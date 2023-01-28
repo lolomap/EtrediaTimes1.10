@@ -133,6 +133,36 @@
 #	priority = 100 # ai will prefer state of the highest prio strategy
 # }
 
+reduce_reactors = {
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = -5
+	}
+}
+
+enable_nuclear_rocket_site = {
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = building_target
+		id = nuclear_rocket_site
+		value = 5
+	}
+}
+
+enable_anti_nuclear_building = {
+	enable = {always = yes}
+
+	ai_strategy = {
+		type = building_target
+		id = anti_nuclear_building
+		value = 5
+	}
+}
+
 default_unit_production = {
 	enable = {
 		always = yes
