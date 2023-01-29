@@ -552,16 +552,16 @@ country_event = {	# ивенты на коорупцию (случайные)
 		if = {
 
 			random_list = {
-				4 = { if = {limit = {has_stability < 0.8} set_temp_variable = {can_c1 = 1}} random_list = { var:can_c1 = {country_event = mechanics.26} } }
-				4 = { if = {limit = {has_stability < 0.5} set_temp_variable = {can_c2 = 1}} random_list = { var:can_c2 = {country_event = mechanics.27} } }
-				4 = { if = {limit = {has_stability < 0.3} set_temp_variable = {can_c3 = 1}} random_list = { var:can_c3 = {country_event = mechanics.28} } }
-				4 = { if = {limit = {has_stability < 0.1} set_temp_variable = {can_c4 = 1}} random_list = { var:can_c4 = {country_event = mechanics.29} } }
-				2 = { if = {limit = {has_war_support < 0.5} set_temp_variable = {can_c5 = 1}} random_list = { var:can_c5 = {country_event = mechanics.30} } }
-				2 = { if = {limit = {has_war_support < 0.1} set_temp_variable = {can_c6 = 1}} random_list = { var:can_c6 = {country_event = mechanics.31} } }
-				2 = { if = {limit = {has_idea = total_nonfree_press} set_temp_variable = {can_c7 = 1}} random_list = { var:can_c7 = {country_event = mechanics.32} } }
-				2 = { if = {limit = {has_idea = nonfree_press} set_temp_variable = {can_c8 = 1}} random_list = { var:can_c8 = {country_event = mechanics.33} } }
-				2 = { if = {limit = {has_idea = closed_entry} set_temp_variable = {can_c9 = 1}} random_list = { var:can_c9 = {country_event = mechanics.34} } }
-				2 = { if = {limit = {has_idea = total_free_press} set_temp_variable = {can_c10 = 1}} random_list = { var:can10 = {country_event = mechanics.35} } }
+				4 = { if = {limit = {has_stability < 0.8} country_event = mechanics.26 } }
+				4 = { if = {limit = {has_stability < 0.5} country_event = mechanics.27 } }
+				4 = { if = {limit = {has_stability < 0.3} country_event = mechanics.28 } }
+				4 = { if = {limit = {has_stability < 0.1} country_event = mechanics.29 } }
+				2 = { if = {limit = {has_war_support < 0.5} country_event = mechanics.30 } }
+				2 = { if = {limit = {has_war_support < 0.1} country_event = mechanics.31 } }
+				2 = { if = {limit = {has_idea = total_nonfree_press} country_event = mechanics.32 } }
+				2 = { if = {limit = {has_idea = nonfree_press} country_event = mechanics.33 } }
+				2 = { if = {limit = {has_idea = closed_entry} country_event = mechanics.34 } }
+				2 = { if = {limit = {has_idea = total_free_press} country_event = mechanics.35 } }
 
 				72 = {
 
@@ -1079,10 +1079,10 @@ country_event = {	# ивенты от стабки на изменение си�
 
 			random_list = {
 				15 = {
-					if = {limit = {has_stability < 0.8} set_temp_variable = {can_e1 = 1}}
-					if = {limit = {has_stability < 0.5} set_temp_variable = {can_e2 = 1}}
-					if = {limit = {has_stability < 0.3} set_temp_variable = {can_e3 = 1}}
-					if = {limit = {has_stability < 0.1} set_temp_variable = {can_e4 = 1}}
+					if = {limit = {has_stability < 0.8} set_temp_variable = {can_e1 = 1}} else = {set_temp_variable = {can_e1 = 0}}
+					if = {limit = {has_stability < 0.5} set_temp_variable = {can_e2 = 1}} else = {set_temp_variable = {can_e2 = 0}}
+					if = {limit = {has_stability < 0.3} set_temp_variable = {can_e3 = 1}} else = {set_temp_variable = {can_e3 = 0}}
+					if = {limit = {has_stability < 0.1} set_temp_variable = {can_e4 = 1}} else = {set_temp_variable = {can_e4 = 0}}
 
 					random_list = {
 						1 = {country_event = mechanics.12}
@@ -1290,74 +1290,6 @@ country_event = { # требуют отставку
 	}
 }
 
-country_event = {	#победа конфликт
-	id = mechanics.17
-	title = mechanics.17.t
-	desc = mechanics.17.d
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = mechanics.17.a
-
-	}
-	immediate = {
-		random_list = {
-			30 = {
-				var:state_border_attack@FROM = {
-					add_state_claim = FROM
-					create_wargoal = {
-						type = take_state_focus
-						target = ROOT
-						generator = {FROM}
-					}
-					country_event = mechanics.20
-				}
-			}
-			70 = {var:state_border_attack@FROM = {country_event = mechanics.21}}
-		}
-	}
-}
-
-country_event = {	#проигрыш конфликт
-	id = mechanics.18
-	title = mechanics.18.t
-	desc = mechanics.18.d
-	hidden = yes
-	is_triggered_only = yes
-
-	option = {
-		name = mechanics.18.a
-	}
-	immediate = {
-		random_list = {
-			30 = {
-				var:state_border_attack@FROM = {
-					add_state_claim = FROM
-					create_wargoal = {
-						type = take_state
-						target = ROOT
-						generator = FROM
-					}
-					country_event = mechanics.20
-				}
-			}
-			70 = {var:state_border_attack@FROM = {country_event = mechanics.22}}
-		}
-	}
-}
-
-country_event = {	#ничья конфликт
-	id = mechanics.19
-	title = mechanics.19.t
-	desc = mechanics.19.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = mechanics.19.a
-	}
-}
 
 country_event = {	#дать корку конфликт
 	id = mechanics.20
@@ -1545,16 +1477,11 @@ country_event = {
         if = {
             limit = {has_global_flag = political_crysis}
             add_to_variable = {global.crysis_timer = 1.666}
-            random_country = {country_event = {id = mechanics.37 days = 1}}
+            var:sender_crysis = {country_event = {id = mechanics.37 days = 1}}
         }
         else = {
             force_press = yes
-            #set_global_flag = {
-            #    flag = pc_show_delay
-            #    days = 2
-            #    value = 1
-            #}
-            random_country = {country_event = {id = mechanics.36 days = 2}}
+            var:sender_crysis = {country_event = {id = mechanics.36 days = 2}}
         }
     }
 }
@@ -1564,24 +1491,27 @@ country_event = {
     title = mechanics.38.t
     desc = mechanics.38.d
     hidden = yes
-    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            NOT = {
+                has_global_flag = war_crysis
+                var:global.sender_crysis = {surrender_progress < 0.1}
+                crysis_rewardable = no
+            }
+        }
+        var:global.sender_crysis = {
+            tag = PREV
+        }
+    }
+    mean_time_to_happen = {days = 7}
 
     option = {
         name = mechanics.38.a
     }
 
     immediate = {
-        if = {
-            limit = {
-                has_global_flag = war_crysis
-                var:global.sender_crysis = {surrender_progress < 0.1}
-                crysis_rewardable = no
-            }
-            random_country = {country_event = {id = mechanics.38 days = 3}}
-        }
-        else = {
-            d_end_war_crysis = yes
-        }
+        d_end_war_crysis = yes
     }
 }
 
@@ -1694,23 +1624,6 @@ country_event = {
 }
 
 country_event = {
-	id = onactev.4
-	title = onactev.4.t
-	desc = onactev.4.d
-
-	fire_only_once = yes
-	trigger = {
-		TAL = {is_ai = no}
-	}
-	mean_time_to_happen = {days = 0}
-
-	immediate = {
-		play_song = "TALSHIK"
-	}
-	option = {name = onactev.4.a}
-}
-
-country_event = {
 	id = onactev.5
 	title = onactev.5.t
 	desc = onactev.5.d
@@ -1732,46 +1645,128 @@ country_event = {
 	}
 }
 
-#country_event = {	# Митинги у монархов вход 
-#	id = randev.1
-#
-#	hidden = yes
-#
-#	mean_time_to_happen = {
-#		days = 120
-#		modifier = {
-#			factor = 2
-#			OR = {
-#				tag = ORB
-#				tag = SBU
-#				tag = SFL
-#			}
-#		}
-#		modifier = {
-#			factor = 0.5
-#			has_war = yes
-#		}
-#	}
-#
-#	trigger = {
-#		has_civil_war = no
-#		has_government = monarchism
-#		not = {has_country_flag = MonarchyMeetingsFired}
-#	}
-#
-#	immediate = {
-#		random_list = {
-#			40 = {
-#				set_country_flag = MonarchyMeetingsFired
-#				country_event = {id = randev.2}
-#			}
-#			60 = {
-#				#nothing
-#			}
-#		}
-#	}
-#	option = {name = randev.1.a}
-#}
+country_event = {
+    id = onactev.6
+    title = onactev.6.t
+    desc = onactev.6.d
+
+    hidden = yes
+    mean_time_to_happen = {days = 30}
+
+    trigger = {
+        check_variable = {world_influence > 10}
+        NOT = {has_idea = wi_trade_influence}
+    }
+
+    immediate = {
+        add_ideas = wi_trade_influence
+    }
+}
+
+country_event = {
+    id = onactev.7
+    title = onactev.7.t
+    desc = onactev.7.d
+
+    hidden = yes
+    
+    mean_time_to_happen = {days = 30}
+
+    trigger = {
+        check_variable = {faction_threat > 1}
+        is_faction_leader = yes
+    }
+
+    immediate = {
+        every_country = {
+            limit = {is_in_faction_with = ROOT}
+            remove_ideas = EconomicFaction
+        }
+    }
+}
+
+country_event = {
+    id = onactev.8
+    title = onactev.8.t
+    desc = onactev.8.d
+
+    
+    mean_time_to_happen = {days = 30}
+
+    hidden = yes
+
+    trigger = {
+        if= { limit = {is_in_faction = yes}
+            ROOT= {faction_leader = {check_variable = {faction_influence > 29}}}
+        }
+        else = {always = no}
+    }
+
+    immediate = {
+        if = {
+            limit = {not = {has_idea = wi_faction_trade_influence}}
+            add_ideas = wi_faction_trade_influence
+        }
+    }
+}
+
+country_event = {
+    id = onactev.9
+    title = onactev.9.t
+    desc = onactev.9.d
+
+    hidden = yes
+
+    trigger = {
+        if= { limit = {is_in_faction = yes}
+            ROOT = {faction_leader = {check_variable = {faction_influence > 49}}}
+        }
+        else = {always = no}
+    }
+
+    
+    mean_time_to_happen = {days = 30}
+
+    immediate = {
+        if = {
+            limit = {
+                not = {has_idea = wi_economic_faction_trade_influence}
+                has_idea = EconomicFaction
+            }
+            add_ideas = wi_economic_faction_trade_influence
+        }
+    }
+}
+
+country_event = {
+    id = onactev.10
+    title = onactev.10.t
+    desc = onactev.10.d
+
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        d_calc_wi_e = yes
+        set_variable = {num_of_nuke_anti = 0}
+        every_country = {
+            every_owned_state = {
+                owner = {add_to_variable = {num_of_nuke_anti = PREV.building_level@anti_nuclear_building}}
+            }
+            every_owned_state = {
+                set_variable = {num_of_nuke_anti = ROOT.num_of_nuke_anti}
+            }
+            set_variable = {num_of_nuke_rockets = 0}
+            every_owned_state = {
+                owner = {add_to_variable = {num_of_nuke_rockets = PREV.building_level@nuclear_rocket_site}}
+            }
+            every_owned_state = {
+                set_variable = {num_of_nuke_rockets = ROOT.num_of_nuke_rockets}
+            }
+        }
+    }
+}
 
 country_event = {
 	id = randev.2

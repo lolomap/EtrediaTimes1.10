@@ -16,8 +16,14 @@ scripted_gui = {
         }
 
         ai_enabled = {
-			always = yes	
+			has_game_rule = {
+                rule = allow_crysis
+                option = FREE
+            }	
 		}
+        ai_check = {
+            has_global_flag = political_crysis
+        }
         ai_test_interval = 240 #Every 10 days
         ai_weights = {
             sender_choose_button_click = {
@@ -62,7 +68,7 @@ scripted_gui = {
                         }
                         var:global.sender_crysis = {
                             OR = {
-                                has_government = fascist
+                                has_government = fascism
                                 has_government = monarchism
                                 has_government = neutrality
                             }
@@ -73,8 +79,8 @@ scripted_gui = {
                         has_government = democratic
                         any_of_scopes = {
                             array = global.crysis_senders
-                            has_government = fascist
-                            has_government = communist
+                            has_government = fascism
+                            has_government = communism
                         }
                         add = -15
                     }
@@ -145,7 +151,7 @@ scripted_gui = {
                         }
                         var:global.to_crysis = {
                             OR = {
-                                has_government = fascist
+                                has_government = fascism
                                 has_government = monarchism
                                 has_government = neutrality
                             }
@@ -156,8 +162,8 @@ scripted_gui = {
                         has_government = democratic
                         any_of_scopes = {
                             array = global.crysis_tos
-                            has_government = fascist
-                            has_government = communist
+                            has_government = fascism
+                            has_government = communism
                         }
                         add = -15
                     }
@@ -458,7 +464,12 @@ scripted_gui = {
         parent_window_token = selected_country_view 
         context_type = selected_country_context
 
-        ai_enabled = {always = yes}
+        ai_enabled = {
+            has_game_rule = {
+                rule = allow_crysis
+                option = FREE
+            }
+        }
         #ai_test_interval = 336 #Every 14 days
         ai_test_scopes = test_neighbouring_countries
         ai_weights = {
@@ -517,7 +528,6 @@ scripted_gui = {
                     }
                     set_variable = {global.to_crysis = THIS}
                     set_variable = {global.sender_crysis = ROOT}
-                    log = "[?v.GetTag]"
                     #set_variable = {global.minor_crysis = ROOT.cr_ai_minor_target}
                     set_variable = {global.minor_crysis = v}
 

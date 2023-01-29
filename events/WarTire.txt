@@ -274,7 +274,6 @@ country_event = {
 	immediate = {
 		ROOT = {
 			set_temp_variable = {wt_civwar_chance = random}
-			log = "[?wt_civwar_chance]"
 			if = {
 				limit = {
 					check_variable = {wt_civwar_chance > 0.6}

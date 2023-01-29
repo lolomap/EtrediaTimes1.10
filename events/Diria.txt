@@ -48,7 +48,7 @@ country_event = {
     option = {
     name = dirnews.2.a
     hidden_effect = {
-    DEM = {
+        DEM = {
             transfer_state = 267
 			transfer_state = 270
 			transfer_state = 271
@@ -114,34 +114,26 @@ country_event = {
 		add_ideas = { DIR_revolt }
 		add_ideas = { DEM_bad_economic }
 	}
-	DIR = {
-		teleport_armies = {
-			limit = {
-				has_war_together_with = ROOT
-			}
-			to_state_array = owned_controlled_states
-		}
-	}
 	DEM = {
 		add_ideas = { DIR_revolt }
 		add_ideas = { DEM_bad_economic }
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
 	KAR = { country_event = { days = 240 id = kar.4 } }
+    DIR = {
+        every_state = {
+            limit = {is_core_of = DIR}
+            teleport_armies = {
+                to_state_array = owned_controlled_states
+            }
+        }
+	}
 	}
 	
     option = {
     name = dirnews.2.b
     hidden_effect = {
-	DIR = {
-		teleport_armies = {
-			limit = {
-				has_war_together_with = ROOT
-			}
-			to_state_array = owned_controlled_states
-		}
-	}
-    DEM = {
+        DEM = {
             transfer_state = 267
 			transfer_state = 270
 			transfer_state = 271
@@ -199,7 +191,7 @@ country_event = {
 			add_state_core = 825
 			add_state_core = 826
             load_oob = DIR_democrat
-            }
+        }
 	}
 	DEM = { change_tag_from = DIR }
     DEM = { declare_war_on = { target = DIR type = annex_everything } }
@@ -214,6 +206,14 @@ country_event = {
 	}
 	KAR = { country_event = { days = 30 id = kar.1 } }
 	KAR = { country_event = { days = 240 id = kar.4 } }
+    DIR = {
+        every_state = {
+            limit = {is_core_of = DIR}
+            teleport_armies = {
+                to_state_array = owned_controlled_states
+            }
+        }
+	}
 	}
 }
 

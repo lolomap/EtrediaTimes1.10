@@ -1,6 +1,9 @@
 d_mtest = {
     clear_array = global.wi_countries
 }
+d_mtest2 = {
+    DIR = {delete_dirian_militia = yes}
+}
 
 ####
 
@@ -130,7 +133,6 @@ d_sort_wi = {
 		array = global.wi_countries
 		set_temp_variable = { j = i }
 		subtract_from_temp_variable = { j = 1 }
-        var:v = {log = "[?world_influence]"}
 		while_loop_effect = {
 			limit = {
 				check_variable = {
@@ -279,9 +281,6 @@ d_calc_crysis = {
         }
         add_to_variable = {global.crysis_t_totalwi = world_influence}
     }
-
-    log = "[?global.cr_send_op.GetTag] [?global.cr_smax]"
-    log = "[?global.cr_to_op.GetTag] [?global.cr_tmax]"
 
     var:global.sender_crysis = {
         if = {
