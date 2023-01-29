@@ -1,5 +1,6 @@
 ﻿l_russian:
   RULE_ALLOW_CRYSIS:0 "Разрешить полит. кризисы"
+  RULE_ALLOW_NUKING:0 "Разрешить ядерные удары"
   
 
   RULE_OPTION_MONARCHIST:0 "Монархизм"

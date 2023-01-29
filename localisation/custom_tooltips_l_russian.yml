@@ -81,7 +81,7 @@
   form_elr_coring:0 "Все лойманские территории станут национальными"
   form_ner_coring:0 "Все нерийские территории станут национальными"
 
-  nuke_province_desc:0 "[nuke_request_accepted_sl][nuke_has_any_sl]§Y Количество вражеских ПРО:[?num_of_nuke_anti] §!\n§Y Количество наших ШПУ:[?Root.num_of_nuke_rockets] §!\n"
+  nuke_province_desc:0 "[nuke_request_accepted_sl][nuke_has_any_sl]§Y Количество вражеских ПРО:[?num_of_nuke_anti] §!\n§Y Количество наших ШПУ:[?Root.num_of_nuke_rockets]§!\nДанные о ШПУ и ПРО обновляются раз в месяц.\n"
   nuke_request_accepted:0 "[!nuke_request_accepted_sl]\n"
   nuke_has_any:0 "[!nuke_has_any_sl]\n"
   nuke_request_accepted_yes:0 "§G Разрешение на использование ядерного оружия от лидера альянса §!\n"

@@ -12,9 +12,26 @@ scripted_gui = {
 				#always = no
 			}
 			nuke_province_moded_click_enabled = {
+                has_game_rule = {
+                    rule = allow_nuking
+                    option = FREE
+                }
 				owner = {
 					has_war_with = ROOT
 				}
+                ROOT = {
+                    OR = {
+                        is_in_faction = no
+                        is_faction_leader = yes
+                        has_country_flag = nuke_request_accepted
+                    }
+                    num_of_nukes > 0
+                    PREV = {
+                        owner = {
+                            check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
+                        }
+                    }
+                }
 			}
 		}
 
@@ -23,27 +40,17 @@ scripted_gui = {
 				ROOT = {
 					if = {
 						limit = {
-							OR = {
-								is_in_faction = no
-								is_faction_leader = yes
-								has_country_flag = nuke_request_accepted
-							}
-							num_of_nukes > 0
-							PREV = {
-								owner = {
-									check_variable = {num_of_nuke_anti < ROOT.num_of_nuke_rockets}
-								}
-							}
+							always = yes
 						}
 						if = {
 							limit = {
-                                OR = {
-                                    check_variable = {selected_prov > 0}
-                                    is_ai = yes
-                                }
+                                #is_ai = yes
                             }
                             if = {
-                                limit = {is_ai = no}
+                                limit = {
+                                    is_ai = no
+                                    check_variable = {selected_prov > 0}
+                                }
                                 launch_nuke = {
                                     state = PREV
                                     use_nuke = yes
@@ -65,9 +72,19 @@ scripted_gui = {
 		}
 
 		ai_enabled = {
-			always = yes
-			
+			has_game_rule = {
+                rule = allow_nuking
+                option = FREE
+            }
 		}
+        ai_check = {
+            OR = {
+                is_in_faction = no
+                is_faction_leader = yes
+                has_country_flag = nuke_request_accepted
+            }
+            num_of_nukes > 0
+        }
         ai_test_scopes = test_enemy_controlled_states
 
 		ai_weights = {

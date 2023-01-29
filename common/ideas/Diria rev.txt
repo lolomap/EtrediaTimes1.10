@@ -16,6 +16,10 @@ ideas = {
 			cancel = {
 				has_war = no
 			}
+
+            on_remove = {
+                delete_dirian_militia = yes
+            }
 			
 			removal_cost = -1
 

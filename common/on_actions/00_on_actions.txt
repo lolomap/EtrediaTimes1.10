@@ -49,7 +49,6 @@ on_actions = {
 
             SBU = {
                 set_variable_to_random = sbu_frev_rand
-                log = "[?sbu_frev_rand]"
 				multiply_variable = {sbu_frev_rand = 100}
             }
 
@@ -58,6 +57,10 @@ on_actions = {
 			random_country = {
 				country_event = {id = randev.11 days = 10}
 			}
+
+            ELR = {
+                country_event = {id = onactev.10 days = 1}
+            }
 
 			if = {
 				limit = {has_start_date > 2014.01.31}
@@ -191,7 +194,7 @@ on_actions = {
 		}
 	}
 
-	on_weekly_ORB = {
+	on_monthly_ORB = {
 		effect = {
 			if = {
 				limit = {
@@ -201,7 +204,7 @@ on_actions = {
 					ORB = {check_variable = {fsc_influence < 100.14}}
 					ORB = {not = {has_country_flag = no_iid_fsc_influence}}
 				}
-				add_to_variable = {fsc_influence = 0.952}
+				add_to_variable = {fsc_influence = 4.08}
 			}
 			if = {
 				limit = {
@@ -216,7 +219,7 @@ on_actions = {
 						any_country = {is_subject_of = ORB}
 					}
 				}
-				add_to_variable = {iid_influence = 1.918}
+				add_to_variable = {iid_influence = 8.22}
 			}
 
 			if = {
@@ -611,390 +614,8 @@ on_actions = {
 	}
 
 	on_monthly = {
-	
-	
-	}
-
-    on_monthly_SBU = {
-        if = {
-            limit = {
-                has_government = democratic
-                any_owned_state = {
-                    owner = {tag = SFL}
-                }
-            }
-
-            release_puppet_on_controlled = SFL
-        }
-        if = {
-            limit = {
-                has_government = democratic
-                any_owned_state = {
-                    owner = {tag = TRB}
-                }
-            }
-
-            release_puppet_on_controlled = TRB
-        }
-    }
-
-	on_weekly = {
-		effect = {
-            ####################################################################
-            #                           AI CRYSIS                              #
-            ####################################################################
-			
-            #Начало кризиса
-			every_neighbor_country = {
-				if = {
-					limit = {
-                        #is_historical_focus_on = no
-						crysis_startable = yes
-						ROOT = {
-							has_opinion = {
-								target = PREV
-								value < -39
-							}
-						}
-                        threat < 0.7
-					}
-					
-					set_temp_variable = {crysis_wish = -70}
-                    set_temp_variable = {widif = ROOT.world_influence}
-					subtract_from_temp_variable = {widif = THIS.world_influence}
-
-					#НАЛИЧИЕ ПРИЧИНЫ
-
-                    #КОРКИ
-					if = {
-						limit = {ROOT = {has_government = democratic}}
-
-						if = {
-							limit = {any_owned_state = {is_core_of = ROOT}}
-							add_to_temp_variable = {crysis_wish = 30}
-							set_temp_variable = {cr_ai_cores = 1}
-						}
-					}
-					else = {
-						if = {
-							limit = {
-								any_owned_state = {
-									OR = {
-										is_claimed_by = ROOT
-										is_core_of = ROOT
-                    				}
-								}
-							}
-							add_to_temp_variable = {crysis_wish = 30}
-							set_temp_variable = {cr_ai_cores = 1}
-						}
-					}
-                    #
-
-                    #МИНОР
-                    if = {
-                        limit = {
-                            ROOT = {
-                                OR = {
-                                    has_government = democratic
-                                    has_government = neutrality
-                                    has_government = communism
-                                }
-                            }
-                        }
-
-                        if = {
-                            limit = {
-                                ROOT = {has_opinion = {target = PREV value > -80}}
-                                any_controlled_state = {
-                                    not = {is_core_of = PREV}
-                                }
-                            }
-                            set_temp_variable = {cur_c_check = THIS}
-                            random_scope_in_array = {
-                                array = minor_countries
-                                limit = {
-                                    var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
-                                }
-                                add_to_temp_variable = {crysis_wish = 40}
-                                set_temp_variable = {cr_ai_minor = 1}
-                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
-                            }
-                        }
-                        else = {
-                            set_temp_variable = {cur_c_check = THIS}
-                            random_scope_in_array = {
-                                array = minor_countries
-                                add_to_temp_variable = {crysis_wish = 40}
-                                set_temp_variable = {cr_ai_minor = 1}
-                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
-                            }
-                        }
-                    }
-                    else_if = {
-                        limit = {ROOT = {has_opinion = {target = PREV value < -99}}}
-
-                        if = {
-                            limit = {check_variable = {widif > 4}}
-                            set_temp_variable = {cur_c_check = THIS}
-                            random_scope_in_array = {
-                                array = occupied_countries
-                                limit = {
-                                    var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
-                                }
-                                add_to_temp_variable = {crysis_wish = 30}
-                                set_temp_variable = {cr_ai_minor = 1}
-                                ROOT = {set_variable = {cr_ai_minor_target = PREV}}
-                            }
-                        }
-                    }
-                    #
-
-					#ОБЩИЕ ПАРАМЕТРЫ
-					if = {limit = {ROOT={is_in_faction=yes}}
-						add_to_temp_variable = {crysis_wish = 5}
-					}
-					if = {limit = {is_in_faction=yes}
-						add_to_temp_variable = {crysis_wish = -5}
-					}
-					if = {limit = {ROOT={has_opinion={target=PREV value<-69}}}
-						add_to_temp_variable = {crysis_wish = 5}
-					}
-					if = {limit = {ROOT={has_war=yes}}
-						add_to_temp_variable = {crysis_wish = -50}
-					}
-					if = {limit = {is_major = no}
-						add_to_temp_variable = {crysis_wish = 5}
-					}
-                    if = {limit = {threat > 0.05}
-                        add_to_temp_variable = {crysis_wish = 5}
-                    }
-                    if = {limit = {threat > 0.1}
-                        add_to_temp_variable = {crysis_wish = 10}
-                    }
-                    if = {limit = {threat > 0.15}
-                        add_to_temp_variable = {crysis_wish = 20}
-                    }
-                    if = {limit = {threat > 0.3}
-                        add_to_temp_variable = {crysis_wish = 30}
-                    }
-                    #if = {limit = {is_asian = yes}
-                    #    add_to_temp_variable = {crysis_wish = -15}
-                    #}
-
-					#РАЗНИЦА ВЛИЯНИЙ
-					if = {limit = {check_variable = {widif > 0}}
-						add_to_temp_variable = {crysis_wish = 5}
-					}
-					if = {limit = {check_variable = {widif > 3}}
-						add_to_temp_variable = {crysis_wish = 5}
-					}
-					if = {limit = {check_variable = {widif > 5}}
-						add_to_temp_variable = {crysis_wish = 10}
-					}
-					if = {limit = {check_variable = {widif < 0}}
-						add_to_temp_variable = {crysis_wish = -5}
-					}
-					if = {limit = {check_variable = {widif < -3}}
-						add_to_temp_variable = {crysis_wish = -5}
-					}
-					if = {limit = {check_variable = {widif < -5}}
-						add_to_temp_variable = {crysis_wish = -10}
-					}
-
-					#Определение результата
-					if = {
-						limit = {check_variable = {crysis_wish > 0}}
-
-						set_variable = {crysis_chance = 2}
-                        multiply_temp_variable = {crysis_wish = 0.25}
-						add_to_variable = {crysis_chance = crysis_wish}
-
-						set_variable_to_random = crysis_fire
-						multiply_variable = {crysis_fire = 100}
-						if = {
-							limit = {
-								check_variable = {crysis_chance > crysis_fire}
-							}
-
-                            if = {
-                                limit = {
-                                    check_variable = {cr_ai_cores > 0}
-                                }
-                                ROOT = {set_country_flag = crysis_ai_cores@PREV}
-                            }
-                            else_if = {
-                                limit = {
-                                    check_variable = {cr_ai_minor > 0}
-                                }
-                                ROOT = {var:cr_ai_minor_target = {ROOT = {set_country_flag = crysis_ai_minor@PREV}}}
-                            }
-						}
-
-						
-					}
-				}
-			}
-
-            #Уступить или возразить
-            if = {
-                limit = {
-                    has_global_flag = political_crysis
-                    NOT = {has_country_flag = cr_ai_allow}
-                    NOT = {has_country_flag = cr_ai_press}
-                    NOT = {has_country_flag = cr_ai_completed}
-                }
-                if = {
-                    limit = {
-                        is_in_array = {global.crysis_senders = ROOT}
-                    }
-                    set_temp_variable = {widif = global.crysis_s_totalwi}
-                    if = {
-                        limit = {check_variable = {global.crysis_t_totalwi > 1}}
-                        divide_temp_variable = {widif = global.crysis_t_totalwi}
-                    }
-                    if = {
-                        limit = {
-                            check_variable = {widif < 0.51}
-                        }
-                        set_country_flag = crysis_scared
-                    }
-                    else_if = {
-                        limit = {
-                            check_variable = {widif > 1.9}
-                        }
-                        set_country_flag = crysis_angry
-                    }
-
-                    if = {
-                        limit = {
-                            check_variable = {widif > 0.51}
-                            OR = {has_government = fascism has_government = communism}
-                        }
-                        set_country_flag = crysis_push_fc
-                    }
-                }
-                else_if = {
-                    limit = {
-                        is_in_array = {global.crysis_tos = ROOT}
-                    }
-                    set_temp_variable = {widif = global.crysis_t_totalwi}
-                    divide_temp_variable = {widif = global.crysis_s_totalwi}
-                    if = {
-                        limit = {
-                            check_variable = {widif < 0.51}
-                        }
-                        set_country_flag = crysis_scared
-                    }
-                    else_if = {
-                        limit = {
-                            check_variable = {widif > 1.9}
-                        }
-                        set_country_flag = crysis_angry
-                    }
-
-                    if = {
-                        limit = {
-                            check_variable = {widif > 0.51}
-                            OR = {has_government = fascism has_government = communism}
-                            OR = {
-                                var:global.cr_to_op = {tag = PREV}
-                                var:global.cr_send_op = {tag = PREV}
-                            }
-                        }
-                        set_country_flag = crysis_push_fc
-                    }
-                }
-
-                
-                set_temp_variable_to_random = cr_ai_allow_wish
-                if = {limit = {is_in_array = {global.crysis_senders = ROOT}}
-                    add_to_temp_variable = {cr_ai_allow_wish = 0.05}
-                }
-                if = {
-                    limit = {
-                        OR = {
-                            has_government = fascism
-                            has_government = communism
-                        }
-                    }
-
-                    if = {
-                        limit = {has_country_flag = crysis_scared}
-                        if = {
-                            limit = {
-                                check_variable = {cr_ai_allow_wish < 0.2}
-                            }
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                    else_if = {
-                        limit = {not = {has_country_flag = crysis_angry}}
-                        if = {
-                            limit = {
-                                check_variable = {cr_ai_allow_wish < 0.025}
-                            }
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                    else = {
-                        if = {
-                            limit = {has_country_flag = crysis_push_fc}
-                            set_country_flag = cr_ai_press
-                        }
-                        if = {limit = {check_variable = {cr_ai_allow_wish < 0.06}}
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                }
-                else = {
-                    if = {
-                        limit = {has_country_flag = crysis_scared}
-                        if = {
-                            limit = {
-                                check_variable = {cr_ai_allow_wish < 0.3}
-                            }
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                    else_if = {
-                        limit = {not = {has_country_flag = crysis_angry}}
-                        if = {
-                            limit = {
-                                check_variable = {cr_ai_allow_wish < 0.05}
-                            }
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                    else = {
-                        if = {limit = {check_variable = {cr_ai_allow_wish < 0.12}}
-                            set_country_flag = cr_ai_allow
-                        }
-                    }
-                }
-            }
-
-            ########################################################################
-			set_variable = {dem_opposition_delta = 0.07}
-			set_variable = {fas_opposition_delta = 0.07}
-			set_variable = {neu_opposition_delta = 0.07}
-			set_variable = {com_opposition_delta = 0.07}
-			set_variable = {mon_opposition_delta = 0.07}
-
-			multiply_variable = {dem_opposition_delta = dem_opposition_factor}
-			multiply_variable = {fas_opposition_delta = fas_opposition_factor}
-			multiply_variable = {neu_opposition_delta = neu_opposition_factor}
-			multiply_variable = {com_opposition_delta = com_opposition_factor}
-			multiply_variable = {mon_opposition_delta = mon_opposition_factor}
-
-			add_to_variable = {dem_opposition = dem_opposition_delta}
-			add_to_variable = {fas_opposition = fas_opposition_delta}
-			add_to_variable = {neu_opposition = neu_opposition_delta}
-			add_to_variable = {com_opposition = com_opposition_delta}
-			add_to_variable = {mon_opposition = mon_opposition_delta}
-
-			########################################################################
-			
+        effect = {
+            # Подсчет мирового влияния
             if = {
                 limit = {NOT = {has_global_flag = wi_calced}}
                 set_global_flag = {
@@ -1005,304 +626,600 @@ on_actions = {
                 d_calc_wi_e = yes
             }
 
-			if = {
-				limit = {check_variable = {world_influence > 10}}
-				if = {
-					limit = {not = {has_idea = wi_trade_influence}}
-					add_ideas = wi_trade_influence
-				}
-			}
+            # Подсчет ШПУ и ПРО
+            set_variable = {num_of_nuke_anti = 0}
+            every_owned_state = {
+                owner = {add_to_variable = {num_of_nuke_anti = PREV.building_level@anti_nuclear_building}}
+            }
+            every_owned_state = {
+                set_variable = {num_of_nuke_anti = ROOT.num_of_nuke_anti}
+            }
+            set_variable = {num_of_nuke_rockets = 0}
+            every_owned_state = {
+                owner = {add_to_variable = {num_of_nuke_rockets = PREV.building_level@nuclear_rocket_site}}
+            }
+            every_owned_state = {
+                set_variable = {num_of_nuke_rockets = ROOT.num_of_nuke_rockets}
+            }
 
-			set_variable = {num_of_nuke_anti = 0}
-			every_owned_state = {
-				owner = {add_to_variable = {num_of_nuke_anti = PREV.building_level@anti_nuclear_building}}
-			}
-			every_owned_state = {
-				set_variable = {num_of_nuke_anti = ROOT.num_of_nuke_anti}
-			}
-			set_variable = {num_of_nuke_rockets = 0}
-			every_owned_state = {
-				owner = {add_to_variable = {num_of_nuke_rockets = PREV.building_level@nuclear_rocket_site}}
-			}
-			every_owned_state = {
-				set_variable = {num_of_nuke_rockets = ROOT.num_of_nuke_rockets}
-			}
+            #Замена стабильности
+            if = {
+                limit = { has_stability > 0.83 }
+                if = {
+                    limit = {has_government = fascism} add_ideas = stability_heaven_f
+                }
+                else_if = {
+                    limit = {has_government = communism} add_ideas = stability_heaven_c
+                }
+                else_if = {
+                    limit = {has_government = democratic} add_ideas = stability_heaven_d
+                }
+                else_if = {
+                    limit = {has_government = neutrality} add_ideas = stability_heaven_n
+                }
+                else_if = {
+                    limit = {has_government = monarchism} add_ideas = stability_heaven_m
+                }
+            }
+            else_if = {
+                limit = { has_stability > 0.7 } add_ideas = stability_great
+            }
+            else_if = {
+                limit = { has_stability > 0.5 } add_ideas = stability_nice
+            }
+            else_if = {
+                limit = {has_stability > 0.3 } add_ideas = stability_middle
+            }
+            else = {
+                add_ideas = stability_bad
+            }
 
-			if = {
-				limit = {ROOT = {is_faction_leader = yes}}
-				set_variable = {faction_threat = 0}
-				every_country = {
-					limit = {is_in_faction_with = ROOT}
-					ROOT = {add_to_variable = {faction_threat = PREV.has_added_tension_amount}}
-				}
-				set_variable = {faction_influence = 0}
-				every_country = {
-					limit = {is_in_faction_with = ROOT}
-					ROOT = {add_to_variable = {faction_influence = var:PREV.world_influence}}
-				}
+            # Влияние и напряга альянса
+            if = {
+                limit = {ROOT = {is_faction_leader = yes}}
+                set_variable = {faction_threat = 0}
+                every_country = {
+                    limit = {is_in_faction_with = ROOT}
+                    ROOT = {add_to_variable = {faction_threat = PREV.has_added_tension_amount}}
+                }
+                set_variable = {faction_influence = 0}
+                every_country = {
+                    limit = {is_in_faction_with = ROOT}
+                    ROOT = {add_to_variable = {faction_influence = var:PREV.world_influence}}
+                }
+            }
 
-				if = {
-					limit = {check_variable = {faction_threat > 1}}
-					every_country = {
-						limit = {is_in_faction_with = ROOT}
-						remove_ideas = EconomicFaction
-					}
-				}
-			}
-
-			if = {
-				limit = {check_variable = {faction_influence > 29}}
-				if = {
-					limit = {not = {has_idea = wi_faction_trade_influence}}
-					add_ideas = wi_faction_trade_influence
-				}
-			}
-			if = {
-				limit = {check_variable = {faction_influence > 49}}
-				if = {
-					limit = {
-						not = {has_idea = wi_economic_faction_trade_influence}
-						has_idea = EconomicFaction
-					}
-					add_ideas = wi_economic_faction_trade_influence
-				}
-			}
-
-#####################################################################################
-
-			if = {
-				limit = { has_stability > 0.83 }
-				if = {
-					limit = {has_government = fascism} add_ideas = stability_heaven_f
-				}
-				else_if = {
-					limit = {has_government = communism} add_ideas = stability_heaven_c
-				}
-				else_if = {
-					limit = {has_government = democratic} add_ideas = stability_heaven_d
-				}
-				else_if = {
-					limit = {has_government = neutrality} add_ideas = stability_heaven_n
-				}
-				else_if = {
-					limit = {has_government = monarchism} add_ideas = stability_heaven_m
-				}
-			}
-			else_if = {
-				limit = { has_stability > 0.7 } add_ideas = stability_great
-			}
-			else_if = {
-				limit = { has_stability > 0.5 } add_ideas = stability_nice
-			}
-			else_if = {
-				limit = {has_stability > 0.3 } add_ideas = stability_middle
-			}
-			else = {
-				add_ideas = stability_bad
-			}
-
-#####################################################################################
-
-#####################################################################################
-
-			if = {
-				limit = {
-					OR = {
-						ROOT = {has_war = yes}
-						ROOT = {has_border_war = yes}
-					}
-				}
-				ROOT = {
-					set_variable = {wtire_to_add = 0.98}
-					if = {
-						limit = {has_country_flag = do_reduce_wtire}
-						multiply_variable = {wtire_to_add = 0.85}
-					}
-					if = {
-						limit = {has_country_flag = do_reduce_wtire_advisor}
-						multiply_variable = {wtire_to_add = 0.85}
-					}
-					
-					add_to_variable = {wtire = wtire_to_add}
-				}
-			}
-			else = {
-				if = {
-					limit = {ROOT = {check_variable = {wtire > 0.97}}}
-					ROOT = {subtract_from_variable = {wtire = 0.98}}
-				}
-			}
-
-			ROOT = {
-				#WAR_TIRE EFFECTS
-				if = {
-					limit = {
-						check_variable = {wtire > 20}
-						check_variable = {wtire < 50}
-					}
-					set_variable = {wtire_stability = -0.05}
-					set_variable = {wtire_warsup = -0.05}
-					set_variable = {wtire_attack = 0}
-					set_variable = {wtire_deffence = 0}
-					set_variable = {wtire_restore = 0}
-					set_variable = {wtire_mobolize = 0}
-
-					if = {
-						limit = {not = {has_idea = war_tire_idea1}}
-						add_ideas = war_tire_idea1
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {wtire  > 50}
-						check_variable = {wtire  < 100}
-					}
-					set_variable = {wtire_stability = -0.1}
-					set_variable = {wtire_warsup = -0.1}
-					set_variable = {wtire_attack = -0.05}
-					set_variable = {wtire_deffence = -0.05}
-					set_variable = {wtire_restore = -0.08}
-					set_variable = {wtire_mobolize = 0.05}
-
-					if = {
-						limit = {not = {has_idea = war_tire_idea2}}
-						add_ideas = war_tire_idea2
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {wtire  > 100}
-						check_variable = {wtire  < 150}
-					}
-					set_variable = {wtire_stability = -0.2}
-					set_variable = {wtire_warsup = -0.2}
-					set_variable = {wtire_attack = -0.1}
-					set_variable = {wtire_deffence = -0.1}
-					set_variable = {wtire_restore = -0.15}
-					set_variable = {wtire_mobolize = 0.1}
-
-					if = {
-						limit = {not = {has_idea = war_tire_idea3}}
-						add_ideas = war_tire_idea3
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {wtire  > 150}
-						check_variable = {wtire  < 200}
-					}
-					set_variable = {wtire_stability = -0.3}
-					set_variable = {wtire_warsup = -0.3}
-					set_variable = {wtire_attack = -0.15}
-					set_variable = {wtire_deffence = -0.15}
-					set_variable = {wtire_restore = -0.2}
-					set_variable = {wtire_mobolize = 0.15}
-
-					if = {
-						limit = {not = {has_idea = war_tire_idea4}}
-						add_ideas = war_tire_idea4
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {wtire  > 200}
-					}
-					set_variable = {wtire_stability = -0.3}
-					set_variable = {wtire_warsup = -0.3}
-					set_variable = {wtire_attack = -0.25}
-					set_variable = {wtire_deffence = -0.25}
-					set_variable = {wtire_restore = -0.3}
-					set_variable = {wtire_mobolize = 0.25}
-
-					if = {
-						limit = {not = {has_idea = war_tire_idea5}}
-						add_ideas = war_tire_idea5
-					}
-				}
-				else = {
-					if = {
-						limit = {
-							OR = {
-								has_idea = war_tire_idea1
-								has_idea = war_tire_idea2
-								has_idea = war_tire_idea3
-								has_idea = war_tire_idea4
-								has_idea = war_tire_idea5
-							}
-						}
-
-						set_variable = {wtire_stability = 0}
-						set_variable = {wtire_warsup = 0}
-						set_variable = {wtire_attack = 0}
-						set_variable = {wtire_deffence = 0}
-						set_variable = {wtire_restore = 0}
-						set_variable = {wtire_mobolize = 0}
-					}
-					if = {
-						limit = {
-							or = {
-								has_idea = war_tire_idea1
-								has_idea = war_tire_idea2
-								has_idea = war_tire_idea3
-								has_idea = war_tire_idea4
-								has_idea = war_tire_idea5
-							}
-						}
-						remove_ideas = {
-							war_tire_idea1
-							war_tire_idea2
-							war_tire_idea3
-							war_tire_idea4
-							war_tire_idea5
-						}
-					}
-				}
-			}
-		}
-	}
-
-	on_daily = {
-		effect = {
-
-			
-		}
-	}
-
-    on_peace = {
-        add_threat = -0.1
-    }
-
-	on_peaceconference_ended = {
-		effect = {
-			clr_country_flag = nuke_request_accepted
-            ROOT = {clr_country_flag = nuke_request_accepted}
-            ROOT = {add_threat = -0.1}
-
+            # Подсчет усталости
             if = {
                 limit = {
-                    NOT = {
-                        any_country = {
-                            OR = {
-                                has_idea = DIR_revolt
-                                has_idea = DIR_revolt2
+                    OR = {
+                        ROOT = {has_war = yes}
+                        ROOT = {has_border_war = yes}
+                    }
+                }
+                ROOT = {
+                    set_variable = {wtire_to_add = 4.2}
+                    if = {
+                        limit = {has_country_flag = do_reduce_wtire}
+                        multiply_variable = {wtire_to_add = 0.85}
+                    }
+                    if = {
+                        limit = {has_country_flag = do_reduce_wtire_advisor}
+                        multiply_variable = {wtire_to_add = 0.85}
+                    }
+                    
+                    add_to_variable = {wtire = wtire_to_add}
+                }
+            }
+            else = {
+                if = {
+                    limit = {ROOT = {check_variable = {wtire > 4.1}}}
+                    ROOT = {subtract_from_variable = {wtire = 4.2}}
+                }
+            }
+            # Эффкты от усталости
+            ROOT = {
+                    if = {
+                        limit = {
+                            check_variable = {wtire > 20}
+                            check_variable = {wtire < 50}
+                        }
+                        set_variable = {wtire_stability = -0.05}
+                        set_variable = {wtire_warsup = -0.05}
+                        set_variable = {wtire_attack = 0}
+                        set_variable = {wtire_deffence = 0}
+                        set_variable = {wtire_restore = 0}
+                        set_variable = {wtire_mobolize = 0}
+
+                        if = {
+                            limit = {not = {has_idea = war_tire_idea1}}
+                            add_ideas = war_tire_idea1
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {wtire  > 50}
+                            check_variable = {wtire  < 100}
+                        }
+                        set_variable = {wtire_stability = -0.1}
+                        set_variable = {wtire_warsup = -0.1}
+                        set_variable = {wtire_attack = -0.05}
+                        set_variable = {wtire_deffence = -0.05}
+                        set_variable = {wtire_restore = -0.08}
+                        set_variable = {wtire_mobolize = 0.05}
+
+                        if = {
+                            limit = {not = {has_idea = war_tire_idea2}}
+                            add_ideas = war_tire_idea2
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {wtire  > 100}
+                            check_variable = {wtire  < 150}
+                        }
+                        set_variable = {wtire_stability = -0.2}
+                        set_variable = {wtire_warsup = -0.2}
+                        set_variable = {wtire_attack = -0.1}
+                        set_variable = {wtire_deffence = -0.1}
+                        set_variable = {wtire_restore = -0.15}
+                        set_variable = {wtire_mobolize = 0.1}
+
+                        if = {
+                            limit = {not = {has_idea = war_tire_idea3}}
+                            add_ideas = war_tire_idea3
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {wtire  > 150}
+                            check_variable = {wtire  < 200}
+                        }
+                        set_variable = {wtire_stability = -0.3}
+                        set_variable = {wtire_warsup = -0.3}
+                        set_variable = {wtire_attack = -0.15}
+                        set_variable = {wtire_deffence = -0.15}
+                        set_variable = {wtire_restore = -0.2}
+                        set_variable = {wtire_mobolize = 0.15}
+
+                        if = {
+                            limit = {not = {has_idea = war_tire_idea4}}
+                            add_ideas = war_tire_idea4
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = {wtire  > 200}
+                        }
+                        set_variable = {wtire_stability = -0.3}
+                        set_variable = {wtire_warsup = -0.3}
+                        set_variable = {wtire_attack = -0.25}
+                        set_variable = {wtire_deffence = -0.25}
+                        set_variable = {wtire_restore = -0.3}
+                        set_variable = {wtire_mobolize = 0.25}
+
+                        if = {
+                            limit = {not = {has_idea = war_tire_idea5}}
+                            add_ideas = war_tire_idea5
+                        }
+                    }
+                    else = {
+                        if = {
+                            limit = {
+                                OR = {
+                                    has_idea = war_tire_idea1
+                                    has_idea = war_tire_idea2
+                                    has_idea = war_tire_idea3
+                                    has_idea = war_tire_idea4
+                                    has_idea = war_tire_idea5
+                                }
+                            }
+
+                            set_variable = {wtire_stability = 0}
+                            set_variable = {wtire_warsup = 0}
+                            set_variable = {wtire_attack = 0}
+                            set_variable = {wtire_deffence = 0}
+                            set_variable = {wtire_restore = 0}
+                            set_variable = {wtire_mobolize = 0}
+                        }
+                        if = {
+                            limit = {
+                                or = {
+                                    has_idea = war_tire_idea1
+                                    has_idea = war_tire_idea2
+                                    has_idea = war_tire_idea3
+                                    has_idea = war_tire_idea4
+                                    has_idea = war_tire_idea5
+                                }
+                            }
+                            remove_ideas = {
+                                war_tire_idea1
+                                war_tire_idea2
+                                war_tire_idea3
+                                war_tire_idea4
+                                war_tire_idea5
                             }
                         }
                     }
                 }
 
-                DIR = {
-                    delete_dirian_militia = yes
-                }
-                DEM = {
-                    delete_dirian_militia = yes
-                }
-                SDI = {
-                    delete_dirian_militia = yes
-                }
-                DIB = {
-                    delete_dirian_militia = yes
+            #Начало кризиса
+            if = {
+                limit = {has_global_flag = CRYSIS_ALLOWED}
+                if = {
+                    limit = {
+                        threat > 0.4
+                        threat < 0.7
+                        NOT = {has_global_flag = political_crysis}
+                        NOT = {has_global_flag = war_crysis}
+                    }
+                    every_neighbor_country = {
+                        if = {
+                            limit = {
+                                ROOT = {
+                                    has_opinion = {
+                                        target = PREV
+                                        value < -39
+                                    }
+                                }
+                            }
+                            if = {
+                                limit = {crysis_startable = yes}
+                            
+                                set_temp_variable = {crysis_wish = -70}
+                                set_temp_variable = {widif = ROOT.world_influence}
+                                subtract_from_temp_variable = {widif = THIS.world_influence}
+
+                                #НАЛИЧИЕ ПРИЧИНЫ
+
+                                #КОРКИ
+                                if = {
+                                    limit = {ROOT = {has_government = democratic}}
+
+                                    if = {
+                                        limit = {any_owned_state = {is_core_of = ROOT}}
+                                        add_to_temp_variable = {crysis_wish = 30}
+                                        set_temp_variable = {cr_ai_cores = 1}
+                                    }
+                                }
+                                else = {
+                                    if = {
+                                        limit = {
+                                            any_owned_state = {
+                                                OR = {
+                                                    is_claimed_by = ROOT
+                                                    is_core_of = ROOT
+                                                }
+                                            }
+                                        }
+                                        add_to_temp_variable = {crysis_wish = 30}
+                                        set_temp_variable = {cr_ai_cores = 1}
+                                    }
+                                }
+                                #
+
+                                #МИНОР
+                                if = {
+                                    limit = {
+                                        ROOT = {
+                                            OR = {
+                                                has_government = democratic
+                                                has_government = neutrality
+                                                has_government = communism
+                                            }
+                                        }
+                                    }
+
+                                    if = {
+                                        limit = {
+                                            ROOT = {has_opinion = {target = PREV value > -80}}
+                                            any_controlled_state = {
+                                                not = {is_core_of = PREV}
+                                            }
+                                        }
+                                        set_temp_variable = {cur_c_check = THIS}
+                                        random_scope_in_array = {
+                                            array = minor_countries
+                                            limit = {
+                                                var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
+                                            }
+                                            add_to_temp_variable = {crysis_wish = 40}
+                                            set_temp_variable = {cr_ai_minor = 1}
+                                            ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                                        }
+                                    }
+                                    else = {
+                                        set_temp_variable = {cur_c_check = THIS}
+                                        random_scope_in_array = {
+                                            array = minor_countries
+                                            add_to_temp_variable = {crysis_wish = 40}
+                                            set_temp_variable = {cr_ai_minor = 1}
+                                            ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                                        }
+                                    }
+                                }
+                                else_if = {
+                                    limit = {ROOT = {has_opinion = {target = PREV value < -99}}}
+
+                                    if = {
+                                        limit = {check_variable = {widif > 4}}
+                                        set_temp_variable = {cur_c_check = THIS}
+                                        random_scope_in_array = {
+                                            array = occupied_countries
+                                            limit = {
+                                                var:cur_c_check = {any_controlled_state = {is_core_of = PREV.PREV}}
+                                            }
+                                            add_to_temp_variable = {crysis_wish = 30}
+                                            set_temp_variable = {cr_ai_minor = 1}
+                                            ROOT = {set_variable = {cr_ai_minor_target = PREV}}
+                                        }
+                                    }
+                                }
+                                #
+
+                                #ОБЩИЕ ПАРАМЕТРЫ
+                                if = {limit = {ROOT={is_in_faction=yes}}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {is_in_faction=yes}
+                                    add_to_temp_variable = {crysis_wish = -5}
+                                }
+                                if = {limit = {ROOT={has_opinion={target=PREV value<-69}}}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {ROOT={has_war=yes}}
+                                    add_to_temp_variable = {crysis_wish = -50}
+                                }
+                                if = {limit = {is_major = no}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {threat > 0.05}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {threat > 0.1}
+                                    add_to_temp_variable = {crysis_wish = 10}
+                                }
+                                if = {limit = {threat > 0.15}
+                                    add_to_temp_variable = {crysis_wish = 20}
+                                }
+                                if = {limit = {threat > 0.3}
+                                    add_to_temp_variable = {crysis_wish = 30}
+                                }
+                                #if = {limit = {is_asian = yes}
+                                #    add_to_temp_variable = {crysis_wish = -15}
+                                #}
+
+                                #РАЗНИЦА ВЛИЯНИЙ
+                                if = {limit = {check_variable = {widif > 0}}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {check_variable = {widif > 3}}
+                                    add_to_temp_variable = {crysis_wish = 5}
+                                }
+                                if = {limit = {check_variable = {widif > 5}}
+                                    add_to_temp_variable = {crysis_wish = 10}
+                                }
+                                if = {limit = {check_variable = {widif < 0}}
+                                    add_to_temp_variable = {crysis_wish = -5}
+                                }
+                                if = {limit = {check_variable = {widif < -3}}
+                                    add_to_temp_variable = {crysis_wish = -5}
+                                }
+                                if = {limit = {check_variable = {widif < -5}}
+                                    add_to_temp_variable = {crysis_wish = -10}
+                                }
+
+                                #Определение результата
+                                if = {
+                                    limit = {check_variable = {crysis_wish > 0}}
+
+                                    set_variable = {crysis_chance = 2}
+                                    #multiply_temp_variable = {crysis_wish = 0.25}
+                                    add_to_variable = {crysis_chance = crysis_wish}
+
+                                    set_variable_to_random = crysis_fire
+                                    multiply_variable = {crysis_fire = 100}
+                                    if = {
+                                        limit = {
+                                            check_variable = {crysis_chance > crysis_fire}
+                                        }
+
+                                        if = {
+                                            limit = {
+                                                check_variable = {cr_ai_cores > 0}
+                                            }
+                                            ROOT = {set_country_flag = crysis_ai_cores@PREV}
+                                        }
+                                        else_if = {
+                                            limit = {
+                                                check_variable = {cr_ai_minor > 0}
+                                            }
+                                            ROOT = {var:cr_ai_minor_target = {ROOT = {set_country_flag = crysis_ai_minor@PREV}}}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+	}
+
+	on_weekly = {
+		effect = {
+            #Уступить или возразить в кризисе
+            if = {
+                limit = {
+                    has_global_flag = political_crysis
+                }
+                if = {
+                    limit = {
+                        NOT = {has_country_flag = cr_ai_allow}
+                        NOT = {has_country_flag = cr_ai_press}
+                        NOT = {has_country_flag = cr_ai_completed}
+                        OR = {
+                            is_in_array = {global.crysis_senders = ROOT}
+                            is_in_array = {global.crysis_tos = ROOT}
+                        }
+                    }
+                    if = {
+                        limit = {
+                            is_in_array = {global.crysis_senders = ROOT}
+                        }
+                        set_temp_variable = {widif = global.crysis_s_totalwi}
+                        if = {
+                            limit = {check_variable = {global.crysis_t_totalwi > 1}}
+                            divide_temp_variable = {widif = global.crysis_t_totalwi}
+                        }
+                        if = {
+                            limit = {
+                                check_variable = {widif < 0.51}
+                            }
+                            set_country_flag = crysis_scared
+                        }
+                        else_if = {
+                            limit = {
+                                check_variable = {widif > 1.9}
+                            }
+                            set_country_flag = crysis_angry
+                        }
+
+                        if = {
+                            limit = {
+                                check_variable = {widif > 0.51}
+                                OR = {has_government = fascism has_government = communism}
+                            }
+                            set_country_flag = crysis_push_fc
+                        }
+                    }
+                    else_if = {
+                        limit = {
+                            is_in_array = {global.crysis_tos = ROOT}
+                        }
+                        set_temp_variable = {widif = global.crysis_t_totalwi}
+                        divide_temp_variable = {widif = global.crysis_s_totalwi}
+                        if = {
+                            limit = {
+                                check_variable = {widif < 0.51}
+                            }
+                            set_country_flag = crysis_scared
+                        }
+                        else_if = {
+                            limit = {
+                                check_variable = {widif > 1.9}
+                            }
+                            set_country_flag = crysis_angry
+                        }
+
+                        if = {
+                            limit = {
+                                check_variable = {widif > 0.51}
+                                OR = {has_government = fascism has_government = communism}
+                                OR = {
+                                    var:global.cr_to_op = {tag = PREV}
+                                    var:global.cr_send_op = {tag = PREV}
+                                }
+                            }
+                            set_country_flag = crysis_push_fc
+                        }
+                    }
+
+                    
+                    set_temp_variable_to_random = cr_ai_allow_wish
+                    if = {limit = {is_in_array = {global.crysis_senders = ROOT}}
+                        add_to_temp_variable = {cr_ai_allow_wish = 0.05}
+                    }
+                    if = {
+                        limit = {
+                            OR = {
+                                has_government = fascism
+                                has_government = communism
+                            }
+                        }
+
+                        if = {
+                            limit = {has_country_flag = crysis_scared}
+                            if = {
+                                limit = {
+                                    check_variable = {cr_ai_allow_wish < 0.2}
+                                }
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                        else_if = {
+                            limit = {not = {has_country_flag = crysis_angry}}
+                            if = {
+                                limit = {
+                                    check_variable = {cr_ai_allow_wish < 0.025}
+                                }
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                        else = {
+                            if = {
+                                limit = {has_country_flag = crysis_push_fc}
+                                set_country_flag = cr_ai_press
+                            }
+                            if = {limit = {check_variable = {cr_ai_allow_wish < 0.06}}
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                    }
+                    else = {
+                        if = {
+                            limit = {has_country_flag = crysis_scared}
+                            if = {
+                                limit = {
+                                    check_variable = {cr_ai_allow_wish < 0.3}
+                                }
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                        else_if = {
+                            limit = {not = {has_country_flag = crysis_angry}}
+                            if = {
+                                limit = {
+                                    check_variable = {cr_ai_allow_wish < 0.05}
+                                }
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                        else = {
+                            if = {limit = {check_variable = {cr_ai_allow_wish < 0.12}}
+                                set_country_flag = cr_ai_allow
+                            }
+                        }
+                    }
+                }
+            }
+
+            # Рост оппозиции
+			set_temp_variable = {dem_opposition_delta = 0.07}
+			set_temp_variable = {fas_opposition_delta = 0.07}
+			set_temp_variable = {neu_opposition_delta = 0.07}
+			set_temp_variable = {com_opposition_delta = 0.07}
+			set_temp_variable = {mon_opposition_delta = 0.07}
+
+			multiply_temp_variable = {dem_opposition_delta = dem_opposition_factor}
+			multiply_temp_variable = {fas_opposition_delta = fas_opposition_factor}
+			multiply_temp_variable = {neu_opposition_delta = neu_opposition_factor}
+			multiply_temp_variable = {com_opposition_delta = com_opposition_factor}
+			multiply_temp_variable = {mon_opposition_delta = mon_opposition_factor}
+
+			add_to_variable = {dem_opposition = dem_opposition_delta}
+			add_to_variable = {fas_opposition = fas_opposition_delta}
+			add_to_variable = {neu_opposition = neu_opposition_delta}
+			add_to_variable = {com_opposition = com_opposition_delta}
+			add_to_variable = {mon_opposition = mon_opposition_delta}
+		}
+	}
+
+	on_peaceconference_ended = {
+		effect = {
+			clr_country_flag = nuke_request_accepted
+            ROOT = {clr_country_flag = nuke_request_accepted}
+            ROOT = {add_threat = -0.08}
 			if = {
 				limit = {
 					FROM = {
@@ -1396,7 +1313,7 @@ on_actions = {
 
 	on_release_as_free = {
 		effect = {
-            FROM = {add_threat = -10}
+            FROM = {add_threat = -5}
 
             FROM = {encount_minors = yes}
 
@@ -1436,7 +1353,7 @@ on_actions = {
             FROM = {encount_minors = yes}
             clr_country_flag = BRAND_NEW_COUNTRY
 
-            FROM = {add_threat = -4}
+            FROM = {add_threat = -2}
             
 			if = {
 				limit = {
@@ -1490,25 +1407,13 @@ on_actions = {
 
     on_liberate = {
         effect = {
-            FROM = {add_threat = -2}
             clr_country_flag = BRAND_NEW_COUNTRY
         }
     }
 
 	on_justifying_wargoal_pulse = {
 		effect = {
-			if = {
-				limit = {
-					check_variable = {world_influence > 5}
-					FROM = {
-						check_variable = {world_influence < 1}
-						any_owned_state = {
-							is_core_of = ROOT
-						}
-					}
-				}
-				FROM = {country_event = {id = onactev.1 hours = 1}}
-			}
+            ROOT = {add_threat = 2}
 		}
 	}
 
@@ -1518,7 +1423,7 @@ on_actions = {
             if = {
                 limit = {FROM = {has_government = democratic} ROOT = {has_government = democratic}}
 
-                add_threat = -5
+                add_threat = -2
             }
 		}
 	}
