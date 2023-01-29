@@ -2274,7 +2274,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_east_monfua
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_east_monfua
 		cost = 10
 		prerequisite = {
 			focus = SBU_annex_RGY
@@ -2373,7 +2373,7 @@ focus_tree = {
 	#}
 	focus = {
 		id = SBU_war_with_TRB
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_war_with_TRB
 		cost = 10
 		prerequisite = {
 			focus = SBU_war_with_MOF
@@ -2409,7 +2409,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SBU_reichsiburekorat_terbia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_sbu_reichsiburekorat_terbia
 		cost = 10
 		prerequisite = {
 			focus = SBU_war_with_TRB

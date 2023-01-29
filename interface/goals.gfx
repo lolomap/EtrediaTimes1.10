@@ -1,6 +1,21 @@
 spriteTypes = {
 
     SpriteType = {
+        name = "GFX_goal_sbu_east_monfua"
+        texturefile="gfx/interface/goals/goal_sbu_east_monfua.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_reichsiburekorat_terbia"
+        texturefile="gfx/interface/goals/goal_sbu_reichsiburekorat_terbia.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_sbu_war_with_TRB"
+        texturefile="gfx/interface/goals/goal_sbu_war_with_TRB.dds"
+    }
+
+    SpriteType = {
         name = "GFX_goal_YAN_militaryplan"
         texturefile="gfx/interface/goals/goal_YAN_militaryplan.dds"
     }
