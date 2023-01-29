@@ -14,13 +14,13 @@ state={
 			infrastructure = 4
                         industrial_complex = 1
 			dockyard = 1
-			2812 = {
-				naval_base = 2
+			2278 = {
+				naval_base = 4
 			}
 		}
 		add_core_of = ATI
 		victory_points = {
-			2812 5
+			2278 5
 		}
 
 	}

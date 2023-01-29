@@ -16,6 +16,9 @@ state={
 			infrastructure = 4
                         arms_factory = 1
                         dockyard = 1
+			166 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = SOU
 		victory_points = {

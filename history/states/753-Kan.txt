@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = KAN
 		victory_points = {
-			2198 3
+			1657 3
 		}
 
 	}
