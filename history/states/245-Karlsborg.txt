@@ -14,12 +14,16 @@ state={
 		buildings = {
 			infrastructure = 6
                         industrial_complex = 1
-                        arms_factory = 0
-                        dockyard = 3
 		}
 		add_core_of = KAR
 		victory_points = {
 			9710 10
+		}
+		victory_points = {
+			9178 1
+		}
+		victory_points = {
+			9473 1
 		}
 
 	}

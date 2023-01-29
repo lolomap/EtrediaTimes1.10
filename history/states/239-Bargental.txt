@@ -8,19 +8,25 @@ state={
 	
 	resources={
                 steel = 28 # was: 32
+		tungsten = 2 # was: 5
 	}
 
 	history={
 		owner = KAR
 		buildings = {
 			infrastructure = 4
-                        industrial_complex = 0
-                        arms_factory = 0
-                        dockyard = 0
+                        industrial_complex = 1
+                        air_base = 2
 		}
 		add_core_of = KAR
 		victory_points = {
 			8908 5
+		}
+		victory_points = {
+			8430 1
+		}
+		victory_points = {
+			9076 1
 		}
 
 	}

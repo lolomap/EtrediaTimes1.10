@@ -20,6 +20,12 @@ state={
 		victory_points = {
 			10184 25
 		}
+		victory_points = {
+			9813 1
+		}
+		victory_points = {
+			10461 1
+		}
 
 	}
 	provinces={
