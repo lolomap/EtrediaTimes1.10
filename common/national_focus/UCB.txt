@@ -43,6 +43,31 @@ focus_tree = {
 		y = 11
 
 		completion_reward = {
+			UCB = { give_guarantee = ORB }
+		}
+		available = {
+			country_exists = ORB
+			ORB = {is_subject = no}
+		}
+		ai_will_do = {
+		factor = 0.1
+		    modifier = {
+			factor = 1
+			date > 2019.1.1
+			}
+		}
+	}
+	focus = {
+		id = UCB_dem_ndro2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_ndro
+		}
+		completion_reward = {
+			ORB = {
+				country_event = { id = orb.43 days = 30 }
+			}
 			UCB = {
 				annex_country = {
 					target = ORB
@@ -52,18 +77,8 @@ focus_tree = {
 				add_state_core = 45
 			}
 		}
-		available = {
-			country_exists = ORB
-			ORB = {is_subject = no}
-			not = {country_exists = FSC}
-		}
-		ai_will_do = {
-		factor = 0.1
-		    modifier = {
-			factor = 1
-			date > 2019.1.1
-			}
-		}
+		x = 2
+		y = 12
 
 	}
 	focus = {
@@ -76,13 +91,35 @@ focus_tree = {
 		available = {
 			country_exists = KUL
 			KUL = {is_subject = no}
-			not = {country_exists = FSC}
 		}
 		
 		completion_reward = {
 			UCB = { give_guarantee = KUL }
 		}
-
+	}
+	focus = {
+		id = UCB_dem_kulishtia2
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = UCB_dem_kulishtia
+		}
+		completion_reward = {
+			UCB = {
+				annex_country = {
+					target = KUL
+					transfer_troops = no
+				}
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 58
+			}
+		}
+		x = 4
+		y = 12
 	}
 	focus = {
 		id = UCB_dem_anti_IID
@@ -244,7 +281,7 @@ focus_tree = {
 		    modifier = {
 			factor = 5
 			is_historical_focus_on = yes
-		}
+			}
 		}
 	}
 	focus = {
@@ -253,6 +290,13 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = UCB_dem1
+		}
+		ai_will_do = {
+		factor = 2
+		    modifier = {
+				factor = 5
+				date > 2016.1.1
+			}
 		}
 		x = 3
 		y = 4
@@ -269,6 +313,13 @@ focus_tree = {
 			add_political_power = 50
 			add_war_support = 0.05
 		}
+		ai_will_do = {
+		factor = 1
+		    modifier = {
+			factor = 2
+			date > 2016.1.1
+			}
+		}
 		x = 9
 		y = 4
 
@@ -282,6 +333,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 2
 		}
 		x = 15
 		y = 4
@@ -324,6 +378,9 @@ focus_tree = {
 				UCB = { add_ideas = first_corruption_level }
 			}
 		}
+		ai_will_do = {
+			factor = 3
+		}
 	}
 	focus = {
 		id = UCB_dem_stabilnost
@@ -341,6 +398,9 @@ focus_tree = {
 				add_idea = UCB_resist2
 				remove_idea = UCB_resist
 			}
+		}
+		ai_will_do = {
+			factor = 2
 		}
 	}
 	focus = {
@@ -360,6 +420,9 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.1
 			}
+		}
+		ai_will_do = {
+			factor = 2
 		}
 	}
 	focus = {
@@ -1436,6 +1499,10 @@ focus_tree = {
 				remove_idea = UCB_des_army
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 				
 		x = 9
 		y = 5
@@ -1481,6 +1548,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 		x = 9
 		y = 6
@@ -1700,6 +1770,13 @@ focus_tree = {
 					}
 			}
 		}
+		ai_will_do = {
+		factor = 1
+		    modifier = {
+			factor = 3
+			date > 2016.1.1
+			}
+		}
 	}
 	focus = {
 		id = UCB_dem_stavka_defense
@@ -1717,6 +1794,9 @@ focus_tree = {
 				days = 360
 			}
 		}
+		ai_will_do = {
+		factor = 2
+		}
 	}
 	focus = {
 		id = UCB_dem_trp_garant
@@ -1731,6 +1811,17 @@ focus_tree = {
 
 		completion_reward = {
 			give_guarantee = TRP
+		}
+		ai_will_do = {
+		factor = 0
+		    modifier = {
+				factor = 1
+				is_historical_focus_on = no
+			}
+			modifier = {
+				factor -1
+				date < 2016.1.1
+			}
 		}
 	}
 	focus = {

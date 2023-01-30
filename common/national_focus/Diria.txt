@@ -386,8 +386,8 @@ focus_tree = {
 			focus = DEM_new_free_humans
 		}
 		cancel_if_invalid = yes
-		available = { 
-			TRB = { NOT = { has_government = communism } }
+		bypass = { 
+			TRB = { has_government = communism }
 		}
 		completion_reward = {
 			TRB = { country_event = terbia.11 days = 1 }
@@ -401,14 +401,14 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = DEM_kar_debt
-		}
-		prerequisite = {
 			focus = DEM_weapons_from_trb
 		}
 		completion_reward = {
 			army_experience = 25
 			custom_effect_tooltip = DEM_train_modern_army_tooltip
-			load_oob = DEM_KAR_modern_army
+			hidden_effect = {
+				load_oob = DEM_KAR_modern_army
+			}
 		}
 		x = 7
 		y = 8
