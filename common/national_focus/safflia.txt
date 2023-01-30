@@ -1216,7 +1216,7 @@ focus_tree = {
 			focus = SFL_economiczone
 		}
 		completion_reward = {
-		MOF = { country_event = { id = monfua.2 days = 1 } }
+			MOF = { country_event = { id = monfua.2 days = 1 } }
 		}
 		x = 24
 		y = 11

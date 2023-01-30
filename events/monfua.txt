@@ -42,21 +42,27 @@ country_event = {
         }
 	option = {
 	name = monfua.2.b
-		ai_chance = { factor = 10 
-		modifier = {
-		    MOF = {
-			    has_opinion = {
-				target = SBU
-				value > 49
-				}
-			}
-	    factor = 100
-        }
-		}
         MOF = { add_ideas = MOF_glory_to_independence }
 		MOF = { remove_ideas = MOF_fascismpower }
         SFL = { country_event = { id = sfl.3 days = 1 } }
-        }
+		
+		ai_chance = { 
+		factor = 10 
+			modifier = {
+				MOF = {
+					has_opinion = {
+					target = SBU
+					value > 49
+					}
+				}
+			factor = 50
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = -100
+			}
+		}
+    }
 }
 
 country_event = {
