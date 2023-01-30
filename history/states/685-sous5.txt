@@ -13,6 +13,9 @@ state={
 		owner = SOU
 		buildings = {
 			infrastructure = 4
+			214 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = SOU
 		victory_points = {

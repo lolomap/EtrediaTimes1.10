@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = CUS
 		victory_points = {
-			1885 1
+			1485 3
 		}
 
 	}

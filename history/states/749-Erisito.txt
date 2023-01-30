@@ -13,13 +13,13 @@ state={
 		buildings = {
 			infrastructure = 3
                         industrial_complex = 2
-			2174 = {
+			1683 = {
 				naval_base = 2
 			}
 		}
 		add_core_of = ERI
 		victory_points = {
-			2174 2
+			1683 5
 		}
 
 	}

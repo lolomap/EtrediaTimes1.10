@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = LOK
 		victory_points = {
-			2542 5
+			2035 5
 		}
 
 	}

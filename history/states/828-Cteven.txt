@@ -1,0 +1,29 @@
+state={
+	id=828
+	name="STATE_828"
+	manpower = 356000
+	
+	state_category = large_city
+	
+	resources={
+		oil = 30 # was: 45
+	}
+
+	history={
+		owner = CTE
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 4
+                        arms_factory = 1
+                        dockyard = 2
+		}
+		add_core_of = CTE
+		victory_points = {
+			406 5
+		}
+
+	}
+	provinces={
+		406
+	}
+}
