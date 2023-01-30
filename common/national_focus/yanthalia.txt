@@ -1322,21 +1322,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 3
-	        modifier = {
+			modifier = {
 				factor = -3
-				date < 2016.1.1
+				date < 2018.1.1
 			}
 			modifier = {
-				factor = -2
-				date < 2017.1.1
-			}
-			modifier = {
-				factor = 1
-				date > 2018.1.1
-			}
-			modifier = {
-				factor = 1
-				SBU = { has_completed_focus = SBU_aldeko_operation }
+				factor = -3
+				SBU = { NOT = { has_completed_focus = SBU_aldeko_operation } }
 			}
 		}
 		x = 40
