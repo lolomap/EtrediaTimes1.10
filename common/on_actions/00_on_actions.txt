@@ -25,8 +25,11 @@ on_actions = {
                 
 				set_variable = {uranium_cost = 2}
 				set_variable = {winfluence_cost = 1}
-
             }
+            #SZ INFLUENCE
+            ELR = {add_to_variable = {winfluence_cost = -0.15}}
+            RGY = {add_to_variable = {winfluence_cost = -0.05}}
+
             #Не признаны: Террапилья ИИДшником, Лебдел, Солопут, Кюрю, Гванчинь и Хорга,Дирийцы
             TRP = {
                 set_country_flag = BRAND_NEW_COUNTRY
@@ -2237,10 +2240,26 @@ on_actions = {
                 if = {
                     limit = {FROM = {tag = TRB}}
                     add_ideas = SBU_ISH_TRB
+                    if = {
+                        limit = {
+                            SBU = {
+                                any_controlled_state = {is_core_of = SFL}
+                            }
+                        }
+                        add_ideas = SBU_Modern_Empire
+                    }
                 }
                 if = {
                     limit = {FROM = {tag = SFL}}
                     add_ideas = SBU_ISH_SFL
+                    if = {
+                        limit = {
+                            SBU = {
+                                any_controlled_state = {is_core_of = TRB}
+                            }
+                        }
+                        add_ideas = SBU_Modern_Empire
+                    }
                 }
             }
 		}

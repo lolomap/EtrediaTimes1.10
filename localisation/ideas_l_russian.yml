@@ -1,4 +1,8 @@
 ﻿l_russian:
+ country_type_status: "Степень развития государства"
+ corruption_laws: "Уровень коррупции"
+ stability_modifiers: "Уровень легитимности"
+
  SBU_SZ_concern:0 "Sburska Zvezda"
 
  vader_sveril:0 "Вадер Свериль"
@@ -118,6 +122,11 @@
  SBU_ISH_SFL: "Саффлийское освободительное движение"
  SBU_ISH_TRB2: "Тербское народное сопротивление"
  SBU_ISH_SFL2: "Саффлийское освободительное движение"
+ SBU_Modern_Empire: "Империя в 21 веке"
+ SBU_Modern_Empire2: "Империя в 21 веке"
+ SBU_Modern_Empire3: "Империя в 21 веке"
+ SBU_Modern_Empire4: "Империя в 21 веке"
+ SBU_ohranka: "Охранка"
  DON_politics:0 "Пацифисткая политика"
  DID_traditions:0 "Традиционная экономика"
  ZHE_conscritpiont_problem:0 "Уклонения от призыва"
@@ -243,6 +252,8 @@
  SBU_little_sburska_zvezda:0 "Слабое влияние Sburska Zvezda"
  SBU_medium_sburska_zvezda:0 "Среднее влияние Sburska Zvezda"
  SBU_high_sburska_zvezda:0 "Сильное влияние Sburska Zvezda"
+ sz_bonus: "Мощности Sburska Zvezda"
+ SZ_debuff: "Эксплуатация от Sburska Zvezda"
  SBU_pyatiletka:0 "Годовой план"
  SBU_militarism:0 "Сибурский милитаризм"
  YAN_promises:0 "Обещания нового правительства"

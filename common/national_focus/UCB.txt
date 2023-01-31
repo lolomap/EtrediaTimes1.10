@@ -1169,6 +1169,15 @@ focus_tree = {
 		prerequisite = {
 			focus = UCB_dem_granty
 		}
+        bypass = {
+            UCB = {
+                OR = {
+                    has_idea = SBU_little_sburska_zvezda
+                    has_idea = SBU_medium_sburska_zvezda
+                    has_idea = SBU_high_sburska_zvezda
+                }
+            }
+        }
 		completion_reward = {
 			random_list = {
 				50 = {

@@ -210,6 +210,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SBU_UCB_friendship
 		}
+        bypass = {
+            IID = {
+                OR = {
+                    has_idea = SBU_little_sburska_zvezda
+                    has_idea = SBU_medium_sburska_zvezda
+                    has_idea = SBU_high_sburska_zvezda
+                }
+            }
+        }
 		completion_reward = { 
 		IID = { country_event = { id = dux.6 days = 1 } }
 		}
@@ -637,46 +646,79 @@ focus_tree = {
 		prerequisite = {
 			focus = SBU_RGY_integration
 		}
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = compl_SFL_tooltip
+                check_variable = {core_compliance@SFL > 45}
+            }
+            custom_trigger_tooltip = {
+                tooltip = compl_TRB_tooltip
+                check_variable = {core_compliance@TRB > 45}
+            }
+        }
+
 		completion_reward = {
-			RGY = {
-                every_owned_state = {
-                    limit = {is_core_of = RGY}
-                    add_core_of = SBU
-                }
-            }
-		    SFL = {
-                every_owned_state = {
-                    limit = {is_core_of = SFL}
-                    add_core_of = SBU
-                }
-            }
-            MOF = {
-                every_owned_state = {
-                    limit = {is_core_of = MOF}
-                    add_core_of = SBU
-                }
-            }
-            ELR = {
-                every_owned_state = {
-                    limit = {is_core_of = ELR}
-                    add_core_of = SBU
-                }
-            }
-            TRB = {
-                every_owned_state = {
-                    limit = {is_core_of = TRB}
-                    add_core_of = SBU
-                }
-            }
-            RTT = {
-                every_owned_state = {
-                    limit = {is_core_of = TRB}
+            custom_effect_tooltip = core_entire_ish_tooltip
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            is_core_of = RGY
+                            is_core_of = SFL
+                            is_core_of = TRB
+                            is_core_of = MOF
+                            is_core_of = ELR
+                            is_core_of = RTT
+                        }
+                    }
                     add_core_of = SBU
                 }
             }
 		}
 		x = 25
 		y = 8
+
+	}
+    focus = {
+		id = SBU_ISH_NER
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_safflian_problem
+		}
+		completion_reward = {
+            if = {
+                limit = {country_exists = NER}
+                create_wargoal = {
+                    type = annex_everything
+                    target = NER
+                }
+            }
+            else = {
+                every_state = {
+                    limit = {is_core_of = NER}
+                    add_claim_by = SBU
+                }
+            }
+		}
+		x = 25
+		y = 9
+
+	}
+    focus = {
+		id = SBU_islands_press
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SBU_ISH_NER
+            focus = SBU_war_with_MOF
+		}
+		completion_reward = {
+            
+		}
+		x = 28
+		y = 10
 
 	}
 	focus = {
@@ -687,20 +729,6 @@ focus_tree = {
 			focus = SBU_RGY_integration
 		}
 		completion_reward = {
-			#if = {
-			#	limit = {
-			#		TRB = {
-			#			OR = {
-			#				has_government = communism
-			#				has_government = fascism
-			#			}
-			#		}
-			#	}
-			#	SBU = { country_event = { id = sbu.2 days = 1 } }
-			#}
-			#else = {
-			#	TRB = {country_event = { id = sbu.57 days = 1 }}
-			#}
 
             create_wargoal = {
 			    type = annex_everything
@@ -716,7 +744,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SBU_safflian_problem
+			focus = SBU_RGY_integration
 			focus = SBU_pacify_terbia
 		}
 		completion_reward = {
@@ -766,7 +794,7 @@ focus_tree = {
 		completion_reward = {
 		    ELR = {country_event = {id = sbu.75 days = 1}}
 		}
-		x = 25
+		x = 21
 		y = 10
 
 	}
@@ -1620,6 +1648,16 @@ focus_tree = {
 		x = 47
 		y = 4
 
+        bypass = {
+            UCB = {
+                OR = {
+                    has_idea = SBU_little_sburska_zvezda
+                    has_idea = SBU_medium_sburska_zvezda
+                    has_idea = SBU_high_sburska_zvezda
+                }
+            }
+        }
+
 		completion_reward = {
 			UCB = {
 				add_ideas = SBU_little_sburska_zvezda
@@ -1750,6 +1788,15 @@ focus_tree = {
 		}
 		x = 49
 		y = 4
+
+        bypass = {
+            UCB = {
+                OR = {
+                    has_idea = SBU_medium_sburska_zvezda
+                    has_idea = SBU_high_sburska_zvezda
+                }
+            }
+        }
 
 		completion_reward = {
 			RGY = {
@@ -2328,7 +2375,7 @@ focus_tree = {
 	focus = {
 		id = SBU_war_with_MOF
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 15
 		prerequisite = {
 			focus = SBU_east_monfua
 		}
@@ -2426,29 +2473,6 @@ focus_tree = {
             set_country_flag = SBU_TRBminored
             set_variable = {trb_influence = 0}
 			TRB = {set_cosmetic_tag = TRB_Reichssib}
-            hidden_effect = {
-                TRB = {
-                    every_state = {
-                        transfer_state_to = SBU
-                    }
-                }
-            }
-			TRB = {
-				transfer_state = 226
-				transfer_state = 221
-				transfer_state = 224
-				transfer_state = 227
-				transfer_state = 225
-				transfer_state = 223
-				transfer_state = 231
-				transfer_state = 232
-				transfer_state = 198
-				transfer_state = 228
-				transfer_state = 233
-				transfer_state = 234
-				transfer_state = 235
-				transfer_state = 236
-			}
 		}
 	}
 

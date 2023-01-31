@@ -29,10 +29,6 @@
   integrate_subjects:0 "Интегрировать все исторические субъекты [UCB.GetNameDef]"
   IID_CreateKaratenPraeterAdmin:0 "Создать Каратено-Праетерскую Администрацию"
 
-  SBU_east_sphere:0 "Восточный лоялизм"
-  SBU_loiman_question_EMF:0 "Урегулировать лойманский вопрос"
-  SBU_loiman_question_ELR:0 "Лойманский фанатизм"
-
   EIK_oligarchism_rejection:0 "Лояльность элит"
   EIK_oligarchism_rejection_desc:0 "\n§HЛояльность олигархии:§! [?eik_oligarchism|%]\n§HЛояльность армии:§! [?eik_army|%]\n"
   EIK_blank:0 ""

@@ -1428,9 +1428,15 @@ country_event = {
 
 	option = {
 		name = sbu.56.a
-		add_stability = 0.05
-		add_war_support = 0.05
 		subtract_from_variable = {wtire = 50}
+        remove_ideas = {
+            SBU_ISH_TRB
+            SBU_ISH_SFL
+            SBU_Modern_Empire
+        }
+        hidden_effect = {
+            remove_ideas = {SBU_Modern_Empire2 SBU_Modern_Empire3}
+        }
         set_cosmetic_tag = SBU_ISH
 	}
 }
@@ -1918,4 +1924,22 @@ country_event = {
             factor = 0.3
         }
 	}
+}
+
+country_event = {
+	id = sbu.76
+	title = sbu.76.t
+	desc = sbu.76.d
+
+    is_triggered_only = yes
+    hidden = yes
+
+	option = {
+		name = sbu.76.a
+	}
+    immediate = {
+        add_to_variable = {sz_consumer_bonus = 0.05}
+        add_to_variable = {sz_eff_bonus = -0.05}
+        add_to_variable = {sz_cap_bonus = -0.05}
+    }
 }

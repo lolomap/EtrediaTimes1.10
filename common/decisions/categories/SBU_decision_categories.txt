@@ -1,16 +1,16 @@
 SBU_east_sphere = {
-	visible = {always = yes}
+	visible = {original_tag = SBU}
 }
 
 SBU_fascist_revolution = {
-	visible = {always = yes}
+	visible = {original_tag = SBU}
 }
 
 SBU_sburska_zvezda_war = {
 	visible = {
-		has_country_flag = sz_extra_support_activated
-		surrender_progress < 0.3
-	}
+        has_completed_focus = SBU_sburska_zvezda
+        has_government = democratic
+    }
 }
 
 SBU_ISH_rebellion = {
