@@ -1369,7 +1369,7 @@ country_event = { # Кризис закончился
                 days = 90
                 value = 1
             }
-            random_country = {country_event = mechanics.38}
+            var:sender_crysis = {country_event = mechanics.38}
             var:global.sender_crysis = {
                 war_crysis_ban_factions = yes
 

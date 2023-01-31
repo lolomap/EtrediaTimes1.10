@@ -4,7 +4,7 @@ d_wic = {
 d_mtest = {
 }
 
-####яя
+####
 
 delete_dirian_militia = {
     delete_units = {
@@ -203,6 +203,7 @@ encount_minors = {
 }
 
 encount_majors = {
+    var:sender_crysis = {add_threat = 8}
     clear_array = global.crysis_senders
     clear_array = global.crysis_tos
     clear_array = global.crysis_majors
