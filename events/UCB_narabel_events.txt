@@ -24,7 +24,18 @@ country_event = {
             }
 	    }
 	    ai_chance = { 
-	    factor = 80	
+	        factor = 80
+            modifier = {
+                factor = 1000
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = DEMOCRATIC
+                }
+            }
 	    }
 	}
 
@@ -40,11 +51,32 @@ country_event = {
 			UCB = { country_event = { id = ucb.21 days = 20 } }
 	    }
 	    ai_chance = {
-	    factor = 20 
-		   modifier = {
-	       factor = 0
-		   is_historical_focus_on = yes
-		   }
+	        factor = 20 
+            modifier = {
+                factor = 0
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR
+                }
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = REVOTE
+                }
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR2
+                }
+            }
 	    }
     }
 }
@@ -208,35 +240,63 @@ country_event = {
     }
 
 	option = {
-	name = ucb.4.a
-	hidden_effect = {
-		random_list = {
-			60 = { 
-				country_event = { id = ucb.5 days = 15 }
-			}
-			20 = { 
-				country_event = { id = ucb.6 days = 15 }
-			}
-			10 = { 
-				country_event = { id = ucb.7 days = 15 }
-			}
-			10 = { 
-				country_event = { id = ucb.8 days = 15 }
-			}
-		}
-	}
+        name = ucb.4.a
+        hidden_effect = {
+            random_list = {
+                60 = { 
+                    country_event = { id = ucb.5 days = 15 }
+                }
+                20 = { 
+                    country_event = { id = ucb.6 days = 15 }
+                }
+                10 = { 
+                    country_event = { id = ucb.7 days = 15 }
+                }
+                10 = { 
+                    country_event = { id = ucb.8 days = 15 }
+                }
+            }
+        }
 	    ai_chance = { 
-	    factor = 80
+	        factor = 80
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = REVOTE
+                }
+            }
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR2
+                }
+            }
 	    }
 	}
 
 	option = {
-	name = ucb.4.b
-	hidden_effect = {
-			country_event = { id = ucb.27 days = 90 }
-	}
+        name = ucb.4.b
+        hidden_effect = {
+                country_event = { id = ucb.27 days = 90 }
+        }
 	    ai_chance = {
-	    factor = 20 
+	        factor = 20 
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = REVOTE
+                }
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR2
+                }
+            }
 	    }
     }
 }
@@ -360,30 +420,72 @@ country_event = {
     }
 
 	option = {
-	name = ucb.21.a 
-    hidden_effect = {
-        start_civil_war = {
-            ideology = fascism
-	        ruling_party = democratic
-            capital = 9
-            states = { 2 3 4 5 6 7 10 11 13 15 16 17 18 19 20 21 22 23 24 31 29 }
-            size = 0.6
+        name = ucb.21.a 
+        hidden_effect = {
+            start_civil_war = {
+                ideology = fascism
+                ruling_party = democratic
+                capital = 9
+                states = { 2 3 4 5 6 7 10 11 13 15 16 17 18 19 20 21 22 23 24 31 29 }
+                size = 0.6
+            }
         }
-	}
 	    ai_chance = { 
-	    factor = 15
+	        factor = 15
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR
+                }
+            }
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = REVOTE
+                }
+            }
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR2
+                }
+            }
 	    }
 	}
 
 	option = {
-	name = ucb.21.b
-	retire_country_leader = yes
-	hidden_effect = {
+        name = ucb.21.b
         retire_country_leader = yes
-	    UCB = { country_event = { id = ucb.4 days = 1 } }
-	}
+        hidden_effect = {
+            retire_country_leader = yes
+            UCB = { country_event = { id = ucb.4 days = 1 } }
+        }
 	    ai_chance = {
-	    factor = 85
+	        factor = 85
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = REVOTE
+                }
+            }
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR
+                }
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = CIVILWAR2
+                }
+            }
 	    }
     }
 }

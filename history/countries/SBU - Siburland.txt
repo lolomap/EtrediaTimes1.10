@@ -12,6 +12,7 @@ add_ideas = {
         SBU_Hleria 
         SBU_policy
         free_press
+        free_trade
         general_entry
         SBU_Elnia_separatism
 	third_corruption_level

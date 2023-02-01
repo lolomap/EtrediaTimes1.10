@@ -587,6 +587,43 @@ maximum_fort_level = {
 #  #  #      #  # #   #  # #  #  # #   #  #  # #  # 
 #  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
 
+UCB_ai_behavior = {
+    name = UCB_AI_BEHAVIOR
+    group = "RULE_GROUP_AI_BEHAVIOR"
+    default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST"
+		desc = "RULE_OPTION_FASCIST_UCB_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_UCB_AI_DESC"
+		allow_achievements = yes
+	}
+    option = {
+		name = CIVILWAR
+		text = "RULE_OPTION_CIVILWAR"
+		desc = "RULE_CIVILWAR_UCB_AI_DESC"
+	}
+    option = {
+		name = CIVILWAR2
+		text = "RULE_OPTION_CIVILWAR2"
+		desc = "RULE_CIVILWAR_UCB_AI_DESC"
+	}
+    option = {
+		name = REVOTE
+		text = "RULE_OPTION_REVOTE"
+		desc = "RULE_REVOTE_UCB_AI_DESC"
+	}
+}
+
 SBU_ai_behavior = {
 	name = SBU_AI_BEHAVIOR
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -600,11 +637,6 @@ SBU_ai_behavior = {
 		name = COMMUNIST
 		text = "RULE_OPTION_COMMUNIST"
 		desc = "RULE_OPTION_COMMUNIST_SBU_AI_DESC"
-	}
-	option = {
-		name = NEUTRALITY
-		text = RULE_OPTION_NEUTRALITY
-		desc = RULE_OPTION_NEUTRALITY_SBU_AI_DESC
 	}
 	option = {
 		name = DEMOCRATIC

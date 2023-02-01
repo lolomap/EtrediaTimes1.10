@@ -7,10 +7,13 @@ SBU_democratic_plan = {
 				rule = SBU_AI_BEHAVIOR
 				option = DEMOCRATIC
 			}
-			has_game_rule = {
-				rule = SBU_AI_BEHAVIOR
-				option = DEFAULT
-			}
+            AND = {
+                has_game_rule = {
+                    rule = SBU_AI_BEHAVIOR
+                    option = DEFAULT
+                }
+                is_historical_focus_on = yes
+            }
 		}
 		
 	}
@@ -19,6 +22,9 @@ SBU_democratic_plan = {
 		SBU_left = 1000
 		SBU_klyachek_plan = 1000
 		SBU_aldeko_operation = 1000
+        SBU_dem_brothers = 1000
+        SBU_telluris = 1000
+        SBU_wise_choise = 1000
 	}
 
 
@@ -44,6 +50,9 @@ SBU_democratic_plan2 = {
 		SBU_left = 1000
 		SBU_klyachek_plan = 1000
 		SBU_terbia_compromiss = 1000
+        SBU_dem_RGY_alliance = 1000
+        SBU_tallas = 1000
+        SBU_wise_choise = 1000
 	}
 
 
@@ -92,6 +101,7 @@ SBU_fascist_plan = {
 	focus_factors = {
 		SBU_right = 1000
 		SBU_above_all = 1000
+        SBU_fascism_focus = 1000
 	}
 
 
@@ -117,31 +127,6 @@ SBU_monarchist_plan = {
 		SBU_right = 1000
 		SBU_Empire = 1000
 		SBU_monarchism_focus = 1000
-	}
-
-
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
-}
-
-SBU_neutrality_plan = {
-
-	enable = {
-		original_tag = SBU
-		has_game_rule = {
-			rule = SBU_AI_BEHAVIOR
-			option = NEUTRALITY
-		}
-	}
-
-	focus_factors = {
-		SBU_right = 1000
-		SBU_Empire = 1000
-		SBU_absolutism = 1000
 	}
 
 

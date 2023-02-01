@@ -57,30 +57,30 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = UCB_dem_ndro2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = UCB_dem_ndro
-		}
-		completion_reward = {
-			ORB = {
-				country_event = { id = orb.43 days = 30 }
-			}
-			UCB = {
-				annex_country = {
-					target = ORB
-					transfer_troops = no
-				}
-				add_state_core = 44
-				add_state_core = 45
-			}
-		}
-		x = 2
-		y = 12
-
-	}
+	#focus = {
+	#	id = UCB_dem_ndro2
+	#	icon = GFX_goal_unknown
+	#	cost = 10
+	#	prerequisite = {
+	#		focus = UCB_dem_ndro
+	#	}
+	#	completion_reward = {
+	#		ORB = {
+	#			country_event = { id = orb.43 days = 30 }
+	#		}
+	#		UCB = {
+	#			annex_country = {
+	#				target = ORB
+	#				transfer_troops = no
+	#			}
+	#			add_state_core = 44
+	#			add_state_core = 45
+	#		}
+	#	}
+	#	x = 2
+	#	y = 12
+    #
+	#}
 	focus = {
 		id = UCB_dem_kulishtia
 		icon = GFX_goal_unknown
@@ -203,17 +203,6 @@ focus_tree = {
 		}
 		x = 4
 		y = 9
-
-	}
-	focus = {
-		id = UCB_dem_kulishtia2
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = UCB_dem_kulishtia
-		}
-		x = 4
-		y = 12
 
 	}
 	focus = {

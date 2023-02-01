@@ -5,6 +5,10 @@
 
   RULE_OPTION_MONARCHIST:0 "Монархизм"
   RULE_OPTION_NEUTRALITY:0 "Авторитаризм"
+  RULE_OPTION_CIVILWAR: "Гражданская война"
+  RULE_OPTION_CIVILWAR2: "Гражданская война (альт.)"
+  RULE_OPTION_REVOTE: "Перевыборы"
+  UCB_AI_BEHAVIOR: "ОсНБ"
   SBU_AI_BEHAVIOR:0 "Сибурленд"
   SFL_AI_BEHAVIOR:0 "Саффлия"
   IID_AI_BEHAVIOR:0 "ИИД"
