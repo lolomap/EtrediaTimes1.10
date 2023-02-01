@@ -1943,3 +1943,45 @@ country_event = {
         add_to_variable = {sz_cap_bonus = -0.05}
     }
 }
+
+country_event = {
+	id = sbu.77
+	title = sbu.77.t
+	desc = sbu.77.d
+
+    is_triggered_only = yes
+
+	option = {
+		name = sbu.77.a
+        give_resource_rights = {
+            receiver = SBU
+            state = 659
+            resources = { uranium }
+        }
+        add_extra_state_shared_building_slots = 3
+        add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+        }
+        SBU = {
+            random_owned_controlled_state = {
+                limit = {
+                    has_built = {
+                        type = industrial_complex
+                        value > 2
+                    }
+                }
+                remove_building = {
+                    type = industrial_complex
+                    level = 3
+                }
+            }
+        }
+        ai_chance = {base = 1000}
+	}
+    option = {
+		name = sbu.77.b
+        ai_chance = {base = 0}
+	}
+}

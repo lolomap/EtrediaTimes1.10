@@ -59,6 +59,45 @@ focus_tree = {
 		}
 
 	}
+
+    focus = {
+		id = SBU_uranian_question
+		icon = GFX_goal_sburska_zvezda_potential
+		cost = 10
+		x = 45
+		y = 3
+
+        prerequisite = {focus = SBU_military_factory}
+        prerequisite = {focus = SBU_economic}
+
+        available = {has_stability > 0.6}
+
+		completion_reward = {
+            add_ideas = SBU_sz_uran
+            PAL = {add_ideas = SBU_little_sburska_zvezda}
+		}
+
+	}
+
+    focus = {
+		id = SBU_uranian_question2
+		icon = GFX_goal_sburska_zvezda_potential
+		cost = 10
+		x = 45
+		y = 4
+
+        available = {
+            PAL = {has_idea = SBU_medium_sburska_zvezda}
+        }
+
+        prerequisite = {focus = SBU_uranian_question}
+
+		completion_reward = {
+            PAL = {country_event = {id = sbu.77 days = 1}}
+		}
+
+	}
+
 	focus = {
 		id = SBU_klyachek_plan
 		icon = GFX_focus_generic_military_academy
@@ -2314,6 +2353,12 @@ focus_tree = {
         }
 
 		completion_reward = {
+            SFL = {
+                add_opinion_modifier = {
+                    modifier = SBU_annex_RGY_SFL
+                    target = SBU
+                }
+            }
 			RGY = {
 				country_event = { id = rgy.6 days = 1 }
 			}
@@ -2345,6 +2390,12 @@ focus_tree = {
 				load_oob = EMF_separatist
 			}
 			SBU = {puppet = EMF}
+            SFL = {
+                add_opinion_modifier = {
+                    modifier = SBU_east_monfua_SFL
+                    target = SBU
+                }
+            }
 		}
 	}
 	focus = {

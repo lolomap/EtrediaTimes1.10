@@ -21,6 +21,9 @@
  SBU_democracy_friendly:0 "Вынужденный авторитаризм"
  SBU_UCB_fascist_enemy:0 "Разорванные дипломатические отношения"
 
+ SBU_annex_RGY_SFL: "Аннексия Гы"
+ SBU_east_monfua_SFL: "Присутствие в Монфуе"
+
  ORB_DemExample_opinion:0 "Оплот демократии"
 
  MODIFIER_TECH_PREFIX:0 "£tech_mod "
