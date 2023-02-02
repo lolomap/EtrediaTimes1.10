@@ -701,3 +701,12 @@ SBU_ISH_rebellion = {
 		}
     }
 }
+
+SBU_trade_war = {
+    SBU_blank = {
+        available = {custom_trigger_tooltip = {always = no}}
+
+		complete_effect = {
+		}
+    }
+}

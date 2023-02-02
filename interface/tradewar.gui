@@ -1,0 +1,52 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "tradewar_window"
+
+        position = { x = 0 y = 0 }
+		size = { width = 500 height= 150 }
+
+        buttonType = {
+            name = "SFLFlag"
+            quadTextureSprite = "GFX_flag_small2"
+            position = {x = 15 y = 5}
+        }
+
+        iconType = {
+            name = "SFLFlagBorder"
+            quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+            position = {x = 11 y = 2}
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "SFLpb"
+            spriteType = "GFX_tradewarSFL_pb"
+            position = {x = 75 y = 8}
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "SBUpb"
+            spriteType = "GFX_tradewarSBU_pb"
+            position = {x = 255 y = 8}
+            alwaystransparent = yes
+        }
+
+        buttonType = {
+            name = "SBUFlag"
+            quadTextureSprite = "GFX_flag_small2"
+            position = {x = -55 y = 5}
+            Orientation = "UPPER_RIGHT"
+        }
+
+        iconType = {
+            name = "SBUFlagBorder"
+            quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+            position = {x = -59 y = 2}
+            alwaystransparent = yes
+            
+            Orientation = "UPPER_RIGHT"
+        }
+
+}

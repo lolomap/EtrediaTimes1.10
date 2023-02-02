@@ -1,0 +1,22 @@
+scripted_gui = {
+    tradewar = {
+        window_name = "tradewar_window"
+        context_type = decision_category
+
+        properties = {
+			SFLFlag = {
+				image = [SFL.GetFlag]
+			}
+            SBUFlag = {
+				image = [SBU.GetFlag]
+			}
+
+            SFLpb = {
+                frame = SFL.trade_war
+            }
+            SBUpb = {
+                frame = SBU.trade_war
+            }
+		}
+    }
+}

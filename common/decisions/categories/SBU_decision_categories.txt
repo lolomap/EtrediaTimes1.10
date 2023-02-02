@@ -16,3 +16,8 @@ SBU_sburska_zvezda_war = {
 SBU_ISH_rebellion = {
     visible = {has_country_flag = ISH_REBEL}
 }
+
+SBU_trade_war = {
+    visible = {OR = {original_tag = SFL original_tag = SBU} has_country_flag = tradewar}
+    scripted_gui = tradewar
+}

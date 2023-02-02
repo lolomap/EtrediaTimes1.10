@@ -374,7 +374,14 @@ focus_tree = {
 			focus = SFL_sibconcurent
 		}
 		completion_reward = {
-		SBU = { add_opinion_modifier { target = ROOT modifier = SFL_tradewar } }
+            SFL = {add_ideas = SFL_tradewar_idea}
+            SBU = {
+                add_opinion_modifier { target = ROOT modifier = SFL_tradewar }
+                add_ideas = SFL_tradewar_idea
+            }
+            SBU = {set_country_flag = tradewar}
+            set_country_flag = tradewar
+            set_variable = {trade_war = 80}
 		}
 		x = 26
 		y = 6
