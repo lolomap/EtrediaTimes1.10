@@ -1,4 +1,49 @@
 ideas = {
+    tank_manufacturer = {
+        Htatka = {
+            picture = generic_tank_manufacturer_1
+
+            allowed = {
+                tag = SBU
+            }
+                
+            cost = 200
+            equipment_bonus = {
+                armor = {
+                    build_cost_ic = -0.1
+                    reliability = 0.1
+                }
+            }
+
+                
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+
+    materiel_manufacturer = {
+        Krakolac = {
+            picture = generic_motorized_equipment_manufacturer_3
+
+            allowed = {
+                tag = SBU
+            }
+                
+            cost = 175
+            equipment_bonus = {
+                motorized_equipment = {
+                    build_cost_ic = -0.25
+                }
+            }
+
+                
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+
 	industrial_concern = {
 		SBU_SZ_concern = {
 			picture = GFX_idea_siburian_zvezda
@@ -18,5 +63,22 @@ ideas = {
 
 			traits = { electronics_concern }
 		}
+        SBU_Kockav_concern = {
+
+			allowed = {tag = SBU}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			modifier = {
+				#political_power_cost = 0.15
+			}
+
+			traits = { industrial_concern }
+        }
 	}
-}`
+}

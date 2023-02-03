@@ -44,7 +44,7 @@ on_actions = {
             KYU = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
             GWA = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
             HOR = {set_country_flag = BRAND_NEW_COUNTRY set_country_flag = ai_not_accept_existance}
-            DEM = {set_country_flag = ai_not_accept_existance}
+            DEM = {set_country_flag = ai_not_accept_existance} KAR = {set_country_flag = ACCEPT_EXISTANCE_DEM}
             BLJ = {set_country_flag = ai_not_accept_existance}
             SDI = {set_country_flag = ai_not_accept_existance}
             DIB = {set_country_flag = ai_not_accept_existance}

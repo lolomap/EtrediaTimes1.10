@@ -7,6 +7,9 @@ ideas = {
             }
             
             removal_cost = -1
+            cancel = {
+                NOT = {has_country_flag = tradewar}
+            }
 
 
             modifier = {
@@ -15,6 +18,7 @@ ideas = {
                 production_speed_infrastructure_factor = -0.15
                 industrial_capacity_factory = -0.05
                 research_speed_factor = -0.05
+                disabled_ideas = 1
             }
 
         }

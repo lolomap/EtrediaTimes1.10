@@ -4,13 +4,19 @@
  stability_modifiers: "Уровень легитимности"
 
  SBU_SZ_concern:0 "Sburska Zvezda"
+ SBU_Kockav_concern: "SDT Koćkav"
+ Htatka: "Концерн Htatka"
+ Krakolac: "Концерн Krakolac"
 
+ dragan_kzhachich: "Высокая дисцпилина"
  vader_sveril:0 "Вадер Свериль"
  alexandra_rybka:0 "Александра Рыбка"
  eyenot_kouzov:0 "Эенот Коузов"
  mehok_saniebo:0 "Мехок Саньебо"
  alexech_aalankat:0 "Алексеч Ааланкат"
  charvik_klyachek:0 "Чарвик Клячек"
+ vitutas_bredikis:0 "Витутас Бредикис"
+ darko_dikrich: "Дарко Дикрич"
 
  left_pressuring:0 "Сдерживание левых"
  less_workday:0 "Уменьшенный рабочий день"

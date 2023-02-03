@@ -61,6 +61,63 @@ focus_tree = {
 	}
 
     focus = {
+		id = SBU_tradewar
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 49
+		y = 3
+
+        prerequisite = {focus = SBU_dockyard}
+        prerequisite = {focus = SBU_economic}
+
+        available = {
+            has_opinion = {target = SFL value < 5}
+        }
+
+        bypass = {
+            has_idea = SFL_tradewar_idea
+        }
+
+		completion_reward = {
+            SBU = {add_ideas = SFL_tradewar_idea}
+            SFL = {
+                add_opinion_modifier { target = ROOT modifier = SFL_tradewar }
+                add_ideas = SFL_tradewar_idea
+            }
+            SBU = {set_country_flag = tradewar}
+            set_country_flag = tradewar
+            set_country_flag = tradewar_starter
+            set_variable = {trade_war = 20}
+		}
+
+	}
+
+    focus = {
+		id = SBU_end_tradewar
+		icon = GFX_goal_unknown
+		cost = 45
+		x = 49
+		y = 5
+
+        prerequisite = {focus = SBU_pressure_gy}
+
+        available = {
+            has_idea = SFL_tradewar_idea
+            custom_trigger_tooltip = {
+                tooltip = tradewar_starter_tooltip
+                has_country_flag = tradewar_starter
+            }
+        }
+
+		completion_reward = {
+            SFL = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+            clr_country_flag = tradewar
+            SFL = {clr_country_flag = tradewar}
+		}
+
+	}
+
+    focus = {
 		id = SBU_uranian_question
 		icon = GFX_goal_sburska_zvezda_potential
 		cost = 10
@@ -1825,6 +1882,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SBU_investitions_gy
 		}
+        prerequisite = {
+            focus = SBU_tradewar
+        }
 		x = 49
 		y = 4
 

@@ -15,6 +15,7 @@ add_ideas = {
         free_trade
         general_entry
         SBU_Elnia_separatism
+        SBU_SZ_concern
 	third_corruption_level
 }
 

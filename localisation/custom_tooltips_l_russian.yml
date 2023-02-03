@@ -7,6 +7,7 @@
   sz_bonus_tt1: "Вам будет добавлено на §Y90§! дней:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §G-5%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+5%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$:§G+5%§!"
   sz_bonus_tt2: "Вам будет добавлено на §Y90§! дней:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §G-10%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+10%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$:§G+10%§!"
   sz_bonus_tt3: "Вам будет добавлено на §Y90§! дней:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §G-15%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: §G+15%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$:§G+15%§!"
+  tradewar_starter_tooltip: "Начал торговую войну"
 
   ALLOW_ACCEPT_EXISTANCE_tooltip: "Мы должны признать независимость этого государства"
   ALLOW_BANNED_CRYSIS_tooltip: "Нельзя во время войны из-за кризиса"

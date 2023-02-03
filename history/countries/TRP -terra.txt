@@ -44,7 +44,7 @@ set_popularities = {
 
 #
 create_country_leader = {
-	name = "Oleg Prigarin"
+	name = "Oleg Legachi"
 	desc = "POLITICS_MOH_ZAHIR_SHAH_DESC"
 	picture = "portrait_trp_leader1.dds"
 	expire = "1965.1.1"
@@ -55,7 +55,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oleg Prigarin"
+	name = "Oleg Legachi"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "portrait_taganrog_ivan_ishenko.dds"
 	expire = "1965.1.1"

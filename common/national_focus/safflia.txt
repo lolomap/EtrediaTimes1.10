@@ -373,6 +373,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_sibconcurent
 		}
+
+        bypass = {has_idea = SFL_tradewar_idea}
+
 		completion_reward = {
             SFL = {add_ideas = SFL_tradewar_idea}
             SBU = {
@@ -1247,7 +1250,9 @@ focus_tree = {
 			focus = SFL_sila
 		}
 		completion_reward = {
-		SBU = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+		    SBU = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+            clr_country_flag = tradewar
+            SBU = {clr_country_flag = tradewar}
 		}
 		x = 22
 		y = 12
