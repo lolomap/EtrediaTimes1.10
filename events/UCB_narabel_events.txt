@@ -867,6 +867,29 @@ country_event = {
 	option = {
 	name = ucb.30.a
 		hidden_effect = {
+        UCB = {
+            delete_units = {
+                division_template = "Infantry Division"
+                disband = yes
+            }
+            delete_units = {
+                division_template = "Main Tank-Division"
+                disband = yes
+            }
+            delete_units = {
+                division_template = "Mot. Rifl. Brigade"
+                disband = no
+            }
+            delete_units = {
+                division_template = "Mech. Rocket Brigade"
+                disband = no
+            }
+            delete_units = {
+                division_template = "MNT division"
+                disband = no
+            }
+        }
+        UCB = {load_oob = UCB_parlament}
         NCU = {
             transfer_state = 9
 			transfer_state = 29
