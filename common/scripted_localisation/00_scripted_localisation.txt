@@ -4,6 +4,44 @@ defined_text = {
 }
 
 defined_text = {
+    name = tradestatus_sl
+    text = {
+        trigger = {
+            set_temp_variable = {forw = 100}
+            subtract_from_temp_variable = {forw = SFL.trade_war}
+            if = {
+                limit = {tag = SBU}
+                check_variable = {trade_war > forw}
+            }
+            else = {
+                check_variable = {forw > SBU.trade_war}
+            }
+        }
+        localization_key = tradestatus_g
+    }
+    text = {
+        trigger = {
+            set_temp_variable = {forw = 100}
+            subtract_from_temp_variable = {forw = SFL.trade_war}
+            if = {
+                limit = {tag = SBU}
+                check_variable = {trade_war < forw}
+            }
+            else = {
+                check_variable = {forw < SBU.trade_war}
+            }
+        }
+        localization_key = tradestatus_b
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = tradestatus_equal
+    }
+}
+
+defined_text = {
     name = wicost_sl
     text = {
         trigger = {

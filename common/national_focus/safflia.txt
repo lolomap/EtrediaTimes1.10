@@ -400,6 +400,7 @@ focus_tree = {
 		completion_reward = {
 		MOF = { add_ideas = { MOF_sflunfluence } }
 		MOF = { country_event = { id = monfua.1 days = 1 } }
+        add_to_variable = {trade_war = -15}
 		}
 		x = 24
 		y = 7
@@ -1184,6 +1185,7 @@ focus_tree = {
 	    }
         completion_reward = {
         IID = { country_event = { id = dux.5 days = 1 } }
+        add_to_variable = {trade_war = -10}
         }
 		x = 24
 		y = 8
@@ -1227,6 +1229,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			MOF = { country_event = { id = monfua.2 days = 1 } }
+            add_to_variable = {trade_war = -20}
 		}
 		x = 24
 		y = 11

@@ -709,4 +709,198 @@ SBU_trade_war = {
 		complete_effect = {
 		}
     }
+
+    SBU_ELR_trade = {
+        available = {country_exists = ELR}
+        visible = {tag = SBU}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g15
+            SBU = {add_to_variable = {trade_war = 15}}
+        }
+    }
+
+    SBU_MOF_trade = {
+        available = {country_exists = MOF}
+        visible = {tag = SFL}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g20
+            SFL = {add_to_variable = {trade_war = -20}}
+        }
+    }
+
+    SBU_SZ_trade = {
+        available = {has_completed_focus = SBU_sburska_zvezda}
+        visible = {tag = SBU}
+
+        cost = 30
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_gSZ
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_little_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 2}}
+                }
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_medium_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 4}}
+                }
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_high_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 6}}
+                }
+            }
+        }
+    }
+
+    SBU_FSC_trade = {
+        available = {country_exists = FSC}
+        visible = {tag = SFL}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            SFL = {add_to_variable = {trade_war = -10}}
+        }
+    }
+
+    SBU_UCB_trade = {
+        available = {country_exists = UCB has_completed_focus = SBU_UCB_friendship}
+        visible = {tag = SBU}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            SBU = {add_to_variable = {trade_war = 10}}
+        }
+    }
+
+    SBU_crowding_out = {
+        cost = 20
+        days_re_enable = 15
+        complete_effect = {
+            if = {
+                limit = {tag = SFL}
+                SBU = {add_to_variable = {trade_war = -10}}
+                SBU = {custom_effect_tooltip = trade_b10}
+            }
+            if = {
+                limit = {tag = SBU}
+                SFL = {add_to_variable = {trade_war = 10}}
+                SFL = {custom_effect_tooltip = trade_b10}
+            }
+        }
+    }
+
+    SBU_add_export = {
+        cost = 25
+        days_re_enable = 15
+        complete_effect = {
+            custom_effect_tooltip = trade_g5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -5}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 5}
+            }
+        }
+    }
+
+    SBU_IID_trade = {
+        cost = 30
+        days_re_enable = 40
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -10}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 10}
+            }
+        }
+    }
+
+    SBU_RGY_trade = {
+        cost = 25
+        days_re_enable = 30
+        complete_effect = {
+            custom_effect_tooltip = trade_g5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -5}
+                SBU = {
+                    custom_effect_tooltip = trade_b5
+                    add_to_variable = {trade_war = -5}
+                }
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 5}
+                SFL = {
+                    custom_effect_tooltip = trade_b5
+                    add_to_variable = {trade_war = 5}
+                }
+            }
+        }
+    }
+
+    SBU_sea_trade = {
+        cost = 40
+        days_re_enable = 40
+        days_remove = 30
+
+        remove_effect = {
+            custom_effect_tooltip = trade_g10
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -10}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 10}
+            }
+        }
+    }
+
+    SBU_sanctions = {
+        cost = 20
+        days_re_enable = 20
+        complete_effect = {
+            custom_effect_tooltip = trade_b5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = 5}
+                SBU = {
+                    custom_effect_tooltip = trade_b8
+                    add_to_variable = {trade_war = -8}
+                }
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = -5}
+                SFL = {
+                    custom_effect_tooltip = trade_b8
+                    add_to_variable = {trade_war = 8}
+                }
+            }
+        }
+    }
 }

@@ -1049,6 +1049,22 @@ on_actions = {
         }
 	}
 
+    on_weekly_SFL = {
+        if = {
+            limit = {has_country_flag = tradewar}
+            if = {
+                limit = {
+                    OR = {
+                        SFL = {check_variable = {trade_war < 1}}
+                        SBU = {check_variable = {trade_war > 99}}
+                    }
+                }
+                clr_country_flag = tradewar
+                SBU = {clr_country_flag = tradewar}
+            }
+        }
+    }
+
 	on_weekly = {
 		effect = {
             #Уступить или возразить в кризисе
@@ -1453,7 +1469,10 @@ on_actions = {
                     has_government = democratic
                 }
 
-                add_threat = -1
+                add_threat = -2.5
+            }
+            else = {
+                add_threat = 2.5
             }
 
 			if = {
@@ -1473,6 +1492,20 @@ on_actions = {
 					}
 				}
 			}
+            else_if = {
+                limit = {
+                    original_tag = DIR
+                    DIR = {has_government = democratic}
+                }
+                DEM = {annex_country = {target = DIR transfer_troops = yes}}
+            }
+            else_if = {
+                limit = {
+                    original_tag = DEM
+                    DEM = {has_government = communism}
+                }
+                DIR = {annex_country = {target = DEM transfer_troops = yes}}
+            }
             else_if = {
                 limit = {
                     original_tag = IID

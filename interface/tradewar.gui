@@ -36,17 +36,23 @@ guiTypes = {
         buttonType = {
             name = "SBUFlag"
             quadTextureSprite = "GFX_flag_small2"
-            position = {x = -55 y = 5}
-            Orientation = "UPPER_RIGHT"
+            position = {x = 455 y = 5}
         }
 
         iconType = {
             name = "SBUFlagBorder"
             quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-            position = {x = -59 y = 2}
+            position = {x = 451 y = 2}
             alwaystransparent = yes
-            
-            Orientation = "UPPER_RIGHT"
         }
+
+        instantTextBoxType = {
+			name = "l1"
+			text = tradestatus_text
+			position {x = 15 y = 50}
+			maxWidth = 500
+			font = hoi_18
+		}
+    }
 
 }

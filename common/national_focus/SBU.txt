@@ -317,6 +317,7 @@ focus_tree = {
         }
 		completion_reward = { 
 		IID = { country_event = { id = dux.6 days = 1 } }
+            SBU = {add_to_variable = {trade_war = 15}}
 		}
 		x = 7
 		y = 3
@@ -355,6 +356,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 		SBU = { country_event = { id = sbu.9 days = 1 } }
+        add_to_variable = {trade_war = 10}
 		}
 		ai_will_do = {
 		factor = 30
@@ -376,6 +378,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 		MOF = { country_event = { id = monfua.4 days = 1 } }
+        SFL = {add_to_variable = {trade_war = 15}}
 		}
 		x = 8
 		y = 5
@@ -393,6 +396,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		SBU = { country_event = { id = sbu.23 days = 1 } }
+        add_to_variable = {trade_war = 15}
 		}
 		ai_will_do = {
 		factor = 70
