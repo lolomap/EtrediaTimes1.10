@@ -1050,17 +1050,19 @@ on_actions = {
 	}
 
     on_weekly_SFL = {
-        if = {
-            limit = {has_country_flag = tradewar}
+        effect = {
             if = {
-                limit = {
-                    OR = {
-                        SFL = {check_variable = {trade_war < 1}}
-                        SBU = {check_variable = {trade_war > 99}}
+                limit = {has_country_flag = tradewar}
+                if = {
+                    limit = {
+                        OR = {
+                            SFL = {check_variable = {trade_war < 1}}
+                            SBU = {check_variable = {trade_war > 99}}
+                        }
                     }
+                    clr_country_flag = tradewar
+                    SBU = {clr_country_flag = tradewar}
                 }
-                clr_country_flag = tradewar
-                SBU = {clr_country_flag = tradewar}
             }
         }
     }

@@ -92,23 +92,36 @@ foreign_support = {
 			not = {has_idea = ec_fs_m_b}
 			not = {has_idea = ec_fs_h_b}
 			FROM = {
-				is_in_faction_with = ROOT
+                OWNER = {
+				    is_in_faction_with = ROOT
+                }
 			}
 		}
 
 		target_trigger = {
 			FROM = {
-				is_in_faction_with = ROOT
-				check_variable = {FROM.world_influence < ROOT.world_influence}
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    OWNER = {
+                        is_in_faction_with = ROOT
+                        check_variable = {FROM.world_influence < ROOT.world_influence}
+                    }
+                }
 			}
 		}
+
+        state_target = yes
+        on_map_mode = map_only
 
 		complete_effect = {
 			ROOT = {
 				add_timed_idea = {idea = ec_fs_h_b days = 120}
 			}
 			FROM = {
-				add_timed_idea = {idea = ec_fs_h_g days = 120}
+                OWNER = {
+				    add_timed_idea = {idea = ec_fs_h_g days = 120}
+                }
 			}
 		}
 

@@ -119,6 +119,7 @@ SBU_sburska_zvezda_war = {
     sz_expluatation = {
         visible = {
             FROM = {
+                is_capital = yes
                 owner = {
                     NOT = {tag = SBU}
                     OR = {
