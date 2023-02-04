@@ -1,0 +1,26 @@
+spriteTypes = {
+    progressbartype = {
+        name = "GFX_tradewarSBU_pb"
+        textureFile1 = "gfx/interface/strategicair/progress_good.dds"
+        textureFile2 = "gfx/interface/strategicair/progress_bad.dds"
+        color = {0.0 1.0 0.0}
+        colortwo = {1.0 0.0 0.0}
+        size = { 
+            x = 180
+            y = 20
+        }
+        effectFile = "gfx/FX/progress.lua"
+    }
+    progressbartype = {
+        name = "GFX_tradewarSFL_pb"
+        textureFile1 = "gfx/interface/strategicair/progress_bad.dds"
+        textureFile2 = "gfx/interface/strategicair/progress_good.dds"
+        color = {0.0 1.0 0.0}
+        colortwo = {1.0 0.0 0.0}
+        size = { 
+            x = 180
+            y = 20
+        }
+        effectFile = "gfx/FX/progress.lua"
+    }
+}

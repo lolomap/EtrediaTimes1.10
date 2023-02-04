@@ -1,5 +1,11 @@
 SBU_sburska_zvezda_war = {
 	sz_arms_buy = {
+
+        visible = {
+            has_country_flag = sz_extra_support_activated
+            surrender_progress < 0.3
+        }
+
 		fire_only_once = yes
 		cost = 25
 
@@ -28,6 +34,10 @@ SBU_sburska_zvezda_war = {
 	}
 
 	sz_fuel = {
+        visible = {
+            has_country_flag = sz_extra_support_activated
+            surrender_progress < 0.3
+        }
 		
 		fire_only_once = yes
 		cost = 10
@@ -44,6 +54,10 @@ SBU_sburska_zvezda_war = {
 	}
 
 	sz_modernize = {
+        visible = {
+            has_country_flag = sz_extra_support_activated
+            surrender_progress < 0.3
+        }
 		fire_only_once = yes
 		
 		cost = 50
@@ -66,6 +80,10 @@ SBU_sburska_zvezda_war = {
 	}
 
 	sz_consumer = {
+        visible = {
+            has_country_flag = sz_extra_support_activated
+            surrender_progress < 0.3
+        }
 		fire_only_once = yes
 
 		cost = 50
@@ -80,6 +98,10 @@ SBU_sburska_zvezda_war = {
 	}
 
 	sz_deliver = {
+        visible = {
+            has_country_flag = sz_extra_support_activated
+            surrender_progress < 0.3
+        }
 		fire_only_once = yes
 
 		cost = 15
@@ -93,6 +115,202 @@ SBU_sburska_zvezda_war = {
 			factor = 100
 		}
 	}
+
+    sz_expluatation = {
+        visible = {
+            FROM = {
+                is_capital = yes
+                owner = {
+                    NOT = {tag = SBU}
+                    OR = {
+                        has_idea = SBU_little_sburska_zvezda
+                        has_idea = SBU_medium_sburska_zvezda
+                        has_idea = SBU_high_sburska_zvezda
+                    }
+                }
+            }
+        }
+
+        target_trigger = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                    }
+                }
+            }
+        }
+        state_target = yes
+        on_map_mode = map_only
+        #icon = GFX_goal_sburska_zvezda_potential
+
+        cost = 25
+        complete_effect = {
+            add_to_variable = {sz_consumer_bonus_a = -0.05}
+            add_to_variable = {sz_eff_bonus_a = 0.05}
+            add_to_variable = {sz_cap_bonus_a = 0.05}
+            if = {
+                limit = {FROM = {OWNER = {has_idea = SBU_medium_sburska_zvezda}}}
+                add_to_variable = {sz_consumer_bonus_a = -0.05}
+                add_to_variable = {sz_eff_bonus_a = 0.05}
+                add_to_variable = {sz_cap_bonus_a = 0.05}
+            }
+            if = {
+                limit = {FROM = {OWNER = {has_idea = SBU_high_sburska_zvezda}}}
+                add_to_variable = {sz_consumer_bonus_a = -0.1}
+                add_to_variable = {sz_eff_bonus_a = 0.1}
+                add_to_variable = {sz_cap_bonus_a = 0.1}
+            }
+
+            custom_effect_tooltip = sz_bonus_tooltip
+            hidden_effect = {
+                add_dynamic_modifier = {modifier = sz_bonus days = 90}
+                country_event = {id = sbu.76 days = 90}
+                FROM = {
+                    OWNER = {
+                        add_timed_idea = {idea = SZ_debuff days = 90}
+                        if = {
+                            limit = {has_idea = SBU_high_sburska_zvezda}
+                            swap_ideas = {
+                                add_idea = SBU_medium_sburska_zvezda
+                                remove_idea = SBU_high_sburska_zvezda
+                            }
+                        }
+                        else_if = {
+                            limit = {has_idea = SBU_medium_sburska_zvezda}
+                            swap_ideas = {
+                                add_idea = SBU_little_sburska_zvezda
+                                remove_idea = SBU_medium_sburska_zvezda
+                            }
+                        }
+                        else = {
+                            remove_ideas = SBU_little_sburska_zvezda
+                        }
+                    }
+                }
+            }
+        }
+    }
+    sz_add_to_country = {
+        visible = {
+            FROM = {
+                owner = {
+                    has_opinion = {target = SBU value > 29}
+                    NOT = {tag = SBU}
+                    NOT = {has_government = communism}
+                    NOT = {has_idea = closed_economy}
+                    NOT = {has_idea = SBU_little_sburska_zvezda}
+                    NOT = {has_idea = SBU_medium_sburska_zvezda}
+                    NOT = {has_idea = SBU_high_sburska_zvezda}
+                }
+            }
+        }
+
+        target_trigger = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                    }
+                }
+            }
+        }
+        state_target = yes
+        on_map_mode = map_only
+        #icon = GFX_goal_sburska_zvezda_potential
+
+        cost = 150
+        complete_effect = {
+            random_list = {
+                30 = {FROM = {OWNER = {add_ideas = SBU_little_sburska_zvezda}}}
+                70 = {}
+            }
+        }
+    }
+    sz_set_medium = {
+        visible = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                        has_idea = SBU_little_sburska_zvezda
+                    }
+                }
+            }
+        }
+
+        target_trigger = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                        has_idea = SBU_little_sburska_zvezda
+                    }
+                }
+            }
+        }
+        state_target = yes
+        on_map_mode = map_only
+        #icon = GFX_goal_sburska_zvezda_potential
+
+        cost = 200
+        complete_effect = {
+            random_list = {
+                70 = {
+                    FROM = {OWNER = {swap_ideas = {add_idea = SBU_medium_sburska_zvezda remove_idea = SBU_little_sburska_zvezda}}}
+                }
+                30 = {}
+            }
+        }
+    }
+    sz_set_high = {
+        visible = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                        has_idea = SBU_medium_sburska_zvezda
+                    }
+                }
+            }
+        }
+
+        target_trigger = {
+            FROM = {
+                is_capital = yes
+                if = {
+                    limit = {is_capital = yes}
+                    owner = {
+                        NOT = {tag = SBU}
+                        has_idea = SBU_medium_sburska_zvezda
+                    }
+                }
+            }
+        }
+        state_target = yes
+        on_map_mode = map_only
+        #icon = GFX_goal_sburska_zvezda_potential
+
+        cost = 300
+        complete_effect = {
+            random_list = {
+                80 = {
+                    FROM = {OWNER = {swap_ideas = {add_idea = SBU_high_sburska_zvezda remove_idea = SBU_medium_sburska_zvezda}}}
+                }
+                20 = {}
+            }
+        }
+    }
 }
 
 SBU_east_sphere = {
@@ -384,5 +602,306 @@ SBU_ISH_rebellion = {
 		ai_will_do = {
 			factor = 100
 		}
+    }
+    SBU_division_press_rebel = {
+        visible = {
+			original_tag = SBU
+			has_idea = SBU_Modern_Empire
+		}
+		fire_only_once = yes
+
+        custom_cost_trigger = {
+            command_power > 49
+            has_army_experience > 29
+        }
+        custom_cost_text = SBU_division_press_rebel_cost
+		complete_effect = {
+			swap_ideas = {
+                add_idea = SBU_Modern_Empire2
+                remove_idea = SBU_Modern_Empire
+            }
+            hidden_effect = {
+                add_command_power = -50
+                army_experience = -30
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+    SBU_money_for_newbies = {
+        visible = {
+			original_tag = SBU
+			has_idea = SBU_Modern_Empire2
+		}
+		fire_only_once = yes
+
+        cost = 100
+		complete_effect = {
+			swap_ideas = {
+                add_idea = SBU_Modern_Empire3
+                remove_idea = SBU_Modern_Empire2
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+    SBU_create_police = {
+        visible = {
+			original_tag = SBU
+			OR = {
+                has_idea = SBU_ISH_TRB
+                has_idea = SBU_ISH_SFL
+            }
+		}
+		fire_only_once = yes
+
+        custom_cost_trigger = {
+            command_power > 99
+        }
+        custom_cost_text = SBU_create_police_cost
+		complete_effect = {
+			add_ideas = SBU_ohranka
+            hidden_effect = {
+                add_command_power = -100
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+    SBU_ISH_prop = {
+        visible = {
+			original_tag = SBU
+			OR = {
+                has_idea = SBU_ISH_TRB
+                has_idea = SBU_ISH_SFL
+            }
+		}
+
+        cost = 50
+		complete_effect = {
+			if = {
+                limit = {has_idea = SBU_ISH_TRB}
+                random_owned_controlled_state = {
+                    limit = {is_core_of = TRB}
+                    add_compliance = 30
+                }
+            }
+            if = {
+                limit = {has_idea = SBU_ISH_SFL}
+                random_owned_controlled_state = {
+                    limit = {is_core_of = SFL}
+                    add_compliance = 30
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+}
+
+SBU_trade_war = {
+    SBU_blank = {
+        available = {custom_trigger_tooltip = {always = no}}
+
+		complete_effect = {
+		}
+    }
+
+    SBU_ELR_trade = {
+        available = {country_exists = ELR}
+        visible = {tag = SBU}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g15
+            SBU = {add_to_variable = {trade_war = 15}}
+        }
+    }
+
+    SBU_MOF_trade = {
+        available = {country_exists = MOF}
+        visible = {tag = SFL}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g20
+            SFL = {add_to_variable = {trade_war = -20}}
+        }
+    }
+
+    SBU_SZ_trade = {
+        available = {has_completed_focus = SBU_sburska_zvezda}
+        visible = {tag = SBU}
+
+        cost = 30
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_gSZ
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_little_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 2}}
+                }
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_medium_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 4}}
+                }
+                every_other_country = {
+                    limit = {
+                        has_idea = SBU_high_sburska_zvezda
+                    }
+                    SBU = {add_to_variable = {trade_war = 6}}
+                }
+            }
+        }
+    }
+
+    SBU_FSC_trade = {
+        available = {country_exists = FSC}
+        visible = {tag = SFL}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            SFL = {add_to_variable = {trade_war = -10}}
+        }
+    }
+
+    SBU_UCB_trade = {
+        available = {country_exists = UCB has_completed_focus = SBU_UCB_friendship}
+        visible = {tag = SBU}
+
+        cost = 25
+        days_re_enable = 35
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            SBU = {add_to_variable = {trade_war = 10}}
+        }
+    }
+
+    SBU_crowding_out = {
+        cost = 20
+        days_re_enable = 15
+        complete_effect = {
+            if = {
+                limit = {tag = SFL}
+                SBU = {add_to_variable = {trade_war = -10}}
+                SBU = {custom_effect_tooltip = trade_b10}
+            }
+            if = {
+                limit = {tag = SBU}
+                SFL = {add_to_variable = {trade_war = 10}}
+                SFL = {custom_effect_tooltip = trade_b10}
+            }
+        }
+    }
+
+    SBU_add_export = {
+        cost = 25
+        days_re_enable = 15
+        complete_effect = {
+            custom_effect_tooltip = trade_g5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -5}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 5}
+            }
+        }
+    }
+
+    SBU_IID_trade = {
+        cost = 30
+        days_re_enable = 40
+        complete_effect = {
+            custom_effect_tooltip = trade_g10
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -10}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 10}
+            }
+        }
+    }
+
+    SBU_RGY_trade = {
+        cost = 25
+        days_re_enable = 30
+        complete_effect = {
+            custom_effect_tooltip = trade_g5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -5}
+                SBU = {
+                    custom_effect_tooltip = trade_b5
+                    add_to_variable = {trade_war = -5}
+                }
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 5}
+                SFL = {
+                    custom_effect_tooltip = trade_b5
+                    add_to_variable = {trade_war = 5}
+                }
+            }
+        }
+    }
+
+    SBU_sea_trade = {
+        cost = 40
+        days_re_enable = 40
+        days_remove = 30
+
+        remove_effect = {
+            custom_effect_tooltip = trade_g10
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = -10}
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = 10}
+            }
+        }
+    }
+
+    SBU_sanctions = {
+        cost = 20
+        days_re_enable = 20
+        complete_effect = {
+            custom_effect_tooltip = trade_b5
+            if = {
+                limit = {tag = SFL}
+                add_to_variable = {trade_war = 5}
+                SBU = {
+                    custom_effect_tooltip = trade_b8
+                    add_to_variable = {trade_war = -8}
+                }
+            }
+            if = {
+                limit = {tag = SBU}
+                add_to_variable = {trade_war = -5}
+                SFL = {
+                    custom_effect_tooltip = trade_b8
+                    add_to_variable = {trade_war = 8}
+                }
+            }
+        }
     }
 }

@@ -38,7 +38,7 @@ resources = {
 
 	uranium = {
 		icon_frame = 7
-		cic = 3
+		cic = 0.9
 		convoys = 0.2
 	}
 }

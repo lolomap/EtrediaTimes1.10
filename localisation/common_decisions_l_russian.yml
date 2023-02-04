@@ -15,7 +15,7 @@
   military_gov_trade:0 "Увеличить военные госзаказы"
   update_work_plan:0 "Обновить рабочий план"
   world_revolution:0 "Огонь мировой революции"
-  economic_friend_support:0 "Экономическая помощь для [From.GetNameDef]"
+  economic_friend_support:0 "Экономическая помощь для [From.owner.GetNameDef]"
   economic_fs_light:0 "Легкая экономическая помощь для [From.GetNameDef]"
   economic_fs_medium:0 "Средняя экономическая помощь для [From.GetNameDef]"
   economic_fs_heavy:0 "Масштабная экономическая помощь для [From.GetNameDef]"
@@ -28,10 +28,6 @@
   UCB_subj_integration_desc:0 "Некоторые республики после откола от [UCB.GetNameDef] нуждаются в наведении порядка, подавлении сепаратизма и повторной интеграции их экономики и управления в ОсНБ"
   integrate_subjects:0 "Интегрировать все исторические субъекты [UCB.GetNameDef]"
   IID_CreateKaratenPraeterAdmin:0 "Создать Каратено-Праетерскую Администрацию"
-
-  SBU_east_sphere:0 "Восточный лоялизм"
-  SBU_loiman_question_EMF:0 "Урегулировать лойманский вопрос"
-  SBU_loiman_question_ELR:0 "Лойманский фанатизм"
 
   EIK_oligarchism_rejection:0 "Лояльность элит"
   EIK_oligarchism_rejection_desc:0 "\n§HЛояльность олигархии:§! [?eik_oligarchism|%]\n§HЛояльность армии:§! [?eik_army|%]\n"

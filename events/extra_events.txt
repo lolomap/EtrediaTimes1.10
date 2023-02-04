@@ -1369,7 +1369,7 @@ country_event = { # Кризис закончился
                 days = 90
                 value = 1
             }
-            random_country = {country_event = mechanics.38}
+            var:sender_crysis = {country_event = mechanics.38}
             var:global.sender_crysis = {
                 war_crysis_ban_factions = yes
 
@@ -1494,14 +1494,10 @@ country_event = {
 
     trigger = {
         OR = {
-            NOT = {
-                has_global_flag = war_crysis
+            NOT = {has_global_flag = war_crysis
                 var:global.sender_crysis = {surrender_progress < 0.1}
                 crysis_rewardable = no
             }
-        }
-        var:global.sender_crysis = {
-            tag = PREV
         }
     }
     mean_time_to_happen = {days = 7}

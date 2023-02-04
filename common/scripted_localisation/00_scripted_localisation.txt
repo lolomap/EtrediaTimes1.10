@@ -3,7 +3,77 @@ defined_text = {
     text = {localization_key = "world_influence"}
 }
 
+defined_text = {
+    name = tradestatus_sl
+    text = {
+        trigger = {
+            set_temp_variable = {forw = 100}
+            subtract_from_temp_variable = {forw = SFL.trade_war}
+            if = {
+                limit = {tag = SBU}
+                check_variable = {trade_war > forw}
+            }
+            else = {
+                check_variable = {forw > SBU.trade_war}
+            }
+        }
+        localization_key = tradestatus_g
+    }
+    text = {
+        trigger = {
+            set_temp_variable = {forw = 100}
+            subtract_from_temp_variable = {forw = SFL.trade_war}
+            if = {
+                limit = {tag = SBU}
+                check_variable = {trade_war < forw}
+            }
+            else = {
+                check_variable = {forw < SBU.trade_war}
+            }
+        }
+        localization_key = tradestatus_b
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = tradestatus_equal
+    }
+}
 
+defined_text = {
+    name = wicost_sl
+    text = {
+        trigger = {
+            check_variable = {winfluence_cost > 1}
+        }
+        localization_key = wicost_g
+    }
+    text = {
+        trigger = {
+            check_variable = {winfluence_cost < 1}
+        }
+        localization_key = wicost_b
+    }
+    text = {localization_key = wicost_n}
+}
+
+defined_text = {
+    name = sz_bonus_sl
+    text = {
+        trigger = {
+            FROM = {OWNER = {has_idea = SBU_medium_sburska_zvezda}}
+        }
+        localization_key = sz_bonus_tt2
+    }
+    text = {
+        trigger = {
+            FROM = {OWNER = {has_idea = SBU_high_sburska_zvezda}}
+        }
+        localization_key = sz_bonus_tt3
+    }
+    text = {localization_key = sz_bonus_tt1}
+}
 
 defined_text = {
 	name = GFX_goal_diria_war

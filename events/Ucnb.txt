@@ -13,10 +13,24 @@ country_event = {
 		UCB = { add_ideas = UCB_resist }	
 		ai_chance = { 
 			factor = 70	
-				modifier = {
-					factor = 1000
-					is_historical_focus_on = yes
-				}
+            modifier = {
+                factor = 1000
+                is_historical_focus_on = yes
+            }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = DEMOCRATIC
+                }
+            }
+            modifier = {
+                factor = 0
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = FASCIST
+                }
+            }
 		}
 	}
 
@@ -34,10 +48,23 @@ country_event = {
         }
 	    ai_chance = { 
 			factor = 30 
-				modifier = {
-				factor = 0
-				is_historical_focus_on = yes
+            modifier = {
+                factor = 0
+                OR = {
+                    is_historical_focus_on = yes
+                    has_game_rule = {
+                        rule = UCB_AI_BEHAVIOR
+                        option = DEMOCRATIC
+                    }
+                }
 		    }
+            modifier = {
+                factor = 1000
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = FASCIST
+                }
+            }
 	    }
     }
 }

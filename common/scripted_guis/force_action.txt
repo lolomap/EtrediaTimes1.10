@@ -297,7 +297,7 @@ scripted_gui = {
                     if = {
                         limit = {check_variable = {global.cr_press_clicked > 1}}
                         force_press = yes
-                        random_country = {country_event = {id = mechanics.36 days = 2}}
+                        var:sender_crysis = {country_event = {id = mechanics.36 days = 2}}
                     }
                 }
                 else = {
@@ -343,7 +343,7 @@ scripted_gui = {
                     set_variable = {global.cr_a_status = 3}
                     set_global_flag = cr_a_allow
                     force_press = yes
-                    random_country = {country_event = {id = mechanics.36 days = 2}}
+                    var:sender_crysis = {country_event = {id = mechanics.36 days = 2}}
                 }
                 else = {set_variable = {global.cr_a_status = 1}}
 
@@ -352,7 +352,7 @@ scripted_gui = {
                     set_variable = {global.cr_d_status = 3}
                     set_global_flag = cr_d_allow
                     force_press = yes
-                    random_country = {country_event = {id = mechanics.36 days = 2}}
+                    var:sender_crysis = {country_event = {id = mechanics.36 days = 2}}
                 }
                 else = {set_variable = {global.cr_d_status = 2}}
             }
@@ -533,7 +533,7 @@ scripted_gui = {
 
                     set_variable = {global.type_crysis = 2}
                     
-                    random_country = {country_event = {id = mechanics.37 days = 1}}
+                    var:sender_crysis = {country_event = {id = mechanics.37 days = 1}}
                     encount_majors = yes
                     d_calc_crysis = yes
 
@@ -555,7 +555,7 @@ scripted_gui = {
 
                 set_variable = {global.type_crysis = 1}
 
-                random_country = {country_event = {id = mechanics.37 days = 1}}
+                var:sender_crysis = {country_event = {id = mechanics.37 days = 1}}
                 encount_majors = yes
                 d_calc_crysis = yes
 
@@ -576,7 +576,7 @@ scripted_gui = {
 
                 set_variable = {global.type_crysis = 0}
 
-                random_country = {country_event = {id = mechanics.37 days = 1}}
+                var:sender_crysis = {country_event = {id = mechanics.37 days = 1}}
                 encount_majors = yes
                 d_calc_crysis = yes
 

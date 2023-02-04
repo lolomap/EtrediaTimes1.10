@@ -12,6 +12,7 @@ add_ideas = {
         SFL_politizol
         total_free_press
         free_entry
+        free_trade
 	first_corruption_level
 }
 

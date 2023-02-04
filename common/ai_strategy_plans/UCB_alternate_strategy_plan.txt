@@ -1,0 +1,58 @@
+UCB_democratic_plan = {
+
+	enable = {
+		original_tag = UCB
+		OR = {
+            has_game_rule = {
+                rule = UCB_AI_BEHAVIOR
+                option = DEMOCRATIC
+            }
+            AND = {
+                has_game_rule = {
+                    rule = UCB_AI_BEHAVIOR
+                    option = DEFAULT
+                }
+                is_historical_focus_on = yes
+            }
+        }
+	}
+
+	ai_national_focuses = {
+		UCB_dem1
+        UCB_dem_battle
+        UCB_dem_IID
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+UCB_fascist_plan = {
+
+	enable = {
+		original_tag = UCB
+        has_game_rule = {
+            rule = UCB_AI_BEHAVIOR
+            option = FASCIST
+        }
+	}
+
+	ai_national_focuses = {
+		UCB_fasc1
+        UCB_fasc_IID_investors
+        UCB_OIK_friend
+	}
+
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

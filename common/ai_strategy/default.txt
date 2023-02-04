@@ -134,32 +134,32 @@
 # }
 
 reduce_reactors = {
-	enable = {always = yes}
+	allowed = {always = yes}
 
 	ai_strategy = {
 		type = building_target
 		id = nuclear_reactor
-		value = -5
+		value = -9000
 	}
 }
 
 enable_nuclear_rocket_site = {
-	enable = {always = yes}
+	allowed = {always = yes}
 
 	ai_strategy = {
 		type = building_target
 		id = nuclear_rocket_site
-		value = 5
+		value = 0
 	}
 }
 
 enable_anti_nuclear_building = {
-	enable = {always = yes}
+	allowed = {always = yes}
 
 	ai_strategy = {
 		type = building_target
 		id = anti_nuclear_building
-		value = 5
+		value = 0
 	}
 }
 

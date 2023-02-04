@@ -1,7 +1,7 @@
 IID_default_plan = {
 	enable = {
 		original_tag = IID
-		OR = {
+		AND = {
 			has_game_rule = {
 				rule = IID_AI_BEHAVIOR
 				option = DEFAULT

@@ -373,8 +373,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SFL_sibconcurent
 		}
+
+        bypass = {has_idea = SFL_tradewar_idea}
+
 		completion_reward = {
-		SBU = { add_opinion_modifier { target = ROOT modifier = SFL_tradewar } }
+            SFL = {add_ideas = SFL_tradewar_idea}
+            SBU = {
+                add_opinion_modifier { target = ROOT modifier = SFL_tradewar }
+                add_ideas = SFL_tradewar_idea
+            }
+            SBU = {set_country_flag = tradewar}
+            set_country_flag = tradewar
+            set_variable = {trade_war = 80}
 		}
 		x = 26
 		y = 6
@@ -390,6 +400,7 @@ focus_tree = {
 		completion_reward = {
 		MOF = { add_ideas = { MOF_sflunfluence } }
 		MOF = { country_event = { id = monfua.1 days = 1 } }
+        add_to_variable = {trade_war = -15}
 		}
 		x = 24
 		y = 7
@@ -1174,6 +1185,7 @@ focus_tree = {
 	    }
         completion_reward = {
         IID = { country_event = { id = dux.5 days = 1 } }
+        add_to_variable = {trade_war = -10}
         }
 		x = 24
 		y = 8
@@ -1217,6 +1229,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			MOF = { country_event = { id = monfua.2 days = 1 } }
+            add_to_variable = {trade_war = -20}
 		}
 		x = 24
 		y = 11
@@ -1240,7 +1253,9 @@ focus_tree = {
 			focus = SFL_sila
 		}
 		completion_reward = {
-		SBU = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+		    SBU = { remove_opinion_modifier = { target = ROOT modifier = SFL_tradewar } }
+            clr_country_flag = tradewar
+            SBU = {clr_country_flag = tradewar}
 		}
 		x = 22
 		y = 12

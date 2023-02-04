@@ -23,6 +23,13 @@ opinion_modifiers = {
 		min_trust = -35
 	}
 
+    SBU_annex_RGY_SFL = {
+        value = -25
+    }
+    SBU_east_monfua_SFL = {
+        value = -30
+    }
+
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
 	}

@@ -1,8 +1,7 @@
-d_mtest = {
+d_wic = {
     clear_array = global.wi_countries
 }
-d_mtest2 = {
-    DIR = {delete_dirian_militia = yes}
+d_mtest = {
 }
 
 ####
@@ -204,6 +203,7 @@ encount_minors = {
 }
 
 encount_majors = {
+    var:global.sender_crysis = {add_threat = 8}
     clear_array = global.crysis_senders
     clear_array = global.crysis_tos
     clear_array = global.crysis_majors

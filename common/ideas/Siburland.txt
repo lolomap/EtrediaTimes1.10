@@ -19,6 +19,21 @@ ideas = {
 			}
 	}
 
+    SBU_sz_uran = {
+        picture = siburian_zvezda
+
+        allowed = {
+            always = no
+        }
+        
+        removal_cost = -1
+
+
+        modifier = {
+            consumer_goods_factor = 0.08
+        }
+    }
+
 	SBU_glory_to_independence = {
 
             picture = chi_war_of_resistance
@@ -190,9 +205,19 @@ ideas = {
 			}
 			
 			removal_cost = -1
+
+            on_add = {
+                custom_effect_tooltip = world_influence_cost_5
+                add_to_variable = {winfluence_cost = -0.05}
+            }
+            on_remove = {
+                custom_effect_tooltip = world_influence_cost_5n
+                add_to_variable = {winfluence_cost = 0.05}
+            }
 	
 
 			modifier = {
+                custom_modifier_tooltip = world_influence_cost_5
 				stability_factor = -0.05
 				democratic_drift = 0.01
 				production_speed_buildings_factor = 0.15
@@ -209,9 +234,19 @@ ideas = {
 			}
 			
 			removal_cost = -1
+
+            on_add = {
+                custom_effect_tooltip = world_influence_cost_10
+                add_to_variable = {winfluence_cost = -0.1}
+            }
+            on_remove = {
+                custom_effect_tooltip = world_influence_cost_10n
+                add_to_variable = {winfluence_cost = 0.1}
+            }
 	
 
 			modifier = {
+                custom_modifier_tooltip = world_influence_cost_10
 				stability_factor = -0.1
 				democratic_drift = 0.05
 				production_speed_buildings_factor = 0.2
@@ -231,8 +266,17 @@ ideas = {
 			
 			removal_cost = -1
 	
+            on_add = {
+                custom_effect_tooltip = world_influence_cost_15
+                add_to_variable = {winfluence_cost = -0.15}
+            }
+            on_remove = {
+                custom_effect_tooltip = world_influence_cost_15n
+                add_to_variable = {winfluence_cost = 0.15}
+            }
 
 			modifier = {
+                custom_modifier_tooltip = world_influence_cost_15
 				stability_factor = -0.2
 				democratic_drift = 0.1
 				production_speed_buildings_factor = 0.4
@@ -241,6 +285,22 @@ ideas = {
 				local_building_slots_factor = 0.4
 			}
 	}
+
+    SZ_debuff = {
+        picture = siburian_zvezda
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+                production_factory_efficiency_gain_factor = -0.05
+                industrial_capacity_factory = -0.05
+			}
+    }
 
 	SBU_five_years_plan = {
 
@@ -478,6 +538,53 @@ ideas = {
 			stability_factor = -0.08
             democratic_drift = 0.015
 		}
+    }
+
+    SBU_Modern_Empire = {
+        allowed = {always = no}
+		removal_cost = -1
+        cancel = {
+            all_controlled_state = {not = {is_core_of = SFL} not = {is_core_of TRB}}
+        }
+
+        modifier = {
+            resistance_activity = 0.3
+            resistance_target = 0.5
+            no_compliance_gain = 1
+        }
+    }
+    SBU_Modern_Empire2 = {
+        allowed = {always = no}
+		removal_cost = -1
+        cancel = {
+            all_controlled_state = {not = {is_core_of = SFL} not = {is_core_of TRB}}
+        }
+
+        modifier = {
+            resistance_activity = 0.05
+            resistance_target = 0.5
+            no_compliance_gain = 1
+        }
+    }
+    SBU_Modern_Empire3 = {
+        allowed = {always = no}
+		removal_cost = -1
+        cancel = {
+            all_controlled_state = {not = {is_core_of = SFL} not = {is_core_of TRB}}
+        }
+
+        modifier = {
+            resistance_activity = 0.035
+            resistance_target = 0.5
+        }
+    }
+    SBU_ohranka = {
+        allowed = {always = no}
+		removal_cost = -1
+
+        modifier = {
+            resistance_target = -0.4
+        }
     }
 }
 }

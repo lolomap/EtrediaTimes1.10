@@ -1,0 +1,44 @@
+ideas = {
+    army_chief = {
+        vitutas_bredikis = {
+            picture = generic_army_europe_2
+
+            allowed = {
+                tag = SBU
+            }
+                
+            cost = 175
+			modifier = {
+                army_fuel_consumption_factor = -0.1
+                air_fuel_consumption_factor = -0.05
+                supply_consumption_factor = -0.05
+			}
+
+                
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+
+    navy_chief = {
+        darko_dikrich = {
+            picture = generic_army_europe_2
+
+            allowed = {
+                tag = SBU
+            }
+                
+            cost = 150
+			modifier = {
+                invasion_preparation = -0.1
+                naval_detection = 0.1
+			}
+
+                
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+}

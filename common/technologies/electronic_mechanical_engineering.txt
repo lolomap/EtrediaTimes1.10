@@ -1101,7 +1101,7 @@ technologies = {
 
 		# can build reactors
 		
-		start_year = 2016
+		start_year = 2014
 		research_cost = 3
 		
 		folder = {
@@ -1134,7 +1134,7 @@ technologies = {
 
 	nukes = {
 	
-		start_year = 2018
+		start_year = 2014
 		research_cost = 3
 		
 		folder = {
@@ -1159,7 +1159,7 @@ technologies = {
 	}
 
 	nuclear_rockets = {
-		start_year = 2018
+		start_year = 2015
 		research_cost = 2
 
 		folder = {
@@ -1187,7 +1187,7 @@ technologies = {
 	}
 
 	nuclear_anti = {
-		start_year = 2018
+		start_year = 2015
 		research_cost = 1
 
 		folder = {

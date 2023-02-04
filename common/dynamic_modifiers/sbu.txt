@@ -1,0 +1,6 @@
+sz_bonus = {
+	icon = siburian_zvezda
+	consumer_goods_factor = sz_consumer_bonus
+    production_factory_efficiency_gain_factor = sz_eff_bonus
+    industrial_capacity_factory = sz_cap_bonus
+}
