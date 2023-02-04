@@ -1494,10 +1494,10 @@ country_event = {
 
     trigger = {
         OR = {
-            NOT = {has_global_flag = war_crysis}
-            NOT = {var:global.sender_crysis = {surrender_progress < 0.1}}
-            crysis_rewardable = yes
-            var:global.sender_crysis = {has_capitulated = yes}
+            NOT = {has_global_flag = war_crysis
+                var:global.sender_crysis = {surrender_progress < 0.1}
+                crysis_rewardable = no
+            }
         }
     }
     mean_time_to_happen = {days = 7}

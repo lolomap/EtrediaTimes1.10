@@ -288,16 +288,17 @@ allow_crysis = {
 	name = "RULE_ALLOW_CRYSIS"
 	group = "RULE_GROUP_COVERT_ACTIONS"
 	icon = "GFX_coups"
+    option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_CRYSIS_BLOCKED_DESC"
+	}
 	option = {
 		name = FREE
 		text = "RULE_OPTION_FREE"
 		desc = "RULE_ALLOW_CRYSIS_FREE_DESC"
 	}
-	option = {
-		name = BLOCKED
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_ALLOW_CRYSIS_BLOCKED_DESC"
-	}
+
 }
 allow_nuking = {
 	name = "RULE_ALLOW_NUKING"
