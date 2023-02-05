@@ -3,6 +3,13 @@
  corruption_laws: "Уровень коррупции"
  stability_modifiers: "Уровень легитимности"
 
+ SFL_tradewar_g20: "Положение в торговой войне"
+ SFL_tradewar_g40: "Положение в торговой войне"
+ SFL_tradewar_g70: "Положение в торговой войне"
+ SFL_tradewar_b20: "Положение в торговой войне"
+ SFL_tradewar_b40: "Положение в торговой войне"
+ SFL_tradewar_b70: "Положение в торговой войне"
+
  SBU_SZ_concern:0 "Sburska Zvezda"
  SBU_Kockav_concern: "SDT Koćkav"
  Htatka: "Концерн Htatka"

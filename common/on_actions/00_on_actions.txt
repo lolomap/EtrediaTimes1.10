@@ -1067,6 +1067,82 @@ on_actions = {
         }
     }
 
+    on_daily_SFL = {
+        effect = {
+            if = {
+                limit = {has_country_flag = tradewar}
+
+                SBU = {remove_ideas = {SFL_tradewar_b20 SFL_tradewar_b40 SFL_tradewar_b70 SFL_tradewar_g20 SFL_tradewar_g40 SFL_tradewar_g70}}
+                SFL = {remove_ideas = {SFL_tradewar_b20 SFL_tradewar_b40 SFL_tradewar_b70 SFL_tradewar_g20 SFL_tradewar_g40 SFL_tradewar_g70}}
+                
+                set_temp_variable = {tdif = 100}
+                subtract_from_temp_variable = {tdif = SFL.trade_war}
+                subtract_from_temp_variable = {tdif = SBU.trade_war}
+                if = {
+                    limit = {check_variable = {tdif > 69}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g70
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b70
+                    }
+                }
+                else_if = {
+                    limit = {check_variable = {tdif > 39}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g40
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b40
+                    }
+                }
+                else_if = {
+                    limit = {check_variable = {tdif > 19}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g20
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b20
+                    }
+                }
+                else = {
+
+                    set_temp_variable = {tdif = SBU.trade_war}
+                    subtract_from_temp_variable = {tdif = SFL.trade_war}
+                    add_to_temp_variable = {tdif = 100}
+                    if = {
+                        limit = {check_variable = {tdif > 69}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g70
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b70
+                        }
+                    }
+                    else_if = {
+                        limit = {check_variable = {tdif > 39}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g40
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b40
+                        }
+                    }
+                    else_if = {
+                        limit = {check_variable = {tdif > 19}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g20
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b20
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
 	on_weekly = {
 		effect = {
             #Уступить или возразить в кризисе

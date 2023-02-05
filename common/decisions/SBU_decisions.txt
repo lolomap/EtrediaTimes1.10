@@ -192,6 +192,10 @@ SBU_sburska_zvezda_war = {
                 }
             }
         }
+
+        ai_will_do = {
+			base = 100
+		}
     }
     sz_add_to_country = {
         visible = {
@@ -230,6 +234,10 @@ SBU_sburska_zvezda_war = {
                 70 = {}
             }
         }
+
+        ai_will_do = {
+			base = 100
+		}
     }
     sz_set_medium = {
         visible = {
@@ -270,6 +278,10 @@ SBU_sburska_zvezda_war = {
                 30 = {}
             }
         }
+
+        ai_will_do = {
+			base = 100
+		}
     }
     sz_set_high = {
         visible = {
@@ -310,6 +322,10 @@ SBU_sburska_zvezda_war = {
                 20 = {}
             }
         }
+
+        ai_will_do = {
+			base = 100
+		}
     }
 }
 
@@ -721,6 +737,10 @@ SBU_trade_war = {
             custom_effect_tooltip = trade_g15
             SBU = {add_to_variable = {trade_war = 15}}
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_MOF_trade = {
@@ -733,6 +753,10 @@ SBU_trade_war = {
             custom_effect_tooltip = trade_g20
             SFL = {add_to_variable = {trade_war = -20}}
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_SZ_trade = {
@@ -764,6 +788,10 @@ SBU_trade_war = {
                 }
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_FSC_trade = {
@@ -776,6 +804,10 @@ SBU_trade_war = {
             custom_effect_tooltip = trade_g10
             SFL = {add_to_variable = {trade_war = -10}}
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_UCB_trade = {
@@ -788,6 +820,10 @@ SBU_trade_war = {
             custom_effect_tooltip = trade_g10
             SBU = {add_to_variable = {trade_war = 10}}
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_crowding_out = {
@@ -805,6 +841,10 @@ SBU_trade_war = {
                 SFL = {custom_effect_tooltip = trade_b10}
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_add_export = {
@@ -821,6 +861,10 @@ SBU_trade_war = {
                 add_to_variable = {trade_war = 5}
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_IID_trade = {
@@ -837,6 +881,10 @@ SBU_trade_war = {
                 add_to_variable = {trade_war = 10}
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_RGY_trade = {
@@ -861,6 +909,10 @@ SBU_trade_war = {
                 }
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_sea_trade = {
@@ -879,6 +931,10 @@ SBU_trade_war = {
                 add_to_variable = {trade_war = 10}
             }
         }
+
+        ai_will_do = {
+			factor = 1000
+		}
     }
 
     SBU_sanctions = {
@@ -901,6 +957,45 @@ SBU_trade_war = {
                     custom_effect_tooltip = trade_b8
                     add_to_variable = {trade_war = 8}
                 }
+            }
+        }
+
+        ai_will_do = {
+			factor = 1000
+		}
+    }
+}
+
+protect_self = {
+    SBU_reduce_sz = {
+        visible = {
+            OR = {
+                has_idea = SBU_little_sburska_zvezda
+                has_idea = SBU_medium_sburska_zvezda
+                has_idea = SBU_high_sburska_zvezda
+            }
+        }
+        cost = 200
+        days_re_enable = 30
+
+        complete_effect = {
+            add_popularity = {ideology = democratic popularity = -0.05}
+            if = {
+                limit = {has_idea = SBU_high_sburska_zvezda}
+                swap_ideas = {
+                    add_idea = SBU_medium_sburska_zvezda
+                    remove_idea = SBU_high_sburska_zvezda
+                }
+            }
+            else_if = {
+                limit = {has_idea = SBU_medium_sburska_zvezda}
+                swap_ideas = {
+                    add_idea = SBU_little_sburska_zvezda
+                    remove_idea = SBU_medium_sburska_zvezda
+                }
+            }
+            else = {
+                remove_ideas = SBU_little_sburska_zvezda
             }
         }
     }

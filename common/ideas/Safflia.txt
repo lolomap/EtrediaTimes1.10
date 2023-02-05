@@ -8,7 +8,11 @@ ideas = {
             
             removal_cost = -1
             cancel = {
-                NOT = {has_country_flag = tradewar}
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
             }
 
 
@@ -18,9 +22,190 @@ ideas = {
                 production_speed_infrastructure_factor = -0.15
                 industrial_capacity_factory = -0.05
                 research_speed_factor = -0.05
+                local_resources_factor = -0.2
                 disabled_ideas = 1
             }
 
+        }
+
+        SFL_tradewar_g20  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = 0.05}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = -0.05}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_5n
+                consumer_goods_factor = -0.05
+                production_speed_industrial_complex_factor = 0.08
+                production_speed_infrastructure_factor = 0.08
+                local_resources_factor = 0.1
+            }
+        }
+
+        SFL_tradewar_g40  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = 0.1}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = -0.1}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_10n
+                consumer_goods_factor = -0.1
+                production_speed_industrial_complex_factor = 0.15
+                production_speed_infrastructure_factor = 0.15
+                local_resources_factor = 0.2
+            }
+        }
+
+        SFL_tradewar_g70  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = 0.15}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = -0.15}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_15n
+                consumer_goods_factor = -0.15
+                production_speed_industrial_complex_factor = 0.25
+                production_speed_infrastructure_factor = 0.25
+                local_resources_factor = 0.25
+            }
+        }
+
+        SFL_tradewar_b20  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = -0.05}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = 0.05}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_5
+                consumer_goods_factor = 0.05
+                production_speed_industrial_complex_factor = -0.08
+                production_speed_infrastructure_factor = -0.08
+                local_resources_factor = -0.1
+            }
+        }
+
+        SFL_tradewar_b40  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = -0.1}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = 0.1}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_10
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = -0.15
+                production_speed_infrastructure_factor = -0.15
+                local_resources_factor = -0.2
+            }
+        }
+
+        SFL_tradewar_b70  = {
+            allowed = {
+                always = no
+            }
+            
+            removal_cost = -1
+            cancel = {
+                OR = {
+                    NOT = {has_country_flag = tradewar}
+                    NOT = {country_exists = SFL}
+                    NOT = {country_exists = SBU}
+                }
+            }
+
+            on_add = {
+                add_to_variable = {winfluence_cost = -0.15}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = 0.15}
+            }
+
+            modifier = {
+                custom_modifier_tooltip = world_influence_cost_15
+                consumer_goods_factor = 0.15
+                production_speed_industrial_complex_factor = -0.25
+                production_speed_infrastructure_factor = -0.25
+                local_resources_factor = -0.25
+            }
         }
 
 	SFL_politizol = {
