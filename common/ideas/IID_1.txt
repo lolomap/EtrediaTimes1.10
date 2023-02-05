@@ -165,5 +165,65 @@ ideas = {
 				trade_opinion_factor = 2
 			}
 		}
+
+        IID_resistance = {
+            allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = 0.3
+                resistance_activity = 0.05
+			}
+        }
+
+        IID_resistance2 = {
+            allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				subjects_autonomy_gain = 1.5
+			}
+        }
+
+        IID_praeter_culture = {
+            allowed = {always = no}
+			removal_cost = -1
+
+            on_add = {
+                add_to_variable = {winfluence_cost = 0.1}
+            }
+            on_remove = {
+                add_to_variable = {winfluence_cost = -0.1}
+            }
+
+			modifier = {
+				stability_factor = 0.05
+                custom_modifier_tooltip = world_influence_cost_10n
+			}
+        }
+        IID_barkhan_culture = {
+            allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+			}
+        }
+        IID_sektoya_culture = {
+            allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+			}
+        }
+        IID_all_culture = {
+            allowed = {always = no}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+			}
+        }
 	}
 }

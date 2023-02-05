@@ -20,6 +20,11 @@
   trade_g20: "Очков торговли: §G+20§!"
   trade_gSZ: "Очков торговли: §G+2§! за каждый уровень влияния Sburska Zvezda"
 
+  pra_nation_tooltip: "Праетерская культура"
+  all_nation_tooltip: "Многонациональная культура"
+  bkh_nation_tooltip: "Баркханская культура"
+  skt_nation_tooltip: "Сектойская культура"
+
   ALLOW_ACCEPT_EXISTANCE_tooltip: "Мы должны признать независимость этого государства"
   ALLOW_BANNED_CRYSIS_tooltip: "Нельзя во время войны из-за кризиса"
 
@@ -59,6 +64,7 @@
   ORBFarmPeace:0 "Будет полученно 50 очков миротворчества\n"
   IID_controlKUL:0 "ИИД контролирует все территории Кулиштии\n"
   IID_CreateKaratenPraeterAdminLoc:0 "Будет создана Каратено-Праетерская Администрация\n"
+  IID_culture_question_tooltip: "Откроются решения по §Gопределению культуры§! регионов"
   karaten_prater_admin_available_loc:0 "Появится возможность создать Каратено-Праетерскую Администрацию\n"
   iid_integrating_trp:0 "Начать интеграцию Террапильи\n"
   klyachek_choose:0 "Президентом страны станет Чарвик Клячек\n"

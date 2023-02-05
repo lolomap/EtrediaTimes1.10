@@ -62,6 +62,497 @@ foreign_influence = {
 }
 
 GKZ_moment = {
+    IID_accept_praeter = {
+        visible = {has_country_flag = IID_culture}
+
+        cost = 100
+        days_remove = -1
+
+        modifier = {
+            max_command_power = -10
+            political_power_factor = -0.05
+        }
+
+        complete_effect = {
+			add_stability = 0.2
+            set_country_flag = praeter_nation
+		}
+
+        ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
+    }
+    IID_accept_all = {
+        visible = {has_country_flag = IID_culture}
+
+        cost = 25
+        days_remove = -1
+
+        modifier = {
+            max_command_power = -25
+            political_power_factor = -0.05
+        }
+
+        complete_effect = {
+			add_stability = 0.1
+            set_country_flag = all_nation
+		}
+        ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1
+			}
+		}
+    }
+    IID_accept_bkh = {
+        visible = {has_country_flag = IID_culture}
+
+        cost = 250
+        days_remove = -1
+
+        modifier = {
+            max_command_power = -30
+            political_power_factor = -0.6
+        }
+
+        complete_effect = {
+			add_stability = -0.05
+            set_country_flag = barkhan_nation
+		}
+        ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+    }
+    IID_accept_skt = {
+        visible = {has_country_flag = IID_culture}
+
+        cost = 250
+        days_remove = -1
+
+        modifier = {
+            max_command_power = -30
+            political_power_factor = -0.6
+        }
+
+        complete_effect = {
+			add_stability = -0.05
+            set_country_flag = sektoya_nation
+		}
+        ai_will_do = {
+			base = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+    }
+
+    IID_press_cultures = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        modifier = {
+            resistance_target = -0.35
+        }
+
+        complete_effect = {
+            add_to_variable = {praeter = 1}
+        }
+    }
+
+    IID_press_KPA = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            country_exists = KPA
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        modifier = {
+            subjects_autonomy_gain = -1.5
+        }
+
+        complete_effect = {
+            add_to_variable = {sektoya = 1}
+            add_to_variable = {praeter = 1}
+            add_to_variable = {barkhan = 1}
+        }
+    }
+
+    IID_press_skt_litr = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = {is_core_of = SKT}
+                add_resistance = -90
+            }
+            add_to_variable = {praeter = 1}
+            add_to_variable = {barkhan = 1}
+            add_to_variable = {kpaa = 1}
+        }
+    }
+    IID_praeter_uni = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        modifier = {
+            resistance_target = -0.35
+            subjects_autonomy_gain = -1.5
+        }
+
+        complete_effect = {
+            add_to_variable = {praeter = 1}
+        }
+    }
+    IID_press_bkh = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            random_owned_controlled_state = {
+                limit = {is_core_of = BKH}
+                add_resistance = -90
+            }
+            add_to_variable = {praeter = 1}
+            add_to_variable = {sektoya = 1}
+            add_to_variable = {kpaa = 1}
+        }
+    }
+    IID_new_citizen = {
+    visible = {has_country_flag = IID_culture}
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {praeter = 1}
+            add_to_variable = {sektoya = 1}
+            add_to_variable = {barkhan = 1}
+            add_to_variable = {kpaa = 1}
+        }
+    }
+    IID_press_religion = {
+        visible = {
+            NOT = {has_country_flag = all_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {praeter = 1}
+        }
+    }
+    IID_holidays = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {sektoya = 1}
+            add_to_variable = {barkhan = 1}
+            add_to_variable = {kpaa = 1}
+        }
+    }
+    IID_skt_up = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {sektoya = 1}
+            random_owned_controlled_state = {
+                limit = {is_core_of = SKT}
+                add_compliance = 50
+            }
+        }
+    }
+    IID_bkh_up = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {barkhan = 1}
+            random_owned_controlled_state = {
+                limit = {is_core_of = BKH}
+                add_compliance = 50
+            }
+        }
+    }
+    IID_trp_up = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+        modifier = {
+            subjects_autonomy_gain = -0.5
+
+        }
+
+        complete_effect = {
+            add_to_variable = {kpaa = 1}
+            random_owned_controlled_state = {
+                limit = {is_core_of = TRP is_controlled_by = IID}
+                add_compliance = 30
+            }
+            random_owned_controlled_state = {
+                limit = {is_core_of = KUL is_controlled_by = IID}
+                add_compliance = 30
+            }
+            random_owned_controlled_state = {
+                limit = {is_core_of = ANR is_controlled_by = IID}
+                add_compliance = 30
+            }
+        }
+    }
+    IID_skt_law = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {seltoya = 1}
+        }
+    }
+    IID_bkh_law = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {barkhan = 1}
+        }
+    }
+    IID_pra_law = {
+        visible = {
+            NOT = {has_country_flag = sektoya_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {praeter = 1}
+        }
+    }
+    IID_trp_law = {
+        visible = {
+            NOT = {has_country_flag = praeter_nation}
+            NOT = {has_country_flag = barkhan_nation}
+            NOT = {has_country_flag = sektoya_nation}
+            has_country_flag = IID_culture
+        }
+
+        days_remove = 30
+        cost = 15
+
+        complete_effect = {
+            add_to_variable = {kpaa = 1}
+        }
+    }
+
+    IID_culture_final = {
+        visible = {has_country_flag = IID_culture}
+
+        available = {
+            if = {
+                limit = {has_country_flag = all_nation}
+                custom_trigger_tooltip = {
+                    tooltip = all_nation_tooltip
+                    check_variable = {barkhan > 4}
+                    check_variable = {sektoya > 4}
+                    check_variable = {kpaa > 3}
+                }
+            }
+            else_if = {
+                limit = {has_country_flag = praeter_nation}
+                custom_trigger_tooltip = {
+                    tooltip = pra_nation_tooltip
+                    check_variable = {praeter > 6}
+                }
+            }
+            else_if = {
+                limit = {has_country_flag = barkhan_nation}
+                custom_trigger_tooltip = {
+                    tooltip = bkh_nation_tooltip
+                    check_variable = {barkhan > 6}
+                }
+            }
+            else_if = {
+                limit = {has_country_flag = sektoya_nation}
+                custom_trigger_tooltip = {
+                    tooltip = skt_nation_tooltip
+                    check_variable = {sektoya > 6}
+                }
+            }
+            else = {
+                OR = {
+                    custom_trigger_tooltip = {
+                        tooltip = pra_nation_tooltip
+                        check_variable = {praeter > 10}
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = all_nation_tooltip
+                        check_variable = {barkhan > 5}
+                        check_variable = {sektoya > 5}
+                        check_variable = {kpaa > 4}
+                    }
+                }
+            }
+        }
+
+        priority = 100
+
+        complete_effect = {
+            clr_country_flag = IID_culture
+            every_owned_state = {
+                limit = {OR = {is_core_of = BKH is_core_of = SKT is_core_of = TRP}}
+                force_disable_resistance = IID
+                cancel_resistance = yes
+            }
+            remove_ideas = {IID_resistance IID_resistance2}
+            if = {
+                limit = {has_country_flag = all_nation}
+                add_ideas = IID_all_culture
+            }
+            else_if = {
+                limit = {has_country_flag = praeter_nation}
+                add_ideas = IID_praeter_culture
+            }
+            else_if = {
+                limit = {has_country_flag = barkhan_nation}
+                hidden_effect = {
+                    every_owned_state = {
+                        add_core_of = BKH
+                    }
+                }
+                BKH = {
+                    if = {
+                        limit = {KPA = {is_subject_of = IID}}
+                        puppet = KPA
+                    }
+                    if = {
+                        limit = {GKD = {is_subject_of = IID}}
+                        puppet = GKD
+                    }
+                    annex_country = {target = IID transfer_troops = yes}
+                    change_tag_from = IID
+                    add_ideas = IID_barkhan_culture
+                }
+                
+            }
+            else_if = {
+                limit = {has_country_flag = sektoya_nation}
+                hidden_effect = {
+                    every_owned_state = {
+                        add_core_of = SKT
+                    }
+                }
+                SKT = {
+                    if = {
+                        limit = {KPA = {is_subject_of = IID}}
+                        puppet = KPA
+                    }
+                    if = {
+                        limit = {GKD = {is_subject_of = IID}}
+                        puppet = GKD
+                    }
+                    annex_country = {target = IID transfer_troops = yes}
+                    change_tag_from = IID
+                    add_ideas = IID_sektoya_culture
+                }
+                
+            }
+            else_if = {
+                limit = {
+                    AND = {
+                        check_variable = {barkhan > 5}
+                        check_variable = {sektoya > 5}
+                        check_variable = {kpaa > 4}
+                    }
+                }
+                add_ideas = IID_all_culture
+            }
+            else = {
+                add_ideas = IID_praeter_culture
+            }
+        }
+    }
+
 	IID_CreateKaratenPraeterAdmin = {
 		visible = {has_country_flag = karaten_prater_admin_available}
 		available = {
@@ -80,9 +571,14 @@ GKZ_moment = {
 			controls_state = 64
 			controls_state = 65
 		}
+        fire_only_once = yes
 
 		complete_effect = {
 			custom_effect_tooltip = IID_CreateKaratenPraeterAdminLoc
+            swap_ideas = {
+                add_idea = IID_resistance2
+                remove_idea = IID_resistance
+            }
 			hidden_effect = {
 				add_state_claim = 53
 				add_state_claim = 54

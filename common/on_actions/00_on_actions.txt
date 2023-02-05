@@ -1240,7 +1240,6 @@ on_actions = {
 		effect = {
 			clr_country_flag = nuke_request_accepted
             ROOT = {clr_country_flag = nuke_request_accepted}
-            ROOT = {add_threat = -0.08}
 			if = {
 				limit = {
 					FROM = {
@@ -2266,6 +2265,14 @@ on_actions = {
 		effect = {
 			#ROOT = {clear_array = embargoList}
             ROOT = {encount_minors = yes}
+
+            if = {
+                limit = {
+                    FROM = {tag = TRP}
+                    ROOT = {tag = IID}
+                }
+                ROOT = {add_ideas = IID_resistance}
+            }
 
             if = {
                 limit = {

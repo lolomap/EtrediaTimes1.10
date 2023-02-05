@@ -340,7 +340,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 16
 		y = 9
-		cost = 10
+		cost = 20
 		prerequisite = {
 			focus = IID_sponsor_instability
 			focus = IID_Require_the_eastern_trp
@@ -396,6 +396,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = karaten_prater_admin_available_loc
 			set_country_flag = karaten_prater_admin_available
+            hidden_effect = {
+                every_owned_state = {
+                    limit = {OR = {is_core_of = BKH is_core_of = SKT}}
+                    force_enable_resistance = IID
+                    start_resistance = yes
+                }
+            }
 		}
 	}
 	
@@ -410,6 +417,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            custom_effect_tooltip = IID_culture_question_tooltip
+            set_country_flag = IID_culture
 		}
 	}
 	
