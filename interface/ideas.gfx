@@ -1,6 +1,13 @@
 spriteTypes = {	
 
-
+    spriteType = {
+		name = "GFX_idea_economic_faction"
+		texturefile = "gfx/interface/ideas/idea_economic_faction.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_trade_influence"
+		texturefile = "gfx/interface/ideas/idea_trade_influence.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
