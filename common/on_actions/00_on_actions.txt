@@ -29,6 +29,11 @@ on_actions = {
             #SZ INFLUENCE
             ELR = {add_to_variable = {winfluence_cost = -0.15}}
             RGY = {add_to_variable = {winfluence_cost = -0.05}}
+            SBU = {
+                set_variable = {sz_high_count = 1}
+                set_variable = {sz_medium_count = 1}
+                set_variable = {sz_little_count = 2}
+            }
 
             #Не признаны: Террапилья ИИДшником, Лебдел, Солопут, Кюрю, Гванчинь и Хорга,Дирийцы
             TRP = {

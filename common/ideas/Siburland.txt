@@ -209,10 +209,13 @@ ideas = {
             on_add = {
                 custom_effect_tooltip = world_influence_cost_5
                 add_to_variable = {winfluence_cost = -0.05}
+                SBU = {add_to_variable = {sz_little_count = 1}}
             }
             on_remove = {
                 custom_effect_tooltip = world_influence_cost_5n
                 add_to_variable = {winfluence_cost = 0.05}
+                
+                SBU = {add_to_variable = {sz_little_count = -1}}
             }
 	
 
@@ -238,10 +241,14 @@ ideas = {
             on_add = {
                 custom_effect_tooltip = world_influence_cost_10
                 add_to_variable = {winfluence_cost = -0.1}
+                SBU = {add_to_variable = {sz_little_count = 1}}
+                SBU = {add_to_variable = {sz_medium_count = 1}}
             }
             on_remove = {
                 custom_effect_tooltip = world_influence_cost_10n
                 add_to_variable = {winfluence_cost = 0.1}
+                SBU = {add_to_variable = {sz_little_count = -1}}
+                SBU = {add_to_variable = {sz_medium_count = -1}}
             }
 	
 
@@ -269,10 +276,17 @@ ideas = {
             on_add = {
                 custom_effect_tooltip = world_influence_cost_15
                 add_to_variable = {winfluence_cost = -0.15}
+                SBU = {add_to_variable = {sz_little_count = 1}}
+                SBU = {add_to_variable = {sz_medium_count = 1}}
+                SBU = {add_to_variable = {sz_high_count = 1}}
             }
             on_remove = {
                 custom_effect_tooltip = world_influence_cost_15n
                 add_to_variable = {winfluence_cost = 0.15}
+                
+                SBU = {add_to_variable = {sz_little_count = -1}}
+                SBU = {add_to_variable = {sz_medium_count = -1}}
+                SBU = {add_to_variable = {sz_high_count = -1}}
             }
 
 			modifier = {
@@ -584,6 +598,29 @@ ideas = {
 
         modifier = {
             resistance_target = -0.4
+        }
+    }
+
+    SBU_golden_trillion_idea = {
+        allowed = {always = no}
+		removal_cost = -1
+
+        on_add = {
+            add_to_variable = {winfluence_cost = 0.5}
+        }
+
+        on_remove = {
+            add_to_variable = {winfluence_cost = -0.5}
+        }
+
+        modifier = {
+            political_power_gain = -1
+            boost_ideology_mission_factor = 0.5
+            boost_resistance_factor = 0.25
+            propaganda_mission_factor = 0.25
+            operation_coup_government_cost = -0.25
+            operation_coup_government_outcome = 0.5
+            custom_modifier_tooltip = world_influence_cost_50n
         }
     }
 }
