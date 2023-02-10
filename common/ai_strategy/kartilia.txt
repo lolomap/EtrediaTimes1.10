@@ -1,6 +1,8 @@
 kar_protect_democratic_diria = {
 	enable = {
 		original_tag = KAR
+		NOT = { KAR = { has_government = communism } }
+		NOT = { surrender_progress > 0.3 }
 	}
 	abort = {
 		surrender_progress > 0.8
@@ -10,7 +12,7 @@ kar_protect_democratic_diria = {
 	ai_strategy = {
 		type = protect
 		id = "DEM"
-		value = 200
+		value = 100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
@@ -38,26 +40,9 @@ KAR_template_design_1 = {
 	}
 	ai_strategy = {
 		type = template_prio
-		id = medium_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = template_prio
 		id = mechanized
 		value = 150
 	}
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = -100
-	}
-
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
@@ -74,24 +59,13 @@ KAR_template_design_2 = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = medium_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = heavy_armor
-		value = 20
-	}
-	ai_strategy = {
-		type = role_ratio
 		id = mechanized
 		value = 150
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = -200
+		value = 50
 	}
 
 	ai_strategy = {

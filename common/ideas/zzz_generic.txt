@@ -1378,14 +1378,13 @@ ideas = {
 
 	aircraft_manufacturer = { 
 	
-		designer = yes
-	
+		designer = yes	
+		
 		generic_light_aircraft_manufacturer = {
 			
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
 				}
@@ -1393,29 +1392,24 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = ROM } NOT = { tag = YUG }
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR}
 						has_dlc = "La Resistance"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
 						has_dlc = "Battle for the Bosporus"
 					}
 				}
@@ -1436,7 +1430,6 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM } }
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
 				}
@@ -1444,29 +1437,24 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = YUG }
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
 						has_dlc = "La Resistance"
 					}
 				}
 				NOT = {
 					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
 						has_dlc = "Battle for the Bosporus"
 					}
 				}
@@ -1588,7 +1576,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = SBU } }
+				NOT = { OR = { tag = SBU tag = YAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1633,7 +1621,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = { OR = { tag = YAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}

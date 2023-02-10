@@ -7,11 +7,11 @@ DIR_war = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = "EIK"
-		value = 1000
+		value = 100
 	}
 }
 
-DIR_war = {
+DIR_war_dem = {
 	enable = {
 		original_tag = DEM
 		EIK = { has_war_with = KAS }
@@ -20,6 +20,6 @@ DIR_war = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = "EIK"
-		value = 1000
+		value = 100
 	}
 }

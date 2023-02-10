@@ -20,6 +20,26 @@ ideas = {
                 factor = 1
             }
         }
+		CREDORA = {
+            picture = generic_tank_manufacturer_1
+
+            allowed = {
+                tag = YAN
+				YAN = { has_completed_focus = YAN_tanks }
+            }
+                
+            cost = 150
+            equipment_bonus = {
+                armor = {
+                    build_cost_ic = -0.15
+                    reliability = 0.05
+                }
+            }
+                
+            ai_will_do = {
+                factor = 1
+            }
+        }
     }
 
     materiel_manufacturer = {
@@ -80,5 +100,47 @@ ideas = {
 
 			traits = { industrial_concern }
         }
+		Omnish_Inovation_Group = {
+
+			allowed = {
+				tag = YAN
+				YAN = { has_completed_focus = YAN_electronika }
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			modifier = {
+				research_speed_factor = 0.08
+			}
+        }
+	}
+	
+	aircraft_manufacturer = {
+	
+		YAN_CVT_TOIKA = {
+			picture = generic_air_manufacturer_1
+			allowed = {
+				original_tag = YAN
+				YAN = { has_completed_focus = YAN_planes_production2 }
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			equipment_bonus = {
+                air_equipment = {
+                    build_cost_ic = -0.15
+                    reliability = 0.1
+                }
+            }
+			
+			cost = 150
+			removal_cost = 10
+		}
 	}
 }

@@ -85,14 +85,20 @@ sheregia_war1 = {
 eik_not_ally = {
 	enable = {
 		tag = PIN
+		EIK = { has_completed_focus = EIK_ultimatum_to_sheregia }
 	}
 	abort = {
-    always = no
+		always = no
 	}
 	
 	ai_strategy = {
 		type = alliance
 		id = "EIK"			
 		value = -200
-	}		
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UCB"			
+		value = 500
+	}
 }

@@ -22,6 +22,10 @@
   SFL_var_tooltip: "[?SFL.trade_reverse]"
   SBU_var_tooltip: "[?SBU.trade_war]"
   sz_more_then_5m: "Как минимум §Y5§! стран со §Yсредним§! влиянием SZ и выше"
+  
+  YAN_planes_production_tooltip:0 "Станет доступен концерн «CVT_Toika»"
+  YAN_tank_concern:0 "Станет доступен концерн «CREDORA»"
+  YAN_electronika_concern:0 "Станет доступен концерн «Omnish Inovation Group»"
 
   pra_nation_tooltip: "Праетерская культура"
   all_nation_tooltip: "Многонациональная культура"

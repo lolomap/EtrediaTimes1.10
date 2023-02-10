@@ -270,10 +270,10 @@ focus_tree = {
 			focus = YAN_armiya
 		}
 		completion_reward = {
-		swap_ideas = {
-        remove_idea = disarmed_nation
-        add_idea = volunteer_only
-        }
+			swap_ideas = {
+				remove_idea = disarmed_nation
+				add_idea = volunteer_only
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -296,6 +296,10 @@ focus_tree = {
 		y = 4
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 2
+				YAN = { has_completed_focus = YAN_prepare_for_war }
+			}
 	    }
 	}
 	focus = {
@@ -412,6 +416,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_pehotka
 		}
+		completion_reward = {
+			custom_effect_tooltip = yan_tank_concern
+		}
 		x = 15
 		y = 9
 	}
@@ -421,6 +428,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = YAN_pehotka
+		}
+		completion_reward = {
+			custom_effect_tooltip = yan_electronika_concern
 		}
 		x = 17
 		y = 9
@@ -479,16 +489,16 @@ focus_tree = {
 			focus = YAN_Onodar_reform
 		}
 		completion_reward = {
-		add_resource = {
-        type = steel
-        amount = 14
-        state = 290
-        }
+			add_resource = {
+				type = steel
+				amount = 28
+				state = 290
+			}
 		}
 		x = 23
 		y = 4
 		ai_will_do = {
-			factor = 2
+			factor = 3
 	    }
 
 	}
@@ -583,16 +593,16 @@ focus_tree = {
 			focus = YAN_infrastructure1
 		}
 		completion_reward = {
-		add_resource = {
-        type = steel
-        amount = 4
-        state = 291
-        }
-		add_resource = {
-        type = steel
-        amount = 12
-        state = 289
-        }
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 291
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 289
+			}
 		}
 		x = 19
 		y = 6
@@ -1095,7 +1105,7 @@ focus_tree = {
 	focus = {
 		id = YAN_borba
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = YAN_Empire_ambitions
 		}
@@ -1111,7 +1121,7 @@ focus_tree = {
 	focus = {
 		id = YAN_GOV_press
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = YAN_borba
 		}
@@ -1129,7 +1139,7 @@ focus_tree = {
 	focus = {
 		id = YAN_anti_democrat
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = YAN_borba
 		}
@@ -1157,7 +1167,7 @@ focus_tree = {
 	focus = {
 		id = YAN_fascism_100
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = YAN_parlament_reform
 		}
@@ -1186,7 +1196,7 @@ focus_tree = {
 		DID = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
 		DON = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
 		}
-		x = 41
+		x = 39
 		y = 4
 
 	}
@@ -1209,7 +1219,7 @@ focus_tree = {
 		completion_reward = {
 		YAN = { add_timed_idea { idea = YAN_prepare_for_war days = 230 } }
 		}
-		x = 41
+		x = 39
 		y = 5
 
 	}
@@ -1229,7 +1239,7 @@ focus_tree = {
 			add_state_claim = 362
 			hidden_effect = {news_event = {id = newss.18 days = 1}}
 		}
-		x = 39
+		x = 37
 		y = 6
 
 	}
@@ -1251,7 +1261,7 @@ focus_tree = {
 		add_state_claim = 378
 		add_state_claim = 379
 		}
-		x = 43
+		x = 41
 		y = 6
 
 	}
@@ -1280,7 +1290,7 @@ focus_tree = {
 		add_state_claim = 373
 		add_state_claim = 374
 		}
-		x = 41
+		x = 39
 		y = 7
 
 	}
@@ -1300,7 +1310,7 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = { YAN_islands }
 		}
-		x = 41
+		x = 39
 		y = 8
 
 	}
@@ -1312,9 +1322,28 @@ focus_tree = {
 			focus = YAN_gegemonia
 		}
 		completion_reward = {
-		YAN = { country_event = { id = yan.17 days = 1 } }
+			YAN = { country_event = { id = yan.17 days = 1 } }
 		}
-		x = 41
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0.5
+				YAN = { has_completed_focus = YAN_nalogi }
+			}
+			modifier = {
+				factor = 0.5
+				YAN = { has_completed_focus = YAN_arms1 }
+			}
+			modifier = {
+				factor = 0.5
+				YAN = { has_completed_focus = YAN_diria_bunker }
+			}
+			modifier = {
+				factor = 0.5
+				YAN = { has_completed_focus = YAN_invest_to_west }
+			}
+		}
+		x = 39
 		y = 9
 
 	}
@@ -1333,14 +1362,14 @@ focus_tree = {
 			factor = 3
 			modifier = {
 				factor = -3
-				date < 2018.1.1
+				date < 2019.1.1
 			}
 			modifier = {
 				factor = -3
 				SBU = { NOT = { has_completed_focus = SBU_aldeko_operation } }
 			}
 		}
-		x = 40
+		x = 38
 		y = 10
 	}
 	focus = {
@@ -1371,7 +1400,7 @@ focus_tree = {
 				generator = { 199 200 }
 			}
 		}
-		x = 40
+		x = 39
 		y = 11
 
 	}
@@ -1403,9 +1432,8 @@ focus_tree = {
 				generator = { 529 }
 			}
 		}
-		x = 40
+		x = 39
 		y = 12
-
 	}
 	focus = {
 		id = YAN_LIP_war
@@ -1435,9 +1463,8 @@ focus_tree = {
 				generator = { 508 358 359 360 }
 			}
 		}
-		x = 38
+		x = 37
 		y = 11
-
 	}
 	focus = {
 		id = YAN_CHO_war
@@ -1467,9 +1494,8 @@ focus_tree = {
 				generator = { 366 368 }
 			}
 		}
-		x = 38
+		x = 37
 		y = 12
-
 	}
 	focus = {
 		id = YAN_IRI_factory
@@ -1480,7 +1506,6 @@ focus_tree = {
 		}
 		x = 42
 		y = 10
-
 	}
 	focus = {
 		id = YAN_annex_ZAM
@@ -1492,9 +1517,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YAN_save_ZAM
 		}
-		x = 42
+		completion_reward = {
+			add_political_power = -100
+			annex_country = {
+				target = ZAM
+				transfer_troops = yes
+			}
+			YAN = {
+				add_state_core = 273
+				add_state_core = 274
+			}
+		}
+		x = 41
 		y = 11
-
 	}
 	
 	focus = {
@@ -1507,9 +1542,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YAN_annex_ZAM
 		}
-		x = 44
+		x = 43
 		y = 11
-
 	}
 	
 	focus = {
@@ -1523,9 +1557,20 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YAN_save_IRI
 		}
-		x = 42
+		completion_reward = {
+			add_political_power = -100
+			annex_country = {
+				target = IRI
+				transfer_troops = yes
+			}
+			YAN = {
+				add_state_core = 363
+				add_state_core = 364
+				add_state_core = 365
+			}
+		}
+		x = 41
 		y = 12
-
 	}
 	
 	focus = {
@@ -1539,7 +1584,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = YAN_annex_IRI
 		}
-		x = 44
+		x = 43
 		y = 12
 
 	}
@@ -1570,7 +1615,7 @@ focus_tree = {
 			is_historical_focus_on = yes
 			}
 		}
-		x = 47
+		x = 43
 		y = 4
 
 	}
@@ -1595,7 +1640,7 @@ focus_tree = {
 		completion_reward = {
 		PIN = { country_event = { id = pin.5 days = 1 } }
 		}
-		x = 47
+		x = 43
 		y = 5
 
 	}
@@ -1616,7 +1661,7 @@ focus_tree = {
 		YAN = { country_event = { id = yan.19 days = 1 } }
 		set_global_flag = lip_yan_infuence
 		}
-		x = 47
+		x = 43
 		y = 6
 
 	}
@@ -1625,13 +1670,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = YAN_LIP_fascism
+			focus = YAN_pinka
 		}
 		completion_reward = {
 		YAN = { country_event = { id = yan.20 days = 1 } }
 		}
-		x = 47
-		y = 7
+		x = 45
+		y = 6
 
 	}
 	focus = {
@@ -1644,8 +1689,8 @@ focus_tree = {
 		completion_reward = {
 		SBU = { country_event = { id = sbu.30 days = 1 } }
 		}
-		x = 47
-		y = 8
+		x = 45
+		y = 7
 
 	}
 	focus = {
@@ -1653,10 +1698,11 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = YAN_SBU_bunt
+			focus = YAN_SBU_separatism
+			focus = YAN_LIP_fascism
 		}
-		x = 47
-		y = 9
+		x = 43
+		y = 7
 
 	}
 	focus = {
@@ -1664,16 +1710,17 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
+			focus = YAN_SBU_bunt
 			focus = YAN_SFL_bunt
 		}
-		x = 47
-		y = 10
+		x = 42
+		y = 8
 
 	}
 	focus = {
 		id = YAN_diria_bunker
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = YAN_militarize
 		}
@@ -1768,7 +1815,7 @@ focus_tree = {
 	focus = {
 		id = YAN_seaside_bunker
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 6
 		prerequisite = {
 			focus = YAN_diria_bunker
 		}
@@ -1831,7 +1878,7 @@ focus_tree = {
 	focus = {
 		id = YAN_protect_sky
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 6
 		prerequisite = {
 			focus = YAN_seaside_bunker
 		}
@@ -1929,7 +1976,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 36
 				state = 356
 			}
 		}
@@ -1950,7 +1997,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = aluminium
-				amount = 15
+				amount = 16
 				state = 351
 			}
 		}
@@ -1965,6 +2012,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_aluminium
 		}
+		completion_reward = {
+			custom_effect_tooltip = YAN_planes_production_tooltip
+		}
 		x = 20
 		y = 8
 
@@ -1975,9 +2025,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = YAN_SBU_bunt
+			focus = YAN_SFL_bunt
 		}
-		x = 49
-		y = 9
+		x = 44
+		y = 8
 
 	}
 	focus = {
@@ -1985,10 +2036,11 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = YAN_Kert
+			focus = YAN_SBU_bunt
+			focus = YAN_SFL_bunt
 		}
-		x = 49
-		y = 10
+		x = 46
+		y = 8
 
 	}
 }

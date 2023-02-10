@@ -127,6 +127,7 @@ UCB_southrachia = {
 ucb_protect_democratic_sheregia = {
 	enable = {
 		original_tag = UCB
+		UCB = { has_government = democratic }
 	}
 	abort = {
 		SHE = { has_government = fascism }
@@ -140,7 +141,7 @@ ucb_protect_democratic_sheregia = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "SHE"
-		value = 200
+		value = 100
 	}
 	ai_strategy = {
 		type = support
@@ -151,6 +152,49 @@ ucb_protect_democratic_sheregia = {
 		type = alliance
 		id = "SHE"
 		value = 100
+	}
+}
+
+ucb_protect_democratic_diria = {
+	enable = {
+		original_tag = UCB
+		NOT = { UCB = { has_government = fascism } }
+		NOT = { surrender_progress > 0.3 }
+		date > 2017.1.1
+	}
+	abort = {
+		UCB = { has_government = communism }
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "DEM"
+		value = 50
+	}
+	ai_strategy = {
+		type = support
+		id = "DEM"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DIR"
+		value = -500
+	}
+}
+
+ucb_dem_alliance = {
+	enable = {
+		original_tag = UCB
+		EIK = { has_completed_focus = EIK_war_with_kaspa }
+	}
+	abort = {
+		UCB = { has_government = communism }
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DEM"
+		value = 500
 	}
 }
 
