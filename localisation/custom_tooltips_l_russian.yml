@@ -19,6 +19,8 @@
   trade_g15: "Очков торговли: §G+15§!"
   trade_g20: "Очков торговли: §G+20§!"
   trade_gSZ: "Очков торговли: §G+2§! за каждый уровень влияния Sburska Zvezda"
+  SFL_var_tooltip: "[?SFL.trade_reverse]"
+  SBU_var_tooltip: "[?SBU.trade_war]"
   sz_more_then_5m: "Как минимум §Y5§! стран со §Yсредним§! влиянием SZ и выше"
 
   pra_nation_tooltip: "Праетерская культура"
@@ -44,6 +46,7 @@
   world_influence_cost_10n:0 "Штраф к мировому влиянию : §G-10%§!\n"
   world_influence_cost_15n:0 "Штраф к мировому влиянию : §G-15%§!\n"
   world_influence_cost_50n:0 "Штраф к мировому влиянию : §G-50%§!\n"
+  world_influence_cost_clamp:0 "§RДругие модификаторы влияния не работают§!"
 
   DEM_train_modern_army_tooltip:0 "§CНам станет доступна подготовка новых войск при поддержке Картилии§"
   kar_political_support_tooltip:0 "§Мы поможем Дирии сохранить внутренную стабильность государства.§"

@@ -843,7 +843,7 @@ SBU_trade_war = {
         }
 
         ai_will_do = {
-			factor = 1000
+			factor = 0
 		}
     }
 
@@ -961,7 +961,7 @@ SBU_trade_war = {
         }
 
         ai_will_do = {
-			factor = 1000
+			factor = 0
 		}
     }
 }

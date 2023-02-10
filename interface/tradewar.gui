@@ -10,6 +10,8 @@ guiTypes = {
             name = "SFLFlag"
             quadTextureSprite = "GFX_flag_small2"
             position = {x = 15 y = 5}
+            
+            pdx_tooltip = SFL_var_tooltip
         }
 
         iconType = {
@@ -31,12 +33,15 @@ guiTypes = {
             spriteType = "GFX_tradewarSBU_pb"
             position = {x = 255 y = 8}
             alwaystransparent = yes
+            
         }
 
         buttonType = {
             name = "SBUFlag"
             quadTextureSprite = "GFX_flag_small2"
             position = {x = 455 y = 5}
+            
+            pdx_tooltip = SBU_var_tooltip
         }
 
         iconType = {

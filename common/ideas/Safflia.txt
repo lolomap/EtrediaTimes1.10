@@ -51,6 +51,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_5n
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = -0.05
                 production_speed_industrial_complex_factor = 0.08
                 production_speed_infrastructure_factor = 0.08
@@ -81,6 +82,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_10n
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = -0.1
                 production_speed_industrial_complex_factor = 0.15
                 production_speed_infrastructure_factor = 0.15
@@ -111,6 +113,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_15n
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = -0.15
                 production_speed_industrial_complex_factor = 0.25
                 production_speed_infrastructure_factor = 0.25
@@ -141,6 +144,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_5
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = 0.05
                 production_speed_industrial_complex_factor = -0.08
                 production_speed_infrastructure_factor = -0.08
@@ -171,6 +175,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_10
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = 0.1
                 production_speed_industrial_complex_factor = -0.15
                 production_speed_infrastructure_factor = -0.15
@@ -201,6 +206,7 @@ ideas = {
 
             modifier = {
                 custom_modifier_tooltip = world_influence_cost_15
+                custom_modifier_tooltip = world_influence_cost_clamp
                 consumer_goods_factor = 0.15
                 production_speed_industrial_complex_factor = -0.25
                 production_speed_infrastructure_factor = -0.25
