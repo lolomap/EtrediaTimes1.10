@@ -1,7 +1,7 @@
 division_template = {
 	name = "Infantry Division"
 
-	division_names_group = ERI_inf_01
+	division_names_group = NEV_inf_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +15,6 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-        artillery = { x = 0 y = 0 }
 	}
 	priority = 1
 }
@@ -23,7 +22,7 @@ division_template = {
 division_template = {
 	name = "Light Mechanized Division"
 
-	division_names_group = ERI_arm_01
+	division_names_group = NEV_arm_01
 
 	regiments = {
 		jeep = { x = 0 y = 0 }
@@ -32,7 +31,6 @@ division_template = {
 		jeep = { x = 1 y = 1 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
 	}
 	priority = 1
 }
@@ -40,79 +38,58 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Division"
-		location = 1832
+		location = 823
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Infantry Division"
-		location = 1832
+		location = 823
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Infantry Division"
-		location = 1832
+		location = 823
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Light Mechanized Division"
-		location = 1832
+		location = 823
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Light Mechanized Division"
-		location = 1832
+		location = 823
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Light Mechanized Division"
-		location = 1832
+		location = 823
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Light Mechanized Division"
-		location = 1832
+		location = 823
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 	division = {
 		name = "Light Mechanized Division"
-		location = 1832
+		location = 823
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
-    }
-	division = {
-		name = "Light Mechanized Division"
-		location = 1832
-		division_template = "Light Mechanized Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
-    }
-	division = {
-		name = "Light Mechanized Division"
-		location = 1832
-		division_template = "Light Mechanized Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
-    }
-	division = {
-		name = "Light Mechanized Division"
-		location = 1832
-		division_template = "Light Mechanized Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 }

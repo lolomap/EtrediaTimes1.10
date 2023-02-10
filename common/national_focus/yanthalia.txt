@@ -1175,6 +1175,9 @@ focus_tree = {
 		prerequisite = {
 			focus = YAN_Karcih_plan
 		}
+		available = {
+			YAN = { has_completed_focus = YAN_armiya }
+		}
 		ai_will_do = {
 			factor = 5
 	    }
@@ -1193,6 +1196,12 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = YAN_ocean_countries
+		}
+		available = {
+			YAN = { 
+				has_completed_focus = YAN_contract
+				has_completed_focus = YAN_metall1
+			}
 		}
 		ai_will_do = {
 			factor = 7

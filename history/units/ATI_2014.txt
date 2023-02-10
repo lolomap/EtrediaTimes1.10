@@ -89,6 +89,55 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 2315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
 	
 	division = {
 		name = "Infantry Division"
