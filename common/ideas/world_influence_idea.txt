@@ -45,7 +45,7 @@ ideas = {
 			}
 
 			cancel = {
-				check_variable = {faction_influence < 30}
+				faction_leader = {check_variable = {faction_influence < 30}}
 			}
 		}
 		wi_economic_faction_trade_influence = {
@@ -62,8 +62,8 @@ ideas = {
 
 			cancel = {
 				OR = {
-					check_variable = {faction_influence < 50}
-					not = {has_idea = EconomicFaction}
+					faction_leader = {check_variable = {faction_influence < 50}}
+					faction_leader = {not = {has_idea = EconomicFaction}}
 				}
 			}
 		}
