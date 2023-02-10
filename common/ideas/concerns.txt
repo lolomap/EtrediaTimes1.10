@@ -21,12 +21,15 @@ ideas = {
             }
         }
 		CREDORA = {
+		designer = yes
             picture = generic_tank_manufacturer_1
 
             allowed = {
                 tag = YAN
-				YAN = { has_completed_focus = YAN_tanks }
             }
+			available = {
+				YAN = { has_completed_focus = YAN_tanks }
+			}
                 
             cost = 150
             equipment_bonus = {
@@ -101,9 +104,12 @@ ideas = {
 			traits = { industrial_concern }
         }
 		Omnish_Inovation_Group = {
+		designer = yes
 
 			allowed = {
 				tag = YAN
+			}
+			available = {
 				YAN = { has_completed_focus = YAN_electronika }
 			}
 
@@ -123,9 +129,12 @@ ideas = {
 	aircraft_manufacturer = {
 	
 		YAN_CVT_TOIKA = {
+		designer = yes
 			picture = generic_air_manufacturer_1
 			allowed = {
 				original_tag = YAN
+			}
+			available = {
 				YAN = { has_completed_focus = YAN_planes_production2 }
 			}
 			
