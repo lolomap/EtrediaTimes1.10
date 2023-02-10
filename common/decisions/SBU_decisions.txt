@@ -148,20 +148,20 @@ SBU_sburska_zvezda_war = {
 
         cost = 25
         complete_effect = {
-            add_to_variable = {sz_consumer_bonus_a = -0.05}
-            add_to_variable = {sz_eff_bonus_a = 0.05}
-            add_to_variable = {sz_cap_bonus_a = 0.05}
+            add_to_variable = {sz_consumer_bonus = -0.05}
+            add_to_variable = {sz_eff_bonus = 0.05}
+            add_to_variable = {sz_cap_bonus = 0.05}
             if = {
                 limit = {FROM = {OWNER = {has_idea = SBU_medium_sburska_zvezda}}}
-                add_to_variable = {sz_consumer_bonus_a = -0.05}
-                add_to_variable = {sz_eff_bonus_a = 0.05}
-                add_to_variable = {sz_cap_bonus_a = 0.05}
+                add_to_variable = {sz_consumer_bonus = -0.05}
+                add_to_variable = {sz_eff_bonus = 0.05}
+                add_to_variable = {sz_cap_bonus = 0.05}
             }
             if = {
                 limit = {FROM = {OWNER = {has_idea = SBU_high_sburska_zvezda}}}
-                add_to_variable = {sz_consumer_bonus_a = -0.1}
-                add_to_variable = {sz_eff_bonus_a = 0.1}
-                add_to_variable = {sz_cap_bonus_a = 0.1}
+                add_to_variable = {sz_consumer_bonus = -0.1}
+                add_to_variable = {sz_eff_bonus = 0.1}
+                add_to_variable = {sz_cap_bonus = 0.1}
             }
 
             custom_effect_tooltip = sz_bonus_tooltip
