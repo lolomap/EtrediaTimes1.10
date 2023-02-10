@@ -155,6 +155,37 @@ focus_tree = {
 
 	}
 
+    focus = {
+		id = SBU_golden_trillion
+		icon = GFX_goal_dem_monopoly
+		cost = 10
+		x = 45
+		y = 5
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = sz_more_then_5m
+                check_variable = {sz_medium_count > 4}
+            }
+            country_exists = SDI
+            SDI = {
+                num_of_civilian_factories > 14
+            }
+            IID = {
+                has_idea = IID_neutrality
+            }
+        }
+
+        prerequisite = {focus = SBU_uranian_question2}
+
+		completion_reward = {
+            SBU = {add_ideas = SBU_golden_trillion_idea}
+            SDI = {add_ideas = SBU_golden_trillion_idea}
+            IID = {add_ideas = SBU_golden_trillion_idea}
+		}
+
+	}
+
 	focus = {
 		id = SBU_klyachek_plan
 		icon = GFX_focus_generic_military_academy
@@ -809,13 +840,31 @@ focus_tree = {
     focus = {
 		id = SBU_islands_press
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 15
 		prerequisite = {
 			focus = SBU_ISH_NER
             focus = SBU_war_with_MOF
 		}
+
+        available = {
+            country_exists = SMA
+            country_exists = DON
+            country_exists = DID
+        }
+
 		completion_reward = {
-            
+            every_state = {
+                limit = {is_core_of = DON}
+                add_claim_by = SBU
+            }
+            every_state = {
+                limit = {is_core_of = SMA}
+                add_claim_by = SBU
+            }
+            every_state = {
+                limit = {is_core_of = DID}
+                add_claim_by = SBU
+            }
 		}
 		x = 28
 		y = 10

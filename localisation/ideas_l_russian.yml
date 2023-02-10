@@ -3,6 +3,13 @@
  corruption_laws: "Уровень коррупции"
  stability_modifiers: "Уровень легитимности"
 
+ SFL_tradewar_g20: "Положение в торговой войне"
+ SFL_tradewar_g40: "Положение в торговой войне"
+ SFL_tradewar_g70: "Положение в торговой войне"
+ SFL_tradewar_b20: "Положение в торговой войне"
+ SFL_tradewar_b40: "Положение в торговой войне"
+ SFL_tradewar_b70: "Положение в торговой войне"
+
  SBU_SZ_concern:0 "Sburska Zvezda"
  SBU_Kockav_concern: "SDT Koćkav"
  Htatka: "Концерн Htatka"
@@ -133,6 +140,7 @@
  SBU_Modern_Empire3: "Империя в 21 веке"
  SBU_Modern_Empire4: "Империя в 21 веке"
  SBU_ohranka: "Охранка"
+ SBU_golden_trillion_idea: "Власть корпораций"
  DON_politics:0 "Пацифисткая политика"
  DID_traditions:0 "Традиционная экономика"
  ZHE_conscritpiont_problem:0 "Уклонения от призыва"

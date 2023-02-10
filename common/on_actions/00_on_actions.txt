@@ -29,6 +29,11 @@ on_actions = {
             #SZ INFLUENCE
             ELR = {add_to_variable = {winfluence_cost = -0.15}}
             RGY = {add_to_variable = {winfluence_cost = -0.05}}
+            SBU = {
+                set_variable = {sz_high_count = 1}
+                set_variable = {sz_medium_count = 1}
+                set_variable = {sz_little_count = 2}
+            }
 
             #Не признаны: Террапилья ИИДшником, Лебдел, Солопут, Кюрю, Гванчинь и Хорга,Дирийцы
             TRP = {
@@ -379,29 +384,29 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
-						add_core = 361
-						add_core = 218
-						add_core = 219
-						add_core = 220
-						add_core = 221
-						add_core = 222
-						add_core = 223
-						add_core = 224
-						add_core = 226
-						add_core = 227
-						add_core = 228
-						add_core = 229
-						add_core = 230
-						add_core = 231
-						add_core = 232
-						add_core = 233
-						add_core = 234
-						add_core = 235
-						add_core = 236
-						add_core = 196
-						add_core = 197
-						add_core = 198
-						add_core = 225
+						add_state_core = 361
+						add_state_core = 218
+						add_state_core = 219
+						add_state_core = 220
+						add_state_core = 221
+						add_state_core = 222
+						add_state_core = 223
+						add_state_core = 224
+						add_state_core = 226
+						add_state_core = 227
+						add_state_core = 228
+						add_state_core = 229
+						add_state_core = 230
+						add_state_core = 231
+						add_state_core = 232
+						add_state_core = 233
+						add_state_core = 234
+						add_state_core = 235
+						add_state_core = 236
+						add_state_core = 196
+						add_state_core = 197
+						add_state_core = 198
+						add_state_core = 225
 						
 						load_oob = LCH_2014
 						add_manpower = 20000
@@ -430,29 +435,29 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
-						add_core = 361
-						add_core = 218
-						add_core = 219
-						add_core = 220
-						add_core = 221
-						add_core = 222
-						add_core = 223
-						add_core = 224
-						add_core = 226
-						add_core = 227
-						add_core = 228
-						add_core = 229
-						add_core = 230
-						add_core = 231
-						add_core = 232
-						add_core = 233
-						add_core = 234
-						add_core = 235
-						add_core = 236
-						add_core = 196
-						add_core = 197
-						add_core = 198
-						add_core = 225
+						add_state_core = 361
+						add_state_core = 218
+						add_state_core = 219
+						add_state_core = 220
+						add_state_core = 221
+						add_state_core = 222
+						add_state_core = 223
+						add_state_core = 224
+						add_state_core = 226
+						add_state_core = 227
+						add_state_core = 228
+						add_state_core = 229
+						add_state_core = 230
+						add_state_core = 231
+						add_state_core = 232
+						add_state_core = 233
+						add_state_core = 234
+						add_state_core = 235
+						add_state_core = 236
+						add_state_core = 196
+						add_state_core = 197
+						add_state_core = 198
+						add_state_core = 225
 						
 						load_oob = ESB_2014
 						add_manpower = 20000
@@ -481,29 +486,29 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
-						add_core = 361
-						add_core = 218
-						add_core = 219
-						add_core = 220
-						add_core = 221
-						add_core = 222
-						add_core = 223
-						add_core = 224
-						add_core = 226
-						add_core = 227
-						add_core = 228
-						add_core = 229
-						add_core = 230
-						add_core = 231
-						add_core = 232
-						add_core = 233
-						add_core = 234
-						add_core = 235
-						add_core = 236
-						add_core = 196
-						add_core = 197
-						add_core = 198
-						add_core = 225
+						add_state_core = 361
+						add_state_core = 218
+						add_state_core = 219
+						add_state_core = 220
+						add_state_core = 221
+						add_state_core = 222
+						add_state_core = 223
+						add_state_core = 224
+						add_state_core = 226
+						add_state_core = 227
+						add_state_core = 228
+						add_state_core = 229
+						add_state_core = 230
+						add_state_core = 231
+						add_state_core = 232
+						add_state_core = 233
+						add_state_core = 234
+						add_state_core = 235
+						add_state_core = 236
+						add_state_core = 196
+						add_state_core = 197
+						add_state_core = 198
+						add_state_core = 225
 						
 						load_oob = SIN_2014
 						add_manpower = 20000
@@ -532,29 +537,29 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
-						add_core = 361
-						add_core = 218
-						add_core = 219
-						add_core = 220
-						add_core = 221
-						add_core = 222
-						add_core = 223
-						add_core = 224
-						add_core = 226
-						add_core = 227
-						add_core = 228
-						add_core = 229
-						add_core = 230
-						add_core = 231
-						add_core = 232
-						add_core = 233
-						add_core = 234
-						add_core = 235
-						add_core = 236
-						add_core = 196
-						add_core = 197
-						add_core = 198
-						add_core = 225
+						add_state_core = 361
+						add_state_core = 218
+						add_state_core = 219
+						add_state_core = 220
+						add_state_core = 221
+						add_state_core = 222
+						add_state_core = 223
+						add_state_core = 224
+						add_state_core = 226
+						add_state_core = 227
+						add_state_core = 228
+						add_state_core = 229
+						add_state_core = 230
+						add_state_core = 231
+						add_state_core = 232
+						add_state_core = 233
+						add_state_core = 234
+						add_state_core = 235
+						add_state_core = 236
+						add_state_core = 196
+						add_state_core = 197
+						add_state_core = 198
+						add_state_core = 225
 						
 						load_oob = BAK_2014
 						add_manpower = 20000
@@ -583,29 +588,29 @@ on_actions = {
 							declare_war_on = {type = annex_everything target = SBU}
 						}
 						
-						add_core = 361
-						add_core = 218
-						add_core = 219
-						add_core = 220
-						add_core = 221
-						add_core = 222
-						add_core = 223
-						add_core = 224
-						add_core = 226
-						add_core = 227
-						add_core = 228
-						add_core = 229
-						add_core = 230
-						add_core = 231
-						add_core = 232
-						add_core = 233
-						add_core = 234
-						add_core = 235
-						add_core = 236
-						add_core = 196
-						add_core = 197
-						add_core = 198
-						add_core = 225
+						add_state_core = 361
+						add_state_core = 218
+						add_state_core = 219
+						add_state_core = 220
+						add_state_core = 221
+						add_state_core = 222
+						add_state_core = 223
+						add_state_core = 224
+						add_state_core = 226
+						add_state_core = 227
+						add_state_core = 228
+						add_state_core = 229
+						add_state_core = 230
+						add_state_core = 231
+						add_state_core = 232
+						add_state_core = 233
+						add_state_core = 234
+						add_state_core = 235
+						add_state_core = 236
+						add_state_core = 196
+						add_state_core = 197
+						add_state_core = 198
+						add_state_core = 225
 						
 						load_oob = KRA_2014
 						add_manpower = 20000
@@ -1062,6 +1067,85 @@ on_actions = {
                     }
                     clr_country_flag = tradewar
                     SBU = {clr_country_flag = tradewar}
+                }
+            }
+        }
+    }
+
+    on_daily_SFL = {
+        effect = {
+            if = {
+                limit = {has_country_flag = tradewar}
+                SBU = {set_variable = {winfluence_cost = 1}}
+                SFL = {set_variable = {winfluence_cost = 1}}
+
+                SBU = {remove_ideas = {SFL_tradewar_b20 SFL_tradewar_b40 SFL_tradewar_b70 SFL_tradewar_g20 SFL_tradewar_g40 SFL_tradewar_g70}}
+                SFL = {remove_ideas = {SFL_tradewar_b20 SFL_tradewar_b40 SFL_tradewar_b70 SFL_tradewar_g20 SFL_tradewar_g40 SFL_tradewar_g70}}
+                
+                set_temp_variable = {tdif = 100}
+                subtract_from_temp_variable = {tdif = SFL.trade_war}
+                SFL = {set_variable = {trade_reverse = tdif}}
+                subtract_from_temp_variable = {tdif = SBU.trade_war}
+                if = {
+                    limit = {check_variable = {tdif > 69}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g70
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b70
+                    }
+                }
+                else_if = {
+                    limit = {check_variable = {tdif > 39}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g40
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b40
+                    }
+                }
+                else_if = {
+                    limit = {check_variable = {tdif > 19}}
+                    SFL = {
+                        add_ideas = SFL_tradewar_g20
+                    }
+                    SBU = {
+                        add_ideas = SFL_tradewar_b20
+                    }
+                }
+                else = {
+
+                    set_temp_variable = {tdif = SBU.trade_war}
+                    subtract_from_temp_variable = {tdif = SFL.trade_war}
+                    add_to_temp_variable = {tdif = 100}
+                    if = {
+                        limit = {check_variable = {tdif > 69}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g70
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b70
+                        }
+                    }
+                    else_if = {
+                        limit = {check_variable = {tdif > 39}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g40
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b40
+                        }
+                    }
+                    else_if = {
+                        limit = {check_variable = {tdif > 19}}
+                        SBU = {
+                            add_ideas = SFL_tradewar_g20
+                        }
+                        SFL = {
+                            add_ideas = SFL_tradewar_b20
+                        }
+                    }
+
                 }
             }
         }

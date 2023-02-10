@@ -79,7 +79,7 @@ GKZ_moment = {
 		}
 
         ai_will_do = {
-			base = 10
+			base = 100
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 1000
@@ -102,7 +102,7 @@ GKZ_moment = {
             set_country_flag = all_nation
 		}
         ai_will_do = {
-			base = 10
+			base = 100
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 1
@@ -125,7 +125,7 @@ GKZ_moment = {
             set_country_flag = barkhan_nation
 		}
         ai_will_do = {
-			base = 10
+			base = 100
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -148,7 +148,7 @@ GKZ_moment = {
             set_country_flag = sektoya_nation
 		}
         ai_will_do = {
-			base = 10
+			base = 100
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -174,6 +174,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {praeter = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
 
     IID_press_KPA = {
@@ -195,6 +203,14 @@ GKZ_moment = {
             add_to_variable = {praeter = 1}
             add_to_variable = {barkhan = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
 
     IID_press_skt_litr = {
@@ -216,6 +232,14 @@ GKZ_moment = {
             add_to_variable = {barkhan = 1}
             add_to_variable = {kpaa = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
     IID_praeter_uni = {
         visible = {
@@ -236,6 +260,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {praeter = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
     IID_press_bkh = {
         visible = {
@@ -256,6 +288,15 @@ GKZ_moment = {
             add_to_variable = {sektoya = 1}
             add_to_variable = {kpaa = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
+        
     }
     IID_new_citizen = {
     visible = {has_country_flag = IID_culture}
@@ -269,6 +310,14 @@ GKZ_moment = {
             add_to_variable = {barkhan = 1}
             add_to_variable = {kpaa = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
     IID_press_religion = {
         visible = {
@@ -284,6 +333,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {praeter = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
     IID_holidays = {
         visible = {
@@ -299,6 +356,14 @@ GKZ_moment = {
             add_to_variable = {barkhan = 1}
             add_to_variable = {kpaa = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_skt_up = {
         visible = {
@@ -317,6 +382,14 @@ GKZ_moment = {
                 add_compliance = 50
             }
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_bkh_up = {
         visible = {
@@ -335,6 +408,14 @@ GKZ_moment = {
                 add_compliance = 50
             }
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_trp_up = {
         visible = {
@@ -366,6 +447,14 @@ GKZ_moment = {
                 add_compliance = 30
             }
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_skt_law = {
         visible = {
@@ -380,6 +469,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {seltoya = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_bkh_law = {
         visible = {
@@ -394,6 +491,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {barkhan = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
     IID_pra_law = {
         visible = {
@@ -408,6 +513,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {praeter = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1000
+			}
+		}
     }
     IID_trp_law = {
         visible = {
@@ -423,6 +536,14 @@ GKZ_moment = {
         complete_effect = {
             add_to_variable = {kpaa = 1}
         }
+
+        ai_will_do = {
+			base = 100
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
     }
 
     IID_culture_final = {
@@ -551,6 +672,10 @@ GKZ_moment = {
                 add_ideas = IID_praeter_culture
             }
         }
+
+        ai_will_do = {
+			base = 1000
+		}
     }
 
 	IID_CreateKaratenPraeterAdmin = {
