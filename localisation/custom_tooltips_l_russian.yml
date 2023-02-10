@@ -26,6 +26,8 @@
   YAN_planes_production_tooltip:0 "Станет доступен концерн «CVT_Toika»"
   YAN_tank_concern:0 "Станет доступен концерн «CREDORA»"
   YAN_electronika_concern:0 "Станет доступен концерн «Omnish Inovation Group»"
+  EIK_scientific_concern:0 "Станет доступен ислледовательский центр «MontaGp Scientific»"
+  EIK_production_concern:0 "Станет доступен концерн «Rashin»"
 
   pra_nation_tooltip: "Праетерская культура"
   all_nation_tooltip: "Многонациональная культура"

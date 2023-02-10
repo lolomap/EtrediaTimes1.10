@@ -124,6 +124,49 @@ ideas = {
 				research_speed_factor = 0.08
 			}
         }
+		MontaGp_Scientific = {
+		designer = yes
+			allowed = {
+				tag = EIK
+			}
+			available = {
+				EIK = { has_completed_focus = EIK_powerful_scientific_base }
+			}
+
+			cost = 200
+			removal_cost = 10
+
+			research_bonus = {
+				electronics = 0.05
+			}
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+        }
+		EIK_Rashin_concern = {
+			allowed = {tag = EIK}
+			available = {
+				EIK = { has_completed_focus = EIK_powerful_production }
+			}
+
+			cost = 200
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.1
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.08
+				base_fuel_gain_factor = 0.1
+			}
+
+			traits = { industrial_concern }
+        }
 	}
 	
 	aircraft_manufacturer = {

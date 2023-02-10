@@ -12,7 +12,7 @@ focus_tree = {
 		id = EIK_way
 		icon = GFX_goal_eik_unknown_way
 		cost = 5
-		x = 28
+		x = 22
 		y = 0
 		completion_reward = {
 			EIK = { 
@@ -28,8 +28,8 @@ focus_tree = {
 		prerequisite = {
 			focus = EIK_way
 		}
-		x = 28
-		y = 2
+		x = 24
+		y = 1
 
 		completion_reward = {
 			add_political_power = 50
@@ -47,8 +47,8 @@ focus_tree = {
 		prerequisite = {
 			focus = EIK_time_is_money
 		}
-		x = 26
-		y = 3
+		x = 23
+		y = 2
 
 		completion_reward = {
 			capital_scope = {
@@ -102,8 +102,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 30
-		y = 3
+		x = 25
+		y = 2
 	}
 	
 	focus = {
@@ -117,8 +117,8 @@ focus_tree = {
 		completion_reward = {
 			EIK = { country_event = { id = eik.30 days = 1 } }
 		}
-		x = 28
-		y = 4
+		x = 24
+		y = 3
 	}
 	
 	focus = {
@@ -127,9 +127,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = EIK_rashin_complex
+			focus = EIK_disband_parlament
 		}
-		x = 25
-		y = 4
+		x = 22
+		y = 3
 	}
 	
 	focus = {
@@ -138,9 +139,10 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = EIK_Dalhein_help
+			focus = EIK_rashin_complex
 		}
-		x = 31
-		y = 4
+		x = 26
+		y = 3
 	}
 	
 	focus = {
@@ -156,8 +158,16 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = EIK_powerful_production
 		}
-		x = 27
-		y = 5
+		completion_reward = {
+			add_research_slot = 2
+			add_political_power = 150
+			custom_effect_tooltip = EIK_scientific_concern
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+		x = 23
+		y = 4
 	}
 	
 	focus = {
@@ -171,8 +181,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = EIK_cosmic
 		}
-		x = 27
-		y = 6
+		completion_reward = {
+			add_ideas = EIK_robotics
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				date > 2020.1.1
+			}
+		}
+		x = 23
+		y = 5
 	}
 	
 	focus = {
@@ -188,8 +208,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = EIK_powerful_scientific_base
 		}
-		x = 29
-		y = 5
+		completion_reward = {
+			custom_effect_tooltip = EIK_production_concern
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 25
+		y = 4
 	}
 	
 	focus = {
@@ -203,8 +229,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = EIK_robotics
 		}
-		x = 29
-		y = 6
+		completion_reward = {
+			add_ideas = EIK_cosmic
+			add_timed_idea = { id = EIK_expenses days = 160 }
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				date > 2020.1.1
+			}
+		}
+		x = 25
+		y = 5
 	}
 	
 	focus = {
@@ -219,7 +256,7 @@ focus_tree = {
 				country_event = { id = eik.8 days = 1 }
 			}
 		}
-		x = 18
+		x = 20
 		y = 1
 	}
 
@@ -236,7 +273,7 @@ focus_tree = {
 			}
 		EIK = {	country_event = { id = eik.5 days = 1 } }
 		}
-		x = 18
+		x = 20
 		y = 2
 	}
 
@@ -246,6 +283,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = EIK_disband_parlament
+			focus = EIK_rashin_complex
 		}
 		completion_reward = { 
             remove_ideas = EIK_corruption01
@@ -279,7 +317,7 @@ focus_tree = {
 
 			EIK = {	country_event = { id = eik.9 days = 1 } }
 		}
-		x = 18
+		x = 20
 		y = 3
 	}
 	
@@ -508,7 +546,14 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.1	}
 		}
-		x = 20
+		ai_chance = { 
+		factor = 1
+			modifier = {
+				factor = 1
+				date > 2015.1.1
+			}
+		}
+		x = 19
 		y = 5
 	}
 	
@@ -517,13 +562,23 @@ focus_tree = {
 		icon = GFX_goal_eik_neighbours_influence
 		cost = 10
 		prerequisite = {
-			focus = EIK_one_party_system
+			focus = EIK_investitions_on_tolchkograd
+		}
+		prerequisite = {
+			focus = EIK_investitions_on_baensli
 		}
 		completion_reward = {
 			TOL = { country_event = { id = tolchkograd.2 days = 1 } }
 			BAE = { country_event = { id = baensli.2 days = 1 } }
 		}
-		x = 22
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 1
+				date > 2016.1.1
+			}
+		}
+		x = 21
 		y = 6
 	}
 	
@@ -539,7 +594,14 @@ focus_tree = {
 			add_popularity = { ideology = fascism popularity = 0.2 }
 			add_stability = -0.15
 		}
-		x = 20
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				date > 2017.1.1
+			}
+		}
+		x = 19
 		y = 6
 	}
 	
@@ -554,7 +616,7 @@ focus_tree = {
 			add_political_power = 50
 			add_ideas = EIK_newlico
 		}
-		x = 20
+		x = 19
 		y = 7
 	}
 	
@@ -565,11 +627,21 @@ focus_tree = {
 		prerequisite = {
 			focus = EIK_influence_on_neighbors
 		}
+		prerequisite = {
+			focus = EIK_political_purge
+		}
 		completion_reward = {
 		    create_faction = EIK_blok_ally
 		    hidden_effect = {news_event = {id = newss.19 days = 1}}
 		}
-		x = 22
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 2
+				date > 2017.1.1
+			}
+		}
+		x = 21
 		y = 7
 	}
 	
@@ -586,6 +658,13 @@ focus_tree = {
 		available = { 
 			YAN = { has_government = fascism }
 			YAN = { NOT = { has_country_flag = yan_swea } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > 2018.1.1
+			}
 		}
 		cancel_if_invalid = yes
 		x = 20
@@ -682,7 +761,7 @@ focus_tree = {
 			    date < 2020.1.1
 		        }
 		}
-		x = 26
+		x = 24
 		y = 9
 	}
 	
@@ -696,7 +775,7 @@ focus_tree = {
 		completion_reward = {
 			EIK = { country_event = eik.11 days = 1 }
 		}
-		x = 26
+		x = 24
 		y = 10
 	}
 	
@@ -728,12 +807,12 @@ focus_tree = {
 				date < 2018.1.1
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				date > 2018.1.1
 			}
 			modifier = {
-				factor = 50
-				date > 2018.9.9
+				factor = 5
+				date > 2018.7.1
 			}
 		}
 		x = 22
