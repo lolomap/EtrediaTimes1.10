@@ -1,7 +1,7 @@
 division_template = {
 	name = "Infantry Division"
 
-	division_names_group = KAN_inf_01
+	division_names_group = OUS_inf_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -23,26 +23,37 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Division"
-		location = 1657
+		location = 1305
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.6
     }
-	
 	division = {
 		name = "Infantry Division"
-		location = 1657
+		location = 1305
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.6
     }
-	
 	division = {
 		name = "Infantry Division"
-		location = 1657
+		location = 1305
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.6
     }
-	
+	division = {
+		name = "Infantry Division"
+		location = 1305
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.6
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1305
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.6
+    }
 }

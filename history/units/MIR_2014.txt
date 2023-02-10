@@ -1,7 +1,7 @@
 division_template = {
 	name = "Infantry Division"
 
-	division_names_group = KBS_inf_01
+	division_names_group = MIR_inf_01
 
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -15,7 +15,25 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Light mechanized brigade"
+
+	division_names_group = MIR_inf_02
+
+	regiments = {
+		jeep = { x = 0 y = 0 }
+		jeep = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
 	}
 	priority = 1
 }
@@ -23,7 +41,7 @@ division_template = {
 division_template = {
 	name = "Main Tank-Division"
 
-	division_names_group = KBS_arm_01
+	division_names_group = MIR_arm_01
 
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -39,100 +57,156 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.8
-    }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1311
+		location = 1658
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
 	division = {
 		name = "Infantry Division"
-		location = 1311
+		location = 1658
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
 	division = {
 		name = "Infantry Division"
-		location = 1311
+		location = 1658
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
 	division = {
 		name = "Infantry Division"
-		location = 1311
+		location = 1658
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
 	division = {
 		name = "Infantry Division"
-		location = 1311
+		location = 1658
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
-
 	division = {
-		name = "Main Tank-Division"
-		location = 1311
-		division_template = "Main Tank-Division"
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Infantry Division"
+		location = 1658
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.9
+    }
+	division = {
+		name = "Light mechanized brigade"
+		location = 1658
+		division_template = "Light mechanized brigade"
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
     }
 	division = {
 		name = "Main Tank-Division"
-		location = 1311
+		location = 1658
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.9
+        start_equipment_factor = 0.7
     }
 }

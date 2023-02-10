@@ -1,7 +1,7 @@
 division_template = {
 	name = "Infantry Division"
 
-	division_names_group = KAN_inf_01
+	division_names_group = LOK_inf_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +15,24 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Light Mechanized Division"
+
+	division_names_group = LOK_arm_01
+
+	regiments = {
+		jeep = { x = 0 y = 0 }
+		jeep = { x = 0 y = 1 }
+		jeep = { x = 1 y = 0 }
+		jeep = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
 	}
 	priority = 1
 }
@@ -23,26 +40,16 @@ division_template = {
 units = {
 	division = {
 		name = "Infantry Division"
-		location = 1657
+		location = 2035
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.6
+        start_equipment_factor = 0.4
     }
-	
 	division = {
-		name = "Infantry Division"
-		location = 1657
-		division_template = "Infantry Division"
+		name = "Light Mechanized Division"
+		location = 2035
+		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-        start_equipment_factor = 0.6
+        start_equipment_factor = 0.5
     }
-	
-	division = {
-		name = "Infantry Division"
-		location = 1657
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-        start_equipment_factor = 0.6
-    }
-	
 }

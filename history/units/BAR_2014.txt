@@ -80,7 +80,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -88,7 +87,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -96,7 +94,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -104,7 +101,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -112,7 +108,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -120,7 +115,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-	
 	division = {
 		name = "Infantry Division"
 		location = 462
@@ -128,7 +122,34 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.7
     }
-
+	division = {
+		name = "Infantry Division"
+		location = 462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 462
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+        start_equipment_factor = 0.7
+    }
 	division = {
 		name = "Main Tank-Division"
 		location = 462
@@ -136,7 +157,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.9
     }
-
 	division = {
 		name = "MNT division"
 		location = 462
@@ -144,7 +164,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
-	
 	division = {
 		name = "MNT division"
 		location = 462
@@ -152,7 +171,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
-	
 	division = {
 		name = "MNT division"
 		location = 462
@@ -160,7 +178,6 @@ units = {
 		start_experience_factor = 0.2
         start_equipment_factor = 0.8
     }
-	
 	division = {
 		name = "Mech. Rocket Brigade"
 		location = 462

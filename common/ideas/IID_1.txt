@@ -59,7 +59,7 @@ ideas = {
 		}
 		
 		IID_democrats = {
-            picture = iid_economic
+            picture = IID_democrats
 			allowed = {
 				always = no
 			}
