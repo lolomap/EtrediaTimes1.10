@@ -358,7 +358,7 @@ country_event = { # Олигархи у власти
 			elections_allowed = yes
 			election_frequency = 72
 		}
-		load_focus_tree = generic_focus
+		#load_focus_tree = generic_focus
 	}
 }
 
