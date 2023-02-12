@@ -3,6 +3,7 @@ ideas = {
             law = yes
 
             free_entry = {
+			picture = free_entry
                 cost = 150
                 removal_cost = -1
                 level = 4
@@ -40,6 +41,7 @@ ideas = {
             }
 
             general_entry = {
+			picture = general_entry
                 cost = 150
                 removal_cost = -1
                 level = 3
@@ -67,6 +69,7 @@ ideas = {
             }
 
             limited_entry = {
+			picture = limited_entry
                 cost = 150
                 removal_cost = -1
                 level = 2
