@@ -731,8 +731,8 @@ SBU_trade_war = {
         available = {country_exists = ELR}
         visible = {tag = SBU}
 
-        cost = 25
-        days_re_enable = 35
+        cost = 20
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g15
             SBU = {add_to_variable = {trade_war = 15}}
@@ -747,8 +747,8 @@ SBU_trade_war = {
         available = {country_exists = MOF}
         visible = {tag = SFL}
 
-        cost = 25
-        days_re_enable = 35
+        cost = 20
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g20
             SFL = {add_to_variable = {trade_war = -20}}
@@ -763,8 +763,8 @@ SBU_trade_war = {
         available = {has_completed_focus = SBU_sburska_zvezda}
         visible = {tag = SBU}
 
-        cost = 30
-        days_re_enable = 35
+        cost = 25
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_gSZ
             hidden_effect = {
@@ -798,8 +798,8 @@ SBU_trade_war = {
         available = {country_exists = FSC}
         visible = {tag = SFL}
 
-        cost = 25
-        days_re_enable = 35
+        cost = 15
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g10
             SFL = {add_to_variable = {trade_war = -10}}
@@ -814,8 +814,8 @@ SBU_trade_war = {
         available = {country_exists = UCB has_completed_focus = SBU_UCB_friendship}
         visible = {tag = SBU}
 
-        cost = 25
-        days_re_enable = 35
+        cost = 15
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g10
             SBU = {add_to_variable = {trade_war = 10}}
@@ -827,8 +827,8 @@ SBU_trade_war = {
     }
 
     SBU_crowding_out = {
-        cost = 20
-        days_re_enable = 15
+        cost = 15
+        days_re_enable = 60
         complete_effect = {
             if = {
                 limit = {tag = SFL}
@@ -848,8 +848,8 @@ SBU_trade_war = {
     }
 
     SBU_add_export = {
-        cost = 25
-        days_re_enable = 15
+        cost = 8
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g5
             if = {
@@ -868,8 +868,8 @@ SBU_trade_war = {
     }
 
     SBU_IID_trade = {
-        cost = 30
-        days_re_enable = 40
+        cost = 20
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g10
             if = {
@@ -888,8 +888,8 @@ SBU_trade_war = {
     }
 
     SBU_RGY_trade = {
-        cost = 25
-        days_re_enable = 30
+        cost = 15
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_g5
             if = {
@@ -916,9 +916,9 @@ SBU_trade_war = {
     }
 
     SBU_sea_trade = {
-        cost = 40
-        days_re_enable = 40
-        days_remove = 30
+        cost = 10
+        days_re_enable = 60
+        days_remove = 40
 
         remove_effect = {
             custom_effect_tooltip = trade_g10
@@ -938,8 +938,8 @@ SBU_trade_war = {
     }
 
     SBU_sanctions = {
-        cost = 20
-        days_re_enable = 20
+        cost = 10
+        days_re_enable = 60
         complete_effect = {
             custom_effect_tooltip = trade_b5
             if = {
@@ -977,6 +977,9 @@ protect_self = {
         }
         cost = 200
         days_re_enable = 30
+        available = {
+            SBU = {NOT = {has_completed_focus = SBU_golden_trillion}}
+        }
 
         complete_effect = {
             add_popularity = {ideology = democratic popularity = -0.05}

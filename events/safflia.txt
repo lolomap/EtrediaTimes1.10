@@ -301,25 +301,15 @@ country_event = {
     option = {
         name = sfl.11.a
         SBU = {
-            transfer_state = 178
-            transfer_state = 179
-            transfer_state = 180
-            transfer_state = 175
-            transfer_state = 176
             diplomatic_relation = {
                 country = SFL
                 relation = non_aggression_pact
                 active = yes
             }
+            set_country_flag = SFL_accepted_MOF_dividing
         }
-        SFL = {
-            transfer_state = 173
-            transfer_state = 174
-            transfer_state = 177
-            transfer_state = 169
-            transfer_state = 172
-        }
-
+        SFL = {declare_war_on = {target = MOF type = annex_everything}}
+        SBU = {declare_war_on = {target = MOF type = annex_everything}}
         ai_chance = {
             factor = 80
         }

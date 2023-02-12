@@ -422,19 +422,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = IID_language_question
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 17
-		y = 11
-		cost = 10
-		prerequisite = {
-			focus = IID_GKZ_project
-		}
-
-		completion_reward = {
-		}
-	}
 	
 	focus = {
 		id = IID_attraction_of_large_capital

@@ -87,7 +87,6 @@ focus_tree = {
             SBU = {set_country_flag = tradewar}
             set_country_flag = tradewar
             set_country_flag = tradewar_starter
-            set_variable = {trade_war = 20}
 		}
 
 	}
@@ -1782,7 +1781,10 @@ focus_tree = {
 
 		completion_reward = {
 			RGY = {
-				add_timed_idea = {idea = SBU_little_sburska_zvezda days = 720}
+                swap_ideas = {
+                    remove_idea = SBU_little_sburska_zvezda
+                    add_idea = SBU_medium_sburska_zvezda
+                }
 				add_political_power = -200
 			}
 		}
@@ -1942,19 +1944,20 @@ focus_tree = {
 		y = 4
 
         bypass = {
-            UCB = {
+            RGY = {
                 OR = {
-                    has_idea = SBU_medium_sburska_zvezda
                     has_idea = SBU_high_sburska_zvezda
                 }
             }
         }
 
+        available = {RGY = {has_idea = SBU_medium_sburska_zvezda}}
+
 		completion_reward = {
 			RGY = {
 				swap_ideas = {
-					remove_idea = SBU_little_sburska_zvezda
-					add_idea = SBU_medium_sburska_zvezda
+					remove_idea = SBU_medium_sburska_zvezda
+					add_idea = SBU_high_sburska_zvezda
 				}
 			}
 		}

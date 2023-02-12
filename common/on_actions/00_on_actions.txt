@@ -107,21 +107,8 @@ on_actions = {
 			#########################
 			every_country = {
 				limit = {
-					OR = {
-						original_tag = UNC
-						original_tag = GAR
-						original_tag = KCE
-						original_tag = LOD
-						original_tag = ZOG
-						original_tag = HOR
-						original_tag = ECE
-						original_tag = GWA
-						original_tag = KYU
-						original_tag = DNG
-						original_tag = KLU
-						original_tag = BSH
-						original_tag = SOL
-						original_tag = YEO
+					any_owned_state = {
+						is_on_continent = asia
 					}
 				}
 				set_rule = {
@@ -129,21 +116,8 @@ on_actions = {
 				}
 				random_neighbor_country = {
 					limit = {
-						OR = {
-							original_tag = UNC
-							original_tag = GAR
-							original_tag = KCE
-							original_tag = LOD
-							original_tag = ZOG
-							original_tag = HOR
-							original_tag = ECE
-							original_tag = GWA
-							original_tag = KYU
-							original_tag = DNG
-							original_tag = KLU
-							original_tag = BSH
-							original_tag = SOL
-							original_tag = YEO
+						any_owned_state = {
+							is_on_continent = asia
 						}
 					}
 					PREV = {
@@ -166,21 +140,8 @@ on_actions = {
 				}
 				random_neighbor_country = {
 					limit = {
-						OR = {
-							original_tag = UNC
-							original_tag = GAR
-							original_tag = KCE
-							original_tag = LOD
-							original_tag = ZOG
-							original_tag = HOR
-							original_tag = ECE
-							original_tag = GWA
-							original_tag = KYU
-							original_tag = DNG
-							original_tag = KLU
-							original_tag = BSH
-							original_tag = SOL
-							original_tag = YEO
+						any_owned_state = {
+							is_on_continent = asia
 						}
 					}
 					PREV = {
@@ -1324,6 +1285,39 @@ on_actions = {
 		effect = {
 			clr_country_flag = nuke_request_accepted
             ROOT = {clr_country_flag = nuke_request_accepted}
+            if = {
+                limit = {ROOT = {has_country_flag = nibba}}
+                ROOT = {faction_leader = {dismantle_faction  = yes}}
+            }
+            
+            if = {
+                limit = {
+                    FROM = {
+                        tag = MOF
+                    }
+                    ROOT = {
+                        OR = {
+                            tag = SFL
+                            tag = SBU
+                        }
+                    }
+                    SBU = {has_country_flag = SFL_accepted_MOF_dividing}
+                }
+                SBU = {
+                    transfer_state = 178
+                    transfer_state = 179
+                    transfer_state = 180
+                    transfer_state = 175
+                    transfer_state = 176
+                }
+                SFL = {
+                    transfer_state = 173
+                    transfer_state = 174
+                    transfer_state = 177
+                    transfer_state = 169
+                    transfer_state = 172
+                }
+            }
 			if = {
 				limit = {
 					FROM = {
@@ -1660,6 +1654,49 @@ on_actions = {
 			}
 		}
 	}
+
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        any_owned_state = {
+                            OR = {
+                                is_on_continent = africa
+                                is_on_continent = north_america
+                            }
+                        }
+                    }
+                    ROOT = {
+                        NOT = {
+                            any_owned_state = {
+                                OR = {
+                                    is_on_continent = africa
+                                    is_on_continent = north_america
+                                }
+                            }
+                        }
+                    }
+                }
+                FROM = {create_faction = NIBBA_FRONT}
+                FROM = {set_country_flag = nibba}
+                hidden_effect = {
+                    every_other_country = {
+                        limit = {
+                            any_owned_state = {
+                                OR = {
+                                    is_on_continent = africa
+                                    is_on_continent = north_america
+                                }
+                            }
+                        }
+                        set_country_flag = nibba
+                        FROM = {add_to_faction = PREV}
+                    }
+                }
+            }
+        }
+    }
 
 ######################################################
 #VANILLA
