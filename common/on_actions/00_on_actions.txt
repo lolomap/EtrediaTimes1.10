@@ -1286,9 +1286,10 @@ on_actions = {
 			clr_country_flag = nuke_request_accepted
             ROOT = {clr_country_flag = nuke_request_accepted}
             if = {
-                limit = {FROM = {has_country_flag = nibba}}
-                FROM = {faction_leader = {dismantle_faction  = yes}}
+                limit = {ROOT = {has_country_flag = nibba}}
+                ROOT = {faction_leader = {dismantle_faction  = yes}}
             }
+            
             if = {
                 limit = {
                     FROM = {
