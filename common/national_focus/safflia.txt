@@ -384,6 +384,7 @@ focus_tree = {
             }
             SBU = {set_country_flag = tradewar}
             set_country_flag = tradewar
+            set_variable = {trade_war = 100}
 		}
 		x = 26
 		y = 6

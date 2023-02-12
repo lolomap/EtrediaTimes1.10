@@ -87,6 +87,7 @@ focus_tree = {
             SBU = {set_country_flag = tradewar}
             set_country_flag = tradewar
             set_country_flag = tradewar_starter
+            SFL = {set_variable = {trade_war = 100}}
 		}
 
 	}
@@ -921,7 +922,7 @@ focus_tree = {
 	focus = {
 		id = SBU_demonstration_of_power
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 30
 		prerequisite = {
 			focus = SBU_war_with_SFL
 		}
