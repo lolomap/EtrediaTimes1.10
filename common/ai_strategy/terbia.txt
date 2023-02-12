@@ -52,12 +52,12 @@ trb_commi_make_divisions = {
 	ai_strategy = {
 		type = antagonize
 		id = "SBU"			
-		value = 50
+		value = 25
 	}
 	ai_strategy = {
 		type = antagonize
 		id = "YAN"			
-		value = 50
+		value = 25
 	}
 	ai_strategy = {
 		type = prepare_for_war
@@ -67,6 +67,6 @@ trb_commi_make_divisions = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = "YAN"			
-		value = 10
+		value = 3
 	}
 }

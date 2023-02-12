@@ -1075,7 +1075,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-		UCB = { country_event = { id = ucnb.2 } }
+			UCB = { country_event = { id = ucnb.2 } }
+		}
+		ai_will_do = {
+		factor = 0.5
+			modifier = {
+			factor = 5
+			SBU = { has_completed_focus = SBU_aldeko_operation }
+			}
 		}
 		x = 7
 		y = 10
@@ -1100,6 +1107,17 @@ focus_tree = {
 				}
 			}
 		}
+		ai_will_do = {
+		factor = 1
+			modifier = {
+			factor = -1
+			SBU = { NOT = { has_completed_focus = SBU_aldeko_operation } }
+			}
+			modifier = {
+			factor = 5
+			SBU = { has_completed_focus = SBU_aldeko_operation }
+			}
+		}
 		x = 7
 		y = 11
 
@@ -1115,6 +1133,17 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = fscb.1 }
 			add_threat = 10
+		}
+		ai_will_do = {
+		factor = 1
+			modifier = {
+			factor = -1
+			SBU = { NOT = { has_completed_focus = SBU_aldeko_operation } }
+			}
+			modifier = {
+			factor = 5
+			SBU = { has_completed_focus = SBU_aldeko_operation }
+			}
 		}
 		x = 7
 		y = 12
