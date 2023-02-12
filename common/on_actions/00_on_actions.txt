@@ -1658,25 +1658,23 @@ on_actions = {
                         any_owned_state = {
                             OR = {
                                 is_on_continent = africa
-                                is_on_continent = middle_east
+                                is_on_continent = north_america
                             }
                         }
                     }
                 }
                 FROM = {create_faction = NIBBA_FRONT}
-                every_other_country = {
-                    limit = {
-                        any_owned_state = {
-                            OR = {
-                                is_on_continent = africa
-                                is_on_continent = middle_east
+                hidden_effect = {
+                    every_other_country = {
+                        limit = {
+                            any_owned_state = {
+                                OR = {
+                                    is_on_continent = africa
+                                    is_on_continent = north_america
+                                }
                             }
                         }
-                    }
-                    add_ai_strategy = {
-                        type = alliance
-                        id = FROM
-                        value = 1000
+                        FROM = {add_to_faction = PREV}
                     }
                 }
             }
