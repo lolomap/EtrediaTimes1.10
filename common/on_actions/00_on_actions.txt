@@ -107,7 +107,7 @@ on_actions = {
 			#########################
 			every_country = {
 				limit = {
-					OR = {
+					any_owned_state = {
 						is_on_continent = asia
 					}
 				}
@@ -116,7 +116,7 @@ on_actions = {
 				}
 				random_neighbor_country = {
 					limit = {
-						OR = {
+						any_owned_state = {
 							is_on_continent = asia
 						}
 					}
@@ -140,7 +140,7 @@ on_actions = {
 				}
 				random_neighbor_country = {
 					limit = {
-						OR = {
+						any_owned_state = {
 							is_on_continent = asia
 						}
 					}
@@ -1655,18 +1655,22 @@ on_actions = {
             if = {
                 limit = {
                     FROM = {
-                        OR = {
-                            is_on_continent = africa
-                            is_on_continent = middle_east
+                        any_owned_state = {
+                            OR = {
+                                is_on_continent = africa
+                                is_on_continent = middle_east
+                            }
                         }
                     }
                 }
                 FROM = {create_faction = NIBBA_FRONT}
                 every_other_country = {
                     limit = {
-                        OR = {
-                            is_on_continent = africa
-                            is_on_continent = middle_east
+                        any_owned_state = {
+                            OR = {
+                                is_on_continent = africa
+                                is_on_continent = middle_east
+                            }
                         }
                     }
                     add_ai_strategy = {
