@@ -10,7 +10,8 @@ country_event = {
 
 	option = {
 	name = ucnb.1.a 
-		UCB = { add_ideas = UCB_resist }	
+		UCB = { add_ideas = UCB_resist }
+		hidden_effect = {news_event = {id = newss.30 days = 1}}
 		ai_chance = { 
 			factor = 70	
             modifier = {

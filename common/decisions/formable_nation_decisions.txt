@@ -123,11 +123,9 @@ form_msas_category = {
         cost = 100
         days_remove = 120
 
-        complete_effect = {}
-
-        remove_effect = {
-            RGY = {country_event = {id = rgy.8 days = 1}}
-        }
+        complete_effect = {
+			RGY = {country_event = {id = rgy.8 days = 1}}
+		}
     }
 	
 	form_msas = {
@@ -193,7 +191,6 @@ form_msas_category = {
 
 		complete_effect = {
 			set_cosmetic_tag = MSA_UNIFIED
-			# Norway
 			custom_effect_tooltip = form_country_norway_coring_states_tt
 			hidden_effect = {
 				198 = { add_core_of = ROOT }
@@ -206,7 +203,6 @@ form_msas_category = {
 				179 = { add_core_of = ROOT }
 				180 = { add_core_of = ROOT }
 			}
-			# Sweden
 			custom_effect_tooltip = form_country_sweden_coring_states_tt
 			hidden_effect = {
 				158 = { add_core_of = ROOT }
@@ -226,7 +222,7 @@ form_msas_category = {
 				177 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
-				#news_event = { id = wtt_news.53 hours = 6 }
+				news_event = {id = newss.28 days = 1}
 				set_global_flag = form_scandinavia_flag
 			}
 		}

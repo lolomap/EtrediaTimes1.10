@@ -250,7 +250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_training2
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_goal_YAN_training2
 		cost = 10
 		prerequisite = {
 			focus = YAN_armiya
@@ -264,7 +264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_contract
-		icon = GFX_goal_unknown
+		icon = GFX_goal_YAN_contract
 		cost = 5
 		prerequisite = {
 			focus = YAN_armiya
@@ -284,7 +284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_militarize
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_YAN_militarize
 		cost = 5
 		prerequisite = {
 			focus = YAN_contract
@@ -483,7 +483,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_metall1
-		icon = GFX_focus_generic_steel
+		icon = GFX_goal_YAN_metall1
 		cost = 10
 		prerequisite = {
 			focus = YAN_Onodar_reform
@@ -610,7 +610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YAN_factory1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_YAN_factory1
 		cost = 10
 		prerequisite = {
 			focus = YAN_metall1
@@ -1237,11 +1237,10 @@ focus_tree = {
 		completion_reward = {
 			YAN = { country_event { id = yan.5 days = 1 } }
 			add_state_claim = 362
-			hidden_effect = {news_event = {id = newss.18 days = 1}}
+			hidden_effect = {news_event = {id = newss.25 days = 1}}
 		}
 		x = 37
 		y = 6
-
 	}
 	focus = {
 		id = YAN_operation_krastcen
@@ -1252,7 +1251,7 @@ focus_tree = {
 			focus = YAN_prepare_for_war
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 5
 	    }
 		completion_reward = {
 		YAN = { country_event { id = yan.6 days = 1 } }
@@ -1263,7 +1262,6 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
-
 	}
 	focus = {
 		id = YAN_operation_banan

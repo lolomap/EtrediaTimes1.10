@@ -1,7 +1,7 @@
 add_namespace = newss
 
 news_event = { 
-	id = newss.1
+	id = newss.1 #Эйклиндстинд оказывает давление на Шэрэгию
 	title = newss.1.t
 	desc = newss.1.d
 	picture = GFX_news_event_001
@@ -23,47 +23,45 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.2
+		id = newss.2 #Саммит лидеров Лоардины и Арстильтии
 		title = newss.2.t
 		desc = newss.2.d
 		picture = GFX_news_event_001
 
 	fire_only_once = yes
 
-	major = yes
-
 	mean_time_to_happen = {
-	days = 2
+		days = 2
 	}
 
 	trigger = {
-		date > 2014.20.6
-	}        
+		date > 2014.6.20
+	}
 
-		option = {
-			   name = newss.2.a
-			   trigger = {
-					   NOT = {
-								TAG = TOB
-					   }
-			   }
+	option = {
+	name = newss.2.a
+		trigger = {
+			NOT = {
+				TAG = TOB
+			}
 		}
-		option = {
-			   name = newss.2.b
-			   trigger = {
-					   TAG = NIB
-			   }
+	}
+	option = {
+	name = newss.2.b
+		trigger = {
+			TAG = NIB
 		}
-		option = {
-			   name = newss.2.c
-			   trigger = {
-					   TAG = TOB
-			   }
+	}
+	option = {
+	name = newss.2.c
+		trigger = {
+			TAG = TOB
 		}
+	}
 }
 
 news_event = { 
-		id = newss.3
+		id = newss.3 #Падение Энтербы
 		title = newss.3.t
 		desc = newss.3.d
 		picture = GFX_news_event_001
@@ -88,30 +86,30 @@ news_event = {
 	}
 
 		option = {
-			   name = newss.3.a
-			   trigger = {
-					   NOT = {
-								TAG = YAN
-								TAG = TRB
-					   }
-			   }
+		name = newss.3.a
+			trigger = {
+			    NOT = {
+					TAG = YAN
+					TAG = TRB
+			    }
+			}
 		}
 		option = {
-			   name = newss.3.b
-			   trigger = {
+		name = newss.3.b
+			trigger = {
 			   TAG = YAN
-			   }
+			}
 		}
 		option = {
-			   name = newss.3.c
-			   trigger = {
+		name = newss.3.c
+			trigger = {
 			   TAG = TRB
-			   }
+			}
 		}
 }
 
 news_event = { 
-		id = newss.4
+		id = newss.4 #Падение Нижнесибурска
 		title = newss.4.t
 		desc = newss.4.d
 		picture = GFX_news_event_001
@@ -122,7 +120,7 @@ news_event = {
 
 	trigger = {
 		217 = { is_controlled_by = YAN }
-		217 = { is_cowned_by = SBU }
+		217 = { is_owned_by = SBU }
 		YAN = { has_war_with = SBU }
 		NOT = { has_global_flag = fall_of_sibursk_yan }
 	}
@@ -132,43 +130,42 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 1
 	}
 
-		option = {
-			   name = newss.4.a
-			   trigger = {
-					   NOT = {
-								TAG = YAN
-								TAG = EIK
-								TAG = CHE
-								TAG = KOU
-								TAG = ESS
-								TAG = PIN
-								TAG = BAE
-								TAG = TOL
-					   }
-			   }
+	option = {
+	name = newss.4.a
+		trigger = {
+			NOT = {
+				TAG = YAN
+				TAG = EIK
+				TAG = CHE
+				TAG = KOU
+				TAG = ESS
+				TAG = PIN
+				TAG = BAE
+				TAG = TOL
+			}
 		}
-		option = {
-			   name = newss.4.b
-			   trigger = {
-					   TAG = SBU
-			   }
+	}
+	option = {
+	name = newss.4.b
+		trigger = {
+			TAG = SBU
 		}
-		option = {
-			   name = newss.4.c
-			   trigger = {
-					   NOT = {
-							TAG = SBU
-							TAG = YAN
-					   }
-			   }
+	}
+	option = {
+	name = newss.4.c
+		trigger = {
+			NOT = {
+				TAG = SBU
+			}
 		}
+	}
 }
 
 news_event = { 
-		id = newss.5
+		id = newss.5 #Республика Сибурленд объявляет операцию «Альдеко»
 		title = newss.5.t
 		desc = newss.5.d
 		picture = GFX_news_event_001
@@ -199,7 +196,7 @@ news_event = {
 }
  
 news_event = { 
-		id = newss.6
+		id = newss.6 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.6.t
 		desc = newss.6.d
 		picture = GFX_news_event_001
@@ -213,7 +210,14 @@ news_event = {
 	}
 
 	trigger = {
-	date > 2014.1.4
+		date > 2014.1.4
+		NOT = {
+			TAG = SBU
+			TAG = UCB
+			TAG = VRO
+			TAG = SFL
+			TAG = FSC
+		}
 	}
 
 	option = {
@@ -229,7 +233,7 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.7
+		id = newss.7 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.7.t
 		desc = newss.7.d
 		picture = GFX_news_event_001
@@ -243,17 +247,17 @@ news_event = {
 	}
 
 	trigger = {
-	date > 2014.1.4
-	TAG = SBU
+		date > 2014.1.4
+		TAG = SBU
 	}
 
 		option = {
-			   name = newss.7.a
+			   name = newss.6.a
 		}
 }
 
 news_event = { 
-		id = newss.8
+		id = newss.8 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.8.t
 		desc = newss.8.d
 		picture = GFX_news_event_001
@@ -265,17 +269,17 @@ news_event = {
 	}
 
 	trigger = {
-	date > 2014.1.4
-	TAG = UCB
+		date > 2014.1.4
+		TAG = UCB
 	}
 
 		option = {
-			   name = newss.8.a
+			   name = newss.6.a
 		}
 }
 
 news_event = { 
-		id = newss.9
+		id = newss.9 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.9.t
 		desc = newss.9.d
 		picture = GFX_news_event_001
@@ -287,17 +291,17 @@ news_event = {
 	}
 
 	trigger = {
-	date > 2014.1.4
-	TAG = VRO
+		date > 2014.1.4
+		TAG = VRO
 	}
 
 		option = {
-			   name = newss.9.a
+			   name = newss.6.a
 		}
 }
 
 news_event = { 
-		id = newss.10
+		id = newss.10 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.10.t
 		desc = newss.10.d
 		picture = GFX_news_event_001
@@ -314,12 +318,12 @@ news_event = {
 	}
 
 		option = {
-			   name = newss.10.a
+			   name = newss.6.a
 		}
 }
 
 news_event = { 
-		id = newss.11
+		id = newss.11 #Ежегодный Шахматный Турнир в Скарне
 		title = newss.11.t
 		desc = newss.11.d
 		picture = GFX_news_event_001
@@ -336,12 +340,12 @@ news_event = {
 	}
 
 		option = {
-			   name = newss.11.a
+			   name = newss.11.a #победитель
 		}
 }
 
 news_event = { 
-	id = newss.12
+	id = newss.12 #Коммунисты Дирии
 	title = newss.12.t
 	desc = newss.12.d
 	picture = GFX_news_event_001
@@ -365,7 +369,7 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.13
+		id = newss.13 #Янтхалия Альянс
 		title = newss.13.t
 		desc = newss.13.d
 		picture = GFX_news_event_001
@@ -393,7 +397,7 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.14
+		id = newss.14 #Янтхалия возрождает армию
 		title = newss.14.t
 		desc = newss.14.d
 		picture = GFX_news_event_001
@@ -421,7 +425,7 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.15
+		id = newss.15 #Тору-Эсса сдается!
 		title = newss.15.t
 		desc = newss.15.d
 		picture = GFX_news_event_001
@@ -456,7 +460,7 @@ news_event = {
 }
 
 news_event = { 
-		id = newss.16
+		id = newss.16 #Пинька вступает в ЮВЭ
 		title = newss.16.t
 		desc = newss.16.d
 		picture = GFX_news_event_001
@@ -506,6 +510,8 @@ news_event = {
 	desc = newss.17.d
 
 	is_triggered_only = yes
+	
+	major = yes
 
 	option = {
 		name = newss.17.a
@@ -513,7 +519,7 @@ news_event = {
 }
 
 news_event = {
-	id = newss.18
+	id = newss.18 #Янтхальские интересы в Островном регионе
 	title = newss.18.t
 	desc = newss.18.d
 
@@ -530,7 +536,7 @@ news_event = {
 }
 
 news_event = {
-	id = newss.19
+	id = newss.19 #Эйклиндстинд утверждает создание Восточного Блока
 	title = newss.19.t
 	desc = newss.19.d
 
@@ -546,7 +552,7 @@ news_event = {
 	}
 }
 		
-news_event = { #KEK
+news_event = { #Пенис инцидент
 	id = newss.20
 	title = newss.20.t
 	desc = newss.20.d
@@ -557,5 +563,264 @@ news_event = { #KEK
 
 	option = {
 		name = newss.20.a
+	}
+}
+
+news_event = { #Генцоид в Дангарии
+	id = newss.21
+	title = newss.21.t
+	desc = newss.21.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.21.a
+		trigger = {
+			NOT = { tag = LOD }
+			NOT = { tag = ZOG }
+			NOT = { tag = ZAZ }
+		}
+	}
+	option = {
+		name = newss.21.b
+		trigger = {
+			tag = LOD
+			tag = ZOG
+			tag = ZAZ
+		}
+	}
+}
+
+news_event = { 
+		id = newss.22 #Падение Энтербы Альдеко
+		title = newss.22.t
+		desc = newss.22.d
+		picture = GFX_news_event_001
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		225 = { is_controlled_by = SBU }
+		225 = { is_owned_by = TRB }
+		SBU = { has_war_with = TRB }
+		NOT = { has_global_flag = fall_of_enterba_sbu }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_enterba_sbu
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+		option = {
+		name = newss.22.a
+			trigger = {
+			    NOT = {
+					TAG = SBU
+					TAG = TRB
+			    }
+			}
+		}
+		option = {
+		name = newss.22.b
+			trigger = {
+			   TAG = SBU
+			}
+		}
+		option = {
+		name = newss.22.c
+			trigger = {
+			   TAG = TRB
+			}
+		}
+}
+
+news_event = { #ИИД вводит войска в Террапилью
+	id = newss.23
+	title = newss.23.t
+	desc = newss.23.d
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		NOT = { tag = IID }
+		NOT = { tag = TRP }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = newss.23.a
+	}
+}
+
+news_event = { #ИИД аннексирует Террапилью
+	id = newss.24
+	title = newss.24.t
+	desc = newss.24.d
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		NOT = { tag = IID }
+		NOT = { tag = TRP }
+	}
+
+	option = {
+		name = newss.24.a
+		trigger = {
+			NOT = { tag = SFL }
+			NOT = { tag = UCB }
+			NOT = { tag = SBU }
+			NOT = { tag = FSC }
+		}
+	}
+	option = {
+		name = newss.24.b
+		trigger = {
+			OR = {
+			tag = SFL 
+			tag = UCB 
+			tag = SBU 
+			tag = FSC
+			}
+		}
+	}
+}
+
+news_event = { #Янтхалия вторгается на острова
+	id = newss.25
+	title = newss.25.t
+	desc = newss.25.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.25.a
+	}
+}
+
+news_event = { #Коммунисты приходят к власти в Тербии
+	id = newss.26
+	title = newss.26.t
+	desc = newss.26.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.26.a
+	}
+}
+
+news_event = { #Янтхалия входит в Восточную Тербия
+	id = newss.27
+	title = newss.27.t
+	desc = newss.27.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.27.a
+		trigger = {
+			NOT = { tag = YAN }
+			NOT = { tag = TRB }
+		}
+	}
+	option = {
+		name = newss.27.b
+		trigger = {
+			tag = YAN
+		}
+	}
+	option = {
+		name = newss.27.c
+		trigger = {
+			tag = TRB
+		}
+	}
+}
+
+news_event = { #Саффлия и Монфуя ратифицируют МСАС
+	id = newss.28
+	title = newss.28.t
+	desc = newss.28.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.28.a
+		trigger = {
+			tag = SFL
+		}
+	}
+	option = {
+		name = newss.28.b
+		trigger = {
+			NOT = { tag = SBU }
+			NOT = { tag = SFL }
+		}
+	}
+	option = {
+		name = newss.28.c
+		trigger = {
+			tag = SBU
+		}
+	}
+}
+
+news_event = { #Коульская Империя объявляет Великий поход
+	id = newss.29
+	title = newss.29.t
+	desc = newss.29.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.29.a
+	}
+}
+
+news_event = { #Жмиринован побеждает на выборах в ОсНБ
+	id = newss.30
+	title = newss.30.t
+	desc = newss.30.d
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = newss.30.a
+		trigger = {
+			NOT = { tag = UCB }
+		}
+	}
+	option = {
+		name = newss.30.b
+		trigger = {
+			tag = UCB
+		}
 	}
 }

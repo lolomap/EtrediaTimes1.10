@@ -100,6 +100,10 @@ ideas = {
 			modifier = {
 				#political_power_cost = 0.15
 			}
+			
+			ai_will_do = {
+   				factor = 1
+   			}
 
 			traits = { industrial_concern }
         }
@@ -123,6 +127,10 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.08
 			}
+			
+			ai_will_do = {
+   				factor = 1
+   			}
         }
 		MontaGp_Scientific = {
 		designer = yes
@@ -143,6 +151,10 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.15
 			}
+			
+			ai_will_do = {
+   				factor = 2
+   			}
         }
 		EIK_Rashin_concern = {
 			allowed = {tag = EIK}
@@ -164,6 +176,10 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.08
 				base_fuel_gain_factor = 0.1
 			}
+			
+			ai_will_do = {
+   				factor = 2
+   			}
 
 			traits = { industrial_concern }
         }
@@ -190,6 +206,10 @@ ideas = {
                     reliability = 0.1
                 }
             }
+			
+			ai_will_do = {
+   				factor = 2
+   			}
 			
 			cost = 150
 			removal_cost = 10

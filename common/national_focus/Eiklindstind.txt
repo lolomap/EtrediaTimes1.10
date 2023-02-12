@@ -183,9 +183,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = EIK_robotics
+			add_timed_idea = { idea = EIK_expenses days = 160 }
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 			modifier = {
 				factor = 1
 				date > 2020.1.1
@@ -231,10 +232,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = EIK_cosmic
-			add_timed_idea = { id = EIK_expenses days = 160 }
+			add_timed_idea = { idea = EIK_expenses days = 160 }
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 			modifier = {
 				factor = 1
 				date > 2020.1.1
@@ -595,7 +596,7 @@ focus_tree = {
 			add_stability = -0.15
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 			modifier = {
 				factor = 1
 				date > 2017.1.1
@@ -635,7 +636,7 @@ focus_tree = {
 		    hidden_effect = {news_event = {id = newss.19 days = 1}}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 			modifier = {
 				factor = 2
 				date > 2017.1.1

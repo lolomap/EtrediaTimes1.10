@@ -11,8 +11,32 @@ delete_dirian_militia = {
         division_template = "Democrat Militia"
         disband = yes
     }
+	delete_units = {
+        division_template = "Democrat Militia 2"
+        disband = yes
+    }
+	delete_units = {
+        division_template = "Democrat Militia 3"
+        disband = yes
+    }
+	delete_units = {
+        division_template = "KRT armor brigade"
+        disband = yes
+    }
+	delete_units = {
+        division_template = "KRT mechanized brigade"
+        disband = yes
+    }
     delete_units = {
         division_template = "Communist Militia"
+        disband = yes
+    }
+	delete_units = {
+        division_template = "Communist Militia 2"
+        disband = yes
+    }
+	delete_units = {
+        division_template = "Communist Militia 3"
         disband = yes
     }
     delete_units = {

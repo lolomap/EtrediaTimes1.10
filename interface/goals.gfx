@@ -14,6 +14,31 @@ spriteTypes = {
         name = "GFX_goal_sbu_war_with_TRB"
         texturefile="gfx/interface/goals/goal_sbu_war_with_TRB.dds"
     }
+	
+	SpriteType = {
+        name = "GFX_goal_YAN_metall1"
+        texturefile="gfx/interface/goals/goal_YAN_metall1.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_militarize"
+        texturefile="gfx/interface/goals/goal_YAN_militarize.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_goal_YAN_factory1"
+        texturefile="gfx/interface/goals/goal_YAN_factory1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_goal_YAN_contract"
+        texturefile="gfx/interface/goals/goal_YAN_contract.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_goal_YAN_training2"
+        texturefile="gfx/interface/goals/goal_YAN_training2.dds"
+    }
 
     SpriteType = {
         name = "GFX_goal_YAN_militaryplan"

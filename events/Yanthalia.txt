@@ -449,6 +449,7 @@ country_event = {
 			add_army_experience = 15
 			add_stability = 0.1
 			add_war_support = 0.1
+			hidden_effect = {news_event = {id = newss.27 days = 1}}
 		}
 		option = {
 			trigger = {

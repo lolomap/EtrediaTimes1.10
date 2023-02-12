@@ -16,8 +16,8 @@ country_event = {
     name = klu.1.a
 	    KLU = {
 	        annex_country = {
-            target = YEO
-            transfer_troops = no
+				target = YEO
+				transfer_troops = no
             }
 			add_state_core = 629
 	    }
@@ -38,22 +38,27 @@ country_event = {
     	
 	option = {
     name = klu.2.a
-	ECE = { country_event = { days = 2 id = evar.1 } }
 	    KLU = {
 		    declare_war_on = {
             target = DNG
             type = annex_everything
             }
 	    }
-	ai_chance = { factor = 70 }
+		hidden_effect = {
+			news_event = {id = newss.29 days = 1}
+		}
+		hidden_effect = {
+			ECE = { country_event = { days = 2 id = evar.1 } }
+		}
+	ai_chance = { factor = 80 }
 	}
 	option = {
     name = klu.2.b
 	    KLU = { country_event = { id = klu.3 days = 20 } }
 		KLU = { country_event = { id = klu.4 days = 150 } }
-	add_stability = -0.1
+		add_stability = -0.1
+		ai_chance = { factor = 20 }
 	}
-	ai_chance = { factor = 30 }
 }
 
 country_event = {
