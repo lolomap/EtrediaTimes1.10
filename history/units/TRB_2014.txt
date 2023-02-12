@@ -17,6 +17,7 @@ division_template = {
 	support = {
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 	priority = 1
 }
@@ -29,6 +30,8 @@ division_template = {
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
 		jeep = { x = 1 y = 0 }
 		jeep = { x = 1 y = 1 }
 		jeep = { x = 2 y = 0 }
@@ -36,6 +39,7 @@ division_template = {
 	}
 	support = {
         recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 	priority = 1
 }
@@ -51,6 +55,8 @@ division_template = {
 		motorized_rocket_brigade = { x = 0 y = 2 }
         mechanized = { x = 1 y = 0 }
         mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
 	}
 	support = {
         recon = { x = 0 y = 0 }
@@ -67,12 +73,18 @@ division_template = {
 		mechanized = { x = 0 y = 0 }
         mechanized = { x = 0 y = 1 }
 		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
 		modern_armor = { x = 1 y = 0 }
 		modern_armor = { x = 1 y = 1 }
         modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		modern_armor = { x = 1 y = 4 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -99,12 +111,15 @@ division_template = {
 	division_names_group = TRB_mnt_01
 
 	regiments = {
-		mountaineers = { x = 0 y = 0 }	
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
+		mechanized = { x = 0 y = 0 }	
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }	
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }		
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }	
 	}
 	support = { 	
 	}
@@ -116,7 +131,15 @@ units = {
 		location = 5253
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
+		start_equipment_factor = 0.9
+    }
+
+	division = {
+		name = "Main Tank-Division"
+		location = 5253
+		division_template = "Main Tank-Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.9
 
         }
 
@@ -125,16 +148,7 @@ units = {
 		location = 5253
 		division_template = "Main Tank-Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
-
-        }
-
-	division = {
-		name = "Main Tank-Division"
-		location = 5253
-		division_template = "Main Tank-Division"
-		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.7
 
         }
 
@@ -143,16 +157,50 @@ units = {
 		location = 5253
 		division_template = "TRB motorized"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
-
-        }
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "TRB motorized"
+		location = 5253
+		division_template = "TRB motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "TRB motorized"
+		location = 5253
+		division_template = "TRB motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "TRB motorized"
+		location = 5253
+		division_template = "TRB motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "TRB motorized"
+		location = 5253
+		division_template = "TRB motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "TRB motorized"
+		location = 5253
+		division_template = "TRB motorized"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.8
+    }
 
 	division = {
 		name = "TRB motorized"
 		location = 5253
 		division_template = "TRB motorized"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.7
 
         }
 
@@ -170,7 +218,7 @@ units = {
 		location = 5253
 		division_template = "TRB motorized"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.7
 
         }
 
@@ -179,9 +227,22 @@ units = {
 		location = 5253
 		division_template = "MNT division"
 		start_experience_factor = 0.4
-                start_equipment_factor = 0.8
-
-        }
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "MNT division"
+		location = 5253
+		division_template = "MNT division"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+    }
+	division = {
+		name = "MNT division"
+		location = 5253
+		division_template = "MNT division"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+    }
 
 	division = {
 		name = "MNT division"
@@ -197,16 +258,85 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
-
-        }
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
 
 	division = {
 		name = "Infantry Division"
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
+                start_equipment_factor = 0.7
 
         }
 
@@ -215,7 +345,7 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.7
 
         }
 
@@ -242,7 +372,43 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.5
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.7
+
+        }
+
+	division = {
+		name = "Infantry Division"
+		location = 5253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+                start_equipment_factor = 0.8
 
         }
 
@@ -269,7 +435,7 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
+                start_equipment_factor = 0.7
 
         }
 
@@ -278,16 +444,7 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
-
-        }
-
-	division = {
-		name = "Infantry Division"
-		location = 5253
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-                start_equipment_factor = 0.5
+                start_equipment_factor = 0.7
 
         }
 
@@ -296,34 +453,7 @@ units = {
 		location = 5253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
-
-        }
-
-	division = {
-		name = "Infantry Division"
-		location = 5253
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
-
-        }
-
-	division = {
-		name = "Infantry Division"
-		location = 5253
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-                start_equipment_factor = 0.5
-
-        }
-
-	division = {
-		name = "Infantry Division"
-		location = 5253
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-        start_equipment_factor = 0.5
+        start_equipment_factor = 0.7
     }
 
 	division = {
@@ -347,7 +477,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 
@@ -356,7 +486,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 
@@ -365,7 +495,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 
@@ -374,7 +504,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 
@@ -383,7 +513,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 
@@ -392,7 +522,7 @@ units = {
 		location = 5253
 		division_template = "Light Mechanized Division"
 		start_experience_factor = 0.2
-                start_equipment_factor = 0.6
+                start_equipment_factor = 0.9
 
         }
 }
@@ -402,17 +532,17 @@ air_wings = {
 		jet_fighter_equipment_1 = {
 			owner = "TRB" 
 			creator = "TRB"
-			amount = 105
+			amount = 190
 		}
 		CAS_equipment_1 = {
 			owner = "TRB" 
 			creator = "TRB"
-			amount = 36
+			amount = 45
 		}
 		nav_bomber_equipment_1 = {
 			owner = "TRB" 
 			creator = "TRB"
-			amount = 25
+			amount = 40
 		}
 		tac_bomber_equipment_1 = {
 			owner = "TRB" 
