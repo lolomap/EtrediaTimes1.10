@@ -73,3 +73,37 @@ less_trucks_1_YAN = {
 		value = 5
 	}
 }
+
+less_naval_invasions_YAN = {
+	enable = {
+		tag = YAN
+	}
+	abort = {
+		is_historical_focus_on = no
+	}
+	
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -25
+	}
+	ai_strategy = {
+		type = invade
+		id = SBU
+		value = -100
+	}
+	ai_strategy = {
+		type = invade
+		id = SFL
+		value = -100
+	}
+	ai_strategy = {
+		type = invade
+		id = TRB
+		value = -50
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = TRB
+		value = 10
+	}
+}

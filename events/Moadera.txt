@@ -10,8 +10,6 @@ country_event = {
 
 	trigger = {
         TAG = MOA
-		has_government = democratic
-		date > 2019.1.1
     }
 	
 	option = {

@@ -27,7 +27,7 @@ ZHE_external_politics = {
 			}
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 50
 		}
 	}
 	

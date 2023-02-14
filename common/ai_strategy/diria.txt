@@ -54,3 +54,24 @@ DIR_dont_join_war = {
     target_country = EIK
 	}
 }
+
+dem_world_war = {
+	enable = {
+		original_tag = DEM
+		DEM = { has_government = democratic }
+	}
+	abort = {
+		DEM = { has_government = communism }
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "SHE"
+		value = -100
+	}
+	ai_strategy = {
+		type = protect
+		id = "KAS"
+		value = -100
+	}
+}

@@ -141,3 +141,52 @@ country_event = {
 		add_war_support = 0.1
 	}
 }
+
+country_event = {
+	id = zhe.5
+	title = zhe.5.t
+	desc = zhe.5.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = TOR
+    }
+		
+	option = {
+	name = zhe.5.a
+		ZHE = {
+			white_peace = CHE
+			white_peace = ESS
+			white_peace = EIK
+			white_peace = YAN
+			white_peace = BAE
+			white_peace = TOL
+			white_peace = SHE
+			white_peace = ZAM
+			white_peace = IRI
+			leave_faction = no
+		}
+	    CHE = {
+			transfer_state = 594
+			transfer_state = 601
+			transfer_state = 602
+			transfer_state = 593
+		}
+		hidden_effect = {
+			CHE = {
+				transfer_state = 491
+				transfer_state = 492
+				transfer_state = 493
+			}
+			CHE = { set_country_flag = zhirok_win }
+		}
+		ai_chance = { factor = 90 }
+    }
+	
+	option = {
+	name = zhe.5.b
+		ai_chance = { factor = 10 }
+	}
+}

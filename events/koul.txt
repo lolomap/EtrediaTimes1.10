@@ -551,5 +551,6 @@ country_event = {
             type = annex_everything
             }
 	    }
+		ZHE = { create_faction = ZHE_anti_koul }
 	}
 }
