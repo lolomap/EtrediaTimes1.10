@@ -1,9 +1,6 @@
-UCB_kolechia = {
+UCB_annex_minors = {
 	enable = {
 		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = KOL }
 	}
 
 	ai_strategy = {
@@ -11,116 +8,60 @@ UCB_kolechia = {
 		id = "KOL"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "KOL"
-		value = 500
+		value = 10000
 	}
-}
-
-UCB_kima = {
-	enable = {
-		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = KIM }
-	}
-	
 	ai_strategy = {
 		type = annex
 		id = "KIM"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "KIM"
-		value = 500
+		value = 10000
 	}
-}
-
-UCB_dineria = {
-	enable = {
-		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = DIN }
-	}
-	
 	ai_strategy = {
 		type = annex
 		id = "DIN"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "DIN"
-		value = 500
+		value = 10000
 	}
-}
-
-UCB_arstinia = {
-	enable = {
-		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = ARS }
-	}
-	
 	ai_strategy = {
 		type = annex
 		id = "ARS"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "ARS"
-		value = 500
+		value = 10000
 	}
-}
-
-UCB_northrachia = {
-	enable = {
-		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = NRA }
-	}
-	
 	ai_strategy = {
 		type = annex
 		id = "NRA"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "NRA"
-		value = 500
+		value = 10000
 	}
-}
-
-UCB_southrachia = {
-	enable = {
-		original_tag = UCB
-	}
-	abort = {
-		NOT = { country_exists = SRA }
-	}
-	
 	ai_strategy = {
 		type = annex
 		id = "SRA"
 		value = 10000
 	}
-	
 	ai_strategy = {
 		type = conquer
 		id = "SRA"
-		value = 500
+		value = 10000
 	}
 }
 
@@ -164,6 +105,7 @@ ucb_protect_democratic_diria = {
 	}
 	abort = {
 		UCB = { has_government = communism }
+		EIK = { has_completed_focus = EIK_war_with_kaspa }
 	}
 
 	ai_strategy = {
@@ -208,7 +150,7 @@ UCB_template_design_1 = {
 	ai_strategy = {
 		type = template_prio
 		id = mechanized
-		value = 130
+		value = 70
 	}
 	ai_strategy = {
 		type = template_prio
@@ -227,7 +169,7 @@ UCB_template_design_2 = {
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 150
+		value = 70
 	}
 	ai_strategy = {
 		type = role_ratio

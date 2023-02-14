@@ -65,3 +65,30 @@ alliance_koul3 = {
         target = call_allies
     }
 }
+
+alliance_koul4 = {
+	allowed = {
+		original_tag = KLU
+	}
+    enable = {
+        original_tag = KLU
+    }
+	
+	ai_strategy = {
+        type = diplo_action_desire
+        id = EIK
+        value = -1000
+        target = call_allies
+    }
+	ai_strategy = {
+		type = alliance
+		id = EIK	
+		value = -1000
+	}
+	ai_strategy = {
+        type = diplo_action_acceptance
+        id = EIK
+        value = -1000
+        target = join_allies
+    }
+}

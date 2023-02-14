@@ -37,21 +37,37 @@ SFL_template_design_1 = {
 	}
 }
 
-SFL_template_design_2 = {
-	enable = {
-		original_tag = SFL			
+alliance_with_etredia1 = {
+	allowed = {
+		original_tag = SFL
 	}
-	abort = { 
-		always = no
+    enable = {
+        original_tag = SFL
+		SBU = { surrender_progress < 0.3 }
+    }
+	abort = {
+		SBU = { surrender_progress > 0.3 }
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = UCB	
+		value = -100000
 	}
 	ai_strategy = {
-		type = role_ratio
-		id = mechanized
-		value = 150
+		type = alliance
+		id = SBU	
+		value = -100000
 	}
 	ai_strategy = {
-		type = role_ratio
-		id = motorized
-		value = 50
+		type = alliance
+		id = KAR	
+		value = -100000
 	}
+	ai_strategy = {
+        type = diplo_action_acceptance
+        id = UCB
+        value = -100000
+        target = join_allies
+    }
 }

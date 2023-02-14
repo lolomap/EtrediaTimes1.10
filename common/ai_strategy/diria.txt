@@ -23,3 +23,34 @@ DIR_war_dem = {
 		value = 100
 	}
 }
+
+DIR_dont_join_war = {
+	enable = {
+		original_tag = DEM
+		UCB = { has_war_with = EIK }
+	}
+
+	ai_strategy = {
+        type = diplo_action_desire
+        id = UCB
+        value = -50
+        target = call_allies
+    }
+	ai_strategy = {
+		type = alliance
+		id = UCB	
+		value = -25
+	}
+	ai_strategy = {
+        type = diplo_action_acceptance
+        id = UCB
+        value = -50
+        target = join_allies
+    }
+	ai_strategy = {
+    type = dont_join_wars_with
+    id = DEM
+    value = 100000
+    target_country = EIK
+	}
+}

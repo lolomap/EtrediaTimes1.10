@@ -442,22 +442,22 @@ air_wings = {
 		jet_fighter_equipment_1 = {
 			owner = "CHE" 
 			creator = "CHE"
-			amount = 100
+			amount = 342
 		}
 		CAS_equipment_0 = {
 			owner = "CHE" 
 			creator = "CHE"
-			amount = 40
+			amount = 45
 		}
 		nav_bomber_equipment_1 = {
 			owner = "CHE" 
 			creator = "CHE"
-			amount = 10
+			amount = 20
 		}
 		tac_bomber_equipment_1 = {
 			owner = "CHE" 
 			creator = "CHE"
-			amount = 8
+			amount = 12
 		}
 	}
 }

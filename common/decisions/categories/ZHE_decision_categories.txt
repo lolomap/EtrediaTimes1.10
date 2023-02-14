@@ -1,0 +1,13 @@
+ZHE_internal_politics = {
+	visible = {
+		always = yes
+	}
+}
+
+ZHE_external_politics = {
+	visible = {
+		original_tag = ZHE
+		#SBU = { has_completed_focus = SBU_aldeko_operation }
+		#SBU = { has_war = yes }
+	}
+}

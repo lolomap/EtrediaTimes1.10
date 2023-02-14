@@ -565,6 +565,11 @@ air_wings = {
 		tac_bomber_equipment_1 = {
 			owner = "FSC" 
 			creator = "FSC"
+			amount = 30
+		}
+		strat_bomber_equipment_1 = {
+			owner = "FSC"
+			creator = "FSC"
 			amount = 12
 		}
 	}

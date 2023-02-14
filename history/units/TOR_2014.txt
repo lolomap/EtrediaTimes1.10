@@ -263,3 +263,18 @@ units = {
         start_equipment_factor = 0.6
     }
 }
+
+air_wings = {
+	572 = {
+		jet_fighter_equipment_1 = {
+			owner = "TOR" 
+			creator = "TOR"
+			amount = 150
+		}
+		CAS_equipment_0 = {
+			owner = "TOR" 
+			creator = "TOR"
+			amount = 20
+		}
+	}
+}

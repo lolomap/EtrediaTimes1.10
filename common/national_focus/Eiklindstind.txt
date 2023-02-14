@@ -835,6 +835,21 @@ focus_tree = {
 			}
 			CHE = { country_event = { id = che.3 days = 1 } }
 		}
+		ai_will_do = {
+		factor = 0.5
+			modifier = {
+			factor = -5
+				NOT = { 157 = { is_controlled_by = EIK } }
+			}
+			modifier = {
+			factor = -5
+				NOT = { 392 = { is_controlled_by = EIK } }
+			}
+			modifier = {
+			factor = -5
+				NOT = { 326 = { is_controlled_by = EIK } }
+			}
+		}
 		x = 22
 		y = 11
 	}
