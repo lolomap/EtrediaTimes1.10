@@ -30,6 +30,7 @@ set_technology = {
 	basic_light_tank = 1
 	improved_light_tank = 1
         basic_medium_tank = 1
+	improved_light_tank = 1
 	advanced_medium_tank = 1
 	main_battle_tank = 1
 	tech_mountaineers = 1

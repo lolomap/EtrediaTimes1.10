@@ -1,0 +1,192 @@
+add_namespace = zhe
+
+country_event = {
+	id = zhe.1
+	title = zhe.1.t
+	desc = zhe.1.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ZHE
+    }
+    	
+	option = {
+    name = zhe.1.a
+		trigger = { TAG = ZHE }
+		add_political_power = 50
+		army_experience = 15
+		air_experience = 15
+		hidden_effect = {
+			ZHE = {
+				transfer_state = 492
+				add_state_claim = 492
+				add_state_claim = 493
+			}
+			LBD = {
+				transfer_state = 491
+				add_state_claim = 491
+			}
+		}
+	}
+	option = {
+    name = zhe.1.b
+		trigger = { TAG = CHE }
+		add_political_power = -100
+		add_stability = -0.08
+		add_war_support = -0.08
+		army_experience = 15
+		air_experience = 15
+		create_wargoal = {
+			type = annex_everything
+			target = ZHE
+		}
+	}
+}
+country_event = {
+	id = zhe.2
+	title = zhe.2.t
+	desc = zhe.2.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ZHE
+    }
+    	
+	option = {
+    name = zhe.2.a
+		trigger = { TAG = ZHE }
+		add_political_power = -100
+		add_stability = -0.08
+		add_war_support = -0.08
+		army_experience = 15
+		air_experience = 15
+	}
+	option = {
+    name = zhe.2.b
+		trigger = { TAG = CHE }
+		add_political_power = 50
+		army_experience = 15
+		air_experience = 15
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = zhe.3
+	title = zhe.3.t
+	desc = zhe.3.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ZHE
+    }
+    	
+	option = {
+    name = zhe.3.a
+		trigger = { TAG = ZHE }
+		add_political_power = 100
+		army_experience = 20
+		air_experience = 20
+		hidden_effect = {
+			ZHE = {
+				transfer_state = 493
+			}
+		}
+	}
+	option = {
+    name = zhe.3.b
+		trigger = { TAG = CHE }
+		add_political_power = -150
+		add_stability = -0.1
+		add_war_support = -0.1
+		army_experience = 20
+		air_experience = 20
+	}
+}
+country_event = {
+	id = zhe.4
+	title = zhe.4.t
+	desc = zhe.4.d
+	picture = GFX_news_event
+	
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ZHE
+    }
+    	
+	option = {
+    name = zhe.4.a
+		trigger = { TAG = ZHE }
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.05
+		army_experience = 20
+		air_experience = 20
+	}
+	option = {
+    name = zhe.4.b
+		trigger = { TAG = CHE }
+		add_political_power = 100
+		army_experience = 20
+		air_experience = 20
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = zhe.5
+	title = zhe.5.t
+	desc = zhe.5.d
+	picture = GFX_news_even
+
+    is_triggered_only = yes
+
+	trigger = {
+        TAG = ZHE
+    }
+		
+	option = {
+	name = zhe.5.a
+		ZHE = {
+			white_peace = CHE
+			white_peace = ESS
+			white_peace = EIK
+			white_peace = YAN
+			white_peace = BAE
+			white_peace = TOL
+			white_peace = SHE
+			white_peace = ZAM
+			white_peace = IRI
+			leave_faction = yes
+		}
+		ZHE = { create_faction = ZHE_anti_koul }
+	    CHE = {
+			transfer_state = 594
+			transfer_state = 601
+			transfer_state = 602
+			transfer_state = 593
+		}
+		hidden_effect = {
+			CHE = {
+				transfer_state = 491
+				transfer_state = 492
+				transfer_state = 493
+			}
+			CHE = { set_country_flag = zhirok_win }
+		}
+		ai_chance = { factor = 100 }
+    }
+	
+	option = {
+	name = zhe.5.b
+	}
+}

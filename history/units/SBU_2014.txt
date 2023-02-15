@@ -679,5 +679,10 @@ air_wings = {
 			creator = "SBU"
 			amount = 120
 		}
+		strat_bomber_equipment_1 = {
+			owner = "SBU"
+			creator = "SBU"
+			amount = 105
+		}
 	}
 }

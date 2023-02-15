@@ -394,5 +394,12 @@ focus_tree = {
 		completion_reward = {
         KLU = { country_event = { id = klu.20 days = 1 } }
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			ZHE = { NOT = { has_war_with = CHE } }
+			factor = -5
+			}
+		}
 	}
 }

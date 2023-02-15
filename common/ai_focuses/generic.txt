@@ -46,7 +46,7 @@ ai_focus_military_advancements = {
 		decryption_tech = 7.5
 		synth_resources = 3.0
 		motorized_equipment = 4.0
-		nuclear = 5.0
+		nuclear = 2.0
 		night_vision = 5.0
 	}
 }

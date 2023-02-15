@@ -74,3 +74,52 @@ KAR_template_design_2 = {
 		value = -400
 	}
 }
+
+UCB_world_war = {
+	enable = {
+		original_tag = KAR			
+	}
+	abort = { 
+		is_historical_focus_on = no
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TRB
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RTT
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TOR
+		value = 50
+	}
+	ai_strategy = {
+		type = invade
+		id = EIK
+		value = -50
+	}
+	ai_strategy = {
+		type = invade
+		id = YAN
+		value = -50
+	}
+	ai_strategy = {
+		type = invade
+		id = TOL
+		value = -50
+	}
+	ai_strategy = {
+		type = invade
+		id = BAE
+		value = -50
+	}
+	ai_strategy = {
+		type = invade
+		id = CHE
+		value = -50
+	}
+}

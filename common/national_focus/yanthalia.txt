@@ -1192,9 +1192,9 @@ focus_tree = {
 			factor = 5
 	    }
 		completion_reward = {
-		SMA = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
-		DID = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
-		DON = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+			SMA = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+			DID = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
+			DON = { add_opinion_modifier = { target = ROOT modifier = YAN_oceanic_relations } }
 		}
 		x = 39
 		y = 4
@@ -1217,7 +1217,7 @@ focus_tree = {
 			factor = 7
 	    }
 		completion_reward = {
-		YAN = { add_timed_idea { idea = YAN_prepare_for_war days = 230 } }
+			YAN = { add_timed_idea { idea = YAN_prepare_for_war days = 230 } }
 		}
 		x = 39
 		y = 5
@@ -1236,7 +1236,7 @@ focus_tree = {
 	    }
 		completion_reward = {
 			YAN = { country_event { id = yan.5 days = 1 } }
-			add_state_claim = 362
+			YAN = { add_state_claim = 362 }
 			hidden_effect = {news_event = {id = newss.25 days = 1}}
 		}
 		x = 37
@@ -1256,6 +1256,7 @@ focus_tree = {
 		completion_reward = {
 		YAN = { country_event { id = yan.6 days = 1 } }
 		add_state_claim = 375
+		add_state_claim = 376
 		add_state_claim = 377
 		add_state_claim = 378
 		add_state_claim = 379
@@ -1284,9 +1285,12 @@ focus_tree = {
 			factor = 10
 	    }
 		completion_reward = {
-		YAN = { country_event { id = yan.7 days = 1 } }
-		add_state_claim = 373
-		add_state_claim = 374
+			YAN = { country_event { id = yan.7 days = 1 } }
+			add_state_claim = 370
+			add_state_claim = 371
+			add_state_claim = 372
+			add_state_claim = 373
+			add_state_claim = 374
 		}
 		x = 39
 		y = 7

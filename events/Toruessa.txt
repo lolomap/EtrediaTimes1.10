@@ -95,6 +95,7 @@ country_event = {
             id = newss.15
             days = 1
             }
+			CHE = { set_country_flag = torka_win }
         }	
     ai_chance = { factor = 90 }
     }

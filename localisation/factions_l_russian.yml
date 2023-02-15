@@ -6,6 +6,7 @@
  FACTION_NAME_GER_fascism:0 "Ось"
  FACTION_NAME_GER_none:0 "Ось"
  FACTION_NAME_IDEOLOGY_DEFAULT:0 "Приверженцы идеологии $IDEOLOGY$"
+ ZHE_anti_koul:0 "Блок взаимопомощи"
  french_alliance:0 "Французский Союз"
  the_berlin_moscow_axis:0 "Ось Берлин-Москва"
  domination_francaise:0 "Французский Доминион"

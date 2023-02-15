@@ -16,6 +16,7 @@ state={
 			infrastructure = 6
                         industrial_complex = 3
                         arms_factory = 1
+			air_base = 4
 		}
 		add_core_of = TOR
 		victory_points = {

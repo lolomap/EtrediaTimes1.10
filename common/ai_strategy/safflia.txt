@@ -37,21 +37,69 @@ SFL_template_design_1 = {
 	}
 }
 
-SFL_template_design_2 = {
+alliance_with_etredia1 = {
+	allowed = {
+		original_tag = SFL
+	}
+    enable = {
+        original_tag = SFL
+    }
+	abort = {
+		OR = {
+		SBU = { surrender_progress > 0.3 }
+		SFL = { has_war_with = EIK }
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = UCB	
+		value = -100000
+	}
+	ai_strategy = {
+		type = alliance
+		id = SBU	
+		value = -100000
+	}
+	ai_strategy = {
+		type = alliance
+		id = KAR	
+		value = -100000
+	}
+	ai_strategy = {
+        type = diplo_action_acceptance
+        id = UCB
+        value = -100000
+        target = join_allies
+    }
+}
+
+sfl_world_war = {
 	enable = {
-		original_tag = SFL			
+		original_tag = SFL
+		SFL = { has_government = democratic }
 	}
-	abort = { 
-		always = no
+	abort = {
+		OR = {
+			SFL = { has_government = fascism }
+			is_historical_focus_on = no
+			SFL = { has_war_with = EIK }
+		}
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "SHE"
+		value = -1000
 	}
 	ai_strategy = {
-		type = role_ratio
-		id = mechanized
-		value = 150
+		type = protect
+		id = "KAS"
+		value = -10000
 	}
 	ai_strategy = {
-		type = role_ratio
-		id = motorized
-		value = 50
+		type = protect
+		id = "DEM"
+		value = -1000
 	}
 }

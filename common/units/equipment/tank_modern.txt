@@ -26,14 +26,14 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 8
-		breakthrough = 70
-		hardness = 0.98
+		breakthrough = 55
+		hardness = 0.90
 		armor_value = 100
 
 		#Offensive Abilities
 		soft_attack = 40
-		hard_attack = 28
-		ap_attack = 110
+		hard_attack = 24
+		ap_attack = 95
 		air_attack = 0
 
 		#Space taken in convoy
@@ -75,13 +75,13 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 10
-		breakthrough = 78
+		breakthrough = 70
 		armor_value = 110
 
 		#Offensive Abilities
 		soft_attack = 42
-		hard_attack = 30
-		ap_attack = 115
+		hard_attack = 26
+		ap_attack = 108
 		air_attack = 0
 
 		build_cost_ic = 22
@@ -109,13 +109,13 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 14
-		breakthrough = 86
-		armor_value = 125
+		breakthrough = 82
+		armor_value = 120
 
 		#Offensive Abilities
 		soft_attack = 46
-		hard_attack = 36
-		ap_attack = 130
+		hard_attack = 32
+		ap_attack = 118
 		air_attack = 0
 
 		build_cost_ic = 26
@@ -143,13 +143,13 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 18
-		breakthrough = 100
-		armor_value = 145
+		breakthrough = 96
+		armor_value = 140
 
 		#Offensive Abilities
 		soft_attack = 60
-		hard_attack = 50
-		ap_attack = 155
+		hard_attack = 45
+		ap_attack = 130
 		air_attack = 0
 
 		build_cost_ic = 32
@@ -319,14 +319,14 @@ equipments = {
 		soft_attack = 9
 		hard_attack = 7.5
 		ap_attack = 100
-		air_attack = 50
+		air_attack = 160
 		
 		build_cost_ic = 28
 		
 		resources = {
-			#oil = 1
-			steel = 3
-			chromium = 4
+			chromium = 6
+			steel = 4
+			tungsten = 1
 		}
 		fuel_consumption = 1.25
 	}

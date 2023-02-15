@@ -157,16 +157,21 @@ KAR_dirian_civil_war = {
 			DEM = { has_war_with = DIR }
 		}
 		available = {
-			DEM = { surrender_progress > 0.3 }
-			date > 2017.1.1
+			OR = {
+				DEM = { surrender_progress > 0.3 }
+				date > 2018.1.1
+			}
 		}
 		
 		complete_effect = {
-			
+			create_wargoal = {
+                type = puppet_wargoal_focus
+                target = DIR
+            }
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 			modifier = {
 				factor = -100
 				KAR = { has_war = yes }
@@ -174,6 +179,10 @@ KAR_dirian_civil_war = {
 			modifier = {
 				factor = 5
 				DEM = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				factor = -5
+				DEM = { surrender_progress < 0.5 }
 			}
 		}
 	}
