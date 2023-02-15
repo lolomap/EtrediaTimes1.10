@@ -151,7 +151,7 @@ country_event = {
     is_triggered_only = yes
 
 	trigger = {
-        TAG = TOR
+        TAG = ZHE
     }
 		
 	option = {
@@ -166,8 +166,9 @@ country_event = {
 			white_peace = SHE
 			white_peace = ZAM
 			white_peace = IRI
-			leave_faction = no
+			leave_faction = yes
 		}
+		ZHE = { create_faction = ZHE_anti_koul }
 	    CHE = {
 			transfer_state = 594
 			transfer_state = 601
@@ -182,11 +183,10 @@ country_event = {
 			}
 			CHE = { set_country_flag = zhirok_win }
 		}
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
     }
 	
 	option = {
 	name = zhe.5.b
-		ai_chance = { factor = 10 }
 	}
 }

@@ -104,6 +104,6 @@ less_naval_invasions_YAN = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = TRB
-		value = 10
+		value = 2
 	}
 }

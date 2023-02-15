@@ -43,10 +43,12 @@ alliance_with_etredia1 = {
 	}
     enable = {
         original_tag = SFL
-		SBU = { surrender_progress < 0.3 }
     }
 	abort = {
+		OR = {
 		SBU = { surrender_progress > 0.3 }
+		SFL = { has_war_with = EIK }
+		}
 	}
 	
 	ai_strategy = {
@@ -81,22 +83,23 @@ sfl_world_war = {
 		OR = {
 			SFL = { has_government = fascism }
 			is_historical_focus_on = no
+			SFL = { has_war_with = EIK }
 		}
 	}
 	
 	ai_strategy = {
 		type = protect
 		id = "SHE"
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = protect
 		id = "KAS"
-		value = -100
+		value = -10000
 	}
 	ai_strategy = {
 		type = protect
 		id = "DEM"
-		value = -100
+		value = -1000
 	}
 }

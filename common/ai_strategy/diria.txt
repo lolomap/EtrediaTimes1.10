@@ -58,7 +58,6 @@ DIR_dont_join_war = {
 dem_world_war = {
 	enable = {
 		original_tag = DEM
-		DEM = { has_government = democratic }
 	}
 	abort = {
 		DEM = { has_government = communism }
@@ -67,11 +66,11 @@ dem_world_war = {
 	ai_strategy = {
 		type = protect
 		id = "SHE"
-		value = -100
+		value = -1000
 	}
 	ai_strategy = {
 		type = protect
 		id = "KAS"
-		value = -100
+		value = -1000
 	}
 }

@@ -113,7 +113,7 @@ buildings = {
 		disabled_in_dmz = yes
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
-		damage_factor = 0.1
+		damage_factor = 0.4
 		value = 1
 	}
 
@@ -130,7 +130,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
+		fuel_gain_from_states = 4.0 #per hour
 	}
 
 	fuel_silo = {

@@ -319,14 +319,14 @@ equipments = {
 		soft_attack = 9
 		hard_attack = 7.5
 		ap_attack = 100
-		air_attack = 50
+		air_attack = 160
 		
 		build_cost_ic = 28
 		
 		resources = {
-			#oil = 1
-			steel = 3
-			chromium = 4
+			chromium = 6
+			steel = 4
+			tungsten = 1
 		}
 		fuel_consumption = 1.25
 	}

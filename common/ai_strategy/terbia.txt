@@ -62,6 +62,6 @@ trb_commi_make_divisions = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = "SBU"			
-		value = 10
+		value = 5
 	}
 }
