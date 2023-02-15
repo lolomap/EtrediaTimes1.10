@@ -286,6 +286,13 @@ foreign_influence = {
 
 political_actions = {
 
+    change_politform = {
+        days_remove = 180
+        remove_effect = {
+            set_country_flag = {flag = politform_change_available value = 1 days = 30}
+        }
+    }
+
 	left_pressure = {
 		available = {
 			has_government = democratic

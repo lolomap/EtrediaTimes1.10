@@ -6,7 +6,7 @@ ideas = {
             }
 			removal_cost = -1
 
-            allowed = {
+            available = {
                 has_government = fascism
             }
 
@@ -37,7 +37,7 @@ ideas = {
             }
 			removal_cost = -1
 
-            allowed = {
+            available = {
                 has_government = democratic
             }
 
@@ -68,7 +68,7 @@ ideas = {
             }
 			removal_cost = -1
 
-            allowed = {
+            available = {
                 has_government = communism
             }
 
@@ -99,7 +99,7 @@ ideas = {
             }
 			removal_cost = -1
 
-            allowed = {
+            available = {
                 has_government = neutrality
             }
 
@@ -130,7 +130,7 @@ ideas = {
             }
 			removal_cost = -1
 
-            allowed = {
+            available = {
                 has_government = monarchism
             }
 

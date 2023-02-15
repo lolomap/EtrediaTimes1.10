@@ -10,6 +10,7 @@ focus_tree = {
 	default = no
 	
 	reset_on_civilwar = no
+    continuous_focus_position = { x = 0 y = 2000 }
 
 	focus = {
 		id = IID_magna_reto
@@ -103,6 +104,247 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = IID_continue_the_dux_way
+		}
+
+        available = {democratic > 0.05}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_agitation
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_thirst_for_freedom
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_show_problems
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_thirst_for_freedom
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_show_others
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IID_thirst_for_freedom
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_organisation
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_agitation
+            focus = IID_show_problems
+            focus = IID_show_others
+		}
+
+        available = {democratic > 0.2}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_horizontal_connects
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_organisation
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_recruitment
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_organisation
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_hidden_press
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_organisation
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_com_friends
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_recruitment
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_populism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_com_friends
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_hidden_party
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = IID_horizontal_connects
+		}
+        prerequisite = {
+            focus = IID_hidden_press
+            focus = IID_dem_recruitment
+        }
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_first_meeting
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IID_hidden_party
+		}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_motherland
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = IID_first_meeting
+		}
+        mutually_exclusive = {focus = IID_dem_power_only}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_dem_power_only
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = IID_first_meeting
+		}
+        mutually_exclusive = {focus = IID_dem_motherland}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_shoot_rebel
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 6
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_motherland
+            focus = IID_dem_power_only
+		}
+        mutually_exclusive = {focus = IID_peace_rebel}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_peace_rebel
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = IID_dem_motherland
+            focus = IID_dem_power_only
+		}
+        mutually_exclusive = {focus = IID_shoot_rebel}
+
+		completion_reward = {
+		}
+	}
+
+    focus = {
+		id = IID_big_strike
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 10
+		cost = 10
+		prerequisite = {
+			focus = IID_shoot_rebel
+            focus = IID_peace_rebel
 		}
 
 		completion_reward = {
@@ -683,6 +925,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            swap_ideas = {
+                add_idea = IID_Dux2
+                remove_idea = IID_Dux
+            }
 		}
 	}
 	
@@ -697,6 +943,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
 		}
 	}
 	
@@ -711,6 +963,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            add_extra_state_shared_building_slots = 4
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+            }
 		}
 	}
 	
@@ -728,6 +986,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            add_popularity = {ideology = democratic popularity = -0.025}
+            add_popularity = {ideology = communism popularity = -0.025}
+            add_popularity = {ideology = monarchism popularity = 0.05}
+            add_popularity = {ideology = neutrality popularity = 0.05}
 		}
 	}
 	
@@ -742,6 +1004,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            add_research_slot = 1
 		}
 	}
 	
@@ -756,6 +1019,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+            add_ideas = IID_licenses
 		}
 	}
 	

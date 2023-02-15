@@ -3,6 +3,9 @@
  embargo_initiator:0 "Инициатор эмбарго"
  embargo_target:0 "Цель эмбарго"
 
+ political_form_cost_factor: "Затраты на смену политического строя"
+ press_laws_cost_factor: "Затраты на законы о СМИ"
+
  IID_pressureTRP:0 "Давление от ИИД"
 
  war_tire_value:0 "[?wtire|0]"
