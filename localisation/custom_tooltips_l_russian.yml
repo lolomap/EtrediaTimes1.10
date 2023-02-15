@@ -22,6 +22,8 @@
   SFL_var_tooltip: "[?SFL.trade_reverse]"
   SBU_var_tooltip: "[?SBU.trade_war]"
   sz_more_then_5m: "Как минимум §Y5§! стран со §Yсредним§! влиянием SZ и выше"
+
+  politform_change_available: "Доступно изменение политического строя"
   
   YAN_planes_production_tooltip:0 "Станет доступен концерн «CVT_Toika»"
   YAN_tank_concern:0 "Станет доступен концерн «CREDORA»"
@@ -45,6 +47,7 @@
   wtire_reduce_20:0 "Военная усталость уменьшится на §G20§!\n"
   wtire_reduce_10:0 "Военная усталость уменьшится на §G10§!\n"
   wtire_reduce_focus:0 "Рост военной усталости: §G-15%§!\n"
+  wtire_cost_focus: "Рост военной усталости: §R15%§!\n"
   world_influence_cost_5:0 "Штраф к мировому влиянию : §R5%§!\n"
   world_influence_cost_10:0 "Штраф к мировому влиянию : §R10%§!\n"
   world_influence_cost_15:0 "Штраф к мировому влиянию : §R15%§!\n"

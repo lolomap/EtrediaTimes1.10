@@ -1,8 +1,8 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10412;10482;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10863;11070;impassable;-1;-1;-1;-1;-1;;Lonaritia
-9863;9899;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10806;11059;impassable;-1;-1;-1;-1;-1;;Lonaritia
+9863;9899;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10845;10982;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10449;10573;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9603;9843;impassable;-1;-1;-1;-1;-1;;Lonaritia
@@ -10,8 +10,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10845;10914;impassable;-1;-1;-1;-1;-1;;Lonaritia
 11163;11309;impassable;-1;-1;-1;-1;-1;;Lonaritia
 11005;11163;impassable;-1;-1;-1;-1;-1;;Lonaritia
-9953;9992;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10573;10794;impassable;-1;-1;-1;-1;-1;;Lonaritia
+9953;9992;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9974;10089;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9826;9992;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9771;9843;impassable;-1;-1;-1;-1;-1;;Lonaritia
@@ -31,8 +31,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10864;10967;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10728;10845;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9602;13417;impassable;-1;-1;-1;-1;-1;;Lonaritia
-10353;10573;impassable;-1;-1;-1;-1;-1;;Lonaritia
 11015;11201;impassable;-1;-1;-1;-1;-1;;Lonaritia
+10353;10573;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10496;10656;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10353;10496;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10070;10287;impassable;-1;-1;-1;-1;-1;;Lonaritia
@@ -63,11 +63,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10700;10727;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10794;10902;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10603;10728;impassable;-1;-1;-1;-1;-1;;Lonaritia
+10484;10603;impassable;-1;-1;-1;-1;-1;;Lonaritia
 11162;11163;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9899;10007;impassable;-1;-1;-1;-1;-1;;Lonaritia
 9974;10152;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10863;11096;impassable;-1;-1;-1;-1;-1;;Lonaritia
-10484;10603;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10794;11059;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10288;10466;impassable;-1;-1;-1;-1;-1;;Lonaritia
 10264;10288;impassable;-1;-1;-1;-1;-1;;Lonaritia

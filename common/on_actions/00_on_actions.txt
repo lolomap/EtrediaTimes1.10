@@ -673,6 +673,10 @@ on_actions = {
                         multiply_variable = {wtire_to_add = 0.85}
                     }
                     if = {
+                        limit = {has_country_flag = do_cost_wtire}
+                        multiply_variable = {wtire_to_add = 1.15}
+                    }
+                    if = {
                         limit = {has_country_flag = do_reduce_wtire_advisor}
                         multiply_variable = {wtire_to_add = 0.85}
                     }

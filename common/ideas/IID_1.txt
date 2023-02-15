@@ -126,6 +126,33 @@ ideas = {
 			}
 		}
 
+        IID_Dux2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.2
+				stability_factor = 0.1
+                justify_war_goal_time = -0.15
+                generate_wargoal_tension = -0.1
+                send_volunteer_factor = 0.5
+			}
+		}
+
+        IID_licenses = {
+            allowed = {
+                always = no
+            }
+            removal_cost = -1
+
+            modifier = {
+                license_production_speed = 0.5
+                license_tech_difference_speed = 0.25
+            }
+        }
+
 		IID_investations_climate = {
 			allowed = {
 				always = no

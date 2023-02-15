@@ -1,0 +1,292 @@
+ideas = {
+    political_form = {
+        law = yes
+
+        leadership_d = {
+            visible= {has_government = democratic}
+            available = { has_country_flag = politform_change_available}
+
+            cost = 150
+            removal_cost = -1
+
+            on_add = {
+                set_country_flag = do_reduce_wtire
+            }
+            on_remove = {
+                clr_country_flag = do_reduce_wtire
+            }
+
+            modifier = {
+                war_support_factor = 0.2
+                max_command_power = 50
+                command_power_gain_mult = 0.1
+                custom_modifier_tooltip = wtire_reduce_focus
+
+                drift_defence_factor = -0.5
+                resistance_activity = 0.2
+                democratic_drift = -0.02
+            }
+
+            cancel_if_invalid = no
+        }
+        leadership_c = {
+            visible= {has_government = communism}
+            available = { has_country_flag = politform_change_available}
+
+            cost = 150
+            removal_cost = -1
+
+            on_add = {
+                set_country_flag = do_reduce_wtire
+            }
+            on_remove = {
+                clr_country_flag = do_reduce_wtire
+            }
+
+            modifier = {
+                war_support_factor = 0.2
+                max_command_power = 50
+                command_power_gain_mult = 0.1
+                custom_modifier_tooltip = wtire_reduce_focus
+
+                drift_defence_factor = -0.5
+                resistance_activity = 0.2
+                communism_drift = -0.02
+            }
+
+            cancel_if_invalid = no
+        }
+        leadership_n = {
+            visible= {has_government = neutrality}
+            available = { has_country_flag = politform_change_available}
+
+            cost = 150
+            removal_cost = -1
+
+            on_add = {
+                set_country_flag = do_reduce_wtire
+            }
+                on_remove = {
+                clr_country_flag = do_reduce_wtire
+            }
+
+            modifier = {
+                war_support_factor = 0.2
+                max_command_power = 50
+                command_power_gain_mult = 0.1
+                custom_modifier_tooltip = wtire_reduce_focus
+
+                drift_defence_factor = -0.5
+                resistance_activity = 0.2
+                neutrality_drift = -0.02
+            }
+
+            cancel_if_invalid = no
+        }
+        leadership_f = {
+            visible= {has_government = fascism}
+            available = { has_country_flag = politform_change_available}
+
+            cost = 150
+            removal_cost = -1
+
+            on_add = {
+                set_country_flag = do_reduce_wtire
+            }
+            on_remove = {
+                clr_country_flag = do_reduce_wtire
+            }
+
+            modifier = {
+                war_support_factor = 0.2
+                max_command_power = 50
+                command_power_gain_mult = 0.1
+                custom_modifier_tooltip = wtire_reduce_focus
+
+                drift_defence_factor = -0.5
+                resistance_activity = 0.2
+                fascism_drift = -0.02
+            }
+
+            cancel_if_invalid = no
+        }
+        leadership_m = {
+            visible= {has_government = monarchism}
+            available = { has_country_flag = politform_change_available}
+
+            cost = 150
+            removal_cost = -1
+
+            on_add = {
+                set_country_flag = do_reduce_wtire
+            }
+            on_remove = {
+                clr_country_flag = do_reduce_wtire
+            }
+
+            modifier = {
+                war_support_factor = 0.2
+                max_command_power = 50
+                command_power_gain_mult = 0.1
+                custom_modifier_tooltip = wtire_reduce_focus
+
+                drift_defence_factor = -0.5
+                resistance_activity = 0.2
+                monarchism_drift = -0.02
+            }
+
+            cancel_if_invalid = no
+        }
+
+        continuity_d = {
+            visible= {has_government = democratic}
+            available = { has_country_flag = politform_change_available}
+            cost = 150
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.2
+                democratic_drift = 0.02
+
+                political_advisor_cost_factor = 0.3
+mobilization_laws_cost_factor = 0.3
+                trade_laws_cost_factor = 0.3
+                economy_cost_factor = 0.3
+                political_advisor_factor = 0.3
+                press_laws_cost_factor = 0.3
+                political_form_cost_factor = 0.3
+                political_power_factor = -0.3
+            }
+
+            cancel_if_invalid = no
+        }
+        continuity_с = {
+            visible= {has_government = communism}
+            available = { has_country_flag = politform_change_available}
+            cost = 150
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.2
+                communism_drift = 0.02
+
+                political_advisor_cost_factor = 0.3
+mobilization_laws_cost_factor = 0.3
+                trade_laws_cost_factor = 0.3
+                economy_cost_factor = 0.3
+                political_advisor_factor = 0.3
+                press_laws_cost_factor = 0.3
+                political_form_cost_factor = 0.3
+                political_power_factor = -0.3
+            }
+
+            cancel_if_invalid = no
+        }
+        continuity_f = {
+            visible= {has_government = fascism}
+            available = { has_country_flag = politform_change_available}
+            cost = 150
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.2
+                fascism_drift = 0.02
+
+                political_advisor_cost_factor = 0.3
+mobilization_laws_cost_factor = 0.3
+                trade_laws_cost_factor = 0.3
+                economy_cost_factor = 0.3
+                political_advisor_factor = 0.3
+                press_laws_cost_factor = 0.3
+                political_form_cost_factor = 0.3
+                political_power_factor = -0.3
+            }
+
+            cancel_if_invalid = no
+        }
+        continuity_n = {
+            visible= {has_government = neutrality}
+            available = { has_country_flag = politform_change_available}
+            cost = 150
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.2
+                neutrality_drift = 0.02
+
+                political_advisor_cost_factor = 0.3
+mobilization_laws_cost_factor = 0.3
+                trade_laws_cost_factor = 0.3
+                economy_cost_factor = 0.3
+                political_advisor_factor = 0.3
+                press_laws_cost_factor = 0.3
+                political_form_cost_factor = 0.3
+                political_power_factor = -0.3
+            }
+
+            cancel_if_invalid = no
+        }
+        continuity_m = {
+            visible= {has_government = monarchism}
+            available = { has_country_flag = politform_change_available}
+            cost = 150
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.2
+                monarchism_drift = 0.02
+
+                political_advisor_cost_factor = 0.3
+mobilization_laws_cost_factor = 0.3
+                trade_laws_cost_factor = 0.3
+                economy_cost_factor = 0.3
+                political_advisor_factor = 0.3
+                press_laws_cost_factor = 0.3
+                political_form_cost_factor = 0.3
+                political_power_factor = -0.3
+            }
+
+            cancel_if_invalid = no
+        }
+
+        fractionism = {
+            cost = 150
+            removal_cost = -1
+            available = { has_country_flag = politform_change_available}
+
+            on_add = {
+                set_country_flag = do_cost_wtire
+            }
+            on_remove = {
+                clr_country_flag = do_cost_wtire
+            }
+
+            modifier = {
+                political_power_factor = 0.6
+
+                stability_factor = -0.2
+                command_power_gain_mult = -0.2
+                max_command_power = -50
+                justify_war_goal_time = 0.5
+
+                custom_modifier_tooltip = wtire_cost_focus
+            }
+
+            cancel_if_invalid = no
+        }   
+
+        regionalism = {
+            cost = 150
+            removal_cost = -1
+
+            available = { has_country_flag = politform_change_available}
+
+            modifier = {
+                stability_factor = 0.25
+                consumer_goods_factor = 0.2
+            }
+
+            cancel_if_invalid = no
+        }
+    }
+}
