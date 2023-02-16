@@ -145,18 +145,6 @@ on_actions = {
 						value = 100
 					}
 				}
-				random_neighbor_country = {
-					limit = {
-						any_owned_state = {
-							is_on_continent = asia
-						}
-					}
-					PREV = {
-						every_owned_state = {
-							add_claim_by = PREV.PREV
-						}
-					}
-				}
 			}
 
             #################
