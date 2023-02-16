@@ -25,11 +25,14 @@ ideas = {
                 conscription = 0.08
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
-                stability_factor = 0.05
+                political_power_factor = 0.1
 
                 drift_defence_factor = -0.3
                 resistance_activity = 0.2
                 democratic_drift = -0.02
+                subjects_autonomy_gain = 0.3
+                non_core_manpower = -0.5
+                stability_factor = -0.05
             }
 
             cancel_if_invalid = no
@@ -57,11 +60,14 @@ ideas = {
                 conscription = 0.08
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
-                stability_factor = 0.05
+                political_power_factor = 0.1
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
                 communism_drift = -0.02
+                subjects_autonomy_gain = 0.3
+                non_core_manpower = -0.5
+                stability_factor = -0.05
             }
 
             cancel_if_invalid = no
@@ -89,11 +95,14 @@ ideas = {
                 conscription = 0.08
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
-                stability_factor = 0.05
+                political_power_factor = 0.1
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
                 neutrality_drift = -0.02
+                subjects_autonomy_gain = 0.3
+                non_core_manpower = -0.5
+                stability_factor = -0.05
             }
 
             cancel_if_invalid = no
@@ -121,11 +130,14 @@ ideas = {
                 conscription = 0.08
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
-                stability_factor = 0.05
+                political_power_factor = 0.1
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
                 fascism_drift = -0.02
+                subjects_autonomy_gain = 0.3
+                non_core_manpower = -0.5
+                stability_factor = -0.05
             }
 
             cancel_if_invalid = no
@@ -153,11 +165,14 @@ ideas = {
                 conscription = 0.08
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
-                stability_factor = 0.05
+                political_power_factor = 0.1
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
                 monarchism_drift = -0.02
+                subjects_autonomy_gain = 0.3
+                non_core_manpower = -0.5
+                stability_factor = -0.05
             }
 
             cancel_if_invalid = no
