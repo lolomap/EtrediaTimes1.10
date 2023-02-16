@@ -287,7 +287,7 @@ foreign_influence = {
 political_actions = {
 
     change_politform = {
-        days_remove = 180
+        days_remove = change_pf_cost
         remove_effect = {
             set_country_flag = {flag = politform_change_available value = 1 days = 30}
         }

@@ -17,12 +17,16 @@ ideas = {
             }
 
             modifier = {
-                war_support_factor = 0.2
+                war_support_factor = 0.15
                 max_command_power = 50
-                command_power_gain_mult = 0.1
+                command_power_gain_mult = 0.15
                 custom_modifier_tooltip = wtire_reduce_focus
+                conscription = 0.08
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                stability_factor = 0.05
 
-                drift_defence_factor = -0.5
+                drift_defence_factor = -0.3
                 resistance_activity = 0.2
                 democratic_drift = -0.02
             }
@@ -46,8 +50,12 @@ ideas = {
             modifier = {
                 war_support_factor = 0.2
                 max_command_power = 50
-                command_power_gain_mult = 0.1
+                command_power_gain_mult = 0.15
                 custom_modifier_tooltip = wtire_reduce_focus
+                conscription = 0.08
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                stability_factor = 0.05
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
@@ -73,8 +81,12 @@ ideas = {
             modifier = {
                 war_support_factor = 0.2
                 max_command_power = 50
-                command_power_gain_mult = 0.1
+                command_power_gain_mult = 0.15
                 custom_modifier_tooltip = wtire_reduce_focus
+                conscription = 0.08
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                stability_factor = 0.05
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
@@ -100,8 +112,12 @@ ideas = {
             modifier = {
                 war_support_factor = 0.2
                 max_command_power = 50
-                command_power_gain_mult = 0.1
+                command_power_gain_mult = 0.15
                 custom_modifier_tooltip = wtire_reduce_focus
+                conscription = 0.08
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                stability_factor = 0.05
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
@@ -127,8 +143,12 @@ ideas = {
             modifier = {
                 war_support_factor = 0.2
                 max_command_power = 50
-                command_power_gain_mult = 0.1
+                command_power_gain_mult = 0.15
                 custom_modifier_tooltip = wtire_reduce_focus
+                conscription = 0.08
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                stability_factor = 0.05
 
                 drift_defence_factor = -0.5
                 resistance_activity = 0.2
@@ -145,17 +165,12 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                stability_factor = 0.2
+                stability_factor = 0.1
                 democratic_drift = 0.02
 
-                political_advisor_cost_factor = 0.3
-mobilization_laws_cost_factor = 0.3
-                trade_laws_cost_factor = 0.3
-                economy_cost_factor = 0.3
-                political_advisor_factor = 0.3
-                press_laws_cost_factor = 0.3
-                political_form_cost_factor = 0.3
-                political_power_factor = -0.3
+                drift_defence = 0.25
+				political_power_factor = -0.2
+                
             }
 
             cancel_if_invalid = no
@@ -167,17 +182,12 @@ mobilization_laws_cost_factor = 0.3
             removal_cost = -1
 
             modifier = {
-                stability_factor = 0.2
+                stability_factor = 0.1
                 communism_drift = 0.02
 
-                political_advisor_cost_factor = 0.3
-mobilization_laws_cost_factor = 0.3
-                trade_laws_cost_factor = 0.3
-                economy_cost_factor = 0.3
-                political_advisor_factor = 0.3
-                press_laws_cost_factor = 0.3
-                political_form_cost_factor = 0.3
-                political_power_factor = -0.3
+                drift_defence = 0.25
+				political_power_factor = -0.2
+                
             }
 
             cancel_if_invalid = no
@@ -189,17 +199,12 @@ mobilization_laws_cost_factor = 0.3
             removal_cost = -1
 
             modifier = {
-                stability_factor = 0.2
+                stability_factor = 0.1
                 fascism_drift = 0.02
 
-                political_advisor_cost_factor = 0.3
-mobilization_laws_cost_factor = 0.3
-                trade_laws_cost_factor = 0.3
-                economy_cost_factor = 0.3
-                political_advisor_factor = 0.3
-                press_laws_cost_factor = 0.3
-                political_form_cost_factor = 0.3
-                political_power_factor = -0.3
+                drift_defence = 0.25
+				political_power_factor = -0.2
+                
             }
 
             cancel_if_invalid = no
@@ -211,17 +216,12 @@ mobilization_laws_cost_factor = 0.3
             removal_cost = -1
 
             modifier = {
-                stability_factor = 0.2
+                stability_factor = 0.1
                 neutrality_drift = 0.02
 
-                political_advisor_cost_factor = 0.3
-mobilization_laws_cost_factor = 0.3
-                trade_laws_cost_factor = 0.3
-                economy_cost_factor = 0.3
-                political_advisor_factor = 0.3
-                press_laws_cost_factor = 0.3
-                political_form_cost_factor = 0.3
-                political_power_factor = -0.3
+                drift_defence = 0.25
+				political_power_factor = -0.2
+                
             }
 
             cancel_if_invalid = no
@@ -233,17 +233,12 @@ mobilization_laws_cost_factor = 0.3
             removal_cost = -1
 
             modifier = {
-                stability_factor = 0.2
+                stability_factor = 0.1
                 monarchism_drift = 0.02
 
-                political_advisor_cost_factor = 0.3
-mobilization_laws_cost_factor = 0.3
-                trade_laws_cost_factor = 0.3
-                economy_cost_factor = 0.3
-                political_advisor_factor = 0.3
-                press_laws_cost_factor = 0.3
-                political_form_cost_factor = 0.3
-                political_power_factor = -0.3
+                drift_defence = 0.25
+				political_power_factor = -0.2
+                
             }
 
             cancel_if_invalid = no
@@ -256,20 +251,22 @@ mobilization_laws_cost_factor = 0.3
 
             on_add = {
                 set_country_flag = do_cost_wtire
+                add_to_variable = {change_pf_cost = -150}
             }
             on_remove = {
                 clr_country_flag = do_cost_wtire
+                add_to_variable = {change_pf_cost = 150}
             }
 
             modifier = {
-                political_power_factor = 0.6
+                political_advisor_cost_factor = -0.1
 
-                stability_factor = -0.2
-                command_power_gain_mult = -0.2
-                max_command_power = -50
-                justify_war_goal_time = 0.5
-
+                stability_factor = -0.05
+                command_power_gain_mult = -0.1
+                max_command_power = -10
+                justify_war_goal_time = 0.05
                 custom_modifier_tooltip = wtire_cost_focus
+                custom_modifier_tooltip = reduce_pfchange_cost
             }
 
             cancel_if_invalid = no
@@ -282,8 +279,17 @@ mobilization_laws_cost_factor = 0.3
             available = { has_country_flag = politform_change_available}
 
             modifier = {
-                stability_factor = 0.25
-                consumer_goods_factor = 0.2
+                stability_factor = 0.2
+                resistance_target = -0.1
+                resistance_target_on_our_occupied_states = 0.1
+                research_speed_factor = 0.05
+                local_resources_factor = 0.1
+                surrender_limit = -0.08
+
+                consumer_goods_factor = 0.1
+                army_attack_factor = -0.05
+                army_defence_factor = -0.05
+                political_power_factor = -0.1
             }
 
             cancel_if_invalid = no
