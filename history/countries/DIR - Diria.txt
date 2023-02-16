@@ -13,7 +13,6 @@ add_ideas = {
 	DIR_government_crisis
 	DIR_popular_unrest
 	fifth_corruption_level
-    leadership_c
 }
 
 set_technology = {
