@@ -80,26 +80,27 @@ sfl_world_war = {
 		SFL = { has_government = democratic }
 	}
 	abort = {
-		OR = {
-			SFL = { has_government = fascism }
 			is_historical_focus_on = no
-			SFL = { has_war_with = EIK }
-		}
 	}
 	
 	ai_strategy = {
 		type = protect
 		id = "SHE"
-		value = -1000
+		value = -9999
 	}
 	ai_strategy = {
 		type = protect
 		id = "KAS"
-		value = -10000
+		value = -9999
 	}
 	ai_strategy = {
 		type = protect
 		id = "DEM"
-		value = -1000
+		value = -9999
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
 	}
 }
