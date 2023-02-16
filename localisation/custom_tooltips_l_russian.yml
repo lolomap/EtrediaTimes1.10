@@ -24,6 +24,8 @@
   sz_more_then_5m: "Как минимум §Y5§! стран со §Yсредним§! влиянием SZ и выше"
 
   politform_change_available: "Доступно изменение политического строя"
+  corruption_cost_10_tooltip: "Стоимость антикоррупционных мероприятий: §R+10%§!"
+  reduce_pfchange_cost: "Сокращает смену политического строя до §Y30§! дней"
   
   YAN_planes_production_tooltip:0 "Станет доступен концерн «CVT_Toika»"
   YAN_tank_concern:0 "Станет доступен концерн «CREDORA»"

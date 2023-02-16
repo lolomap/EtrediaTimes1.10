@@ -25,6 +25,13 @@ on_actions = {
                 
 				set_variable = {uranium_cost = 2}
 				set_variable = {winfluence_cost = 1}
+                if = {
+                    limit = {has_idea = fractionism}
+                    set_variable = {change_pf_cost = 30}
+                }
+                else = {
+                    set_variable = {change_pf_cost = 180}
+                }
             }
             #SZ INFLUENCE
             ELR = {add_to_variable = {winfluence_cost = -0.15}}

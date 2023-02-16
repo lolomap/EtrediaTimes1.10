@@ -1,6 +1,23 @@
 spriteTypes = {	
 
     spriteType = {
+		name = "GFX_idea_fractionism"
+		texturefile = "gfx/interface/ideas/frakcionnost.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_continuity"
+		texturefile = "gfx/interface/ideas/preemstvennost.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_regionalism"
+		texturefile = "gfx/interface/ideas/regionalism.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_leadership"
+		texturefile = "gfx/interface/ideas/Vozhdestvo.dds"
+	}
+
+    spriteType = {
 		name = "GFX_idea_economic_faction"
 		texturefile = "gfx/interface/ideas/idea_economic_faction.dds"
 	}
