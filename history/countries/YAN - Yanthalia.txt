@@ -14,7 +14,7 @@ add_ideas = {
         YAN_demobilisation
 	YAN_chill
 	fifth_corruption_level
-    leadership
+    leadership_f
 }
 
 set_technology = {

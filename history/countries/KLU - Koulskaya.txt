@@ -10,7 +10,7 @@ add_ideas = {
         WWW_bad_country
         total_nonfree_press
 	fifth_corruption_level
-    leadership
+    leadership_f
 }
 
 set_technology = {
