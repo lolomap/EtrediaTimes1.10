@@ -60,17 +60,27 @@ dem_world_war = {
 		original_tag = DEM
 	}
 	abort = {
-		DEM = { has_government = communism }
+		is_historical_focus_on = no
 	}
 	
 	ai_strategy = {
 		type = protect
 		id = "SHE"
-		value = -1000
+		value = -9999
 	}
 	ai_strategy = {
 		type = protect
 		id = "KAS"
-		value = -1000
+		value = -9999
+	}
+	ai_strategy = {
+		type = protect
+		id = "DEM"
+		value = -9999
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
 	}
 }
