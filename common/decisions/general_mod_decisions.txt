@@ -288,6 +288,11 @@ political_actions = {
 
     change_politform = {
         days_remove = change_pf_cost
+
+        modifier = {
+            stability_weekly = -0.002
+        }
+
         remove_effect = {
             set_country_flag = {flag = politform_change_available value = 1 days = 30}
         }
