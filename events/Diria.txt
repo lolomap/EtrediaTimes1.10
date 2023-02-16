@@ -22,6 +22,7 @@ country_event = {
         ruling_party = communism 
 		}
         set_country_flag = BRAND_NEW_COUNTRY
+        add_ideas = leadership_c
         set_country_flag = ai_not_accept_existance
         country_event = { days = 30 id = dirnews.2 }
         news_event = {

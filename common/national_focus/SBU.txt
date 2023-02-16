@@ -84,7 +84,7 @@ focus_tree = {
                 add_opinion_modifier { target = ROOT modifier = SFL_tradewar }
                 add_ideas = SFL_tradewar_idea
             }
-            SBU = {set_country_flag = tradewar}
+            SFL = {set_country_flag = tradewar}
             set_country_flag = tradewar
             set_country_flag = tradewar_starter
             SFL = {set_variable = {trade_war = 100}}

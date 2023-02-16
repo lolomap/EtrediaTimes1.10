@@ -9,7 +9,7 @@ ideas = {
             removal_cost = -1
             cancel = {
                 OR = {
-                    NOT = {has_country_flag = tradewar}
+                    SFL = {NOT = {has_country_flag = tradewar}}
                     NOT = {country_exists = SFL}
                     NOT = {country_exists = SBU}
                 }

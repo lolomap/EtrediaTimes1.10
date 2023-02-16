@@ -196,7 +196,7 @@ ideas = {
 
             cancel_if_invalid = no
         }
-        continuity_с = {
+        continuity_c = {
             picture = continuity
             visible= {has_government = communism}
             available = { has_country_flag = politform_change_available}

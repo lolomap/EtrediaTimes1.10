@@ -11,6 +11,7 @@ add_ideas = {
         WWW_best_country
 	free_press
         limited_entry
+        regionalism
 }
 
 set_technology = {

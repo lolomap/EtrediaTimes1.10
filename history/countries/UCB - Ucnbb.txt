@@ -16,6 +16,7 @@ add_ideas = {
         total_free_press
         limited_entry
 	fourth_corruption_level
+    regionalism
 }
 
 	set_autonomy = {

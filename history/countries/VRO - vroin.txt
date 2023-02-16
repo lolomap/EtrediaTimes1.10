@@ -12,6 +12,7 @@ add_ideas = {
         nonfree_press
         general_entry
 	fourth_corruption_level
+    leadership_n
 }
 
 set_technology = {

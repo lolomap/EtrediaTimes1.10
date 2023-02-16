@@ -13,6 +13,7 @@ add_ideas = {
         total_free_press
         general_entry
 	fourth_corruption_level
+    continuity_d
 }
 
 set_technology = {
