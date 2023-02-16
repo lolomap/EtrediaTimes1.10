@@ -5,6 +5,6 @@ nuclear_war = {
 }
 
 nuclear_construction = {
-	allowed = {nuclear_reactor > 0}
+	available = {nuclear_reactor > 0}
 	visible = {has_tech = nukes}
 }
