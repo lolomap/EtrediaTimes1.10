@@ -12,6 +12,7 @@ add_ideas = {
         nonfree_press
         limited_entry
 	fifth_corruption_level
+    continuity
 }
 
 	set_autonomy = {

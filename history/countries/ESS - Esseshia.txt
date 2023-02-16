@@ -12,6 +12,7 @@ add_ideas = {
         total_nonfree_press
         closed_entry
 	third_corruption_level
+    continuity
 }
 
 set_technology = {

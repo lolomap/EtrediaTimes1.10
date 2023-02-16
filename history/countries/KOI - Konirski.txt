@@ -9,6 +9,7 @@ set_war_support = 0.5
 add_ideas = {
         WWW_medium_country
 	third_corruption_level
+    regionalism
 }
 
 set_technology = {

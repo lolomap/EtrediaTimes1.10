@@ -12,6 +12,7 @@ add_ideas = {
         total_free_press
         general_entry
 	third_corruption_level
+    regionalism
 }
 
 set_technology = {

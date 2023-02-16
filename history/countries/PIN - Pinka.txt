@@ -10,6 +10,7 @@ add_ideas = {
         www_medium_country
         free_press
         general_entry
+        leadership
 }
 
 set_technology = {

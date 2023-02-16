@@ -17,6 +17,7 @@ add_ideas = {
         total_nonfree_press
         limited_entry
 	fourth_corruption_level
+    leadership
 }
 
 set_autonomy = {
