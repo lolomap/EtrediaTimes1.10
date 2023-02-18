@@ -2,7 +2,7 @@
 
 OOB = "KLU_2014"
 
-set_research_slots = 1
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.9
 
@@ -10,7 +10,9 @@ add_ideas = {
         WWW_bad_country
         total_nonfree_press
 	fifth_corruption_level
-    leadership_f
+    	leadership_f
+	KLU_old_economy
+	KLU_caste_system
 }
 
 set_technology = {

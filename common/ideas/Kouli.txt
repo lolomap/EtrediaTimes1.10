@@ -1,0 +1,35 @@
+ideas = {
+    country = {	
+		KLU_old_economy = {
+            picture = fff
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.2
+				global_building_slots_factor = -0.15
+				industry_repair_factor = -0.3
+				research_speed_factor = -0.08
+			}
+       }
+	   KLU_caste_system = {
+            picture = fff
+			allowed = {
+				always = no
+			}	
+			removal_cost = -1
+	
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = -0.1
+				consumer_goods_factor = -0.08
+				resistance_activity = 0.25
+				resistance_target = 0.1
+				conscription_factor = -0.25
+			}
+       }
+	}
+}

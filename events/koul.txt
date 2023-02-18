@@ -248,6 +248,12 @@ country_event = {
             type = annex_everything
             }
 	    }
+		KLU = {
+		    declare_war_on = {
+            target = BSH
+            type = annex_everything
+            }
+	    }
 	}
 }
 
@@ -271,6 +277,12 @@ country_event = {
             type = annex_everything
             }
 	    }
+		KLU = {
+		    declare_war_on = {
+            target = KYU
+            type = annex_everything
+            }
+	    }
 	}
 }
 
@@ -288,12 +300,6 @@ country_event = {
     	
 	option = {
     name = klu.11.a
-	    KLU = {
-		    declare_war_on = {
-            target = KYU
-            type = annex_everything
-            }
-	    }
 	}
 }
 
