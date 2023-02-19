@@ -33,7 +33,10 @@ focus_tree = {
 		x = 12
 		y = 2
 		completion_reward = {
-		country_event = { id = klu.2 days = 1 }
+			country_event = { id = klu.2 days = 1 }
+			hidden_effect = {
+				news_event = {id = newss.29 days = 1}
+			}
 		}
 		will_lead_to_war_with = DNG
 	}
@@ -57,6 +60,9 @@ focus_tree = {
 			custom_effect_tooltip = wtire_reduce_10
 			hidden_effect = {
 				subtract_from_variable = {wtire = 10}
+			}
+			hidden_effect = {
+				news_event = {id = newss.21 days = 1}
 			}
 		}
 	}
@@ -108,6 +114,9 @@ focus_tree = {
 		prerequisite = {
 			focus = KLU_industrial1
 		}
+		available = {
+			622 = { is_controlled_by = KLU }
+		}
 		x = 11
 		y = 3
 		completion_reward = {
@@ -154,6 +163,7 @@ focus_tree = {
 		}
 		available = {
 			KLU = { has_war = no }
+			622 = { is_controlled_by = KLU }
 		}
 		cancel_if_invalid = yes
 		x = 13
@@ -216,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = KLU_upgrade_military
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 20
 		prerequisite = {
 			focus = KLU_dgn_core_state
 		}
@@ -284,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = KLU_gwanchin_campaign
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 1
+		cost = 5
 		prerequisite = {
 			focus = KLU_dgn_core_state
 		}
@@ -314,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = KLU_new_military_tactics
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 1
+		cost = 10
 		prerequisite = {
 			focus = KLU_soloput_campaign
 			focus = KLU_gwanchin_campaign
@@ -351,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = KLU_grants_for_military
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 1
+		cost = 5
 		prerequisite = {
 			focus = KLU_soloput_campaign
 			focus = KLU_gwanchin_campaign
@@ -371,7 +381,7 @@ focus_tree = {
 	focus = {
 		id = KLU_planes
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 1
+		cost = 10
 		prerequisite = {
 			focus = KLU_grants_for_military
 		}
@@ -424,7 +434,7 @@ focus_tree = {
 	focus = {
 		id = KLU_horga_campaign
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = KLU_soloput_campaign
 		}
@@ -449,7 +459,7 @@ focus_tree = {
 	focus = {
 		id = KLU_lod_zar_integration
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = KLU_horga_campaign
 		}
@@ -470,7 +480,7 @@ focus_tree = {
 	focus = {
 		id = KLU_unciar_campaign
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = KLU_lod_zar_integration
 		}
@@ -496,7 +506,7 @@ focus_tree = {
 	focus = {
 		id = KLU_garzah_campaign
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = KLU_lod_zar_integration
 		}
@@ -518,22 +528,22 @@ focus_tree = {
 	focus = {
 		id = KLU_karcae_campaign
 		icon = GFX_focus_eng_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = KLU_lod_zar_integration
 		}
 		available = {
-		NOT = { has_war_with = UNC }
-		NOT = { has_war_with = GAR }
+			NOT = { has_war_with = UNC }
+			NOT = { has_war_with = GAR }
 		}
 		will_lead_to_war_with = KCE
 		bypass = {
-		NOT = { country_exists = KCE }
+			NOT = { country_exists = KCE }
 		}
 		x = 14
 		y = 10
 		completion_reward = {
-        KLU = { country_event = { id = klu.19 days = 1 } }
+			KLU = { country_event = { id = klu.19 days = 1 } }
 		}
 	}
 

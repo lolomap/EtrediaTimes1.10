@@ -23,7 +23,7 @@ country_event = {
 		        transfer_state = 62
 		    }
 		}
-		hidden_effect = {news_event = {id = newss.23 days = 1}}
+		news_event = { id = newss.23 days = 1 }
 	}
 	option = {
 		name = trp.1.b
@@ -98,7 +98,7 @@ country_event = {
 	option = {
 		name = trp.4.a
 		IID = {annex_country = {target = TRP transfer_troops = yes}}
-		hidden_effect = {news_event = {id = newss.24 days = 1}}
+		news_event = { id = newss.24 days = 1 }
 
 		ai_chance = {
 			base = 0.3
