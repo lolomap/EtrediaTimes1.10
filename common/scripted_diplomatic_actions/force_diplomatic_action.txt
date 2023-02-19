@@ -1,6 +1,5 @@
 scripted_diplomatic_actions = {
     force_action = {
-        visible = {has_global_flag = CRYSIS_ALLOWED}
         selectable = {
             crysis_startable = yes
         }

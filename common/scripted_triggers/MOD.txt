@@ -12,6 +12,14 @@ crysis_startable = {
     }
 
     threat > 0.04
+
+    OR = {
+        hidden_trigger = {has_global_flag = CRYSIS_ALLOWED}
+        has_game_rule = {
+            rule = allow_crysis
+            option = FREE
+        }
+    }
 }
 
 crysis_capitulated = {

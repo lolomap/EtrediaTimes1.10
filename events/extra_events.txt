@@ -1369,7 +1369,7 @@ country_event = { # Кризис закончился
                 days = 90
                 value = 1
             }
-            var:sender_crysis = {country_event = mechanics.38}
+            var:global.sender_crysis = {country_event = mechanics.38}
             var:global.sender_crysis = {
                 war_crysis_ban_factions = yes
 
@@ -1475,13 +1475,13 @@ country_event = {
 
     immediate = {
         if = {
-            limit = {has_global_flag = political_crysis country_exists = var:sender_crysis}
+            limit = {has_global_flag = political_crysis country_exists = var:global.sender_crysis}
             add_to_variable = {global.crysis_timer = 1.666}
-            var:sender_crysis = {country_event = {id = mechanics.37 days = 1}}
+            var:global.sender_crysis = {country_event = {id = mechanics.37 days = 1}}
         }
         else = {
             force_press = yes
-            var:sender_crysis = {country_event = {id = mechanics.36 days = 2}}
+            var:global.sender_crysis = {country_event = {id = mechanics.36 days = 2}}
         }
     }
 }
