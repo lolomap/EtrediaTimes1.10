@@ -54,7 +54,7 @@ set_technology = {
 	CAS1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
-	strategic_bomber1 = 1
+	
 	naval_bomber1 = 1
 
 	synth_oil_experiments = 1

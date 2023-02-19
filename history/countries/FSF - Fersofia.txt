@@ -39,7 +39,7 @@ set_technology = {
 	early_bomber = 1
 	tactical_bomber1 = 1
 	tactical_bomber2 = 1
-	strategic_bomber1 = 1
+	
 
 	early_submarine = 1
 	early_light_cruiser = 1

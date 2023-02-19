@@ -19,7 +19,7 @@ set_technology = {
 	fighter3 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
-	strategic_bomber1 = 1
+	
 
 	motorised_infantry = 1
         mechanised_infantry = 1

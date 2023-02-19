@@ -35,7 +35,7 @@ set_technology = {
 	main_battle_tank = 1
 	tech_mountaineers = 1
 	tactical_bomber1 = 1
-	strategic_bomber1 = 1
+	
 	synth_oil_experiments = 1
 }
 
