@@ -45,9 +45,6 @@ country_event = {
             }
 	    }
 		hidden_effect = {
-			news_event = {id = newss.29 days = 1}
-		}
-		hidden_effect = {
 			ECE = { country_event = { days = 2 id = evar.1 } }
 		}
 	ai_chance = { factor = 80 }

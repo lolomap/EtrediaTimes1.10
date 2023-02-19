@@ -1775,8 +1775,8 @@ technologies = {
 		
 		spriteTypes = {
 			SpriteType = {
-					name = "GFX_jeep_unit_1"
-					texturefile = "gfx/interface/technologies/jeep_unit_1.dds"
+				name = "GFX_jeep_unit_1_medium"
+				texturefile = "gfx/interface/technologies/jeep_unit_1.dds"
 		    }
 		}
 		

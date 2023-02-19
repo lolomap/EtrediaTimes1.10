@@ -617,19 +617,29 @@ spriteTypes = {
 
 
 	SpriteType = {
-		name = "GFX_infantry_at2_medium"
-		texturefile = "gfx/interface/technologies/infantry_at2.dds"
-	}	
-	
-	SpriteType = {
 		name = "GFX_infantry_at_medium"
 		texturefile = "gfx/interface/technologies/infantry_at.dds"
 	}	
 	
 	SpriteType = {
+		name = "GFX_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/infantry_at2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry_at3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at4_medium"
+		texturefile = "gfx/interface/technologies/infantry_at4.dds"
+	}	
+	
+	SpriteType = {
 		name = "GFX_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
-	}	
+	}
 
 	SpriteType = {
 		name = "GFX_improved_infantry_weapons_2_medium"
@@ -3610,6 +3620,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_modern_art_medium"
 		texturefile = "gfx/interface/technologies/art4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_basic_medium_spaa"
+		texturefile = "gfx/interface/technologies/antiair_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_medium_tank_aa_equipment_2"
+		texturefile = "gfx/interface/technologies/antiair_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_medium_tank_aa_equipment_3"
+		texturefile = "gfx/interface/technologies/antiair_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_basic_medium_spaa"
+		texturefile = "gfx/interface/technologies/antiair_1.dds"
 	}
 
 	SpriteType = {

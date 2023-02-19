@@ -741,24 +741,11 @@ guiTypes = {
 				position = { x = 0 y = 172 }
 				size = { width = 600 height = 80% }				
 				orientation = center_up
-				origo = center_up
-			
-				instantTextBoxType = {
-					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}				
+				origo = center_up			
 
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
+					position = { x = -200 y = -70 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -768,14 +755,37 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-
 				instantTextBoxType = {
-					name = "armour_subtitle_light"
-					position = { x = -84 y = 55  }
+					name = "armour_subtitle_pt_tank"
+					position = { x = 107 y = -70 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_LIGHT"
+					text = "ARMOUR_TITLE_PT"
+					maxWidth = 200
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "armour_subtitle_ar_tank"
+					position = { x = 417 y = -70 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "ARMOUR_TITLE_AR"
+					maxWidth = 200
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "armour_subtitle_aa_tank"
+					position = { x = 724 y = -70 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4}
+					text = "ARMOUR_TITLE_AA"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -798,7 +808,7 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "gwtank_tree"
-				position = { x = 10% y = 172 }
+				position = { x = -15% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -806,7 +816,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_medium_td_tree"
-				position = { x = 30% y = 172 }
+				position = { x = 0% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -814,7 +824,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_medium_art_tree"
-				position = { x = 50% y = 172 }
+				position = { x = 15% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -822,7 +832,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_medium_spaa_tree"
-				position = { x = 70% y = 172 }
+				position = { x = 30% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -5265,7 +5275,9 @@ containerWindowType = {
 	
 	containerWindowType = {
 		name = "technology_unit_statlist_item_modifier"
-		position = { x=0 y=0 }	
+		position = { 
+
+		}	
 		clipping = no
 		
 		instantTextboxType = {
