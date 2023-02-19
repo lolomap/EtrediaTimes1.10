@@ -98,7 +98,7 @@ ideas = {
 			}
 		}
 		
-		IID_neutrality = {
+		IID_neutrality_idea = {
             picture = iid_economic
 			allowed = {
 				always = no

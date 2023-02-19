@@ -1206,7 +1206,7 @@ technologies = {
 		}
 	
 		path = {
-			leads_to_tech = strategic_bomber2
+			leads_to_tech = fake_strategic_bomber2
 			research_cost_coeff = 1
 		}
 
@@ -1220,7 +1220,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -1238,14 +1237,14 @@ technologies = {
 		}
 	}
 	
-	strategic_bomber2 = {
+	fake_strategic_bomber2 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_2
 		}
 	
 		path = {
-			leads_to_tech = strategic_bomber3
+			leads_to_tech = fake_strategic_bomber3
 			research_cost_coeff = 1
 		}
 		
@@ -1259,7 +1258,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -1277,7 +1275,7 @@ technologies = {
 		}
 	}
 	
-	strategic_bomber3 = {
+	fake_strategic_bomber3 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_3
@@ -1295,7 +1293,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
