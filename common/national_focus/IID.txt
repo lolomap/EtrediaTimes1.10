@@ -1285,7 +1285,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = IID_neutrality
+			remove_ideas = IID_neutrality_idea
 			add_timed_idea = {
 				idea = IID_sanctions
 				days = 360

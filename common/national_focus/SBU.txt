@@ -172,7 +172,7 @@ focus_tree = {
                 num_of_civilian_factories > 14
             }
             IID = {
-                has_idea = IID_neutrality
+                has_idea = IID_neutrality_idea
             }
         }
 
