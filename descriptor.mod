@@ -48,5 +48,5 @@ tags={
 }
 picture="thumbnail.png"
 supported_version="1.10.*"
-path="C:/Users/Admin/Documents/Paradox Interactive/Hearts of Iron IV/mod/Etredia Times"
+path="mod/EtrediaTimes1.10"
 remote_file_id="2935746581"
